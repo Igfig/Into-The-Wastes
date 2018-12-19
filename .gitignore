@@ -1,0 +1,10 @@
+/.curseclient
+crash-reports
+downloads
+logs
+resourcepacks
+saves
+screenshots
+shaderpacks
+/mods/OptiFine_*.jar
+/mods/*.disabled
