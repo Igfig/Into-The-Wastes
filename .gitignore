@@ -8,3 +8,10 @@ screenshots
 shaderpacks
 /mods/OptiFine_*.jar
 /mods/*.disabled
+output
+defaults
+/minecraftinstance.json
+/options.txt
+/optionsof.txt
+/optionsshaders.txt
+/knownkeys.txt
