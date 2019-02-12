@@ -42,5 +42,12 @@
       "properties": {}
     },
     "temperature": 5.0
+  },
+  {
+    "state": {
+      "block": "minecraft:leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
   }
 ]
