@@ -13,3 +13,5 @@ defaults
 /*.json
 /*.txt
 /config/jei/worldSettings.cfg
+/config/splash.properties
+/crafttweaker.log
