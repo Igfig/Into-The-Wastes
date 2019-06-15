@@ -10,6 +10,13 @@
   },
   {
     "state": {
+      "block": "cuisine:fire_pit",
+      "properties": {}
+    },
+    "temperature": 2.0
+  },
+  {
+    "state": {
       "block": "minecraft:lit_furnace",
       "properties": {}
     },
