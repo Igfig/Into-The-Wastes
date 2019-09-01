@@ -11,7 +11,7 @@ shaderpacks
 /.curseclient
 /*.json
 /*.txt
-/crafttweaker.log
+/*.log
 /servers.dat
 /mods/OptiFine_*.jar
 /mods/*.disabled
