@@ -1,0 +1,23 @@
+{ "block_pools": [ 
+	{ 
+		"name": "Water", 
+		"type": { "type": "block", "name": "minecraft:water" }, 
+		"clicktype": "right", 
+		"blockRightClick": false,
+		"properties": [ 
+			{ 
+				"type": "require_item_list", 
+				"items": [
+					{"name": "minecraft:glass_bottle" }
+				] 
+			},
+			{
+				"type": "consume_block"
+			}
+		], 
+		"messages": [
+			{"id": "require_item_list", "message": "item"},
+			{"id": "consume_block", "message": "consume"}
+		]
+	}
+ ] } 

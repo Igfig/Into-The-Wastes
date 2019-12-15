@@ -1,0 +1,78 @@
+{ "block_pools": [ 
+	{ 
+		"name": "Dirt", 
+		"type": { "type": "block", "name": "minecraft:dirt" }, 
+		"clicktype": "right", 
+		"blockRightClick": false,
+		"properties": [ 
+			{ 
+				"type": "require_item_list", 
+				"items": [
+					{"name": "minecraft:glass_bottle" }
+				] 
+			},
+			{ "type": "consume_block" }
+		], 
+		"messages": [
+			{"id": "require_item_list", "message": "bottle"},
+			{"id": "consume_block", "message": "consume dirt"}
+		]
+	},
+	{ 
+		"name": "Stone", 
+		"type": { "type": "block", "name": "minecraft:stone" }, 
+		"clicktype": "right", 
+		"blockRightClick": false,
+		"properties": [ 
+			{ 
+				"type": "require_item_list", 
+				"items": [
+					{"name": "minecraft:glass_bottle" }
+				] 
+			},
+			{
+				"type": "per_block_limit",
+				"id": "stone",
+				"max": 3
+			},
+			{ "type": "consume_block" }
+		], 
+		"messages": [
+			{"id": "require_item_list", "message": "bottle"},
+			{"id": "per_block_limit", "message": "limit"},
+			{"id": "consume_block", "message": "consume stone"}
+		]
+	},
+	{ 
+		"name": "Log", 
+		"type": { "type": "block", "name": "minecraft:log" }, 
+		"clicktype": "right", 
+		"blockRightClick": false,
+		"properties": [ 
+			{ 
+				"type": "require_item_list", 
+				"items": [
+					{"name": "minecraft:glass_bottle" }
+				] 
+			},
+			{
+				"type": "conditional_effect",
+				"condition": {
+					"type": "per_player_limit",
+					"id": "rocks",
+					"max": 3
+				},
+				"effect": [{ "type": "consume_block" }]
+			},
+			,
+			
+		], 
+		"messages": [
+			{"id": "require_item_list", "message": "item"},
+			{"id": "conditional_effect", "message": "cond"},
+			{"id": "per_player_limit", "message": "limit"},
+			{"id": "consume_block", "message": "consume"},
+			{"id": "success", "message": "cool"}
+		]
+	}
+] }
