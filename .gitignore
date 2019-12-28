@@ -1,6 +1,7 @@
 crash-reports
 defaults
 downloads
+llibrary
 logs
 output
 pmdumper
@@ -17,4 +18,4 @@ shaderpacks
 /mods/*.disabled
 /config/splash.properties
 /config/jei/worldSettings.cfg
-/*.log
+/config/multimob/modInformation
