@@ -1,13 +1,9 @@
-val foods = <ore:itemFood>;
+import crafttweaker.item.IItemStack;
 
-if (foods.empty) {
-	print("goddamnit Peckish doesn't load until after CraftTweaker");
-} else {
-	print(foods.firstItem.displayName);
-	foods.firstItem.maxStackSize = 8;
-}
+var items = itemUtils.getItemsByRegexRegistryName(".*") as IItemStack[];
 
-for food in foods.items {
-	print(food.displayName);
-	food.maxStackSize = 8;
+for item in items {
+    if (item.isFood) {
+		item.maxStackSize = 8;
+    }
 }
