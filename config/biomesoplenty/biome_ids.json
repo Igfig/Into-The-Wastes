@@ -14,8 +14,8 @@
   "phantasmagoric_inferno": -1,
   "overgrown_cliffs": -1,
   "highland": -1,
-  "volcanic_island": -1,
-  "quagmire": -1,
+  "volcanic_island": 255,
+  "quagmire": 254,
   "marsh": -1,
   "chaparral": -1,
   "flower_island": -1,
@@ -36,7 +36,7 @@
   "shield": -1,
   "snowy_tundra": -1,
   "alps": -1,
-  "wasteland": -1,
+  "wasteland": 253,
   "lush_desert": -1,
   "mangrove": -1,
   "boreal_forest": -1,
@@ -69,7 +69,7 @@
   "origin_beach": -1,
   "rainforest": -1,
   "sacred_springs": -1,
-  "crag": -1,
+  "crag": 252,
   "brushland": -1,
   "ominous_woods": -1
 }
