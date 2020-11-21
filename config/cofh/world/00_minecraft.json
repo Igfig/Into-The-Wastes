@@ -54,9 +54,9 @@
 					}
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 33
+				"cluster-size": 1000
 			},
-			"cluster-count": 10,
+			"cluster-count": 1,
 			"min-height": 0,
 			"max-height": 80,
 			"retrogen": false,
@@ -80,9 +80,9 @@
 					}
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 33
+				"cluster-size": 1000
 			},
-			"cluster-count": 10,
+			"cluster-count": 1,
 			"min-height": 0,
 			"max-height": 80,
 			"retrogen": false,
@@ -106,9 +106,9 @@
 					}
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 33
+				"cluster-size": 1000
 			},
-			"cluster-count": 10,
+			"cluster-count": 1,
 			"min-height": 0,
 			"max-height": 80,
 			"retrogen": false,
@@ -127,13 +127,22 @@
 			"generator": {
 				"block": "coal_ore",
 				"material": "minecraft:stone",
-				"cluster-size": 17
+				"cluster-size": 200
 			},
 			"cluster-count": 20,
+			"chunk-chance": 500,
 			"min-height": 0,
 			"max-height": 128,
 			"retrogen": false,
-			"biome": "all",
+			"biome": {
+				"restriction": "blacklist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "DESERT"
+					}
+				]
+			},
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
@@ -148,13 +157,23 @@
 			"generator": {
 				"block": "iron_ore",
 				"material": "minecraft:stone",
-				"cluster-size": 9
+				"type": "large-vein",
+				"cluster-size": 100
 			},
 			"cluster-count": 20,
+			"chunk-chance": 500,
 			"min-height": 0,
 			"max-height": 64,
 			"retrogen": false,
-			"biome": "all",
+			"biome": {
+				"restriction": "blacklist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "DESERT"
+					}
+				]
+			},
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
@@ -169,13 +188,23 @@
 			"generator": {
 				"block": "gold_ore",
 				"material": "minecraft:stone",
-				"cluster-size": 9
+				"type": "large-vein",
+				"cluster-size": 720
 			},
-			"cluster-count": 2,
+			"cluster-count": 1,
+			"chunk-chance": 500,
 			"min-height": 0,
 			"max-height": 32,
 			"retrogen": false,
-			"biome": "all",
+			"biome": {
+				"restriction": "blacklist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "DESERT"
+					}
+				]
+			},
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
@@ -190,13 +219,26 @@
 			"generator": {
 				"block": "redstone_ore",
 				"material": "minecraft:stone",
-				"cluster-size": 8
+				"type": "plate",
+				"radius": 5
 			},
-			"cluster-count": 8,
+			"cluster-count": {
+				"min": 1,
+				"max": 3
+			},
+			"chunk-chance": 500,
 			"min-height": 0,
-			"max-height": 16,
+			"max-height": 24,
 			"retrogen": false,
-			"biome": "all",
+			"biome": {
+				"restriction": "blacklist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "DESERT"
+					}
+				]
+			},
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
@@ -213,11 +255,20 @@
 				"material": "minecraft:stone",
 				"cluster-size": 8
 			},
-			"cluster-count": 1,
+			"cluster-count": 30,
+			"chunk-chance": 500,
 			"min-height": 0,
 			"max-height": 16,
 			"retrogen": false,
-			"biome": "all",
+			"biome": {
+				"restriction": "blacklist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "DESERT"
+					}
+				]
+			},
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
@@ -232,13 +283,23 @@
 			"generator": {
 				"block": "lapis_ore",
 				"material": "minecraft:stone",
+				"type": "sparse-cluster",
 				"cluster-size": 7
 			},
-			"cluster-count": 1,
+			"cluster-count": 100,
+			"chunk-chance": 500,
 			"center-height": 16,
 			"spread": 16,
 			"retrogen": false,
-			"biome": "all",
+			"biome": {
+				"restriction": "blacklist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "DESERT"
+					}
+				]
+			},
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
@@ -252,29 +313,49 @@
 			"enabled": true,
 			"distribution": "uniform",
 			"generator": {
-				"block": {
-					"name": "gold_ore"
-				},
+				"block": "gold_ore",
 				"material": "minecraft:stone",
-				"cluster-size": 9
+				"cluster-size": 1
 			},
 			"cluster-count": 20,
 			"min-height": 32,
-			"max-height": 80,
+			"max-height": 256,
 			"retrogen": false,
 			"biome": {
 				"restriction": "whitelist",
 				"value": [
 					{
-						"type": "id",
-						"entry": [
-							"mesa",
-							"mesa_rock",
-							"mesa_clear_rock",
-							"mutated_mesa",
-							"mutated_mesa_rock",
-							"mutated_mesa_clear_rock"
-						]
+						"type": "dictionary",
+						"entry": "MESA"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		
+		"desert_coal": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "coal_ore",
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			},
+			"cluster-count": 20,
+			"min-height": 0,
+			"max-height": 256,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "DESERT"
 					}
 				]
 			},
@@ -294,12 +375,13 @@
 					"name": "emerald_ore"
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 1
+				"cluster-size": 50
 			},
 			"cluster-count": {
 				"min": 3,
 				"max": 6
 			},
+			"chunk-chance": 500,
 			"min-height": 4,
 			"max-height": 28,
 			"retrogen": false,
@@ -307,14 +389,102 @@
 				"restriction": "whitelist",
 				"value": [
 					{
-						"type": "id",
-						"entry": [
-							"extreme_hills",
-							"smaller_extreme_hills",
-							"extreme_hills_with_trees",
-							"mutated_extreme_hills",
-							"mutated_extreme_hills_with_trees"
-						]
+						"type": "dictionary",
+						"entry": "MOUNTAIN"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		
+		"native_copper": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "crossroads:ore_native_copper",
+				"type": "cluster",
+				"material": "minecraft:stone",
+				"cluster-size": 4,
+				"spindly": true
+			},
+			"cluster-count": 100,
+			"chunk-chance": 500,
+			"min-height": 0,
+			"max-height": 128,
+			"retrogen": false,
+			"biome": {
+				"restriction": "blacklist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "DESERT"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"copper": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "crossroads:ore_copper",
+				"material": "minecraft:stone",
+				"type": "large-vein",
+				"cluster-size": 400,
+				"spindly": true
+			},
+			"cluster-count": 2,
+			"chunk-chance": 500,
+			"min-height": 0,
+			"max-height": 64,
+			"retrogen": false,
+			"biome": {
+				"restriction": "blacklist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "DESERT"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		
+		"tin": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "crossroads:ore_tin",
+				"material": "minecraft:stone",
+				"type": "large-vein",
+				"cluster-size": 50
+			},
+			"cluster-count": 6,
+			"chunk-chance": 500,
+			"min-height": 0,
+			"max-height": 32,
+			"retrogen": false,
+			"biome": {
+				"restriction": "blacklist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "DESERT"
 					}
 				]
 			},
