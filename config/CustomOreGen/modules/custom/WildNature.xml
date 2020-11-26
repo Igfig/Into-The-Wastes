@@ -12,7 +12,7 @@
 
     <!-- Setup Screen Configuration -->
     <ConfigSection>
-      <OptionDisplayGroup name='groupWildNature' displayName='Simple Ores' displayState='shown'>
+      <OptionDisplayGroup name='groupWildNature' displayName='Wild Nature' displayState='shown'>
         <Description>
           Distribution options for Wild Nature ores and stones.
         </Description>
