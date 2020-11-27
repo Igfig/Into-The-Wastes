@@ -14,9 +14,10 @@ for i in 0 to 10 {
 
 // Recipe, tooltip, and JEI entry for cactus juice
 
+val tinyCactus = <biomesoplenty:plant_1:6>;
 val cactusJuice = <cuisine:glass_bottle>.withTag({Fluid: {FluidName: "cuisine_juice", Amount: 250, Tag: {material: "cactus"}}});
 cactusJuice.addTooltip("Refreshing, but mildly toxic");
 
-recipes.addShapeless(cactusJuice, [<minecraft:cactus>,<minecraft:cactus>,<minecraft:cactus>,<minecraft:glass_bottle>]);
+recipes.addShapeless(cactusJuice, [tinyCactus,tinyCactus,tinyCactus,<minecraft:glass_bottle>]);
 
 mods.jei.JEI.addItem(cactusJuice);
