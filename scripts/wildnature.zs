@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 
 var fullyRemove = [
 <wildnature:amethyst>,<wildnature:amethyst_shard>,<wildnature:amethyst_ore>,<wildnature:amethyst_block>,
@@ -10,17 +11,62 @@ var fullyRemove = [
 <wildnature:steel_ingot>,<wildnature:steel_block>,<wildnature:steel_rod>,<wildnature:steel_sword>,<wildnature:steel_hoe>,<wildnature:steel_axe>,<wildnature:steel_pickaxe>,<wildnature:steel_shovel>,
 <wildnature:diamond_rod>,
 <wildnature:ironworks>] as IItemStack[];
-var removeRecipes = [
-<wildnature:amethyst_sword>,<wildnature:amethyst_hoe>,<wildnature:amethyst_axe>,<wildnature:amethyst_pickaxe>,<wildnature:amethyst_shovel>,
-<wildnature:sapphire_sword>,<wildnature:sapphire_hoe>,<wildnature:sapphire_axe>,<wildnature:sapphire_pickaxe>,<wildnature:sapphire_shovel>,
-<wildnature:ruby_sword>,<wildnature:ruby_hoe>,<wildnature:ruby_axe>,<wildnature:ruby_pickaxe>,<wildnature:ruby_shovel>,
-<wildnature:amber_sword>,<wildnature:amber_hoe>,<wildnature:amber_axe>,<wildnature:amber_pickaxe>,<wildnature:amber_shovel>,
-<wildnature:malachite_sword>,<wildnature:malachite_hoe>,<wildnature:malachite_axe>,<wildnature:malachite_pickaxe>,<wildnature:malachite_shovel>
-] as IItemStack[];
+
+var swords = [<wildnature:amethyst_sword>,<wildnature:sapphire_sword>,<wildnature:ruby_sword>,<wildnature:amber_sword>,<wildnature:malachite_sword>] as IItemStack[];
+var hoes = [<wildnature:amethyst_hoe>,<wildnature:sapphire_hoe>,<wildnature:ruby_hoe>,<wildnature:amber_hoe>,<wildnature:malachite_hoe>] as IItemStack[];
+var axes = [<wildnature:amethyst_axe>,<wildnature:sapphire_axe>,<wildnature:ruby_axe>,<wildnature:amber_axe>,<wildnature:malachite_axe>] as IItemStack[];
+var picks = [<wildnature:amethyst_pickaxe>,<wildnature:sapphire_pickaxe>,<wildnature:ruby_pickaxe>,<wildnature:amber_pickaxe>,<wildnature:malachite_pickaxe>] as IItemStack[];
+var shovels = [<wildnature:amethyst_shovel>,<wildnature:sapphire_shovel>,<wildnature:ruby_shovel>,<wildnature:amber_shovel>,<wildnature:malachite_shovel>] as IItemStack[];
+
+var tools = [swords, hoes, axes, picks, shovels] as IItemStack[][];
+
+
+// remove unwanted items
 
 for fr in fullyRemove {
 	mods.jei.JEI.removeAndHide(fr);
 }
-for rr in removeRecipes {
-	recipes.remove(rr);
+
+
+// remove recipes for gem tools
+
+for tool in tools {
+	for tr in tool {
+		recipes.remove(tr);
+	}
+}
+
+
+// add new recipes for gem tools
+
+var gems = [<ore:gemTanzanite>,<ore:gemSapphire>,<ore:gemRuby>,<ore:gemAmber>,<ore:gemMalachite>] as IIngredient[];
+var stick = <minecraft:stick>;
+
+for i, gem in gems {
+	recipes.addShaped(swords[i], [[gem],[gem],[stick]]);
+	recipes.addShapedMirrored(hoes[i], [
+		[gem,gem],
+		[null,stick],
+		[null,stick]]);
+	recipes.addShapedMirrored(axes[i], [
+		[gem,gem],
+		[gem,stick],
+		[null,stick]]);
+	recipes.addShaped(picks[i], [
+		[gem,gem,gem],
+		[null,stick,null],
+		[null,stick,null]]);
+	recipes.addShaped(shovels[i], [[gem],[stick],[stick]]);
+}
+
+
+// rename tools
+
+var gemNames = ["Tanzanite","Sapphire","Ruby","Amber","Malachite"] as string[];
+var toolNames = ["Sword","Hoe","Axe","Pickaxe","Shovel"] as string[];
+
+for i, toolType in tools {
+	for j, tool in toolType {
+		tool.displayName = gemNames[j] + " " + toolNames[i];
+	}
 }
