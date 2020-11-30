@@ -9,28 +9,30 @@ recipes.remove(<minecraft:diamond_helmet>);
 recipes.remove(<minecraft:diamond_chestplate>);
 recipes.remove(<minecraft:diamond_leggings>);
 recipes.remove(<minecraft:diamond_boots>);
+recipes.remove(<tinkersforging:hammer/diamond>);
 
 val diamond = <ore:gemDiamond>;
+val stick = <ore:stickWood>;
 
 recipes.addShaped(<minecraft:diamond_pickaxe>, [
 	[diamond,diamond,diamond],
 	[null,<thermalfoundation:tool.pickaxe_bronze>,null],
-	[null,<ore:stickWood>,null]
+	[null,stick,null]
 ]);
 recipes.addShaped(<minecraft:diamond_shovel>, [
 	[diamond],
 	[<thermalfoundation:tool.shovel_bronze>],
-	[<ore:stickWood>]
+	[stick]
 ]);
 recipes.addShapedMirrored(<minecraft:diamond_axe>, [
 	[diamond,diamond],
 	[diamond,<thermalfoundation:tool.axe_bronze>],
-	[null,<ore:stickWood>]
+	[null,stick]
 ]);
 recipes.addShapedMirrored(<minecraft:diamond_hoe>, [
 	[diamond,diamond],
 	[null,<thermalfoundation:tool.hoe_bronze>],
-	[null,<ore:stickWood>]
+	[null,stick]
 ]);
 recipes.addShaped(<minecraft:diamond_sword>, [
 	[diamond],
@@ -56,4 +58,10 @@ recipes.addShaped(<minecraft:diamond_leggings>, [
 recipes.addShaped(<minecraft:diamond_boots>, [
 	[diamond,<thermalfoundation:armor.boots_bronze>,diamond],
 	[diamond,null,diamond],
+]);
+
+recipes.addShaped(<tinkersforging:hammer/diamond>, [
+	[diamond,diamond,diamond],
+	[diamond,<tinkersforging:hammer/bronze>,diamond],
+	[null,stick,null]
 ]);
