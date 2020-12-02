@@ -72,7 +72,7 @@
 			"dimension": "all"
 		},
 		"ender_clathrate": {
-			"enabled": "false",
+			"enabled": "true",
 			"distribution": "uniform",
 			"generator": {
 				"block": {

@@ -2,31 +2,95 @@
 	"dependencies": "thermalfoundation",
 	"populate": {
 		"copper": {
-			"enabled": "false"
+			"enabled": "true",
+			"distribution": "sequential",
+			"features": [
+				{
+					"distribution": "uniform",
+					"generator": {
+						"block": "crossroads:ore_copper",
+						"material": "minecraft:stone",
+						"type": "large-vein",
+						"cluster-size": 200
+					},
+					"cluster-count": 4,
+					"min-height": 2,
+					"max-height": 48
+				},
+				{
+					"distribution": "uniform",
+					"generator": {
+						"block": "crossroads:ore_native_copper",
+						"material": "minecraft:stone",
+						"type": "cluster",
+						"cluster-size": 5
+					},
+					"cluster-count": 48,
+					"min-height": 48,
+					"max-height": 72
+				}
+			],
+			"chunk-chance": 200,
+			"retrogen": false,
+			"biome": {
+				"restriction": "blacklist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "DESERT"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
 		},
 		"tin": {
-			"enabled": "false",
-		},
-		"silver": {
-			"enabled": "false",
+			"enabled": "true",
 			"distribution": "uniform",
 			"generator": {
-				"block": [
+				"block": "crossroads:ore_tin",
+				"material": "minecraft:stone",
+				"type": "large-vein",
+				"cluster-size": 75
+			},
+			"cluster-count": 4,
+			"chunk-chance": 300,
+			"min-height": 2,
+			"max-height": 30,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
 					{
-						"name": "thermalfoundation:ore",
-						"properties": {
-							"type": "silver"
-						},
-						"weight": 80
-					},
-					{
-						"name": "thermalfoundation:ore",
-						"properties": {
-							"type": "lead"
-						},
-						"weight": 20
+						"type": "dictionary",
+						"entry": ["WARM", "COOL", "SNOWY"]
 					}
-				],
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"silver": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"properties": {
+						"type": "silver"
+					},
+					"weight": 80
+				},
 				"material": "minecraft:stone",
 				"type": "large-vein",
 				"cluster-size": 40
@@ -37,11 +101,11 @@
 			"max-height": 48,
 			"retrogen": "true",
 			"biome": {
-				"restriction": "blacklist",
+				"restriction": "whitelist",
 				"value": [
 					{
 						"type": "dictionary",
-						"entry": "DESERT"
+						"entry": ["COOL", "SNOWY"]
 					}
 				]
 			},
@@ -54,25 +118,15 @@
 			}
 		},
 		"lead": {
-			"enabled": "false",
+			"enabled": "true",
 			"distribution": "uniform",
 			"generator": {
-				"block": [
-					{
-						"name": "thermalfoundation:ore",
-						"properties": {
-							"type": "lead"
-						},
-						"weight": 90
-					},
-					{
-						"name": "thermalfoundation:ore",
-						"properties": {
-							"type": "silver"
-						},
-						"weight": 10
+				"block": {
+					"name": "thermalfoundation:ore",
+					"properties": {
+						"type": "lead"
 					}
-				],
+				},
 				"material": "minecraft:stone",
 				"type": "large-vein",
 				"cluster-size": 40
@@ -83,11 +137,11 @@
 			"max-height": 48,
 			"retrogen": "true",
 			"biome": {
-				"restriction": "blacklist",
+				"restriction": "whitelist",
 				"value": [
 					{
 						"type": "dictionary",
-						"entry": "DESERT"
+						"entry": ["COOL", "SNOWY"]
 					}
 				]
 			},
@@ -100,7 +154,7 @@
 			}
 		},
 		"nickel": {
-			"enabled": "true",
+			"enabled": "false",
 			"distribution": "uniform",
 			"generator": {
 				"block": {
@@ -136,7 +190,7 @@
 			}
 		},
 		"platinum": {
-			"enabled": "false",
+			"enabled": "true",
 			"distribution": "uniform",
 			"generator": {
 				"block": [
@@ -145,14 +199,14 @@
 						"properties": {
 							"type": "platinum"
 						},
-						"weight": 40
+						"weight": 10
 					},
 					{
 						"name": "thermalfoundation:ore",
 						"properties": {
-							"type": "nickel"
+							"type": "mithril"
 						},
-						"weight": 60
+						"weight": 1
 					}
 				],
 				"material": "minecraft:stone",
@@ -165,11 +219,11 @@
 			"max-height": 32,
 			"retrogen": "true",
 			"biome": {
-				"restriction": "blacklist",
+				"restriction": "whitelist",
 				"value": [
 					{
 						"type": "dictionary",
-						"entry": "DESERT"
+						"entry": "SNOWY"
 					}
 				]
 			},
