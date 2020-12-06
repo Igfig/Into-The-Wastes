@@ -7,7 +7,6 @@ for i in 0 to 10 {
 
 
 // prevent Cuisine juice bottles from stacking
-// TODO also prevent foods from stacking past 8
 
 <cuisine:glass_bottle>.maxStackSize = 1;
 
