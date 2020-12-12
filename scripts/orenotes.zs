@@ -1,0 +1,1 @@
+<mysticalworld:amethyst_ore>.addTooltip("Appears only in jungles");
