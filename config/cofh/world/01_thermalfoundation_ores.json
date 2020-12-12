@@ -3,33 +3,16 @@
 	"populate": {
 		"copper": {
 			"enabled": "true",
-			"distribution": "sequential",
-			"features": [
-				{
-					"distribution": "uniform",
-					"generator": {
-						"block": "crossroads:ore_copper",
-						"material": "minecraft:stone",
-						"type": "large-vein",
-						"cluster-size": 200
-					},
-					"cluster-count": 4,
-					"min-height": 2,
-					"max-height": 48
-				},
-				{
-					"distribution": "uniform",
-					"generator": {
-						"block": "crossroads:ore_native_copper",
-						"material": "minecraft:stone",
-						"type": "cluster",
-						"cluster-size": 5
-					},
-					"cluster-count": 48,
-					"min-height": 48,
-					"max-height": 72
-				}
-			],
+			"distribution": "uniform",
+			"generator": {
+				"block": "crossroads:ore_copper",
+				"material": "minecraft:stone",
+				"type": "large-vein",
+				"cluster-size": 200
+			},
+			"cluster-count": 4,
+			"min-height": 2,
+			"max-height": 48
 			"chunk-chance": 200,
 			"retrogen": false,
 			"biome": {

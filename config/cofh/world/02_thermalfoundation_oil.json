@@ -3,35 +3,61 @@
 	"populate": {
 		"oil_sand": {
 			"enabled": "true",
-			"distribution": "uniform",
-			"generator": {
-				"type": "geode",
-				"block": [
-					{
-						"name": "thermalfoundation:ore_fluid",
-						"properties": {
-							"type": "crude_oil_sand"
-						},
-						"weight": 80
+			"distribution": "sequential",
+			"features": [
+				{
+					"distribution": "uniform",
+					"generator": {
+						"type": "geode",
+						"block": [
+							{
+								"name": "thermalfoundation:ore_fluid",
+								"properties": {
+									"type": "crude_oil_sand"
+								},
+								"weight": 80
+							},
+							{
+								"name": "minecraft:sand",
+								"weight": 20
+							}
+						],
+						"material": [
+							"minecraft:sand",
+							"minecraft:sandstone",
+							"minecraft:red_sandstone",
+							"minecraft:stone",
+							{
+								"name": "minecraft:sand",
+								"properties": {
+									"variant": "red_sand"
+								}
+							}
+						],
+						"hollow": "true",
+						"filler": "thermalfoundation:fluid_crude_oil",
+						"crust": "minecraft:sandstone"
 					},
-					{
-						"name": "minecraft:sand",
-						"weight": 20
-					}
-				],
-				"material": [
-					"minecraft:sand",
-					"minecraft:sandstone",
-					"minecraft:stone"
-				],
-				"hollow": "true",
-				"filler": "thermalfoundation:fluid_crude_oil",
-				"crust": "minecraft:sandstone"
-			},
-			"cluster-count": 10,
+					"cluster-count": 20,
+					"min-height": 30,
+					"max-height": 90,
+				},
+				{
+					"distribution": "surface",
+					"generator": {
+						"type": "spout",
+						"block": "thermalfoundation:fluid_crude_oil",
+						"radius": 0,
+						"height": {
+							"min": 3,
+							"max": 8
+						}
+					},
+					"material": "minecraft:sand",
+					"cluster-count": 2
+				}
+			],
 			"chunk-chance": 4000,
-			"min-height": 30,
-			"max-height": 90,
 			"in-village": "false",
 			"retrogen": "true",
 			"biome": {

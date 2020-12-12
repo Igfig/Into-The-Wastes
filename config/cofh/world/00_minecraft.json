@@ -2,7 +2,6 @@
 	"priority": 1000000000000,
 	"populate": {
 		"dirt": {
-
 			"distribution": "uniform",
 			"generator": {
 				"block": "dirt",
@@ -113,6 +112,36 @@
 			"max-height": 80,
 			"retrogen": false,
 			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		
+		"clay": {
+			"distribution": "underfluid",
+			"generator": {
+				"block": "clay",
+				"fluid": "water",
+				"material": ["minecraft:dirt", "minecraft:stone"],
+				"cluster-size": 32
+			},
+			"cluster-count": 10,
+			"min-height": 60,
+			"max-height": 100,
+			"retrogen": false,
+			"biome": {
+				"restriction": "blacklist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "DESERT"
+					}
+				]
+			},
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
@@ -325,7 +354,13 @@
 			"enabled": true,
 			"distribution": "uniform",
 			"generator": {
-				"block": "gold_ore",
+				"block": {
+					"name": "railcraft:ore_metal_poor",
+					"properties": {
+						"variant": "gold"
+					},
+					"weight": 4
+				},
 				"material": "minecraft:stone",
 				"cluster-size": 1
 			},
@@ -389,20 +424,29 @@
 						"weight": 20
 					},
 					{
-						"name": "iron_ore",
-						"weight": 20
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "iron"
+						},
+						"weight": 40
 					},
 					{
 						"name": "redstone_ore",
 						"weight": 8
 					},
 					{
-						"name": "crossroads:ore_copper",
-						"weight": 8
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "copper"
+						},
+						"weight": 16
 					},
 					{
-						"name": "gold_ore",
-						"weight": 2
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "gold"
+						},
+						"weight": 4
 					},
 					{
 						"name": "lapis_ore",
@@ -416,7 +460,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 1
 			},
-			"cluster-count": 40,
+			"cluster-count": 80,
 			"min-height": 2,
 			"max-height": 64,
 			"retrogen": false,
@@ -447,24 +491,36 @@
 						"weight": 20
 					},
 					{
-						"name": "iron_ore",
-						"weight": 20
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "iron"
+						},
+						"weight": 40
 					},
 					{
 						"name": "redstone_ore",
 						"weight": 8
 					},
 					{
-						"name": "crossroads:ore_copper",
-						"weight": 8
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "copper"
+						},
+						"weight": 16
 					},
 					{
-						"name": "crossroads:ore_tin",
-						"weight": 2
-					}
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "tin"
+						},
+						"weight": 4
+					},
 					{
-						"name": "gold_ore",
-						"weight": 2
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "gold"
+						},
+						"weight": 4
 					},
 					{
 						"name": "lapis_ore",
@@ -478,7 +534,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 1
 			},
-			"cluster-count": 40,
+			"cluster-count": 80,
 			"min-height": 2,
 			"max-height": 64,
 			"retrogen": false,
@@ -509,24 +565,36 @@
 						"weight": 20
 					},
 					{
-						"name": "iron_ore",
-						"weight": 20
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "iron"
+						},
+						"weight": 40
 					},
 					{
 						"name": "redstone_ore",
 						"weight": 8
 					},
 					{
-						"name": "crossroads:ore_copper",
-						"weight": 8
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "copper"
+						},
+						"weight": 16
 					},
 					{
-						"name": "crossroads:ore_tin",
-						"weight": 2
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "tin"
+						},
+						"weight": 4
 					}
 					{
-						"name": "gold_ore",
-						"weight": 2
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "gold"
+						},
+						"weight": 4
 					},
 					{
 						"name": "lapis_ore",
@@ -536,25 +604,25 @@
 						"name": "diamond_ore",
 						"weight": 1
 					},
-					 {
-						"name": "thermalfoundation:ore",
+					{
+						"name": "railcraft:ore_metal_poor",
 						"properties": {
-							"type": "silver"
+							"variant": "silver"
 						},
-						"weight": 4
+						"weight": 8
 					},
 					{
-						"name": "thermalfoundation:ore",
+						"name": "railcraft:ore_metal_poor",
 						"properties": {
-							"type": "lead"
+							"variant": "lead"
 						}
-						"weight": 4
+						"weight": 8
 					}
 				],				
 				"material": "minecraft:stone",
 				"cluster-size": 1
 			},	
-			"cluster-count": 40,
+			"cluster-count": 80,
 			"min-height": 2,
 			"max-height": 64,
 			"retrogen": false,
@@ -584,24 +652,36 @@
 						"weight": 20
 					},
 					{
-						"name": "iron_ore",
-						"weight": 20
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "iron"
+						},
+						"weight": 40
 					},
 					{
 						"name": "redstone_ore",
 						"weight": 8
 					},
 					{
-						"name": "crossroads:ore_copper",
-						"weight": 8
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "copper"
+						},
+						"weight": 16
 					},
 					{
-						"name": "crossroads:ore_tin",
-						"weight": 2
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "tin"
+						},
+						"weight": 4
 					}
 					{
-						"name": "gold_ore",
-						"weight": 2
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "gold"
+						},
+						"weight": 4
 					},
 					{
 						"name": "lapis_ore",
@@ -610,20 +690,20 @@
 					{
 						"name": "diamond_ore",
 						"weight": 1
-					},
+					}
 					 {
-						"name": "thermalfoundation:ore",
+						"name": "railcraft:ore_metal_poor",
 						"properties": {
-							"type": "silver"
+							"variant": "silver"
 						},
-						"weight": 4
+						"weight": 8
 					},
 					{
-						"name": "thermalfoundation:ore",
+						"name": "railcraft:ore_metal_poor",
 						"properties": {
-							"type": "lead"
+							"variant": "lead"
 						}
-						"weight": 4
+						"weight": 8
 					},
 					{
 						"name": "thermalfoundation:ore",
@@ -636,7 +716,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 1
 			},
-			"cluster-count": 40,
+			"cluster-count": 80,
 			"min-height": 2,
 			"max-height": 64,
 			"retrogen": false,
@@ -734,6 +814,10 @@
 					{
 						"name": "quartz_ore",
 						"weight": 20
+					},
+					{
+						"name": "crossroads:ore_ruby",
+						"weight": 1
 					},
 					{
 						"name": "thermalfoundation:ore_fluid",
@@ -1027,6 +1111,58 @@
 					1
 				]
 			}
-		}
+		},
+		
+		"saltpeter": {
+			"distribution": "sequential",
+			"features": [
+				{
+					"distribution": "uniform",
+					"generator": {
+						"block": "railcraft:worldlogic",
+						"material": ["minecraft:bedrock", "minecraft:stone"],
+						"type": "cluster",
+						"cluster-size": 1
+					},
+					"cluster-count": 2,
+					"min-height": 0,
+					"max-height": 4,
+				},
+				{
+					"distribution": "surface",
+					"generator": {
+						"block": {
+							"name": "railcraft:ore",
+							"properties": {
+								"variant": "saltpeter"
+							},
+						},
+						"material": "minecraft:sand",
+						"type": "cluster",
+						"cluster-size": 16
+					},
+					"material": "minecraft:sand",
+					"cluster-count": 3
+				}
+			],
+			"chunk-chance": 800,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "SANDY"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
 	}
 }
