@@ -1,6 +1,8 @@
+cache
 crash-reports
 defaults
 downloads
+libraries
 llibrary
 logs
 output
@@ -13,7 +15,6 @@ shaderpacks
 /*.json
 /*.txt
 /*.log
-/libraries
 /servers.dat
 /mods/OptiFine_*.jar
 /mods/*.disabled
