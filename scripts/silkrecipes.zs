@@ -1,5 +1,5 @@
 var silk = <materialpart:silk:cloth>;
-var stringItem = <minecraft:string>;
+var stringItem = <mysticalworld:silk_thread>;
 
 recipes.addShaped(silk, [
 	[stringItem, stringItem, stringItem],
