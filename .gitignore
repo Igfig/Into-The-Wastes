@@ -12,6 +12,7 @@ shaderpacks
 /*.json
 /*.txt
 /*.log
+/cache
 /libraries
 /servers.dat
 /mods/OptiFine_*.jar
