@@ -1,24 +1,32 @@
 import crafttweaker.item.IItemStack;
 
-
 // recipes for basic molds
 
 val porcelain = <ceramics:clay_soft>;
 
 recipes.remove(<foundry:mold:0>);
-recipes.addShapeless("mold_ingot_i", <foundry:mold:0>, [porcelain,<ore:ingotIron>]);
-recipes.addShapeless("mold_ingot_g", <foundry:mold:0>, [porcelain,<ore:ingotGold>]);
-recipes.addShapeless("mold_ingot_c", <foundry:mold:0>, [porcelain,<ore:ingotCopper>]);
+recipes.addShapeless("mold_ingot", <foundry:mold:0>, [porcelain, <ore:ingotIron> | <ore:ingotGold> | <ore:ingotCopper>]);
+
+recipes.remove(<foundry:mold:1>);
+recipes.addShapeless("mold_plate", <foundry:mold:1>, [porcelain,<ore:plateIron> | <ore:plateGold> | <ore:plateCopper>]);
+
+recipes.remove(<foundry:mold:2>);
+recipes.addShapeless("mold_gear", <foundry:mold:2>, [porcelain,<ore:gearIron> | <ore:gearGold> | <ore:gearCopper>]);
+
+<foundry:mold:3>.displayName = "Rail Mold";
+<foundry:casting_table:2>.displayName = "Rail Casting Table";
+recipes.remove(<foundry:mold:3>);
+recipes.addShapeless("mold_rod", <foundry:mold:3>, [porcelain,<railcraft:rail:*>]);
 
 recipes.remove(<foundry:mold:4>);
-recipes.addShapeless("mold_block_i", <foundry:mold:4>, [porcelain,<ore:blockIron>]);
-recipes.addShapeless("mold_block_g", <foundry:mold:4>, [porcelain,<ore:blockGold>]);
-recipes.addShapeless("mold_block_c", <foundry:mold:4>, [porcelain,<ore:blockCopper>]);
+recipes.addShapeless("mold_block", <foundry:mold:4>, [porcelain,<ore:blockIron> | <ore:blockGold> | <ore:blockCopper>]);
 
 recipes.remove(<foundry:mold:7>);
-recipes.addShapeless("mold_nugget_i", <foundry:mold:7>, [porcelain,<ore:nuggetIron>]);
-recipes.addShapeless("mold_nugget_g", <foundry:mold:7>, [porcelain,<ore:nuggetGold>]);
-recipes.addShapeless("mold_nugget_c", <foundry:mold:7>, [porcelain,<ore:nuggetCopper>]);
+recipes.addShapeless("mold_nugget", <foundry:mold:7>, [porcelain,<ore:nuggetIron> | <ore:nuggetGold> | <ore:nuggetCopper>]);
+
+<foundry:mold:21>.displayName = "Orb Mold";
+recipes.remove(<foundry:mold:21>);
+recipes.addShapeless("mold_orb", <foundry:mold:21>, [porcelain, <ore:enderpearl>]);
 
 
 // recipes for tool molds

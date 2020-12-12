@@ -6,19 +6,30 @@ recipes.removeByRecipeName("guideapi:guide_journal"); // and this doesn't work e
 recipes.addShapeless("guide_journal", <guideapi:crossroads-info_guide>, [<minecraft:book>, <ore:ingotIron>]);
 
 
-// TODO and then melt everything in the crucible... there's something weird there though
-// also make sure we can cast everything to blocks and ingots in the casts
+// remove some gears we don't want
 
-// TODO melt oil sand (and oil shale?) to crude oil in crucible
-// 	ore_fluid:0,1?,5
-// one block to 750mB oil
-// melt 1 bitumen to 250mB
-// TODO grind them to tar
+mods.jei.JEI.removeAndHide(<crossroads:gear_nickel>);
+mods.jei.JEI.removeAndHide(<crossroads:gear_invar>);
+mods.jei.JEI.removeAndHide(<crossroads:large_gear_nickel>);
+mods.jei.JEI.removeAndHide(<crossroads:large_gear_invar>);
+mods.jei.JEI.removeAndHide(<crossroads:toggle_gear_nickel>);
+mods.jei.JEI.removeAndHide(<crossroads:toggle_gear_invar>);
 
-// ingot ids are: TODO
-// dust ids are: TODO
+
+//remove unused meters
+
+mods.jei.JEI.removeAndHide(<crossroads:thermometer>);
+mods.jei.JEI.removeAndHide(<crossroads:speedometer>);
+mods.jei.JEI.removeAndHide(<crossroads:fluid_gauge>);
+
+
+// cheaper omnimeter
+
+recipes.remove(<crossroads:omnimeter>);
+recipes.addShaped(<crossroads:omnimeter>, [
+	[null,<ore:ingotCopper>,null],
+	[<ore:ingotCopper>,<ore:dustRedstone>,<ore:ingotCopper>],
+	[null,<ore:ingotCopper>,null]]);
 
 
 // TODO use the Heat Exchanger to turn crude oil into naphtha (and refined fuel?)
-
-// TODO make the omnimeter a little cheaper. maybe copper instead of bronze?

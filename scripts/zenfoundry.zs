@@ -11,7 +11,7 @@ val toRemove = [
 	<foundry:componentblock:1>,<foundry:componentblock:2>,
 	<foundry:machine:0>,<foundry:machine:2>,<foundry:machine:3>,<foundry:machine:4>,<foundry:machine:5>,<foundry:machine:6>,<foundry:machine:7>,<foundry:machine:9>,
 	<foundry:casting_table:1>,<foundry:casting_table:2>,<foundry:mold_station>,<foundry:burner_heater>,
-	<foundry:mold:1>,<foundry:mold:2>,<foundry:mold:3>,<foundry:mold:5>,<foundry:mold:6>,<foundry:mold:21>
+	<foundry:mold:5>,<foundry:mold:6>
 ] as IItemStack[];
 
 
@@ -46,17 +46,3 @@ recipes.addShaped("metal_caster", <foundry:machine:1>, [
 	[null, <minecraft:bucket>, null],
 	[<minecraft:piston>, <foundry:componentblock>, <minecraft:piston>],
 	[<crossroads:gear_bronze>,<ore:dustRedstone>,<crossroads:gear_bronze>]]);
-
-
-// steel molder recipes
-// XXX may in the future remove the coke recipe and just require 2 dusts instead
-
-val steel = <thermalfoundation:material:160>;
-mods.foundry.Casting.addRecipe(steel, <liquid:iron> * 144, <foundry:mold:0>, <ore:dustCoal> * 4);
-mods.foundry.Casting.addRecipe(steel, <liquid:iron> * 144, <foundry:mold:0>, <ore:dustCharcoal> * 4);
-mods.foundry.Casting.addRecipe(steel, <liquid:iron> * 144, <foundry:mold:0>, <ore:fuelCoke>);
-
-val steelBlock = <thermalfoundation:storage_alloy:0>;
-mods.foundry.Casting.addRecipe(steelBlock, <liquid:iron> * 1296, <foundry:mold:4>, <ore:dustCoal> * 36);
-mods.foundry.Casting.addRecipe(steelBlock, <liquid:iron> * 1296, <foundry:mold:4>, <ore:dustCharcoal> * 36);
-mods.foundry.Casting.addRecipe(steelBlock, <liquid:iron> * 1296, <foundry:mold:4>, <ore:fuelCoke> * 9);

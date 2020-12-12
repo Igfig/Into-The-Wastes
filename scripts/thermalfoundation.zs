@@ -8,18 +8,16 @@ val storageAlloysToRemove = [2,4,5,6,7] as int[];
 
 val materialsToRemove = [
 	22,23,24,25,26,27, // vanilla gears
-	32,33, // vanilla plates
 	68,69,71,98,100,101,102,103, // unwanted dusts
 	132,133,135,162,163,164,165,166,167, // unwanted ingots
 	196,197,199,226,227,228,229,230,231, // unwanted nuggets
 	256,257,258,259,260,261,262,263,264,288,289,290,291,292,293,294,295, // gears
-	320,321,322,323,324,325,326,327,328,352,353,354,355,356,357,358,359, // plates
+	324,325,327,328,354,356,357,358,359, // plates
 	512,513,514,515,640,656,657, // misc parts
 	771, // redundant sulfur
 	816,817,818,819, // biomass
 	832, // rosin
-	865,866, // richer slags
-	893,894,895 // clathrates
+	865,866 // richer slags
 ] as int[];
 
 val oreDef = <thermalfoundation:ore>.definition;
@@ -55,20 +53,17 @@ mods.jei.JEI.removeAndHide(<thermalfoundation:ore_fluid:1>); // oil shale
 recipes.removeByRecipeName("thermalfoundation:fertilizer_2");
 recipes.removeByRecipeName("thermalfoundation:fertilizer_3");
 
-recipes.removeByRecipeName("thermalfoundation:meter");
+mods.jei.JEI.removeAndHide(<thermalfoundation:meter>);
 
 
-// add some recipes
-recipes.addShaped("tf_meter", <thermalfoundation:meter>, [
-	[<ore:ingotCopper>, null, <ore:ingotCopper>],
-	[<ore:ingotIron>,<ore:ingotGold>,<ore:ingotIron>],
-	[null,<ore:gearGold>,null]
-]);
+// add new recipes
 
-furnace.addRecipe(<thermalfoundation:material:892>, <ore:oreClathrateOilSand>); // bitumen
+furnace.addRecipe(<thermalfoundation:material:892> * 3, <ore:oreClathrateOilSand>); // bitumen
 
 
-// TODO a way to get coal coke
-// TODO melt down oil sand to crude oil in crucible 
-// TODO recipes for thermalfoundation hardened glass
 // TODO some way to turn potions into liquid potion
+// TODO some way to get mana dust or primal mana. (Once we get the one, we can make the other.)
+//	Probably you need to refine it from platinum (+ copshowium? Some alchemical material?) using one of the magic mods
+//	Or perhaps some of the endgame mobs occasionally drop small amounts of it
+//  You only need a small amount; silver turns into mana infused metal on contact with the liquid.
+// TODO should I put a tooltip on it about that?

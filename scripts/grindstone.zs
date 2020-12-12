@@ -29,7 +29,6 @@ val ingots = {
 	768:<ore:coal>,
 	769:<ore:charcoal>,
 	770:<ore:obsidian>,
-	772:<ore:sandstone>, // niter
 	800:<ore:plankWood>, // sawdust
 	833:<ore:oreClathrateOilSand> // tar
 	
@@ -44,9 +43,15 @@ for id, ingot in ingots {
 }
 
 
+// grind elemental rods to dust
+
+mods.crossroads.Grindstone.addRecipe(<minecraft:blaze_rod>, <minecraft:blaze_powder> * 4);
+mods.crossroads.Grindstone.addRecipe(<thermalfoundation:material:2048>, <thermalfoundation:material:2049> * 4); // blizz
+mods.crossroads.Grindstone.addRecipe(<thermalfoundation:material:2050>, <thermalfoundation:material:2051> * 4); // blitz
+mods.crossroads.Grindstone.addRecipe(<thermalfoundation:material:2052>, <thermalfoundation:material:2053> * 4); // basalz
+
+
 // additional grindstone recipes
 
 mods.crossroads.Grindstone.addRecipe(<ore:logWood>, <thermalfoundation:material:800> * 4); // sawdust
-
-// TODO salt
-// TODO rods to dust, perhaps
+mods.crossroads.Grindstone.addRecipe(<ore:enderpearl>, <railcraft:dust:6>); // ender powder
