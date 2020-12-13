@@ -1112,6 +1112,39 @@
 				]
 			}
 		},
+
+		"amethyst": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "mysticalworld:amethyst_ore",
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			}
+			"cluster-count": {
+				"min": 75,
+				"max": 150
+			},
+			"chunk-chance": 500,
+			"min-height": 4,
+			"max-height": 72,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "JUNGLE"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
 		
 		"saltpeter": {
 			"distribution": "sequential",

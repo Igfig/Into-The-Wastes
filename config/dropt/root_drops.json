@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "biomesoplenty:plant_1:9"
+          ]
+        }
+      },
+	  "drops": [
+        {
+          "selector": {
+            "weight": {
+              "value": 90
+            }
+          },
+		  "item": {
+            "items" : []
+          }
+        },
+        {
+          "selector": {
+            "weight": {
+              "value": 10
+            }
+          },
+          "item": {
+            "items" : ["roots:wildroot"]
+          }
+        }
+      ]
+    }
+  ]
+}

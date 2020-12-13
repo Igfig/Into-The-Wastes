@@ -15,14 +15,15 @@
 <biomesoplenty:gem_ore:5>.addTooltip("Appears in mines in swamps"); // malachite
 <biomesoplenty:gem_ore:6>.addTooltip("Appears in mines in seas"); // sapphire
 <biomesoplenty:gem_ore:7>.addTooltip("Appears in mines in forests"); // amber
+<mysticalworld:amethyst_ore>.addTooltip("Appears only in jungles");
 
 <crossroads:ore_copper>.addTooltip("Appears in mines in oases");
-<crossroads:ore_tin>.addTooltip("Appears in mines in oases beyond Â±1000z");
+<crossroads:ore_tin>.addTooltip("Appears in mines in oases beyond ±1000z");
 
-<thermalfoundation:ore:2>.addTooltip("Appears in mines in oases beyond Â±3000z");
-<thermalfoundation:ore:3>.addTooltip("Appears in mines in oases beyond Â±3000z");
-<thermalfoundation:ore:6>.addTooltip("Appears in oases beyond Â±6000z");
-<thermalfoundation:ore:8>.addTooltip("Appears in platinum mines beyond Â±6000z");
+<thermalfoundation:ore:2>.addTooltip("Appears in mines in oases beyond ±3000z");
+<thermalfoundation:ore:3>.addTooltip("Appears in mines in oases beyond ±3000z");
+<thermalfoundation:ore:6>.addTooltip("Appears in oases beyond ±6000z");
+<thermalfoundation:ore:8>.addTooltip("Appears in platinum mines beyond ±6000z");
 
 <thermalfoundation:ore_fluid:0>.addTooltip("Appears in the desert"); // oil sand
 <thermalfoundation:ore_fluid:2>.addTooltip("Appears in redstone mines");
@@ -35,6 +36,6 @@
 <railcraft:ore_metal_poor:0>.addTooltip("Appears in oases");
 <railcraft:ore_metal_poor:1>.addTooltip("Appears in oases and mesas");
 <railcraft:ore_metal_poor:2>.addTooltip("Appears in oases");
-<railcraft:ore_metal_poor:3>.addTooltip("Appears in oases beyond Â±1000z"); // tin
-<railcraft:ore_metal_poor:4>.addTooltip("Appears in oases beyond Â±3000z"); // lead
-<railcraft:ore_metal_poor:5>.addTooltip("Appears in oases beyond Â±3000z"); // silver
+<railcraft:ore_metal_poor:3>.addTooltip("Appears in oases beyond ±1000z"); // tin
+<railcraft:ore_metal_poor:4>.addTooltip("Appears in oases beyond ±3000z"); // lead
+<railcraft:ore_metal_poor:5>.addTooltip("Appears in oases beyond ±3000z"); // silver
