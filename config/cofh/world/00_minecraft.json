@@ -159,7 +159,7 @@
 				"cluster-size": 170
 			},
 			"cluster-count": 10,
-			"chunk-chance": 100,
+			"chunk-chance": 200,
 			"min-height": 0,
 			"max-height": 96,
 			"retrogen": false,
@@ -190,7 +190,7 @@
 				"cluster-size": 60
 			},
 			"cluster-count": 15,
-			"chunk-chance": 100,
+			"chunk-chance": 200,
 			"min-height": 0,
 			"max-height": 64,
 			"retrogen": false,
@@ -221,7 +221,7 @@
 				"cluster-size": 110
 			},
 			"cluster-count": 2,
-			"chunk-chance": 250,
+			"chunk-chance": 500,
 			"min-height": 0,
 			"max-height": 48,
 			"retrogen": false,
@@ -297,7 +297,7 @@
 				"cluster-size": 8
 			},
 			"cluster-count": 25,
-			"chunk-chance": 500,
+			"chunk-chance": 1000,
 			"min-height": 0,
 			"max-height": 56,
 			"retrogen": false,
@@ -328,7 +328,7 @@
 				"cluster-size": 14
 			},
 			"cluster-count": 10,
-			"chunk-chance": 400,
+			"chunk-chance": 800,
 			"center-height": 24,
 			"spread": 24,
 			"retrogen": false,
@@ -831,7 +831,7 @@
 				"cluster-size": 70
 			},
 			"cluster-count": 16,
-			"chunk-chance": 200,
+			"chunk-chance": 400,
 			"min-height": 10,
 			"max-height": 118,
 			"retrogen": false,
