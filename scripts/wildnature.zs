@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-var fullyRemove = [
+val fullyRemove = [
 <wildnature:amethyst>,<wildnature:amethyst_shard>,<wildnature:amethyst_ore>,<wildnature:amethyst_block>,
 <wildnature:sapphire>,<wildnature:sapphire_shard>,<wildnature:sapphire_ore>,<wildnature:sapphire_block>,
 <wildnature:ruby>,<wildnature:ruby_shard>,<wildnature:ruby_ore>,<wildnature:ruby_block>,
@@ -12,13 +12,13 @@ var fullyRemove = [
 <wildnature:diamond_rod>,
 <wildnature:ironworks>] as IItemStack[];
 
-var swords = [<wildnature:amethyst_sword>,<wildnature:sapphire_sword>,<wildnature:ruby_sword>,<wildnature:amber_sword>,<wildnature:malachite_sword>] as IItemStack[];
-var hoes = [<wildnature:amethyst_hoe>,<wildnature:sapphire_hoe>,<wildnature:ruby_hoe>,<wildnature:amber_hoe>,<wildnature:malachite_hoe>] as IItemStack[];
-var axes = [<wildnature:amethyst_axe>,<wildnature:sapphire_axe>,<wildnature:ruby_axe>,<wildnature:amber_axe>,<wildnature:malachite_axe>] as IItemStack[];
-var picks = [<wildnature:amethyst_pickaxe>,<wildnature:sapphire_pickaxe>,<wildnature:ruby_pickaxe>,<wildnature:amber_pickaxe>,<wildnature:malachite_pickaxe>] as IItemStack[];
-var shovels = [<wildnature:amethyst_shovel>,<wildnature:sapphire_shovel>,<wildnature:ruby_shovel>,<wildnature:amber_shovel>,<wildnature:malachite_shovel>] as IItemStack[];
+val swords = [<wildnature:amethyst_sword>.withTag({display:{LocName: "Tanzanite Sword"}}),<wildnature:sapphire_sword>,<wildnature:ruby_sword>,<wildnature:amber_sword>,<wildnature:malachite_sword>] as IItemStack[];
+val hoes = [<wildnature:amethyst_hoe>.withTag({display:{LocName: "Tanzanite Hoe"}}),<wildnature:sapphire_hoe>,<wildnature:ruby_hoe>,<wildnature:amber_hoe>,<wildnature:malachite_hoe>] as IItemStack[];
+val axes = [<wildnature:amethyst_axe>.withTag({display:{LocName: "Tanzanite Axe"}}),<wildnature:sapphire_axe>,<wildnature:ruby_axe>,<wildnature:amber_axe>,<wildnature:malachite_axe>] as IItemStack[];
+val picks = [<wildnature:amethyst_pickaxe>.withTag({display:{LocName: "Tanzanite Pickaxe"}}),<wildnature:sapphire_pickaxe>,<wildnature:ruby_pickaxe>,<wildnature:amber_pickaxe>,<wildnature:malachite_pickaxe>] as IItemStack[];
+val shovels = [<wildnature:amethyst_shovel>.withTag({display:{LocName: "Tanzanite Shovel"}}),<wildnature:sapphire_shovel>,<wildnature:ruby_shovel>,<wildnature:amber_shovel>,<wildnature:malachite_shovel>] as IItemStack[];
 
-var tools = [swords, hoes, axes, picks, shovels] as IItemStack[][];
+val tools = [swords, hoes, axes, picks, shovels] as IItemStack[][];
 
 
 // remove unwanted items
@@ -39,8 +39,8 @@ for tool in tools {
 
 // add new recipes for gem tools
 
-var gems = [<ore:gemTanzanite>,<ore:gemSapphire>,<ore:gemRuby>,<ore:gemAmber>,<ore:gemMalachite>] as IIngredient[];
-var stick = <minecraft:stick>;
+val gems = [<ore:gemTanzanite>,<ore:gemSapphire>,<ore:gemRuby>,<ore:gemAmber>,<ore:gemMalachite>] as IIngredient[];
+val stick = <minecraft:stick>;
 
 for i, gem in gems {
 	recipes.addShaped(swords[i], [[gem],[gem],[stick]]);
@@ -62,11 +62,15 @@ for i, gem in gems {
 
 // rename tools
 
-var gemNames = ["Tanzanite","Sapphire","Ruby","Amber","Malachite"] as string[];
-var toolNames = ["Sword","Hoe","Axe","Pickaxe","Shovel"] as string[];
+val gemNames = ["Amethyst","Sapphire","Ruby","Amber","Malachite"] as string[];
+val toolNames = ["Sword","Hoe","Axe","Pickaxe","Shovel"] as string[];
 
 for i, toolType in tools {
 	for j, tool in toolType {
 		tool.displayName = gemNames[j] + " " + toolNames[i];
+		
+		if (j == 0) {
+			mods.jei.JEI.addItem(tool);
+		}
 	}
 }
