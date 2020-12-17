@@ -1,3 +1,14 @@
+// add new work knives
+
+<ore:toolWorkBlade>.addItems([
+	<mysticalworld:amethyst_knife>,
+	<mysticalworld:copper_knife>,
+	<mysticalworld:silver_knife>,
+	<roots:iron_knife>,
+	<roots:gold_knife>
+]);
+
+
 // add recipes for some missing materials
 
 recipes.addShapeless(<minecraft:stick>, [<ore:treeSapling>]);
