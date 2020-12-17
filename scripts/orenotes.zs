@@ -7,7 +7,7 @@
 <minecraft:quartz_ore>.addTooltip("Appears in the Nether");
 
 <minecraft:emerald_ore>.addTooltip("Appears only in mountains");
-<biomesoplenty:gem_ore:0>.addTooltip("Appears only in the End"); // TODO not sure it appears yet actually
+<biomesoplenty:gem_ore:0>.addTooltip("Appears only in the End"); // ender amethyst
 <biomesoplenty:gem_ore:1>.addTooltip("Appears in mines in savannas"); // ruby
 <biomesoplenty:gem_ore:2>.addTooltip("Appears in mines in plains"); // peridot
 <biomesoplenty:gem_ore:3>.addTooltip("Appears in mines in lush areas"); // topaz

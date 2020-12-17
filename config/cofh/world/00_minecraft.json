@@ -1146,6 +1146,35 @@
 			}
 		},
 		
+		"end_amethyst": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "biomesoplenty:gem_ore",
+					"properties": {
+					  "variant": "amethyst"
+					}
+				},
+				"material": "minecraft:end_stone",
+				"cluster-size": 16
+			},
+			"cluster-count": 30,
+			"chunk-chance": 500,
+			"min-height": 4,
+			"max-height": 200,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "END"
+					}
+				]
+			},
+			"dimension": "all"
+		},
+		
 		"saltpeter": {
 			"distribution": "sequential",
 			"features": [
@@ -1196,6 +1225,6 @@
 					1
 				]
 			}
-		},
+		}
 	}
 }
