@@ -46,16 +46,16 @@ val ores = [
 	<ore:orePlatinum>
 ] as IOreDictEntry[];
 val metals = [
-	[<ore:ingotIron>,<ore:dustIron>],
-	[<ore:ingotGold>,<ore:dustGold>],
-	[<ore:ingotCopper>,<ore:dustCopper>],
-	[<ore:ingotTin>,<ore:dustTin>],
-	[<ore:ingotSilver>,<ore:dustSilver>],
-	[<ore:ingotLead>,<ore:dustLead>],
-	[<ore:ingotPlatinum>,<ore:dustPlatinum>],
-	[<ore:ingotBronze>,<ore:dustBronze>],
-	[<ore:ingotSteel>,<ore:dustSteel>],
-	[<ore:ingotElectrum>,<ore:dustElectrum>] 
+	[<ore:ingotIron>,<ore:dustIron>,<ore:plateIron>,<ore:gearIron>],
+	[<ore:ingotGold>,<ore:dustGold>,<ore:plateGold>,<ore:gearGold>],
+	[<ore:ingotCopper>,<ore:dustCopper>,<ore:plateCopper>,<ore:gearCopper>],
+	[<ore:ingotTin>,<ore:dustTin>,<ore:plateTin>,<ore:gearTin>],
+	[<ore:ingotSilver>,<ore:dustSilver>,<ore:plateSilver>,<ore:gearSilver>],
+	[<ore:ingotLead>,<ore:dustLead>,<ore:plateLead>,<ore:gearLead>],
+	[<ore:ingotPlatinum>,<ore:dustPlatinum>,<ore:platePlatinum>,<ore:gearPlatinum>],
+	[<ore:ingotBronze>,<ore:dustBronze>,<ore:plateBronze>,<ore:gearBronze>],
+	[<ore:ingotSteel>,<ore:dustSteel>,<ore:plateSteel>,<ore:gearSteel>],
+	[<ore:ingotElectrum>,<ore:dustElectrum>,<ore:plateElectrum>,<ore:gearElectrum>] 
 ] as IOreDictEntry[][];
 
 
@@ -65,6 +65,8 @@ for i, ore in ores {
 for i, items in metals {
 	mods.crossroads.HeatingCrucible.addRecipe(items[0], liquids[i] * 144, metalTextures[i]);
 	mods.crossroads.HeatingCrucible.addRecipe(items[1], liquids[i] * 144, metalTextures[i]);
+	mods.crossroads.HeatingCrucible.addRecipe(items[2], liquids[i] * 144, metalTextures[i]);
+	mods.crossroads.HeatingCrucible.addRecipe(items[3], liquids[i] * 208, metalTextures[i]);
 }
 
 
