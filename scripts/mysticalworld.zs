@@ -25,6 +25,10 @@ recipes.addShapeless("silk_thread", <mysticalworld:silk_thread>, [<mysticalworld
 recipes.addShapeless("silk_thread_spindle", <mysticalworld:silk_thread> * 2, [<mysticalworld:silk_cocoon>, <mysticalworld:spindle>]);
 
 
+// info about silkworms
+mods.jei.JEI.addDescription(<mysticalworld:silkworm_egg>, "Dropped rarely from birch leaves.", "Silkworm eggs hatch into silkwoms, which grow over time and eventually drop cocoons. Cocoons can be crafted into silk thread, and then into string or silk cloth.", "Feed your silkworms leaves to speed up their growth.");
+
+
 // hide removed items
 
 var removeItems = [
