@@ -39,6 +39,17 @@ mods.foundry.Casting.addRecipe(<thermalfoundation:material:1027>, <liquid:petrot
 mods.foundry.Casting.addRecipe(<thermalfoundation:material:1028>, <liquid:mana> * 250, <foundry:mold:21>);
 
 
+// cast Mystical World armour
+mods.foundry.Casting.addRecipe(<mysticalworld:copper_helmet>, <liquid:copper> * 720, <foundry:mold:14>);
+mods.foundry.Casting.addRecipe(<mysticalworld:copper_chestplate>, <liquid:copper> * 1152, <foundry:mold:15>);
+mods.foundry.Casting.addRecipe(<mysticalworld:copper_leggings>, <liquid:copper> * 1008, <foundry:mold:16>);
+mods.foundry.Casting.addRecipe(<mysticalworld:copper_boots>, <liquid:copper> * 576, <foundry:mold:17>);
+mods.foundry.Casting.addRecipe(<mysticalworld:silver_helmet>, <liquid:silver> * 720, <foundry:mold:14>);
+mods.foundry.Casting.addRecipe(<mysticalworld:silver_chestplate>, <liquid:silver> * 1152, <foundry:mold:15>);
+mods.foundry.Casting.addRecipe(<mysticalworld:silver_leggings>, <liquid:silver> * 1008, <foundry:mold:16>);
+mods.foundry.Casting.addRecipe(<mysticalworld:silver_boots>, <liquid:silver> * 576, <foundry:mold:17>);
+
+
 // some more casting recipes
 
 mods.foundry.Casting.addRecipe(<minecraft:ender_pearl>, <liquid:ender> * 250, <foundry:mold:21>); // ender pearl

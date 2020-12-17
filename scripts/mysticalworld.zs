@@ -1,3 +1,5 @@
+import crafttweaker.item.IItemStack;
+
 // tweak recipe for beetle mask
 
 recipes.replaceAllOccurences(<ore:plankWood>,<roots:wildwood_planks>,<mysticalworld:beetle_mask>);
@@ -5,7 +7,6 @@ recipes.replaceAllOccurences(<ore:plankWood>,<roots:wildwood_planks>,<mysticalwo
 
 
 // missing knife recipes
-// TODO remove if forging works
 
 recipes.addShapedMirrored("copper_knife", <mysticalworld:copper_knife>,[
 	[null, null, <ore:ingotCopper>],
@@ -24,5 +25,31 @@ recipes.addShapeless("silk_thread", <mysticalworld:silk_thread>, [<mysticalworld
 recipes.addShapeless("silk_thread_spindle", <mysticalworld:silk_thread> * 2, [<mysticalworld:silk_cocoon>, <mysticalworld:spindle>]);
 
 
+// hide removed items
 
-// TODO hide removed items (e.g. copper and silver tools)
+var removeItems = [
+	<mysticalworld:copper_nugget>,
+	<mysticalworld:copper_dust>,
+	<mysticalworld:copper_dust_tiny>,
+	<mysticalworld:copper_ore>,
+	<mysticalworld:copper_axe>,
+	<mysticalworld:copper_hoe>,
+	<mysticalworld:copper_pickaxe>,
+	<mysticalworld:copper_shovel>,
+	<mysticalworld:copper_axe>,
+	<mysticalworld:copper_sword>,
+	<mysticalworld:silver_nugget>,
+	<mysticalworld:silver_dust>,
+	<mysticalworld:silver_dust_tiny>,
+	<mysticalworld:silver_ore>,
+	<mysticalworld:silver_axe>,
+	<mysticalworld:silver_hoe>,
+	<mysticalworld:silver_pickaxe>,
+	<mysticalworld:silver_shovel>,
+	<mysticalworld:silver_axe>,
+	<mysticalworld:silver_sword>
+] as IItemStack[];
+
+for r in removeItems {
+	mods.jei.JEI.removeAndHide(r);
+}
