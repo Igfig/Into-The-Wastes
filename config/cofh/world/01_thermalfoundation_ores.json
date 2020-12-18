@@ -1,0 +1,303 @@
+{
+	"dependencies": "thermalfoundation",
+	"populate": {
+		"copper": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": "crossroads:ore_copper",
+				"material": "minecraft:stone",
+				"type": "large-vein",
+				"cluster-size": 200
+			},
+			"cluster-count": 4,
+			"min-height": 2,
+			"max-height": 48
+			"chunk-chance": 200,
+			"retrogen": false,
+			"biome": {
+				"restriction": "blacklist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "DESERT"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"tin": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": "crossroads:ore_tin",
+				"material": "minecraft:stone",
+				"type": "large-vein",
+				"cluster-size": 75
+			},
+			"cluster-count": 4,
+			"chunk-chance": 300,
+			"min-height": 2,
+			"max-height": 30,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": ["WARM", "COOL", "SNOWY"]
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"silver": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"properties": {
+						"type": "silver"
+					},
+					"weight": 80
+				},
+				"material": "minecraft:stone",
+				"type": "large-vein",
+				"cluster-size": 40
+			},
+			"cluster-count": 8,
+			"chunk-chance": 200,
+			"min-height": 5,
+			"max-height": 48,
+			"retrogen": "true",
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": ["COOL", "SNOWY"]
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"lead": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"properties": {
+						"type": "lead"
+					}
+				},
+				"material": "minecraft:stone",
+				"type": "large-vein",
+				"cluster-size": 40
+			},
+			"cluster-count": 8,
+			"chunk-chance": 200,
+			"min-height": 10,
+			"max-height": 48,
+			"retrogen": "true",
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": ["COOL", "SNOWY"]
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"nickel": {
+			"enabled": "false",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"properties": {
+						"type": "nickel"
+					}
+				},
+				"material": "minecraft:stone",
+				"type": "large-vein",
+				"cluster-size": 55
+			},
+			"cluster-count": 2,
+			"chunk-chance": 250,
+			"min-height": 5,
+			"max-height": 30,
+			"retrogen": "true",
+			"biome": {
+				"restriction": "blacklist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "DESERT"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"platinum": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "platinum"
+						},
+						"weight": 10
+					},
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "mithril"
+						},
+						"weight": 1
+					}
+				],
+				"material": "minecraft:stone",
+				"type": "large-vein",
+				"cluster-size": 25
+			},
+			"cluster-count": 4,
+			"chunk-chance": 500,
+			"min-height": 5,
+			"max-height": 32,
+			"retrogen": "true",
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "SNOWY"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"aluminum": {
+			"enabled": "false",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "thermalfoundation:ore",
+					"properties": {
+						"type": "aluminum"
+					}
+				},
+				"material": "minecraft:stone",
+				"type": "large-vein",
+				"cluster-size": 32
+			},
+			"cluster-count": 20,
+			"chunk-chance": 200,
+			"min-height": 40,
+			"max-height": 75,
+			"retrogen": "true",
+			"biome": {
+				"restriction": "blacklist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "DESERT"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"iridium": {
+			"enabled": "false",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "iridium"
+						},
+						"weight": 40
+					},
+					{
+						"name": "thermalfoundation:ore",
+						"properties": {
+							"type": "platinum"
+						},
+						"weight": 60
+					}
+				],
+				"material": "minecraft:stone",
+				"cluster-size": 25
+			},
+			"cluster-count": 4,
+			"chunk-chance": 500,
+			"min-height": 5,
+			"max-height": 25,
+			"retrogen": "true",
+			"biome": {
+				"restriction": "blacklist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "DESERT"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

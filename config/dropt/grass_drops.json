@@ -1,0 +1,26 @@
+{
+  "rules": [
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "minecraft:tallgrass:*",
+            "minecraft:double_plant:*"
+          ]
+        },
+        "drops": {
+          "drops": [
+		    "cuisine:crops:*",
+            "minecraft:wheat_seeds",
+            "minecraft:beetroot_seeds",
+            "mysticalworld:aubergine_seed",
+			"roots:wildroot",
+			"roots:terra_spores"
+          ]
+        }
+      },
+      "replaceStrategy": "REPLACE_ITEMS",
+      "drops": [{}]
+    }
+  ]
+}
