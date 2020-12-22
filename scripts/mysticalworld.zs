@@ -2,8 +2,8 @@ import crafttweaker.item.IItemStack;
 
 // tweak recipe for beetle mask
 
-recipes.replaceAllOccurences(<ore:plankWood>,<roots:wildwood_planks>,<mysticalworld:beetle_mask>);
-// TODO recipes.replaceAllOccurences(<ore:blockWool>,SOME COOL ANIMAL HIDES,<mysticalworld:antler_hat>);
+recipes.replaceAllOccurences(<ore:plankWood>, <roots:wildwood_planks>, <mysticalworld:beetle_mask>);
+recipes.replaceAllOccurences(<ore:blockWool>, <ore:zawaFur>, <mysticalworld:antler_hat>);
 
 
 // missing knife recipes
