@@ -24,28 +24,28 @@ val strng = <ore:string>;
 
 recipes.addShaped(<minecraft:diamond_pickaxe>, [
 	[diamond,diamond,diamond],
-	[null,<thermalfoundation:tool.pickaxe_bronze>,null],
+	[null,<thermalfoundation:tool.pickaxe_lead>,null],
 	[null,stick,null]
 ]);
 recipes.addShaped(<minecraft:diamond_shovel>, [
 	[diamond],
-	[<thermalfoundation:tool.shovel_bronze>],
+	[<thermalfoundation:tool.shovel_lead>],
 	[stick]
 ]);
 recipes.addShapedMirrored(<minecraft:diamond_axe>, [
 	[diamond,diamond],
-	[diamond,<thermalfoundation:tool.axe_bronze>],
+	[diamond,<thermalfoundation:tool.axe_lead>],
 	[null,stick]
 ]);
 recipes.addShapedMirrored(<minecraft:diamond_hoe>, [
 	[diamond,diamond],
-	[null,<thermalfoundation:tool.hoe_bronze>],
+	[null,<thermalfoundation:tool.hoe_lead>],
 	[null,stick]
 ]);
 recipes.addShaped(<minecraft:diamond_sword>, [
 	[diamond],
 	[diamond],
-	[<thermalfoundation:tool.sword_bronze>]
+	[<thermalfoundation:tool.sword_lead>]
 ]);
 
 
@@ -53,20 +53,20 @@ recipes.addShaped(<minecraft:diamond_sword>, [
 
 recipes.addShaped(<minecraft:diamond_helmet>, [
 	[diamond,diamond,diamond],
-	[diamond,<thermalfoundation:armor.helmet_bronze>,diamond]
+	[diamond,<thermalfoundation:armor.helmet_lead>,diamond]
 ]);
 recipes.addShaped(<minecraft:diamond_chestplate>, [
-	[diamond,<thermalfoundation:armor.plate_bronze>,diamond],
+	[diamond,<thermalfoundation:armor.plate_lead>,diamond],
 	[diamond,diamond,diamond],
 	[diamond,diamond,diamond]
 ]);
 recipes.addShaped(<minecraft:diamond_leggings>, [
 	[diamond,diamond,diamond],
-	[diamond,<thermalfoundation:armor.legs_bronze>,diamond],
+	[diamond,<thermalfoundation:armor.legs_lead>,diamond],
 	[diamond,null,diamond]
 ]);
 recipes.addShaped(<minecraft:diamond_boots>, [
-	[diamond,<thermalfoundation:armor.boots_bronze>,diamond],
+	[diamond,<thermalfoundation:armor.boots_lead>,diamond],
 	[diamond,null,diamond],
 ]);
 
@@ -75,23 +75,23 @@ recipes.addShaped(<minecraft:diamond_boots>, [
 
 recipes.addShaped(<tinkersforging:hammer/diamond>, [
 	[diamond,diamond,diamond],
-	[diamond,<tinkersforging:hammer/bronze>,diamond],
+	[diamond,<tinkersforging:hammer/lead>,diamond],
 	[null,stick,null]
 ]);
 
 recipes.addShapedMirrored("bow_diamond", <thermalfoundation:tool.bow_diamond>,[
 	[null,diamond,strng],
-	[<thermalfoundation:tool.bow_bronze>,null,strng],
+	[<thermalfoundation:tool.bow_lead>,null,strng],
 	[null,diamond,strng]]);
 recipes.addShapedMirrored("sickle_diamond", <thermalfoundation:tool.sickle_diamond>,[
 	[null,diamond,null],
-	[null,<thermalfoundation:tool.sickle_bronze>,diamond],
+	[null,<thermalfoundation:tool.sickle_lead>,diamond],
 	[stick,diamond,null]]);
 recipes.addShaped("hammer_diamond", <thermalfoundation:tool.hammer_diamond>,[
 	[diamond,diamond,diamond],
-	[diamond,<thermalfoundation:tool.hammer_bronze>,diamond],
+	[diamond,<thermalfoundation:tool.hammer_lead>,diamond],
 	[null,stick,null]]);
 recipes.addShaped("excavator_diamond", <thermalfoundation:tool.excavator_diamond>,[
 	[null,diamond,null],
-	[diamond,<thermalfoundation:tool.excavator_bronze>,diamond],
+	[diamond,<thermalfoundation:tool.excavator_lead>,diamond],
 	[null,stick,null]]);
