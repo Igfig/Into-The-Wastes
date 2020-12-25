@@ -19,9 +19,8 @@ recipes.addShapeless("kibble", <zawa:kibble>, [<ore:listAllgrain>, <ore:listAllf
 
 recipes.remove(<zawa:hunting_knife>);
 recipes.addShaped("hunting_knife", <zawa:hunting_knife>, [
-	[null,null,<ore:ingotIron>],
-	[<ore:leather>,<ore:ingotIron>, null],
-	[<ore:stickWood>,<ore:leather>,null]]);
+	[<ore:leather>,<tinkersforging:sword_blade/iron>],
+	[<ore:stickWood>,<ore:leather>]]);
 
 recipes.remove(<zawa:machete>);
 recipes.addShaped("machete", <zawa:machete>, [
