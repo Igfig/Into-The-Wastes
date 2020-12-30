@@ -23,7 +23,6 @@
 <thermalfoundation:ore:2>.addTooltip("Appears in mines in oases beyond ±3000z");
 <thermalfoundation:ore:3>.addTooltip("Appears in mines in oases beyond ±3000z");
 <thermalfoundation:ore:6>.addTooltip("Appears in oases beyond ±6000z");
-<thermalfoundation:ore:8>.addTooltip("Appears in platinum mines beyond ±6000z");
 
 <thermalfoundation:ore_fluid:0>.addTooltip("Appears in the desert"); // oil sand
 <thermalfoundation:ore_fluid:2>.addTooltip("Appears in redstone mines");

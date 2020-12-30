@@ -51,7 +51,7 @@
 				"value": [
 					{
 						"type": "dictionary",
-						"entry": ["WARM", "COOL", "SNOWY"]
+						"entry": ["WARM", "COOL", "COLD"]
 					}
 				]
 			},
@@ -88,7 +88,7 @@
 				"value": [
 					{
 						"type": "dictionary",
-						"entry": ["COOL", "SNOWY"]
+						"entry": ["COOL", "COLD"]
 					}
 				]
 			},
@@ -124,7 +124,7 @@
 				"value": [
 					{
 						"type": "dictionary",
-						"entry": ["COOL", "SNOWY"]
+						"entry": ["COOL", "COLD"]
 					}
 				]
 			},
@@ -183,13 +183,6 @@
 							"type": "platinum"
 						},
 						"weight": 10
-					},
-					{
-						"name": "thermalfoundation:ore",
-						"properties": {
-							"type": "mithril"
-						},
-						"weight": 1
 					}
 				],
 				"material": "minecraft:stone",
@@ -206,7 +199,7 @@
 				"value": [
 					{
 						"type": "dictionary",
-						"entry": "SNOWY"
+						"entry": "COLD"
 					}
 				]
 			},
