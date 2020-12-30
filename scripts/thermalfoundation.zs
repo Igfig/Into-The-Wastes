@@ -58,12 +58,14 @@ mods.jei.JEI.removeAndHide(<thermalfoundation:meter>);
 
 // add new recipes
 
-furnace.addRecipe(<thermalfoundation:material:892> * 3, <ore:oreClathrateOilSand>); // bitumen
+furnace.addRecipe("bitumen_furnace", <thermalfoundation:material:892> * 3, <ore:oreClathrateOilSand>); // bitumen
+
+recipes.addShapeless("mana_dust", <thermalfoundation:material:1028>, [<thermalfoundation:material:1024>, <thermalfoundation:material:1025>, <thermalfoundation:material:1026>, <thermalfoundation:material:1027>]); // elemental dusts to mana dust
+
+
+// a note
+
+mods.jei.JEI.addDescription(<ore:blockMithril>, "Produced by allowing a block of silver to come into contact with flowing Primal Mana.");
 
 
 // TODO some way to turn potions into liquid potion
-// TODO some way to get mana dust or primal mana. (Once we get the one, we can make the other.)
-//	Probably you need to refine it from platinum (+ copshowium? Some alchemical material?) using one of the magic mods
-//	Or perhaps some of the endgame mobs occasionally drop small amounts of it
-//  You only need a small amount; silver turns into mana infused metal on contact with the liquid.
-// TODO should I put a tooltip on it about that?
