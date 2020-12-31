@@ -65,3 +65,9 @@ Mortar.removeRecipe(<minecraft:blaze_powder>);
 Mortar.removeRecipe(<minecraft:magma_cream>);
 Mortar.removeRecipe(<minecraft:string>);
 Mortar.removeRecipe(<mysticalworld:silk_thread>);
+
+
+// remove disabled rituals from JEI
+
+mods.jei.JEI.removeAndHide(<roots:ritual_frost_lands>);
+mods.jei.JEI.removeAndHide(<roots:ritual_summon_creatures>);
