@@ -227,4 +227,104 @@ for i, material in tide_materials {
 	]);
 }
 
-// TODO swords and other weapons too
+
+// swords and other tools
+
+val witherbone = <iceandfire:witherbone>;
+val desert_chitin = <iceandfire:myrmex_desert_chitin>;
+val jungle_chitin = <iceandfire:myrmex_jungle_chitin>;
+val stinger = <iceandfire:myrmex_stinger>;
+val lead_sword = <thermalfoundation:tool.sword_lead>;
+val lead_hoe = <thermalfoundation:tool.hoe_lead>;
+
+val removeToolMaterials = {
+	<iceandfire:dragonbone>: [
+		<iceandfire:dragonbone_sword>,
+		<iceandfire:dragonbone_shovel>,
+		<iceandfire:dragonbone_pickaxe>,
+		<iceandfire:dragonbone_axe>
+	],
+	<iceandfire:myrmex_desert_chitin>: [
+		<iceandfire:myrmex_desert_sword>,
+		<iceandfire:myrmex_desert_shovel>,
+		<iceandfire:myrmex_desert_pickaxe>,
+		<iceandfire:myrmex_desert_axe>
+	],
+	<iceandfire:myrmex_jungle_chitin>: [
+		<iceandfire:myrmex_jungle_sword>,
+		<iceandfire:myrmex_jungle_shovel>,
+		<iceandfire:myrmex_jungle_pickaxe>,
+		<iceandfire:myrmex_jungle_axe>
+	],
+	<iceandfire:dragonsteel_fire_ingot>: [
+		<iceandfire:dragonsteel_fire_sword>,
+		<iceandfire:dragonsteel_fire_shovel>,
+		<iceandfire:dragonsteel_fire_pickaxe>,
+		<iceandfire:dragonsteel_fire_axe>
+	],
+	<iceandfire:dragonsteel_ice_ingot>: [
+		<iceandfire:dragonsteel_ice_sword>,
+		<iceandfire:dragonsteel_ice_shovel>,
+		<iceandfire:dragonsteel_ice_pickaxe>,
+		<iceandfire:dragonsteel_ice_axe>
+	]
+} as IItemStack[][IIngredient];
+
+for material, removeTools in removeToolMaterials {
+	
+	for rt in removeTools {
+		recipes.remove(rt);
+	}
+	
+	recipes.addShapedMirrored(removeTools[0], [
+		[material, null],
+		[material, lead_sword],
+		[witherbone, null]]);
+	recipes.addShaped(removeTools[1], [
+		[material],
+		[<thermalfoundation:tool.shovel_lead>],
+		[witherbone]]);
+	recipes.addShaped(removeTools[2], [
+		[material, material, material],
+		[null, <thermalfoundation:tool.pickaxe_lead>, null],
+		[null, witherbone, null]]);
+	recipes.addShapedMirrored(removeTools[3], [
+		[material, material],
+		[null, <thermalfoundation:tool.axe_lead>],
+		[null, witherbone]]);
+}
+
+
+// additional tools with less standard recipes
+
+val removeOtherTools = [
+	<iceandfire:myrmex_desert_sword_venom>,
+	<iceandfire:myrmex_jungle_sword_venom>,
+	<iceandfire:myrmex_desert_hoe>,
+	<iceandfire:myrmex_jungle_hoe>
+] as IItemStack[];
+
+for rot in removeOtherTools {
+	recipes.remove(rot);
+}
+
+recipes.addShapedMirrored(<iceandfire:myrmex_desert_sword_venom>, [
+	[stinger, null],
+	[desert_chitin, lead_sword],
+	[witherbone, null]]);
+recipes.addShapedMirrored(<iceandfire:myrmex_jungle_sword_venom>, [
+	[stinger, null],
+	[jungle_chitin, lead_sword],
+	[witherbone, null]]);
+recipes.addShapedMirrored(<iceandfire:myrmex_desert_hoe>, [
+	[desert_chitin, desert_chitin],
+	[null, lead_sword],
+	[null, witherbone]]);
+recipes.addShapedMirrored(<iceandfire:myrmex_jungle_hoe>, [
+	[jungle_chitin, jungle_chitin],
+	[null, lead_sword],
+	[null, witherbone]]);
+
+recipes.replaceAllOccurences(<ore:stickWood>, lead_sword, <iceandfire:amphithere_macuahuitl>);
+recipes.replaceAllOccurences(<ore:stickWood>, lead_sword, <iceandfire:hippogryph_sword>);
+recipes.replaceAllOccurences(<ore:ingotIron>, <iceandfire:hippogryph_talon>, <iceandfire:hippogryph_sword>);
