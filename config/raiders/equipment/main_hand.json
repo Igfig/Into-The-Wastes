@@ -1,21 +1,61 @@
 [
   {
-    "itemID": "minecraft:wooden_sword",
-    "metaID": 0,
-    "weight": 20
-  },
-  {
-    "itemID": "minecraft:iron_sword",
-    "metaID": 0,
-    "weight": 20
-  },
-  {
     "itemID": "minecraft:golden_sword",
     "metaID": 0,
     "weight": 10
   },
   {
-    "itemID": "minecraft:diamond_sword",
+    "itemID": "thermalfoundation:tool.sword_tin",
+    "metaID": 0,
+    "weight": 10
+  },
+  {
+    "itemID": "thermalfoundation:tool.sword_copper",
+    "metaID": 0,
+    "weight": 10
+  },
+  {
+    "itemID": "mysticalworld:copper_knife",
+    "metaID": 0,
+    "weight": 20
+  },
+  {
+    "itemID": "mysticalworld:iron_knife",
+    "metaID": 0,
+    "weight": 10
+  },
+  {
+    "itemID": "primitivetools:primitive_knife_cwf",
+    "metaID": 0,
+    "weight": 10
+  },
+  {
+    "itemID": "primitivetools:primitive_knife_cwv",
+    "metaID": 0,
+    "weight": 10
+  },
+  {
+    "itemID": "primitivetools:primitive_knife_cwl",
+    "metaID": 0,
+    "weight": 10
+  },
+  {
+    "itemID": "primitivetools:primitive_knife_cbf",
+    "metaID": 0,
+    "weight": 10
+  },
+  {
+    "itemID": "primitivetools:primitive_knife_cbv",
+    "metaID": 0,
+    "weight": 10
+  },
+  {
+    "itemID": "primitivetools:primitive_knife_cbl",
+    "metaID": 0,
+    "weight": 10
+  },
+  {
+    "itemID": "primitivemobs:goblin_mace",
     "metaID": 0,
     "weight": 10
   }

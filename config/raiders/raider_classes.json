@@ -5,8 +5,8 @@
   },
   "Brute": {
     "isEnabled": true,
-    "spawnWeight": 40,
-    "startDiff": 0
+    "spawnWeight": 10,
+    "startDiff": 2
   },
   "Pyromaniac": {
     "isEnabled": true,
@@ -15,7 +15,7 @@
   },
   "Tweaker": {
     "isEnabled": true,
-    "spawnWeight": 10,
+    "spawnWeight": 20,
     "startDiff": 0,
     "spawnOnlyAtNight": false
   },

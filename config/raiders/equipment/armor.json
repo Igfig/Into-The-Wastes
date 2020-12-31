@@ -63,27 +63,6 @@
     "weight": 10
   },
   {
-    "name": "Diamond Armor Set",
-    "head": {
-      "itemID": "minecraft:diamond_helmet",
-      "metaID": 0
-    },
-    "body": {
-      "itemID": "minecraft:diamond_chestplate",
-      "metaID": 0
-    },
-    "legs": {
-      "itemID": "minecraft:diamond_leggings",
-      "metaID": 0
-    },
-    "feet": {
-      "itemID": "minecraft:diamond_boots",
-      "metaID": 0
-    },
-    "always spawn full set": false,
-    "weight": 10
-  },
-  {
     "name": "Chain Mail Armor Set",
     "head": {
       "itemID": "minecraft:chainmail_helmet",
@@ -99,6 +78,90 @@
     },
     "feet": {
       "itemID": "minecraft:chainmail_boots",
+      "metaID": 0
+    },
+    "always spawn full set": false,
+    "weight": 10
+  },
+  {
+    "name": "Tin Armor Set",
+    "head": {
+      "itemID": "thermalfoundation:armor.helmet_tin",
+      "metaID": 0
+    },
+    "body": {
+      "itemID": "thermalfoundation:armor.plate_tin",
+      "metaID": 0
+    },
+    "legs": {
+      "itemID": "thermalfoundation:armor.legs_tin",
+      "metaID": 0
+    },
+    "feet": {
+      "itemID": "thermalfoundation:armor.boots_tin",
+      "metaID": 0
+    },
+    "always spawn full set": false,
+    "weight": 10
+  },
+  {
+    "name": "Silk Armor Set",
+    "head": {
+      "itemID": "contenttweaker:silk_head",
+      "metaID": 0
+    },
+    "body": {
+      "itemID": "contenttweaker:silk_chest",
+      "metaID": 0
+    },
+    "legs": {
+      "itemID": "contenttweaker:silk_legs",
+      "metaID": 0
+    },
+    "feet": {
+      "itemID": "contenttweaker:silk_feet",
+      "metaID": 0
+    },
+    "always spawn full set": false,
+    "weight": 20
+  },
+  {
+    "name": "Fur Armor Set",
+    "head": {
+      "itemID": "zawa:fur_hood",
+      "metaID": 0
+    },
+    "body": {
+      "itemID": "zawa:fur_chest",
+      "metaID": 0
+    },
+    "legs": {
+      "itemID": "zawa:fur_legs",
+      "metaID": 0
+    },
+    "feet": {
+      "itemID": "zawa:fur_boots",
+      "metaID": 0
+    },
+    "always spawn full set": false,
+    "weight": 20
+  },
+  {
+    "name": "Reptile Armor Set",
+    "head": {
+      "itemID": "zawa:reptile_hood",
+      "metaID": 0
+    },
+    "body": {
+      "itemID": "zawa:reptile_chest",
+      "metaID": 0
+    },
+    "legs": {
+      "itemID": "zawa:reptile_legs",
+      "metaID": 0
+    },
+    "feet": {
+      "itemID": "zawa:reptile_boots",
       "metaID": 0
     },
     "always spawn full set": false,

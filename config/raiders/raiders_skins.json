@@ -5,181 +5,181 @@
     "customSkin": "Give resourcelocation of custom skin. Use raiders build in resource loading, by adding an image into assets/skins/filename.png Than set custom skin to raiders:skins/filename. You may also use any other resourceloader.",
     "_comment": " Comment section is for you leave a comment if you disabled something to know why. or just any comment you want."
   },
-  "BirbLover": {
+  "Raider Birb": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/birblover",
     "_comment": " "
   },
-  "Brightly": {
+  "Raider Brightly": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/brightly",
     "_comment": " "
   },
-  "Bullet": {
+  "Raider Bullet": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/bullet",
     "_comment": " "
   },
-  "ChillingFlames": {
+  "Raider Flame": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/chillingflames",
     "_comment": " "
   },
-  "ChocolateStrawberries": {
+  "Raider Strawberry": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/chocostrawberries",
     "_comment": " "
   },
-  "ChristmasDay": {
+  "Raider Christmas": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/christmasday",
     "_comment": " "
   },
-  "ChristmasFox": {
+  "Raider Arf": {
     "weight": 1,
     "enabled": true,
 	"customSkin": "raiders:skins/christmasfox",
     "_comment": " "
   },
-  "Creeper": {
+  "Raider Creeper Girl": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/creeper",
     "_comment": " "
   },
-  "DancingSea": {
+  "Raider Sea Dancer": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/dancingsea",
     "_comment": " "
   },
-  "Foxy": {
+  "Raider Foxy": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/foxy",
     "_comment": " "
   },
-  "GhostChristmas": {
+  "Raider Ghost": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/ghostchristmas",
     "_comment": " "
   },
-  "HatsuneMiku": {
+  "Raider Miku": {
     "weight": 1,
     "enabled": true,
 	"customSkin": "raiders:skins/hatsunemiku",
     "_comment": " "
   },
-  "Kermit": {
+  "Raider Kermit": {
     "weight": 1,
     "enabled": true,
 	"customSkin": "raiders:skins/kermit",
     "_comment": " "
   },
-  "Moana": {
+  "Raider Moana": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/moana",
     "_comment": " "
   },
-  "OceanDusk": {
+  "Raider Dusk": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/oceandusk",
     "_comment": " "
   },
-  "Persona": {
+  "Raider Persona": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/persona",
     "_comment": " "
   },
-  "PinkFlaws": {
+  "Raider Pink": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/pinkflaws",
     "_comment": " "
   },
-  "Pug": {
+  "Raider Pug": {
     "weight": 1,
     "enabled": true,
 	"customSkin": "raiders:skins/pug",
     "_comment": " "
   },
-  "Rawr": {
+  "Raider Rawr": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/rawr",
     "_comment": " "
   },
-  "Reflection": {
+  "Raider Clara": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/reflection",
     "_comment": " "
   },
-  "Ribbit": {
+  "Raider Ribbit": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/ribbit",
     "_comment": " "
   },
-  "risingSun": {
+  "Raider Sunny": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/risingsun",
     "_comment": " "
   },
-  "Shrek": {
+  "Raider Shrek": {
     "weight": 1,
     "enabled": true,
 	"customSkin": "raiders:skins/shrek",
     "_comment": " "
   },
-  "StuffWeDid": {
+  "Raider Steffi": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/stuffwedid",
     "_comment": " "
   },
-  "Sunflower": {
+  "Raider Sunflower": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/sunflower",
     "_comment": " "
   },
-  "Teddy": {
+  "Raider Teddy": {
     "weight": 1,
     "enabled": true,
 	"customSkin": "raiders:skins/teddy",
     "_comment": " "
   },
-  "TeddyGirl": {
+  "Raider Bear Girl": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/teddygirl",
     "_comment": " "
   },
-  "Ventotto": {
+  "Raider Ventotto": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/ventotto",
     "_comment": " "
   },
-  "Veronica": {
+  "Raider Veronica": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/veronica",
     "_comment": " "
   },
-  "WaterLilies": {
+  "Raider Lily": {
     "weight": 10,
     "enabled": true,
 	"customSkin": "raiders:skins/waterlilies",
