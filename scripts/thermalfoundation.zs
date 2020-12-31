@@ -58,7 +58,7 @@ mods.jei.JEI.removeAndHide(<thermalfoundation:meter>);
 
 // add new recipes
 
-furnace.addRecipe("bitumen_furnace", <thermalfoundation:material:892> * 3, <ore:oreClathrateOilSand>); // bitumen
+furnace.addRecipe(<thermalfoundation:material:892> * 3, <ore:oreClathrateOilSand>); // bitumen
 
 recipes.addShapeless("mana_dust", <thermalfoundation:material:1028>, [<thermalfoundation:material:1024>, <thermalfoundation:material:1025>, <thermalfoundation:material:1026>, <thermalfoundation:material:1027>]); // elemental dusts to mana dust
 
