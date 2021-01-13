@@ -325,10 +325,9 @@
 				"block": "lapis_ore",
 				"material": "minecraft:stone",
 				"type": "cluster",
-				"cluster-size": 14
+				"cluster-size": 7
 			},
-			"cluster-count": 10,
-			"chunk-chance": 800,
+			"cluster-count": 2,
 			"center-height": 24,
 			"spread": 24,
 			"retrogen": false,
@@ -751,7 +750,7 @@
 				"min": 75,
 				"max": 150
 			},
-			"chunk-chance": 500,
+			"chunk-chance": 50,
 			"min-height": 4,
 			"max-height": 72,
 			"retrogen": false,
@@ -863,7 +862,7 @@
 				"min": 75,
 				"max": 150
 			},
-			"chunk-chance": 500,
+			"chunk-chance": 50,
 			"min-height": 4,
 			"max-height": 72,
 			"retrogen": false,
@@ -901,7 +900,7 @@
 				"min": 75,
 				"max": 150
 			},
-			"chunk-chance": 500,
+			"chunk-chance": 50,
 			"min-height": 4,
 			"max-height": 72,
 			"retrogen": false,
@@ -939,7 +938,7 @@
 				"min": 75,
 				"max": 150
 			},
-			"chunk-chance": 500,
+			"chunk-chance": 50,
 			"min-height": 4,
 			"max-height": 72,
 			"retrogen": false,
@@ -977,7 +976,7 @@
 				"min": 75,
 				"max": 150
 			},
-			"chunk-chance": 500,
+			"chunk-chance": 50,
 			"min-height": 4,
 			"max-height": 72,
 			"retrogen": false,
@@ -1015,7 +1014,7 @@
 				"min": 75,
 				"max": 150
 			},
-			"chunk-chance": 500,
+			"chunk-chance": 50,
 			"min-height": 4,
 			"max-height": 72,
 			"retrogen": false,
@@ -1053,7 +1052,7 @@
 				"min": 75,
 				"max": 150
 			},
-			"chunk-chance": 500,
+			"chunk-chance": 50,
 			"min-height": 4,
 			"max-height": 72,
 			"retrogen": false,
@@ -1091,7 +1090,7 @@
 				"min": 75,
 				"max": 150
 			},
-			"chunk-chance": 500,
+			"chunk-chance": 50,
 			"min-height": 4,
 			"max-height": 72,
 			"retrogen": false,
@@ -1124,7 +1123,7 @@
 				"min": 75,
 				"max": 150
 			},
-			"chunk-chance": 500,
+			"chunk-chance": 50,
 			"min-height": 4,
 			"max-height": 72,
 			"retrogen": false,
@@ -1159,7 +1158,7 @@
 				"cluster-size": 16
 			},
 			"cluster-count": 30,
-			"chunk-chance": 500,
+			"chunk-chance": 50,
 			"min-height": 4,
 			"max-height": 200,
 			"retrogen": false,
