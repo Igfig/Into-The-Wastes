@@ -1,0 +1,44 @@
+[
+  {
+    "mod": "raiders",
+    "dimension": 0,
+	"biometype": "DESERT",
+	"seesky": true,
+	"mindifficulty": 2.0,
+    "maxcount": {
+      "amount": 30,
+      "mod": "raiders",
+      "perplayer": true
+    },
+    "result": "default"
+  },
+  {
+    "mod": "raiders",
+    "result": "deny"
+  },
+  {
+    "mob": ["wildnature:goat_male", "wildnature:goat_female", "wildnature:goat_baby", "wildnature:goat_saanen_male", "wildnature:goat_saanen_female", "wildnature:goat_saanen_baby", "wildnature:bison_male", "wildnature:bison_female", "wildnature:bison_baby", "wildnature:cow_male", "wildnature:cow_female", "wildnature:cow_baby", "wildnature:wisent_male", "wildnature:wisent_female", "wildnature:wisent_baby"],
+    "result": "deny"
+  },
+  {
+    "mob": ["wildnature:boar", "wildnature:camel_male", "wildnature:camel_female", "wildnature:camel_baby", "wildnature:duck_male", "wildnature:duck_female", "wildnature:duck_baby"],
+	"biometype": "DESERT",
+    "result": "deny"
+  },
+  {
+    "mob": "thermalfoundation:blitz",
+    "dimension": 0,
+	"minheight": 200,
+	"weather": "thunder",
+    "result": "default"
+  },
+  {
+    "mob": "thermalfoundation:blitz",
+    "result": "deny"
+  },
+  {
+    "mob": "iceandfire:hippogryph",
+	"minspawndist": 3000,
+    "result": "deny"
+  }
+]

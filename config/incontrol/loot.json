@@ -1,0 +1,7 @@
+[
+	{
+		"mod": "raiders",
+		"random": 0.9,
+		"remove": ["raiders:sat_transmitter_part", "raiders:brute_serum_sample"]
+	}
+]

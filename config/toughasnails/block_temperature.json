@@ -56,5 +56,19 @@
       "properties": {}
     },
     "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "minecraft:water",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "minecraft:flowing_water",
+      "properties": {}
+    },
+    "temperature": -1.0
   }
 ]

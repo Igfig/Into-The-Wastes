@@ -1,0 +1,36 @@
+{
+  "rules": [
+    {
+	  "match": {
+        "blocks": {
+          "blocks": [
+            "minecraft:leaves:2"
+          ]
+        }
+      },
+      "replaceStrategy": "ADD",
+      "drops": [
+        {
+          "selector": {
+            "weight": {
+              "value": 95
+            }
+          },
+		  "item": {
+            "items" : []
+          }
+        },
+        {
+          "selector": {
+            "weight": {
+              "value": 5
+			  }
+          },
+          "item": {
+            "items" : ["mysticalworld:silkworm_egg"]
+          }
+        }
+      ]
+	}
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "rules": [
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "minecraft:vine:*"
+          ]
+        },
+		"harvester": {
+          "type": "PLAYER",
+          "heldItemMainHand": {
+            "type": "WHITELIST",
+            "items": [
+				"mysticalworld:amethyst_knife:*",
+				"mysticalworld:copper_knife:*",
+				"mysticalworld:silver_knife:*",
+				"roots:iron_knife:*",
+				"roots:gold_knife:*"
+			]
+          }
+        }
+      },
+	  "drops": [
+        {
+          "selector": {
+            "weight": {
+              "value": 50
+            }
+          }
+        },
+        {
+          "selector": {
+            "weight": {
+              "value": 50
+            }
+          },
+          "item": {
+            "items" : ["minecraft:vine"]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -6,7 +6,124 @@
       "toughasnails:jelled_slime_leggings",
       "toughasnails:jelled_slime_boots"
     ],
+    "modifier": -2
+  },
+  {
+    "names": [
+      "contenttweaker:silk_head",
+      "contenttweaker:silk_chest",
+      "contenttweaker:silk_legs",
+      "contenttweaker:silk_feet"
+    ],
     "modifier": -1
+  },
+  {
+    "names": [
+      "zawa:reptile_chest",
+      "zawa:reptile_legs",
+      "zawa:reptile_boots",
+      "zawa:reptile_hood"
+    ],
+    "modifier": -1
+  },
+  {
+    "names": [
+      "iceandfire:deathworm_yellow_helmet",
+      "iceandfire:deathworm_yellow_chestplate",
+      "iceandfire:deathworm_yellow_leggings",
+      "iceandfire:deathworm_yellow_boots"
+    ],
+    "modifier": -1
+  },
+  {
+    "names": [
+      "iceandfire:deathworm_white_helmet",
+      "iceandfire:deathworm_white_chestplate",
+      "iceandfire:deathworm_white_leggings",
+      "iceandfire:deathworm_white_boots"
+    ],
+    "modifier": -1
+  },
+  {
+    "names": [
+      "iceandfire:deathworm_red_helmet",
+      "iceandfire:deathworm_red_chestplate",
+      "iceandfire:deathworm_red_leggings",
+      "iceandfire:deathworm_red_boots"
+    ],
+    "modifier": -1
+  },
+  {
+    "names": [
+      "iceandfire:myrmex_desert_helmet",
+      "iceandfire:myrmex_desert_chestplate",
+      "iceandfire:myrmex_desert_leggings",
+      "iceandfire:myrmex_desert_boots"
+    ],
+    "modifier": -1
+  },
+  {
+    "names": [
+      "iceandfire:myrmex_jungle_helmet",
+      "iceandfire:myrmex_jungle_chestplate",
+      "iceandfire:myrmex_jungle_leggings",
+      "iceandfire:myrmex_jungle_boots"
+    ],
+    "modifier": -1
+  },
+  {
+    "names": [
+      "iceandfire:armor_blue_helmet",
+      "iceandfire:armor_blue_chestplate",
+      "iceandfire:armor_blue_leggings",
+      "iceandfire:armor_blue_boots"
+    ],
+    "modifier": 1
+  },
+  {
+    "names": [
+      "iceandfire:armor_white_helmet",
+      "iceandfire:armor_white_chestplate",
+      "iceandfire:armor_white_leggings",
+      "iceandfire:armor_white_boots"
+    ],
+    "modifier": 1
+  },
+  {
+    "names": [
+      "iceandfire:armor_sapphire_helmet",
+      "iceandfire:armor_sapphire_chestplate",
+      "iceandfire:armor_sapphire_leggings",
+      "iceandfire:armor_sapphire_boots"
+    ],
+    "modifier": 1
+  },
+  {
+    "names": [
+      "iceandfire:armor_silver_helmet",
+      "iceandfire:armor_silver_chestplate",
+      "iceandfire:armor_silver_leggings",
+      "iceandfire:armor_silver_boots"
+    ],
+    "modifier": 1
+  },
+  {
+    "names": [
+      "iceandfire:frost_troll_leather_helmet",
+      "iceandfire:frost_troll_leather_chestplate",
+      "iceandfire:frost_troll_leather_leggings",
+      "iceandfire:frost_troll_leather_boots"
+    ],
+    "modifier": 1
+  },
+  {
+    "names": [
+      "iceandfire:mountain_troll_leather_helmet",
+      "iceandfire:mountain_troll_leather_chestplate",
+      "iceandfire:mountain_troll_leather_leggings",
+      "iceandfire:mountain_troll_leather_boots"
+    ],
+    "modifier": 1
   },
   {
     "names": [
@@ -16,5 +133,23 @@
       "toughasnails:wool_boots"
     ],
     "modifier": 1
+  },
+  {
+    "names": [
+      "zawa:fur_chest",
+      "zawa:fur_legs",
+      "zawa:fur_boots",
+      "zawa:fur_hood"
+    ],
+    "modifier": 1
+  },
+  {
+    "names": [
+      "zawa:polar_chest",
+      "zawa:polar_legs",
+      "zawa:polar_boots",
+      "zawa:polar_hood"
+    ],
+    "modifier": 2
   }
 ]

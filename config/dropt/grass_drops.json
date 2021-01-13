@@ -10,7 +10,12 @@
         },
         "drops": {
           "drops": [
-            "minecraft:wheat_seeds"
+		    "cuisine:crops:*",
+            "minecraft:wheat_seeds",
+            "minecraft:beetroot_seeds",
+            "mysticalworld:aubergine_seed",
+			"roots:wildroot",
+			"roots:terra_spores"
           ]
         }
       },
