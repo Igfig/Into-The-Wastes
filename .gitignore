@@ -1,5 +1,6 @@
 cache
 crash-reports
+debug
 defaults
 downloads
 libraries
@@ -11,11 +12,11 @@ resourcepacks
 saves
 screenshots
 shaderpacks
-/.curseclient
 /*.json
 /*.txt
 /*.log
 /servers.dat
+/.curseclient
 /mods/OptiFine_*.jar
 /mods/*.disabled
 /config/splash.properties

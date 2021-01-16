@@ -1,0 +1,20 @@
+{
+"generateBopOre": false,
+"generateBopSoils": true,
+"generateBopTrees": true,
+"generateBopGrasses": true,
+"generateBopFoliage": true,
+"generateBopFlowers": true,
+"generateBopPlants": true,
+"generateBopWaterPlants": true,
+"generateBopMushrooms": true,
+"generateRockFormations": true,
+"generatePoisonIvy": false,
+"generateBerryBushes": true,
+"generateThorns": true,
+"generateQuicksand": true,
+"generateLiquidPoison": true,
+"generateHotSprings": true,
+"generateNetherHives": true,
+"generateEndFeatures": true
+}
