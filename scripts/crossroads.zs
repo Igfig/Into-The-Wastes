@@ -30,6 +30,3 @@ recipes.addShaped(<crossroads:omnimeter>, [
 	[null,<ore:ingotCopper>,null],
 	[<ore:ingotCopper>,<ore:dustRedstone>,<ore:ingotCopper>],
 	[null,<ore:ingotCopper>,null]]);
-
-
-// TODO use the Heat Exchanger to turn crude oil into naphtha (and refined fuel?)
