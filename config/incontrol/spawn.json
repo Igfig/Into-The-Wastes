@@ -40,5 +40,20 @@
     "mob": "iceandfire:hippogryph",
 	"minspawndist": 3000,
     "result": "deny"
+  },
+  {
+	"mob": ["zawa:americanbison", "zawa:blackspidermonkey", "zawa:cockatoo", "zawa:echidna", "zawa:fijibandediguana", "zawa:greenanaconda", "zawa:grevyszebra", "zawa:indiangharial", "zawa:indianpangolin", "zawa:japanesegiantsalamander", "zawa:koala", "zawa:komododragon", "zawa:westernlowlandgorilla", "zawa:macaw", "zawa:okapi", "zawa:platypus", "zawa:rattlesnake","zawa:redkangaroo", "zawa:reticulatedgiraffe", "zawa:toucan", "zawa:treefrog"],
+	"biometype": "COLD",
+    "result": "deny"
+  },
+  {
+	"mob": ["lilcritters:opossum", "lilcritters:raccoon", "lilcritters:skunk", "zawa:americanbison", "zawa:asianelephant", "zawa:baldeagle", "zawa:bengaltiger", "zawa:galapagostortoise", "zawa:greathornedowl", "zawa:greenanaconda", "zawa:grizzlybear", "zawa:westernlowlandgorilla", "zawa:redpanda", "zawa:treefrog"],
+	"biometype": "HOT",
+    "result": "deny"
+  },
+  {
+	"mob": ["zawa:americanbison", "zawa:greathornedowl", "zawa:grizzlybear", "zawa:moose"],
+	"biometype": "JUNGLE",
+    "result": "deny"
   }
 ]
