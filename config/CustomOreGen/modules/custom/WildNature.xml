@@ -1,6 +1,5 @@
 <!-- =================================================================
-     Custom Ore Generation "Wild Nature" Module: This configuration
-     disables everything from WildNature because it's horrible to behold
+     Custom Ore Generation "Wild Nature" Module
      ================================================================= -->
 
 
@@ -9,7 +8,6 @@
   <!-- Starting Configuration for Custom Ore Generation. -->
   <ConfigSection>
 
-
     <!-- Setup Screen Configuration -->
     <ConfigSection>
       <OptionDisplayGroup name='groupWildNature' displayName='Wild Nature' displayState='shown'>
@@ -17,69 +15,80 @@
           Distribution options for Wild Nature ores and stones.
         </Description>
       </OptionDisplayGroup>
+	  <OptionChoice name='wnStoneGen' displayName='Allow Wild Nature Stone Generation?' default='true' displayState='shown' displayGroup='groupWildNature'>
+        <Description> Should Custom Ore Generation allow generation of Wild Nature stones? Preventing generation can slow the game significantly, but the rocks are both extremely common and very much not to everyone's tastes.</Description>
+        <Choice value=':= ?true' displayValue='Yes' description='Allow generation of WildNature stones.'/>
+        <Choice value=':= ?false' displayValue='No' description='Prevent generation of WildNature stones.'/>
+      </OptionChoice>
     </ConfigSection>
     <!-- Setup Screen Complete -->
 
-      <!-- Overworld Setup Beginning -->
+    <!-- Overworld Setup Beginning -->
 
-      <IfCondition condition=':= ?COGActive'>
+    <IfCondition condition=':= ?COGActive'>
 
-        <!-- Starting Original "Overworld" Block Removal -->
+      <!-- Starting Original "Overworld" Block Removal -->
 
-        <IfCondition condition=':= ?blockExists("minecraft:stone")'>
-          <Substitute name='wnOverworldBlockSubstitute0' block='minecraft:stone'>
-            <Description>
-              Remove all WildNature stones and ores.
-            </Description>
-            <Comment>
-              The global option  deferredPopulationRange must be
-              large enough to catch all ore  clusters (>= 32).
-            </Comment>
-            <Replaces block='wildnature:basalt' weight='1.0' />
-			<Replaces block='wildnature:carbonatite' weight='1.0' />
-			<Replaces block='wildnature:chalk' weight='1.0' />
-			<Replaces block='wildnature:conglomerate' weight='1.0' />
-			<Replaces block='wildnature:dolomite' weight='1.0' />
-			<Replaces block='wildnature:epidosite' weight='1.0' />
-			<Replaces block='wildnature:gabbro' weight='1.0' />
-			<Replaces block='wildnature:gneiss' weight='1.0' />
-			<Replaces block='wildnature:gypsum' weight='1.0' />
-			<Replaces block='wildnature:hardened_sandstone' weight='1.0' />
-			<Replaces block='wildnature:limestone' weight='1.0' />
-			<Replaces block='wildnature:marble' weight='1.0' />
-			<Replaces block='wildnature:monzonite' weight='1.0' />
-			<Replaces block='wildnature:pegmatite' weight='1.0' />
-			<Replaces block='wildnature:phyllite' weight='1.0' />
-			<Replaces block='wildnature:pumice' weight='1.0' />
-			<Replaces block='wildnature:pyroxenite' weight='1.0' />
-			<Replaces block='wildnature:red_hardened_sandstone' weight='1.0' />
-			<Replaces block='wildnature:rhyolite' weight='1.0' />
-			<Replaces block='wildnature:slate' weight='1.0' />
-			<Replaces block='wildnature:syenite' weight='1.0' />
-			<Replaces block='wildnature:umber' weight='1.0' />
-			<Replaces block='wildnature:amethyst_ore' weight='1.0' />
-			<Replaces block='wildnature:amber_ore' weight='1.0' />
-			<Replaces block='wildnature:ruby_ore' weight='1.0' />
-			<Replaces block='wildnature:sapphire_ore' weight='1.0' />
-			<Replaces block='wildnature:silver_ore' weight='1.0' />
-			<Replaces block='wildnature:malachite_ore' weight='1.0' />
-          </Substitute>
-        </IfCondition>
-
-        <!-- Original "Overworld" Block Removal Complete -->
-
-
+      <IfCondition condition=':= !?wnStoneGen'>
+      <IfCondition condition=':= ?blockExists("minecraft:stone")'>
+        <Substitute name='wnOverworldBlockSubstitute0' block='minecraft:stone'>
+          <Description>
+            Remove all WildNature stones.
+          </Description>
+          <Comment>
+            The stones look bad, but removing them is pretty performance-intensive. 
+          </Comment>
+          <Replaces block='wildnature:basalt' weight='1.0' />
+          <Replaces block='wildnature:carbonatite' weight='1.0' />
+          <Replaces block='wildnature:chalk' weight='1.0' />
+          <Replaces block='wildnature:conglomerate' weight='1.0' />
+          <Replaces block='wildnature:dolomite' weight='1.0' />
+          <Replaces block='wildnature:epidosite' weight='1.0' />
+          <Replaces block='wildnature:gabbro' weight='1.0' />
+          <Replaces block='wildnature:gneiss' weight='1.0' />
+          <Replaces block='wildnature:gypsum' weight='1.0' />
+          <Replaces block='wildnature:hardened_sandstone' weight='1.0' />
+          <Replaces block='wildnature:limestone' weight='1.0' />
+          <Replaces block='wildnature:marble' weight='1.0' />
+          <Replaces block='wildnature:monzonite' weight='1.0' />
+          <Replaces block='wildnature:pegmatite' weight='1.0' />
+          <Replaces block='wildnature:phyllite' weight='1.0' />
+          <Replaces block='wildnature:pumice' weight='1.0' />
+          <Replaces block='wildnature:pyroxenite' weight='1.0' />
+          <Replaces block='wildnature:red_hardened_sandstone' weight='1.0' />
+          <Replaces block='wildnature:rhyolite' weight='1.0' />
+          <Replaces block='wildnature:slate' weight='1.0' />
+          <Replaces block='wildnature:syenite' weight='1.0' />
+          <Replaces block='wildnature:umber' weight='1.0' />
+        </Substitute>
       </IfCondition>
-      <!-- Nether Setup Complete -->
+	  </IfCondition>
+	  
+	  <IfCondition condition=':= ?blockExists("minecraft:stone")'>
+        <Substitute name='wnOverworldBlockSubstitute1' block='minecraft:stone'>
+          <Description>
+            Remove all WildNature ores.
+          </Description>
+          <Comment>
+          </Comment>
+          <Replaces block='wildnature:amethyst_ore' weight='1.0' />
+          <Replaces block='wildnature:amber_ore' weight='1.0' />
+          <Replaces block='wildnature:ruby_ore' weight='1.0' />
+          <Replaces block='wildnature:sapphire_ore' weight='1.0' />
+          <Replaces block='wildnature:silver_ore' weight='1.0' />
+          <Replaces block='wildnature:malachite_ore' weight='1.0' />
+        </Substitute>
+      </IfCondition>
 
+      <!-- Original "Overworld" Block Removal Complete -->
+
+    </IfCondition>
 
   </ConfigSection>
   <!-- Configuration for Custom Ore Generation Complete! -->
 
 </IfModInstalled>
 <!-- The "Wild Nature" mod is now configured. -->
-
-
 
 
 
