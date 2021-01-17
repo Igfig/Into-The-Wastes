@@ -1,10 +1,3 @@
-// TODO:
-// remove invar and brass from recipes from the rolling machine. Will be difficult; I think it needs an extra mod?
-// remove electric rails
-// maybe recipe for concrete that doesn't need quartz? maybe
-// maybe put some dark diamond and/or emeralds in volcanoes under the lava?
-
-
 // fix display of red coke oven
 <railcraft:coke_oven_red>.displayName = "Red Coke Oven Brick";
 <railcraft:coke_oven_red>.addTooltip("Multi-Block: 3x3x3 (Hollow)");
