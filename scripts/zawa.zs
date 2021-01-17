@@ -27,3 +27,15 @@ recipes.addShaped("machete", <zawa:machete>, [
 	[null,null,<tinkersforging:sword_blade/iron>],
 	[null,<ore:ingotIron>,null],
 	[<ore:stickWood>,null,null]]);
+	
+recipes.remove(<zawa:hunting_rifle>);
+recipes.addShaped("hunting_rifle", <zawa:hunting_rifle>, [
+	[<ore:plateSteel>,<ore:plateBronze>,<railcraft:rail:4>], // reinforced rail
+	[<minecraft:gunpowder>,<ore:plateSteel>,<minecraft:lever>],
+	[<minecraft:flint>,null,null]]);
+	
+recipes.remove(<zawa:tranquilizer_gun>);
+recipes.addShaped("tranquilizer_gun", <zawa:tranquilizer_gun>, [
+	[<ore:plateSteel>,<ore:plateBronze>,<railcraft:rail:4>], // reinforced rail
+	[<minecraft:gunpowder>,<ore:plankWood>,<minecraft:lever>],
+	[<ore:logWood>,null,null]]);
