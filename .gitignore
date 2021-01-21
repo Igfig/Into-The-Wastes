@@ -1,4 +1,6 @@
+cache
 crash-reports
+debug
 defaults
 downloads
 llibrary
@@ -16,7 +18,7 @@ shaderpacks
 /libraries
 /servers.dat
 /mods/OptiFine_*.jar
-/mods/*.disabled
+/mods/**/*.disabled
 /config/splash.properties
 /config/jei/worldSettings.cfg
 /config/multimob/modInformation
