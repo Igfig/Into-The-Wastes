@@ -1,3 +1,4 @@
+.mixin.out
 cache
 crash-reports
 debug
@@ -22,3 +23,4 @@ shaderpacks
 /config/splash.properties
 /config/jei/worldSettings.cfg
 /config/multimob/modInformation
+config/vanillafix/*
