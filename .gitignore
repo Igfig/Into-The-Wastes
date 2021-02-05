@@ -1,3 +1,4 @@
+.mixin.out
 cache
 crash-reports
 debug
@@ -5,6 +6,7 @@ defaults
 downloads
 libraries
 llibrary
+local
 logs
 output
 pmdumper
@@ -18,7 +20,8 @@ shaderpacks
 /servers.dat
 /.curseclient
 /mods/OptiFine_*.jar
-/mods/*.disabled
+/mods/**/*.disabled
 /config/splash.properties
 /config/jei/worldSettings.cfg
 /config/multimob/modInformation
+config/vanillafix/*
