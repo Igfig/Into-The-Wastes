@@ -15,7 +15,7 @@
           Distribution options for Wild Nature ores and stones.
         </Description>
       </OptionDisplayGroup>
-	  <OptionChoice name='wnStoneGen' displayName='Allow Wild Nature Stone Generation?' default='true' displayState='shown' displayGroup='groupWildNature'>
+	  <OptionChoice name='wnStoneGen' displayName='Allow Wild Nature Stone Generation?' default='false' displayState='shown' displayGroup='groupWildNature'>
         <Description> Should Custom Ore Generation allow generation of Wild Nature stones? Preventing generation can slow the game significantly, but the rocks are both extremely common and very much not to everyone's tastes.</Description>
         <Choice value=':= ?true' displayValue='Yes' description='Allow generation of WildNature stones.'/>
         <Choice value=':= ?false' displayValue='No' description='Prevent generation of WildNature stones.'/>
