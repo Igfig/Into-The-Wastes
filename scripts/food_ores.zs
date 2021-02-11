@@ -17,6 +17,14 @@
 <ore:cropCorn>.add(<wildnature:corn>);
 <ore:listAllgrain>.add(<wildnature:corn>);
 
+<ore:listAllfruit>.add(<futuremc:sweet_berries>);
+<ore:listAllfruit>.add(<valoegheses_be:berry_bush>);
+<ore:listAllfruit>.add(<valoegheses_be:island_coconut_0>);
+<ore:listAllfruit>.add(<valoegheses_be:island_coconut_1>);
+<ore:listAllfruit>.add(<valoegheses_be:fruit_peach>);
+<ore:listAllfruit>.add(<valoegheses_be:fruit_nectarine>);
+<ore:listAllfruit>.add(<valoegheses_be:fruit_plum>);
+<ore:listAllfruit>.add(<valoegheses_be:fruit_date>);
 
 // meats
 
