@@ -26,3 +26,7 @@ shaderpacks
 /config/jei/worldSettings.cfg
 /config/multimob/modInformation
 /config/vanillafix/*
+/config/triumph/documentation
+/config/triumph/script/triumph
+/config/triumph/functions/triumph
+/config/UniqueNames.txt
