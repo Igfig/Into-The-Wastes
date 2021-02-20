@@ -16,3 +16,6 @@ recipes.addShaped(<valoegheses_be:tnt_true>,[
 	[sand, gunpowder, sand],
 	[gunpowder, <minecraft:tnt>, gunpowder],
 	[sand, gunpowder, sand]]);
+	
+// if you find nitric acid in a chest, here's something you can do with it at least	
+recipes.addShapeless("nitric", <crossroads:solid_fortis>, [<valoegheses_be:acid_nitric>]);
