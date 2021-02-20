@@ -88,19 +88,19 @@ mods.crossroads.HeatingCrucible.addRecipe(<ore:dustPyrotheum>, <liquid:pyrotheum
 mods.crossroads.HeatingCrucible.addRecipe(<ore:dustCryotheum>, <liquid:cryotheum> * 250, "minecraft/blocks/packed_ice");
 mods.crossroads.HeatingCrucible.addRecipe(<ore:dustAerotheum>, <liquid:aerotheum> * 250, "minecraft/blocks/sandstone");
 mods.crossroads.HeatingCrucible.addRecipe(<ore:dustPetrotheum>, <liquid:petrotheum> * 250, "minecraft/blocks/obsidian");
-mods.crossroads.HeatingCrucible.addRecipe(<ore:dustMana>, <liquid:mana> * 250, "thermalfoundation:blocks/ore/ore_mithril");
+mods.crossroads.HeatingCrucible.addRecipe(<ore:dustMana>, <liquid:mana> * 250, "thermalfoundation:blocks/storage/block_mithril");
 
 
 // melt a few more things
 
 mods.crossroads.HeatingCrucible.addRecipe(<ore:dustRedstone>, <liquid:redstone> * 100, "minecraft/blocks/redstone_block");
 mods.crossroads.HeatingCrucible.addRecipe(<minecraft:glowstone_dust>, <liquid:glowstone> * 250, "minecraft/blocks/glowstone_block");
-mods.crossroads.HeatingCrucible.addRecipe(<ore:enderpearl>, <liquid:ender> * 250, "railcraft/blocks/brick_pearlized_5"); // TODO if we ever get a "block of ender pearl", use that texture instead
-mods.crossroads.HeatingCrucible.addRecipe(<railcraft:dust:6>, <liquid:ender> * 250, "railcraft/blocks/brick_pearlized_5"); // TODO ditto
+mods.crossroads.HeatingCrucible.addRecipe(<ore:enderpearl>, <liquid:ender> * 250, "charm/blocks/ender_pearl_block");
+mods.crossroads.HeatingCrucible.addRecipe(<railcraft:dust:6>, <liquid:ender> * 250, "charm/blocks/ender_pearl_block");
 
 mods.crossroads.HeatingCrucible.addRecipe(<thermalfoundation:material:893>, <liquid:redstone> * 250, "minecraft/blocks/redstone_block");
 mods.crossroads.HeatingCrucible.addRecipe(<thermalfoundation:material:894>, <liquid:glowstone> * 250, "minecraft/blocks/glowstone_block");
-mods.crossroads.HeatingCrucible.addRecipe(<thermalfoundation:material:895>, <liquid:ender> * 250, "railcraft/blocks/brick_pearlized_5"); // TODO ditto
+mods.crossroads.HeatingCrucible.addRecipe(<thermalfoundation:material:895>, <liquid:ender> * 250, "charm/blocks/ender_pearl_block");
 
 mods.crossroads.HeatingCrucible.addRecipe(<minecraft:redstone_block>, <liquid:redstone> * 900, "minecraft/blocks/redstone_block");
 mods.crossroads.HeatingCrucible.addRecipe(<minecraft:glowstone>, <liquid:glowstone> * 1000, "minecraft/blocks/glowstone_block");
