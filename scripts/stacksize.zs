@@ -35,8 +35,6 @@ for entry in oreDict {
 		setStackSize(entry, 16);
 	} else if (entry.name has "ingot") {
 		setStackSize(entry, 16);
-	} else if (entry.name has "gem") {
-		setStackSize(entry, 16);
 	} else if (entry.name has "dust") {
 		setStackSize(entry, 16);
 	} else if (entry.name has "plate") {
