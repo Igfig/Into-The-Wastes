@@ -1,3 +1,5 @@
+#priority 10
+
 // add missing food oredicts
 
 // fruits and veggies
@@ -25,6 +27,9 @@
 <ore:listAllfruit>.add(<valoegheses_be:fruit_nectarine>);
 <ore:listAllfruit>.add(<valoegheses_be:fruit_plum>);
 <ore:listAllfruit>.add(<valoegheses_be:fruit_date>);
+
+<ore:listAllveggie>.add(<cuisine:crops:9>); // scallions
+<ore:listAllgrain>.add(<cuisine:crops:3>); // raw rice
 
 // meats
 
