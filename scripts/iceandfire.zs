@@ -328,3 +328,5 @@ recipes.addShapedMirrored(<iceandfire:myrmex_jungle_hoe>, [
 recipes.replaceAllOccurences(<ore:stickWood>, lead_sword, <iceandfire:amphithere_macuahuitl>);
 recipes.replaceAllOccurences(<ore:stickWood>, lead_sword, <iceandfire:hippogryph_sword>);
 recipes.replaceAllOccurences(<ore:ingotIron>, <iceandfire:hippogryph_talon>, <iceandfire:hippogryph_sword>);
+
+recipes.replaceAllOccurences(<minecraft:diamond>, <futuremc:trident>, <iceandfire:tide_trident>);
