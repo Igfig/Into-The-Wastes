@@ -31,7 +31,6 @@ mods.foundry.Casting.addRecipe(<railcraft:rebar> * 6, <liquid:steel> * 432, <fou
 
 
 // cast elemental fluids to their dusts.
-
 mods.foundry.Casting.addRecipe(<thermalfoundation:material:1024>, <liquid:pyrotheum> * 250, <foundry:mold:21>);
 mods.foundry.Casting.addRecipe(<thermalfoundation:material:1025>, <liquid:cryotheum> * 250, <foundry:mold:21>);
 mods.foundry.Casting.addRecipe(<thermalfoundation:material:1026>, <liquid:aerotheum> * 250, <foundry:mold:21>);
@@ -51,6 +50,5 @@ mods.foundry.Casting.addRecipe(<mysticalworld:silver_boots>, <liquid:silver> * 5
 
 
 // some more casting recipes
-
 mods.foundry.Casting.addRecipe(<minecraft:ender_pearl>, <liquid:ender> * 250, <foundry:mold:21>); // ender pearl
 mods.foundry.Casting.addRecipe(<thermalfoundation:material:833>, <liquid:crude_oil> * 250, <foundry:mold:21>); // tar
