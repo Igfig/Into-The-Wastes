@@ -1,0 +1,11 @@
+mods.futuremc.Composter.addValidItem(<ore:treeSapling>, 30);
+mods.futuremc.Composter.addValidItem(<ore:treeLeaves>, 30);
+mods.futuremc.Composter.addValidItem(<ore:listAllveggie>, 65);
+mods.futuremc.Composter.addValidItem(<ore:listAllfruit>, 65);
+mods.futuremc.Composter.addValidItem(<ore:listAllgrain>, 65);
+mods.futuremc.Composter.addValidItem(<ore:allFlowers>, 65);
+mods.futuremc.Composter.addValidItem(<ore:allTallflowers>, 65);
+mods.futuremc.Composter.addValidItem(<ore:listAllnut>, 30);
+mods.futuremc.Composter.addValidItem(<ore:mushroom>, 65);
+mods.futuremc.Composter.addValidItem(<ore:seed>, 30);
+mods.futuremc.Composter.addValidItem(<ore:compostable>, 50);
