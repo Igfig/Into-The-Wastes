@@ -1,3 +1,8 @@
+# add items to the compostable oredict, because for some reason that oredict shows as empty during load
+
+<ore:compostable>.add(<foodfunk:rotten_food>, <foodfunk:spoiled_milk>, <foodfunk:biodegradable_item>, <foodfunk:rotted_item>, <rats:contaminated_food>);
+
+# add items to composter
 mods.futuremc.Composter.addValidItem(<ore:treeSapling>, 30);
 mods.futuremc.Composter.addValidItem(<ore:treeLeaves>, 30);
 mods.futuremc.Composter.addValidItem(<ore:listAllveggie>, 65);
