@@ -38,7 +38,3 @@
 <railcraft:ore_metal_poor:3>.addTooltip("Appears in oases beyond +/-1000z"); // tin
 <railcraft:ore_metal_poor:4>.addTooltip("Appears in oases beyond +/-3000z"); // lead
 <railcraft:ore_metal_poor:5>.addTooltip("Appears in oases beyond +/-3000z"); // silver
-
-
-// rationale for why potions make you thirsty
-<minecraft:nether_wart>.addTooltip("Unexpectedly salty.");
