@@ -15,9 +15,9 @@ saves
 screenshots
 shaderpacks
 /*.json
-/*.txt
 /*.log
 /*.lnk
+/*.txt
 /servers.dat
 /.curseclient
 /mods/OptiFine_*.jar
@@ -27,6 +27,4 @@ shaderpacks
 /config/multimob/modInformation
 /config/vanillafix/*
 /config/triumph/documentation
-/config/triumph/script/triumph
-/config/triumph/functions/triumph
 /config/UniqueNames.txt

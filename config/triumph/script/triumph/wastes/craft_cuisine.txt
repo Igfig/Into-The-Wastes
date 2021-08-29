@@ -1,0 +1,9 @@
+setIcon(<cuisine:manual>)
+setTitle("Real Kitchen")
+setDescription("Craft a Cuisine Manual to learn about real cooking")
+addParent("triumph:wastes/craft_bbq")
+
+criteria = addCriteria("craft_cuisine", "minecraft:inventory_changed")
+criteria.addItem(<cuisine:manual>)
+
+setPos(71,-3)
