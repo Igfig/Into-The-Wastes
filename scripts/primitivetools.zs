@@ -5,7 +5,8 @@
 	<mysticalworld:copper_knife>,
 	<mysticalworld:silver_knife>,
 	<roots:iron_knife>,
-	<roots:gold_knife>
+	<roots:gold_knife>,
+	<roots:runed_dagger>
 ]);
 
 

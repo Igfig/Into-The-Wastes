@@ -18,10 +18,10 @@
 <mysticalworld:amethyst_ore>.addTooltip("Appears in certain chunks in jungles");
 
 <crossroads:ore_copper>.addTooltip("Appears rarely in large deposits in oases");
-<crossroads:ore_tin>.addTooltip("Appears rarely in large deposits in oases beyond ±1000z");
+<crossroads:ore_tin>.addTooltip("Appears rarely in large deposits in oases beyond +/-1000z");
 
-<thermalfoundation:ore:2>.addTooltip("Appears rarely in large deposits in oases beyond ±3000z");
-<thermalfoundation:ore:3>.addTooltip("Appears rarely in large deposits in oases beyond ±3000z");
+<thermalfoundation:ore:2>.addTooltip("Appears rarely in large deposits in oases beyond +/-3000z");
+<thermalfoundation:ore:3>.addTooltip("Appears rarely in large deposits in oases beyond +/-3000z");
 <thermalfoundation:ore:6>.addTooltip("Appears in oases beyond +/-6000z, and rarely in large deposits");
 
 <thermalfoundation:ore_fluid:0>.addTooltip("Appears in the desert"); // oil sand
