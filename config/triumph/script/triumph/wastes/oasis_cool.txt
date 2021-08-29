@@ -147,4 +147,4 @@ criteria = addCriteria("minecraft:taiga_hills", "minecraft:location")
 criteria.setBiome("minecraft:taiga_hills")
 
 setRequirements("any")
-setPos(38,60)
+setPos(38,-53)

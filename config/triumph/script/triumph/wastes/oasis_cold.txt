@@ -71,4 +71,4 @@ criteria = addCriteria("wildnature:tatra_mountains", "minecraft:location")
 criteria.setBiome("wildnature:tatra_mountains")
 
 setRequirements("any")
-setPos(71,60)
+setPos(71,-53)

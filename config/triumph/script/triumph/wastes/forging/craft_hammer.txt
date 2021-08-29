@@ -1,0 +1,13 @@
+setIcon("tinkersforging:hammer/stone")
+setTitle("Hammer Time")
+setDescription("Craft a Tinker's Hammer")
+addParent("triumph:wastes/flint_tools")
+
+criteria = addCriteria("hammer/wood", "minecraft:inventory_changed")
+criteria.addItem("tinkersforging:hammer/wood")
+criteria = addCriteria("hammer/stone", "minecraft:inventory_changed")
+criteria.addItem("tinkersforging:hammer/stone")
+
+setRequirements("any")
+
+setPos(38,59)

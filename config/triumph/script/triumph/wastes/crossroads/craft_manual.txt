@@ -1,0 +1,9 @@
+setIcon("guideapi:crossroads-info_guide")
+setTitle("Crossroads")
+setDescription("Craft a Technician's Manual to learn about industry")
+setFrameType("goal")
+addParent("triumph:wastes/flint_tools")
+
+criteria = addCriteria("crossroads_manual", "minecraft:inventory_changed")
+criteria.addItem(<guideapi:crossroads-info_guide>)
+setPos(71,92)

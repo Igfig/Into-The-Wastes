@@ -1,5 +1,5 @@
 setIcon(<cuisine:fire_pit:2>)
-setTitle("Camping Kitchen")
+setTitle("Classic BBQ")
 setDescription("Craft a barbecue rack")
 addParent("triumph:wastes/flint_tools")
 
