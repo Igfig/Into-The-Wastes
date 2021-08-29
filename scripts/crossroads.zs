@@ -30,3 +30,8 @@ recipes.addShaped(<crossroads:omnimeter>, [
 	[null,<ore:ingotCopper>,null],
 	[<ore:ingotCopper>,<ore:dustRedstone>,<ore:ingotCopper>],
 	[null,<ore:ingotCopper>,null]]);
+	
+
+// add some notes
+
+<crossroads:heating_crucible>.addTooltip("Heat from the bottom; insert with a hopper on the top; extract with a faucet or fluid tube on the sides");
