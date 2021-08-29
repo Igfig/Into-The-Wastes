@@ -98,7 +98,7 @@
 				}
 			],
 			"cluster-count": 15,
-			"min-height": 0,
+			"min-height": 2,
 			"max-height": 256,
 			"retrogen": false,
 			"biome": "all",
@@ -146,11 +146,11 @@
 			"generator": {
 				"block": "coal_ore",
 				"material": "minecraft:stone",
-				"cluster-size": 170
+				"cluster-size": 120
 			},
 			"cluster-count": 10,
-			"chunk-chance": 200,
-			"min-height": 0,
+			"chunk-chance": 180,
+			"min-height": 2,
 			"max-height": 96,
 			"retrogen": false,
 			"biome": {
@@ -180,9 +180,9 @@
 				"cluster-size": 60
 			},
 			"cluster-count": 15,
-			"chunk-chance": 200,
-			"min-height": 0,
-			"max-height": 64,
+			"chunk-chance": 150,
+			"min-height": 2,
+			"max-height": 80,
 			"retrogen": false,
 			"biome": {
 				"restriction": "blacklist",
@@ -211,8 +211,8 @@
 				"cluster-size": 110
 			},
 			"cluster-count": 2,
-			"chunk-chance": 500,
-			"min-height": 0,
+			"chunk-chance": 400,
+			"min-height": 2,
 			"max-height": 48,
 			"retrogen": false,
 			"biome": {
@@ -257,8 +257,8 @@
 				"min": 24,
 				"max": 40
 			},
-			"chunk-chance": 200,
-			"min-height": 0,
+			"chunk-chance": 150,
+			"min-height": 2,
 			"max-height": 32,
 			"retrogen": false,
 			"biome": {
@@ -287,8 +287,8 @@
 				"cluster-size": 8
 			},
 			"cluster-count": 25,
-			"chunk-chance": 1000,
-			"min-height": 0,
+			"chunk-chance": 800,
+			"min-height": 2,
 			"max-height": 56,
 			"retrogen": false,
 			"biome": {

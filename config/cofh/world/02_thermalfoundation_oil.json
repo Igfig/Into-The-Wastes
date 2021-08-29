@@ -57,7 +57,7 @@
 					"cluster-count": 2
 				}
 			],
-			"chunk-chance": 3000,
+			"chunk-chance": 2000,
 			"in-village": "false",
 			"retrogen": "true",
 			"biome": {
