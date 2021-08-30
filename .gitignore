@@ -20,6 +20,8 @@ shaderpacks
 /*.txt
 /servers.dat
 /.curseclient
+/mods/1.12.2
+/mods/memory_repo
 /mods/OptiFine_*.jar
 /mods/**/*.disabled
 /config/splash.properties
