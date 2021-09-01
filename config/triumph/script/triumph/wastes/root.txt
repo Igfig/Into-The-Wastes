@@ -19,6 +19,12 @@ addCriteria("location", "minecraft:location")
 
 // TODO more advancements
 
+// frying pan + spatula
+// chopping block, kitchen knife, and chop ingredients
+// spice bottle of seasoning, and of water or juice or oil
+// plate of food
+// drinkro
+
 // purified water
 // put water in clay barrel (or w/e) to stretch your supply
 
@@ -41,9 +47,20 @@ addCriteria("location", "minecraft:location")
 // psi guide
 
 // care of animania animals
+// breed animals?
 // animania cheese
 
 // tame a rat
 // some duplicates of rat cheevos
 
 // some duplicates of ice and fire cheevos maybe
+
+// get silkworms from leaves
+// silk armour
+// get some chitin?
+// chitin armour?
+
+// antique atlas
+
+// larder
+// icebox
