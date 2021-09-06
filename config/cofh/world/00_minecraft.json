@@ -149,7 +149,7 @@
 				"cluster-size": 120
 			},
 			"cluster-count": 10,
-			"chunk-chance": 180,
+			"chunk-chance": 120,
 			"min-height": 2,
 			"max-height": 96,
 			"retrogen": false,
@@ -177,12 +177,12 @@
 				"block": "iron_ore",
 				"material": "minecraft:stone",
 				"type": "large-vein",
-				"cluster-size": 60
+				"cluster-size": 200
 			},
-			"cluster-count": 15,
+			"cluster-count": 4,
 			"chunk-chance": 150,
-			"min-height": 2,
-			"max-height": 80,
+			"min-height": 32,
+			"max-height": 64,
 			"retrogen": false,
 			"biome": {
 				"restriction": "blacklist",
@@ -208,12 +208,12 @@
 				"block": "gold_ore",
 				"material": "minecraft:stone",
 				"type": "large-vein",
-				"cluster-size": 110
+				"cluster-size": 45
 			},
-			"cluster-count": 2,
+			"cluster-count": 5,
 			"chunk-chance": 400,
 			"min-height": 2,
-			"max-height": 48,
+			"max-height": 32,
 			"retrogen": false,
 			"biome": {
 				"restriction": "blacklist",
@@ -289,7 +289,7 @@
 			"cluster-count": 25,
 			"chunk-chance": 800,
 			"min-height": 2,
-			"max-height": 56,
+			"max-height": 20,
 			"retrogen": false,
 			"biome": {
 				"restriction": "blacklist",
