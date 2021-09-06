@@ -16,7 +16,7 @@
   "highland": -1,
   "volcanic_island": 255,
   "quagmire": 254,
-  "marsh": 246,
+  "marsh": -1,
   "chaparral": -1,
   "flower_island": -1,
   "flower_field": -1,
