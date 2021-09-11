@@ -1,17 +1,12 @@
-
-//This is a root advancement. It is the base advancement for a page. As such, it has no parent and has to set a background.
-
-//Set icon item
 setIcon(<minecraft:sand>)
 
 alwaysVisible()
 
-//Set title String
 setTitle("Into the Wastes")
-setDescription("Enter the Wastes")
+setDescription("See Menu > Advancements for a guide to this modpack")
 setBackground("minecraft:textures/gui/advancements/backgrounds/adventure.png")
-setShowToast(false)
-setAnnounceToChat(false)
+setShowToast(true)
+setAnnounceToChat(true)
 
 setPos(-79,-53)
 addCriteria("location", "minecraft:location")
@@ -21,14 +16,16 @@ addCriteria("location", "minecraft:location")
 
 // frying pan + spatula
 // chopping block, kitchen knife, and chop ingredients
+//	<cuisine:ingredient>{form:"SLICED"}
 // spice bottle of seasoning, and of water or juice or oil
 // plate of food
 // drinkro
 
 // purified water
 // put water in clay barrel (or w/e) to stretch your supply
+// water collector
 
-// tinker's anvil
+// tinker's anvil and hammer
 // heat an ingot (fuel in forge, plus flint&steel)
 // tool head
 // tool
@@ -50,7 +47,7 @@ addCriteria("location", "minecraft:location")
 // breed animals?
 // animania cheese
 
-// tame a rat
+// tame a rat (10-15 cheese wedges)
 // some duplicates of rat cheevos
 
 // some duplicates of ice and fire cheevos maybe
