@@ -29,3 +29,10 @@ mods.jei.JEI.removeAndHide(<minecraft:stone_shovel>);
 mods.jei.JEI.removeAndHide(<minecraft:stone_pickaxe>);
 mods.jei.JEI.removeAndHide(<minecraft:stone_axe>);
 mods.jei.JEI.removeAndHide(<minecraft:stone_hoe>);
+
+
+// add a missing recipe
+
+recipes.addShaped(<primitivetools:primitive_pick_cbl>, [
+	[<primitivetools:flint_shard>,<primitivetools:leather_strip>],
+	[<minecraft:bone>,<primitivetools:flint_flake>]]);
