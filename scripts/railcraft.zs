@@ -59,3 +59,14 @@ recipes.replaceAllOccurences(<minecraft:diamond_shovel>,<thermalfoundation:tool.
 recipes.addShaped("crushed_obsidian", <railcraft:generic:7> * 4, [
 	[<ore:dustObsidian>,<ore:dustObsidian>],
 	[<ore:dustObsidian>,<ore:dustObsidian>]]);
+	
+
+// engineer's overalls (original recipe clashes with wool leggings)
+
+val blueWool = <minecraft:wool:3>;
+
+recipes.remove(<railcraft:armor_overalls>);
+recipes.addShaped("armor_overalls", <railcraft:armor_overalls>, [
+	[blueWool,<ore:ingotIron>,blueWool],
+	[blueWool,      null,     blueWool],
+	[blueWool,      null,     blueWool]]);

@@ -11,3 +11,34 @@
 
 // cheese blocks
 <rats:block_of_cheese>.addTooltip("Aged to inedibility.");
+
+// Animania mud
+<animania:block_mud>.displayName = "Wallowing Mud";
+
+
+// recipe for sponges
+val cellulose = <thermalfoundation:material:801>;
+val yellowool = <minecraft:wool:4>;
+val sulfurdst = <ore:dustSulfur>;
+
+recipes.addShaped(<minecraft:sponge>, [
+	[cellulose,yellowool,cellulose],
+	[yellowool,sulfurdst,yellowool],
+	[cellulose,yellowool,cellulose]]);
+
+
+// allow woods with special trapdoors and chests to craft those
+
+val genericPlank = <ore:plankWood>;
+genericPlank.remove(<minecraft:planks:1>,<minecraft:planks:2>,<minecraft:planks:3>,<minecraft:planks:4>,<minecraft:planks:5>); // all vanilla woods except oak
+
+recipes.removeByRecipeName("environs:trapdoor");
+recipes.addShaped("generic_trapdoor", <minecraft:trapdoor> * 2, [
+	[genericPlank, genericPlank, genericPlank],
+	[genericPlank, genericPlank, genericPlank]]);
+	
+recipes.removeByRecipeName("environs:chests");
+recipes.addShaped("generic_chest", <minecraft:chest>, [
+	[genericPlank, genericPlank, genericPlank],
+	[genericPlank,     null,     genericPlank],
+	[genericPlank, genericPlank, genericPlank]]);

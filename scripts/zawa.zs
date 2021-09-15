@@ -39,3 +39,22 @@ recipes.addShaped("tranquilizer_gun", <zawa:tranquilizer_gun>, [
 	[<ore:plateSteel>,<ore:plateBronze>,<railcraft:rail:4>], // reinforced rail
 	[<minecraft:gunpowder>,<ore:plankWood>,<minecraft:lever>],
 	[<ore:logWood>,null,null]]);
+	
+	
+// replace wetsuit recipe to not conflict with clay armour
+
+recipes.replaceAllOccurences(<minecraft:clay_ball>, <minecraft:sponge>, <zawa:wetsuit_chest>);
+recipes.replaceAllOccurences(<minecraft:clay_ball>, <minecraft:sponge>, <zawa:wetsuit_leggings>);
+recipes.replaceAllOccurences(<minecraft:clay_ball>, <minecraft:sponge>, <zawa:wetsuit_mask>);
+recipes.replaceAllOccurences(<minecraft:clay_ball>, <minecraft:sponge>, <zawa:flippers>);
+
+
+// replace "steel" bars recipe to avoid conflict with iron ladder
+
+val ironBars = <minecraft:iron_bars>;
+
+<zawa:steel_bars>.displayName = "Cage Bars";
+recipes.remove(<zawa:steel_bars>);
+recipes.addShaped("zawa_steel_bars", <zawa:steel_bars> * 6, [
+	[ironBars,ironBars,ironBars],
+	[ironBars,ironBars,ironBars]]);
