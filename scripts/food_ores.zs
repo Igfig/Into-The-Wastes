@@ -44,11 +44,11 @@
 );
 
 <ore:listAllmeatraw>.add(
-	<wildnature:raw_boar>, <wildnature:raw_goat>, <wildnature:raw_bison>, <wildnature:raw_camel>, <zawa:carnivore_meat_raw>, <zawa:large_meat_raw>, <zawa:cetacean_meat_raw>, <zawa:bush_meat_raw>, <zawa:bird_meat>, <zawa:reptile_meat_raw>);
+	<wildnature:raw_boar>, <wildnature:raw_goat>, <wildnature:raw_bison>, <wildnature:raw_camel>, <zawa:carnivore_meat_raw>, <zawa:large_meat_raw>, <zawa:cetacean_meat_raw>, <zawa:bush_meat_raw>, <zawa:bird_meat>, <zawa:reptile_meat_raw>, <zawa:raw_frog_leg>, <animania:raw_peacock>, <animania:raw_prime_peacock>);
 
 <ore:listAllmeatcooked>.add(
 	<minecraft:cooked_porkchop>, <minecraft:cooked_beef>, <minecraft:cooked_chicken>,<minecraft:cooked_rabbit>, <minecraft:cooked_mutton>,
-	<wildnature:cooked_boar>, <wildnature:cooked_goat>, <wildnature:cooked_bison>, <wildnature:cooked_camel>, <zawa:carnivore_meat_cooked>, <zawa:large_meat_cooked>, <zawa:cetacean_meat_cooked>, <zawa:bush_meat_cooked>, <zawa:bird_meat_cooked>, <zawa:reptile_meat_cooked>);
+	<wildnature:cooked_boar>, <wildnature:cooked_goat>, <wildnature:cooked_bison>, <wildnature:cooked_camel>, <zawa:carnivore_meat_cooked>, <zawa:large_meat_cooked>, <zawa:cetacean_meat_cooked>, <zawa:bush_meat_cooked>, <zawa:bird_meat_cooked>, <zawa:reptile_meat_cooked>, <zawa:cooked_frog_leg>, <animania:cooked_peacock>, <animania:cooked_prime_peacock>);
 
 <ore:listAllfishraw>.add(<minecraft:fish:0>, <minecraft:fish:1>, <zawa:raw_cichlid>, <zawa:raw_crab_leg>);
 <ore:listAllfishcooked>.add(<minecraft:cooked_fish:*>, <zawa:cooked_cichlid>, <zawa:cooked_crab_leg>);
