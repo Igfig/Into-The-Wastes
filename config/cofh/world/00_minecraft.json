@@ -97,7 +97,7 @@
 					"cluster-size": 300
 				}
 			],
-			"cluster-count": 15,
+			"cluster-count": 2,
 			"min-height": 2,
 			"max-height": 256,
 			"retrogen": false,
@@ -177,9 +177,9 @@
 				"block": "iron_ore",
 				"material": "minecraft:stone",
 				"type": "large-vein",
-				"cluster-size": 200
+				"cluster-size": 400
 			},
-			"cluster-count": 4,
+			"cluster-count": 2,
 			"chunk-chance": 150,
 			"min-height": 32,
 			"max-height": 64,
@@ -208,9 +208,9 @@
 				"block": "gold_ore",
 				"material": "minecraft:stone",
 				"type": "large-vein",
-				"cluster-size": 45
+				"cluster-size": 250
 			},
-			"cluster-count": 5,
+			"cluster-count": 2,
 			"chunk-chance": 400,
 			"min-height": 2,
 			"max-height": 32,
@@ -259,7 +259,7 @@
 			},
 			"chunk-chance": 150,
 			"min-height": 2,
-			"max-height": 32,
+			"max-height": 64,
 			"retrogen": false,
 			"biome": {
 				"restriction": "blacklist",
@@ -410,7 +410,7 @@
 				"block": [
 					{
 						"name": "coal_ore",
-						"weight": 20
+						"weight": 16
 					},
 					{
 						"name": "railcraft:ore_metal_poor",
@@ -477,7 +477,7 @@
 				"block": [
 					{
 						"name": "coal_ore",
-						"weight": 20
+						"weight": 16
 					},
 					{
 						"name": "railcraft:ore_metal_poor",
@@ -551,7 +551,7 @@
 				"block": [
 					{
 						"name": "coal_ore",
-						"weight": 20
+						"weight": 16
 					},
 					{
 						"name": "railcraft:ore_metal_poor",
@@ -638,7 +638,7 @@
 				"block": [
 					{
 						"name": "coal_ore",
-						"weight": 20
+						"weight": 16
 					},
 					{
 						"name": "railcraft:ore_metal_poor",
@@ -693,13 +693,6 @@
 							"variant": "lead"
 						}
 						"weight": 8
-					},
-					{
-						"name": "thermalfoundation:ore",
-						"properties": {
-							"type": "platinum"
-						},
-						"weight": 1
 					}
 				],				
 				"material": "minecraft:stone",

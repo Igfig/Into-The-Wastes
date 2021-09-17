@@ -24,7 +24,7 @@
 
 <thermalfoundation:ore:2>.addTooltip("Appears rarely in large deposits in oases beyond +/-3000z");
 <thermalfoundation:ore:3>.addTooltip("Appears rarely in large deposits in oases beyond +/-3000z");
-<thermalfoundation:ore:6>.addTooltip("Appears in oases beyond +/-6000z, and rarely in large deposits");
+<thermalfoundation:ore:6>.addTooltip("Appears rarely in large deposits in oases beyond +/-6000z");
 
 <thermalfoundation:ore_fluid:0>.addTooltip("Appears in the desert"); // oil sand
 <thermalfoundation:ore_fluid:2>.addTooltip("Appears in redstone deposits");
