@@ -18,8 +18,9 @@ shaderpacks
 /*.log
 /*.lnk
 /*.txt
-/servers.dat
 /.curseclient
+/.ReAuth.cfg
+/servers.dat
 /mods/1.12.2
 /mods/memory_repo
 /mods/OptiFine_*.jar
