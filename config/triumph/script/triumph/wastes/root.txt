@@ -3,7 +3,7 @@ setIcon(<minecraft:sand>)
 alwaysVisible()
 
 setTitle("Into the Wastes")
-setDescription("See Menu > Advancements for a guide to this modpack")
+setDescription("See Advancements in the menu for a guide to this modpack")
 setBackground("minecraft:textures/gui/advancements/backgrounds/adventure.png")
 setShowToast(true)
 setAnnounceToChat(true)
