@@ -1,5 +1,10 @@
 {
   "skyColor": 9477744,
   "fogColor": 11122055,
-  "fogDensity": 0.6
+  "fogDensity": 0.6,
+  "generators": {
+    "malachite": {
+	  "enable": false
+    }
+  }
 }

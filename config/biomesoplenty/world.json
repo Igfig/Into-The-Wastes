@@ -1,6 +1,6 @@
 {
 "generateBopOre": false,
-"generateBopSoils": true,
+"generateBopSoils": false,
 "generateBopTrees": true,
 "generateBopGrasses": true,
 "generateBopFoliage": true,

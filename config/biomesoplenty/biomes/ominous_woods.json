@@ -1,0 +1,17 @@
+{
+  "fillerBlock": {
+    "block": "minecraft:dirt",
+    "properties": {
+      "coarse": "false",
+      "variant": "dirt"
+    }
+  },
+  "averageHeight": 66.0,
+  "topBlock": {
+    "block": "minecraft:grass",
+    "properties": {
+      "snowy": "false",
+      "variant": "dirt"
+    }
+  }
+}
