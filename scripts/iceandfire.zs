@@ -5,6 +5,12 @@ import crafttweaker.item.IIngredient;
 import mods.TinkersForging.Anvil;
 
 
+// remove unwanted ore 
+
+mods.jei.JEI.removeAndHide(<iceandfire:silver_ore>);
+mods.jei.JEI.removeAndHide(<iceandfire:sapphire_ore>);
+
+
 // remove silver armor
 
 val removeFromAnvil = [
