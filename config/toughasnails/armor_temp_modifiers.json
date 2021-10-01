@@ -9,6 +9,12 @@
     "modifier": -2
   },
   {
+	"names": [
+	  "quark:archaeologist_hat"
+	],
+    "modifier": -1
+  },
+  {
     "names": [
       "contenttweaker:silk_head",
       "contenttweaker:silk_chest",

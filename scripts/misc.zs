@@ -42,3 +42,10 @@ recipes.addShaped("generic_chest", <minecraft:chest>, [
 	[genericPlank, genericPlank, genericPlank],
 	[genericPlank,     null,     genericPlank],
 	[genericPlank, genericPlank, genericPlank]]);
+	
+	
+// flour cooks directly to bread, and crafts to two dough
+
+recipes.removeByRecipeName("cuisine:dough");
+recipes.addShapeless(<cuisine:food:2> * 2, [<ore:foodFlour>, <ore:listAllwater>]); // dough
+furnace.addRecipe(<minecraft:bread>, <cuisine:food:1>); // flour

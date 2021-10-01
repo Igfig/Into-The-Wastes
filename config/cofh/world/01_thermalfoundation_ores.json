@@ -51,10 +51,11 @@
 				"value": [
 					{
 						"type": "dictionary",
-						"entry": [
-							"DESERT", 
-							"HOT"
-						]
+						"entry": "DESERT"
+					},
+					{
+						"type": "dictionary",
+						"entry": "HOT"
 					}
 				]
 			},
@@ -86,15 +87,15 @@
 			"max-height": 48,
 			"retrogen": false,
 			"biome": {
-				"restriction": "blacklist",
+				"restriction": "whitelist",
 				"value": [
 					{
 						"type": "dictionary",
-						"entry": [
-							"DESERT", 
-							"HOT",
-							"WARM"
-						]
+						"entry": "COOL"
+					},
+					{
+						"type": "dictionary",
+						"entry": "COLD"
 					}
 				]
 			},
@@ -126,15 +127,15 @@
 			"max-height": 48,
 			"retrogen": false,
 			"biome": {
-				"restriction": "blacklist",
+				"restriction": "whitelist",
 				"value": [
 					{
 						"type": "dictionary",
-						"entry": [
-							"DESERT", 
-							"HOT",
-							"WARM"
-						]
+						"entry": "COOL"
+					},
+					{
+						"type": "dictionary",
+						"entry": "COLD"
 					}
 				]
 			},

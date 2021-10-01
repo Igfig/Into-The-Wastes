@@ -19,6 +19,7 @@ addCriteria("location", "minecraft:location")
 //	<cuisine:ingredient>{form:"SLICED"}
 // spice bottle of seasoning, and of water or juice or oil
 // plate of food
+// stomp fruit to juice
 // drinkro
 
 // purified water
@@ -28,7 +29,7 @@ addCriteria("location", "minecraft:location")
 // tinker's anvil and hammer
 // heat an ingot (fuel in forge, plus flint&steel)
 // tool head
-// tool
+// tool? Except no, it's too easy to get iron tools from mobs
 
 // crucible
 // fuel heater
@@ -57,7 +58,8 @@ addCriteria("location", "minecraft:location")
 // get some chitin?
 // chitin armour?
 
-// antique atlas
+// make antique atlas
+// copy antique atlas
 
 // larder
 // icebox

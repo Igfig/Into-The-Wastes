@@ -108,9 +108,9 @@
     "minecraft:taiga_hills": "PINES_HILLS",
     "minecraft:void": "END_VOID",
     "rats:ratlantis": "JUNGLE",
-    "traverse:arid_highland": "MOUNTAINS_NAKED",
+    "traverse:arid_highland": "SAVANNA_CLIFFS",
     "traverse:badlands": "DESERT",
-    "traverse:canyon": "RAVINE",
+    "traverse:canyon": "PLATEAU_MESA",
     "traverse:crag_cliffs": "MOUNTAINS_SNOW_CAPS",
     "traverse:desert_shrubland": "SAVANNA",
     "traverse:glacier_spikes": "MOUNTAINS_NAKED",
@@ -119,7 +119,7 @@
     "traverse:mini_jungle": "JUNGLE",
     "traverse:red_desert": "DESERT",
     "traverse:rocky_plains": "HILLS",
-    "traverse:temperate_rainforest": "PINES",
+    "traverse:temperate_rainforest": "MEGA_SPRUCE",
     "traverse:thicket": "DENSE_FOREST",
     "valoegheses_be:archipelago": "WATER",
     "valoegheses_be:australian outback": "SAVANNA",
@@ -172,6 +172,9 @@
     "valoegheses_be:white oaks hills": "SNOW_PINES_HILLS",
     "valoegheses_be:white woods": "PINES",
     "valoegheses_be:white woods hills": "PINES_HILLS",
-    "valoegheses_be:woodlands hills": "FOREST_HILLS"
+    "valoegheses_be:woodlands hills": "FOREST_HILLS",
+    "wildnature:dunes": "PLAINS",
+    "wildnature:light_mesa": "BRYCE",
+    "wildnature:volcano": "MOUNTAINS_NAKED"
   }
 }

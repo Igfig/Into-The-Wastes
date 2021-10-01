@@ -6,6 +6,11 @@ recipes.removeByRecipeName("guideapi:guide_journal"); // and this doesn't work e
 recipes.addShapeless("guide_journal", <guideapi:crossroads-info_guide>, [<minecraft:book>, <ore:ingotIron>]);
 
 
+// remove unwanted ore
+
+mods.jei.JEI.removeAndHide(<crossroads:ore_native_copper>);
+
+
 // remove some gears we don't want
 
 mods.jei.JEI.removeAndHide(<crossroads:gear_nickel>);

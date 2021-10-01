@@ -8,6 +8,7 @@ val cool2 = [
 ] as IItemStack[];
 
 val cool1 = [
+	<quark:archaeologist_hat>,
 	<contenttweaker:silk_head>,
 	<contenttweaker:silk_chest>,
 	<contenttweaker:silk_legs>,

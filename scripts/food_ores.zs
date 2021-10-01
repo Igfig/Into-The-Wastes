@@ -64,3 +64,7 @@
 
 <ore:listAllchevonraw>.add(<animania:raw_chevon>, <animania:raw_prime_chevon>,  <wildnature:raw_goat>);
 <ore:listAllchevoncooked>.add(<animania:cooked_chevon>, <animania:cooked_prime_chevon>, <wildnature:cooked_goat>);
+
+
+// also rotten flesh should count as rotten
+<ore:rotten>.add(<minecraft:rotten_flesh>);
