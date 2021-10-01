@@ -26,8 +26,9 @@ shaderpacks
 /mods/OptiFine_*.jar
 /mods/**/*.disabled
 /config/splash.properties
-/config/jei/worldSettings.cfg
-/config/multimob/modInformation
-/config/vanillafix/*
-/config/triumph/documentation
 /config/UniqueNames.txt
+/config/vanillafix/*
+/config/jei/worldSettings.cfg
+/config/jei/bookmarks.ini
+/config/multimob/modInformation
+/config/triumph/documentation
