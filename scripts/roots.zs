@@ -75,5 +75,5 @@ mods.jei.JEI.removeAndHide(<roots:ritual_summon_creatures>);
 
 // new recipe for firestarter that doesn't conflict with Cuisine wooden handle
 
-recipes.removeByRecipeName("roots:fire_starter");
+recipes.remove(<roots:fire_starter>);
 recipes.addShapeless("fire_starter", <roots:fire_starter>, [<ore:stickWood>,<ore:stickWood>]);
