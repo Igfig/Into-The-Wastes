@@ -6,6 +6,6 @@ val cobble = <ore:cobblestone>;
 for metal in metals {
 	recipes.addShaped("rain_collector_" + metal.name, <toughasnails:rain_collector>, [
 		[metal,<ore:string>,metal],
-		[cobble,<minecraft:bucket>,cobble],
+		[cobble,null,cobble],
 		[cobble,cobble,cobble]]);
 }

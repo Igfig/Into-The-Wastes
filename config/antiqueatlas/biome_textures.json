@@ -172,9 +172,6 @@
     "valoegheses_be:white oaks hills": "SNOW_PINES_HILLS",
     "valoegheses_be:white woods": "PINES",
     "valoegheses_be:white woods hills": "PINES_HILLS",
-    "valoegheses_be:woodlands hills": "FOREST_HILLS",
-    "wildnature:dunes": "PLAINS",
-    "wildnature:light_mesa": "BRYCE",
-    "wildnature:volcano": "MOUNTAINS_NAKED"
+    "valoegheses_be:woodlands hills": "FOREST_HILLS"
   }
 }

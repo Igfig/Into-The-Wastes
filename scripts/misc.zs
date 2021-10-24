@@ -27,6 +27,12 @@ recipes.addShaped(<minecraft:sponge>, [
 	[cellulose,yellowool,cellulose]]);
 
 
+// erase written books
+
+recipes.addShapeless(<minecraft:book>, [<minecraft:written_book>, <minecraft:sponge>.reuse()]);
+recipes.addShapeless(<minecraft:book>, [<minecraft:written_book>, <minecraft:bread>]);
+
+
 // allow woods with special trapdoors and chests to craft those
 
 val genericPlank = <ore:plankWood>;

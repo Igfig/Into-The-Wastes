@@ -4,7 +4,6 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 
-
 // remove unwanted blocks
 
 val toRemove = [
@@ -46,3 +45,9 @@ recipes.addShaped("metal_caster", <foundry:machine:1>, [
 	[null, <minecraft:bucket>, null],
 	[<minecraft:piston>, <foundry:componentblock>, <minecraft:piston>],
 	[<crossroads:gear_bronze>,<ore:dustRedstone>,<crossroads:gear_bronze>]]);
+	
+	
+// fix a typo
+
+<foundry:machine:1>.clearTooltip();
+<foundry:machine:1>.addTooltip("Casts items from molten metal using molds.");
