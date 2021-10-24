@@ -98,3 +98,8 @@ recipes.replaceAllOccurences(<minecraft:stone_shovel>, <ore:toolPrimitiveShovel>
 recipes.addShaped(<primitivetools:primitive_pick_cbl>, [
 	[<primitivetools:flint_shard>,<primitivetools:leather_strip>],
 	[<minecraft:bone>,<primitivetools:flint_flake>]]);
+	
+	
+// rename vine ropes because why not
+
+<primitivetools:cordage_vine>.displayName = "Vine Twine";
