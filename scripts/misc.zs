@@ -17,6 +17,7 @@
 
 
 // recipe for sponges
+
 val cellulose = <thermalfoundation:material:801>;
 val yellowool = <minecraft:wool:4>;
 val sulfurdst = <ore:dustSulfur>;
@@ -55,3 +56,8 @@ recipes.addShaped("generic_chest", <minecraft:chest>, [
 recipes.removeByRecipeName("cuisine:dough");
 recipes.addShapeless(<cuisine:food:2> * 2, [<ore:foodFlour>, <ore:listAllwater>]); // dough
 furnace.addRecipe(<minecraft:bread>, <cuisine:food:1>); // flour
+
+
+// melt down excess thermometers
+
+furnace.addRecipe(<minecraft:glass>, <crossroads:thermometer>);
