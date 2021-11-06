@@ -46,7 +46,6 @@ recipes.addShapeless(<minecraft:book>, [<minecraft:written_book>, <minecraft:bre
 
 val genericPlank = <ore:plankWood>;
 genericPlank.remove(<minecraft:planks:1>,<minecraft:planks:2>,<minecraft:planks:3>,<minecraft:planks:4>,<minecraft:planks:5>); // all vanilla woods except oak
-// TODO actually that may not be the ideal approach... some recipes only have one version, rather than separate ones for each wood type. But now we can't make them with misc woods
 
 recipes.removeByRecipeName("environs:trapdoor");
 recipes.addShaped("generic_trapdoor", <minecraft:trapdoor> * 2, [
@@ -58,13 +57,6 @@ recipes.addShaped("generic_chest", <minecraft:chest>, [
 	[genericPlank, genericPlank, genericPlank],
 	[genericPlank,     null,     genericPlank],
 	[genericPlank, genericPlank, genericPlank]]);
-	
-	
-// flour cooks directly to bread, and crafts to two dough
-
-recipes.removeByRecipeName("cuisine:dough");
-recipes.addShapeless(<cuisine:food:2> * 2, [<ore:foodFlour>, <ore:listAllwater>]); // dough
-furnace.addRecipe(<minecraft:bread>, <cuisine:food:1>); // flour
 
 
 // melt down excess thermometers
@@ -79,3 +71,18 @@ val slag = <thermalfoundation:material:864>;
 
 recipes.removeByRecipeName("thermalfoundation:clay_ball");
 recipes.addShapeless(<minecraft:clay_ball> * 4, [slag, slag, <ore:dirt>, waterBottle]);
+
+
+// replace all instances of water buckets in recipes with a more general solution.
+
+val realAllWater = <minecraft:water_bucket>.giveBack(<minecraft:bucket>) | <ceramics:clay_bucket>.withTag({fluids: {FluidName: "water", Amount: 1000}}).giveBack(<ceramics:clay_bucket>) | <cuisine:mortar:1>.giveBack(<cuisine:mortar:0>) | <liquid:water>*1000;
+
+recipes.replaceAllOccurences(<minecraft:water_bucket>, realAllWater);
+recipes.replaceAllOccurences(<ore:listAllwater>, realAllWater);
+
+
+// flour cooks directly to bread, and crafts to two dough
+
+recipes.removeByRecipeName("cuisine:dough");
+recipes.addShapeless(<cuisine:food:2> * 2, [<ore:foodFlour>, realAllWater]); // dough
+furnace.addRecipe(<minecraft:bread>, <cuisine:food:1>); // flour
