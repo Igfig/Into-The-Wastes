@@ -7,7 +7,7 @@
 <railcraft:rail:5>.addTooltip("Useless item, DO NOT CRAFT");
 
 
-// hide unwanted metals
+// hide unwanted metal plates
 
 val toRemove = [
 	6, // nickel
@@ -17,16 +17,7 @@ val toRemove = [
 ] as int[];
 
 for tr in toRemove {
-	val ingot = <railcraft:ingot>.definition.makeStack(tr);
-	val nugget = <railcraft:nugget>.definition.makeStack(tr);
-	val block = <railcraft:metal>.definition.makeStack(tr);
 	val plate = <railcraft:plate>.definition.makeStack(tr + 2); // yeah, id is off by 2... weird, eh?
-	
-	furnace.remove(ingot);
-	
-	mods.jei.JEI.removeAndHide(ingot);
-	mods.jei.JEI.removeAndHide(nugget);
-	mods.jei.JEI.removeAndHide(block);
 	mods.jei.JEI.removeAndHide(plate);
 }
 
