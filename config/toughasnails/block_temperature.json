@@ -20,7 +20,7 @@
       "block": "minecraft:lit_furnace",
       "properties": {}
     },
-    "temperature": 3.0
+    "temperature": 2.0
   },
   {
     "state": {
@@ -59,6 +59,13 @@
   },
   {
     "state": {
+      "block": "minecraft:leaves2",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
       "block": "minecraft:water",
       "properties": {}
     },
@@ -70,5 +77,19 @@
       "properties": {}
     },
     "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "minecraft:snow",
+      "properties": {}
+    },
+    "temperature": -2.0
+  },
+  {
+    "state": {
+      "block": "minecraft:ice",
+      "properties": {}
+    },
+    "temperature": -2.0
   }
 ]
