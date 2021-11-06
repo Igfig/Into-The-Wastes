@@ -24,6 +24,10 @@
 <prospects:sifter>.addTooltip("Results indicate larger deposits below.");
 
 
+// remove rain collectors (they're strictly worse than barrels or basins)
+mods.jei.JEI.removeAndHide(<toughasnails:rain_collector>);
+
+
 // recipe for sponges
 
 val cellulose = <thermalfoundation:material:801>;
