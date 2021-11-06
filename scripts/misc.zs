@@ -70,3 +70,12 @@ furnace.addRecipe(<minecraft:bread>, <cuisine:food:1>); // flour
 // melt down excess thermometers
 
 furnace.addRecipe(<minecraft:glass>, <crossroads:thermometer>);
+
+
+// easier slag-to-clay recipe
+
+val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"}).giveBack(<minecraft:glass_bottle>);
+val slag = <thermalfoundation:material:864>;
+
+recipes.removeByRecipeName("thermalfoundation:clay_ball");
+recipes.addShapeless(<minecraft:clay_ball> * 4, [slag, slag, <ore:dirt>, waterBottle]);
