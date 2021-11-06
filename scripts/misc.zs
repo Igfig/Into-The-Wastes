@@ -15,6 +15,14 @@
 // Animania mud
 <animania:block_mud>.displayName = "Wallowing Mud";
 
+// prospects tool usage notes
+<prospects:pan>.addTooltip("Right-click on any underwater block to search for nuggets.");
+<prospects:pan>.addTooltip("Results indicate larger deposits below.");
+<prospects:pick>.addTooltip("Right-click on stone blocks to search for nuggets.");
+<prospects:pick>.addTooltip("Results indicate larger deposits below.");
+<prospects:sifter>.addTooltip("Right-click on dirt blocks to search for nuggets.");
+<prospects:sifter>.addTooltip("Results indicate larger deposits below.");
+
 
 // recipe for sponges
 
@@ -38,6 +46,7 @@ recipes.addShapeless(<minecraft:book>, [<minecraft:written_book>, <minecraft:bre
 
 val genericPlank = <ore:plankWood>;
 genericPlank.remove(<minecraft:planks:1>,<minecraft:planks:2>,<minecraft:planks:3>,<minecraft:planks:4>,<minecraft:planks:5>); // all vanilla woods except oak
+// TODO actually that may not be the ideal approach... some recipes only have one version, rather than separate ones for each wood type. But now we can't make them with misc woods
 
 recipes.removeByRecipeName("environs:trapdoor");
 recipes.addShaped("generic_trapdoor", <minecraft:trapdoor> * 2, [
