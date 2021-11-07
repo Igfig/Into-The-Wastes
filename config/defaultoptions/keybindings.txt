@@ -126,7 +126,7 @@ key_key.effortlessbuilding.hud.desc:13:NONE
 key_key.effortlessbuilding.replace.desc:43:CONTROL
 key_key.effortlessbuilding.creative.desc:0:NONE
 key_key.effortlessbuilding.mode.desc:12:NONE
-key_key.effortlessbuilding.undo.desc:44:CONTROL
+key_key.effortlessbuilding.undo.desc:22:CONTROL
 key_key.effortlessbuilding.redo.desc:21:CONTROL
 key_key.effortlessbuilding.altplacement.desc:157:NONE
 key_key.dragon_fireAttack:46:NONE
