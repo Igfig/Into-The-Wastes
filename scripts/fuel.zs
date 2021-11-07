@@ -29,9 +29,9 @@ mods.foundry.Casting.addRecipe(refinedFuelTank, refinedFuel * 1000, emptyTank);
 
 // mark them as fuels
 
-furnace.setFuel(<forge:bucketfilled>.onlyWithTag({FluidName:"crude_oil",Amount:1000}), 12800);
-furnace.setFuel(<forge:bucketfilled>.onlyWithTag({FluidName:"refined_oil",Amount:1000}), 25600);
-furnace.setFuel(<forge:bucketfilled>.onlyWithTag({FluidName:"refined_fuel",Amount:1000}), 64000);
+furnace.setFuel(<forge:bucketfilled>.withTag({FluidName:"crude_oil",Amount:1000}).onlyWithTag({FluidName:"crude_oil",Amount:1000}), 12800);
+furnace.setFuel(<forge:bucketfilled>.withTag({FluidName:"refined_oil",Amount:1000}), 25600);
+furnace.setFuel(<forge:bucketfilled>.withTag({FluidName:"refined_fuel",Amount:1000}), 64000);
 
 furnace.setFuel(crudeOilTank, 12800);
 furnace.setFuel(refinedOilTank, 25600);
@@ -39,8 +39,9 @@ furnace.setFuel(refinedFuelTank, 64000);
 
 
 // add some tooltips
-var tooltip = " are buggy in locomotives; use this instead.";
+var tooltip_1 = "A stackable container of ";
+var tooltip_2 = ", for when one bucket isn't enough.";
 
-crudeOilTank.addTooltip("Buckets of crude oil" ~ tooltip);
-refinedOilTank.addTooltip("Buckets of naphtha" ~ tooltip);
-refinedFuelTank.addTooltip("Buckets of refined fuel" ~ tooltip);
+crudeOilTank.addTooltip(tooltip_1 ~ "crude oil" ~ tooltip_2);
+refinedOilTank.addTooltip(tooltip_1 ~ "naphtha" ~ tooltip_2);
+refinedFuelTank.addTooltip(tooltip_1 ~ "refined fuel" ~ tooltip_2);

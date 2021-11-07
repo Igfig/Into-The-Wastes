@@ -25,7 +25,6 @@ mods.jei.JEI.addDescription(<mysticalworld:silkworm_egg>, "Dropped rarely from b
 // hide removed items
 
 var removeItems = [
-	<mysticalworld:copper_nugget>,
 	<mysticalworld:copper_dust>,
 	<mysticalworld:copper_dust_tiny>,
 	<mysticalworld:copper_ore>,
@@ -35,7 +34,6 @@ var removeItems = [
 	<mysticalworld:copper_shovel>,
 	<mysticalworld:copper_axe>,
 	<mysticalworld:copper_sword>,
-	<mysticalworld:silver_nugget>,
 	<mysticalworld:silver_dust>,
 	<mysticalworld:silver_dust_tiny>,
 	<mysticalworld:silver_ore>,
@@ -50,3 +48,12 @@ var removeItems = [
 for r in removeItems {
 	mods.jei.JEI.removeAndHide(r);
 }
+
+
+// some items need to show up in oredicts because they appear in Spirit Bags
+<ore:nuggetCopper>.add(<mysticalworld:copper_nugget>);
+<ore:nuggetSilver>.add(<mysticalworld:silver_nugget>);
+<ore:ingotCopper>.add(<mysticalworld:copper_ingot>);
+<ore:ingotSilver>.add(<mysticalworld:silver_ingot>);
+<ore:blockCopper>.add(<mysticalworld:copper_block>);
+<ore:blockSilver>.add(<mysticalworld:silver_block>);
