@@ -18,6 +18,7 @@ shaderpacks
 /*.log
 /*.lnk
 /*.txt
+!/eula.txt
 /.curseclient
 /.ReAuth.cfg
 /servers.dat
