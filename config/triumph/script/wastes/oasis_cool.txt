@@ -2,7 +2,7 @@ setIcon("minecraft:mossy_cobblestone")
 setTitle("Cool Oasis")
 setDescription("Find somewhere with lots of water or a snow-capped peak")
 setFrameType("goal")
-addParent("triumph:wastes/oasis_warm")
+addParent("wastes:oasis_warm")
 alwaysVisible()
 
 criteria = addCriteria("biomesoplenty:bayou", "minecraft:location")

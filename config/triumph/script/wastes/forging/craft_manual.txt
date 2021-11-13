@@ -2,7 +2,7 @@ setIcon(<patchouli:guide_book, nbt:{"patchouli:book":"tinkersforging:book"}>)
 setTitle("Tinker's Forging")
 setDescription("Craft a Tinker's Forging Guide to learn about smithing")
 setFrameType("goal")
-addParent("triumph:wastes/forging/craft_hammer")
+addParent("wastes:forging/craft_hammer")
 
 criteria = addCriteria("forging_manual", "minecraft:inventory_changed")
 criteria.addItem(<patchouli:guide_book, nbt:{"patchouli:book":"tinkersforging:book"}>)

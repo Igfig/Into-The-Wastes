@@ -1,7 +1,7 @@
 setIcon("primitivetools:flint_flake")
 setTitle("Knap Flint")
 setDescription("Right click with flint on a stone block")
-addParent("triumph:wastes/root")
+addParent("wastes:root")
 
 criteria = addCriteria("flint_shard", "minecraft:inventory_changed")
 criteria.addItem("primitivetools:flint_shard")

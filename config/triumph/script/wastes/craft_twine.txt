@@ -1,7 +1,7 @@
 setIcon("primitivetools:cordage_fiber")
 setTitle("Spin Twine")
 setDescription("Find plant fiber in tall grass, and craft it into twine")
-addParent("triumph:wastes/root")
+addParent("wastes:root")
 
 criteria = addCriteria("cordage_fiber", "minecraft:inventory_changed")
 criteria.addItem("primitivetools:cordage_fiber")

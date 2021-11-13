@@ -2,7 +2,7 @@ setIcon("minecraft:grass")
 setTitle("Hot Oasis")
 setDescription("Find somewhere with grass and water")
 setFrameType("goal")
-addParent("triumph:wastes/root")
+addParent("wastes:root")
 alwaysVisible()
 
 criteria = addCriteria("environs:canyon", "minecraft:location")

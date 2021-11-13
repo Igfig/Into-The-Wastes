@@ -2,7 +2,7 @@ setIcon("minecraft:snow")
 setTitle("Cold Oasis")
 setDescription("Find a land of ice and snow")
 setFrameType("goal")
-addParent("triumph:wastes/oasis_cool")
+addParent("wastes:oasis_cool")
 alwaysVisible()
 
 criteria = addCriteria("biomesoplenty:coral_reef", "minecraft:location")

@@ -1,7 +1,7 @@
 setIcon(<cuisine:fire_pit:2>)
 setTitle("Classic BBQ")
 setDescription("Craft a barbecue rack")
-addParent("triumph:wastes/flint_tools")
+addParent("wastes:flint_tools")
 
 criteria = addCriteria("fire_pit", "minecraft:inventory_changed")
 criteria.addItem(<cuisine:fire_pit:2>)

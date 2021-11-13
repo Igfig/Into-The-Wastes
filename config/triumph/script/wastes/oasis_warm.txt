@@ -2,7 +2,7 @@ setIcon(<minecraft:log>)
 setTitle("Warm Oasis")
 setDescription("Find a place with some serious plant life")
 setFrameType("goal")
-addParent("triumph:wastes/oasis_hot")
+addParent("wastes:oasis_hot")
 alwaysVisible()
 
 criteria = addCriteria("biomesoplenty:bamboo_forest", "minecraft:location")
