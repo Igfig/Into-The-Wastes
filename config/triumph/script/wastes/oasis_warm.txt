@@ -101,4 +101,4 @@ criteria = addCriteria("minecraft:mutated_jungle_edge", "minecraft:location")
 criteria.setBiome("minecraft:mutated_jungle_edge")
 
 setRequirements("any")
-setPos(4,-53)
+setPos(5,-52)

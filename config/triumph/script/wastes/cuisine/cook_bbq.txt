@@ -1,7 +1,8 @@
 setIcon(<minecraft:cooked_rabbit>)
 setTitle("Flame-Roasted")
 setDescription("Right-click some raw food onto the barbecue rack's spit, add fuel, and collect it when it's done.")
-addParent("wastes:craft_bbq")
+addParent("wastes:cuisine/craft_bbq")
+drawDirectLines()
 
 criteria = addCriteria("rats:cooked_rat", "minecraft:inventory_changed")
 criteria.addItem("rats:cooked_rat")
@@ -92,4 +93,4 @@ criteria.addItem("quark:cooked_frog_leg")
 
 setRequirements("any")
 
-setPos(71,26)
+setPos(38,61)

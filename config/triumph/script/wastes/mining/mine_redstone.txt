@@ -1,0 +1,9 @@
+setIcon(<prospects:flower:12>)
+setTitle("Redstone Prospector")
+setDescription("Find a redstone deposit under a patch of Flame Lilies")
+addParent("wastes:oasis_hot")
+drawDirectLines()
+
+criteria = addCriteria("mine_redstone", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:redstone_ore>)
+setPos(-28,-123)
