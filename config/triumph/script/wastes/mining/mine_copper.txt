@@ -1,0 +1,9 @@
+setIcon(<prospects:flower:3>)
+setTitle("Copper Prospector")
+setDescription("Find a copper deposit under a patch of Hauman flowers")
+addParent("wastes:oasis_hot")
+drawDirectLines()
+
+criteria = addCriteria("mine_copper", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:ore_copper>)
+setPos(-28,-146)
