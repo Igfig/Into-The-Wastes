@@ -58,3 +58,13 @@ recipes.remove(<zawa:steel_bars>);
 recipes.addShaped("zawa_steel_bars", <zawa:steel_bars> * 6, [
 	[ironBars,ironBars,ironBars],
 	[ironBars,ironBars,ironBars]]);
+	
+	
+// make fur-to-leather recipe produce less, to make meerkats less OP in the early game
+// ditto scales-to-leather, so that it's not way better than the others
+
+recipes.removeByRecipeName("zawa:leather_fur");
+recipes.removeByRecipeName("zawa:leather_tiger");
+recipes.removeByRecipeName("zawa:leather");
+
+recipes.addShapeless(<minecraft:leather>, [<ore:zawaFur>|<ore:zawaHide>]);
