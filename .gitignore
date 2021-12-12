@@ -24,6 +24,7 @@ shaderpacks
 /mods/1.12.2
 /mods/memory_repo
 /mods/OptiFine_*.jar
+/mods/amidst-*.jar
 /mods/**/*.disabled
 /config/splash.properties
 /config/UniqueNames.txt
