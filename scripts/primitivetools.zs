@@ -65,41 +65,13 @@ recipes.addShapeless(<primitivetools:cordage_vine>, [<ore:vine>,<ore:vine>,<ore:
 recipes.addShapeless(<primitivetools:leather_strip> * 3, [<ore:leather>,<ore:toolWorkBlade>.reuse()]);
 
 
-// remove wood and stone tools
-
-mods.jei.JEI.removeAndHide(<minecraft:wooden_sword>);
-mods.jei.JEI.removeAndHide(<minecraft:wooden_shovel>);
-mods.jei.JEI.removeAndHide(<minecraft:wooden_pickaxe>);
-mods.jei.JEI.removeAndHide(<minecraft:wooden_axe>);
-mods.jei.JEI.removeAndHide(<minecraft:wooden_hoe>);
-mods.jei.JEI.removeAndHide(<minecraft:stone_sword>);
-mods.jei.JEI.removeAndHide(<minecraft:stone_shovel>);
-mods.jei.JEI.removeAndHide(<minecraft:stone_pickaxe>);
-mods.jei.JEI.removeAndHide(<minecraft:stone_axe>);
-mods.jei.JEI.removeAndHide(<minecraft:stone_hoe>);
-
-
-// and replace any recipes that use them
-
-recipes.replaceAllOccurences(<minecraft:wooden_axe>, <ore:toolPrimitiveAxe>);
-recipes.replaceAllOccurences(<minecraft:stone_axe>, <ore:toolPrimitiveAxe>);
-recipes.replaceAllOccurences(<minecraft:wooden_sword>, <ore:toolPrimitiveBlade>);
-recipes.replaceAllOccurences(<minecraft:stone_sword>, <ore:toolPrimitiveBlade>);
-recipes.replaceAllOccurences(<minecraft:wooden_hoe>, <ore:toolPrimitiveHoe>);
-recipes.replaceAllOccurences(<minecraft:stone_hoe>, <ore:toolPrimitiveHoe>);
-recipes.replaceAllOccurences(<minecraft:wooden_pickaxe>, <ore:toolPrimitivePick>);
-recipes.replaceAllOccurences(<minecraft:stone_pickaxe>, <ore:toolPrimitivePick>);
-recipes.replaceAllOccurences(<minecraft:wooden_shovel>, <ore:toolPrimitiveShovel>);
-recipes.replaceAllOccurences(<minecraft:stone_shovel>, <ore:toolPrimitiveShovel>);
-
-
-// add a missing recipe
+// add a missing tool recipe
 
 recipes.addShaped(<primitivetools:primitive_pick_cbl>, [
 	[<primitivetools:flint_shard>,<primitivetools:leather_strip>],
 	[<minecraft:bone>,<primitivetools:flint_flake>]]);
 	
 	
-// rename vine ropes because why not
+// rename vine ropes because they aren't climbable like other ropes
 
 <primitivetools:cordage_vine>.displayName = "Vine Twine";

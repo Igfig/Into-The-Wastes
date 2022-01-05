@@ -11,11 +11,9 @@ addCriteria("location", "minecraft:location")
 
 // TODO more advancements
 
-// frying pan + spatula
 // chopping block, kitchen knife, and chop ingredients
 //	<cuisine:ingredient>{form:"SLICED"}
 // spice bottle of seasoning, and of water or juice or oil
-// plate of food
 // stomp fruit to juice
 // drinkro
 
@@ -34,16 +32,13 @@ addCriteria("location", "minecraft:location")
 // ingot caster
 // omnimeter
 
-// roots roots
-// roots guide
-
-// nature's aura guide
-
 // psi guide
 
 // care of animania animals
 // breed animals?
 // animania cheese
+
+// tame a zawa animal with kibble
 
 // tame a rat (10-15 cheese wedges)
 // some duplicates of rat cheevos

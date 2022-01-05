@@ -11,3 +11,8 @@ recipes.removeByRecipeName("thermalfoundation:material_2"); // bronze dust
 // alloy molten ender from refined fuel and molten silver
 
 mods.foundry.AlloyingCrucible.addRecipe(<liquid:ender> * 1, <liquid:refined_fuel> * 8, <liquid:silver> * 16);
+
+
+// purify water using steam
+
+mods.foundry.AlloyingCrucible.addRecipe(<liquid:purified_water> * 4, <liquid:water> * 3, <liquid:steam> * 1);

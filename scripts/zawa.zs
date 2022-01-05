@@ -14,9 +14,6 @@ recipes.addShaped("tire_swing", <zawa:swing_wheel>, [
 	[<ore:woolBlack>,null,<ore:woolBlack>],
 	[null,<ore:woolBlack>,null]]);
 
-recipes.remove(<zawa:kibble>);
-recipes.addShapeless("kibble", <zawa:kibble>, [<ore:listAllgrain>, <ore:listAllfruit>, <ore:listAllveggie>, <ore:listAllseed>]);
-
 recipes.remove(<zawa:hunting_knife>);
 recipes.addShaped("hunting_knife", <zawa:hunting_knife>, [
 	[<ore:leather>,<tinkersforging:sword_blade/iron>],
@@ -58,3 +55,40 @@ recipes.remove(<zawa:steel_bars>);
 recipes.addShaped("zawa_steel_bars", <zawa:steel_bars> * 6, [
 	[ironBars,ironBars,ironBars],
 	[ironBars,ironBars,ironBars]]);
+	
+	
+// make fur-to-leather recipe produce less, to make meerkats less OP in the early game
+// ditto scales-to-leather, so that it's not way better than the others
+
+recipes.removeByRecipeName("zawa:leather_fur");
+recipes.removeByRecipeName("zawa:leather_tiger");
+recipes.removeByRecipeName("zawa:leather");
+
+recipes.addShapeless(<minecraft:leather>, [<ore:zawaFur>|<ore:zawaHide>]);
+
+
+// make kibble recipes take a wider range of ingredients
+
+<ore:kibble>.add(<zawa:kibble>, <zawa:bear_kibble>, <zawa:pachyderm_kibble>, <zawa:big_cat_kibble>, <zawa:monkey_kibble>, <zawa:snake_kibble>, <zawa:raptor_kibble>, <zawa:crocodile_kibble>, <zawa:frog_kibble>, <zawa:unglate_kibble>, <zawa:whale_kibble>, <zawa:bird_kibble>, <zawa:tortoise_kibble>, <zawa:canine_kibble>, <zawa:ape_kibble>, <zawa:pinniped_kibble>, <zawa:shark_kibble>, <lilcritters:rodent_kibble>);
+
+recipes.replaceAllOccurences(<minecraft:wheat>, <ore:listAllgrain>, <ore:kibble>);
+recipes.replaceAllOccurences(<minecraft:apple>, <ore:cropApple> | <ore:cropPear>, <ore:kibble>);
+recipes.replaceAllOccurences(<minecraft:carrot>, <ore:listAllveggie>, <ore:kibble>);
+recipes.replaceAllOccurences(<minecraft:potato>, <ore:listAllveggie>, <ore:kibble>);
+recipes.replaceAllOccurences(<minecraft:bread>, <ore:foodBread>, <ore:kibble>);
+recipes.replaceAllOccurences(<minecraft:melon>, <ore:listAllcitrus>, <ore:kibble>);
+
+recipes.replaceAllOccurences(<minecraft:chicken>, <ore:listAllpoultryraw>, <ore:kibble>);
+recipes.replaceAllOccurences(<minecraft:porkchop>, <ore:listAllporkraw>, <ore:kibble>);
+recipes.replaceAllOccurences(<minecraft:beef>, <ore:listAllbeefraw>, <ore:kibble>);
+recipes.replaceAllOccurences(<minecraft:rabbit>, <ore:listAllrabbitraw>, <ore:kibble>);
+recipes.replaceAllOccurences(<minecraft:fish:*>, <ore:listAllseafoodraw>, <ore:kibble>);
+
+recipes.replaceAllOccurences(<minecraft:wheat_seeds>, <ore:listAllseed>, <ore:kibble>);
+recipes.replaceAllOccurences(<minecraft:pumpkin_seeds>, <ore:listAllseed>, <ore:kibble>);
+recipes.replaceAllOccurences(<minecraft:leaves>, <ore:treeLeaves>, <ore:kibble>);
+
+recipes.replaceAllOccurences(<zawa:bird_meat>, <ore:listAllpoultryraw>, <ore:kibble>);
+recipes.replaceAllOccurences(<zawa:kelp>, <zawa:kelp> | <biomesoplenty:seaweed>, <ore:kibble>);
+
+recipes.replaceAllOccurences(<lilcritters:acorn>, <ore:listAllnut>, <ore:kibble>);

@@ -3,10 +3,6 @@
 <railcraft:coke_oven_red>.addTooltip("Multi-Block: 3x3x3 (Hollow)");
 
 
-// mark electric rails as unused (temporary measure)
-<railcraft:rail:5>.addTooltip("Useless item, DO NOT CRAFT");
-
-
 // hide unwanted metal plates
 
 val toRemove = [
@@ -19,7 +15,13 @@ val toRemove = [
 for tr in toRemove {
 	val plate = <railcraft:plate>.definition.makeStack(tr + 2); // yeah, id is off by 2... weird, eh?
 	mods.jei.JEI.removeAndHide(plate);
+	mods.railcraft.RollingMachine.remove(plate);
 }
+
+
+// remove electric rails
+mods.jei.JEI.removeAndHide(<railcraft:rail:5>);
+mods.railcraft.RollingMachine.remove(<railcraft:rail:5>);
 
 
 // non-creosote recipe for wooden rail ties

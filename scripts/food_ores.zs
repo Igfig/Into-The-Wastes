@@ -16,17 +16,18 @@
 <ore:cropCherry>.add(<wildnature:cherry>);
 <ore:listAllfruit>.add(<wildnature:cherry>);
 
+<ore:cropPeach>.add(<valoegheses_be:fruit_peach>);
+<ore:cropNectarine>.add(<valoegheses_be:fruit_nectarine>);
+<ore:cropPlum>.add(<valoegheses_be:fruit_plum>);
+<ore:cropDate>.add(<valoegheses_be:fruit_date>);
+<ore:cropCoconut>.add(<valoegheses_be:island_coconut_0>, <valoegheses_be:island_coconut_1>);
+
+<ore:listAllberry>.add(<valoegheses_be:berry_bush>, <futuremc:sweet_berries>);
+
 <ore:cropCorn>.add(<wildnature:corn>);
 <ore:listAllgrain>.add(<wildnature:corn>);
 
-<ore:listAllfruit>.add(<futuremc:sweet_berries>);
-<ore:listAllfruit>.add(<valoegheses_be:berry_bush>);
-<ore:listAllfruit>.add(<valoegheses_be:island_coconut_0>);
-<ore:listAllfruit>.add(<valoegheses_be:island_coconut_1>);
-<ore:listAllfruit>.add(<valoegheses_be:fruit_peach>);
-<ore:listAllfruit>.add(<valoegheses_be:fruit_nectarine>);
-<ore:listAllfruit>.add(<valoegheses_be:fruit_plum>);
-<ore:listAllfruit>.add(<valoegheses_be:fruit_date>);
+<ore:listAllfruit>.add(<futuremc:sweet_berries>, <valoegheses_be:berry_bush>, <valoegheses_be:island_coconut_0>, <valoegheses_be:island_coconut_1>, <valoegheses_be:fruit_peach>, <valoegheses_be:fruit_nectarine>, <valoegheses_be:fruit_plum>, <valoegheses_be:fruit_date>);
 
 <ore:listAllveggie>.add(<cuisine:crops:9>); // scallions
 <ore:listAllgrain>.add(<cuisine:crops:3>); // raw rice
@@ -50,8 +51,10 @@
 	<minecraft:cooked_porkchop>, <minecraft:cooked_beef>, <minecraft:cooked_chicken>,<minecraft:cooked_rabbit>, <minecraft:cooked_mutton>,
 	<wildnature:cooked_boar>, <wildnature:cooked_goat>, <wildnature:cooked_bison>, <wildnature:cooked_camel>, <zawa:carnivore_meat_cooked>, <zawa:large_meat_cooked>, <zawa:cetacean_meat_cooked>, <zawa:bush_meat_cooked>, <zawa:bird_meat_cooked>, <zawa:reptile_meat_cooked>, <zawa:cooked_frog_leg>, <animania:cooked_peacock>, <animania:cooked_prime_peacock>);
 
-<ore:listAllfishraw>.add(<minecraft:fish:0>, <minecraft:fish:1>, <zawa:raw_cichlid>, <zawa:raw_crab_leg>);
+<ore:listAllfishraw>.add(<minecraft:fish:0>, <minecraft:fish:1>, <zawa:raw_cichlid>);
 <ore:listAllfishcooked>.add(<minecraft:cooked_fish:*>, <zawa:cooked_cichlid>, <zawa:cooked_crab_leg>);
+<ore:listAllfishraw>.remove(<mysticalworld:raw_squid>);
+<ore:listAllfishcooked>.remove(<mysticalworld:cooked_squid>);
 
 <ore:listAllporkraw>.add(<wildnature:raw_boar>);
 <ore:listAllporkcooked>.add(<wildnature:cooked_boar>);
@@ -65,6 +68,23 @@
 <ore:listAllchevonraw>.add(<animania:raw_chevon>, <animania:raw_prime_chevon>,  <wildnature:raw_goat>);
 <ore:listAllchevoncooked>.add(<animania:cooked_chevon>, <animania:cooked_prime_chevon>, <wildnature:cooked_goat>);
 
+<ore:listAllpoultryraw>.addAll(<ore:listAllChickenraw>);
+<ore:listAllpoultryraw>.add(<animania:raw_peacock>, <animania:raw_prime_peacock>, <zawa:bird_meat>);
+<ore:listAllpoultrycooked>.addAll(<ore:listAllChickencooked>);
+<ore:listAllpoultrycooked>.add(<animania:cooked_peacock>, <animania:cooked_prime_peacock>, <zawa:bird_meat_cooked>);
+
+<ore:listAllshellfishraw>.add(<mysticalworld:raw_squid>, <zawa:raw_crab_leg>);
+<ore:listAllshellfishcooked>.add(<mysticalworld:cooked_squid>, <zawa:cooked_crab_leg>);
+
+<ore:listAllseafoodraw>.addAll(<ore:listAllfishraw>);
+<ore:listAllseafoodraw>.addAll(<ore:listAllshellfishraw>);
+<ore:listAllseafoodraw>.add(<zawa:cetacean_meat_raw>);
+<ore:listAllseafoodcooked>.addAll(<ore:listAllfishcooked>);
+<ore:listAllseafoodcooked>.addAll(<ore:listAllshellfishcooked>);
+<ore:listAllseafoodcooked>.add(<zawa:cetacean_meat_cooked>);
+
+<ore:listAllreptilemeatraw>.add(<zawa:reptile_meat_raw>, <zawa:raw_frog_leg>, <animania:raw_frog_legs>);
+<ore:listAllreptilemeatcooked>.add(<zawa:reptile_meat_cooked>, <zawa:cooked_frog_leg>, <animania:raw_frog_legs>);
 
 // also rotten flesh should count as rotten
 <ore:rotten>.add(<minecraft:rotten_flesh>);
