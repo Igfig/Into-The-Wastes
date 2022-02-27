@@ -1,5 +1,5 @@
 title Into the Wastes
-java -Xms6G -Xmx6G -XX:+UseG1GC -jar forge-1.12.2-14.23.5.2855.jar nogui
+java -Xms6G -Xmx6G -XX:+UseG1GC -jar forge-1.12.2-14.23.5.2860.jar nogui
 pause
 
 rem    If this script doesn't work, go to https://www.java.com/en/download/manual.jsp, 
