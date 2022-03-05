@@ -2,15 +2,14 @@
   "fillerBlock": {
     "block": "minecraft:dirt",
     "properties": {
-      "coarse": "false",
+      "snowy": "false",
       "variant": "dirt"
     }
   },
   "topBlock": {
     "block": "minecraft:grass",
     "properties": {
-      "snowy": "false",
-      "variant": "dirt"
+      "snowy": "false"
     }
   }
 }
