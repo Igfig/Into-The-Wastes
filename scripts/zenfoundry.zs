@@ -49,5 +49,9 @@ recipes.addShaped("metal_caster", <foundry:machine:1>, [
 	
 // fix a typo
 
-<foundry:machine:1>.clearTooltip();
+<foundry:machine:1>.removeTooltip("Casts");
 <foundry:machine:1>.addTooltip("Casts items from molten metal using molds.");
+
+
+// explanatory toolip
+<foundry:bronze_cauldron>.addTooltip("Only holds water.");

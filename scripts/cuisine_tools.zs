@@ -5,6 +5,10 @@ recipes.addShapeless("fire_pit", <cuisine:fire_pit:0>, [<ore:coal>|<ore:charcoal
 recipes.addShapeless("fire_pit_rack", <cuisine:fire_pit:2>, [<cuisine:fire_pit:0>,<ore:stickWood>,<ore:stickWood>,<ore:stickWood>]);
 
 
+// distinguish mortar from Roots mortar
+
+<cuisine:mortar>.displayName = "Kitchen Mortar";
+
 // harder drinkro recipe
 
 val silver = <ore:ingotSilver>;

@@ -70,7 +70,12 @@ recipes.addShapeless(<primitivetools:leather_strip> * 3, [<ore:leather>,<ore:too
 recipes.addShaped(<primitivetools:primitive_pick_cbl>, [
 	[<primitivetools:flint_shard>,<primitivetools:leather_strip>],
 	[<minecraft:bone>,<primitivetools:flint_flake>]]);
-	
+
+
+// usage hint for hammers
+
+<ore:toolMalletStone>.addTooltip("Works just like a pickaxe");
+
 	
 // rename vine ropes because they aren't climbable like other ropes
 
