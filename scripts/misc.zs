@@ -47,3 +47,19 @@ recipes.replaceAllOccurences(<ore:listAllwater>, realAllWater);
 recipes.removeByRecipeName("cuisine:dough");
 recipes.addShapeless(<cuisine:food:2> * 2, [<ore:foodFlour>, realAllWater]); // dough
 furnace.addRecipe(<minecraft:bread>, <cuisine:food:1>); // flour
+
+
+// replace redundant gunpowder recipes
+
+recipes.removeByRecipeName("valoegheses_be:gunpowder_vbe");
+recipes.removeByRecipeName("thermalfoundation:gunpowder");
+recipes.removeByRecipeName("thermalfoundation:gunpowder_1");
+recipes.removeByRecipeName("railcraft:minecraft_gunpowder$1");
+recipes.addShapeless(<minecraft:gunpowder>, [<ore:dustCoal> | <ore:dustCharcoal>, <ore:dustSulfur>, <ore:dustSaltpeter>, <ore:dustSaltpeter>]);
+
+
+// replace redundant nametag recipes
+
+recipes.removeByRecipeName("animania:name_tag");
+recipes.removeByRecipeName("essentials:name_tag");
+recipes.addShapeless(<minecraft:name_tag>, [<ore:string>, <ore:paper>, <ore:nuggetGold>]);
