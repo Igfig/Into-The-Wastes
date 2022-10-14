@@ -32,6 +32,8 @@
 <ore:listAllveggie>.add(<cuisine:crops:9>); // scallions
 <ore:listAllgrain>.add(<cuisine:crops:3>); // raw rice
 
+<ore:blockHay>.add(<minecraft:hay_block>);
+
 // meats
 
 <ore:foodMeat>.add(
