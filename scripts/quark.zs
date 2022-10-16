@@ -22,6 +22,7 @@
 <quark:iron_ladder>.addTooltip("Doesn't need to be against a wall, as long as the top is anchored");
 
 //World module
+<quark:archaeologist_hat>.displayName = "Paleontolgist Hat";
 <quark:archaeologist_hat>.addTooltip("Slightly increases Fortune when mining");
 <quark:diamond_heart>.addTooltip("Dropped by Stonelings");
 <quark:soul_bead>.addTooltip("Dropped by Wraiths");

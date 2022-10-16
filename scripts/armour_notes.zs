@@ -9,6 +9,7 @@ val cool2 = [
 
 val cool1 = [
 	<quark:archaeologist_hat>,
+	<rats:archeologist_hat>,
 	<contenttweaker:silk_head>,
 	<contenttweaker:silk_chest>,
 	<contenttweaker:silk_legs>,
