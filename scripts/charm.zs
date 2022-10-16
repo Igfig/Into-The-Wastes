@@ -27,3 +27,19 @@ val potionCakes = [
 	<charm:cake_resilience>
 ] as IItemStack[];
 mods.jei.JEI.addDescription(potionCakes, "Right-click on a cake with an extended potion to apply the effects when a slice of the cake is eaten.");
+
+
+// Bring Charm barrel crafting recipes in line with other barrels
+
+recipes.removeByRecipeName("charm:barrel");
+
+for i in 0 to 6 {
+	val plank = <minecraft:planks>.withDamage(i);
+	val slab = <minecraft:wooden_slab>.withDamage(i);
+	
+	recipes.removeByRecipeName("charm:barrel_" + i);
+	recipes.addShaped("barrel_" + i, <charm:barrel>.withDamage(i), [
+		[plank, slab, plank], 
+		[plank, null, plank], 
+		[plank, slab, plank]]);
+}
