@@ -1,5 +1,5 @@
 setIcon(<ceramics:clay_barrel>)
-setTitle("Barrel of Laughs")
+setTitle("Water Barrel")
 setDescription("Make a barrel of clay or porcelain to store liquids or collect rainwater")
 addParent("wastes:ceramics/craft_porcelain")
 

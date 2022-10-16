@@ -1,5 +1,5 @@
 setIcon(<cuisine:placed_dish>)
-setTitle("Crockery")
+setTitle("Dishware")
 setDescription("Use fired porcelain bricks to make a plate")
 addParent("wastes:ceramics/craft_porcelain")
 

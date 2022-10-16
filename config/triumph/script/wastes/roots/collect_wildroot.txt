@@ -1,5 +1,5 @@
 setIcon("roots:wildroot")
-setTitle("Back To Your Roots")
+setTitle("Collect Wildroot")
 setDescription("Break ceiling roots in dirt caves to collect wildroot")
 addParent("wastes:root")
 
