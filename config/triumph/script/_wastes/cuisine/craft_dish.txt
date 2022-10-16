@@ -1,0 +1,13 @@
+setIcon(<minecraft:rabbit_stew>)
+setTitle("Finally, some good f***ing food")
+setDescription("Put ingredients in a wok, add fuel, and stir it with a spatula until lightly browned. Right-click with a plate to serve.")
+setFrameType("goal")
+
+addParent("_wastes:cuisine/craft_wok")
+addParent("_wastes:cuisine/craft_spatula")
+addParent("_wastes:ceramics/craft_plate")
+
+criteria = addCriteria("craft_dish", "minecraft:inventory_changed")
+criteria.addItem(<cuisine:dish>)
+
+setPos(107,48)

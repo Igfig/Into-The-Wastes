@@ -1,0 +1,9 @@
+setIcon("roots:wildroot")
+setTitle("Collect Wildroot")
+setDescription("Break ceiling roots in dirt caves to collect wildroot")
+addParent("_wastes:root")
+
+criteria = addCriteria("wildroot", "minecraft:inventory_changed")
+criteria.addItem("roots:wildroot")
+
+setPos(38,175)

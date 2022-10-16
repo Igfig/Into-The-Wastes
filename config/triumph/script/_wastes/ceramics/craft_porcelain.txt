@@ -1,0 +1,9 @@
+setIcon(<ceramics:unfired_clay:4>)
+setTitle("Porcelain")
+setDescription("Combine clay and bone meal into porcelain")
+addParent("_wastes:root")
+
+criteria = addCriteria("porcelain", "minecraft:inventory_changed")
+criteria.addItem(<ceramics:unfired_clay:4>)
+
+setPos(38,-9)

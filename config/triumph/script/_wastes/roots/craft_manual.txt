@@ -1,0 +1,9 @@
+setIcon(<roots:roots_guide>)
+setTitle("Roots")
+setDescription("Craft The Magic of the Wilds to learn about natural magic")
+setFrameType("goal")
+addParent("_wastes:roots/collect_wildroot")
+
+criteria = addCriteria("roots_manual", "minecraft:inventory_changed")
+criteria.addItem(<roots:roots_guide>)
+setPos(71,175)
