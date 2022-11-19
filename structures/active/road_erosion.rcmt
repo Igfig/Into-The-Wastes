@@ -1,0 +1,159 @@
+{
+  "data": {
+    "environmentMatcher": "",
+    "transformers": [
+      {
+        "type": "replaceAll",
+        "transformer": {
+          "uniform": false,
+          "id": "replace_32c0355b",
+          "sourceExpression": "reccomplex:generic_solid \u0026 metadata\u003d1",
+          "destination": [
+            {
+              "block": "minecraft:air",
+              "metadata": 0,
+              "tileEntity": "null"
+            }
+          ]
+        }
+      },
+      {
+        "type": "multi",
+        "transformer": {
+          "id": "multi_8e6cad41",
+          "data": {
+            "environmentMatcher": "!gen.type\u003dsapling",
+            "transformers": [
+              {
+                "type": "naturalAir",
+                "transformer": {
+                  "id": "naturalAir_62f77b91",
+                  "sourceExpression": "reccomplex:generic_space \u0026 metadata\u003d1",
+                  "destExpression": "",
+                  "naturalExpansionDistance": 4.0,
+                  "naturalExpansionRandomization": 10.0
+                }
+              },
+              {
+                "type": "natural",
+                "transformer": {
+                  "id": "natural_eed52750",
+                  "sourceExpression": "reccomplex:generic_solid \u0026 metadata\u003d0",
+                  "destExpression": "is:replaceable | is:foliage",
+                  "naturalExpansionDistance": 4.0,
+                  "naturalExpansionRandomization": 6.0
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "multi",
+        "transformer": {
+          "id": "multi_cd3733ca",
+          "data": {
+            "environmentMatcher": "gen.type\u003dsapling",
+            "transformers": [
+              {
+                "type": "ensureBlocks",
+                "transformer": {
+                  "id": "ensureBlocks_6b500399",
+                  "sourceExpression": "!(id\u003dreccomplex:generic_space | id\u003dreccomplex:generic_solid)",
+                  "destExpression": "is:air | is:leaves | is:replaceable"
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "negativeSpace",
+        "transformer": {
+          "id": "negativeSpace_69ff30bc",
+          "sourceExpression": "id\u003dreccomplex:generic_space | id\u003dreccomplex:generic_solid",
+          "destExpression": ""
+        }
+      },
+      {
+        "type": "replaceAll",
+        "transformer": {
+          "uniform": false,
+          "id": "decayRoadSurface",
+          "sourceExpression": "quark:sandstone_new",
+          "destination": [
+            {
+              "weight": 60.92701721191406,
+              "block": "quark:sandstone_new",
+              "metadata": 1,
+              "tileEntity": "null"
+            },
+            {
+              "block": "quark:sandstone_bricks_slab",
+              "metadata": 0,
+              "tileEntity": "null"
+            },
+            {
+              "block": "minecraft:sandstone",
+              "metadata": 0,
+              "tileEntity": "null"
+            },
+            {
+              "block": "minecraft:sand",
+              "metadata": 0,
+              "tileEntity": "null"
+            }
+          ]
+        }
+      },
+      {
+        "type": "multi",
+        "transformer": {
+          "id": "multi_4bc30a4f",
+          "data": {
+            "environmentMatcher": "",
+            "transformers": [
+              {
+                "type": "replaceAll",
+                "transformer": {
+                  "uniform": false,
+                  "id": "decayRoadSurface",
+                  "sourceExpression": "quark:sandstone_new",
+                  "destination": [
+                    {
+                      "weight": 60.92701721191406,
+                      "block": "quark:sandstone_new",
+                      "metadata": 1,
+                      "tileEntity": "null"
+                    },
+                    {
+                      "block": "quark:sandstone_bricks_slab",
+                      "metadata": 0,
+                      "tileEntity": "null"
+                    },
+                    {
+                      "block": "minecraft:sandstone",
+                      "metadata": 0,
+                      "tileEntity": "null"
+                    },
+                    {
+                      "block": "minecraft:sand",
+                      "metadata": 0,
+                      "tileEntity": "null"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Road Erosion",
+    "description": [
+      "Erode Road Surface"
+    ]
+  }
+}
