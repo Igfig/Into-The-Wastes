@@ -40,5 +40,10 @@
     "mob": "iceandfire:hippogryph",
 	"maxspawndist": 3000,
     "result": "deny"
+  },
+  {
+    "mob": "iceandfire:deathworm",
+	"maxdifficulty": 0,
+    "result": "deny"
   }
 ]
