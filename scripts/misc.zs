@@ -63,3 +63,7 @@ recipes.addShapeless(<minecraft:gunpowder>, [<ore:dustCoal> | <ore:dustCharcoal>
 recipes.removeByRecipeName("animania:name_tag");
 recipes.removeByRecipeName("essentials:name_tag");
 recipes.addShapeless(<minecraft:name_tag>, [<ore:string>, <ore:paper>, <ore:nuggetGold>]);
+
+// remove redundant lead recipe
+
+recipes.removeByRecipeName("animania:lead");
