@@ -15,6 +15,8 @@ val castTools = [<thermalfoundation:armor.helmet_electrum>, <thermalfoundation:a
 
 val metals = [<ore:ingotIron>, <ore:ingotGold>, <ore:ingotCopper>, <ore:ingotTin>, <ore:ingotBronze>, <ore:ingotSilver>, <ore:ingotLead>, <ore:ingotSteel>] as IIngredient[];
 
+val blocks = [<ore:blockIron>, <ore:blockGold>, <ore:blockCopper>, <ore:blockTin>, <ore:blockBronze>, <ore:blockSilver>, <ore:blockLead>, <ore:blockSteel>] as IIngredient[];
+
 val stick = <ore:stickWood>;
 val strng = <ore:string>;
 
@@ -38,7 +40,7 @@ for i, sickle in sickles {
 for i, hammer in hammers {
 	recipes.remove(hammer);
 	recipes.addShaped(hammer.name, hammer, [
-	[metals[i], hammerHeads[i], metals[i]],
+	[blocks[i], hammerHeads[i], blocks[i]],
 	[null,stick,null],
 	[null,stick,null]]);
 }
@@ -46,7 +48,7 @@ for i, excavator in excavators {
 	recipes.remove(excavator);
 	recipes.addShaped(excavator.name, excavator, [
 	[null,shovelHeads[i],null],
-	[metals[i],stick,metals[i]],
+	[blocks[i],stick,blocks[i]],
 	[null,stick,null]]);
 }
 
