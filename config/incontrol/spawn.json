@@ -26,17 +26,6 @@
     "result": "deny"
   },
   {
-    "mob": "thermalfoundation:blitz",
-    "dimension": 0,
-	"minheight": 200,
-	"weather": "thunder",
-    "result": "default"
-  },
-  {
-    "mob": "thermalfoundation:blitz",
-    "result": "deny"
-  },
-  {
     "mob": "iceandfire:hippogryph",
 	"maxspawndist": 3000,
     "result": "deny"
