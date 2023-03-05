@@ -5,6 +5,10 @@ val goldOrSilver = <ore:ingotGold> | <ore:ingotSilver>;
 val wildroot = <roots:wildroot>;
 val bark = <ore:rootsBark>;
 val bedrock = <minecraft:bedrock>;
+val runestone = <ore:runestone>;
+val moss = <roots:terra_moss>;
+val mossyCobble = <ore:mossyCobblestone>;
+val diamond = <ore:gemDiamond>;
 val DISABLED = "DISABLED. DO NOT USE";
 
 
@@ -17,21 +21,6 @@ mods.jei.JEI.addDescription(wildroot, "Dropped occasionally from breaking hangin
 
 recipes.addShapeless("terra_spores", <roots:terra_spores>, [<roots:terra_moss>]);
 mods.jei.JEI.addDescription(<roots:terra_spores>, "When used on cobblestone adjacent to water, turns it into mossy cobblestone.");
-
-
-// redo living tool recipes to account for there being no wood tools
-
-Fey.removeRecipe(<roots:living_pickaxe>);
-Fey.removeRecipe(<roots:living_axe>);
-Fey.removeRecipe(<roots:living_shovel>);
-Fey.removeRecipe(<roots:living_hoe>);
-Fey.removeRecipe(<roots:living_sword>);
-
-Fey.addRecipe("living_pickaxe", <roots:living_pickaxe>, [<minecraft:golden_pickaxe>, bark, bark, goldOrSilver, wildroot]);
-Fey.addRecipe("living_axe", <roots:living_axe>, [<minecraft:golden_axe>, bark, bark, goldOrSilver, wildroot]);
-Fey.addRecipe("living_shovel", <roots:living_shovel>, [<minecraft:golden_shovel>, bark, bark, goldOrSilver, wildroot]);
-Fey.addRecipe("living_hoe", <roots:living_hoe>, [<minecraft:golden_hoe>, bark, bark, goldOrSilver, wildroot]);
-Fey.addRecipe("living_sword", <roots:living_sword>, [<minecraft:golden_sword>, bark, bark, goldOrSilver, wildroot]);
 
 
 // redo sure-footed stone recipe
