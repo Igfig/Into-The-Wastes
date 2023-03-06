@@ -8,3 +8,7 @@ recipes.addShaped("trident", <futuremc:trident>, [
 	[null,<ore:ingotPlatinum>,<tinkersforging:sword_blade/iron>],
 	[null,<ore:gemDiamond>,<ore:ingotPlatinum>],
 	[<ore:ingotPlatinum>,null,null]]);
+	
+// make bamboo work just like a stick
+recipes.removeByRecipeName("futuremc:else/stick_from_bamboo");
+recipes.replaceAllOccurences(<futuremc:bamboo>, <ore:stickWood>, <futuremc:scaffolding>);
