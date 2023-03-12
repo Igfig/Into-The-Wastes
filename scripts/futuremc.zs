@@ -10,5 +10,6 @@ recipes.addShaped("trident", <futuremc:trident>, [
 	[<ore:ingotPlatinum>,null,null]]);
 	
 // make bamboo work just like a stick
+<ore:stickWood>.add(<futuremc:bamboo>);
 recipes.removeByRecipeName("futuremc:else/stick_from_bamboo");
 recipes.replaceAllOccurences(<futuremc:bamboo>, <ore:stickWood>, <futuremc:scaffolding>);
