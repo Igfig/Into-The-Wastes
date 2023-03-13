@@ -8,7 +8,8 @@ import mods.naturesaura.TreeRitual;
 val toRemove = [
 	<rats:cauldron_milk>,
 	<rats:cauldron_cheese>,
-	<rats:cheese>
+	<rats:cheese>,
+	<rats:rat_upgrade_aristocrat>
 ] as IIngredient[];
 
 for tr in toRemove {
