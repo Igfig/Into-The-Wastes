@@ -14,3 +14,6 @@ val crooks = [<inspirations:wooden_crook>, <inspirations:stone_crook>, <inspirat
 for crook in crooks {
 	crook.addTooltip("Increases sapling drops when breaking leaves"); 
 }
+
+// hide Inspirations wither bone; we aleady have a better version from another mod
+mods.jei.JEI.removeAndHide(<inspirations:materials:7>);

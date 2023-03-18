@@ -35,7 +35,10 @@ recipes.addShaped(<crossroads:omnimeter>, [
 	[null,<ore:ingotCopper>,null],
 	[<ore:ingotCopper>,<ore:dustRedstone>,<ore:ingotCopper>],
 	[null,<ore:ingotCopper>,null]]);
-	
+
+
+// make slotted chest recipe harder
+recipes.replaceAllOccurences(<minecraft:trapdoor>, <ore:plateTin>, <essentials:slotted_chest>);
 
 // add some notes
 
