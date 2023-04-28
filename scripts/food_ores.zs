@@ -34,6 +34,8 @@
 
 <ore:blockHay>.add(<minecraft:hay_block>);
 
+<ore:foodFlour>.add(<cuisine:food:3>); // rice powder
+
 // meats
 
 <ore:foodMeat>.add(
