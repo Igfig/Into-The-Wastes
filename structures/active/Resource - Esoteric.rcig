@@ -1,0 +1,247 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Resource - Esoteric",
+  "items": [
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "minecraft:blaze_rod",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "thermalfoundation:material",
+        "damage": 2050,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "thermalfoundation:material",
+        "damage": 2052,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "thermalfoundation:material",
+        "damage": 2048,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.0,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "minecraft:ender_pearl",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.0,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "minecraft:ghast_tear",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "minecraft:prismarine_crystals",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 4.0,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "minecraft:prismarine_shard",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "minecraft:dragon_breath",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "inspirations:materials",
+        "damage": 6,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:end_rod",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 4,
+      "max": 32,
+      "item": {
+        "id": "quark:black_ash",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "iceandfire:witherbone",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "crossroads:pure_quartz",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 6,
+      "item": {
+        "id": "minecraft:obsidian",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:sponge",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "roots:runestone",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "mysticalworld:pearl",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "toughasnails:jelled_slime",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "toughasnails:magma_shard",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 4.0,
+      "min": 1,
+      "max": 32,
+      "item": {
+        "id": "thermalfoundation:fertilizer",
+        "damage": 1,
+        "count": 1
+      }
+    },
+    {
+      "weight": 4.0,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "roots:terra_moss",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.15,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "psi:material",
+        "damage": 2,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35,
+      "min": 1,
+      "max": 3,
+      "item": {
+        "id": "psi:material",
+        "damage": 1,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

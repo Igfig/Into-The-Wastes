@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "inventoryGeneratorID": "Basic Books",
+  "inventoryGeneratorID": "Magic Cake",
   "items": [
     {
-      "weight": 5.0,
+      "weight": 1.0,
       "min": 1,
-      "max": 8,
+      "max": 1,
       "item": {
-        "id": "minecraft:book",
+        "id": "charm:cake_haste",
         "damage": 0,
         "count": 1
       }
@@ -17,7 +17,7 @@
       "min": 1,
       "max": 1,
       "item": {
-        "id": "minecraft:writable_book",
+        "id": "charm:cake_regeneration",
         "damage": 0,
         "count": 1
       }
@@ -27,7 +27,7 @@
       "min": 1,
       "max": 1,
       "item": {
-        "id": "reccomplex:book_generation_tag",
+        "id": "charm:cake_resistance",
         "damage": 0,
         "count": 1
       }
@@ -37,18 +37,19 @@
       "min": 1,
       "max": 1,
       "item": {
-        "id": "reccomplex:inventory_generation_single_tag",
+        "id": "charm:cake_swiftness",
         "damage": 0,
-        "count": 1,
-        "tag": {
-          "nbtType": "compound",
-          "nbt": {
-            "itemCollectionKey": {
-              "nbtType": "string",
-              "nbt": "Colored Books"
-            }
-          }
-        }
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "charm:cake_strength",
+        "damage": 0,
+        "count": 1
       }
     }
   ],

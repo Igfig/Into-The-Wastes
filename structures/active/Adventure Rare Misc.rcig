@@ -1,0 +1,483 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Adventure Rare Misc",
+  "items": [
+    {
+      "weight": 0.45,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:saddle",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "HorseTweaksUpgrades": {
+              "nbtType": "compound",
+              "nbt": {
+                "FEATHER_FALL": {
+                  "nbtType": "byte",
+                  "nbt": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.45,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:saddle",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "HorseTweaksUpgrades": {
+              "nbtType": "compound",
+              "nbt": {
+                "EASY_JUMP": {
+                  "nbtType": "byte",
+                  "nbt": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.45,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:saddle",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "HorseTweaksUpgrades": {
+              "nbtType": "compound",
+              "nbt": {
+                "THORNS": {
+                  "nbtType": "byte",
+                  "nbt": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.45,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:saddle",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "HorseTweaksUpgrades": {
+              "nbtType": "compound",
+              "nbt": {
+                "LEAF_WALKER": {
+                  "nbtType": "byte",
+                  "nbt": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.45,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:saddle",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "HorseTweaksUpgrades": {
+              "nbtType": "compound",
+              "nbt": {
+                "FROST_WALKER": {
+                  "nbtType": "byte",
+                  "nbt": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.45,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:saddle",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "HorseTweaksUpgrades": {
+              "nbtType": "compound",
+              "nbt": {
+                "FIRE_RESISTANCE": {
+                  "nbtType": "byte",
+                  "nbt": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "iceandfire:summoning_crystal_ice",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {}
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "iceandfire:summoning_crystal_fire",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {}
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "rats:rat_flute",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {}
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "iceandfire:dragon_flute",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "railcraft:bore",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "railcraft:borehead_steel",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "charm:moonstone",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "essentials:obsidian_cutting_kit",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:potion",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Potion": {
+              "nbtType": "string",
+              "nbt": "toughasnails:long_heat_resistance_type"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:totem_of_undying",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "rats:plague_doctorate",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "effortlessbuilding:reach_upgrade1",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "charm:charged_emerald",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "iceandfire:blindfold",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "roots:reliquary",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "grapplemod:grapplinghook",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "doublehook": {
+              "nbtType": "byte",
+              "nbt": 0
+            },
+            "motor": {
+              "nbtType": "byte",
+              "nbt": 0
+            },
+            "phaserope": {
+              "nbtType": "byte",
+              "nbt": 0
+            },
+            "attract": {
+              "nbtType": "byte",
+              "nbt": 0
+            },
+            "rocket": {
+              "nbtType": "byte",
+              "nbt": 0
+            },
+            "hookgravity": {
+              "nbtType": "double",
+              "nbt": 1.0
+            },
+            "repelforce": {
+              "nbtType": "double",
+              "nbt": 1.0
+            },
+            "attractradius": {
+              "nbtType": "double",
+              "nbt": 3.0
+            },
+            "pullbackwards": {
+              "nbtType": "byte",
+              "nbt": 1
+            },
+            "smartmotor": {
+              "nbtType": "byte",
+              "nbt": 0
+            },
+            "detachonkeyrelease": {
+              "nbtType": "byte",
+              "nbt": 0
+            },
+            "angle": {
+              "nbtType": "double",
+              "nbt": 20.0
+            },
+            "crc32": {
+              "nbtType": "long",
+              "nbt": 2252267022
+            },
+            "rocket_vertical_angle": {
+              "nbtType": "double",
+              "nbt": 0.0
+            },
+            "rocket_force": {
+              "nbtType": "double",
+              "nbt": 1.0
+            },
+            "rocket_refuel_ratio": {
+              "nbtType": "double",
+              "nbt": 15.0
+            },
+            "motorwhencrouching": {
+              "nbtType": "byte",
+              "nbt": 0
+            },
+            "motorwhennotcrouching": {
+              "nbtType": "byte",
+              "nbt": 1
+            },
+            "motordampener": {
+              "nbtType": "byte",
+              "nbt": 0
+            },
+            "rocket_active_time": {
+              "nbtType": "double",
+              "nbt": 0.5
+            },
+            "throwspeed": {
+              "nbtType": "double",
+              "nbt": 2.0
+            },
+            "motoracceleration": {
+              "nbtType": "double",
+              "nbt": 0.2
+            },
+            "enderstaff": {
+              "nbtType": "byte",
+              "nbt": 0
+            },
+            "oneropepull": {
+              "nbtType": "byte",
+              "nbt": 0
+            },
+            "sneakingverticalthrowangle": {
+              "nbtType": "double",
+              "nbt": 0.0
+            },
+            "smartdoublemotor": {
+              "nbtType": "byte",
+              "nbt": 1
+            },
+            "repel": {
+              "nbtType": "byte",
+              "nbt": 0
+            },
+            "sneakingangle": {
+              "nbtType": "double",
+              "nbt": 10.0
+            },
+            "motormaxspeed": {
+              "nbtType": "double",
+              "nbt": 4.0
+            },
+            "playermovementmult": {
+              "nbtType": "double",
+              "nbt": 1.0
+            },
+            "reelin": {
+              "nbtType": "byte",
+              "nbt": 1
+            },
+            "sticky": {
+              "nbtType": "byte",
+              "nbt": 0
+            },
+            "verticalthrowangle": {
+              "nbtType": "double",
+              "nbt": 0.0
+            },
+            "maxlen": {
+              "nbtType": "double",
+              "nbt": 30.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 4,
+      "max": 16,
+      "item": {
+        "id": "valoegheses_be:tnt_true",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}
