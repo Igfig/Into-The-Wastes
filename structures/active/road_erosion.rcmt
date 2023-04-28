@@ -10,7 +10,7 @@
           "sourceExpression": "quark:sandstone_new",
           "destination": [
             {
-              "weight": 60.92701721191406,
+              "weight": 60.0,
               "block": "quark:sandstone_new",
               "metadata": 1,
               "tileEntity": "null"
