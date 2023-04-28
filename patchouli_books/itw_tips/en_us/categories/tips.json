@@ -1,0 +1,6 @@
+{
+    "name": "Tips",
+    "description": "All the tips you see on loading screens, collected in one place.",
+    "icon": "minecraft:writable_book",
+	"sortnum": 0
+}

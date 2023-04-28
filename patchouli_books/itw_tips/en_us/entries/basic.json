@@ -1,0 +1,11 @@
+{
+    "name": "Basic Mechanics",
+    "icon": "minecraft:writable_book",
+    "category": "itw_tips:tips",
+    "pages": [
+		{
+			"type": "patchouli:text",
+			"text": "The further you go north or south, the cooler and wetter oasis climates will get. You'll also find new creatures and resources."
+		}
+    ]
+}
