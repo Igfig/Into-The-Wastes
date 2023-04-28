@@ -34,5 +34,10 @@
     "mob": "iceandfire:deathworm",
 	"maxdifficulty": 0,
     "result": "deny"
+  },
+  {
+    "mob": "rats:rat",
+	"maxdifficulty": 0,
+    "result": "deny"
   }
 ]
