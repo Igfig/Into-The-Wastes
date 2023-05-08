@@ -54,5 +54,5 @@ for moldId in moldItems {
 	val mold = <foundry:mold>.definition.makeStack(moldId);
 
 	recipes.remove(mold);
-	mods.foundry.Casting.addRecipe(mold, <liquid:lead> * 1296, porcelain, moldItems[moldId]);
+	mods.foundry.Casting.addRecipe(mold, <liquid:lead> * 1296, porcelain, moldItems[moldId], 360, true);
 }
