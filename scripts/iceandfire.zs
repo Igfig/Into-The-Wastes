@@ -11,6 +11,30 @@ mods.jei.JEI.removeAndHide(<iceandfire:silver_ore>);
 mods.jei.JEI.removeAndHide(<iceandfire:sapphire_ore>);
 
 
+// add new oredicts
+
+<ore:dragonScale>.add(
+	<iceandfire:dragonscales_red>,
+	<iceandfire:dragonscales_green>,
+	<iceandfire:dragonscales_bronze>,
+	<iceandfire:dragonscales_gray>,
+	<iceandfire:dragonscales_blue>,
+	<iceandfire:dragonscales_white>,
+	<iceandfire:dragonscales_sapphire>,
+	<iceandfire:dragonscales_silver>
+);
+<ore:dragonScaleBlock>.add(
+	<iceandfire:dragonscale_red>,
+	<iceandfire:dragonscale_green>,
+	<iceandfire:dragonscale_bronze>,
+	<iceandfire:dragonscale_gray>,
+	<iceandfire:dragonscale_blue>,
+	<iceandfire:dragonscale_white>,
+	<iceandfire:dragonscale_sapphire>,
+	<iceandfire:dragonscale_silver>
+);
+
+
 // remove silver armor
 
 val removeFromAnvil = [
@@ -335,3 +359,5 @@ recipes.replaceAllOccurences(<ore:stickWood>, lead_sword, <iceandfire:hippogryph
 recipes.replaceAllOccurences(<ore:ingotIron>, <iceandfire:hippogryph_talon>, <iceandfire:hippogryph_sword>);
 
 recipes.replaceAllOccurences(<minecraft:diamond>, <futuremc:trident>, <iceandfire:tide_trident>);
+
+recipes.replaceAllOccurences(<minecraft:emerald>, <ore:gemTopaz>, <iceandfire:summoning_crystal_fire>);
