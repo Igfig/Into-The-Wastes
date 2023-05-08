@@ -47,6 +47,7 @@ ArcaneWorld.createRitualCreateItem("departure", "Ritual of Departure", <rats:chu
 
 
 // new ritual to turn desert into grass
+// TODO figure out how to make it do a graphical reload so it doesn't keep looking like the biome is desert
 
 ArcaneWorld.createRitualCommand("sand_to_grass", "Ritual of Regrowth", [
 	"/weather thunder 10",
