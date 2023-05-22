@@ -40,6 +40,7 @@ recipes.addShaped(<crossroads:omnimeter>, [
 // make slotted chest recipe harder
 recipes.replaceAllOccurences(<minecraft:trapdoor>, <ore:plateTin>, <essentials:slotted_chest>);
 
+
 // add some notes
 
 <crossroads:heating_crucible>.addTooltip("Heat from the bottom; insert with a hopper on the top; extract with a faucet or fluid tube on the sides");

@@ -8,6 +8,7 @@ for fr in fullyRemove {
 }
 for rr in removeRecipes {
 	recipes.remove(rr);
+	furnace.remove(rr);
 }
 
 var sand = <minecraft:sand>;

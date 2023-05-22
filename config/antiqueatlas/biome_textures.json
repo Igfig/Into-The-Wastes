@@ -1,6 +1,8 @@
 {
   "version": 2,
   "data": {
+    "arcaneworld:arcane_dungeon": "NETHER_WALL",
+    "arcaneworld:arcane_void": "END_VOID",
     "biomesoplenty:bamboo_forest": "JUNGLE",
     "biomesoplenty:bayou": "SWAMP",
     "biomesoplenty:coral_reef": "WATER",
@@ -108,13 +110,11 @@
     "minecraft:taiga_hills": "PINES_HILLS",
     "minecraft:void": "END_VOID",
     "rats:ratlantis": "JUNGLE",
-    "traverse:arid_highland": "SAVANNA_CLIFFS",
     "traverse:badlands": "DESERT",
     "traverse:canyon": "PLATEAU_MESA",
     "traverse:crag_cliffs": "MOUNTAINS_SNOW_CAPS",
     "traverse:desert_shrubland": "SAVANNA",
     "traverse:glacier_spikes": "MOUNTAINS_NAKED",
-    "traverse:green_swamp": "SWAMP",
     "traverse:lush_hills": "HILLS",
     "traverse:mini_jungle": "JUNGLE",
     "traverse:red_desert": "DESERT",

@@ -66,12 +66,10 @@ for i, items in metals {
 	mods.crossroads.HeatingCrucible.addRecipe(items[0], liquids[i] * 144, metalTextures[i]);
 	mods.crossroads.HeatingCrucible.addRecipe(items[1], liquids[i] * 144, metalTextures[i]);
 	mods.crossroads.HeatingCrucible.addRecipe(items[2], liquids[i] * 144, metalTextures[i]);
-	mods.crossroads.HeatingCrucible.addRecipe(items[3], liquids[i] * 208, metalTextures[i]);
+	mods.crossroads.HeatingCrucible.addRecipe(items[3], liquids[i] * 144, metalTextures[i]); // yeah you don't recover all the materials. This lets us leave them at stacksize 16
 }
 
-
 // melt oil sand to crude oil
-
 mods.crossroads.HeatingCrucible.addRecipe(<thermalfoundation:ore_fluid:0>, <liquid:crude_oil> * 1000, "thermalfoundation:blocks/ore/ore_fluid_crude_oil_sand");
 mods.crossroads.HeatingCrucible.addRecipe(<thermalfoundation:ore_fluid:5>, <liquid:crude_oil> * 1000, "thermalfoundation:blocks/ore/ore_fluid_crude_oil_red_sand");
 

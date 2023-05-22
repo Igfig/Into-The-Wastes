@@ -5,6 +5,7 @@ import mods.contenttweaker.Item;
 
 
 // add fuel tanks: solid versions of those fuels, for use in trains.
+// We'll add their actual recipes and behaviour in fuel.zs
 
 var emptyTankItem = mods.contenttweaker.VanillaFactory.createItem("empty_tank");
 emptyTankItem.register();

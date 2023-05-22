@@ -10,6 +10,15 @@
   },
   {
     "item": {
+      "name": "animania:milk_bottle",
+      "metadata": 0
+    },
+    "thirst": 4,
+    "hydration": 1,
+    "poisonChance": 0.0
+  },
+  {
+    "item": {
       "name": "cuisine:glass_bottle",
       "metadata": 0,
 	  "nbt": "{Fluid:{FluidName:\"cuisine_juice\",Amount:250,Tag:{material:\"cactus\"}}}"
