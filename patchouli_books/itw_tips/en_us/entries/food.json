@@ -1,0 +1,25 @@
+{
+    "name": "Food",
+    "icon": "minecraft:cooked_porkchop",
+    "category": "patchouli:tips",
+    "pages": [
+		{
+			"type": "text",
+			"text": "Seeds don't drop from grass. You'll need to find crops growing infrequently in oases or in villages.$(br2)A balanced diet pays off in the form of increased strength and resistance.$(br2)Loading up on individual food groups increases your max health."
+		},
+		{
+			"type": "text",
+			"text": "Most food rots in 8 days; pan-cooked dishes last longer.$(br2)Food rots half as fast in a larder, 1/10 as fast in an esky, 1/100 in an icebox, and not at all in a freezer.$(br2)Craft two stacks of food together to average out their rot levels."
+		},
+		{
+			"type": "crafting",
+			"recipe": "crafttweaker:foodfunk_larder_modified",
+			"recipe2": "crafttweaker:esky"
+		},
+		{
+			"type": "crafting",
+			"recipe": "crafttweaker:foodfunk_icebox_modified",
+			"recipe2": "crafttweaker:foodfunk_freezer_modified"
+		}
+    ]
+}
