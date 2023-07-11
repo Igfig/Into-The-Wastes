@@ -46,7 +46,7 @@ ArcaneWorld.createRitualCreateItem("departure", "Ritual of Departure", <rats:chu
 	<biomesoplenty:terrestrial_artifact>]);
 
 
-// new ritual to turn desert into grass
+// new ritual to turn desert into grass in a 64-block radius
 // TODO figure out how to make it do a graphical reload so it doesn't keep looking like the biome is desert
 
 ArcaneWorld.createRitualCommand("sand_to_grass", "Ritual of Regrowth", [
@@ -55,7 +55,8 @@ ArcaneWorld.createRitualCommand("sand_to_grass", "Ritual of Regrowth", [
 	"/particle happyVillager ~-4 ~-1 ~-4 8 2 8 1 4000",
 	"/cofh replaceblocks @s 64 255 64 minecraft:grass minecraft:sand",
 	"/cofh replaceblocks @s 64 255 64 minecraft:stone minecraft:sandstone#0",
-	"/btsetbiome 4 64"
+	"/cofh replaceblocks @s 64 255 64 minecraft:water biomesoplenty:sand",
+	"/btsetbiome 4 64" // Forest biome
 ], [<ore:ingotPlatinum>,<ore:grass>,<naturesaura:aura_trove>.withTag({aura:1200000}),<roots:spirit_herb>,<naturesaura:sky_ingot>]);
 
 
