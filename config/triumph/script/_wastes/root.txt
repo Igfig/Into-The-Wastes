@@ -21,11 +21,6 @@ addCriteria("location", "minecraft:location")
 // put water in clay barrel (or w/e) to stretch your supply
 // water collector
 
-// tinker's anvil and hammer
-// heat an ingot (fuel in forge, plus flint&steel)
-// tool head
-// tool? Except no, it's too easy to get iron tools from mobs
-
 // crucible
 // fuel heater
 // melt copper

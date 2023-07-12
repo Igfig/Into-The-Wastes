@@ -6,4 +6,4 @@ addParent("_wastes:flint_tools")
 
 criteria = addCriteria("crossroads_manual", "minecraft:inventory_changed")
 criteria.addItem(<guideapi:crossroads-info_guide>)
-setPos(71,148)
+setPos(71,182)

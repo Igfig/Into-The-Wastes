@@ -6,4 +6,4 @@ addParent("_wastes:root")
 criteria = addCriteria("wildroot", "minecraft:inventory_changed")
 criteria.addItem("roots:wildroot")
 
-setPos(38,175)
+setPos(38,210)
