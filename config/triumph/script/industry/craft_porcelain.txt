@@ -1,0 +1,12 @@
+setIcon(<ceramics:unfired_clay:4>)
+setTitle("Porcelain")
+setDescription("Combine clay and bone meal into porcelain")
+setShowToast(false)
+setAnnounceToChat(false)
+
+addParent("industry:root")
+
+criteria = addCriteria("porcelain", "triumph:completed_advancement")
+criteria.setAdvancement("_wastes:ceramics/craft_porcelain")
+
+setPos(34,82)

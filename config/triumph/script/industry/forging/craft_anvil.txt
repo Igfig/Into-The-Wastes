@@ -12,4 +12,4 @@ criteria.addItem("tinkersforging:tinkers_anvil/copper")
 
 setRequirements("any")
 
-setPos(96,45)
+setPos(98,45)

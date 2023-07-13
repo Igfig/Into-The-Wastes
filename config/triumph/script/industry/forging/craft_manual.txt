@@ -7,4 +7,4 @@ addParent("industry:forging/craft_hammer")
 criteria = addCriteria("forging_manual", "minecraft:inventory_changed")
 criteria.addItem(<patchouli:guide_book, nbt:{"patchouli:book":"tinkersforging:book"}>)
 
-setPos(69,27)
+setPos(66,27)

@@ -6,4 +6,4 @@ addParent("industry:root")
 
 criteria = addCriteria("crossroads_manual", "minecraft:inventory_changed")
 criteria.addItem(<guideapi:crossroads-info_guide>)
-setPos(34,133)
+setPos(66,113)

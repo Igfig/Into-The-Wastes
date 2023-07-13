@@ -6,4 +6,4 @@ addParent("industry:forging/craft_hammer")
 criteria = addCriteria("forge", "minecraft:inventory_changed")
 criteria.addItem(<tinkersforging:forge>)
 
-setPos(96,9)
+setPos(98,9)
