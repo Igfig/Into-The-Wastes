@@ -40,6 +40,9 @@ recipes.addShaped(<crossroads:omnimeter>, [
 // make slotted chest recipe harder
 recipes.replaceAllOccurences(<minecraft:trapdoor>, <ore:plateTin>, <essentials:slotted_chest>);
 
+// and make fuel heater easier (needing copper to bootstrap it is annoying)
+recipes.replaceAllOccurences(<ore:ingotCopper>, <ore:ingotIron>, <crossroads:coal_heater>);
+
 
 // add some notes
 
