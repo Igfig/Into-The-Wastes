@@ -1,3 +1,8 @@
+val twine = <primitivetools:cordage_fiber>;
+val vine = <primitivetools:cordage_vine>;
+val strip = <primitivetools:leather_strip>;
+
+
 // add new work knives
 
 <ore:toolWorkBlade>.addItems([
@@ -61,7 +66,7 @@
 // add recipes for some missing materials
 
 recipes.addShapeless(<minecraft:stick>, [<ore:treeSapling>]);
-recipes.addShapeless(<primitivetools:cordage_vine>, [<ore:vine>,<ore:vine>,<ore:vine>]);
+recipes.addShapeless(vine, [<ore:vine>,<ore:vine>,<ore:vine>]);
 recipes.addShapeless(<primitivetools:leather_strip> * 3, [<ore:leather>,<ore:toolWorkBlade>.reuse()]);
 
 
@@ -79,4 +84,42 @@ recipes.addShaped(<primitivetools:primitive_pick_cbl>, [
 	
 // rename vine ropes because they aren't climbable like other ropes
 
-<primitivetools:cordage_vine>.displayName = "Vine Twine";
+vine.displayName = "Vine Twine";
+
+
+// additional uses for primitive materials
+
+recipes.addShaped("twine_rope", <inspirations:rope> * 3, [
+	[twine,twine], 
+	[twine,twine], 
+	[twine,twine]]);
+recipes.addShaped("strip_rope", <inspirations:rope> * 6, [
+	[strip,strip], 
+	[strip,strip], 
+	[strip,strip]]);
+recipes.addShaped("vine_rope", <inspirations:rope:2> * 9, [
+	[vine], 
+	[vine], 
+	[vine]]);
+
+
+// worse arrow recipe, using leftover flint flakes and shards
+
+recipes.addShaped("shard_arrow", <minecraft:arrow> * 2, [
+	[<ore:shardFlint> | <ore:flakeFlint>], 
+	[<ore:stickWood>], 
+	[<ore:feather>]]);
+	
+	
+// bring back original arrow recipe
+
+recipes.removeByRecipeName("primitivetools:arrow");
+recipes.addShaped("arrow", <minecraft:arrow> * 4, [
+	[<minecraft:flint> | <ore:pointFlint>], 
+	[<ore:stickWood>], 
+	[<ore:feather>]]);
+	
+	
+// hide unused bone needle
+
+mods.jei.JEI.removeAndHide(<primitivetools:bone_needle>);
