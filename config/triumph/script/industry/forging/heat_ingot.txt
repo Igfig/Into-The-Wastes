@@ -1,0 +1,14 @@
+setIcon("minecraft:iron_ingot")
+setTitle("Heat an Ingot")
+setDescription("Put a small stack of iron ingots in a fueled brick forge, light it with a flint and steel, and heat them until 'Brilliant White - Can Work'")
+addParent("industry:forging/craft_forge")
+
+criteria = addCriteria("iron_ingot_1", "triumph:right_click_block")
+criteria.setBlock(<tinkersforging:forge, tile:{inventory:{Items:[{Slot:1,ForgeCaps:{"tinkersforging:forge_item":{temp:1500.0f}}}]}}>)
+criteria = addCriteria("iron_ingot_2", "triumph:right_click_block")
+criteria.setBlock(<tinkersforging:forge, tile:{inventory:{Items:[{Slot:2,ForgeCaps:{"tinkersforging:forge_item":{temp:1500.0f}}}]}}>)
+criteria = addCriteria("iron_ingot_3", "triumph:right_click_block")
+criteria.setBlock(<tinkersforging:forge, tile:{inventory:{Items:[{Slot:3,ForgeCaps:{"tinkersforging:forge_item":{temp:1500.0f}}}]}}>)
+
+setRequirements("any")
+setPos(126,9)

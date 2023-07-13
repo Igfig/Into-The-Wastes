@@ -5,6 +5,8 @@ setFrameType("goal")
 addParent("_wastes:oasis_warm")
 alwaysVisible()
 
+// TODO make sure this is kept updated when the biome list changes
+
 criteria = addCriteria("biomesoplenty:bayou", "minecraft:location")
 criteria.setBiome("biomesoplenty:bayou")
 criteria = addCriteria("biomesoplenty:crag", "minecraft:location")
@@ -51,8 +53,6 @@ criteria = addCriteria("minecraft:swampland", "minecraft:location")
 criteria.setBiome("minecraft:swampland")
 criteria = addCriteria("traverse:crag_cliffs", "minecraft:location")
 criteria.setBiome("traverse:crag_cliffs")
-criteria = addCriteria("traverse:green_swamp", "minecraft:location")
-criteria.setBiome("traverse:green_swamp")
 criteria = addCriteria("traverse:mini_jungle", "minecraft:location")
 criteria.setBiome("traverse:mini_jungle")
 criteria = addCriteria("traverse:rocky_plains", "minecraft:location")

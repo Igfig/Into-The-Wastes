@@ -1,0 +1,15 @@
+setIcon("tinkersforging:tinkers_anvil/iron")
+setTitle("Anvil Time")
+setDescription("Craft a Tinker's Anvil")
+addParent("industry:forging/craft_hammer")
+
+criteria = addCriteria("tinkers_/iron", "minecraft:inventory_changed")
+criteria.addItem("tinkersforging:tinkers_anvil/iron")
+criteria = addCriteria("tinkers_anvil/gold", "minecraft:inventory_changed")
+criteria.addItem("tinkersforging:tinkers_anvil/gold")
+criteria = addCriteria("tinkers_anvil/copper", "minecraft:inventory_changed")
+criteria.addItem("tinkersforging:tinkers_anvil/copper")
+
+setRequirements("any")
+
+setPos(96,45)
