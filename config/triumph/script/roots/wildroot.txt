@@ -1,0 +1,10 @@
+setIcon("roots:wildroot")
+setTitle("The Root of Magic")
+setDescription("Break ceiling roots in dirt caves to collect wildroot.")
+addParent("roots:root")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("wildroot", "minecraft:inventory_changed")
+criteria.addItem("roots:wildroot")

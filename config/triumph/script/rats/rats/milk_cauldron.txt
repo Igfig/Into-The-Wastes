@@ -1,0 +1,7 @@
+setIcon("animania:cheese_mold")
+setTitle("Curdling Time")
+setDescription("Pour milk into a cheese mold and wait for it to turn into cheese")
+addParent("rats:rats/root")
+
+criteria = addCriteria("cauldron_milk", "minecraft:placed_block")
+criteria.setBlock("animania:cheese_mold")

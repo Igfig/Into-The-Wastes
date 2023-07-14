@@ -1,0 +1,11 @@
+setIcon("rats:chunky_cheese_token")
+setTitle("The Way Out")
+setDescription("Craft a Token of the Unspoiled Lands")
+setFrameType("challenge")
+addParent("rats:rats/root")
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+criteria = addCriteria("iron_pickaxe", "minecraft:inventory_changed")
+criteria.addItem("rats:chunky_cheese_token")

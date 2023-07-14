@@ -1,0 +1,8 @@
+setIcon("rats:ratlantis_portal")
+setTitle("Ratlantis!")
+setDescription("Use a Token of the Unspoiled Lands anywhere to create a portal to Ratlantis. Enter through the portal!")
+setFrameType("GOAL")
+addParent("rats:rats/token")
+
+criteria = addCriteria("iron_pickaxe", "minecraft:enter_block")
+criteria.setBlock("rats:ratlantis_portal")

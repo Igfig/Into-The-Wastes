@@ -1,7 +1,7 @@
 setIcon(<minecraft:furnace>)
 setTitle("Industry")
 setDescription("Learn about smithing and machinery")
-setBackground("minecraft:textures/gui/advancements/backgrounds/adventure.png")
+setBackground("minecraft:textures/blocks/cobblestone.png")
 setShowToast(false)
 setAnnounceToChat(false)
 

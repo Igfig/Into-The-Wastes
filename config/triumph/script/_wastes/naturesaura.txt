@@ -1,9 +1,12 @@
 setIcon(<patchouli:guide_book, nbt:{"patchouli:book":"naturesaura:book"}>)
-setTitle("Nature's Aura")
-setDescription("Craft a Book of Natural Aura to learn about the magic of Aura")
+setTitle("Pages of Discovery")
+setDescription("Craft the Book of Natural Aura to learn about the magic of Aura")
 setFrameType("goal")
 addParent("_wastes:root")
 
+setShowToast(false)
+setAnnounceToChat(false)
+
 criteria = addCriteria("forging_manual", "minecraft:inventory_changed")
 criteria.addItem(<patchouli:guide_book, nbt:{"patchouli:book":"naturesaura:book"}>)
-setPos(71,185)
+setPos(35,94)
