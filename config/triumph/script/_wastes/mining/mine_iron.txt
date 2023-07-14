@@ -1,7 +1,7 @@
 setIcon(<prospects:flower:8>)
 setTitle("Iron Prospector")
 setDescription("Find an iron deposit under a patch of Poorjoe flowers")
-addParent("_wastes:oasis_hot")
+addParent("_wastes:biomes/oasis_hot")
 drawDirectLines()
 
 criteria = addCriteria("mine_iron", "minecraft:inventory_changed")

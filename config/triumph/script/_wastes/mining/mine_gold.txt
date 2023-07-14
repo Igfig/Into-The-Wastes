@@ -1,7 +1,7 @@
 setIcon(<prospects:flower:4>)
 setTitle("Gold Prospector")
 setDescription("Find a gold deposit under a patch of Horsetail flowers")
-addParent("_wastes:oasis_hot")
+addParent("_wastes:biomes/oasis_hot")
 drawDirectLines()
 
 criteria = addCriteria("mine_gold", "minecraft:inventory_changed")

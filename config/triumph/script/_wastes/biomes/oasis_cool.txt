@@ -2,7 +2,7 @@ setIcon("minecraft:mossy_cobblestone")
 setTitle("Cool Oasis")
 setDescription("Find somewhere with lots of water or a snow-capped peak")
 setFrameType("goal")
-addParent("_wastes:oasis_warm")
+addParent("_wastes:biomes/oasis_warm")
 alwaysVisible()
 
 // TODO make sure this is kept updated when the biome list changes

@@ -1,7 +1,7 @@
 setIcon(<prospects:flower:3>)
 setTitle("Copper Prospector")
 setDescription("Find a copper deposit under a patch of Hauman flowers")
-addParent("_wastes:oasis_hot")
+addParent("_wastes:biomes/oasis_hot")
 drawDirectLines()
 
 criteria = addCriteria("mine_copper", "minecraft:inventory_changed")

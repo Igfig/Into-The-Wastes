@@ -1,7 +1,7 @@
 setIcon(<prospects:flower:7>)
 setTitle("Silver Prospector")
 setDescription("Find a silver deposit under a patch of Indian Mustard")
-addParent("_wastes:oasis_cool")
+addParent("_wastes:biomes/oasis_cool")
 drawDirectLines()
 
 criteria = addCriteria("mine_silver", "minecraft:inventory_changed")
