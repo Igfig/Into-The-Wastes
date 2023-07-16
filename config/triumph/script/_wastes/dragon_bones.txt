@@ -9,4 +9,4 @@ setAnnounceToChat(false)
 
 criteria = addCriteria("dragonbone", "minecraft:inventory_changed")
 criteria.addItem("iceandfire:dragonbone")
-setPos(-7,94)
+setPos(-7,-20)

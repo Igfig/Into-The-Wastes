@@ -10,5 +10,4 @@ criteria = addCriteria("hammer/stone", "minecraft:inventory_changed")
 criteria.addItem("tinkersforging:hammer/stone")
 
 setRequirements("any")
-
-setPos(34,27)
+setPos(32,135)

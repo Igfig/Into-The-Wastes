@@ -5,4 +5,4 @@ addParent("_wastes:flint_tools")
 
 criteria = addCriteria("craft_bbq", "minecraft:inventory_changed")
 criteria.addItem(<cuisine:fire_pit:2>)
-setPos(38,35)
+setPos(38,28)

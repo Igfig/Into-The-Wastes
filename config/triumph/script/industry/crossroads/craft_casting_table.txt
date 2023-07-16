@@ -6,5 +6,4 @@ addParent("industry:crossroads/craft_ingot_mold")
 
 criteria = addCriteria("casting_table", "minecraft:inventory_changed")
 criteria.addItem("foundry:casting_table")
-
-setPos(98,82)
+setPos(97,81)

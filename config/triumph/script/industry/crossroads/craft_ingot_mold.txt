@@ -6,5 +6,4 @@ addParent("industry:craft_porcelain")
 
 criteria = addCriteria("mold", "minecraft:inventory_changed")
 criteria.addItem(<foundry:mold, meta:0>)
-
-setPos(66,82)
+setPos(64,81)

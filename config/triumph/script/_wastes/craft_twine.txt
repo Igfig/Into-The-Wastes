@@ -5,4 +5,4 @@ addParent("_wastes:root")
 
 criteria = addCriteria("cordage_fiber", "minecraft:inventory_changed")
 criteria.addItem("primitivetools:cordage_fiber")
-setPos(-28,48)
+setPos(-28,42)

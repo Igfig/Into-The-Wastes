@@ -2,8 +2,9 @@ setIcon("tinkersforging:pickaxe_head/iron")
 setTitle("Tooltip")
 setFrameType("GOAL")
 setDescription("Craft heated ingots into a tool head on a Tinker's Anvil. See the Tinker's Forging Guide for instructions.")
-addParent("industry:forging/craft_anvil")
+
 addParent("industry:forging/heat_ingot")
+addParent("industry:forging/craft_anvil")
 
 criteria = addCriteria("hammer_head/iron", "minecraft:inventory_changed")
 criteria.addItem("tinkersforging:hammer_head/iron")
@@ -22,4 +23,4 @@ criteria.addItem("tinkersforging:sword_blade/iron")
 
 setRequirements("any")
 
-setPos(159,27)
+setPos(128,135)

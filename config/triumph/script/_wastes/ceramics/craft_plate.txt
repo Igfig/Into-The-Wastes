@@ -6,4 +6,5 @@ addParent("_wastes:ceramics/craft_porcelain")
 criteria = addCriteria("craft_plate", "minecraft:inventory_changed")
 criteria.addItem(<cuisine:placed_dish>)
 
-setPos(71,4)
+#setPos(71,4)
+setPos(71,80)

@@ -8,5 +8,4 @@ addParent("industry:crossroads/craft_fuel_heater")
 
 criteria = addCriteria("ingot_copper", "minecraft:inventory_changed")
 criteria.addItem("crossroads:ingot_copper")
-
-setPos(129,148)
+setPos(128,54)

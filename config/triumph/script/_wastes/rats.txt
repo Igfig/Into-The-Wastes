@@ -9,4 +9,4 @@ setAnnounceToChat(false)
 
 criteria = addCriteria("rat", "minecraft:player_hurt_entity")
 criteria.setEntityType("rats:rat")
-setPos(14,94)
+setPos(14,-20)

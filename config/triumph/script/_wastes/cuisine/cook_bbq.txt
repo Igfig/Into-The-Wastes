@@ -93,4 +93,4 @@ criteria.addItem("quark:cooked_frog_leg")
 
 setRequirements("any")
 
-setPos(38,61)
+setPos(38,54)

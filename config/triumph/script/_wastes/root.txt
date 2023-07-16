@@ -5,7 +5,7 @@ setBackground("minecraft:textures/gui/advancements/backgrounds/adventure.png")
 setShowToast(true)
 setAnnounceToChat(true)
 
-setPos(-67,6)
+setPos(-60,28)
 addCriteria("location", "minecraft:location")
 
 
@@ -17,13 +17,6 @@ addCriteria("location", "minecraft:location")
 // stomp fruit to juice
 // drinkro
 
-// purified water
-// put water in clay barrel (or w/e) to stretch your supply
-// water collector
-
-// crucible
-// fuel heater
-// melt copper
 // ingot caster
 // omnimeter
 
@@ -34,11 +27,6 @@ addCriteria("location", "minecraft:location")
 // animania cheese
 
 // tame a zawa animal with kibble
-
-// tame a rat (10-15 cheese wedges)
-// some duplicates of rat cheevos
-
-// some duplicates of ice and fire cheevos maybe
 
 // get silkworms from leaves
 // silk armour

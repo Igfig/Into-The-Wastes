@@ -26,4 +26,4 @@ criteria = addCriteria("mine_gold", "triumph:completed_advancement")
 criteria.setAdvancement("_wastes:mining/mine_gold")
 
 setRequirements("any")
-setPos(-8,52)
+setPos(-1,108)

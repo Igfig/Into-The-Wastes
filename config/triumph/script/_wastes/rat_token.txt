@@ -7,4 +7,4 @@ addParent("_wastes:root")
 criteria = addCriteria("chunky_cheese_token", "minecraft:inventory_changed")
 criteria.addItem("rats:chunky_cheese_token")
 
-setPos(-28,145)
+setPos(104,-52)

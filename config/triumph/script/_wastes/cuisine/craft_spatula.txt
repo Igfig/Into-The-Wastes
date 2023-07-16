@@ -6,4 +6,4 @@ addParent("_wastes:cuisine/craft_bbq")
 criteria = addCriteria("craft_spatula", "minecraft:inventory_changed")
 criteria.addItem(<cuisine:iron_spatula>)
 
-setPos(71,61)
+setPos(71,54)

@@ -1,0 +1,8 @@
+setIcon(<ceramics:clay_bucket>)
+setTitle("Your First Bucket")
+setDescription("Craft an unfired clay bucket, then fire it in a furnace")
+addParent("_wastes:ceramics/get_clay")
+
+criteria = addCriteria("clay", "minecraft:inventory_changed")
+criteria.addItem(<ceramics:clay_bucket>)
+setPos(5,132)

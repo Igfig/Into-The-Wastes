@@ -10,4 +10,4 @@ setAnnounceToChat(false)
 criteria = addCriteria("wildroot", "minecraft:inventory_changed")
 criteria.addItem("roots:wildroot")
 
-setPos(-28,94)
+setPos(-28,-20)

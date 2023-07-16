@@ -9,4 +9,5 @@ setAnnounceToChat(false)
 
 criteria = addCriteria("forging_manual", "minecraft:inventory_changed")
 criteria.addItem(<patchouli:guide_book, nbt:{"patchouli:book":"naturesaura:book"}>)
-setPos(35,94)
+
+setPos(35,-20)
