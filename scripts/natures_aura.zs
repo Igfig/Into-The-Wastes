@@ -17,3 +17,7 @@ recipes.addShapeless(<minecraft:experience_bottle>, [<naturesaura:birth_spirit>]
 
 // remove Botanist's Hoe
 mods.jei.JEI.removeAndHide(<naturesaura:infused_iron_hoe>);
+
+
+// remove water bottle altar recipe
+mods.naturesaura.Altar.removeRecipe(<minecraft:potion>);

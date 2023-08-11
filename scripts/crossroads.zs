@@ -43,6 +43,9 @@ recipes.replaceAllOccurences(<minecraft:trapdoor>, <ore:plateTin>, <essentials:s
 // and make fuel heater easier (needing copper to bootstrap it is annoying)
 recipes.replaceAllOccurences(<ore:ingotCopper>, <ore:ingotIron>, <crossroads:coal_heater>);
 
+// make fluid tank recipe harder
+recipes.replaceAllOccurences(<ore:ingotCopper>, <ore:ingotCopshowium>, <crossroads:fluid_tank>);
+
 
 // add some notes
 

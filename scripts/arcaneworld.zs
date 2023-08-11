@@ -23,9 +23,11 @@ mods.jei.JEI.removeAndHide(<arcaneworld:growth_powder>);
 
 // new recipe for ritual table
 
+val xpTome = <thermalfoundation:tome_experience>.withTag({Experience:10000});
+
 recipes.remove(<arcaneworld:ritual_table>);
 recipes.addShaped("ritual_table", <arcaneworld:ritual_table>, [
-	[<roots:fey_leather>,<thermalfoundation:tome_experience>,<roots:fey_leather>],
+	[<roots:fey_leather>,xpTome,<roots:fey_leather>],
 	[<naturesaura:sky_ingot>,<ore:blockMithril>,<naturesaura:sky_ingot>],
 	[<ore:ingotIvoryPsi>,<ore:ingotPlatinum>,<ore:ingotIvoryPsi>]]);
 
