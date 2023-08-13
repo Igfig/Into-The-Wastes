@@ -55,4 +55,5 @@ mods.crossroads.Grindstone.addRecipe(<thermalfoundation:material:2052>, <thermal
 
 mods.crossroads.Grindstone.addRecipe(<ore:logWood>, <thermalfoundation:material:800> * 4); // sawdust
 mods.crossroads.Grindstone.addRecipe(<ore:enderpearl>, <railcraft:dust:6>); // ender powder
-mods.crossroads.Grindstone.addRecipe(<ore:netherrack>, <railcraft:dust:1>); // sulfur dust
+mods.crossroads.Grindstone.addRecipe(<ore:netherrack>, <crossroads:sulfur>); // sulfur
+mods.crossroads.Grindstone.addRecipe(<cuisine:material:3>, <crossroads:dust_salt>); // salt
