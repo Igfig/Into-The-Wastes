@@ -9,6 +9,7 @@ recipes.addShapeless("fire_pit_rack", <cuisine:fire_pit:2>, [<cuisine:fire_pit:0
 
 <cuisine:mortar>.displayName = "Kitchen Mortar";
 
+
 // harder drinkro recipe
 
 val silver = <ore:ingotSilver>;
