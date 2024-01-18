@@ -11,7 +11,7 @@ for item in items {
 }
 
 function setStackSize(entry as IOreDictEntry, size as int) as bool {
-	val keepStacked = ["Cactus", "Slime", "Prismarine", "Glass", "Mud", "Wood", "Wool", "wool", "Rock", "charred", "frozen", "Clay", "Sand", "Stone", "Brick", "Meat", "Goldenrod", "Concrete"] as string[]; // for some reason this definition has to be inside the function or it breaks?
+	val keepStacked = ["Cactus", "Slime", "Prismarine", "Glass", "Mud", "nugget", "Wood", "Wool", "wool", "Rock", "charred", "frozen", "Clay", "Sand", "Stone", "Brick", "Meat", "Goldenrod", "Concrete"] as string[]; // for some reason this definition has to be inside the function or it breaks?
 	
 	for ks in keepStacked {
 		if (entry.name has ks) {
