@@ -1,0 +1,17 @@
+setIcon(<cuisine:wok>)
+setTitle("Cuisine")
+setDescription("Learn about food and cooking")
+setBackground("minecraft:textures/blocks/brick.png")
+setShowToast(false)
+setAnnounceToChat(false)
+
+pageVisibleIf("_wastes:cuisine")
+pageVisibleIf("_wastes:meat")
+
+criteria = addCriteria("manual", "triumph:completed_advancement")
+criteria.setAdvancement("_wastes:cuisine")
+criteria = addCriteria("meat", "triumph:completed_advancement")
+criteria.setAdvancement("_wastes:meat")
+
+setRequirements("any")
+setPos(5,28)

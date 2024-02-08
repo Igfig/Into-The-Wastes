@@ -19,6 +19,10 @@ addCriteria("location", "minecraft:location")
 
 // ingot caster
 // omnimeter
+// gears 
+// heat pipes
+// self-sustaining heat machine?
+// other Crossroads machines
 
 // psi guide
 

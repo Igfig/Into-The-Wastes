@@ -1,7 +1,7 @@
 setIcon(<cuisine:iron_spatula>)
 setTitle("Spatulation")
 setDescription("Craft a spatula")
-addParent("_wastes:cuisine/craft_bbq")
+addParent("cuisine:craft_bbq")
 
 criteria = addCriteria("craft_spatula", "minecraft:inventory_changed")
 criteria.addItem(<cuisine:iron_spatula>)

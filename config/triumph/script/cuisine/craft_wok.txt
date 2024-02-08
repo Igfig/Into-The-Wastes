@@ -1,7 +1,7 @@
 setIcon(<cuisine:fire_pit:1>)
 setTitle("Wok This Way")
 setDescription("Craft a Wok and put it on a fire pit")
-addParent("_wastes:cuisine/craft_bbq")
+addParent("cuisine:craft_bbq")
 
 criteria1 = addCriteria("craft_wok_firepit", "minecraft:inventory_changed")
 criteria1.addItem(<cuisine:fire_pit:1>)
