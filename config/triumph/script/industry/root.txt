@@ -5,12 +5,7 @@ setBackground("minecraft:textures/blocks/stonebrick.png")
 setShowToast(false)
 setAnnounceToChat(false)
 
-pageVisibleIf("_wastes:flint_tools")
-pageVisibleIf("_wastes:ceramics/craft_porcelain")
-pageVisibleIf("_wastes:mining/mine_iron")
-pageVisibleIf("_wastes:mining/mine_copper")
-pageVisibleIf("_wastes:mining/mine_redstone")
-pageVisibleIf("_wastes:mining/mine_gold")
+pageVisibleIf("industry:root")
 
 criteria = addCriteria("flint_tools", "triumph:completed_advancement")
 criteria.setAdvancement("_wastes:flint_tools")

@@ -1,0 +1,11 @@
+setIcon(<minecraft:carrot>)
+setTitle("Salad: Origins")
+setDescription("Find a vegetable patch in the wild.")
+addParent("cuisine:root")
+drawDirectLines();
+
+criteria = addCriteria("vegetable", "triumph:completed_advancement")
+criteria.setAdvancement("_wastes:vegetable")
+
+setRequirements("any")
+setPos(-25,51)

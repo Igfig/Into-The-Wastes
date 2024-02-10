@@ -9,4 +9,4 @@ setAnnounceToChat(false)
 criteria = addCriteria("craft_plate", "minecraft:inventory_changed")
 criteria.addItem(<cuisine:placed_dish>)
 
-setPos(38,80)
+setPos(38,60)

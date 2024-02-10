@@ -7,4 +7,4 @@ addParent("_wastes:ceramics/craft_plate")
 criteria = addCriteria("craft_plate", "triumph:completed_advancement")
 criteria.setAdvancement("_wastes:ceramics/craft_plate")
 
-setPos(71,79)
+setPos(71,80)

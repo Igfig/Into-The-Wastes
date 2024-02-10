@@ -5,4 +5,4 @@ addParent("_wastes:ceramics/get_clay")
 
 criteria = addCriteria("clay", "minecraft:inventory_changed")
 criteria.addItem(<ceramics:clay_bucket>)
-setPos(5,132)
+setPos(5,116)

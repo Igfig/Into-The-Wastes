@@ -5,13 +5,16 @@ setBackground("minecraft:textures/blocks/brick.png")
 setShowToast(false)
 setAnnounceToChat(false)
 
-pageVisibleIf("_wastes:cuisine")
-pageVisibleIf("_wastes:meat")
+pageVisibleIf("cuisine:root")
 
 criteria = addCriteria("manual", "triumph:completed_advancement")
 criteria.setAdvancement("_wastes:cuisine")
 criteria = addCriteria("meat", "triumph:completed_advancement")
 criteria.setAdvancement("_wastes:meat")
+criteria = addCriteria("fruit", "triumph:completed_advancement")
+criteria.setAdvancement("_wastes:fruit")
+criteria = addCriteria("vegetable", "triumph:completed_advancement")
+criteria.setAdvancement("_wastes:vegetable")
 
 setRequirements("any")
 setPos(5,28)

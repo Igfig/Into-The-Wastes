@@ -5,7 +5,7 @@ setBackground("minecraft:textures/gui/advancements/backgrounds/adventure.png")
 setShowToast(true)
 setAnnounceToChat(true)
 
-setPos(-60,28)
+setPos(-60,27)
 addCriteria("location", "minecraft:location")
 
 
@@ -19,7 +19,7 @@ addCriteria("location", "minecraft:location")
 
 // ingot caster
 // omnimeter
-// gears 
+// gears
 // heat pipes
 // self-sustaining heat machine?
 // other Crossroads machines

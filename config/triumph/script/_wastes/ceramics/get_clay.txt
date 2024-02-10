@@ -5,4 +5,4 @@ addParent("_wastes:root")
 
 criteria = addCriteria("clay", "minecraft:inventory_changed")
 criteria.addItem(<minecraft:clay_ball>)
-setPos(-28,106)
+setPos(-28,74)

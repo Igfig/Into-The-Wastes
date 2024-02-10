@@ -9,4 +9,4 @@ criteria = addCriteria("purified_water_bucket", "triumph:player_crafted_item")
 criteria.setItem(<forge:bucketfilled, nbt:{FluidName:"purified_water",Amount:1000}>)
 
 setRequirements("any")
-setPos(5,158)
+setPos(5,144)

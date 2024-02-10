@@ -1,0 +1,20 @@
+setIcon(<minecraft:carrot>)
+setTitle("Salad: Origins")
+setDescription("Find a vegetable patch in the wild.")
+addParent("_wastes:biomes/oasis_hot")
+setShowToast(false)
+setAnnounceToChat(false)
+
+criteria = addCriteria("minecraft:wheat", "minecraft:inventory_changed")
+criteria.addItem("minecraft:wheat")
+criteria = addCriteria("minecraft:carrot", "minecraft:inventory_changed")
+criteria.addItem("minecraft:carrot")
+criteria = addCriteria("minecraft:potato", "minecraft:inventory_changed")
+criteria.addItem("minecraft:potato")
+criteria = addCriteria("minecraft:beetroot", "minecraft:inventory_changed")
+criteria.addItem("minecraft:beetroot")
+
+// TODO more veggies
+
+setRequirements("any")
+setPos(38,4)

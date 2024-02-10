@@ -1,6 +1,7 @@
 setIcon(<ceramics:porcelain_barrel, meta:3>)
 setTitle("Barreled Water")
 setDescription("Put purified water in a clay or porcelain barrel, then extract it with a bottle to stretch your supply.")
+setFrameType("goal")
 
 addParent("_wastes:purify_water")
 addParent("_wastes:ceramics/craft_barrel")
@@ -15,4 +16,4 @@ criteria.setBlock(<ceramics:porcelain_barrel, tile:{tank:{FluidName:"purified_wa
 criteria.setItem("minecraft:glass_bottle")
 
 setRequirements("any")
-setPos(38,132)
+setPos(38,102)

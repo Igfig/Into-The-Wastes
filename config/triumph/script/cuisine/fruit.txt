@@ -1,0 +1,11 @@
+setIcon(<minecraft:apple>)
+setTitle("Original Sin")
+setDescription("Pick a fruit off of a fruit tree.")
+addParent("cuisine:root")
+drawDirectLines();
+
+criteria = addCriteria("fruit", "triumph:completed_advancement")
+criteria.setAdvancement("_wastes:fruit")
+
+setRequirements("any")
+setPos(-25,28)

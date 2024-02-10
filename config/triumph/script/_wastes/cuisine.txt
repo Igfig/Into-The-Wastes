@@ -10,4 +10,4 @@ setAnnounceToChat(false)
 criteria = addCriteria("craft_cuisine", "minecraft:inventory_changed")
 criteria.addItem(<cuisine:manual>)
 
-setPos(56,-20)
+setPos(-81,-19)

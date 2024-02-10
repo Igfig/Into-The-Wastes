@@ -1,0 +1,11 @@
+setIcon(<minecraft:rabbit>)
+setTitle("Non-Vegan Option")
+setDescription("Kill an animal and collect its meat.")
+addParent("cuisine:root")
+drawDirectLines();
+
+criteria = addCriteria("meat", "triumph:completed_advancement")
+criteria.setAdvancement("_wastes:meat")
+
+setRequirements("any")
+setPos(-25,5)
