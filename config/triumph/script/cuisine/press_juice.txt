@@ -1,0 +1,9 @@
+setIcon(<cuisine:glass_bottle>)
+setTitle("Come Get Y'alls Juice")
+setDescription("Put some fruit in a basin and jump up and down on top of it to squeeze it into juice.")
+addParent("cuisine:craft_basin")
+
+criteria = addCriteria("juice", "minecraft:inventory_changed")
+criteria.addItem("cuisine:glass_bottle")
+
+setPos(71,113)

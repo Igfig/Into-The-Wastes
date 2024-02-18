@@ -1,0 +1,9 @@
+setIcon("antiqueatlas:empty_antique_atlas")
+setTitle("Antique Atlas")
+setDescription("Craft an Antique Atlas to keep track of where you've been.")
+addParent("_wastes:root")
+
+criteria = addCriteria("empty_antique_atlas", "minecraft:inventory_changed")
+criteria.addItem("antiqueatlas:empty_antique_atlas")
+
+setPos(-28,-19)

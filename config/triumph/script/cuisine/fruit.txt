@@ -8,4 +8,4 @@ criteria = addCriteria("fruit", "triumph:completed_advancement")
 criteria.setAdvancement("_wastes:fruit")
 
 setRequirements("any")
-setPos(-25,28)
+setPos(-25,5)

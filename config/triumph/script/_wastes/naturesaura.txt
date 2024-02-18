@@ -1,6 +1,6 @@
 setIcon(<patchouli:guide_book, nbt:{"patchouli:book":"naturesaura:book"}>)
 setTitle("Pages of Discovery")
-setDescription("Craft the Book of Natural Aura to learn about the magic of Aura")
+setDescription("Craft the Book of Natural Aura to learn about the magic of Aura.")
 setFrameType("goal")
 addParent("_wastes:root")
 

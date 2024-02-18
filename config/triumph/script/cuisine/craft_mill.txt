@@ -1,0 +1,10 @@
+setIcon(<cuisine:mill>)
+setTitle("The Grind is Real")
+setDescription("Make a mill.")
+addParent("cuisine:root")
+
+criteria = addCriteria("mill", "minecraft:inventory_changed")
+criteria.addItem("cuisine:mill")
+
+setRequirements("any")
+setPos(38,-5)

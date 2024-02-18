@@ -1,6 +1,6 @@
 setIcon("iceandfire:dragon_skull")
 setTitle("Ice And Fire")
-setDescription("Enter a world of magical creatures by finding some dragon bones")
+setDescription("Enter a world of magical creatures by finding some dragon bones.")
 setFrameType("goal")
 addParent("_wastes:root")
 

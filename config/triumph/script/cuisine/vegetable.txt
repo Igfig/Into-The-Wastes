@@ -8,4 +8,4 @@ criteria = addCriteria("vegetable", "triumph:completed_advancement")
 criteria.setAdvancement("_wastes:vegetable")
 
 setRequirements("any")
-setPos(-25,51)
+setPos(-25,28)

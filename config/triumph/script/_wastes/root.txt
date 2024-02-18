@@ -14,8 +14,6 @@ addCriteria("location", "minecraft:location")
 // chopping block, kitchen knife, and chop ingredients
 //	<cuisine:ingredient>{form:"SLICED"}
 // spice bottle of seasoning, and of water or juice or oil
-// stomp fruit to juice
-// drinkro
 
 // ingot caster
 // omnimeter
@@ -26,19 +24,12 @@ addCriteria("location", "minecraft:location")
 
 // psi guide
 
+// husbandry section
 // care of animania animals
 // breed animals?
 // animania cheese
 
 // tame a zawa animal with kibble
 
-// get silkworms from leaves
-// silk armour
 // get some chitin?
 // chitin armour?
-
-// make antique atlas
-// copy antique atlas
-
-// larder
-// icebox
