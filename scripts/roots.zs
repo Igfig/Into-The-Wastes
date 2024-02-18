@@ -2,6 +2,7 @@ import mods.roots.Fey;
 import mods.roots.Mortar;
 import mods.roots.SummonCreatures;
 import mods.roots.RunicShears;
+import mods.cuisine.Mill;
 
 val wildroot = <roots:wildroot>;
 val bark = <ore:rootsBark>;
@@ -55,6 +56,12 @@ Mortar.removeRecipe(<minecraft:blaze_powder>);
 Mortar.removeRecipe(<minecraft:magma_cream>);
 Mortar.removeRecipe(<minecraft:string>);
 Mortar.removeRecipe(<mysticalworld:silk_thread>);
+Mortar.removeRecipe(<roots:flour>);
+
+
+// Rename Roots flour to potato flour, and add a Cuisine mill recipe for it
+<roots:flour>.displayName = "Potato Flour";
+Mill.add(<ore:cropPotato> * 2, null, <roots:flour>, null);
 
 
 // remove disabled rituals from JEI
@@ -64,6 +71,39 @@ mods.jei.JEI.removeAndHide(<roots:ritual_summon_creatures>);
 
 // remove all Life Essence recipes for creature summons
 SummonCreatures.clearLifeEssence();
+
+// and also remove all summoning recipes individually, so they won't show up in JEI
+SummonCreatures.removeEntity(<entity:minecraft:bat>);
+SummonCreatures.removeEntity(<entity:minecraft:chicken>);
+SummonCreatures.removeEntity(<entity:minecraft:cow>);
+SummonCreatures.removeEntity(<entity:minecraft:creeper>);
+SummonCreatures.removeEntity(<entity:minecraft:donkey>);
+SummonCreatures.removeEntity(<entity:minecraft:horse>);
+SummonCreatures.removeEntity(<entity:minecraft:husk>);
+SummonCreatures.removeEntity(<entity:minecraft:llama>);
+SummonCreatures.removeEntity(<entity:minecraft:mooshroom>);
+SummonCreatures.removeEntity(<entity:minecraft:mule>);
+SummonCreatures.removeEntity(<entity:minecraft:ocelot>);
+SummonCreatures.removeEntity(<entity:minecraft:parrot>);
+SummonCreatures.removeEntity(<entity:minecraft:pig>);
+SummonCreatures.removeEntity(<entity:minecraft:polar_bear>);
+SummonCreatures.removeEntity(<entity:minecraft:rabbit>);
+SummonCreatures.removeEntity(<entity:minecraft:sheep>);
+SummonCreatures.removeEntity(<entity:minecraft:skeleton>);
+SummonCreatures.removeEntity(<entity:minecraft:spider>);
+SummonCreatures.removeEntity(<entity:minecraft:squid>);
+SummonCreatures.removeEntity(<entity:minecraft:stray>);
+SummonCreatures.removeEntity(<entity:minecraft:witch>);
+SummonCreatures.removeEntity(<entity:minecraft:wolf>);
+SummonCreatures.removeEntity(<entity:minecraft:zombie>);
+SummonCreatures.removeEntity(<entity:minecraft:zombie_pigman>);
+SummonCreatures.removeEntity(<entity:mysticalworld:entity_beetle>);
+SummonCreatures.removeEntity(<entity:mysticalworld:entity_deer>);
+SummonCreatures.removeEntity(<entity:mysticalworld:entity_fox>);
+SummonCreatures.removeEntity(<entity:mysticalworld:entity_frog>);
+SummonCreatures.removeEntity(<entity:mysticalworld:entity_owl>);
+SummonCreatures.removeEntity(<entity:mysticalworld:entity_sprout>);
+
 
 
 // new recipe for firestarter that doesn't conflict with Cuisine wooden handle
