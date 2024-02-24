@@ -1,0 +1,15 @@
+{
+  "data": [
+    {
+      "block": "minecraft:sandstone",
+      "metadata": 0,
+      "tileEntity": "null"
+    }
+  ],
+  "metadata": {
+    "title": "Sandstone",
+    "description": [
+      "Basic sandstone"
+    ]
+  }
+}
