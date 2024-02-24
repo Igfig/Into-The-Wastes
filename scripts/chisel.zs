@@ -239,6 +239,7 @@ addVariations("torch", [
 
 Carving.addGroup("leaves");
 addVariations("leaves", [
+	<minecraft:leaves:0>,
 	<chisel_plus:leaves_chirstmas_balls>,
 	<chisel_plus:leaves_christmas_balls_opaque>,
 	<chisel_plus:leaves_christmas_lights>,
@@ -288,6 +289,11 @@ addVariations("fantasy_block", [
 	<chisel_plus:fantasy_pillar_decorated>,
 	<chisel_plus:fantasy_pillar>,
 	<chisel_plus:fantasy_plate>]);
+
+recipes.remove(<chisel:laboratory>); // normal recipe conflicts with holystone
+recipes.addShaped("laboratory", <chisel:laboratory> * 4, [
+	[<minecraft:concrete:0>,<minecraft:concrete:0>], // white concrete
+	[<minecraft:concrete:0>,<minecraft:concrete:0>]]);
 
 
 // add all pumpkin faces to appropriate groups

@@ -36,7 +36,20 @@ recipes.addShaped("tranquilizer_gun", <zawa:tranquilizer_gun>, [
 	[<ore:plateSteel>,<ore:plateBronze>,<railcraft:rail:4>], // reinforced rail
 	[<minecraft:gunpowder>,<ore:plankWood>,<minecraft:lever>],
 	[<ore:logWood>,null,null]]);
-	
+
+
+// add recipes for decorative stones
+
+recipes.addShapedMirrored("river_stone", <zawa:river_stone>*4, [
+	[<ore:gravel>, <minecraft:stone:5>], // andesite
+	[<minecraft:stone:5>, <ore:gravel>]]);
+recipes.addShapedMirrored("mixed_stone", <zawa:mixed_stone>*4, [
+	[<ore:gravel>, <ore:cobblestone>],
+	[<ore:cobblestone>, <ore:gravel>]]);
+recipes.addShapedMirrored("mixed_stone_mossy", <zawa:mixed_stone_mossy>*4, [
+	[<ore:gravel>, <ore:mossyCobblestone>],
+	[<ore:mossyCobblestone>, <ore:gravel>]]);
+
 	
 // replace wetsuit recipe to not conflict with clay armour
 

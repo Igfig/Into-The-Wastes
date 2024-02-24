@@ -46,7 +46,5 @@ recipes.replaceAllOccurences(<ore:ingotCopper>, <ore:ingotIron>, <crossroads:coa
 // make fluid tank recipe harder
 recipes.replaceAllOccurences(<ore:ingotCopper>, <ore:ingotCopshowium>, <crossroads:fluid_tank>);
 
-
-// add some notes
-
-<crossroads:heating_crucible>.addTooltip("Heat from the bottom; insert with a hopper on the top; extract with a faucet or fluid tube on the sides");
+// change lens holder recipe to not conflict with holystone
+recipes.replaceAllOccurences(<ore:stone>, <minecraft:stone_slab>, <crossroads:lens_holder>);
