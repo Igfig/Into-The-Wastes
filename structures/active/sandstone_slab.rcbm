@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "block": "quark:sandstone_smooth_slab",
+      "metadata": 0,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:air",
+      "metadata": 0,
+      "tileEntity": "null"
+    }
+  ],
+  "metadata": {
+    "title": "Optional Sandstone Slab",
+    "description": [
+      "50% chance of smooth sandstone slab"
+    ]
+  }
+}
