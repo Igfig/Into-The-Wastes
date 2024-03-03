@@ -21,3 +21,4 @@ mods.jei.JEI.removeAndHide(<naturesaura:infused_iron_hoe>);
 
 // remove water bottle altar recipe
 mods.naturesaura.Altar.removeRecipe(<minecraft:potion>);
+mods.naturesaura.Altar.removeRecipe(<cofh:potion>);
