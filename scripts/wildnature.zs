@@ -8,7 +8,7 @@ val fullyRemove = [
 <wildnature:amber>,<wildnature:amber_ore>,<wildnature:amber_block>,
 <wildnature:malachite>,<wildnature:malachite_shard>,<wildnature:malachite_ore>,<wildnature:malachite_block>,
 <wildnature:silver_ingot>,<wildnature:silver_ore>,<wildnature:silver_block>,<wildnature:silver_rod>,<wildnature:silver_sword>,<wildnature:silver_hoe>,<wildnature:silver_axe>,<wildnature:silver_pickaxe>,<wildnature:silver_shovel>,
-<wildnature:steel_ingot>,<wildnature:steel_block>,<wildnature:steel_rod>,<wildnature:steel_sword>,<wildnature:steel_hoe>,<wildnature:steel_axe>,<wildnature:steel_pickaxe>,<wildnature:steel_shovel>,
+<wildnature:steel_ingot>,<wildnature:steel_block>,<wildnature:steel_rod>,<wildnature:steel_ladder>,<wildnature:steel_sword>,<wildnature:steel_hoe>,<wildnature:steel_axe>,<wildnature:steel_pickaxe>,<wildnature:steel_shovel>,
 <wildnature:amethyst_sword>,<wildnature:amethyst_hoe>,<wildnature:amethyst_axe>,<wildnature:amethyst_pickaxe>,<wildnature:amethyst_shovel>,
 <wildnature:diamond_rod>,
 <wildnature:ironworks>] as IItemStack[];

@@ -6,10 +6,13 @@
 <quark:gold_button>.addTooltip("Short pulse");
 <quark:iron_button>.addTooltip("Long pulse");
 <quark:obsidian_pressure_plate>.addTooltip("Only triggers for players");
-<quark:iron_rod>.addTooltip("Breaks blocks when pushed by a piston");
 <quark:redstone_inductor>.addTooltip("Outputs sum of other three sides");
 <quark:redstone_randomizer>.addTooltip("When powered from back, randomly activates either right or left output");
 <quark:sugar_block>.addTooltip("Dissolves in water");
+
+// remove Iron Rod because it makes the Crossroaads drill obsolete
+recipes.remove(<quark:iron_rod>, false);
+mods.jei.JEI.removeAndHide(<quark:iron_rod>);
 
 // Building module
 <quark:sturdy_stone>.addTooltip("Can't be moved by pistons");
