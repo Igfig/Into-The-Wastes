@@ -10,6 +10,10 @@
 		{
 			"type": "text",
 			"text": "Burning up with hyperthermia? Get underground! The more rock and earth above you, the cooler you'll be."
+		},
+		{
+			"type": "text",
+			"text": "Some blocks increase or decrease the temperature around them.$(br2)Anything visibly burning will make you hotter; water, ice, snow, and leaves will cool you down."
 		}
     ]
 }
