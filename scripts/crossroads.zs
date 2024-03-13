@@ -44,7 +44,8 @@ recipes.replaceAllOccurences(<minecraft:trapdoor>, <ore:plateTin>, <essentials:s
 recipes.replaceAllOccurences(<ore:ingotCopper>, <ore:ingotIron>, <crossroads:coal_heater>);
 
 // make fluid tank recipe harder
-recipes.replaceAllOccurences(<ore:ingotCopper>, <ore:ingotCopshowium>, <crossroads:fluid_tank>);
+recipes.replaceAllOccurences(<ore:ingotBronze>, <ore:ingotCopshowium>, <crossroads:fluid_tank>);
+recipes.replaceAllOccurences(<ore:gold>, <ore:plateSteel>, <crossroads:fluid_tank>);
 
 // change lens holder recipe to not conflict with holystone
 recipes.replaceAllOccurences(<ore:stone>, <minecraft:stone_slab>, <crossroads:lens_holder>);
