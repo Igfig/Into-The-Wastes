@@ -52,6 +52,9 @@ ArcaneWorld.createRitualCreateItem("departure", "Ritual of Departure", <rats:chu
 // TODO figure out how to make it do a graphical reload so it doesn't keep looking like the biome is desert
 
 ArcaneWorld.createRitualCommand("sand_to_grass", "Ritual of Regrowth", [
+	"/title @p actionbar \"You may need to relog to see the biome colors change\" ",
+	"/title @p subtitle \"The desert shall bloom\" ",
+	"/title @p title {\"text\":\"Ritual of Regrowth\",\"color\":\"dark_green\"}",
 	"/weather thunder 10",
 	"/playsound minecraft:record.far record @a ~ ~ ~ 6",
 	"/particle happyVillager ~-4 ~-1 ~-4 8 2 8 1 4000",
