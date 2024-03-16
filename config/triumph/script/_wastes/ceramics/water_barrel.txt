@@ -7,6 +7,11 @@ addParent("_wastes:purify_water")
 addParent("_wastes:ceramics/craft_barrel")
 addParent("_wastes:ceramics/craft_clay_bucket")
 
+
+visibleIf("_wastes:purify_water")
+visibleIf("_wastes:ceramics/craft_barrel")
+hiddenUnless("_wastes:ceramics/get_clay")
+
 criteria = addCriteria("clay_barrel", "triumph:right_click_block")
 criteria.setBlock(<ceramics:clay_barrel, tile:{tank:{FluidName:"purified_water"}}>)
 criteria.setItem("minecraft:glass_bottle")
@@ -16,4 +21,4 @@ criteria.setBlock(<ceramics:porcelain_barrel, tile:{tank:{FluidName:"purified_wa
 criteria.setItem("minecraft:glass_bottle")
 
 setRequirements("any")
-setPos(38,102)
+setPos(71,98)

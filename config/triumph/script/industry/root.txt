@@ -7,6 +7,10 @@ setAnnounceToChat(false)
 
 pageVisibleIf("industry:root")
 
+criteria = addCriteria("crossroads", "triumph:completed_advancement")
+criteria.setAdvancement("_wastes:guides/crossroads")
+criteria = addCriteria("forging", "triumph:completed_advancement")
+criteria.setAdvancement("_wastes:guides/forging")
 criteria = addCriteria("flint_tools", "triumph:completed_advancement")
 criteria.setAdvancement("_wastes:flint_tools")
 criteria = addCriteria("craft_porcelain", "triumph:completed_advancement")

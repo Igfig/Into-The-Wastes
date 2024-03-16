@@ -1,0 +1,11 @@
+setIcon("grapplemod:baseupgradeitem")
+setTitle("Improved Grapple")
+setDescription("Make a grappling hook upgrade to start customizing your grappling hook")
+
+addParent("_wastes:grapple/craft_grapple")
+addParent("_wastes:mining/mine_lead")
+
+criteria = addCriteria("upgrade", "minecraft:inventory_changed")
+criteria.addItem("grapplemod:baseupgradeitem")
+
+setPos(71,30)

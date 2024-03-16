@@ -1,6 +1,6 @@
 setIcon(<minecraft:carrot>)
 setTitle("Salad: Origins")
-setDescription("Find a vegetable patch in the wild.")
+setDescription("Find a vegetable patch in the wild")
 addParent("_wastes:biomes/oasis_hot")
 setShowToast(false)
 setAnnounceToChat(false)
@@ -19,4 +19,4 @@ criteria = addCriteria("cuisine", "minecraft:inventory_changed")
 criteria.addItem(<cuisine:crops, meta:4~20>)
 
 setRequirements("any")
-setPos(38,4)
+setPos(5,-21)

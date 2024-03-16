@@ -5,7 +5,7 @@ setBackground("minecraft:textures/gui/advancements/backgrounds/adventure.png")
 setShowToast(true)
 setAnnounceToChat(true)
 
-setPos(-60,27)
+setPos(-61,57)
 addCriteria("location", "minecraft:location")
 
 
@@ -15,21 +15,34 @@ addCriteria("location", "minecraft:location")
 //	<cuisine:ingredient>{form:"SLICED"}
 // spice bottle of seasoning, and of water or juice or oil
 
+// grindstone
 // ingot caster
+// metal caster
 // omnimeter
 // gears
+//		hand crank?
+// pump/turbine
 // heat pipes
+// make ice from a heat exchanger?
 // self-sustaining heat machine?
 // other Crossroads machines
+// railcraft stuff?
 
-// psi guide
+// psi guide. Craft a CAD assembly and CAD assembler
+// 	and I guess a socket and a core? Not sure what the core is for tbh
+// 	and then use them to make a CAD proper
 
 // husbandry section
 // care of animania animals
 // breed animals?
 // animania cheese
-
+// prime meat?
+// trough
 // tame a zawa animal with kibble
+// zawa enrichment items
 
 // get some chitin?
 // chitin armour?
+
+// Arcane World ritual maybe? though it's hard to test for
+//	well I guess I could include a command to grant the achievement in the ritual's command list

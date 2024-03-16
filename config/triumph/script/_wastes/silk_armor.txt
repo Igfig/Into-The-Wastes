@@ -14,4 +14,4 @@ criteria = addCriteria("boots", "minecraft:inventory_changed")
 criteria.addItem("silkarmor:silk_boots")
 
 setRequirements("any")
-setPos(104,-134)
+setPos(104,-167)

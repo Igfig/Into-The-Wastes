@@ -6,4 +6,4 @@ drawDirectLines()
 
 criteria = addCriteria("mine_tin", "minecraft:inventory_changed")
 criteria.addItem(<crossroads:ore_tin>)
-setPos(5,-78)
+setPos(5,-98)

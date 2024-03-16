@@ -1,6 +1,6 @@
 setIcon("rats:ratglove_petals")
 setTitle("Rats")
-setDescription("Smack a rat to start learning about these clever and resourceful creatures.")
+setDescription("Smack a rat to start learning about these clever and resourceful creatures")
 setFrameType("goal")
 addParent("_wastes:root")
 
@@ -9,4 +9,4 @@ setAnnounceToChat(false)
 
 criteria = addCriteria("rat", "minecraft:player_hurt_entity")
 criteria.setEntityType("rats:rat")
-setPos(-102,-19)
+setPos(-82,-72)

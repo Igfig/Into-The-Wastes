@@ -1,6 +1,6 @@
 setIcon(<minecraft:apple>)
 setTitle("Original Sin")
-setDescription("Pick a fruit off of a fruit tree.")
+setDescription("Pick a fruit off of a fruit tree")
 addParent("cuisine:root")
 drawDirectLines();
 

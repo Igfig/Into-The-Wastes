@@ -6,4 +6,4 @@ addParent("_wastes:root")
 criteria = addCriteria("empty_antique_atlas", "minecraft:inventory_changed")
 criteria.addItem("antiqueatlas:empty_antique_atlas")
 
-setPos(-28,-19)
+setPos(-28,-44)

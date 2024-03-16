@@ -1,7 +1,9 @@
 setIcon(<toughasnails:purified_water_bottle>)
 setTitle("Purified Water")
-setDescription("Boil a bottle or bucket of water in the furnace to purify it")
-addParent("_wastes:root")
+setDescription("Boil a bottle or bucket of water in a furnace to purify it")
+addParent("_wastes:flint_tools")
+
+alwaysVisible()
 
 criteria = addCriteria("purified_water_bottle", "triumph:player_crafted_item")
 criteria.setItem("toughasnails:purified_water_bottle")
@@ -9,4 +11,4 @@ criteria = addCriteria("purified_water_bucket", "triumph:player_crafted_item")
 criteria.setItem(<forge:bucketfilled, nbt:{FluidName:"purified_water",Amount:1000}>)
 
 setRequirements("any")
-setPos(5,144)
+setPos(38,71)

@@ -1,6 +1,6 @@
 setIcon(<minecraft:apple>)
 setTitle("Original Sin")
-setDescription("Pick a fruit off of a fruit tree.")
+setDescription("Pick a fruit off of a fruit tree")
 addParent("_wastes:biomes/oasis_hot")
 setShowToast(false)
 setAnnounceToChat(false)
@@ -49,4 +49,4 @@ criteria.addItem("valoegheses_be:fruit_date")
 // TODO more fruit
 
 setRequirements("any")
-setPos(38,-19)
+setPos(5,-44)

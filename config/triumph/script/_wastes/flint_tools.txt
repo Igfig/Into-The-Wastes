@@ -67,4 +67,4 @@ criteria = addCriteria("primitive_hoe_cbl", "minecraft:inventory_changed")
 criteria.addItem("primitivetools:primitive_hoe_cbl")
 
 setRequirements("any")
-setPos(5,27)
+setPos(5,57)

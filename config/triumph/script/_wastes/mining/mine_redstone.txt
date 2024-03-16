@@ -6,4 +6,4 @@ drawDirectLines()
 
 criteria = addCriteria("mine_redstone", "minecraft:inventory_changed")
 criteria.addItem(<minecraft:redstone_ore>)
-setPos(-28,-123)
+setPos(-28,-144)

@@ -55,4 +55,4 @@ criteria = addCriteria("minecraft:mushroom_island", "minecraft:location")
 criteria.setBiome("minecraft:mushroom_island")
 
 setRequirements("any")
-setPos(-28,-52)
+setPos(-28,-72)

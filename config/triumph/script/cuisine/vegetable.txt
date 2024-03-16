@@ -1,6 +1,6 @@
 setIcon(<minecraft:carrot>)
 setTitle("Salad: Origins")
-setDescription("Find a vegetable patch in the wild.")
+setDescription("Find a vegetable patch in the wild")
 addParent("cuisine:root")
 drawDirectLines();
 

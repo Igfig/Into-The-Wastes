@@ -6,4 +6,4 @@ addParent("_wastes:biomes/oasis_warm")
 criteria = addCriteria("egg", "minecraft:inventory_changed")
 criteria.addItem("mysticalworld:silkworm_egg")
 
-setPos(38,-134)
+setPos(38,-167)

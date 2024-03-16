@@ -1,6 +1,6 @@
 setIcon(<minecraft:rabbit>)
 setTitle("Non-Vegan Option")
-setDescription("Kill an animal and collect its meat.")
+setDescription("Kill an animal and collect its meat")
 addParent("cuisine:root")
 drawDirectLines();
 

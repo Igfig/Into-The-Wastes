@@ -1,0 +1,16 @@
+setIcon(<grapplemod:doublemotorhook, nbt:{"motor":1b, "doublehook":1b}>)
+setTitle("Dual-Wielding")
+setDescription("Make a double grappling hook to get around even faster")
+
+addParent("_wastes:grapple/craft_grapple_mod")
+
+criteria = addCriteria("upgrade", "minecraft:inventory_changed")
+criteria.addItem(<grapplemod:doubleupgradeitem>)
+criteria = addCriteria("motor", "minecraft:inventory_changed")
+criteria.addItem(<grapplemod:doublemotorhook>)
+criteria = addCriteria("rocket", "minecraft:inventory_changed")
+criteria.addItem(<grapplemod:rocketdoublemotorhook>)
+
+setRequirements("any")
+
+setPos(104,44)

@@ -11,4 +11,4 @@ criteria = addCriteria("flint_point", "minecraft:inventory_changed")
 criteria.addItem("primitivetools:flint_point")
 
 setRequirements("any")
-setPos(-28,14)
+setPos(-28,71)
