@@ -69,10 +69,14 @@ recipes.addShaped("zawa_steel_bars", <zawa:steel_bars> * 6, [
 	[ironBars,ironBars,ironBars],
 	[ironBars,ironBars,ironBars]]);
 	
-// and rename other "steel" blocks
+// rename some other blocks
 <zawa:steel_grate>.displayName = "Cage Bars Slab";
 <zawa:steelbar_door>.displayName = "Cage Door";
-	
+<zawa:campfire>.displayName = "Decorative Campfire";
+<zawa:campfire>.addTooltip("Produces no warmth and cannot cook");
+<zawa:campfire>.addShiftTooltip("\"Sounds like my wife!\" ");
+
+
 // make fur-to-leather recipe produce less, to make meerkats less OP in the early game
 // ditto scales-to-leather, so that it's not way better than the others
 

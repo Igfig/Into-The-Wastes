@@ -110,7 +110,6 @@ SummonCreatures.removeEntity(<entity:mysticalworld:entity_owl>);
 SummonCreatures.removeEntity(<entity:mysticalworld:entity_sprout>);
 
 
-
 // new recipe for firestarter that doesn't conflict with Cuisine wooden handle
 
 recipes.remove(<roots:fire_starter>);
@@ -226,7 +225,7 @@ RunicShears.addEntityRecipe("ooze_from_dartfrog", <roots:strange_ooze>, <entity:
 RunicShears.addEntityRecipe("ooze_from_quarkfrog", <roots:strange_ooze>, <entity:quark:frog>, 120*20);
 RunicShears.addEntityRecipe("cobble_from_stoneling", <minecraft:cobblestone>, <entity:quark:stoneling>, 30*20);
 RunicShears.addEntityRecipe("coal_from_foxhound", <minecraft:coal>, <entity:quark:foxhound>, 120*20);
-RunicShears.addEntityRecipe("shell_from_quarkfrog", <quark:crab_shell>, <entity:quark:crab>, 180*20);
+RunicShears.addEntityRecipe("shell_from_quarkcrab", <quark:crab_shell>, <entity:quark:crab>, 180*20);
 
 RunicShears.addEntityRecipe("camo_from_chameleon", <primitivemobs:camouflage_dye>, <entity:primitivemobs:chameleon>, 240*20);
 RunicShears.addEntityRecipe("feather_from_dodo", <roots:mystic_feather>, <entity:primitivemobs:dodo>, 45*20);

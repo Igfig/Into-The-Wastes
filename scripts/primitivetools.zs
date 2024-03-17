@@ -86,18 +86,21 @@ recipes.addShaped(<primitivetools:primitive_pick_cbl>, [
 
 vine.displayName = "Vine Twine";
 
+// and replace the recipe for Inspirations vine ropes
+recipes.remove(<inspirations:rope:2>); // I prefer the recipe below
+
 
 // additional uses for primitive materials
 
-recipes.addShaped("twine_rope", <inspirations:rope> * 3, [
-	[twine,twine], 
-	[twine,twine], 
-	[twine,twine]]);
-recipes.addShaped("strip_rope", <inspirations:rope> * 6, [
-	[strip,strip], 
-	[strip,strip], 
-	[strip,strip]]);
-recipes.addShaped("vine_rope", <inspirations:rope:2> * 9, [
+recipes.addShaped("twine_rope", <inspirations:rope> * 2, [
+	[twine], 
+	[twine], 
+	[twine]]);
+recipes.addShaped("strip_rope", <inspirations:rope> * 3, [
+	[strip], 
+	[strip], 
+	[strip]]);
+recipes.addShaped("vine_rope", <inspirations:rope:2> * 3, [
 	[vine], 
 	[vine], 
 	[vine]]);

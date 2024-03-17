@@ -16,9 +16,20 @@ mods.jei.JEI.removeAndHide(<arcaneworld:growth_powder>);
 
 
 // tooltips
-<arcaneworld:molten_pickaxe>.addTooltip("Automatically smelts broken blocks.");
-<arcaneworld:molten_shovel>.addTooltip("Automatically smelts broken blocks.");
-<arcaneworld:molten_axe>.addTooltip("Automatically smelts broken blocks.");
+
+<arcaneworld:molten_pickaxe>.addTooltip("Automatically smelts broken blocks");
+<arcaneworld:molten_shovel>.addTooltip("Automatically smelts broken blocks");
+<arcaneworld:molten_axe>.addTooltip("Automatically smelts broken blocks");
+<arcaneworld:fang_wand>.addTooltip("Summons a line of fangs, like an evoker");
+<arcaneworld:arcane_hoe>.addTooltip("Tills and hydrates all farmland in a line");
+<arcaneworld:ethereal_sword>.addTooltip("Causes struck enemies to become invisible and glow");
+<arcaneworld:recaller>.addTooltip("Right click to set a location");
+<arcaneworld:recaller>.addTooltip("Right click again to teleport");
+<arcaneworld:recaller>.addTooltip("back to that location");
+<arcaneworld:biome_crystal>.addTooltip("Right click to suck the biome out of an area");
+<arcaneworld:biome_crystal>.addTooltip("Right click again to write the stored biome");
+<arcaneworld:biome_crystal>.addTooltip("back into the world");
+<arcaneworld:glowing_chorus>.addTooltip("Sends you straight to The End");
 
 
 // new recipe for ritual table
@@ -29,10 +40,20 @@ recipes.remove(<arcaneworld:ritual_table>);
 recipes.addShaped("ritual_table", <arcaneworld:ritual_table>, [
 	[<roots:fey_leather>,xpTome,<roots:fey_leather>],
 	[<naturesaura:sky_ingot>,<ore:blockMithril>,<naturesaura:sky_ingot>],
-	[<ore:ingotIvoryPsi>,<ore:ingotPlatinum>,<ore:ingotIvoryPsi>]]);
+	[<ore:ingotIvoryPsi>,<ore:ingotPlatinum>,<ore:ingotEbonyPsi>]]);
 
 
-// TODO new recipes for arcane hoe, wand of evocation, ethereal sword, levitator, molten core
+// other new recipes
+
+recipes.replaceAllOccurences(<ore:gemAmethyst>, <ore:gemTopaz>, <arcaneworld:molten_core>);
+recipes.addShapedMirrored("evocation_wand", <arcaneworld:fang_wand>, [
+	[null,<ore:ingotGold>,<ore:ingotMithril>],
+	[null,<ore:gemAmber>,<ore:ingotGold>],
+	[<naturesaura:ancient_stick>,null,null]]);
+recipes.addShapedMirrored("arcane_hoe", <arcaneworld:arcane_hoe>, [
+	[<ore:gemAmber>,<ore:gemAmber>],
+	[null,<ore:ingotMithril>],
+	[null,<naturesaura:ancient_stick>]]);
 
 
 // new ritual for Chunky Cheese Token
@@ -65,24 +86,69 @@ ArcaneWorld.createRitualCommand("sand_to_grass", "Ritual of Regrowth", [
 ], [<ore:ingotPlatinum>,<ore:grass>,<naturesaura:aura_trove>.withTag({aura:1200000}),<roots:spirit_herb>,<naturesaura:sky_ingot>]);
 
 
+// ritual to summon a bunch of elementals
+
+ArcaneWorld.createRitualCommand("summon_elementals", "Elemental Swarm", [
+	"/particle flame ~1 ~2 ~ 1 1 1 0.1 100",
+	"/particle cloud ~ ~2 ~1 1 1 1 0.1 100",
+	"/particle splash ~-1 ~2 ~ 1 1 1 0.1 200",
+	"/particle fallingdust ~ ~2 ~-1 1 1 1 0.1 100",
+	"/summon minecraft:blaze ~1 ~2 ~",
+	"/summon minecraft:blaze ~1 ~2 ~",
+	"/summon minecraft:blaze ~1 ~2 ~",
+	"/summon thermalfoundation:blitz ~ ~2 ~1",
+	"/summon thermalfoundation:blitz ~ ~2 ~1",
+	"/summon thermalfoundation:blitz ~ ~2 ~1",
+	"/summon thermalfoundation:blizz ~-1 ~2 ~",
+	"/summon thermalfoundation:blizz ~-1 ~2 ~",
+	"/summon thermalfoundation:blizz ~-1 ~2 ~",
+	"/summon thermalfoundation:basalz ~ ~2 ~-1",
+	"/summon thermalfoundation:basalz ~ ~2 ~-1",
+	"/summon thermalfoundation:basalz ~ ~2 ~-1",
+], [<ore:dustBlaze>,<ore:dustBlitz>,<ore:blockAmethyst>,<ore:dustBlizz>,<ore:dustBasalz>]);
+
+
+// time ritual reworks
+
+ArcaneWorld.createRitualTime("time_forward", "Time Skip", 10000, [<ore:nuggetPlatinum>,<minecraft:double_plant:0>,<ore:dustGlowstone>,<roots:moonglow_leaf>,<ore:nuggetPlatinum>]);
+
+ArcaneWorld.createRitualTime("time_back", "Time Rewind", -10000, [<ore:nuggetPlatinum>,<minecraft:double_plant:0>,<ore:dustRedstone>,<roots:moonglow_leaf>,<ore:nuggetPlatinum>]);
+
+
+// weather ritual reworks
+
+ArcaneWorld.createRitualCommand("weather_clear", "Clear Skies", [
+	"/particle endRod ~-0.5 ~2 ~-0.5 1 1 1 0.1 100",
+	"/weather clear",
+], [<ore:nuggetPlatinum>,<ore:shardPrismarine>,<ore:dustGlowstone>,<ore:dustPrismarine>,<ore:nuggetPlatinum>]);
+
+ArcaneWorld.createRitualCommand("weather_rain", "Grey Skies", [
+	"/particle cloud ~-0.5 ~2 ~-0.5 1 1 1 0.1 100",
+	"/weather rain",
+], [<ore:nuggetPlatinum>,<ore:shardPrismarine>,<chisel:cloud>,<ore:dustPrismarine>,<ore:nuggetPlatinum>]);
+
+ArcaneWorld.createRitualCommand("weather_thunder", "Stormy Skies", [
+	"/summon minecraft:lightning_bolt ~ ~5 ~",
+	"/weather thunder",
+], [<ore:nuggetPlatinum>,<ore:shardPrismarine>,<ore:gunpowder>,<ore:dustPrismarine>,<ore:nuggetPlatinum>]);
+
+
 // other ritual reworks
-// TODO more command effects if you can think of any
-// TODO maybe some additional special effects when you do them? They're a little underwhelming right now
 	
 ArcaneWorld.createRitualCreateItem("create_recaller", "Call of the Void", <arcaneworld:recaller>, [
 	<ore:obsidian>,<ore:ingotPlatinum>,<minecraft:ender_eye>,<ore:gemAmethyst>,<ore:obsidian>]);
 	
 ArcaneWorld.createRitualCreateItem("create_biome_crystal", "Crystal Forge", <arcaneworld:biome_crystal>, [
-	<minecraft:ender_eye>,<ore:ingotPlatinum>,<ore:gemPeridot>,<ore:grass>,<minecraft:dragon_breath>]);
+	<minecraft:ender_eye>,<ore:ingotPlatinum>,<ore:grass>,<ore:gemPeridot>,<minecraft:dragon_breath>]);
 	
 ArcaneWorld.createRitualCreateItem("create_glowing_chorus", "Radiant Chorus", <arcaneworld:glowing_chorus>, [
-	<minecraft:ender_eye>,<ore:ingotPlatinum>,<ore:cropChorusfruit>,<ore:dustGlowstone>,<minecraft:dragon_breath>]);
+	<minecraft:ender_eye>,<ore:gemMalachite>,<ore:cropChorusfruit>,<ore:dustGlowstone>,<minecraft:dragon_breath>]);
 	
 ArcaneWorld.createRitualDragonBreath("dragon_breath", "Breath of the Dragon", [
-	<minecraft:ender_eye>,<ore:blockPrismarine>,<ore:ingotGold>,<ore:netherrack>,<minecraft:dragon_breath>]); // TODO different ingredients. Maybe something from overworld dragons?
+	<minecraft:ender_eye>,<ore:blockPrismarine>,<minecraft:dragon_breath>,<ore:netherrack>,<ore:ingotSilver>]);
 	
 ArcaneWorld.createRitualDungeon("dungeon", "Dungeon Raid", [
-	<ore:blockSapphire>,<ore:ingotGold>]); // TODO different ingredients
+	<ore:stonebrick>,<ore:ingotGold>,<ore:blockMalachite>,<ore:ingotGold>,<ore:stonebrick>]);
 
 ArcaneWorld.createRitualDungeon("wither_arena", "Wither Arena", [
-	<ore:blockAmethyst>,<minecraft:skull:1>,<minecraft:skull:1>,<minecraft:skull:1>]); // TODO different ingredients
+	<minecraft:soul_sand>,<minecraft:skull:1>,<minecraft:skull:1>,<minecraft:skull:1>,<ore:blockMalachite>]);
