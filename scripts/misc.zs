@@ -14,6 +14,14 @@ recipes.addShaped(<minecraft:sponge>, [
 	[cellulose,yellowool,cellulose]]);
 
 
+// change wrench recipe
+recipes.remove(<base:wrench>, false);
+recipes.addShaped("wrench", <base:wrench>, [
+	[<ore:ingotIron>,null,<ore:ingotIron>],
+	[     null, <ore:ingotIron>, null    ],
+	[     null, <ore:ingotIron>, null    ]]);
+
+
 // erase written books
 
 recipes.addShapeless(<minecraft:book>, [<minecraft:written_book>, <minecraft:sponge>.reuse()]);

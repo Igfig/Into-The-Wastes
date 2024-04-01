@@ -7,12 +7,10 @@ recipes.addShapeless("guide_journal", <guideapi:crossroads-info_guide>, [<minecr
 
 
 // remove unwanted ore
-
 mods.jei.JEI.removeAndHide(<crossroads:ore_native_copper>);
 
 
 // remove some gears we don't want
-
 mods.jei.JEI.removeAndHide(<crossroads:gear_nickel>);
 mods.jei.JEI.removeAndHide(<crossroads:gear_invar>);
 mods.jei.JEI.removeAndHide(<crossroads:large_gear_nickel>);
@@ -22,20 +20,24 @@ mods.jei.JEI.removeAndHide(<crossroads:toggle_gear_invar>);
 
 
 //remove unused meters
-
 mods.jei.JEI.removeAndHide(<crossroads:thermometer>);
 mods.jei.JEI.removeAndHide(<crossroads:speedometer>);
 mods.jei.JEI.removeAndHide(<crossroads:fluid_gauge>);
 
 
 // cheaper omnimeter
-
 recipes.remove(<crossroads:omnimeter>);
 recipes.addShaped(<crossroads:omnimeter>, [
 	[null,<ore:ingotCopper>,null],
 	[<ore:ingotCopper>,<ore:dustRedstone>,<ore:ingotCopper>],
 	[null,<ore:ingotCopper>,null]]);
 
+
+// remove wrenches, because B.A.S.E. has a better one.
+recipes.remove(<essentials:wrench>);
+recipes.remove(<crossroads:liech_wrench>);
+mods.jei.JEI.removeAndHide(<essentials:wrench>);
+mods.jei.JEI.removeAndHide(<crossroads:liech_wrench>);
 
 // make slotted chest recipe harder
 recipes.replaceAllOccurences(<minecraft:trapdoor>, <ore:plateTin>, <essentials:slotted_chest>);
