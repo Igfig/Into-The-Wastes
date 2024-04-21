@@ -1,0 +1,9 @@
+setIcon("zawa:care_guide")
+setTitle("ZAWA")
+setDescription("Craft an Animal Care Guide to learn about keeping zoo animals")
+setFrameType("goal")
+addParent("_wastes:root")
+
+criteria = addCriteria("guide", "minecraft:inventory_changed")
+criteria.addItem("zawa:care_guide")
+setPos(-103,-72)

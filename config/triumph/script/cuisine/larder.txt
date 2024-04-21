@@ -1,0 +1,9 @@
+setIcon(<foodfunk:larder>)
+setTitle("Larder")
+setDescription("Craft a Larder to make your food take twice as long to rot.")
+addParent("cuisine:root")
+
+criteria = addCriteria("item", "minecraft:inventory_changed")
+criteria.addItem("foodfunk:larder")
+
+setPos(38,-38)

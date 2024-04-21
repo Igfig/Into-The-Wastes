@@ -190,6 +190,16 @@
         }
       },
       {
+        "type": "pillar",
+        "transformer": {
+          "id": "pillar_a218cf8e",
+          "sourceExpression": "reccomplex:generic_solid \u0026 metadata\u003d2",
+          "dest": "minecraft:sandstone",
+          "destMetadata": 0,
+          "generateUpwards": false
+        }
+      },
+      {
         "type": "ruins",
         "transformer": {
           "id": "ruins_35b39a8f",
@@ -199,9 +209,9 @@
           "decayChaos": 0.0,
           "decayValueDensity": 0.0,
           "gravity": false,
-          "blockErosion": 0.1023792,
-          "vineGrowth": 9.6186856E-4,
-          "cobwebGrowth": 0.009881942
+          "blockErosion": 0.1,
+          "vineGrowth": 5.0E-4,
+          "cobwebGrowth": 0.01
         }
       }
     ]

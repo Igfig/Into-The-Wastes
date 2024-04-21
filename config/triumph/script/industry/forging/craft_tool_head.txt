@@ -1,0 +1,26 @@
+setIcon("tinkersforging:pickaxe_head/iron")
+setTitle("Tooltip")
+setFrameType("GOAL")
+setDescription("Craft heated ingots into a tool head on a Tinker's Anvil. See the Tinker's Forging Guide for instructions.")
+
+addParent("industry:forging/heat_ingot")
+addParent("industry:forging/craft_anvil")
+
+criteria = addCriteria("hammer_head/iron", "minecraft:inventory_changed")
+criteria.addItem("tinkersforging:hammer_head/iron")
+criteria = addCriteria("axe_head/iron", "minecraft:inventory_changed")
+criteria.addItem("tinkersforging:axe_head/iron")
+criteria = addCriteria("pickaxe_head/iron", "minecraft:inventory_changed")
+criteria.addItem("tinkersforging:pickaxe_head/iron")
+criteria = addCriteria("shovel_head/iron", "minecraft:inventory_changed")
+criteria.addItem("tinkersforging:shovel_head/iron")
+criteria = addCriteria("hoe_head/iron", "minecraft:inventory_changed")
+criteria.addItem("tinkersforging:hoe_head/iron")
+criteria = addCriteria("sword_blade/iron", "minecraft:inventory_changed")
+criteria.addItem("tinkersforging:sword_blade/iron")
+
+// TODO other materials
+
+setRequirements("any")
+
+setPos(128,135)

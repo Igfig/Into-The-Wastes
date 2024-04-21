@@ -1,0 +1,8 @@
+setIcon(<minecraft:clay_ball>)
+setTitle("The Most Valuable Resource")
+setDescription("Find some clay")
+addParent("_wastes:root")
+
+criteria = addCriteria("clay", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:clay_ball>)
+setPos(5,125)

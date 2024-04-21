@@ -33,6 +33,7 @@
 <ore:listAllgrain>.add(<cuisine:crops:3>); // raw rice
 
 <ore:blockHay>.add(<minecraft:hay_block>);
+<ore:blockTofu>.add(<cuisine:tofu_block>);
 
 <ore:foodFlour>.add(<cuisine:food:3>); // rice powder
 
@@ -69,7 +70,7 @@
 <ore:listAllmuttonraw>.add(<minecraft:mutton>, <animania:raw_prime_mutton>);
 <ore:listAllmuttoncooked>.add(<minecraft:cooked_mutton>, <animania:cooked_prime_mutton>);
 
-<ore:listAllchevonraw>.add(<animania:raw_chevon>, <animania:raw_prime_chevon>,  <wildnature:raw_goat>);
+<ore:listAllchevonraw>.add(<animania:raw_chevon>, <animania:raw_prime_chevon>, <wildnature:raw_goat>);
 <ore:listAllchevoncooked>.add(<animania:cooked_chevon>, <animania:cooked_prime_chevon>, <wildnature:cooked_goat>);
 
 <ore:listAllpoultryraw>.addAll(<ore:listAllChickenraw>);

@@ -55,13 +55,29 @@ Casting.addRecipe(<mysticalworld:silver_boots>, <liquid:silver> * 576, <foundry:
 // some more casting recipes
 Casting.addRecipe(<minecraft:ender_pearl>, <liquid:ender> * 250, <foundry:mold:21>); // ender pearl
 Casting.addRecipe(<thermalfoundation:material:833>, <liquid:crude_oil> * 250, <foundry:mold:21>); // tar
+Casting.addRecipe(<arcaneworld:ethereal_sword>, <liquid:glowstone> * 1000, <wildnature:amber_sword>, <ore:ingotMithril>);
 
 
-// make gear casting cost the same as making them by hand
+// make gear casting cost the same as making them by hand, and plates somewhat cheaper
 val liquids = [<liquid:iron>, <liquid:gold>, <liquid:copper>, <liquid:tin>, <liquid:bronze>, <liquid:lead>, <liquid:silver>, <liquid:platinum>, <liquid:electrum>] as ILiquidStack[];
 val gears = [<crossroads:gear_iron>, <crossroads:gear_gold>, <crossroads:gear_copper>, <crossroads:gear_tin>, <crossroads:gear_bronze>, <crossroads:gear_lead>, <crossroads:gear_silver>, <crossroads:gear_platinum>, <crossroads:gear_electrum>] as IItemStack[];
+val plates = [
+	<thermalfoundation:material:32>, // iron 
+	<thermalfoundation:material:33>, // gold
+	<thermalfoundation:material:320>, // copper
+	<thermalfoundation:material:321>, // tin
+	<thermalfoundation:material:355>, // bronze
+	<thermalfoundation:material:323>, // lead
+	<thermalfoundation:material:322>, // silver
+	<thermalfoundation:material:326>, // platinum
+	<thermalfoundation:material:353> // electrum
+] as IItemStack[];
 
 for i, liquid in liquids {
+	Casting.removeRecipe(liquid, <foundry:mold:1>);
 	Casting.removeRecipe(liquid, <foundry:mold:2>);
+	CastingTable.removePlateRecipe(liquid);
 	Casting.addRecipe(gears[i], liquid * 208, <foundry:mold:2>);
+	Casting.addRecipe(plates[i], liquid * 288, <foundry:mold:1>);
+	CastingTable.addPlateRecipe(plates[i], liquid * 288);
 }

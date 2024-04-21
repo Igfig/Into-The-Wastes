@@ -1,0 +1,14 @@
+setIcon(<cuisine:earthen_basin>)
+setTitle("Basin Basics")
+setDescription("Make a clay or wooden basin.")
+addParent("cuisine:root")
+
+criteria = addCriteria("wooden_basin", "minecraft:inventory_changed")
+criteria.addItem("cuisine:wooden_basin")
+criteria = addCriteria("earthen_basin", "minecraft:inventory_changed")
+criteria.addItem("cuisine:earthen_basin")
+criteria = addCriteria("earthen_basin_colored", "minecraft:inventory_changed")
+criteria.addItem(<cuisine:earthen_basin_colored, meta:0~15>)
+
+setRequirements("any")
+setPos(38,113)

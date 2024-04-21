@@ -1,0 +1,10 @@
+setIcon(<cuisine:manual>)
+setTitle("Cuisine")
+setDescription("Craft a Culinary Manual to learn about real cooking")
+setFrameType("goal")
+addParent("cuisine:root")
+
+criteria = addCriteria("craft_cuisine", "minecraft:inventory_changed")
+criteria.addItem(<cuisine:manual>)
+
+setPos(5,66)

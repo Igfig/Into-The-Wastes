@@ -1,0 +1,10 @@
+setIcon(<grapplemod:block_grapple_modifier>)
+setTitle("Grappling with the Issues")
+setDescription("Make a grappling hook modifier block to customize your upgrades further")
+
+addParent("_wastes:grapple/craft_grapple_mod")
+
+criteria = addCriteria("block", "minecraft:inventory_changed")
+criteria.addItem(<grapplemod:block_grapple_modifier>)
+
+setPos(104,17)

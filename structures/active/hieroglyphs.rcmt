@@ -31,11 +31,6 @@
             },
             {
               "block": "chisel:sandstone-scribbles",
-              "metadata": 4,
-              "tileEntity": "null"
-            },
-            {
-              "block": "chisel:sandstone-scribbles",
               "metadata": 5,
               "tileEntity": "null"
             },

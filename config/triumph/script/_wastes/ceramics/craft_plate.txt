@@ -3,7 +3,10 @@ setTitle("Dishware")
 setDescription("Use fired porcelain bricks to make a plate")
 addParent("_wastes:ceramics/craft_porcelain")
 
+setShowToast(false)
+setAnnounceToChat(false)
+
 criteria = addCriteria("craft_plate", "minecraft:inventory_changed")
 criteria.addItem(<cuisine:placed_dish>)
 
-setPos(71,4)
+setPos(71,152)

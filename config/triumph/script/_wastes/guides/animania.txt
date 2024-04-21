@@ -1,0 +1,9 @@
+setIcon("animania:animania_manual")
+setTitle("Animania")
+setDescription("Craft an Animania Manual to learn about keeping farm animals")
+setFrameType("goal")
+addParent("_wastes:root")
+
+criteria = addCriteria("guide", "minecraft:inventory_changed")
+criteria.addItem("animania:animania_manual")
+setPos(-124,-72)

@@ -1,0 +1,35 @@
+{
+  "data": {
+    "environmentMatcher": "",
+    "transformers": [
+      {
+        "type": "replaceAll",
+        "transformer": {
+          "uniform": false,
+          "id": "replaceAll_fa7065b6",
+          "sourceExpression": "reccomplex:generic_solid \u0026 metadata\u003d8",
+          "destinationPreset": "RaiderSpawner",
+          "destination": [
+            {
+              "block": "minecraft:mob_spawner",
+              "metadata": 0,
+              "tileEntity": "{\"nbtType\":\"compound\",\"nbt\":{\"SpawnPotentials\":{\"nbtType\":\"list\",\"nbt\":[{\"nbtType\":\"compound\",\"nbt\":{\"Entity\":{\"nbtType\":\"compound\",\"nbt\":{\"id\":{\"nbtType\":\"string\",\"nbt\":\"raiders:raider\"}}},\"Weight\":{\"nbtType\":\"int\",\"nbt\":1}}}]}}}"
+            },
+            {
+              "weight": 2.0680112838745117,
+              "block": "minecraft:air",
+              "metadata": 0,
+              "tileEntity": "null"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Raider Spawner",
+    "description": [
+      "generic_solid:8 to 1/3 chance of Raider spawneer"
+    ]
+  }
+}

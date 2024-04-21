@@ -1,9 +1,17 @@
 setIcon(<ceramics:clay_barrel>)
 setTitle("Water Barrel")
 setDescription("Make a barrel of clay or porcelain to store liquids or collect rainwater")
-addParent("_wastes:ceramics/craft_porcelain")
+addParent("_wastes:ceramics/get_clay")
+
+visibleIf("_wastes:ceramics/craft_barrel")
+hiddenUnless("_wastes:ceramics/get_clay")
 
 criteria = addCriteria("clay_barrel", "minecraft:inventory_changed")
 criteria.addItem(<ceramics:clay_barrel>)
+criteria = addCriteria("porcelain_barrel", "minecraft:inventory_changed")
+criteria.addItem(<ceramics:porcelain_barrel>)
 
-setPos(71,-21)
+setRequirements("any")
+
+#setPos(71,-21)
+setPos(38,98)

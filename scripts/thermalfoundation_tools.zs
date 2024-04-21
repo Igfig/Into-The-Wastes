@@ -74,3 +74,8 @@ platinumBow.addTooltip("This item can only be cast, not forged.");
 
 mods.foundry.Casting.addRecipe(electrumBow, <liquid:electrum> *432, <minecraft:bow>);
 mods.foundry.Casting.addRecipe(platinumBow, <liquid:platinum> *432, <minecraft:bow>);
+
+
+// remove crescent hammer; it's redundant with the B.A.S.E. wrench
+recipes.remove(<thermalfoundation:wrench>);
+mods.jei.JEI.removeAndHide(<thermalfoundation:wrench>);

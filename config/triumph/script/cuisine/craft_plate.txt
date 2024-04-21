@@ -1,0 +1,10 @@
+setIcon(<cuisine:placed_dish>)
+setTitle("Dishware")
+setDescription("Use fired porcelain bricks to make a plate")
+addParent("cuisine:root")
+addParent("_wastes:ceramics/craft_plate")
+
+criteria = addCriteria("craft_plate", "triumph:completed_advancement")
+criteria.setAdvancement("_wastes:ceramics/craft_plate")
+
+setPos(71,80)

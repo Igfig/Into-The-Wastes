@@ -5,7 +5,7 @@ setBackground("minecraft:textures/gui/advancements/backgrounds/adventure.png")
 setShowToast(true)
 setAnnounceToChat(true)
 
-setPos(-67,6)
+setPos(-61,57)
 addCriteria("location", "minecraft:location")
 
 
@@ -14,44 +14,35 @@ addCriteria("location", "minecraft:location")
 // chopping block, kitchen knife, and chop ingredients
 //	<cuisine:ingredient>{form:"SLICED"}
 // spice bottle of seasoning, and of water or juice or oil
-// stomp fruit to juice
-// drinkro
 
-// purified water
-// put water in clay barrel (or w/e) to stretch your supply
-// water collector
-
-// tinker's anvil and hammer
-// heat an ingot (fuel in forge, plus flint&steel)
-// tool head
-// tool? Except no, it's too easy to get iron tools from mobs
-
-// crucible
-// fuel heater
-// melt copper
+// grindstone
 // ingot caster
+// metal caster
 // omnimeter
+// gears
+//		hand crank?
+// pump/turbine
+// heat pipes
+// make ice from a heat exchanger?
+// self-sustaining heat machine?
+// other Crossroads machines
+// railcraft stuff?
 
-// psi guide
+// psi guide. Craft a CAD assembly and CAD assembler
+// 	and I guess a socket and a core? Not sure what the core is for tbh
+// 	and then use them to make a CAD proper
 
+// husbandry section
 // care of animania animals
 // breed animals?
 // animania cheese
-
+// prime meat?
+// trough
 // tame a zawa animal with kibble
+// zawa enrichment items
 
-// tame a rat (10-15 cheese wedges)
-// some duplicates of rat cheevos
-
-// some duplicates of ice and fire cheevos maybe
-
-// get silkworms from leaves
-// silk armour
 // get some chitin?
 // chitin armour?
 
-// make antique atlas
-// copy antique atlas
-
-// larder
-// icebox
+// Arcane World ritual maybe? though it's hard to test for
+//	well I guess I could include a command to grant the achievement in the ritual's command list

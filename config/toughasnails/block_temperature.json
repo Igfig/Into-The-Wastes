@@ -1,19 +1,10 @@
 [
   {
     "state": {
-      "block": "toughasnails:campfire",
-      "properties": {
-        "burning": "true"
-      }
-    },
-    "temperature": 5.0
-  },
-  {
-    "state": {
-      "block": "cuisine:fire_pit",
+      "block": "minecraft:fire",
       "properties": {}
     },
-    "temperature": 2.0
+    "temperature": 5.0
   },
   {
     "state": {
@@ -27,26 +18,110 @@
       "block": "minecraft:lava",
       "properties": {}
     },
-    "temperature": 15.0
+    "temperature": 10.0
   },
   {
     "state": {
       "block": "minecraft:flowing_lava",
       "properties": {}
     },
-    "temperature": 15.0
+    "temperature": 10.0
   },
   {
     "state": {
       "block": "minecraft:magma",
       "properties": {}
     },
-    "temperature": 12.5
+    "temperature": 8.0
   },
   {
     "state": {
       "block": "biomesoplenty:hot_spring_water",
       "properties": {}
+    },
+    "temperature": 5.0
+  },
+  {
+    "state": {
+      "block": "cuisine:fire_pit",
+      "properties": {}
+    },
+    "temperature": 2.0
+  },
+  {
+    "state": {
+      "block": "iceandfire:fire_lily",
+      "properties": {}
+    },
+    "temperature": 1.0
+  },
+  {
+    "state": {
+      "block": "gardenstuff:bloomery_furnace",
+      "properties": {
+        "lit": "true"
+	  }
+    },
+    "temperature": 2.0
+  },
+  {
+    "state": {
+      "block": "roots:pyre",
+      "properties": {
+        "burning": "true"
+	  }
+    },
+    "temperature": 1.0
+  },
+  {
+    "state": {
+      "block": "roots:reinforced_pyre",
+      "properties": {
+        "burning": "true"
+	  }
+    },
+    "temperature": 1.0
+  },
+  {
+    "state": {
+      "block": "roots:decorative_pyre",
+      "properties": {
+        "burning": "true"
+	  }
+    },
+    "temperature": 1.0
+  },
+  {
+    "state": {
+      "block": "thermalfoundation:fluid_pyrotheum",
+      "properties": {}
+    },
+    "temperature": 10.0
+  },
+  {
+    "state": {
+      "block": "tinkersforging:charcoal_forge",
+      "properties": {
+        "lit": "true"
+      }
+    },
+    "temperature": 2.0
+  },
+  {
+    "state": {
+      "block": "tinkersforging:forge",
+      "properties": {
+        "lit": "true"
+      }
+    },
+    "temperature": 2.0
+  },
+  {
+    "state": {
+      "block": "toughasnails:campfire",
+      "properties": {
+        "burning": "true"
+      }
     },
     "temperature": 5.0
   },
@@ -69,25 +144,46 @@
       "block": "minecraft:water",
       "properties": {}
     },
-    "temperature": -1.0
+    "temperature": -2.0
   },
   {
     "state": {
       "block": "minecraft:flowing_water",
       "properties": {}
     },
-    "temperature": -1.0
+    "temperature": -2.0
   },
   {
     "state": {
       "block": "minecraft:snow",
       "properties": {}
     },
-    "temperature": -2.0
+    "temperature": -3.0
   },
   {
     "state": {
       "block": "minecraft:ice",
+      "properties": {}
+    },
+    "temperature": -3.0
+  },
+  {
+    "state": {
+      "block": "iceandfire:frost_lily",
+      "properties": {}
+    },
+    "temperature": 1.0
+  },
+  {
+    "state": {
+      "block": "thermalfoundation:fluid_cryotheum",
+      "properties": {}
+    },
+    "temperature": -10.0
+  },
+  {
+    "state": {
+      "block": "toughasnails:purified_water",
       "properties": {}
     },
     "temperature": -2.0

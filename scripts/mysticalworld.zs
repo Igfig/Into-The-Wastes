@@ -1,5 +1,6 @@
 import crafttweaker.item.IItemStack;
 
+
 // tweak recipe for beetle mask
 
 recipes.replaceAllOccurences(<ore:plankWood>, <roots:wildwood_planks>, <mysticalworld:beetle_mask>);

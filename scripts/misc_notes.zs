@@ -27,3 +27,7 @@
 // Structured Crafting is a little too complicated to describe in text.
 mods.jei.JEI.addDescription(<structuredcrafting:structured_crafter>, "Automated in-world crafting. See https://www.curseforge.com/minecraft/mc-mods/structured-crafting for a quick tutorial.");
 // TODO I should make a Patchouli book for this instead.
+
+// Soup cans
+<contenttweaker:soup_can>.addTooltip("Protected from both rot and rats.");
+<contenttweaker:soup_can>.addTooltip("Right-click to get a random soup or stew.");

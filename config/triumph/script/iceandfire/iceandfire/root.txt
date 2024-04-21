@@ -1,0 +1,9 @@
+setIcon("iceandfire:dragon_skull")
+setTitle("Ice And Fire")
+setDescription("Enter a world of magical creatures by finding some dragon bones")
+setBackground("iceandfire:textures/blocks/dragonscale_red.png")
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("dragonbone", "minecraft:inventory_changed")
+criteria.addItem("iceandfire:dragonbone")

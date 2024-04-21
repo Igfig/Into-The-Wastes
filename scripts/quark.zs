@@ -6,10 +6,13 @@
 <quark:gold_button>.addTooltip("Short pulse");
 <quark:iron_button>.addTooltip("Long pulse");
 <quark:obsidian_pressure_plate>.addTooltip("Only triggers for players");
-<quark:iron_rod>.addTooltip("Breaks blocks when pushed by a piston");
 <quark:redstone_inductor>.addTooltip("Outputs sum of other three sides");
 <quark:redstone_randomizer>.addTooltip("When powered from back, randomly activates either right or left output");
 <quark:sugar_block>.addTooltip("Dissolves in water");
+
+// remove Iron Rod because it makes the Crossroaads drill obsolete
+recipes.remove(<quark:iron_rod>, false);
+mods.jei.JEI.removeAndHide(<quark:iron_rod>);
 
 // Building module
 <quark:sturdy_stone>.addTooltip("Can't be moved by pistons");
@@ -24,15 +27,19 @@
 //World module
 <quark:archaeologist_hat>.displayName = "Paleontolgist Hat";
 <quark:archaeologist_hat>.addTooltip("Slightly increases Fortune when mining");
-<quark:diamond_heart>.addTooltip("Dropped by Stonelings");
-<quark:soul_bead>.addTooltip("Dropped by Wraiths");
+<quark:diamond_heart>.addTooltip("Dropped by Stonelings.");
+<quark:diamond_heart>.addTooltip("Use on a stone block to create your own pet Stoneling.");
+<quark:soul_bead>.addTooltip("Dropped by Wraiths.");
+<quark:soul_bead>.addTooltip("Curses you when broken.");
 
 // Misc module
+<quark:enderdragon_scale>.displayName = "Ender Dragon Scale";
+<quark:enderdragon_scale>.addTooltip("Craft with an elytra to duplicate it");
 <quark:ancient_tome>.addTooltip("Combine in an anvil with an Enchanted Tome of the same level");
 <quark:rune>.addTooltip("Apply to enchanted item in an anvil to change glint colour");
-<quark:enderdragon_scale>.addTooltip("Craft with an elytra to duplicate it");
 <quark:horse_whistle>.addTooltip("Summons your horses");
 <quark:parrot_egg>.addTooltip("Feed a parrot some beetroot to acquire");
 <quark:slime_bucket>.addTooltip("Awakens when in a slime chunk");
 <quark:soul_powder>.addTooltip("Use in the Nether to show direction to the nearest nether fortress");
 <quark:black_ash>.addTooltip("Place to prevent mob spawning on placed block or block above");
+

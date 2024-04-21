@@ -4,7 +4,7 @@
 <minecraft:redstone_ore>.addTooltip("Appears in small amounts in oases");
 <minecraft:redstone_ore>.addTooltip("Appears rarely in certain chunks in oases, in many medium deposits below 64y");
 <minecraft:lapis_ore>.addTooltip("Appears in oases, mostly around 24y");
-<minecraft:diamond_ore>.addTooltip("Appears rarely in oases");
+<minecraft:diamond_ore>.addTooltip("Appears in very small amounts in oases");
 <minecraft:diamond_ore>.addTooltip("Appears rarely in certain chunks in oases, in many small deposits below 32y.");
 <minecraft:quartz_ore>.addTooltip("Appears rarely in the Nether, in large deposits at any height.");
 
@@ -21,7 +21,7 @@
 
 <crossroads:ore_copper>.addTooltip("Appears rarely in oases, in large deposits between 16y and 48y");
 <crossroads:ore_copper>.addTooltip("Must be smelted in a Heating Crucible");
-<crossroads:ore_tin>.addTooltip("Appears rarely in oases beyond +/-1000z in large deposits below 32y");
+<crossroads:ore_tin>.addTooltip("Appears rarely in oases beyond +/-1000z, in large deposits below 32y");
 <crossroads:ore_tin>.addTooltip("Must be smelted in a Heating Crucible");
 
 <thermalfoundation:ore:2>.addTooltip("Appears rarely in oases beyond +/-3000z, in large deposits between 16y and 48y");

@@ -99,6 +99,16 @@
         "damage": 0,
         "count": 1
       }
+    },
+    {
+      "weight": 2.0,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "contenttweaker:soup_can",
+        "damage": 0,
+        "count": 1
+      }
     }
   ],
   "dependencyExpression": ""

@@ -1,7 +1,7 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.formatting.IFormattedText;
-import mods.roots.Fey;
-import mods.naturesaura.TreeRitual;
+import foodtweaker.FoodInfo;
+import mods.foodtweaker.Tweaker;
 
 // remove unwanted items
 
@@ -9,6 +9,7 @@ val toRemove = [
 	<rats:cauldron_milk>,
 	<rats:cauldron_cheese>,
 	<rats:cheese>,
+	<rats:string_cheese>,
 	<rats:rat_upgrade_aristocrat>
 ] as IIngredient[];
 
@@ -19,27 +20,24 @@ for tr in toRemove {
 
 // mark other cheeses as uesful for rats
 // oddly enough, can't use <ore:foodCheese> because it hasn't been populated with these cheeses at this point
+
 mods.jei.JEI.addDescription([<animania:friesian_cheese_wedge>, <animania:holstein_cheese_wedge>, <animania:jersey_cheese_wedge>, <animania:goat_cheese_wedge>, <animania:sheep_cheese_wedge>], "Used to tame rats. Drop up to 16 cheese near a wild rat to tame one.");
 
 
-// new stats and recipe for Chunky Cheese Tokens
+// reduce Confit Byaldi's food values to something less absurd
+
+var confit = FoodInfo(<rats:confit_byaldi>).setHeal(10).setSaturation(0.5F);
+Tweaker.changeFoodStats(<rats:confit_byaldi>, confit); 
+
+
+// new name and display for Chunky Cheese Tokens
+// token recipe can be found in arcaneworld.zs
 
 val token = <rats:chunky_cheese_token>;
-val tokenName = "Token of the Unspoiled Lands";
-token.displayName = tokenName;
-//token.displayName = format.gold(tokenName); // this should work but does not
+token.displayName = "§6Token of the Unspoiled Lands";
 
 token.removeTooltip("drop rate from rat");
 token.addTooltip(format.gold("Your ticket out of here"));
-
-recipes.remove(token);
-
-Fey.addRecipe("chunky_cheese_token", token, [
-	<biomesoplenty:sapling_1:7>, // Sacred Oak
-	<naturesaura:sky_ingot>,
-	<biomesoplenty:terrestrial_artifact>,
-	<ore:blockMithril>,
-	<minecraft:dragon_egg>]);
 	
 	
 // and do something with the token pieces

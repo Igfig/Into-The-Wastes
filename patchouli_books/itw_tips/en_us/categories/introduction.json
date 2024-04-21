@@ -1,0 +1,6 @@
+{
+    "name": "Introduction",
+    "description": "Survival and exploration in the endless desert.$(br2)This blurb also appears on the modpack's store page.",
+    "icon": "minecraft:writable_book",
+	"sortnum": 0
+}
