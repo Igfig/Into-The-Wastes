@@ -57,15 +57,6 @@
   },
   {
     "state": {
-      "block": "gardenstuff:bloomery_furnace",
-      "properties": {
-        "lit": "true"
-	  }
-    },
-    "temperature": 2.0
-  },
-  {
-    "state": {
       "block": "roots:pyre",
       "properties": {
         "burning": "true"
