@@ -51,3 +51,12 @@ recipes.replaceAllOccurences(<ore:gold>, <ore:plateSteel>, <crossroads:fluid_tan
 
 // change lens holder recipe to not conflict with holystone
 recipes.replaceAllOccurences(<ore:stone>, <minecraft:stone_slab>, <crossroads:lens_holder>);
+
+
+// it should take 9 rubies to make a block, not 4
+val ruby = <ore:gemRuby>;
+recipes.removeByRecipeName("crossroads:block_ruby");
+recipes.addShaped("crossroads:block_ruby", <crossroads:block_ruby>, [
+	[ruby, ruby, ruby],
+	[ruby, ruby, ruby],
+	[ruby, ruby, ruby]]);
