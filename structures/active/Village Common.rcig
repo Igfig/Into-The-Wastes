@@ -3,7 +3,7 @@
   "inventoryGeneratorID": "Village Common",
   "items": [
     {
-      "weight": 1.5,
+      "weight": 3.0,
       "min": 1,
       "max": 1,
       "item": {
@@ -22,7 +22,7 @@
       }
     },
     {
-      "weight": 1.0,
+      "weight": 3.0,
       "min": 1,
       "max": 1,
       "item": {
@@ -41,7 +41,7 @@
       }
     },
     {
-      "weight": 0.5,
+      "weight": 2.0,
       "min": 1,
       "max": 1,
       "item": {
@@ -54,6 +54,25 @@
             "itemCollectionKey": {
               "nbtType": "string",
               "nbt": "WoodStorage"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 2.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "reccomplex:inventory_generation_single_tag",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "itemCollectionKey": {
+              "nbtType": "string",
+              "nbt": "Stone"
             }
           }
         }
@@ -98,7 +117,7 @@
       }
     },
     {
-      "weight": 1.0,
+      "weight": 2.0,
       "min": 1,
       "max": 1,
       "item": {
