@@ -1,0 +1,306 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Unique",
+  "items": [
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "iceandfire:sheep_leggings",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Quark:RuneColor": {
+              "nbtType": "int",
+              "nbt": 7
+            },
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 1
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 27
+                    }
+                  }
+                }
+              ]
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Lore": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "Your butt looks great when you crouch in these"
+                    }
+                  ]
+                },
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Cool Threads"
+                }
+              }
+            },
+            "Quark:RuneAttached": {
+              "nbtType": "byte",
+              "nbt": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:chainmail_leggings",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Quark:RuneColor": {
+              "nbtType": "int",
+              "nbt": 11
+            },
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 1
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 6
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 1
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 27
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 2
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 0
+                    }
+                  }
+                }
+              ]
+            },
+            "Quark:ItemNameDye": {
+              "nbtType": "int",
+              "nbt": 13
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Lore": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "You\u0027ll be a real catch, wearing these"
+                    }
+                  ]
+                },
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Fishnets"
+                }
+              }
+            },
+            "Quark:RuneAttached": {
+              "nbtType": "byte",
+              "nbt": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:iron_leggings",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Quark:RuneColor": {
+              "nbtType": "int",
+              "nbt": 0
+            },
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 4
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 4
+                    }
+                  }
+                }
+              ]
+            },
+            "Quark:ItemNameDye": {
+              "nbtType": "int",
+              "nbt": 12
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Lore": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "You can see yourself in them"
+                    }
+                  ]
+                },
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Mirror Pants"
+                }
+              }
+            },
+            "Quark:RuneAttached": {
+              "nbtType": "byte",
+              "nbt": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "thermalfoundation:armor.legs_steel",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Quark:RuneColor": {
+              "nbtType": "int",
+              "nbt": 12
+            },
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 3
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 0
+                    }
+                  }
+                }
+              ]
+            },
+            "Quark:ItemNameDye": {
+              "nbtType": "int",
+              "nbt": 2
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Stoneborn Greaves"
+                }
+              }
+            },
+            "Quark:RuneAttached": {
+              "nbtType": "byte",
+              "nbt": 1
+            },
+            "AttributeModifiers": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "UUIDMost": {
+                      "nbtType": "int",
+                      "nbt": 99
+                    },
+                    "UUIDLeast": {
+                      "nbtType": "int",
+                      "nbt": 115451700
+                    },
+                    "Amount": {
+                      "nbtType": "double",
+                      "nbt": 0.5
+                    },
+                    "Slot": {
+                      "nbtType": "string",
+                      "nbt": "legs"
+                    },
+                    "AttributeName": {
+                      "nbtType": "string",
+                      "nbt": "generic.knockbackResistance"
+                    },
+                    "Name": {
+                      "nbtType": "string",
+                      "nbt": "generic.knockbackResistance"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

@@ -1,0 +1,388 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Unique",
+  "items": [
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "roots:runed_dagger",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Quark:RuneColor": {
+              "nbtType": "int",
+              "nbt": 2
+            },
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 1
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 43
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 3
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 16
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 1
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 30
+                    }
+                  }
+                }
+              ]
+            },
+            "Quark:ItemNameDye": {
+              "nbtType": "int",
+              "nbt": 5
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Dagger of Curses"
+                }
+              }
+            },
+            "Quark:RuneAttached": {
+              "nbtType": "byte",
+              "nbt": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "mowziesmobs:naga_fang_dagger",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Quark:RuneColor": {
+              "nbtType": "int",
+              "nbt": 13
+            },
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 4
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 16
+                    }
+                  }
+                }
+              ]
+            },
+            "Quark:ItemNameDye": {
+              "nbtType": "int",
+              "nbt": 10
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Assassin\u0027s Dagger"
+                }
+              }
+            },
+            "Quark:RuneAttached": {
+              "nbtType": "byte",
+              "nbt": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "primitivetools:primitive_knife_cwl",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Quark:RuneColor": {
+              "nbtType": "int",
+              "nbt": 15
+            },
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 5
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 16
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 1
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 70
+                    }
+                  }
+                }
+              ]
+            },
+            "Quark:ItemNameDye": {
+              "nbtType": "int",
+              "nbt": 1
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "The First Knife"
+                }
+              }
+            },
+            "Quark:RuneAttached": {
+              "nbtType": "byte",
+              "nbt": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "earthworks:tool_hand_axe",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Quark:RuneColor": {
+              "nbtType": "int",
+              "nbt": 15
+            },
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 5
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 16
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 1
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 70
+                    }
+                  }
+                }
+              ]
+            },
+            "Quark:ItemNameDye": {
+              "nbtType": "int",
+              "nbt": 1
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "The First Weapon"
+                }
+              }
+            },
+            "Quark:RuneAttached": {
+              "nbtType": "byte",
+              "nbt": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "mowziesmobs:spear",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Quark:RuneColor": {
+              "nbtType": "int",
+              "nbt": 0
+            },
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 2
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 16
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 2
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 19
+                    }
+                  }
+                }
+              ]
+            },
+            "Quark:ItemNameDye": {
+              "nbtType": "int",
+              "nbt": 13
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Gungnir"
+                }
+              }
+            },
+            "Quark:RuneAttached": {
+              "nbtType": "byte",
+              "nbt": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "railcraft:tool_crowbar_steel",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 4
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 18
+                    }
+                  }
+                }
+              ]
+            },
+            "Quark:ItemNameDye": {
+              "nbtType": "int",
+              "nbt": 14
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Freeman\u0027s Friend"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}
