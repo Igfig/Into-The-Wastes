@@ -5,7 +5,7 @@
     "pages": [
 		{
 			"type": "text",
-			"text": "Once you've spent a while in an area, highly aggressive raiders will start to spawn.$(br2)Rats and raiders will attack your crops and rob your chests if they can, so protect them well."
+			"text": "Once you've spent a while in an area, highly aggressive raiders will start to spawn.$(br2)Some raider spawners can activate even when fully lit up. Be careful when exploring ruins!$(br2)Rats and raiders will attack your crops and rob your chests if they can, so protect them well."
 		},
 		{
 			"type": "spotlight",
