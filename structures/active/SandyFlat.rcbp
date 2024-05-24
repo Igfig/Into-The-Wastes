@@ -1,0 +1,17 @@
+{
+  "data": [
+    {
+      "biomes": "$HILLS | $MOUNTAIN",
+      "weight": 0.0
+    },
+    {
+      "biomes": "$SANDY"
+    }
+  ],
+  "metadata": {
+    "title": "Sandy Flat",
+    "description": [
+      "Sandy biomes that aren\u0027t too hilly"
+    ]
+  }
+}
