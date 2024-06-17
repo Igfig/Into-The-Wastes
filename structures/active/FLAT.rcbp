@@ -1,0 +1,45 @@
+{
+  "data": [
+    {
+      "biomes": "$HILLS | $MOUNTAIN",
+      "weight": 0.0
+    },
+    {
+      "biomes": "$WATER",
+      "weight": 0.0
+    },
+    {
+      "biomes": "$PLAINS"
+    },
+    {
+      "biomes": "$FOREST"
+    },
+    {
+      "biomes": "$SWAMP"
+    },
+    {
+      "biomes": "$SANDY"
+    },
+    {
+      "biomes": "$MESA"
+    },
+    {
+      "biomes": "$SAVANNA"
+    },
+    {
+      "biomes": "$WASTELAND"
+    },
+    {
+      "biomes": "$MUSHROOM"
+    },
+    {
+      "biomes": "$JUNGLE"
+    }
+  ],
+  "metadata": {
+    "title": "Flat",
+    "description": [
+      "Any land biome, as long as it\u0027s not too hilly"
+    ]
+  }
+}
