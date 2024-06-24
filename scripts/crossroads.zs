@@ -56,7 +56,7 @@ recipes.replaceAllOccurences(<ore:stone>, <minecraft:stone_slab>, <crossroads:le
 // it should take 9 rubies to make a block, not 4
 val ruby = <ore:gemRuby>;
 recipes.removeByRecipeName("crossroads:block_ruby");
-recipes.addShaped("crossroads:block_ruby", <crossroads:block_ruby>, [
+recipes.addShaped("crossroads_block_ruby", <crossroads:block_ruby>, [
 	[ruby, ruby, ruby],
 	[ruby, ruby, ruby],
 	[ruby, ruby, ruby]]);
