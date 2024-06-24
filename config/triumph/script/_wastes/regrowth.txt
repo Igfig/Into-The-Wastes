@@ -1,0 +1,11 @@
+setIcon(<biomesoplenty:grass:7>)
+setTitle("Alternate Win Condition")
+setDescription("Restore life to the Wastes")
+setFrameType("challenge")
+addParent("_wastes:rat_token")
+drawDirectLines()
+setHidden(true)
+
+criteria = addCriteria("impossible", "minecraft:impossible")
+
+setPos(104,-99)
