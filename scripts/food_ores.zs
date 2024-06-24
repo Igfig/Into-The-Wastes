@@ -36,9 +36,9 @@
 
 <ore:rootVegetable>.add(<minecraft:carrot>, <minecraft:beetroot>, <cuisine:crops:10>); // turnip
 
-<ore:seed>.add(<inspirations:cactus_seeds>, <inspirations:cactus_seeds>, <inspirations:sugar_cane_seeds>, <inspirations:carrot_seeds>, <inspirations:potato_seeds>, <mysticalworld:assorted_seeds>, <mysticalworld:aubergine_seed>, <cuisine:crops:1>); // sesame seeds
+<ore:seed>.add(<minecraft:wheat_seeds>, <minecraft:pumpkin_seeds>, <minecraft:melon_seeds>,<minecraft:beetroot_seeds>, <inspirations:cactus_seeds>, <inspirations:cactus_seeds>, <inspirations:sugar_cane_seeds>, <inspirations:carrot_seeds>, <inspirations:potato_seeds>, <mysticalworld:assorted_seeds>, <mysticalworld:aubergine_seed>, <mysticalworld:cooked_seeds>, <roots:moonglow_seed>, <roots:spirit_herb_seed>, <roots:wildewheet_seed>, <cuisine:crops:1>); // sesame seeds
 
-<ore:mushroom>.add(<biomesoplenty:mushroom:1>, <wildnature:mushroom_1>, <wildnature:mushroom_2>, <wildnature:mushroom_3>, <wildnature:mushroom_6>, <wildnature:mushroom_7>, <wildnature:mushroom_8>, <wildnature:mushroom_9>);
+<ore:mushroom>.add(<biomesoplenty:mushroom:1>, <environs:cyan_mushroom>, <environs:purple_mushroom>, <quark:glowshroom>, <wildnature:mushroom_1>, <wildnature:mushroom_2>, <wildnature:mushroom_3>, <wildnature:mushroom_6>, <wildnature:mushroom_7>, <wildnature:mushroom_8>, <wildnature:mushroom_9>);
 <ore:mushroomAny>.addAll(<ore:mushroom>);
 <ore:foodMushroom>.addAll(<ore:mushroom>); // different mods use different mushroom oredicts
 
@@ -132,7 +132,7 @@
 
 <ore:chickenFood>.addAll(<ore:seed>);
 <ore:chickenFood>.addAll(<ore:cropCorn>);
-<ore:chickenFood>.add(<cuisine:crops:3>, <cuisine:food:4>, <cuisine:crops:0>, <cuisine:crops:2>); // rice, rice, peanuts, soybeans
+<ore:chickenFood>.add(<animania:hamster_food>, <cuisine:crops:3>, <cuisine:food:4>, <cuisine:crops:0>, <cuisine:crops:2>); // rice, rice, peanuts, soybeans
 
 <ore:cowFood>.addAll(<ore:listAllgrain>);
 <ore:cowFood>.addAll(<ore:rootVegetable>);
@@ -159,9 +159,6 @@
 <ore:hedgehogFood>.addAll(<ore:listAllnut>);
 <ore:hedgehogFood>.addAll(<ore:cropApple>);
 <ore:hedgehogFood>.addAll(<ore:cropPear>);
-<ore:hedgehogFood>.addAll(<ore:cropBellpepper>);
-<ore:hedgehogFood>.addAll(<ore:cropSpinach>);
-<ore:hedgehogFood>.addAll(<ore:cropTomato>);
 <ore:hedgehogFood>.add(<minecraft:melon>, <mysticalworld:cooked_carrot>, <cuisine:crops:4>, <cuisine:crops:15>, <cuisine:crops:16>, <cuisine:crops:20>); // tomato, bellpepper (red and green), spinach
 
 <ore:horseFood>.addAll(<ore:listAllgrain>);
