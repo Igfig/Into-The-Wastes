@@ -1,0 +1,10 @@
+setIcon("rats:ratlantis_portal")
+setTitle("Out of the Wastes")
+setDescription("Thanks for playing!")
+setFrameType("goal")
+addParent("_wastes:rat_token")
+
+criteria = addCriteria("ratlantis", "triumph:completed_advancement")
+criteria.setAdvancement("rats:rats/ratlantis")
+
+addRewardFunction("wastes:fireworks")
