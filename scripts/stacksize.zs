@@ -49,6 +49,12 @@ for entry in oreDict {
 		setStackSize(entry, 4);
 	} else if (entry.name has "gear") {
 		setStackSize(entry, 16);
+	} else if (entry.name has "egg") {
+		setStackSize(entry, 16);
+	} else if (entry.name has "eggplant") {
+		setStackSize(entry, 16);
+	} else if (entry.name has "veggie") {
+		setStackSize(entry, 16);
 	} else if (entry.name has "crop") {
 		setStackSize(entry, 16);
 	} else if (entry.name has "coal") {
