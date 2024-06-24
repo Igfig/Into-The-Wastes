@@ -82,7 +82,7 @@ ArcaneWorld.createRitualCommand("sand_to_grass", "Ritual of Regrowth", [
 	"/cofh replaceblocks @s 64 255 64 minecraft:grass minecraft:sand",
 	"/cofh replaceblocks @s 64 255 64 minecraft:stone minecraft:sandstone#0",
 	"/cofh replaceblocks @s 64 255 64 minecraft:water biomesoplenty:sand",
-	"/btsetbiome 4 64" // Forest biome
+	"/btsetbiome 4 64", // Forest biome
 	"/advancement grant @s only _wastes:regrowth"
 ], [<ore:ingotPlatinum>,<ore:grass>,<naturesaura:aura_trove>.withTag({aura:1200000}),<roots:spirit_herb>,<naturesaura:sky_ingot>]);
 
