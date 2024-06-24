@@ -7,3 +7,5 @@ recipes.addShapedMirrored("biome_finder", <biomesoplenty:biome_finder>, [
 	[null, <ore:gemAmethyst>, null],
 	[<ore:ingotMithril>, <biomesoplenty:terrestrial_artifact>, <ore:gemPeridot>],
 	[null, <ore:gemAmethyst>, null]]);
+	
+recipes.replaceAllOccurences(<biomesoplenty:mushroom>, <ore:toadstool>, <biomesoplenty:shroompowder>);

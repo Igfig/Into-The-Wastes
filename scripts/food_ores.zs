@@ -38,6 +38,12 @@
 
 <ore:seed>.add(<inspirations:cactus_seeds>, <inspirations:cactus_seeds>, <inspirations:sugar_cane_seeds>, <inspirations:carrot_seeds>, <inspirations:potato_seeds>, <mysticalworld:assorted_seeds>, <mysticalworld:aubergine_seed>, <cuisine:crops:1>); // sesame seeds
 
+<ore:mushroom>.add(<biomesoplenty:mushroom:1>, <wildnature:mushroom_1>, <wildnature:mushroom_2>, <wildnature:mushroom_3>, <wildnature:mushroom_6>, <wildnature:mushroom_7>, <wildnature:mushroom_8>, <wildnature:mushroom_9>);
+<ore:mushroomAny>.addAll(<ore:mushroom>);
+<ore:foodMushroom>.addAll(<ore:mushroom>); // different mods use different mushroom oredicts
+
+<ore:toadstool>.add(<biomesoplenty:mushroom:0>, <biomesoplenty:mushroom:5>, <wildnature:mushroom_4>, <wildnature:mushroom_5>);
+
 
 // meats
 
