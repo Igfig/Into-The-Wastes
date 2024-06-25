@@ -1,0 +1,14 @@
+setIcon(<animania:block_hamster_wheel>)
+setTitle("Hamster Acquired")
+setDescription("Right-click a hamster with a lead or iron chain")
+addParent("husbandry:root")
+setPos(34,-25)
+
+criteria = addCriteria("feed_hamster-minecraft-lead", "animania:feed_animal")
+		criteria.addConditions({"entity":"animania:hamster", "itemstack":{"item":"minecraft:lead"}})
+criteria = addCriteria("feed_hamster-iceandfire-chain", "animania:feed_animal")
+		criteria.addConditions({"entity":"animania:hamster", "itemstack":{"item":"iceandfire:chain"}})
+criteria = addCriteria("feed_hamster-iceandfire-chain_sticky", "animania:feed_animal")
+		criteria.addConditions({"entity":"animania:hamster", "itemstack":{"item":"iceandfire:chain_sticky"}})
+
+setRequirements("any")
