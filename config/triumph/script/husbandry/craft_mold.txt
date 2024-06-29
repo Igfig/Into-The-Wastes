@@ -1,0 +1,16 @@
+setIcon("animania:cheese_mold")
+setTitle("Cheesed to Meet You")
+setDescription("Make a cheese mold to turn milk into cheese.")
+addParent("husbandry:feed_cow")
+addParent("husbandry:feed_goat")
+addParent("husbandry:feed_sheep")
+
+visibleIf("husbandry:feed_cow")
+visibleIf("husbandry:feed_goat")
+visibleIf("husbandry:feed_sheep")
+alwaysHidden()
+
+criteria = addCriteria("crafted", "minecraft:inventory_changed")
+criteria.addItem("animania:cheese_mold")
+
+setPos(67,-50)

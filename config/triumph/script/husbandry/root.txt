@@ -5,8 +5,6 @@ setBackground("minecraft:textures/blocks/hay_block_side.png")
 setShowToast(true)
 setAnnounceToChat(true)
 
-pageVisibleIf("husbandry:root")
-
 criteria = addCriteria("roots", "triumph:completed_advancement")
 criteria.setAdvancement("roots:pacifist")
 criteria = addCriteria("animania", "triumph:completed_advancement")

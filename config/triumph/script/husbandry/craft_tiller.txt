@@ -1,0 +1,14 @@
+setIcon("animania:item_tiller")
+setTitle("Till Death Do Us Part")
+setDescription("Make a tiller to plant fields much faster.")
+addParent("husbandry:feed_cow")
+addParent("husbandry:feed_horse")
+
+visibleIf("husbandry:feed_cow")
+visibleIf("husbandry:feed_horse")
+alwaysHidden()
+
+criteria = addCriteria("crafted", "minecraft:inventory_changed")
+criteria.addItem("animania:item_tiller")
+
+setPos(67,-88)

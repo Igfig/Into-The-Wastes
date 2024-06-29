@@ -1,0 +1,23 @@
+setIcon("animania:block_straw")
+setTitle("The First Straw")
+setDescription("Make some straw for your animals to sleep on. (They'll also sleep on grass.)")
+addParent("husbandry:root")
+drawDirectLines()
+
+visibleIf("husbandry:feed_chicken")
+visibleIf("husbandry:feed_cow")
+visibleIf("husbandry:feed_ferret")
+visibleIf("husbandry:feed_goat")
+visibleIf("husbandry:feed_hamster")
+visibleIf("husbandry:feed_hedgehog")
+visibleIf("husbandry:feed_horse")
+visibleIf("husbandry:feed_peafowl")
+visibleIf("husbandry:feed_pig")
+visibleIf("husbandry:feed_rabbit")
+visibleIf("husbandry:feed_sheep")
+alwaysHidden()
+
+criteria = addCriteria("straw", "minecraft:inventory_changed")
+criteria.addItem("animania:block_straw")
+
+setPos(0,62)

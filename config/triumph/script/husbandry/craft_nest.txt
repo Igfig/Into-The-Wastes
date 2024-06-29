@@ -1,0 +1,14 @@
+setIcon("animania:block_nest")
+setTitle("Love Nest")
+setDescription("Make a nest for your chickens or peahens to lay eggs in.")
+addParent("husbandry:feed_chicken")
+addParent("husbandry:feed_peafowl")
+
+visibleIf("husbandry:feed_chicken")
+visibleIf("husbandry:feed_peafowl")
+alwaysHidden()
+
+criteria = addCriteria("crafted", "minecraft:inventory_changed")
+criteria.addItem("animania:block_nest")
+
+setPos(67,62)

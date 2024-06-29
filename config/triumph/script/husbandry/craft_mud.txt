@@ -1,0 +1,12 @@
+setIcon("animania:block_mud")
+setTitle("Wallowing in It")
+setDescription("Make some wallowing mud for your pigs to enjoy.")
+addParent("husbandry:feed_pig")
+
+visibleIf("husbandry:feed_pig")
+alwaysHidden()
+
+criteria = addCriteria("crafted", "minecraft:inventory_changed")
+criteria.addItem("animania:block_mud")
+
+setPos(67,-138)

@@ -1,0 +1,12 @@
+setIcon("animania:block_hamster_wheel")
+setTitle("Looks Like Fun")
+setDescription("Make a hamster wheel for your hamsters to run on.")
+addParent("husbandry:feed_hamster")
+
+visibleIf("husbandry:feed_hamster")
+alwaysHidden()
+
+criteria = addCriteria("crafted", "minecraft:inventory_changed")
+criteria.addItem("animania:block_hamster_wheel")
+
+setPos(67,125)
