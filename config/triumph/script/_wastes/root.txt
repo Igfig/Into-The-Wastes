@@ -33,11 +33,8 @@ addCriteria("location", "minecraft:location")
 // 	and then use them to make a CAD proper
 
 // husbandry section
-// care of animania animals
-// breed animals?
-// animania cheese
+// got a bunch already
 // prime meat?
-// trough
 // tame a zawa animal with kibble
 // zawa enrichment items
 
