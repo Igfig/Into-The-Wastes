@@ -60,3 +60,4 @@ recipes.addShaped("crossroads_block_ruby", <crossroads:block_ruby>, [
 	[ruby, ruby, ruby],
 	[ruby, ruby, ruby],
 	[ruby, ruby, ruby]]);
+recipes.addShapeless("crossroads_gem_ruby", <crossroads:gem_ruby> * 9, [<crossroads:block_ruby>]);

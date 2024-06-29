@@ -1,0 +1,453 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Unique",
+  "items": [
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:banner",
+        "damage": 1,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Quark:ItemNameDye": {
+              "nbtType": "int",
+              "nbt": 1
+            },
+            "BlockEntityTag": {
+              "nbtType": "compound",
+              "nbt": {
+                "Patterns": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "compound",
+                      "nbt": {
+                        "Pattern": {
+                          "nbtType": "string",
+                          "nbt": "gra"
+                        },
+                        "Color": {
+                          "nbtType": "int",
+                          "nbt": 0
+                        }
+                      }
+                    },
+                    {
+                      "nbtType": "compound",
+                      "nbt": {
+                        "Pattern": {
+                          "nbtType": "string",
+                          "nbt": "mc"
+                        },
+                        "Color": {
+                          "nbtType": "int",
+                          "nbt": 0
+                        }
+                      }
+                    },
+                    {
+                      "nbtType": "compound",
+                      "nbt": {
+                        "Pattern": {
+                          "nbtType": "string",
+                          "nbt": "moj"
+                        },
+                        "Color": {
+                          "nbtType": "int",
+                          "nbt": 1
+                        }
+                      }
+                    },
+                    {
+                      "nbtType": "compound",
+                      "nbt": {
+                        "Pattern": {
+                          "nbtType": "string",
+                          "nbt": "bs"
+                        },
+                        "Color": {
+                          "nbtType": "int",
+                          "nbt": 15
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Banner of War"
+                }
+              }
+            },
+            "AttributeModifiers": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "UUIDMost": {
+                      "nbtType": "int",
+                      "nbt": 99
+                    },
+                    "UUIDLeast": {
+                      "nbtType": "int",
+                      "nbt": 114230900
+                    },
+                    "Amount": {
+                      "nbtType": "double",
+                      "nbt": 6.0
+                    },
+                    "Slot": {
+                      "nbtType": "string",
+                      "nbt": "offhand"
+                    },
+                    "AttributeName": {
+                      "nbtType": "string",
+                      "nbt": "generic.maxHealth"
+                    },
+                    "Name": {
+                      "nbtType": "string",
+                      "nbt": "generic.maxHealth"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:banner",
+        "damage": 15,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Quark:ItemNameDye": {
+              "nbtType": "int",
+              "nbt": 12
+            },
+            "BlockEntityTag": {
+              "nbtType": "compound",
+              "nbt": {
+                "Patterns": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "compound",
+                      "nbt": {
+                        "Pattern": {
+                          "nbtType": "string",
+                          "nbt": "bt"
+                        },
+                        "Color": {
+                          "nbtType": "int",
+                          "nbt": 4
+                        }
+                      }
+                    },
+                    {
+                      "nbtType": "compound",
+                      "nbt": {
+                        "Pattern": {
+                          "nbtType": "string",
+                          "nbt": "tt"
+                        },
+                        "Color": {
+                          "nbtType": "int",
+                          "nbt": 4
+                        }
+                      }
+                    },
+                    {
+                      "nbtType": "compound",
+                      "nbt": {
+                        "Pattern": {
+                          "nbtType": "string",
+                          "nbt": "mr"
+                        },
+                        "Color": {
+                          "nbtType": "int",
+                          "nbt": 12
+                        }
+                      }
+                    },
+                    {
+                      "nbtType": "compound",
+                      "nbt": {
+                        "Pattern": {
+                          "nbtType": "string",
+                          "nbt": "flo"
+                        },
+                        "Color": {
+                          "nbtType": "int",
+                          "nbt": 15
+                        }
+                      }
+                    },
+                    {
+                      "nbtType": "compound",
+                      "nbt": {
+                        "Pattern": {
+                          "nbtType": "string",
+                          "nbt": "bts"
+                        },
+                        "Color": {
+                          "nbtType": "int",
+                          "nbt": 15
+                        }
+                      }
+                    },
+                    {
+                      "nbtType": "compound",
+                      "nbt": {
+                        "Pattern": {
+                          "nbtType": "string",
+                          "nbt": "tts"
+                        },
+                        "Color": {
+                          "nbtType": "int",
+                          "nbt": 15
+                        }
+                      }
+                    },
+                    {
+                      "nbtType": "compound",
+                      "nbt": {
+                        "Pattern": {
+                          "nbtType": "string",
+                          "nbt": "cbo"
+                        },
+                        "Color": {
+                          "nbtType": "int",
+                          "nbt": 6
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Banner of Heroism"
+                }
+              }
+            },
+            "AttributeModifiers": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "UUIDMost": {
+                      "nbtType": "int",
+                      "nbt": 99
+                    },
+                    "UUIDLeast": {
+                      "nbtType": "int",
+                      "nbt": 114467100
+                    },
+                    "Amount": {
+                      "nbtType": "int",
+                      "nbt": 10
+                    },
+                    "Slot": {
+                      "nbtType": "string",
+                      "nbt": "offhand"
+                    },
+                    "AttributeName": {
+                      "nbtType": "string",
+                      "nbt": "generic.armorToughness"
+                    },
+                    "Name": {
+                      "nbtType": "string",
+                      "nbt": "generic.armorToughness"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:banner",
+        "damage": 4,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Quark:ItemNameDye": {
+              "nbtType": "int",
+              "nbt": 13
+            },
+            "BlockEntityTag": {
+              "nbtType": "compound",
+              "nbt": {
+                "Patterns": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "compound",
+                      "nbt": {
+                        "Pattern": {
+                          "nbtType": "string",
+                          "nbt": "drs"
+                        },
+                        "Color": {
+                          "nbtType": "int",
+                          "nbt": 15
+                        }
+                      }
+                    },
+                    {
+                      "nbtType": "compound",
+                      "nbt": {
+                        "Pattern": {
+                          "nbtType": "string",
+                          "nbt": "dls"
+                        },
+                        "Color": {
+                          "nbtType": "int",
+                          "nbt": 15
+                        }
+                      }
+                    },
+                    {
+                      "nbtType": "compound",
+                      "nbt": {
+                        "Pattern": {
+                          "nbtType": "string",
+                          "nbt": "cr"
+                        },
+                        "Color": {
+                          "nbtType": "int",
+                          "nbt": 1
+                        }
+                      }
+                    },
+                    {
+                      "nbtType": "compound",
+                      "nbt": {
+                        "Pattern": {
+                          "nbtType": "string",
+                          "nbt": "cs"
+                        },
+                        "Color": {
+                          "nbtType": "int",
+                          "nbt": 15
+                        }
+                      }
+                    },
+                    {
+                      "nbtType": "compound",
+                      "nbt": {
+                        "Pattern": {
+                          "nbtType": "string",
+                          "nbt": "ms"
+                        },
+                        "Color": {
+                          "nbtType": "int",
+                          "nbt": 15
+                        }
+                      }
+                    },
+                    {
+                      "nbtType": "compound",
+                      "nbt": {
+                        "Pattern": {
+                          "nbtType": "string",
+                          "nbt": "sc"
+                        },
+                        "Color": {
+                          "nbtType": "int",
+                          "nbt": 1
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Lore": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "The flag of a barbarian nation"
+                    }
+                  ]
+                },
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Banner of Conquest"
+                }
+              }
+            },
+            "AttributeModifiers": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "UUIDMost": {
+                      "nbtType": "int",
+                      "nbt": 99
+                    },
+                    "UUIDLeast": {
+                      "nbtType": "int",
+                      "nbt": 114230300
+                    },
+                    "Amount": {
+                      "nbtType": "int",
+                      "nbt": 1
+                    },
+                    "Slot": {
+                      "nbtType": "string",
+                      "nbt": "offhand"
+                    },
+                    "AttributeName": {
+                      "nbtType": "string",
+                      "nbt": "generic.attackDamage"
+                    },
+                    "Name": {
+                      "nbtType": "string",
+                      "nbt": "generic.attack_damage"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}
