@@ -8,9 +8,6 @@
 // cheese blocks
 <rats:block_of_cheese>.addTooltip("Aged to inedibility.");
 
-// Animania mud
-<animania:block_mud>.displayName = "Wallowing Mud";
-
 // prospects tool usage notes
 <prospects:pan>.addTooltip("Right-click on any underwater block to search for nuggets.");
 <prospects:pan>.addTooltip("Results indicate larger deposits below.");
