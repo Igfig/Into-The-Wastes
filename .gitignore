@@ -11,7 +11,8 @@ logs
 output
 pmdumper
 saves
-screenshots
+screenshots/*
+!/screenshots/panoramas
 shaderpacks
 /*.json
 /*.log
