@@ -13,7 +13,6 @@ pmdumper
 saves
 screenshots/*
 !/screenshots/panoramas
-shaderpacks
 /*.json
 /*.log
 /*.lnk

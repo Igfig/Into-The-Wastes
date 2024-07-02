@@ -11,7 +11,4 @@ If you experience further issues, submit a ticket at https://github.com/Igfig/In
 Do not under any circumstances update MixinBootstrap or Animania Base. Recent versions contain bugs that prevent the game from starting (MixinBootstrap) and disable custom advancements (Animania).
 
 ## Optifine
-You will need to install Optifine separately, due to copyright restrictions. Download https://optifine.net/adloadx?f=OptiFine_1.12.2_HD_U_G5.jar and place jar in the /mods folder.
-
-### Recommended shaders
-I recommend BSL Shaders for the best experience in this pack. Download https://www.curseforge.com/minecraft/shaders/bsl-shaders/files/3229524 and place zip in the /shaderpacks folder.
+You will need to install Optifine separately, due to copyright restrictions. Download https://optifine.net/adloadx?f=OptiFine_1.12.2_HD_U_G5.jar and place the file in the /mods folder.
