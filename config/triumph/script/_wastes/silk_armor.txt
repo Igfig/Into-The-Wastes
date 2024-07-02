@@ -1,0 +1,17 @@
+setIcon("silkarmor:silk_cloth")
+setTitle("Silk Armor")
+setDescription("Craft some silk armor to keep yourself cool.")
+setFrameType("goal")
+addParent("_wastes:silk")
+
+criteria = addCriteria("head", "minecraft:inventory_changed")
+criteria.addItem("silkarmor:silk_helmet")
+criteria = addCriteria("chest", "minecraft:inventory_changed")
+criteria.addItem("silkarmor:silk_body")
+criteria = addCriteria("legs", "minecraft:inventory_changed")
+criteria.addItem("silkarmor:silk_legs")
+criteria = addCriteria("boots", "minecraft:inventory_changed")
+criteria.addItem("silkarmor:silk_boots")
+
+setRequirements("any")
+setPos(104,-167)

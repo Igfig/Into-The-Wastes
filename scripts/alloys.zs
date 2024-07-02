@@ -16,3 +16,20 @@ mods.foundry.AlloyingCrucible.addRecipe(<liquid:ender> * 1, <liquid:refined_fuel
 // purify water using steam
 
 mods.foundry.AlloyingCrucible.addRecipe(<liquid:purified_water> * 4, <liquid:water> * 3, <liquid:steam> * 1);
+
+
+// convert distilled water to purified water
+
+mods.foundry.AlloyingCrucible.addRecipe(<liquid:purified_water> * 10, <liquid:distilledwater> * 9, <liquid:purified_water> * 1);
+
+
+// these don't use the alloying crucible but they're still water purification
+
+recipes.addShapeless(
+	"distilled_water_to_purified__iron", 
+	<forge:bucketfilled>.withTag({FluidName: "purified_water", Amount: 1000}),
+	[<forge:bucketfilled>.withTag({FluidName: "distilledwater", Amount: 1000}).noReturn()]);
+recipes.addShapeless(
+	"distilled_water_to_purified__clay", 
+	<ceramics:clay_bucket>.withTag({fluids: {FluidName: "purified_water", Amount: 1000}}),
+	[<ceramics:clay_bucket>.withTag({fluids: {FluidName: "distilledwater", Amount: 1000}}).noReturn()]);

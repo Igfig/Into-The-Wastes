@@ -1,0 +1,31 @@
+{
+    "name": "Introduction",
+    "icon": "minecraft:writable_book",
+    "category": "patchouli:introduction",
+    "pages": [
+		{
+			"type": "text",
+			"text": "The world is endless, barren desert. Only in a few hidden oases do rains still fall, trees still grow, and the earth still give up its bounty of ores.$(br2)$(bold)This is a modpack about survival.$() Heat and thirst must be carefully managed. Food and natural resources are rare, and must be cultivated, hoarded, and protected from spoilage."
+		},
+		{
+			"type": "text",
+			"text": "$(bold)This is a modpack about starting over.$() Every time you die, your spawn is randomized. You can find your base again, but first you'll need to scrabble your way back out of the sands with only a stone knife and a raw rabbit."
+		},
+		{
+			"type": "text",
+			"text": "$(bold)This is a modpack about travel.$() No oasis has all of the resources you need, but what resources there are can be found in amounts far greater than you can carry. You'll have to saddle up lines of llamas, horse carts, and train cars to transport all of your goods back home; as you become more accustomed to the Wastes, you'll be able to travel farther from home, to even richer lands."
+		},
+		{
+			"type": "text",
+			"text": "$(bold)This is a modpack about skill.$() Rather than long tech trees, the only barriers to progress are how cleanly you strike the anvil, how deeply you cherish your animals, how delicately you season your food, and how cunningly you build your machines."
+		},
+		{
+			"type": "text",
+			"text": "But most of all, $(bold)this is a modpack about exploration.$() Crossing the Wastes is arduous, and oases are few and far between. But each oasis means a new ore to mine, a new food to eat, a new animal to tame. Your only option is to keep pushing outwards, blazing new trails to new lands and beyond."
+		},
+		{
+			"type": "text",
+			"text": "$(bold)All in the hopes of maybe, someday, finding a place where there is no sand and no thirst. $(#080)Only life."
+		}
+    ]
+}

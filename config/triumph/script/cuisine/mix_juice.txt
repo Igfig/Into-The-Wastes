@@ -1,0 +1,10 @@
+setIcon(<cuisine:drinkro>)
+setTitle("Now With Double the Juice")
+setDescription("Use a Drinkro to mix two or more juices into a single multi-serving drink.")
+addParent("cuisine:press_juice")
+setFrameType("goal")
+
+criteria = addCriteria("drink", "minecraft:inventory_changed")
+criteria.addItem("cuisine:drink")
+
+setPos(104,113)

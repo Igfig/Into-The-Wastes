@@ -1,0 +1,64 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Farm Stock",
+  "items": [
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "reccomplex:inventory_generation_single_tag",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "itemCollectionKey": {
+              "nbtType": "string",
+              "nbt": "Seeds"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 2.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "reccomplex:inventory_generation_single_tag",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "itemCollectionKey": {
+              "nbtType": "string",
+              "nbt": "Saplings"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.05,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "reccomplex:inventory_generation_single_tag",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "itemCollectionKey": {
+              "nbtType": "string",
+              "nbt": "Eggs"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

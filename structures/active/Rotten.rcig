@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Rotten",
+  "items": [
+    {
+      "weight": 1.5,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "foodfunk:rotten_food",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:rotten_flesh",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "foodfunk:rotted_item",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.2,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "foodfunk:spoiled_milk",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.01,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "iceandfire:rotten_egg",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

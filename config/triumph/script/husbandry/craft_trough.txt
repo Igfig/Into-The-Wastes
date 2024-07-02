@@ -1,0 +1,23 @@
+setIcon("animania:block_trough")
+setTitle("Feeding Time")
+setDescription("Make a trough for your animals to feed and drink from. Animals breed on their own if they're well-fed and watered. You can see what each animal eats in the Animania guide.")
+addParent("husbandry:root")
+drawDirectLines()
+
+visibleIf("husbandry:feed_chicken")
+visibleIf("husbandry:feed_cow")
+visibleIf("husbandry:feed_ferret")
+visibleIf("husbandry:feed_goat")
+visibleIf("husbandry:feed_hamster")
+visibleIf("husbandry:feed_hedgehog")
+visibleIf("husbandry:feed_horse")
+visibleIf("husbandry:feed_peafowl")
+visibleIf("husbandry:feed_pig")
+visibleIf("husbandry:feed_rabbit")
+visibleIf("husbandry:feed_sheep")
+alwaysHidden()
+
+criteria = addCriteria("crafted", "minecraft:inventory_changed")
+criteria.addItem("animania:block_trough")
+
+setPos(0,37)

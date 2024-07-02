@@ -1,0 +1,9 @@
+setIcon("mysticalworld:silk_thread")
+setTitle("Silk")
+setDescription("Hatch a silkworm from an egg, wait for it to drop a cocoon, and craft that into silk thread.")
+addParent("_wastes:silkworm")
+
+criteria = addCriteria("thread", "minecraft:inventory_changed")
+criteria.addItem("mysticalworld:silk_thread")
+
+setPos(71,-167)

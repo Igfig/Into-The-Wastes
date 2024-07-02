@@ -1,0 +1,19 @@
+{
+    "name": "Temperature",
+    "icon": "toughasnails:thermometer",
+    "category": "patchouli:tips",
+    "pages": [
+		{
+			"type": "text",
+			"text": "The air gets colder the higher you go. Keeping to the mountain tops is a slow-going but effective way to stay cool while you travel!$(br2)Sprinting overheats and dehydrates you quickly. Spend most of your time walking unless there's an emergency."
+		},
+		{
+			"type": "text",
+			"text": "Burning up with hyperthermia? Get underground! The more rock and earth above you, the cooler you'll be."
+		},
+		{
+			"type": "text",
+			"text": "Some blocks increase or decrease the temperature around them.$(br2)Anything visibly burning will make you hotter; water, ice, snow, and leaves will cool you down."
+		}
+    ]
+}

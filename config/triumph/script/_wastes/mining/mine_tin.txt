@@ -1,0 +1,9 @@
+setIcon(<prospects:flower:13>)
+setTitle("Tin Prospector")
+setDescription("Find a tin deposit under a patch of Tansy flowers")
+addParent("_wastes:biomes/oasis_warm")
+drawDirectLines()
+
+criteria = addCriteria("mine_tin", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:ore_tin>)
+setPos(5,-98)

@@ -1,0 +1,9 @@
+setIcon(<foodfunk:icebox>)
+setTitle("Icebox")
+setDescription("Craft an Icebox to make your food take 100x as long to rot.")
+addParent("cuisine:esky")
+
+criteria = addCriteria("item", "minecraft:inventory_changed")
+criteria.addItem("foodfunk:icebox")
+
+setPos(104,-38)

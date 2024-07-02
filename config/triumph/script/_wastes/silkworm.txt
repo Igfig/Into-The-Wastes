@@ -1,0 +1,9 @@
+setIcon("mysticalworld:silkworm_egg")
+setTitle("Silkworm")
+setDescription("Find a silkworm egg by breaking birch leaves")
+addParent("_wastes:biomes/oasis_warm")
+
+criteria = addCriteria("egg", "minecraft:inventory_changed")
+criteria.addItem("mysticalworld:silkworm_egg")
+
+setPos(38,-167)

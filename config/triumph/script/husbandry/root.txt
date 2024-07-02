@@ -1,0 +1,16 @@
+setIcon(<minecraft:carrot_on_a_stick>)
+setTitle("Husbandry")
+setDescription("Learn about the care and breeding of animals")
+setBackground("minecraft:textures/blocks/hay_block_side.png")
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("roots", "triumph:completed_advancement")
+criteria.setAdvancement("roots:pacifist")
+criteria = addCriteria("animania", "triumph:completed_advancement")
+criteria.setAdvancement("_wastes:guides/animania")
+criteria = addCriteria("zawa", "triumph:completed_advancement")
+criteria.setAdvancement("_wastes:guides/zawa")
+
+setRequirements("any")
+setPos(0,0)

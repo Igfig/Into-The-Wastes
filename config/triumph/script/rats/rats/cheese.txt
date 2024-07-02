@@ -1,0 +1,17 @@
+setIcon("animania:friesian_cheese_wedge")
+setTitle("We've Forgotten the Crackers!")
+setDescription("Craft a cheese wheel and a carving knife into four cheese wedges")
+addParent("rats:rats/milk_cauldron")
+
+criteria = addCriteria("friesian_cheese_wedge", "minecraft:inventory_changed")
+criteria.addItem("animania:friesian_cheese_wedge")
+criteria = addCriteria("holstein_cheese_wedge", "minecraft:inventory_changed")
+criteria.addItem("animania:holstein_cheese_wedge")
+criteria = addCriteria("jersey_cheese_wedge", "minecraft:inventory_changed")
+criteria.addItem("animania:jersey_cheese_wedge")
+criteria = addCriteria("goat_cheese_wedge", "minecraft:inventory_changed")
+criteria.addItem("animania:goat_cheese_wedge")
+criteria = addCriteria("sheep_cheese_wedge", "minecraft:inventory_changed")
+criteria.addItem("animania:sheep_cheese_wedge")
+
+setRequirements("any")

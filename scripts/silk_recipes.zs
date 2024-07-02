@@ -1,4 +1,4 @@
-val silkCloth = <materialpart:silk:cloth>;
+val silkCloth = <silkarmor:silk_cloth>;
 val silkThread = <mysticalworld:silk_thread>;
 
 
@@ -14,27 +14,6 @@ recipes.addShapeless("silk_thread", silkThread, [<mysticalworld:silk_cocoon>]);
 recipes.addShapeless("silk_thread_spindle", silkThread * 2, [<mysticalworld:silk_cocoon>, <mysticalworld:spindle>]);
 
 
-// silk cloth
+// silk cloth uses actual silk
 
-recipes.addShaped("silk_cloth", silkCloth, [
-	[silkThread, silkThread, silkThread],
-	[silkThread, silkThread, silkThread], 
-	[silkThread, silkThread, silkThread]]);
-
-
-// silk armor
-	
-recipes.addShaped("silk_helmet", <contenttweaker:silk_head>, [
-	[silkCloth, silkCloth, silkCloth],
-	[silkCloth, null, silkCloth]]); 
-recipes.addShaped("silk_chestplate", <contenttweaker:silk_chest>, [
-	[silkCloth, null, silkCloth],
-	[silkCloth, silkCloth, silkCloth],
-	[silkCloth, silkCloth, silkCloth]]);
-recipes.addShaped("silk_leggings", <contenttweaker:silk_legs>, [
-	[silkCloth, silkCloth, silkCloth],
-	[silkCloth, null, silkCloth], 
-	[silkCloth, null, silkCloth]]);
-recipes.addShaped("silk_boots", <contenttweaker:silk_feet>, [
-	[silkCloth, null, silkCloth], 
-	[silkCloth, null, silkCloth]]);
+recipes.replaceAllOccurences(<minecraft:string>, silkThread, silkCloth);

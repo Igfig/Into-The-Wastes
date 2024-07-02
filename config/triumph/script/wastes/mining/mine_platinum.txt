@@ -1,9 +1,0 @@
-setIcon(<prospects:pick>)
-setTitle("Platinum Prospector")
-setDescription("Find a platinum deposit using a gold pan, prospector's pick, or sifting pan")
-addParent("wastes:oasis_cold")
-drawDirectLines()
-
-criteria = addCriteria("mine_platinum", "minecraft:inventory_changed")
-criteria.addItem(<thermalfoundation:ore:6>)
-setPos(71,-78)

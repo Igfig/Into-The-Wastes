@@ -1,0 +1,9 @@
+setIcon("rats:ratglove_petals")
+setTitle("Rats")
+setDescription("Rat Patootie")
+setBackground("rats:textures/blocks/cheese.png")
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("rat", "minecraft:player_hurt_entity")
+criteria.setEntityType("rats:rat")

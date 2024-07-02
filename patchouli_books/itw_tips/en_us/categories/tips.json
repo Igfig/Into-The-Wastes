@@ -1,0 +1,6 @@
+{
+    "name": "Tips",
+    "description": "All the tips you see on loading screens, collected in one place.",
+    "icon": "quark:lit_lamp",
+	"sortnum": 1
+}

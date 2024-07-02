@@ -1,0 +1,246 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Unique",
+  "items": [
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "iceandfire:sheep_chestplate",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Quark:RuneColor": {
+              "nbtType": "int",
+              "nbt": 7
+            },
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 1
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 6
+                    }
+                  }
+                }
+              ]
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Lore": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "Anyone with any fashion sense respects the drip"
+                    }
+                  ]
+                },
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Jacket With Drip"
+                }
+              }
+            },
+            "Quark:RuneAttached": {
+              "nbtType": "byte",
+              "nbt": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "roots:wildwood_chestplate",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 4
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 7
+                    }
+                  }
+                }
+              ]
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Thorn Thorax"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:leather_chestplate",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Quark:RuneColor": {
+              "nbtType": "int",
+              "nbt": 7
+            },
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 2
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 2
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 1
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 0
+                    }
+                  }
+                }
+              ]
+            },
+            "Quark:ItemNameDye": {
+              "nbtType": "int",
+              "nbt": 11
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "color": {
+                  "nbtType": "int",
+                  "nbt": 1908001
+                },
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Biker Jacket"
+                }
+              }
+            },
+            "Quark:RuneAttached": {
+              "nbtType": "byte",
+              "nbt": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:chainmail_chestplate",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Quark:RuneColor": {
+              "nbtType": "int",
+              "nbt": 16
+            },
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 3
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 0
+                    }
+                  }
+                }
+              ]
+            },
+            "Quark:ItemNameDye": {
+              "nbtType": "int",
+              "nbt": 5
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Lore": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "You\u0027re never too sexy for this shirt"
+                    },
+                    {
+                      "nbtType": "string",
+                      "nbt": "Always use protection"
+                    }
+                  ]
+                },
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Right Said Fred"
+                }
+              }
+            },
+            "Quark:RuneAttached": {
+              "nbtType": "byte",
+              "nbt": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

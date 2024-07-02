@@ -1,9 +1,0 @@
-setIcon(<cuisine:placed_dish>)
-setTitle("Crockery")
-setDescription("Use fired porcelain bricks to make a plate")
-addParent("wastes:ceramics/craft_porcelain")
-
-criteria = addCriteria("craft_plate", "minecraft:inventory_changed")
-criteria.addItem(<cuisine:placed_dish>)
-
-setPos(71,4)

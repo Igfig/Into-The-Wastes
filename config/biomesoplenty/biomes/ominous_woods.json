@@ -2,7 +2,7 @@
   "fillerBlock": {
     "block": "minecraft:dirt",
     "properties": {
-      "snowy": "false"
+      "snowy": "false",
       "variant": "dirt"
     }
   },

@@ -1,0 +1,407 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "WoodStorage",
+  "items": [
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:planks",
+        "damage": 5,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:planks",
+        "damage": 1,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:planks",
+        "damage": 3,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:planks",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:planks",
+        "damage": 2,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:planks",
+        "damage": 4,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "quark:vertical_planks",
+        "damage": 5,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "quark:vertical_planks",
+        "damage": 1,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "quark:vertical_planks",
+        "damage": 3,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "quark:vertical_planks",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "quark:vertical_planks",
+        "damage": 2,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "quark:vertical_planks",
+        "damage": 4,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "minecraft:log2",
+        "damage": 1,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "minecraft:log",
+        "damage": 1,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "minecraft:log",
+        "damage": 3,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "minecraft:log",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "minecraft:log",
+        "damage": 2,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "minecraft:log2",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "futuremc:stripped_dark_oak_wood",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "futuremc:stripped_spruce_wood",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "futuremc:stripped_jungle_wood",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "futuremc:stripped_oak_wood",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "futuremc:stripped_birch_wood",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "futuremc:stripped_acacia_wood",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.2,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "biomesoplenty:log_0",
+        "damage": 5,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.2,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "biomesoplenty:log_2",
+        "damage": 4,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.2,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "biomesoplenty:log_0",
+        "damage": 4,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.2,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "biomesoplenty:log_1",
+        "damage": 5,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.2,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "biomesoplenty:log_0",
+        "damage": 6,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.2,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "environs:cypress_log",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.2,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "biomesoplenty:log_3",
+        "damage": 6,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.2,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "biomesoplenty:log_3",
+        "damage": 7,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.2,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "environs:frozen_log",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.2,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "cuisine:log",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.2,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "mysticalworld:charred_log",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.2,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "wildnature:palm_log",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.2,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "wildnature:apple_log",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.2,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "wildnature:cedar_log",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.25,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "quark:stained_planks",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:stick",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

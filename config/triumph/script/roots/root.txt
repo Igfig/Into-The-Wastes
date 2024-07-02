@@ -1,0 +1,9 @@
+setIcon("roots:living_hoe")
+setTitle("Roots 3")
+setDescription("Embrace the power of nature!")
+setBackground("roots:textures/blocks/runestone.png")
+setShowToast(false)
+setAnnounceToChat(false)
+
+criteria = addCriteria("wildroot", "minecraft:inventory_changed")
+criteria.addItem("roots:wildroot")

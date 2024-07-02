@@ -1,0 +1,227 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Stone",
+  "items": [
+    {
+      "weight": 8.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:cobblestone",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 4.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:stone",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 4.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:stonebrick",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:stone",
+        "damage": 3,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:stone",
+        "damage": 1,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:stone",
+        "damage": 5,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:sandstone",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:red_sandstone",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "biomesoplenty:white_sandstone",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "quark:soul_sandstone",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "quark:marble",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "quark:limestone",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "environs:dried_cobblestone",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "railcraft:brick_quarried",
+        "damage": 5,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "railcraft:brick_sandy",
+        "damage": 5,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "railcraft:brick_red_sandy",
+        "damage": 5,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "traverse:red_rock_cobblestone",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "chisel:basalt",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "wildnature:basalt",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "earthworks:block_slate",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "earthworks:block_slate_purple",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "earthworks:block_slate_green",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

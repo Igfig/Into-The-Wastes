@@ -1,0 +1,53 @@
+{
+  "data": {
+    "environmentMatcher": "",
+    "transformers": [
+      {
+        "type": "replaceAll",
+        "transformer": {
+          "uniform": false,
+          "id": "decayRoadSurface",
+          "sourceExpression": "quark:sandstone_new",
+          "destination": [
+            {
+              "weight": 60.0,
+              "block": "quark:sandstone_new",
+              "metadata": 1,
+              "tileEntity": "null"
+            },
+            {
+              "block": "quark:sandstone_bricks_slab",
+              "metadata": 0,
+              "tileEntity": "null"
+            },
+            {
+              "block": "minecraft:sandstone",
+              "metadata": 0,
+              "tileEntity": "null"
+            },
+            {
+              "block": "minecraft:sand",
+              "metadata": 0,
+              "tileEntity": "null"
+            }
+          ]
+        }
+      },
+      {
+        "type": "pillar",
+        "transformer": {
+          "id": "pillar_27c10124",
+          "sourceExpression": "reccomplex:generic_solid \u0026 metadata\u003d2",
+          "dest": "minecraft:sandstone",
+          "destMetadata": 0
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Road Erosion",
+    "description": [
+      "Erode Road Surface"
+    ]
+  }
+}

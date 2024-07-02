@@ -1,0 +1,10 @@
+setIcon(<foodfunk:freezer>)
+setTitle("Freezer")
+setDescription("Craft a Freezer to make your food stop rotting entirely.")
+addParent("cuisine:icebox")
+setFrameType("challenge")
+
+criteria = addCriteria("item", "minecraft:inventory_changed")
+criteria.addItem("foodfunk:freezer")
+
+setPos(137,-38)

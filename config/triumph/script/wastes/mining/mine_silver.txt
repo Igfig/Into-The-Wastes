@@ -1,9 +1,0 @@
-setIcon(<prospects:flower:7>)
-setTitle("Silver Prospector")
-setDescription("Find a silver deposit under a patch of Indian Mustard")
-addParent("wastes:oasis_cool")
-drawDirectLines()
-
-criteria = addCriteria("mine_silver", "minecraft:inventory_changed")
-criteria.addItem(<thermalfoundation:ore:2>)
-setPos(38,-101)

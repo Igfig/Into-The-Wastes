@@ -36,7 +36,20 @@ recipes.addShaped("tranquilizer_gun", <zawa:tranquilizer_gun>, [
 	[<ore:plateSteel>,<ore:plateBronze>,<railcraft:rail:4>], // reinforced rail
 	[<minecraft:gunpowder>,<ore:plankWood>,<minecraft:lever>],
 	[<ore:logWood>,null,null]]);
-	
+
+
+// add recipes for decorative stones
+
+recipes.addShapedMirrored("river_stone", <zawa:river_stone>*4, [
+	[<ore:gravel>, <minecraft:stone:5>], // andesite
+	[<minecraft:stone:5>, <ore:gravel>]]);
+recipes.addShapedMirrored("mixed_stone", <zawa:mixed_stone>*4, [
+	[<ore:gravel>, <ore:cobblestone>],
+	[<ore:cobblestone>, <ore:gravel>]]);
+recipes.addShapedMirrored("mixed_stone_mossy", <zawa:mixed_stone_mossy>*4, [
+	[<ore:gravel>, <ore:mossyCobblestone>],
+	[<ore:mossyCobblestone>, <ore:gravel>]]);
+
 	
 // replace wetsuit recipe to not conflict with clay armour
 
@@ -56,7 +69,14 @@ recipes.addShaped("zawa_steel_bars", <zawa:steel_bars> * 6, [
 	[ironBars,ironBars,ironBars],
 	[ironBars,ironBars,ironBars]]);
 	
-	
+// rename some other blocks
+<zawa:steel_grate>.displayName = "Cage Bars Slab";
+<zawa:steelbar_door>.displayName = "Cage Door";
+<zawa:campfire>.displayName = "Decorative Campfire";
+<zawa:campfire>.addTooltip("Produces no warmth and cannot cook");
+<zawa:campfire>.addShiftTooltip("\"Sounds like my wife!\" ");
+
+
 // make fur-to-leather recipe produce less, to make meerkats less OP in the early game
 // ditto scales-to-leather, so that it's not way better than the others
 

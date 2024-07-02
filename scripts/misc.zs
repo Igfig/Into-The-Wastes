@@ -1,29 +1,3 @@
-// rationale for why potions make you thirsty
-<minecraft:nether_wart>.addTooltip("Unexpectedly salty.");
-
-// undocumented item sources
-<toughasnails:ice_cube>.addTooltip("Drops from ice blocks.");
-<toughasnails:magma_shard>.addTooltip("Drops from magma blocks.");
-
-// hopper pipes
-<inspirations:pipe>.displayName = "Hopper Pipe";
-<inspirations:pipe>.addTooltip("Input with a hopper. Output to a container, crucible, or chute.");
-
-// cheese blocks
-<rats:block_of_cheese>.addTooltip("Aged to inedibility.");
-
-// Animania mud
-<animania:block_mud>.displayName = "Wallowing Mud";
-
-// prospects tool usage notes
-<prospects:pan>.addTooltip("Right-click on any underwater block to search for nuggets.");
-<prospects:pan>.addTooltip("Results indicate larger deposits below.");
-<prospects:pick>.addTooltip("Right-click on stone blocks to search for nuggets.");
-<prospects:pick>.addTooltip("Results indicate larger deposits below.");
-<prospects:sifter>.addTooltip("Right-click on dirt blocks to search for nuggets.");
-<prospects:sifter>.addTooltip("Results indicate larger deposits below.");
-
-
 // remove rain collectors (they're strictly worse than barrels or basins)
 mods.jei.JEI.removeAndHide(<toughasnails:rain_collector>);
 
@@ -38,6 +12,14 @@ recipes.addShaped(<minecraft:sponge>, [
 	[cellulose,yellowool,cellulose],
 	[yellowool,sulfurdst,yellowool],
 	[cellulose,yellowool,cellulose]]);
+
+
+// change wrench recipe
+recipes.remove(<base:wrench>, false);
+recipes.addShaped("wrench", <base:wrench>, [
+	[<ore:ingotIron>,null,<ore:ingotIron>],
+	[     null, <ore:ingotIron>, null    ],
+	[     null, <ore:ingotIron>, null    ]]);
 
 
 // erase written books
@@ -73,3 +55,23 @@ recipes.replaceAllOccurences(<ore:listAllwater>, realAllWater);
 recipes.removeByRecipeName("cuisine:dough");
 recipes.addShapeless(<cuisine:food:2> * 2, [<ore:foodFlour>, realAllWater]); // dough
 furnace.addRecipe(<minecraft:bread>, <cuisine:food:1>); // flour
+
+
+// replace redundant gunpowder recipes
+
+recipes.removeByRecipeName("valoegheses_be:gunpowder_vbe");
+recipes.removeByRecipeName("thermalfoundation:gunpowder");
+recipes.removeByRecipeName("thermalfoundation:gunpowder_1");
+recipes.removeByRecipeName("railcraft:minecraft_gunpowder$1");
+recipes.addShapeless(<minecraft:gunpowder>, [<ore:dustCoal> | <ore:dustCharcoal>, <ore:dustSulfur>, <ore:dustSaltpeter>, <ore:dustSaltpeter>]);
+
+
+// replace redundant nametag recipes
+
+recipes.removeByRecipeName("animania:name_tag");
+recipes.removeByRecipeName("essentials:name_tag");
+recipes.addShapeless(<minecraft:name_tag>, [<ore:string>, <ore:paper>, <ore:nuggetGold>]);
+
+// remove redundant lead recipe
+
+recipes.removeByRecipeName("animania:lead");

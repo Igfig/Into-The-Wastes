@@ -1,0 +1,13 @@
+setIcon("grapplemod:grapplinghook")
+setTitle("Grapple Check")
+setDescription("Make a grappling hook from rope and a bronze pick head to make traversal even easier")
+addParent("_wastes:craft_rope")
+addParent("_wastes:mining/mine_tin")
+
+visibleIf("_wastes:grapple/craft_grapple")
+hiddenUnless("_wastes:craft_rope")
+
+criteria = addCriteria("hook", "minecraft:inventory_changed")
+criteria.addItem("grapplemod:grapplinghook")
+
+setPos(38,30)

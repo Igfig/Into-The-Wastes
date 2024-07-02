@@ -9,10 +9,11 @@ val cool2 = [
 
 val cool1 = [
 	<quark:archaeologist_hat>,
-	<contenttweaker:silk_head>,
-	<contenttweaker:silk_chest>,
-	<contenttweaker:silk_legs>,
-	<contenttweaker:silk_feet>,
+	<rats:archeologist_hat>,
+	<silkarmor:silk_helmet>,
+	<silkarmor:silk_body>,
+	<silkarmor:silk_legs>,
+	<silkarmor:silk_boots>,
 	<zawa:reptile_chest>,
 	<zawa:reptile_legs>,
 	<zawa:reptile_boots>,

@@ -1,0 +1,9 @@
+setIcon(<foundry:mold, meta:0>)
+setTitle("Ingot Mold")
+setDescription("Craft an ingot mold from raw porcelain and any ingot")
+
+addParent("industry:craft_porcelain")
+
+criteria = addCriteria("mold", "minecraft:inventory_changed")
+criteria.addItem(<foundry:mold, meta:0>)
+setPos(64,81)

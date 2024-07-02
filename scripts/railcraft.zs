@@ -47,6 +47,19 @@ recipes.replaceAllOccurences(<minecraft:diamond_pickaxe>,<thermalfoundation:tool
 recipes.replaceAllOccurences(<minecraft:diamond_shovel>,<thermalfoundation:tool.shovel_steel>,<railcraft:mow_undercutter>);
 
 
+// remove invar and nickel glass recipes (and one other mysterious one)
+
+recipes.removeByRecipeName("railcraft_glass#04");
+recipes.removeByRecipeName("railcraft_glass#05");
+recipes.removeByRecipeName("railcraft_glass#06");
+recipes.removeByRecipeName("railcraft_glass#0$4");
+recipes.removeByRecipeName("railcraft_glass#0$5");
+recipes.removeByRecipeName("railcraft_glass#0$6");
+recipes.removeByRecipeName("railcraft_glass#0$4_modified");
+recipes.removeByRecipeName("railcraft_glass#0$5_modified");
+recipes.removeByRecipeName("railcraft_glass#0$6_modified");
+
+
 // crushed obsidian
 
 recipes.addShaped("crushed_obsidian", <railcraft:generic:7> * 4, [

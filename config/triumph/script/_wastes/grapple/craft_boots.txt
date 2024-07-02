@@ -1,0 +1,10 @@
+setIcon(<grapplemod:longfallboots>)
+setTitle("Just Like in Portal")
+setDescription("Make a pair of Long Fall Boots to negate fall damage.")
+
+addParent("_wastes:grapple/craft_grapple_block")
+
+criteria = addCriteria("boots", "minecraft:inventory_changed")
+criteria.addItem(<grapplemod:longfallboots>)
+
+setPos(134,17)

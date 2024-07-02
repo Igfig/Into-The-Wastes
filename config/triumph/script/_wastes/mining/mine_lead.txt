@@ -1,0 +1,9 @@
+setIcon(<prospects:flower:5>)
+setTitle("Lead Prospector")
+setDescription("Find a lead deposit under a patch of Leadplants")
+addParent("_wastes:biomes/oasis_cool")
+drawDirectLines()
+
+criteria = addCriteria("mine_lead", "minecraft:inventory_changed")
+criteria.addItem(<thermalfoundation:ore:3>)
+setPos(38,-98)
