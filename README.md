@@ -2,16 +2,20 @@
 A hostile survival and exploration modpack for Minecraft 1.12.2
 by digby
 
-## Troubleshooting
-If the game seems choppy or laggy, increase the allocated RAM to at least 6GB. In the Curseforge launcher: open the Into the Wastes profile, click the three dots in the top right corner, then select Profile Options in the dropdown. Uncheck the "Use System Memory Settings" checkbox, set the slider to at least 6400MB, and click the Done button.
+## Minimum system requiements
+8GB of RAM
+Stable internet connection
 
+## Starting the Server
+Run the "RUNME.bat" script to start the server. If the server doesn't start, proceed to the next section.
+
+## Java Troubleshooting
+This modpack requires Java 8. If you've installed the client modpack (or any other pre-1.17 modpack) from the CurseForge launcher on this machine, you should already have the right version of Java installed. In this case the RUNME.bat script should work out of the box. 
+
+If not, you may need to download Java 8. Go to https://www.java.com/en/download/manual.jsp, 
+download a Java 8 version appropriate to your OS, and install it. Copy the path to the installation's java.exe; it should look something like "C:\Program Files\Java\jre1.8.0_301\bin\java.exe".
+
+Next, open RUNME.bat in a text editor (e.g. Notepad). Replace the path in the second line with the path to your Java 8 install's java.exe, in quotes. Now if you run RUNME.bat, the server should start correctly.
+
+## Further Troubleshooting
 If you experience further issues, submit a ticket at https://github.com/Igfig/Into-The-Wastes/issues
-
-## Installation Notes
-Do not under any circumstances update MixinBootstrap or Animania Base. Recent versions contain bugs that prevent the game from starting (MixinBootstrap) and disable custom advancements (Animania).
-
-## Optifine
-You will need to install Optifine separately, due to copyright restrictions. Download https://optifine.net/adloadx?f=OptiFine_1.12.2_HD_U_G5.jar and place jar in the /mods folder.
-
-### Recommended shaders
-I recommend BSL Shaders for the best experience in this pack. Download https://www.curseforge.com/minecraft/shaders/bsl-shaders/files/3229524 and place zip in the /shaderpacks folder.
