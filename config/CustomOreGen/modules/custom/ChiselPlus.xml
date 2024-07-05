@@ -1,0 +1,48 @@
+<!-- =================================================================
+     Custom Ore Generation "Chisel Plus" Module
+     ================================================================= -->
+
+
+<IfModInstalled name="chisel_plus">
+
+  <!-- Starting Configuration for Custom Ore Generation. -->
+  <ConfigSection>
+
+    <!-- Setup Screen Configuration -->
+    <ConfigSection></ConfigSection>
+    <!-- Setup Screen Complete -->
+
+    <!-- Overworld Setup Beginning -->
+
+    <IfCondition condition=':= ?COGActive'>
+
+      <!-- Starting Original "Overworld" Block Removal -->
+
+      <IfCondition condition=':= ?blockExists("minecraft:stone")'>
+        <Substitute name='cpOverworldBlockSubstitute0' block='minecraft:stone'>
+          <Description>
+            Remove all Chisel Plus ores.
+          </Description>
+          <Replaces block='chisel_plus:amber_ore' weight='1.0' />
+        </Substitute>
+      </IfCondition>
+
+      <!-- Original "Overworld" Block Removal Complete -->
+
+    </IfCondition>
+
+  </ConfigSection>
+  <!-- Configuration for Custom Ore Generation Complete! -->
+
+</IfModInstalled>
+<!-- The "Chisel Plus" mod is now configured. -->
+
+
+
+<!-- =================================================================
+     This file was made using the Sprocket Advanced Configuration
+     Generator.  If you wish to make your own configurations for a mod
+     not currently supported by Custom Ore Generation, and you don't
+     want the hassle of writing XML, you can find the generator script
+     at its GitHub page: http://https://github.com/reteo/Sprocket
+     ================================================================= -->
