@@ -17,5 +17,8 @@ download a Java 8 version appropriate to your OS, and install it. Copy the path 
 
 Next, open RUNME.bat in a text editor (e.g. Notepad). Replace the path in the second line with the path to your Java 8 install's java.exe, in quotes. Now if you run RUNME.bat, the server should start correctly.
 
+## Installation Notes
+Do not under any circumstances update MixinBootstrap, Entity Culling, or Animania Base. Recent versions contain bugs that prevent the game from starting (MixinBootstrap), break tile entity rendering (Entiy Culling), and disable custom advancements (Animania).
+
 ## Further Troubleshooting
 If you experience further issues, submit a ticket at https://github.com/Igfig/Into-The-Wastes/issues
