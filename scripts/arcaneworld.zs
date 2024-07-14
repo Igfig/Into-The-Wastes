@@ -46,6 +46,7 @@ recipes.addShaped("ritual_table", <arcaneworld:ritual_table>, [
 // other new recipes
 
 recipes.replaceAllOccurences(<ore:gemAmethyst>, <ore:gemTopaz>, <arcaneworld:molten_core>);
+recipes.replaceAllOccurences(<ore:blockSapphire>, <ore:gemMalachite>, <arcaneworld:levitator>);
 recipes.addShapedMirrored("evocation_wand", <arcaneworld:fang_wand>, [
 	[null,<ore:ingotGold>,<ore:ingotMithril>],
 	[null,<ore:gemAmber>,<ore:ingotGold>],
@@ -143,13 +144,13 @@ ArcaneWorld.createRitualCreateItem("create_biome_crystal", "Crystal Forge", <arc
 	<minecraft:ender_eye>,<ore:ingotPlatinum>,<ore:grass>,<ore:gemPeridot>,<minecraft:dragon_breath>]);
 	
 ArcaneWorld.createRitualCreateItem("create_glowing_chorus", "Radiant Chorus", <arcaneworld:glowing_chorus>, [
-	<minecraft:ender_eye>,<ore:gemMalachite>,<ore:cropChorusfruit>,<ore:dustGlowstone>,<minecraft:dragon_breath>]);
+	<minecraft:ender_eye>,<ore:gemAmethyst>,<ore:cropChorusfruit>,<ore:dustGlowstone>,<minecraft:dragon_breath>]);
 	
 ArcaneWorld.createRitualDragonBreath("dragon_breath", "Breath of the Dragon", [
-	<minecraft:ender_eye>,<ore:blockPrismarine>,<minecraft:dragon_breath>,<ore:netherrack>,<ore:ingotSilver>]);
+	<minecraft:ender_eye>,<ore:gemMalachite>,<minecraft:dragon_breath>,<ore:netherrack>,<ore:ingotSilver>]);
 	
 ArcaneWorld.createRitualDungeon("dungeon", "Dungeon Raid", [
-	<ore:stonebrick>,<ore:ingotGold>,<ore:blockMalachite>,<ore:ingotGold>,<ore:stonebrick>]);
+	<ore:stonebrick>,<ore:ingotGold>,<ore:blockAmethyst>,<ore:ingotGold>,<ore:stonebrick>]);
 
 ArcaneWorld.createRitualDungeon("wither_arena", "Wither Arena", [
-	<minecraft:soul_sand>,<minecraft:skull:1>,<minecraft:skull:1>,<minecraft:skull:1>,<ore:blockMalachite>]);
+	<minecraft:soul_sand>,<minecraft:skull:1>,<minecraft:skull:1>,<minecraft:skull:1>,<ore:blockAmethyst>]);
