@@ -1,4 +1,8 @@
+import crafttweaker.oredict.IOreDictEntry;
+
+
 // fix display of red coke oven
+
 <railcraft:coke_oven_red>.displayName = "Red Coke Oven Brick";
 <railcraft:coke_oven_red>.addTooltip("Multi-Block: 3x3x3 (Hollow)");
 
@@ -76,3 +80,16 @@ recipes.addShaped("armor_overalls", <railcraft:armor_overalls>, [
 	[blueWool,<ore:ingotIron>,blueWool],
 	[blueWool,      null,     blueWool],
 	[blueWool,      null,     blueWool]]);
+
+
+// re-add recipes for colored metal posts
+
+val postDyes = [<ore:dyeWhite>,<ore:dyeOrange>,<ore:dyeMagenta>,<ore:dyeLightBlue>,<ore:dyeYellow>,<ore:dyeLime>,<ore:dyePink>,<ore:dyeGray>,<ore:dyeLightGray>,<ore:dyeCyan>,<ore:dyePurple>,<ore:dyeBlue>,<ore:dyeBrown>,<ore:dyeGreen>,<ore:dyeRed>,<ore:dyeBlack>] as IOreDictEntry[];
+val anyPost = <railcraft:post_metal:*>;
+
+for i, dye in postDyes {
+	recipes.addShaped(<railcraft:post_metal>.definition.makeStack(i) * 8, [
+		[anyPost,anyPost,anyPost],
+		[anyPost,  dye,  anyPost],
+		[anyPost,anyPost,anyPost]]);
+}
