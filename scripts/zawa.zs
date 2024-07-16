@@ -72,7 +72,7 @@ recipes.addShaped("zawa_steel_bars", <zawa:steel_bars> * 6, [
 // rename some other blocks
 <zawa:steel_grate>.displayName = "Cage Bars Slab";
 <zawa:steelbar_door>.displayName = "Cage Door";
-<zawa:campfire>.displayName = "Decorative Campfire";
+// <zawa:campfire>.displayName = "Decorative Campfire"; // for some reason changing the name of this also changes the name of the Tough as Nails campfire
 <zawa:campfire>.addTooltip("Produces no warmth and cannot cook");
 <zawa:campfire>.addShiftTooltip("\"Sounds like my wife!\" ");
 
