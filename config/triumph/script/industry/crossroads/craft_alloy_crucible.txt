@@ -1,0 +1,8 @@
+setIcon(<foundry:machine:8>)
+setTitle("Alloyance")
+setDescription("Craft an Alloying Crucible")
+addParent("industry:crossroads/craft_crucible")
+
+criteria = addCriteria("alloy_crucible", "minecraft:inventory_changed")
+criteria.addItem(<foundry:machine:8>)
+setPos(96,40)

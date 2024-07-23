@@ -1,0 +1,13 @@
+setIcon(<railcraft:coke_oven>)
+setTitle("New Coke")
+setDescription("Make a coke oven block. 27 of these assembled in a 3x3x3 cube become a Coke Oven.")
+
+addParent("industry:root")
+
+criteria = addCriteria("coke_oven", "minecraft:inventory_changed")
+criteria.addItem(<railcraft:coke_oven>)
+criteria = addCriteria("coke_oven_red", "minecraft:inventory_changed")
+criteria.addItem(<railcraft:coke_oven_red>)
+
+setRequirements("any")
+setPos(32,189)
