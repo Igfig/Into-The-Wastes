@@ -1,9 +1,9 @@
 setIcon(<thermalfoundation:material:160>)
 setTitle("Real Steel")
-setDescription("Smelt iron with coal coke in a blast furnace to create steel.")
+setDescription("Smelt iron plates or blocks in a blast furnace with charcoal or coal coke to create steel.")
 
 addParent("industry:railcraft/blast_furnace")
 
 criteria = addCriteria("steel", "minecraft:inventory_changed")
 criteria.addItem(<thermalfoundation:material:160>)
-setPos(96,189)
+setPos(96,189)uur

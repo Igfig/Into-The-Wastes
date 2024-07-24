@@ -1,6 +1,6 @@
 setIcon(<railcraft:blast_furnace>)
 setTitle("Blast Off")
-setDescription("Make a blast furnace block. 36 of these assembled in a 3x3x4-high multiblock become a Blast Furnace.")
+setDescription("Make a blast furnace block. 34 of these assembled in a 3x3x4-high hollow cuboid become a Blast Furnace.")
 
 addParent("industry:railcraft/coke_oven")
 

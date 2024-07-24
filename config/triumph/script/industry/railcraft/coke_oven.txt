@@ -1,6 +1,6 @@
 setIcon(<railcraft:coke_oven>)
 setTitle("New Coke")
-setDescription("Make a coke oven block. 27 of these assembled in a 3x3x3 cube become a Coke Oven.")
+setDescription("Make a coke oven block. 26 of these assembled in a hollow 3x3x3 cube become a Coke Oven.")
 
 addParent("industry:root")
 
