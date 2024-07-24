@@ -1,8 +1,8 @@
 setIcon(<foundry:machine:8>)
 setTitle("Alloyance")
-setDescription("Craft an Alloying Crucible")
+setDescription("Craft an Alloying Crucible to combine metals into alloys")
 addParent("industry:foundry/craft_crucible")
 
 criteria = addCriteria("alloy_crucible", "minecraft:inventory_changed")
 criteria.addItem(<foundry:machine:8>)
-setPos(128,27)
+setPos(128,42)

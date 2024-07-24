@@ -110,9 +110,6 @@ criteria.addItem("tinkersforging:hoe_head/lead")
 criteria = addCriteria("sword_blade/lead", "minecraft:inventory_changed")
 criteria.addItem("tinkersforging:sword_blade/lead")
 
-
-// TODO other materials
-
 setRequirements("any")
 
 setPos(128,135)

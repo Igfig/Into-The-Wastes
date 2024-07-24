@@ -1,0 +1,8 @@
+setIcon("crossroads:hand_crank")
+setTitle("Crank One Out")
+setDescription("Craft a Hand Crank. Right-click a gear to start it turning.")
+addParent("industry:crossroads/gear")
+
+criteria = addCriteria("hand_crank", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:hand_crank>)
+setPos(96,0)

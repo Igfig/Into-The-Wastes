@@ -1,0 +1,8 @@
+setIcon("crossroads:master_axis")
+setTitle("Hetalia")
+setDescription("Craft a Master Axis to serve as the core of a rotary system.")
+addParent("industry:root")
+
+criteria = addCriteria("master_axis", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:master_axis>)
+setPos(32,27)
