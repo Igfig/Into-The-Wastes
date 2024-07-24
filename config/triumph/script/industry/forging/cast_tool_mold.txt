@@ -1,8 +1,8 @@
 setIcon(<foundry:mold:8>)
 setTitle("Molded in Your Image")
-setDescription("Dump molten lead onto a ceramic block and a lead tool in a Metal Caster to create a tool mold.")
+setDescription("Dump molten lead onto an unfired porecelain block and a lead tool in a Metal Caster to create a tool mold.")
 
-addParent("industry:crossroads/craft_metal_caster")
+addParent("industry:foundry/craft_metal_caster")
 addParent("industry:forging/craft_tool_head")
 
 criteria = addCriteria("pickaxe_mold", "minecraft:inventory_changed")

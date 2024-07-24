@@ -2,7 +2,7 @@ setIcon("foundry:casting_table")
 setTitle("Casting Table")
 setDescription("Craft an ingot casting table from an ingot mold and a white porcelain barrel")
 
-addParent("industry:crossroads/craft_ingot_mold")
+addParent("industry:foundry/craft_ingot_mold")
 
 criteria = addCriteria("casting_table", "minecraft:inventory_changed")
 criteria.addItem("foundry:casting_table")

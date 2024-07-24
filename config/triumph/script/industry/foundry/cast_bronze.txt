@@ -2,8 +2,8 @@ setIcon("crossroads:ingot_bronze")
 setTitle("Bronze Casting")
 setDescription("Alloy tin and copper in an Alloying Crucible, and cast it into a bronze ingot.")
 
-addParent("industry:crossroads/cast_copper")
-addParent("industry:crossroads/craft_alloy_crucible")
+addParent("industry:foundry/cast_copper")
+addParent("industry:foundry/craft_alloy_crucible")
 
 criteria = addCriteria("ingot_bronze", "minecraft:inventory_changed")
 criteria.addItem("crossroads:ingot_bronze")
