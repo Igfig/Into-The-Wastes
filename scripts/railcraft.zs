@@ -1,4 +1,8 @@
+import crafttweaker.oredict.IOreDictEntry;
+
+
 // fix display of red coke oven
+
 <railcraft:coke_oven_red>.displayName = "Red Coke Oven Brick";
 <railcraft:coke_oven_red>.addTooltip("Multi-Block: 3x3x3 (Hollow)");
 
@@ -6,20 +10,47 @@
 // hide unwanted metal plates
 
 val toRemove = [
-	6, // nickel
-	7, // invar
-	8, // zinc
-	9, // brass
+	8, // nickel
+	9, // invar
+	10, // zinc
+	11, // brass
 ] as int[];
 
 for tr in toRemove {
-	val plate = <railcraft:plate>.definition.makeStack(tr + 2); // yeah, id is off by 2... weird, eh?
+	val plate = <railcraft:plate>.definition.makeStack(tr);
 	mods.jei.JEI.removeAndHide(plate);
+}
+
+// and remove all plate recipes
+
+for tr in 0 to 12 {
+	val plate = <railcraft:plate>.definition.makeStack(tr);
 	mods.railcraft.RollingMachine.remove(plate);
+}
+
+// add more expensive plates in rolling machine
+
+val plateIngots = {
+	32: <ore:ingotIron>,
+	33: <ore:ingotGold>,
+	320: <ore:ingotCopper>,
+	321: <ore:ingotTin>,
+	322: <ore:ingotSilver>,
+	323: <ore:ingotLead>,
+	326: <ore:ingotPlatinum>,
+	352: <ore:ingotSteel>,
+	353: <ore:ingotElectrum>,
+	355: <ore:ingotBronze>
+} as IOreDictEntry[int];
+
+for id, ore in plateIngots {
+	val plate = <thermalfoundation:material>.definition.makeStack(id);
+	mods.railcraft.RollingMachine.addShaped("plate-" ~ id, plate * 2, [[ore,ore],[ore,ore]]);
 }
 
 
 // remove electric rails
+
 mods.jei.JEI.removeAndHide(<railcraft:rail:5>);
 mods.railcraft.RollingMachine.remove(<railcraft:rail:5>);
 
@@ -38,6 +69,7 @@ recipes.addShaped("manual_rolling_machine", <railcraft:equipment:0>, [
 	[<ore:ingotCopper>,<ore:plankWood>,<ore:ingotCopper>],
 	[<ore:plankWood>,<ore:workbench>,<ore:plankWood>],
 	[<ore:ingotCopper>,<ore:plankWood>,<ore:ingotCopper>]]);
+
 
 
 // recipes that shouldn't need diamond tools
@@ -76,3 +108,16 @@ recipes.addShaped("armor_overalls", <railcraft:armor_overalls>, [
 	[blueWool,<ore:ingotIron>,blueWool],
 	[blueWool,      null,     blueWool],
 	[blueWool,      null,     blueWool]]);
+
+
+// re-add recipes for colored metal posts
+
+val postDyes = [<ore:dyeWhite>,<ore:dyeOrange>,<ore:dyeMagenta>,<ore:dyeLightBlue>,<ore:dyeYellow>,<ore:dyeLime>,<ore:dyePink>,<ore:dyeGray>,<ore:dyeLightGray>,<ore:dyeCyan>,<ore:dyePurple>,<ore:dyeBlue>,<ore:dyeBrown>,<ore:dyeGreen>,<ore:dyeRed>,<ore:dyeBlack>] as IOreDictEntry[];
+val anyPost = <railcraft:post_metal:*>;
+
+for i, dye in postDyes {
+	recipes.addShaped(<railcraft:post_metal>.definition.makeStack(i) * 8, [
+		[anyPost,anyPost,anyPost],
+		[anyPost,  dye,  anyPost],
+		[anyPost,anyPost,anyPost]]);
+}

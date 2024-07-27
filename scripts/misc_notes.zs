@@ -1,3 +1,10 @@
+<minecraft:flint>.addTooltip("Right-click on something hard to knap shards");
+
+// water warnings
+val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"});
+waterBottle.addTooltip("Not safe to drink");
+waterBottle.addTooltip("Boil in a furnace, or craft with a charcoal filter");
+
 // rationale for why potions make you thirsty
 <minecraft:nether_wart>.addTooltip("Unexpectedly salty.");
 

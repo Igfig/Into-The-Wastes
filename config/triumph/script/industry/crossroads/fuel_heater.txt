@@ -1,0 +1,8 @@
+setIcon("crossroads:coal_heater")
+setTitle("Central Heating")
+setDescription("Craft a Fuel Heater to power your heat machines")
+addParent("industry:root")
+
+criteria = addCriteria("coal_heater", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:coal_heater>)
+setPos(64,54)

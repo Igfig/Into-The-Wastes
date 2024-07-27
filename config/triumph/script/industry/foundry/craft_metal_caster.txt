@@ -1,0 +1,9 @@
+setIcon(<foundry:machine:1>)
+setTitle("Not Just For Metal")
+setDescription("Craft a Metal Caster")
+addParent("industry:foundry/craft_casting_table")
+addParent("industry:foundry/cast_bronze")
+
+criteria = addCriteria("metal_caster", "minecraft:inventory_changed")
+criteria.addItem(<foundry:machine:1>)
+setPos(192,81)

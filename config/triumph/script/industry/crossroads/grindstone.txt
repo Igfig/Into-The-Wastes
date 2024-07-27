@@ -1,0 +1,8 @@
+setIcon("crossroads:grindstone")
+setTitle("The Grind is Real")
+setDescription("Craft a Grindstone to increase the yield from your ores. It needs rotary power to function.")
+addParent("industry:crossroads/gear")
+
+criteria = addCriteria("grindstone", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:grindstone>)
+setPos(96,27)

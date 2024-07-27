@@ -1,8 +1,0 @@
-setIcon("crossroads:heating_crucible")
-setTitle("The Crucible")
-setDescription("Craft a Heating Crucible")
-addParent("industry:root")
-
-criteria = addCriteria("heating_crucible", "minecraft:inventory_changed")
-criteria.addItem("crossroads:heating_crucible")
-setPos(32,54)

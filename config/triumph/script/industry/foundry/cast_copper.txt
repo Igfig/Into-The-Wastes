@@ -1,0 +1,10 @@
+setIcon("crossroads:ingot_copper")
+setTitle("Copper Casting")
+setDescription("Melt copper ore in a crucible heated by a fuel heater, use a faucet to extract the molten metal into a casting table, and collect the completed ingot.")
+
+addParent("industry:foundry/craft_casting_table")
+addParent("industry:foundry/craft_crucible")
+
+criteria = addCriteria("ingot_copper", "minecraft:inventory_changed")
+criteria.addItem("crossroads:ingot_copper")
+setPos(128,67)
