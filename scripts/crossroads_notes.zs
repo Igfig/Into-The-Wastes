@@ -27,10 +27,10 @@ val gears = [
 	<crossroads:gear_silver>,
 	<crossroads:gear_platinum>,
 	<crossroads:gear_electrum>
-] as IItemStack[]; // maybe the other gears too?
+] as IItemStack[]; // TODO maybe the other gears too?
 
 for gear in gears {
-	mods.jei.JEI.addDescription(gear, "Place on any sold block face.", "Transmits rotary power.", "Connects to any adjacent gear, even as long as exactly one gear in the system is placed on the front of a Master Axis block.");
+	mods.jei.JEI.addDescription(gear, "Place on any solid block face.", "Transmits rotary power.", "Connects to any adjacent gear, even around corners, as long as exactly one gear in the system is placed on the front of a Master Axis block.");
 }
 
 <crossroads:hand_crank>.addTooltip("Starts gears turning.");
