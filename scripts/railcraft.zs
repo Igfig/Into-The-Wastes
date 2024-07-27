@@ -10,20 +10,47 @@ import crafttweaker.oredict.IOreDictEntry;
 // hide unwanted metal plates
 
 val toRemove = [
-	6, // nickel
-	7, // invar
-	8, // zinc
-	9, // brass
+	8, // nickel
+	9, // invar
+	10, // zinc
+	11, // brass
 ] as int[];
 
 for tr in toRemove {
-	val plate = <railcraft:plate>.definition.makeStack(tr + 2); // yeah, id is off by 2... weird, eh?
+	val plate = <railcraft:plate>.definition.makeStack(tr);
 	mods.jei.JEI.removeAndHide(plate);
+}
+
+// and remove all plate recipes
+
+for tr in 0 to 12 {
+	val plate = <railcraft:plate>.definition.makeStack(tr);
 	mods.railcraft.RollingMachine.remove(plate);
+}
+
+// add more expensive plates in rolling machine
+
+val plateIngots = {
+	32: <ore:ingotIron>,
+	33: <ore:ingotGold>,
+	320: <ore:ingotCopper>,
+	321: <ore:ingotTin>,
+	322: <ore:ingotSilver>,
+	323: <ore:ingotLead>,
+	326: <ore:ingotPlatinum>,
+	352: <ore:ingotSteel>,
+	353: <ore:ingotElectrum>,
+	355: <ore:ingotBronze>
+} as IOreDictEntry[int];
+
+for id, ore in plateIngots {
+	val plate = <thermalfoundation:material>.definition.makeStack(id);
+	mods.railcraft.RollingMachine.addShaped("plate-" ~ id, plate * 2, [[ore,ore],[ore,ore]]);
 }
 
 
 // remove electric rails
+
 mods.jei.JEI.removeAndHide(<railcraft:rail:5>);
 mods.railcraft.RollingMachine.remove(<railcraft:rail:5>);
 
@@ -42,6 +69,7 @@ recipes.addShaped("manual_rolling_machine", <railcraft:equipment:0>, [
 	[<ore:ingotCopper>,<ore:plankWood>,<ore:ingotCopper>],
 	[<ore:plankWood>,<ore:workbench>,<ore:plankWood>],
 	[<ore:ingotCopper>,<ore:plankWood>,<ore:ingotCopper>]]);
+
 
 
 // recipes that shouldn't need diamond tools
