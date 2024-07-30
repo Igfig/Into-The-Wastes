@@ -100,6 +100,8 @@ recipes.addShaped(<primitivetools:primitive_pick_cbl>, [
 
 // usage hints
 
+<ore:toolPrimitiveAxe>.addTooltip("Works just like an axe");
+<ore:toolPrimitiveShovel>.addTooltip("Works just like a shovel");
 <ore:toolMalletStone>.addTooltip("Works just like a pickaxe");
 <primitivetools:plant_fiber>.addTooltip("Drops from tall grass");
 
