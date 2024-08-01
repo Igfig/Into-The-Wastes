@@ -1,6 +1,11 @@
 [
   {
     "mod": "raiders",
+	"spawner": true,
+    "result": "allow"
+  },
+  {
+    "mod": "raiders",
     "dimension": 0,
 	"biometype": "DESERT",
 	"seesky": true,
@@ -11,11 +16,6 @@
       "perplayer": true
     },
     "result": "default"
-  },
-  {
-    "mod": "raiders",
-	"spawner": true,
-    "result": "allow"
   },
   {
     "mod": "raiders",
@@ -43,6 +43,11 @@
   {
     "mob": "rats:rat",
 	"maxdifficulty": 0,
+    "result": "deny"
+  },
+  {
+    "mob": "minecraft:creeper",
+	"random": 0.3,
     "result": "deny"
   }
 ]

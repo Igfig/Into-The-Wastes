@@ -1,8 +1,15 @@
 setIcon(<cuisine:fire_pit:2>)
 setTitle("Classic BBQ")
-setDescription("Craft a barbecue rack")
+setDescription("Make a barbecue rack by right-clicking a fire pit with three sticks")
 addParent("cuisine:root")
 
 criteria = addCriteria("craft_bbq", "minecraft:inventory_changed")
 criteria.addItem(<cuisine:fire_pit:2>)
+
+criteria = addCriteria("place_bbq", "triumph:right_click_block")
+criteria.setItem(<minecraft:stick>)
+criteria.setBlock(<cuisine:fire_pit>)
+
+setRequirements("any")
+
 setPos(38,28)

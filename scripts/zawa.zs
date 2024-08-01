@@ -4,7 +4,7 @@ mods.jei.JEI.removeAndHide(<zawa:atv>);
 mods.jei.JEI.removeAndHide(<zawa:off_road_car>);
 mods.jei.JEI.removeAndHide(<zawa:zoo_cart>);
 mods.jei.JEI.removeAndHide(<zawa:tire>);
-
+mods.jei.JEI.removeAndHide(<zawa:animal_net>);
 
 // replace some more recipes
 
@@ -35,7 +35,8 @@ recipes.remove(<zawa:tranquilizer_gun>);
 recipes.addShaped("tranquilizer_gun", <zawa:tranquilizer_gun>, [
 	[<ore:plateSteel>,<ore:plateBronze>,<railcraft:rail:4>], // reinforced rail
 	[<minecraft:gunpowder>,<ore:plankWood>,<minecraft:lever>],
-	[<ore:logWood>,null,null]]);
+	[<ore:logWood>,null,null]]);	
+
 
 
 // add recipes for decorative stones

@@ -1,3 +1,5 @@
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import mods.roots.Fey;
 import mods.roots.Mortar;
 import mods.roots.SummonCreatures;
@@ -16,7 +18,7 @@ val DISABLED = "DISABLED. DO NOT USE";
 
 // new info page for wildroot
 
-mods.jei.JEI.addDescription(wildroot, "Dropped occasionally from breaking hanging roots in shallow caves, and from the extremely rare leaves of the wildwood tree.");
+mods.jei.JEI.addDescription(wildroot, "Dropped occasionally from breaking hanging roots in shallow caves, and from the leaves of the extremely rare wildwood tree.");
 
 
 // terra moss and spores
@@ -67,6 +69,34 @@ Mortar.removeRecipe(<roots:flour>);
 // Rename Roots flour to potato flour, and add a Cuisine mill recipe for it
 <roots:flour>.displayName = "Potato Flour";
 Mill.add(<ore:cropPotato> * 2, null, <roots:flour>, null);
+
+
+// Update living tool and terrastone recipes to use gold and iron tools respectively, instead of wood and iron
+
+val woodToolReplacements = {
+	<roots:living_sword>: <minecraft:golden_sword>,
+	<roots:living_shovel>: <minecraft:golden_shovel>,
+	<roots:living_pickaxe>: <minecraft:golden_pickaxe>,
+	<roots:living_axe>: <minecraft:golden_axe>,
+	<roots:living_hoe>: <minecraft:golden_hoe>
+} as IIngredient[IItemStack];
+val stoneToolReplacements = {
+	<roots:terrastone_sword>: <minecraft:iron_sword>,
+	<roots:terrastone_shovel>: <minecraft:iron_shovel>,
+	<roots:terrastone_pickaxe>: <minecraft:iron_pickaxe>,
+	<roots:terrastone_axe>: <minecraft:iron_axe>,
+	<roots:terrastone_hoe>: <minecraft:iron_hoe>
+} as IIngredient[IItemStack];
+
+for rootsTool, goldTool in woodToolReplacements {
+	Fey.removeRecipe(rootsTool);
+	Fey.addRecipe(rootsTool.name, rootsTool, [<ore:ingotGold> | <ore:ingotSilver>, goldTool, <ore:wildroot>, <ore:rootsBark>, <ore:rootsBark>]);
+}
+
+for rootsTool, ironTool in stoneToolReplacements {
+	Fey.removeRecipe(rootsTool);
+	Fey.addRecipe(rootsTool.name, rootsTool, [<ore:runestone>, ironTool, <roots:terra_moss>, <ore:gemDiamond>, <minecraft:mossy_cobblestone>]);
+}
 
 
 // remove disabled rituals from JEI

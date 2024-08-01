@@ -1,7 +1,17 @@
 [
 	{
 		"mod": "raiders",
+		"player": false,
+		"remove": ["raiders:sat_transmitter_part", "raiders:brute_serum_sample"]
+	},
+	{
+		"mod": "raiders",
 		"random": 0.9,
 		"remove": ["raiders:sat_transmitter_part", "raiders:brute_serum_sample"]
-	}
+	},
+	{
+		"mob": "animania:hamster",
+		"random": 0.4,
+		"item": "zawa:bush_meat_raw"
+    }
 ]

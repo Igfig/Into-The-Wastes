@@ -26,6 +26,7 @@ function setStackSize(entry as IOreDictEntry, size as int) as bool {
 		if (item.maxStackSize > size) {
 			print("Setting stack size for item" ~ item.name ~ " to " ~ size);
 			item.maxStackSize = size;
+			item.addTooltip("Max stack size: " ~ size);
 		} else {
 			print("Keeping stack size for item" ~ item.name ~ " (" ~ item.maxStackSize ~ ")");
 		}
@@ -81,6 +82,7 @@ for entry in oreDict {
 }
 
 // maybe blockQuartz and blockGlowstone should stack better?
+// Chiseled glowstone already stacks to 64 just fine
 
 // need to manually add mystical world copper and such to the dicts 
 

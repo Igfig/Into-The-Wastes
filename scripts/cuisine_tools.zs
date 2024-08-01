@@ -21,6 +21,18 @@ recipes.addShaped("drinkro", <cuisine:drinkro>, [
 	[silver,<minecraft:glass_bottle>,silver]]);
 	
 	
-// a description
+// descriptions
+
+<cuisine:fire_pit:0>.addTooltip("A fire for cooking");
+<cuisine:fire_pit:0>.addTooltip("If you want heat, use a campfire");
+
+<toughasnails:campfire>.addTooltip("A fire for heat");
+<toughasnails:campfire>.addTooltip("If you want to cook, use a fire pit");
+
+// todo description for pan on fire pit
+
+mods.jei.JEI.addDescription(<cuisine:fire_pit:2>, "Right-click with meat (or other furnace-cookable foods) to put it on the spit, then right-click with fuel to start cooking.", "Remove the meat when it's browned.", "Can hold up to three items at a time.");
+
+mods.jei.JEI.addDescription(<cuisine:mill>, "Right-click to insert items.", "Right-click with an empty hand to grind. Grinding costs stamina.", "Grinds roughly one item per second.");
 
 mods.jei.JEI.addDescription(<cuisine:drinkro>, "Put two or more juices in the top section. Optionally add some spices. Put an empty bottle in the lower section, and apply a redstone current. After some seconds, a blended, multi-serving drink is produced.");
