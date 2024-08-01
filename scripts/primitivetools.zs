@@ -1,6 +1,15 @@
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+import crafttweaker.events.IEventManager;
+import crafttweaker.event.PlayerInteractBlockEvent;
+
+
+val flint = <minecraft:flint>;
 val twine = <primitivetools:cordage_fiber>;
 val vine = <primitivetools:cordage_vine>;
 val strip = <primitivetools:leather_strip>;
+
+<ore:cordage>.addItems([twine, vine, strip, <minecraft:string>]);
 
 
 // add new work knives
@@ -15,73 +24,132 @@ val strip = <primitivetools:leather_strip>;
 ]);
 
 
+// new recipes for all primitive tools
+
+val axes = {
+	<primitivetools:primitive_hatchet_cbf>: [<minecraft:bone>, twine],
+	<primitivetools:primitive_hatchet_cbl>: [<minecraft:bone>, strip],
+	<primitivetools:primitive_hatchet_cbv>: [<minecraft:bone>, vine],
+	<primitivetools:primitive_hatchet_cwf>: [<minecraft:stick>, twine],
+	<primitivetools:primitive_hatchet_cwl>: [<minecraft:stick>, strip],
+	<primitivetools:primitive_hatchet_cwv>: [<minecraft:stick>, vine]
+} as IIngredient[][IItemStack];
+
+val knives = {
+	<primitivetools:primitive_knife_cbf>: [<minecraft:bone>, twine],
+	<primitivetools:primitive_knife_cbl>: [<minecraft:bone>, strip],
+	<primitivetools:primitive_knife_cbv>: [<minecraft:bone>, vine],
+	<primitivetools:primitive_knife_cwf>: [<minecraft:stick>, twine],
+	<primitivetools:primitive_knife_cwl>: [<minecraft:stick>, strip],
+	<primitivetools:primitive_knife_cwv>: [<minecraft:stick>, vine]
+} as IIngredient[][IItemStack];
+
+val hoes = {
+	<primitivetools:primitive_hoe_cbf>: [<minecraft:bone>, twine],
+	<primitivetools:primitive_hoe_cbl>: [<minecraft:bone>, strip],
+	<primitivetools:primitive_hoe_cbv>: [<minecraft:bone>, vine],
+	<primitivetools:primitive_hoe_cwf>: [<minecraft:stick>, twine],
+	<primitivetools:primitive_hoe_cwl>: [<minecraft:stick>, strip],
+	<primitivetools:primitive_hoe_cwv>: [<minecraft:stick>, vine]
+} as IIngredient[][IItemStack];
+
+val picks = {
+	<primitivetools:primitive_pick_cbf>: [<minecraft:bone>, twine],
+	<primitivetools:primitive_pick_cbl>: [<minecraft:bone>, strip],
+	<primitivetools:primitive_pick_cbv>: [<minecraft:bone>, vine],
+	<primitivetools:primitive_pick_cwf>: [<minecraft:stick>, twine],
+	<primitivetools:primitive_pick_cwl>: [<minecraft:stick>, strip],
+	<primitivetools:primitive_pick_cwv>: [<minecraft:stick>, vine]
+} as IIngredient[][IItemStack];
+
+val shovels = {
+	<primitivetools:primitive_spade_cbf>: [<minecraft:bone>, twine],
+	<primitivetools:primitive_spade_cbl>: [<minecraft:bone>, strip],
+	<primitivetools:primitive_spade_cbv>: [<minecraft:bone>, vine],
+	<primitivetools:primitive_spade_cwf>: [<minecraft:stick>, twine],
+	<primitivetools:primitive_spade_cwl>: [<minecraft:stick>, strip],
+	<primitivetools:primitive_spade_cwv>: [<minecraft:stick>, vine]
+} as IIngredient[][IItemStack];
+
+val hammers = {
+	<primitivetools:primitive_hammer_swf>: [<minecraft:stone:5>, <minecraft:stick>, twine],
+	<primitivetools:primitive_hammer_swv>: [<minecraft:stone:5>, <minecraft:stick>, vine],
+	<primitivetools:primitive_hammer_swl>: [<minecraft:stone:5>, <minecraft:stick>, strip],
+	<primitivetools:primitive_hammer_sbf>: [<minecraft:stone:5>, <minecraft:bone>, twine],
+	<primitivetools:primitive_hammer_sbv>: [<minecraft:stone:5>, <minecraft:bone>, vine],
+	<primitivetools:primitive_hammer_sbl>: [<minecraft:stone:5>, <minecraft:bone>, strip],
+	<primitivetools:primitive_hammer_dwf>: [<minecraft:stone:3>, <minecraft:stick>, twine],
+	<primitivetools:primitive_hammer_dwv>: [<minecraft:stone:3>, <minecraft:stick>, vine],
+	<primitivetools:primitive_hammer_dwl>: [<minecraft:stone:3>, <minecraft:stick>, strip],
+	<primitivetools:primitive_hammer_dbf>: [<minecraft:stone:3>, <minecraft:bone>, twine],
+	<primitivetools:primitive_hammer_dbv>: [<minecraft:stone:3>, <minecraft:bone>, vine],
+	<primitivetools:primitive_hammer_dbl>: [<minecraft:stone:3>, <minecraft:bone>, strip],
+	<primitivetools:primitive_hammer_gwf>: [<minecraft:stone:1>, <minecraft:stick>, twine],
+	<primitivetools:primitive_hammer_gwv>: [<minecraft:stone:1>, <minecraft:stick>, vine],
+	<primitivetools:primitive_hammer_gwl>: [<minecraft:stone:1>, <minecraft:stick>, strip],
+	<primitivetools:primitive_hammer_gbf>: [<minecraft:stone:1>, <minecraft:bone>, twine],
+	<primitivetools:primitive_hammer_gbv>: [<minecraft:stone:1>, <minecraft:bone>, vine],
+	<primitivetools:primitive_hammer_gbl>: [<minecraft:stone:1>, <minecraft:bone>, strip]
+} as IIngredient[][IItemStack];
+
+val spears = {
+	<primitivetools:primitive_spear_cwf>: twine,
+	<primitivetools:primitive_spear_cwl>: strip,
+	<primitivetools:primitive_spear_cwv>: vine
+} as IIngredient[IItemStack];
+
+
+for tool, parts in axes {
+	val shaft = parts[0];
+	val binding = parts[1];
+	recipes.remove(tool);
+	recipes.addShapedMirrored(tool, [[flint, flint], [shaft, binding]]);
+}
+for tool, parts in knives {
+	val shaft = parts[0];
+	val binding = parts[1];
+	recipes.remove(tool);
+	recipes.addShapedMirrored(tool, [[binding, flint], [shaft, null]]);
+}
+for tool, parts in hoes {
+	val shaft = parts[0];
+	val binding = parts[1];
+	recipes.remove(tool);
+	recipes.addShapedMirrored(tool, [[flint, binding], [shaft, binding]]);
+}
+for tool, parts in picks {
+	val shaft = parts[0];
+	val binding = parts[1];
+	recipes.remove(tool);
+	recipes.addShapedMirrored(tool, [[flint, binding], [shaft, flint]]);
+}
+for tool, parts in shovels {
+	val shaft = parts[0];
+	val binding = parts[1];
+	recipes.remove(tool);
+	recipes.addShapedMirrored(tool, [[binding, flint], [shaft, binding]]);
+}
+for tool, parts in hammers {
+	val head = parts[0];
+	val shaft = parts[1];
+	val binding = parts[2];
+	recipes.remove(tool);
+	recipes.addShapedMirrored(tool, [[head, binding], [shaft, head]]);
+}
+for tool, binding in spears {
+	recipes.remove(tool);
+	recipes.addShapedMirrored(tool, [[binding, flint], [<minecraft:stick>, <minecraft:stick>]]);
+}
+
+
 // oredicts for the primitive tools
 
-<ore:toolPrimitiveAxe>.addItems([
-	<primitivetools:primitive_hatchet_cbf>,
-	<primitivetools:primitive_hatchet_cbl>,
-	<primitivetools:primitive_hatchet_cbv>,
-	<primitivetools:primitive_hatchet_cwf>,
-	<primitivetools:primitive_hatchet_cwl>,
-	<primitivetools:primitive_hatchet_cwv>
-]);
-
-<ore:toolPrimitiveBlade>.addItems([
-	<primitivetools:primitive_knife_cbf>,
-	<primitivetools:primitive_knife_cbl>,
-	<primitivetools:primitive_knife_cbv>,
-	<primitivetools:primitive_knife_cwf>,
-	<primitivetools:primitive_knife_cwl>,
-	<primitivetools:primitive_knife_cwv>
-]); // note that all of these are already in <ore:toolWorkBlade>
-
-<ore:toolPrimitiveHoe>.addItems([
-	<primitivetools:primitive_hoe_cbf>,
-	<primitivetools:primitive_hoe_cbl>,
-	<primitivetools:primitive_hoe_cbv>,
-	<primitivetools:primitive_hoe_cwf>,
-	<primitivetools:primitive_hoe_cwl>,
-	<primitivetools:primitive_hoe_cwv>
-]);
-
-<ore:toolPrimitivePick>.addItems([
-	<primitivetools:primitive_pick_cbf>,
-	<primitivetools:primitive_pick_cbl>,
-	<primitivetools:primitive_pick_cbv>,
-	<primitivetools:primitive_pick_cwf>,
-	<primitivetools:primitive_pick_cwl>,
-	<primitivetools:primitive_pick_cwv>
-]);
-
-<ore:toolPrimitiveShovel>.addItems([
-	<primitivetools:primitive_spade_cbf>,
-	<primitivetools:primitive_spade_cbl>,
-	<primitivetools:primitive_spade_cbv>,
-	<primitivetools:primitive_spade_cwf>,
-	<primitivetools:primitive_spade_cwl>,
-	<primitivetools:primitive_spade_cwv>
-]);
-
-<ore:toolMalletStone>.addItems([
-	<primitivetools:primitive_hammer_swf>,
-	<primitivetools:primitive_hammer_swv>,
-	<primitivetools:primitive_hammer_swl>,
-	<primitivetools:primitive_hammer_sbf>,
-	<primitivetools:primitive_hammer_sbv>,
-	<primitivetools:primitive_hammer_sbl>,
-	<primitivetools:primitive_hammer_dwf>,
-	<primitivetools:primitive_hammer_dwv>,
-	<primitivetools:primitive_hammer_dwl>,
-	<primitivetools:primitive_hammer_dbf>,
-	<primitivetools:primitive_hammer_dbv>,
-	<primitivetools:primitive_hammer_dbl>,
-	<primitivetools:primitive_hammer_gwf>,
-	<primitivetools:primitive_hammer_gwv>,
-	<primitivetools:primitive_hammer_gwl>,
-	<primitivetools:primitive_hammer_gbf>,
-	<primitivetools:primitive_hammer_gbv>,
-	<primitivetools:primitive_hammer_gbl>
-]);
+<ore:toolPrimitiveAxe>.addItems(axes.keys);
+<ore:toolPrimitiveBlade>.addItems(knives.keys); // note that all of these are already in <ore:toolWorkBlade>
+<ore:toolPrimitiveHoe>.addItems(hoes.keys);
+<ore:toolPrimitivePick>.addItems(picks.keys);
+<ore:toolPrimitiveShovel>.addItems(shovels.keys);
+<ore:toolMalletStone>.addItems(hammers.keys);
 
 
 // add recipes for some missing materials
@@ -91,19 +159,12 @@ recipes.addShapeless(vine, [<ore:vine>,<ore:vine>,<ore:vine>]);
 recipes.addShapeless(<primitivetools:leather_strip> * 3, [<ore:leather>,<ore:toolWorkBlade>.reuse()]);
 
 
-// add a missing tool recipe
-
-recipes.addShaped(<primitivetools:primitive_pick_cbl>, [
-	[<primitivetools:flint_shard>,<primitivetools:leather_strip>],
-	[<minecraft:bone>,<primitivetools:flint_flake>]]);
-
-
 // usage hints
 
 <ore:toolPrimitiveAxe>.addTooltip("Works just like an axe");
 <ore:toolPrimitiveShovel>.addTooltip("Works just like a shovel");
 <ore:toolMalletStone>.addTooltip("Works just like a pickaxe");
-<primitivetools:plant_fiber>.addTooltip("Drops from tall grass");
+<primitivetools:plant_fiber>.addTooltip("Drops from tall grass and tumbleweeds");
 
 	
 // rename vine ropes because they aren't climbable like other ropes
@@ -111,6 +172,7 @@ recipes.addShaped(<primitivetools:primitive_pick_cbl>, [
 vine.displayName = "Vine Twine";
 
 // and replace the recipe for Inspirations vine ropes
+
 recipes.remove(<inspirations:rope:2>); // I prefer the recipe below
 
 
@@ -129,24 +191,32 @@ recipes.addShaped("vine_rope", <inspirations:rope:2> * 3, [
 	[vine], 
 	[vine]]);
 
+recipes.replaceAllOccurences(<minecraft:string>, <ore:cordage>, <minecraft:lead>);
+recipes.replaceAllOccurences(<minecraft:string>, <ore:cordage>, <minecraft:book>);
+recipes.replaceAllOccurences(<minecraft:string>, <ore:cordage>, <futuremc:scaffolding>);
 
-// worse arrow recipe, using leftover flint flakes and shards
 
-recipes.addShaped("shard_arrow", <minecraft:arrow> * 2, [
-	[<ore:shardFlint> | <ore:flakeFlint>], 
-	[<ore:stickWood>], 
-	[<ore:feather>]]);
-	
-	
 // bring back original arrow recipe
 
-recipes.removeByRecipeName("primitivetools:arrow");
+recipes.removeByRecipeName("primitivetools:arrow_2x2");
 recipes.addShaped("arrow", <minecraft:arrow> * 4, [
-	[<minecraft:flint> | <ore:pointFlint>], 
+	[<minecraft:flint>], 
 	[<ore:stickWood>], 
 	[<ore:feather>]]);
 	
 	
-// hide unused bone needle
+// hide unused bone needle and flint pieces
 
 mods.jei.JEI.removeAndHide(<primitivetools:bone_needle>);
+mods.jei.JEI.removeAndHide(<primitivetools:flint_shard>);
+mods.jei.JEI.removeAndHide(<primitivetools:flint_flake>);
+mods.jei.JEI.removeAndHide(<primitivetools:flint_point>);
+
+
+// prevent flint-knapping interaction
+
+events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteractBlockEvent){
+	if (<minecraft:flint>.matches(event.item)) {
+		event.cancel();
+	}
+});
