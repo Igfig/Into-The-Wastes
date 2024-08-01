@@ -28,9 +28,10 @@ recipes.addShapeless(<minecraft:book>, [<minecraft:written_book>, <minecraft:spo
 recipes.addShapeless(<minecraft:book>, [<minecraft:written_book>, <minecraft:bread>]);
 
 
-// melt down excess thermometers
+// melt down excess thermometers and death compasses
 
 furnace.addRecipe(<minecraft:glass>, <crossroads:thermometer>);
+furnace.addRecipe(<minecraft:glass>, <death_compass:death_compass>);
 
 
 // easier slag-to-clay recipe
