@@ -3,6 +3,7 @@ setTitle("Moonwalker")
 setDescription("Make a Repeller and bound across the landscape")
 
 addParent("_wastes:mining/mine_platinum")
+hiddenUnless("_wastes:mining/mine_platinum")
 
 criteria = addCriteria("repeller", "minecraft:inventory_changed")
 criteria.addItem("grapplemod:repeller")
