@@ -1,6 +1,6 @@
 setIcon("primitivetools:primitive_pick_cwf")
 setTitle("Your First Tool")
-setDescription("Craft a primitive tool from knapped flint, twine, and a stick")
+setDescription("Craft a primitive tool from flint, twine, and a stick")
 setFrameType("goal")
 addParent("_wastes:craft_flint")
 addParent("_wastes:craft_twine")

@@ -139,6 +139,7 @@ for tool, parts in hammers {
 for tool, binding in spears {
 	recipes.remove(tool);
 	recipes.addShapedMirrored(tool, [[binding, flint], [<minecraft:stick>, <minecraft:stick>]]);
+	tool.addTooltip("Not a melee weapon");
 }
 
 

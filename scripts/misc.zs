@@ -34,28 +34,20 @@ furnace.addRecipe(<minecraft:glass>, <crossroads:thermometer>);
 furnace.addRecipe(<minecraft:glass>, <death_compass:death_compass>);
 
 
-// easier slag-to-clay recipe
+// replace all instances of water buckets in recipes with bottles. 
 
 val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"}).giveBack(<minecraft:glass_bottle>);
+
+recipes.replaceAllOccurences(<minecraft:water_bucket>, waterBottle);
+recipes.replaceAllOccurences(<ore:listAllwater>, waterBottle);
+
+
+// easier slag-to-clay recipe
+
 val slag = <thermalfoundation:material:864>;
 
 recipes.removeByRecipeName("thermalfoundation:clay_ball");
 recipes.addShapeless(<minecraft:clay_ball> * 4, [slag, slag, <ore:dirt>, waterBottle]);
-
-
-// replace all instances of water buckets in recipes with a more general solution.
-
-val realAllWater = <minecraft:water_bucket>.giveBack(<minecraft:bucket>) | <ceramics:clay_bucket>.withTag({fluids: {FluidName: "water", Amount: 1000}}).giveBack(<ceramics:clay_bucket>) | <cuisine:mortar:1>.giveBack(<cuisine:mortar:0>) | <liquid:water>*1000;
-
-recipes.replaceAllOccurences(<minecraft:water_bucket>, realAllWater);
-recipes.replaceAllOccurences(<ore:listAllwater>, realAllWater);
-
-
-// flour cooks directly to bread, and crafts to two dough
-
-recipes.removeByRecipeName("cuisine:dough");
-recipes.addShapeless(<cuisine:food:2> * 2, [<ore:foodFlour>, realAllWater]); // dough
-furnace.addRecipe(<minecraft:bread>, <cuisine:food:1>); // flour
 
 
 // replace redundant gunpowder recipes
@@ -72,6 +64,7 @@ recipes.addShapeless(<minecraft:gunpowder>, [<ore:dustCoal> | <ore:dustCharcoal>
 recipes.removeByRecipeName("animania:name_tag");
 recipes.removeByRecipeName("essentials:name_tag");
 recipes.addShapeless(<minecraft:name_tag>, [<ore:string>, <ore:paper>, <ore:nuggetGold>]);
+
 
 // remove redundant lead recipe
 

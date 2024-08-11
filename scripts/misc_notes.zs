@@ -1,5 +1,3 @@
-<minecraft:flint>.addTooltip("Right-click on something hard to knap shards");
-
 // water warnings
 val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"});
 waterBottle.addTooltip("Not safe to drink");
@@ -50,3 +48,4 @@ mods.jei.JEI.addDescription(<structuredcrafting:structured_crafter>, "Automated 
 
 // Barakoa spear
 <mowziesmobs:spear>.addTooltip("Only made by Barakoa");
+

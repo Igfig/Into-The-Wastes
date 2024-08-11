@@ -53,7 +53,7 @@
       "block": "iceandfire:fire_lily",
       "properties": {}
     },
-    "temperature": 1.0
+    "temperature": 3.0
   },
   {
     "state": {
@@ -132,6 +132,419 @@
   },
   {
     "state": {
+      "block": "biomesoplenty:leaves_0",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "biomesoplenty:leaves_1",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "biomesoplenty:leaves_2",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "biomesoplenty:leaves_3",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "biomesoplenty:leaves_4",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "biomesoplenty:leaves_5",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "biomesoplenty:leaves_6",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "naturesaura:ancient_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "quark:variant_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "environs:cypress_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "environs:pine_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "environs:frozen_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "environs:eucalyptus_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "environs:end_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "cuisine:sheared_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "traverse:red_autumnal_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "traverse:brown_autumnal_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "traverse:orange_autumnal_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "traverse:yellow_autumnal_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "traverse:fir_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:beech_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:redwood_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:eucalyptus_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:hornbeam_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:pear_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:apple_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:jacaranda_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:rowan_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:fir_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:hazel_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:cherry_pink_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:cherry_white_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:baobab_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:ebony_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:pine_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:palm_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:mahogany_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:cedar_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:willow_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:red_autumn_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:orange_autumn_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:yellow_autumn_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "wildnature:rotten_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "valoegheses_be:leaves_oasis_palm",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "valoegheses_be:leaves_forest_evil",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "valoegheses_be:leaves_pine_bluff",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "valoegheses_be:leaves_ocean_palm",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "valoegheses_be:leaves_date_palm",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "valoegheses_be:leaves_pohutukawa",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "valoegheses_be:leaves_pohutukawa_bud",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "valoegheses_be:leaves_pohutukawa_flower",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "valoegheses_be:leaves_manuka",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "valoegheses_be:leaves_island_palm",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "valoegheses_be:leaves_peach_homozygous_dominant",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "valoegheses_be:leaves_peach_heterozygous_0",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "valoegheses_be:leaves_peach_heterozygous_1",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "valoegheses_be:leaves_peach_homozygous_reccessive",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "roots:wildwood_leaves",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
+      "block": "valoegheses_be:leaves_plum",
+      "properties": {}
+    },
+    "temperature": -1.0
+  },
+  {
+    "state": {
       "block": "minecraft:water",
       "properties": {}
     },
@@ -163,7 +576,7 @@
       "block": "iceandfire:frost_lily",
       "properties": {}
     },
-    "temperature": -1.0
+    "temperature": -3.0
   },
   {
     "state": {
