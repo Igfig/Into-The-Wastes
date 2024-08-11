@@ -31,7 +31,7 @@
 <ore:blockHay>.add(<minecraft:hay_block>);
 <ore:blockTofu>.add(<cuisine:tofu_block>);
 
-<ore:foodFlour>.add(<cuisine:food:3>); // rice powder
+<ore:foodFlour>.add(<cuisine:food:1>, <cuisine:food:3>, <roots:flour>); // wheat flour, rice powder, potato flour
 <ore:foodBread>.add(<minecraft:bread>, <roots:wildewheet_bread>);
 
 <ore:rootVegetable>.add(<minecraft:carrot>, <minecraft:beetroot>, <cuisine:crops:10>); // turnip
@@ -43,6 +43,9 @@
 <ore:foodMushroom>.addAll(<ore:mushroom>); // different mods use different mushroom oredicts
 
 <ore:toadstool>.add(<biomesoplenty:mushroom:0>, <biomesoplenty:mushroom:5>, <wildnature:mushroom_4>, <wildnature:mushroom_5>);
+
+<ore:listAllspice>.remove(<cuisine:crops:8>); // peppercorns. only ground pepper should be a spice
+<ore:listAllspice>.add(<cuisine:material:4>,<cuisine:material:5>);
 
 
 // meats
@@ -178,7 +181,7 @@
 <ore:pigFood>.addAll(<ore:egg>);
 <ore:pigFood>.addAll(<ore:listAllfruit>);
 <ore:pigFood>.addAll(<ore:foodBread>);
-<ore:pigFood>.add(<minecraft:carrot>, <minecraft:beetroot>, <minecraft:potato>, <minecraft:pumpkin>, <cuisine:crops:4>, <cuisine:crops:12>, <cuisine:crops:14>, <cuisine:crops:15>, <cuisine:crops:16>, <cuisine:crops:20>, <forge:bucketfilled>.withTag({FluidName: "slop", Amount: 1000})); // tomato, lettuce, cucumber, bellpeppers, spinach
+<ore:pigFood>.add(<minecraft:carrot>, <minecraft:beetroot>, <minecraft:potato>, <minecraft:pumpkin>, <cuisine:crops:4>, <cuisine:crops:12>, <cuisine:crops:14>, <cuisine:crops:15>, <cuisine:crops:16>, <cuisine:crops:20>); // tomato, lettuce, cucumber, bellpeppers, spinach
 
 <ore:rabbitFood>.addAll(<ore:listAllgrain>);
 <ore:rabbitFood>.addAll(<ore:cropApple>);
