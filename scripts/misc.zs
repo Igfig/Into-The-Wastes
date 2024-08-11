@@ -37,7 +37,6 @@ furnace.addRecipe(<minecraft:glass>, <death_compass:death_compass>);
 // replace all instances of water buckets in recipes with bottles. 
 
 val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"}).giveBack(<minecraft:glass_bottle>);
-<ore:waterBottle>.add(waterBottle);
 
 recipes.replaceAllOccurences(<minecraft:water_bucket>, waterBottle);
 recipes.replaceAllOccurences(<ore:listAllwater>, waterBottle);
@@ -65,6 +64,7 @@ recipes.addShapeless(<minecraft:gunpowder>, [<ore:dustCoal> | <ore:dustCharcoal>
 recipes.removeByRecipeName("animania:name_tag");
 recipes.removeByRecipeName("essentials:name_tag");
 recipes.addShapeless(<minecraft:name_tag>, [<ore:string>, <ore:paper>, <ore:nuggetGold>]);
+
 
 // remove redundant lead recipe
 
