@@ -17,9 +17,6 @@ mods.crossroads.HeatingCrucible.addRecipe(<minecraft:glass>, <liquid:glass> * 10
 mods.crossroads.HeatingCrucible.addRecipe(<minecraft:glass_pane>, <liquid:glass> * 375, "minecraft:blocks/" ~ <minecraft:glass>.name);
 mods.crossroads.HeatingCrucible.addRecipe(<quark:glass_shards>, <liquid:glass> * 250, "minecraft:blocks/" ~ <minecraft:glass>.name);
 
-mods.foundry.CastingTable.addBlockRecipe(<minecraft:glass>, <liquid:glass> * 1000);
-mods.foundry.CastingTable.addPlateRecipe(<minecraft:glass_pane>, <liquid:glass> * 375);
-
 for i, liquidGlass in liquidGlasses {
 	val glassBlock = stainedGlass.makeStack(i);
 	val glassPane = stainedGlassPane.makeStack(i);
