@@ -1,0 +1,33 @@
+{
+  "rules": [
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "minecraft:gravel"
+          ]
+        }
+      },
+	  "replaceStrategy": "ADD",
+	  "drops": [
+        {
+          "selector": {
+            "weight": {
+              "value": 75
+            }
+          }
+        },
+        {
+          "selector": {
+            "weight": {
+              "value": 25
+            }
+          },
+          "item": {
+            "items" : ["wildnature:pebble"]
+          }
+        }
+      ]
+    }
+  ]
+}
