@@ -1,4 +1,4 @@
-// remove rain collectors (they're strictly worse than barrels or basins)
+// remove rain collectors (they're mostly worse than barrels or basins)
 mods.jei.JEI.removeAndHide(<toughasnails:rain_collector>);
 
 
@@ -34,19 +34,10 @@ furnace.addRecipe(<minecraft:glass>, <toughasnails:thermometer>);
 furnace.addRecipe(<minecraft:glass>, <death_compass:death_compass>);
 
 
-// replace all instances of water buckets in recipes with bottles. 
-
-val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"}).giveBack(<minecraft:glass_bottle>);
-
-recipes.replaceAllOccurences(<minecraft:water_bucket>, waterBottle);
-recipes.replaceAllOccurences(<ore:listAllwater>, waterBottle);
-
-// TODO exception: cryotheum and water to ice should need a whole bucket
-
-
 // easier slag-to-clay recipe
 
 val slag = <thermalfoundation:material:864>;
+val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"}).giveBack(<minecraft:glass_bottle>);
 
 recipes.removeByRecipeName("thermalfoundation:clay_ball");
 recipes.addShapeless(<minecraft:clay_ball> * 4, [slag, slag, <ore:dirt>, waterBottle]);
