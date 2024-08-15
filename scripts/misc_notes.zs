@@ -44,8 +44,10 @@ mods.jei.JEI.addDescription(<structuredcrafting:structured_crafter>, "Automated 
 
 // Clay barrel
 <ceramics:clay_bucket>.addTooltip("Breaks after placing hot fluids");
-// TODO maybe only put it on the empty bucket and buckets actually holding hot fluids?
+// I'd put a different message on the ones holding hot fluids, but there are a lot of those. TODO
 
 // Barakoa spear
 <mowziesmobs:spear>.addTooltip("Only made by Barakoa");
+<mowziesmobs:blowgun>.addTooltip("Only made by Barakoa");
+<mowziesmobs:dart>.addTooltip("Only made by Barakoa");
 
