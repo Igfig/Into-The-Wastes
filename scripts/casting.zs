@@ -79,5 +79,4 @@ for i, liquid in liquids {
 	CastingTable.removePlateRecipe(liquid);
 	Casting.addRecipe(gears[i], liquid * 144, <foundry:mold:2>);
 	Casting.addRecipe(plates[i], liquid * 144, <foundry:mold:1>);
-	CastingTable.addPlateRecipe(plates[i], liquid * 144);
 }
