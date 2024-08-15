@@ -30,7 +30,7 @@ recipes.addShapeless(<minecraft:book>, [<minecraft:written_book>, <minecraft:bre
 
 // melt down excess thermometers and death compasses
 
-furnace.addRecipe(<minecraft:glass>, <crossroads:thermometer>);
+furnace.addRecipe(<minecraft:glass>, <toughasnails:thermometer>);
 furnace.addRecipe(<minecraft:glass>, <death_compass:death_compass>);
 
 
@@ -40,6 +40,8 @@ val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"}).giveBa
 
 recipes.replaceAllOccurences(<minecraft:water_bucket>, waterBottle);
 recipes.replaceAllOccurences(<ore:listAllwater>, waterBottle);
+
+// TODO exception: cryotheum and water to ice should need a whole bucket
 
 
 // easier slag-to-clay recipe
