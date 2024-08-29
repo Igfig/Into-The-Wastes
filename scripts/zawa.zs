@@ -88,6 +88,15 @@ recipes.removeByRecipeName("zawa:leather");
 recipes.addShapeless(<minecraft:leather>, [<ore:zawaFur>|<ore:zawaHide>]);
 
 
+// worms
+<zawa:worm>.addTooltip("Some animals like these.");
+<zawa:worm>.addTooltip("Barely human-edible if cooked.");
+
+<zawa:worm>.maxStackSize = 8;
+
+furnace.addRecipe(<contenttweaker:worm_cooked>, <zawa:worm>);
+
+
 // make kibble recipes take a wider range of ingredients
 
 <ore:kibble>.add(<zawa:kibble>, <zawa:bear_kibble>, <zawa:pachyderm_kibble>, <zawa:big_cat_kibble>, <zawa:monkey_kibble>, <zawa:snake_kibble>, <zawa:raptor_kibble>, <zawa:crocodile_kibble>, <zawa:frog_kibble>, <zawa:unglate_kibble>, <zawa:whale_kibble>, <zawa:bird_kibble>, <zawa:tortoise_kibble>, <zawa:canine_kibble>, <zawa:ape_kibble>, <zawa:pinniped_kibble>, <zawa:shark_kibble>, <lilcritters:rodent_kibble>);
