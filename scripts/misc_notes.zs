@@ -51,3 +51,5 @@ mods.jei.JEI.addDescription(<structuredcrafting:structured_crafter>, "Automated 
 <mowziesmobs:blowgun>.addTooltip("Only made by Barakoa");
 <mowziesmobs:dart>.addTooltip("Only made by Barakoa");
 
+// Bronze
+<ore:ingotBronze>.addTooltip("Made by mixing copper and tin in an Alloying Crucible");
