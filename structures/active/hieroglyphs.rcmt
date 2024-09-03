@@ -6,8 +6,181 @@
         "type": "replaceAll",
         "transformer": {
           "uniform": false,
-          "id": "hieroglyphs",
+          "id": "hieroglyphs1",
+          "sourceExpression": "chisel:sandstone-scribbles \u0026 metadata\u003d0-3",
+          "destinationPreset": "hieroglyphs",
+          "destination": [
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 0,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 1,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 2,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 3,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 5,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 6,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 7,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 8,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 9,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 10,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 11,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 12,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 13,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 14,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 15,
+              "tileEntity": "null"
+            }
+          ]
+        }
+      },
+      {
+        "type": "replaceAll",
+        "transformer": {
+          "uniform": false,
+          "id": "hieroglyphs2",
+          "sourceExpression": "chisel:sandstone-scribbles \u0026 metadata\u003d5-12",
+          "destinationPreset": "hieroglyphs",
+          "destination": [
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 0,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 1,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 2,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 3,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 5,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 6,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 7,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 8,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 9,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 10,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 11,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 12,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 13,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 14,
+              "tileEntity": "null"
+            },
+            {
+              "block": "chisel:sandstone-scribbles",
+              "metadata": 15,
+              "tileEntity": "null"
+            }
+          ]
+        }
+      },
+      {
+        "type": "replaceAll",
+        "transformer": {
+          "uniform": false,
+          "id": "hieroglyphs3",
           "sourceExpression": "reccomplex:generic_solid \u0026 metadata\u003d4",
+          "destinationPreset": "hieroglyphs",
           "destination": [
             {
               "block": "chisel:sandstone-scribbles",
@@ -92,7 +265,7 @@
   "metadata": {
     "title": "Hieroglyphs",
     "description": [
-      ""
+      "Randomize hieroglyphs"
     ]
   }
 }
