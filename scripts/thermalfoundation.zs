@@ -8,6 +8,7 @@ val storageAlloysToRemove = [2,4,5,6,7] as int[];
 
 val materialsToRemove = [
 	22,23,24,25,26,27, // vanilla gears
+	58, // coke
 	68,69,71,98,100,101,102,103, // unwanted dusts
 	132,133,135,162,163,164,165,166,167, // unwanted ingots
 	196,197,199,226,227,228,229,230,231, // unwanted nuggets
@@ -42,6 +43,7 @@ for satr in storageAlloysToRemove {
 }	
 for mtr in materialsToRemove {
 	mods.jei.JEI.removeAndHide(materialDef.makeStack(mtr));
+	recipes.removeByInput(materialDef.makeStack(mtr));
 }	
 	
 
@@ -57,7 +59,8 @@ mods.jei.JEI.removeAndHide(<thermalfoundation:meter>);
 
 // add new recipes
 
-furnace.addRecipe(<thermalfoundation:material:892> * 3, <ore:oreClathrateOilSand>); // bitumen
+furnace.addRecipe(<thermalfoundation:material:892>, <ore:oreClathrateOilSand>); // bitumen
+furnace.addRecipe(<thermalfoundation:material:833>, <thermalfoundation:material:892>); // tar
 
 recipes.addShapeless("mana_dust", <thermalfoundation:material:1028>, [<thermalfoundation:material:1024>, <thermalfoundation:material:1025>, <thermalfoundation:material:1026>, <thermalfoundation:material:1027>]); // elemental dusts to mana dust
 

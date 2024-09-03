@@ -70,14 +70,14 @@ for i, items in metals {
 }
 
 // melt oil sand to crude oil
-mods.crossroads.HeatingCrucible.addRecipe(<thermalfoundation:ore_fluid:0>, <liquid:crude_oil> * 1000, "thermalfoundation:blocks/ore/ore_fluid_crude_oil_sand");
-mods.crossroads.HeatingCrucible.addRecipe(<thermalfoundation:ore_fluid:5>, <liquid:crude_oil> * 1000, "thermalfoundation:blocks/ore/ore_fluid_crude_oil_red_sand");
+mods.crossroads.HeatingCrucible.addRecipe(<thermalfoundation:ore_fluid:0>, <liquid:crude_oil> * 500, "thermalfoundation:blocks/ore/ore_fluid_crude_oil_sand");
+mods.crossroads.HeatingCrucible.addRecipe(<thermalfoundation:ore_fluid:5>, <liquid:crude_oil> * 500, "thermalfoundation:blocks/ore/ore_fluid_crude_oil_red_sand");
 
 // and tar
 mods.crossroads.HeatingCrucible.addRecipe(<thermalfoundation:material:833>, <liquid:crude_oil> * 250, "minecraft/blocks/coal_block");
 
 // and bitumen
-mods.crossroads.HeatingCrucible.addRecipe(<thermalfoundation:material:892>, <liquid:crude_oil> * 250, "minecraft/blocks/coal_block");
+mods.crossroads.HeatingCrucible.addRecipe(<thermalfoundation:material:892>, <liquid:crude_oil> * 500, "minecraft/blocks/coal_block");
 
 
 // melt down elemental dusts
