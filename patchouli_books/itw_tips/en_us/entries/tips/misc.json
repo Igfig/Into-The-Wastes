@@ -2,6 +2,7 @@
     "name": "Miscellaneous",
     "icon": "minecraft:knowledge_book",
     "category": "patchouli:tips",
+	"sortnum": 10,
     "pages": [
 		{
 			"type": "crafting",
