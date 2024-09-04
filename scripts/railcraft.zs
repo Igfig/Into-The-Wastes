@@ -121,3 +121,8 @@ for i, dye in postDyes {
 		[anyPost,  dye,  anyPost],
 		[anyPost,anyPost,anyPost]]);
 }
+
+
+// water tank recipe should be able to use tar
+
+recipes.replaceAllOccurences(<minecraft:slime_ball>,<minecraft:slime_ball>|<thermalfoundation:material:833>,<railcraft:tank_water>);
