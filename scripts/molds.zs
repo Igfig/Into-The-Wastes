@@ -29,7 +29,7 @@ recipes.addShapeless("mold_nugget", <foundry:mold:7>, [porcelain, <ore:nuggetIro
 
 <foundry:mold:21>.displayName = "Orb Mold";
 recipes.remove(<foundry:mold:21>);
-recipes.addShapeless("mold_orb", <foundry:mold:21>, [porcelain, <ore:enderpearl> | <ore:gemPearl>]);
+recipes.addShapeless("mold_orb", <foundry:mold:21>, [porcelain, <wildnature:pebble> | <ore:enderpearl> | <ore:gemPearl>]);
 
 
 // recipes for tool molds
