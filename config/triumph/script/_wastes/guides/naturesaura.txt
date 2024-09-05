@@ -1,13 +1,15 @@
 setIcon(<patchouli:guide_book, nbt:{"patchouli:book":"naturesaura:book"}>)
-setTitle("Pages of Discovery")
-setDescription("Craft the Book of Natural Aura to learn about the magic of Aura")
+setTitle("Nature's Aura")
+setDescription("Craft a piece of Brilliant Fiber and place it on some leaves to start learning about the magic of Aura.")
 setFrameType("goal")
 addParent("_wastes:root")
 
 setShowToast(false)
 setAnnounceToChat(false)
 
-criteria = addCriteria("forging_manual", "minecraft:inventory_changed")
-criteria.addItem(<patchouli:guide_book, nbt:{"patchouli:book":"naturesaura:book"}>)
+criteria = addCriteria("fiber", "minecraft:inventory_changed")
+criteria.addItem("naturesaura:gold_fiber">)
+
+addRewardItem(<patchouli:guide_book, nbt:{"patchouli:book":"naturesaura:book"}>);
 
 setPos(-82,-44)

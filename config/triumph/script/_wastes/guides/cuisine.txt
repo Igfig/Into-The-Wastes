@@ -1,13 +1,15 @@
 setIcon(<cuisine:manual>)
 setTitle("Cuisine")
-setDescription("Craft a Culinary Manual to learn about real cooking")
+setDescription("Collect any food to start learning about real cooking")
 setFrameType("goal")
 addParent("_wastes:root")
 
 setShowToast(false)
 setAnnounceToChat(false)
 
-criteria = addCriteria("craft_cuisine", "minecraft:inventory_changed")
-criteria.addItem(<cuisine:manual>)
+criteria = addCriteria("cuisine", "triumph:completed_advancement")
+criteria.setAdvancement("cuisine:root")
+
+addRewardItem(<cuisine:manual>);
 
 setPos(-61,-16)

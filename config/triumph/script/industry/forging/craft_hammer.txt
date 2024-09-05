@@ -1,6 +1,6 @@
 setIcon("tinkersforging:hammer/stone")
 setTitle("Hammer Time")
-setDescription("Craft a Tinker's Hammer")
+setDescription("Craft a basic Tinker's Hammer to start learning about smithing")
 
 addParent("industry:root")
 
@@ -10,4 +10,5 @@ criteria = addCriteria("hammer/stone", "minecraft:inventory_changed")
 criteria.addItem("tinkersforging:hammer/stone")
 
 setRequirements("any")
-setPos(32,135)
+
+setPos(32,122)

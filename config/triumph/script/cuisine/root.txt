@@ -7,8 +7,6 @@ setAnnounceToChat(false)
 
 pageVisibleIf("cuisine:root")
 
-criteria = addCriteria("manual", "triumph:completed_advancement")
-criteria.setAdvancement("_wastes:guides/cuisine")
 criteria = addCriteria("meat", "triumph:completed_advancement")
 criteria.setAdvancement("_wastes:meat")
 criteria = addCriteria("fruit", "triumph:completed_advancement")

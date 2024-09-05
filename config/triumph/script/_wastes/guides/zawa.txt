@@ -1,9 +1,13 @@
-setIcon("zawa:care_guide")
+setIcon("zawa:kibble")
 setTitle("ZAWA")
-setDescription("Craft an Animal Care Guide to learn about keeping zoo animals")
+setDescription("Craft some Kibble to learn about keeping zoo animals")
 setFrameType("goal")
 addParent("_wastes:root")
 
-criteria = addCriteria("guide", "minecraft:inventory_changed")
-criteria.addItem("zawa:care_guide")
+criteria = addCriteria("kibble", "minecraft:inventory_changed")
+criteria.addItem("zawa:kibble")
+
+addRewardItem(<zawa:care_guide>);
+addRewardItem(<zawa:data_book>);
+
 setPos(-103,-72)

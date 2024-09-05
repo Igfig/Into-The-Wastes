@@ -1,5 +1,5 @@
 setIcon("roots:wildroot")
-setTitle("The Root of Magic")
+setTitle("Roots")
 setDescription("Break ceiling roots in dirt caves to collect wildroot and start learning about nature magic")
 setFrameType("goal")
 addParent("_wastes:root")
@@ -9,5 +9,7 @@ setAnnounceToChat(false)
 
 criteria = addCriteria("wildroot", "minecraft:inventory_changed")
 criteria.addItem("roots:wildroot")
+
+addRewardItem(<roots:roots_guide>);
 
 setPos(-61,-44)

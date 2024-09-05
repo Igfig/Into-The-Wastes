@@ -1,12 +1,15 @@
-setIcon(<patchouli:guide_book, nbt:{"patchouli:book":"tinkersforging:book"}>)
+setIcon(<tinkersforging:hammer/stone>)
 setTitle("Tinker's Forging")
-setDescription("Craft a Tinker's Forging Guide to learn about smithing")
+setDescription("Craft a Tinker's Hammer to start learning about smithing")
 setFrameType("goal")
 addParent("_wastes:root")
 
 setShowToast(false)
 setAnnounceToChat(false)
 
-criteria = addCriteria("forging_manual", "minecraft:inventory_changed")
-criteria.addItem(<patchouli:guide_book, nbt:{"patchouli:book":"tinkersforging:book"}>)
+criteria = addCriteria("gear", "triumph:completed_advancement")
+criteria.setAdvancement("industry:forging/craft_hammer")
+
+addRewardItem(<patchouli:guide_book, nbt:{"patchouli:book":"tinkersforging:book"}>);
+
 setPos(-82,-16)

@@ -1,13 +1,19 @@
-setIcon("guideapi:crossroads-info_guide")
+setIcon("crossroads:gear_iron")
 setTitle("Crossroads")
-setDescription("Craft a Technician's Manual to learn about industry")
+setDescription("Craft a fuel heater or gears to start learning about industry")
 setFrameType("goal")
 addParent("_wastes:root")
 
 setShowToast(false)
 setAnnounceToChat(false)
 
-criteria = addCriteria("crossroads_manual", "minecraft:inventory_changed")
-criteria.addItem(<guideapi:crossroads-info_guide>)
+criteria = addCriteria("gear", "triumph:completed_advancement")
+criteria.setAdvancement("industry:crossroads/gear")
+criteria = addCriteria("fuel_heater", "triumph:completed_advancement")
+criteria.setAdvancement("industry:crossroads/fuel_heater")
+
+setRequirements("any")
+
+addRewardItem(<guideapi:crossroads-info_guide>);
 
 setPos(-103,-16)
