@@ -8,7 +8,7 @@ setShowToast(false)
 setAnnounceToChat(false)
 
 criteria = addCriteria("fiber", "minecraft:inventory_changed")
-criteria.addItem("naturesaura:gold_fiber">)
+criteria.addItem("naturesaura:gold_fiber")
 
 addRewardItem(<patchouli:guide_book, nbt:{"patchouli:book":"naturesaura:book"}>);
 
