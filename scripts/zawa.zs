@@ -1,3 +1,7 @@
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+
+
 // remove unwanted items
 
 mods.jei.JEI.removeAndHide(<zawa:atv>);
@@ -5,6 +9,7 @@ mods.jei.JEI.removeAndHide(<zawa:off_road_car>);
 mods.jei.JEI.removeAndHide(<zawa:zoo_cart>);
 mods.jei.JEI.removeAndHide(<zawa:tire>);
 mods.jei.JEI.removeAndHide(<zawa:animal_net>);
+
 
 // replace some more recipes
 
@@ -38,7 +43,6 @@ recipes.addShaped("tranquilizer_gun", <zawa:tranquilizer_gun>, [
 	[<ore:logWood>,null,null]]);	
 
 
-
 // add recipes for decorative stones
 
 recipes.addShapedMirrored("river_stone", <zawa:river_stone>*4, [
@@ -70,7 +74,9 @@ recipes.addShaped("zawa_steel_bars", <zawa:steel_bars> * 6, [
 	[ironBars,ironBars,ironBars],
 	[ironBars,ironBars,ironBars]]);
 	
+	
 // rename some other blocks
+
 <zawa:steel_grate>.displayName = "Cage Bars Slab";
 <zawa:steelbar_door>.displayName = "Cage Door";
 // <zawa:campfire>.displayName = "Decorative Campfire"; // for some reason changing the name of this also changes the name of the Tough as Nails campfire
@@ -89,6 +95,7 @@ recipes.addShapeless(<minecraft:leather>, [<ore:zawaFur>|<ore:zawaHide>]);
 
 
 // worms
+
 <zawa:worm>.addTooltip("Some animals like these.");
 <zawa:worm>.addTooltip("Barely human-edible if cooked.");
 
@@ -97,28 +104,35 @@ recipes.addShapeless(<minecraft:leather>, [<ore:zawaFur>|<ore:zawaHide>]);
 furnace.addRecipe(<contenttweaker:worm_cooked>, <zawa:worm>);
 
 
-// make kibble recipes take a wider range of ingredients
+// simplify kibble recipes and make them take a wider range of ingredients
 
-<ore:kibble>.add(<zawa:kibble>, <zawa:bear_kibble>, <zawa:pachyderm_kibble>, <zawa:big_cat_kibble>, <zawa:monkey_kibble>, <zawa:snake_kibble>, <zawa:raptor_kibble>, <zawa:crocodile_kibble>, <zawa:frog_kibble>, <zawa:unglate_kibble>, <zawa:whale_kibble>, <zawa:bird_kibble>, <zawa:tortoise_kibble>, <zawa:canine_kibble>, <zawa:ape_kibble>, <zawa:pinniped_kibble>, <zawa:shark_kibble>, <lilcritters:rodent_kibble>);
+recipes.remove(<zawa:kibble>);
+recipes.addShapeless(<zawa:kibble>, [<ore:listAllgrain>, <ore:listAllveggie>]);
 
-recipes.replaceAllOccurences(<minecraft:wheat>, <ore:listAllgrain>, <ore:kibble>);
-recipes.replaceAllOccurences(<minecraft:apple>, <ore:cropApple> | <ore:cropPear>, <ore:kibble>);
-recipes.replaceAllOccurences(<minecraft:carrot>, <ore:listAllveggie>, <ore:kibble>);
-recipes.replaceAllOccurences(<minecraft:potato>, <ore:listAllveggie>, <ore:kibble>);
-recipes.replaceAllOccurences(<minecraft:bread>, <ore:foodBread>, <ore:kibble>);
-recipes.replaceAllOccurences(<minecraft:melon>, <ore:listAllcitrus>, <ore:kibble>);
+recipes.removeByInput(<zawa:kibble>);
 
-recipes.replaceAllOccurences(<minecraft:chicken>, <ore:listAllpoultryraw>, <ore:kibble>);
-recipes.replaceAllOccurences(<minecraft:porkchop>, <ore:listAllporkraw>, <ore:kibble>);
-recipes.replaceAllOccurences(<minecraft:beef>, <ore:listAllbeefraw>, <ore:kibble>);
-recipes.replaceAllOccurences(<minecraft:rabbit>, <ore:listAllrabbitraw>, <ore:kibble>);
-recipes.replaceAllOccurences(<minecraft:fish:*>, <ore:listAllseafoodraw>, <ore:kibble>);
+val kibbleRecipes = {
+	<zawa:bear_kibble>: [<zawa:kibble>, <ore:listAllseafoodraw>, <ore:listAllfruit>],
+	<zawa:pachyderm_kibble>: [<zawa:kibble>, <ore:treeLeaves>, <ore:listAllveggie>],
+	<zawa:big_cat_kibble>: [<zawa:kibble>, <ore:listAllpoultryraw>, <ore:listAllporkraw>],
+	<zawa:monkey_kibble>: [<zawa:kibble>, <ore:treeLeaves>, <ore:listAllfruit>],
+	<zawa:snake_kibble>: [<zawa:kibble>, <ore:smallMeatraw>, <ore:egg>],
+	<zawa:raptor_kibble>: [<zawa:kibble>, <ore:smallMeatraw>, <ore:listAllseafoodraw>],
+	<zawa:crocodile_kibble>: [<zawa:kibble>, <ore:listAllpoultryraw>, <ore:listAllseafoodraw>],
+	<zawa:frog_kibble>: [<zawa:kibble>, <ore:listAllseed>, <minecraft:sugar>],
+	<zawa:unglate_kibble>: [<zawa:kibble>, <ore:listAllgrain>, <ore:listAllveggie>],
+	<zawa:whale_kibble>: [<zawa:kibble>, <ore:listAllseafoodraw>, <minecraft:sugar>],
+	<zawa:bird_kibble>: [<zawa:kibble>, <ore:listAllseed>, <ore:listAllfruit>],
+	<zawa:tortoise_kibble>: [<zawa:kibble>, <ore:listAllveggie>, <ore:listAllfruit>],
+	<zawa:canine_kibble>: [<zawa:kibble>, <ore:smallMeatraw>, <ore:listAllpoultryraw>],
+	<zawa:ape_kibble>: [<zawa:kibble>, <minecraft:sugar>, <ore:listAllfruit>],
+	<zawa:pinniped_kibble>: [<zawa:kibble>, <ore:listAllseafoodraw>, <ore:listAllseafoodraw>],
+	<lilcritters:rodent_kibble>: [<zawa:kibble>, <ore:listAllseed>, <ore:listAllnut>]
+} as IIngredient[][IItemStack];
 
-recipes.replaceAllOccurences(<minecraft:wheat_seeds>, <ore:listAllseed>, <ore:kibble>);
-recipes.replaceAllOccurences(<minecraft:pumpkin_seeds>, <ore:listAllseed>, <ore:kibble>);
-recipes.replaceAllOccurences(<minecraft:leaves>, <ore:treeLeaves>, <ore:kibble>);
+<ore:kibble>.add(kibbleRecipes.keys);
+<ore:kibble>.add(<zawa:shark_kibble>); // shark ingredients don't need to be changed
 
-recipes.replaceAllOccurences(<zawa:bird_meat>, <ore:listAllpoultryraw>, <ore:kibble>);
-recipes.replaceAllOccurences(<zawa:kelp>, <zawa:kelp> | <biomesoplenty:seaweed>, <ore:kibble>);
-
-recipes.replaceAllOccurences(<lilcritters:acorn>, <ore:listAllnut>, <ore:kibble>);
+for kibble, ingredients in kibbleRecipes {
+	recipes.addShapeless(kibble, ingredients);
+}

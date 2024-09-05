@@ -18,6 +18,7 @@
 <ore:cropApple>.add(<minecraft:apple>, <wildnature:green_apple>);
 <ore:cropPear>.add(<wildnature:pear>);
 <ore:cropCherry>.add(<wildnature:cherry>);
+<ore:cropCherry>.add(<wildnature:cherry>);
 <ore:cropPeach>.add(<valoegheses_be:fruit_peach>, <valoegheses_be:fruit_nectarine>);
 <ore:cropPlum>.add(<valoegheses_be:fruit_plum>);
 <ore:cropDate>.add(<valoegheses_be:fruit_date>);
@@ -86,12 +87,10 @@
 <ore:listAllreptilemeatraw>.add(<zawa:reptile_meat_raw>, <zawa:raw_frog_leg>, <animania:raw_frog_legs>);
 <ore:listAllreptilemeatcooked>.add(<zawa:reptile_meat_cooked>, <zawa:cooked_frog_leg>, <animania:cooked_frog_legs>);
 
-<ore:smallMeatraw>.addAll(<ore:listAllpoultryraw>);
 <ore:smallMeatraw>.addAll(<ore:listAllrabbitraw>);
 <ore:smallMeatraw>.addAll(<ore:listAllreptilemeatraw>);
 <ore:smallMeatraw>.addAll(<ore:foodRatraw>);
 <ore:smallMeatraw>.add(<rats:raw_rat>, <zawa:bush_meat_raw>);
-<ore:smallMeatcooked>.addAll(<ore:listAllpoultrycooked>);
 <ore:smallMeatcooked>.addAll(<ore:listAllrabbitcooked>);
 <ore:smallMeatcooked>.addAll(<ore:listAllreptilemeatcooked>);
 <ore:smallMeatcooked>.addAll(<ore:foodRatcooked>);
@@ -157,6 +156,7 @@
 
 // really hedgehogs are mainly insectivorous, but we don't have any of those available
 // seeing a lot of contradictory info out there about what hedgehogs eat, tbh
+<ore:hedgehogFood>.addAll(<ore:poultryCooked>);
 <ore:hedgehogFood>.addAll(<ore:smallMeatcooked>);
 <ore:hedgehogFood>.addAll(<ore:egg>);
 <ore:hedgehogFood>.addAll(<ore:listAllnut>);
@@ -170,6 +170,7 @@
 <ore:horseFood>.addAll(<ore:cropPear>);
 
 <ore:peacockFood>.addAll(<ore:chickenFood>);
+<ore:peacockFood>.addAll(<ore:poultryRaw>);
 <ore:peacockFood>.addAll(<ore:smallMeatraw>);
 <ore:peacockFood>.addAll(<ore:listAllgrain>);
 <ore:peacockFood>.addAll(<ore:egg>);
