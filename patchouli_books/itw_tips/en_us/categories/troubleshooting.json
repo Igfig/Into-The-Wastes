@@ -1,0 +1,6 @@
+{
+    "name": "Troubleshooting",
+    "description": "Known bugs and their workarounds.",
+    "icon": "base:wrench",
+	"sortnum": 2
+}
