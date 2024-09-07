@@ -126,3 +126,4 @@ for i, dye in postDyes {
 // water tank recipe should be able to use tar
 
 recipes.replaceAllOccurences(<minecraft:slime_ball>,<minecraft:slime_ball>|<thermalfoundation:material:833>,<railcraft:tank_water>);
+<railcraft:tank_water>.addTooltip("Collects rainwater much faster than other containers");
