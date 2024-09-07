@@ -1,4 +1,4 @@
-setIcon(<cuisine:manual>)
+setIcon(<minecraft:cooked_beef>)
 setTitle("Cuisine")
 setDescription("Collect any food to start learning about real cooking")
 setFrameType("goal")

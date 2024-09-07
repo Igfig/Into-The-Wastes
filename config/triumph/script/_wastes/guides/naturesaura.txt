@@ -1,6 +1,6 @@
-setIcon(<patchouli:guide_book, nbt:{"patchouli:book":"naturesaura:book"}>)
+setIcon("naturesaura:gold_fiber")
 setTitle("Nature's Aura")
-setDescription("Craft a piece of Brilliant Fiber and place it on some leaves to start learning about the magic of Aura.")
+setDescription("Craft a piece of Brilliant Fiber. Place it on some leaves to start learning about the magic of Aura.")
 setFrameType("goal")
 addParent("_wastes:root")
 
