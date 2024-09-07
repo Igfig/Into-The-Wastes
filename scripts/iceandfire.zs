@@ -334,6 +334,12 @@ for material, removeTools in removeToolMaterials {
 }
 
 
+// remove elemental dragonbone sword recipes (see casting.zs for replacements)
+
+recipes.remove(<iceandfire:dragonbone_sword_fire>);
+recipes.remove(<iceandfire:dragonbone_sword_ice>);
+
+
 // additional tools with less standard recipes
 
 val removeOtherTools = [
