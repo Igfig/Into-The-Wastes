@@ -7,6 +7,6 @@ addParent("_wastes:root")
 criteria = addCriteria("guide", "minecraft:inventory_changed")
 criteria.addItem("minecraft:lead")
 
-addRewardItem("animania:animania_manual")
+addRewardItem(<animania:animania_manual>)
 
 setPos(-124,-72)
