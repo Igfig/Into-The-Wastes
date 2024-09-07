@@ -7,4 +7,4 @@ criteria = addCriteria("mill", "minecraft:inventory_changed")
 criteria.addItem("cuisine:mill")
 
 setRequirements("any")
-setPos(38,-5)
+setPos(104,-24)

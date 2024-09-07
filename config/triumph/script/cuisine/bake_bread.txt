@@ -1,10 +1,10 @@
 setIcon("minecraft:bread")
 setTitle("Not as Easy As It Used To Be")
 setDescription("Bake flour directly to bread, or craft it into dough first to stretch your supply.")
-addParent("cuisine:grind_flour")
+addParent("cuisine:mill_flour")
 setFrameType("goal")
 
 criteria = addCriteria("bread", "minecraft:inventory_changed")
 criteria.addItem("minecraft:bread")
 
-setPos(104,-5)
+setPos(170,-24)

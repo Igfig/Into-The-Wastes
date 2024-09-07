@@ -1,0 +1,14 @@
+setIcon(<cuisine:food:1>)
+setTitle("Flour Power")
+setDescription("Grind wheat, potatoes, or white rice to flour in a mill.")
+addParent("cuisine:craft_mill")
+
+criteria = addCriteria("wheat", "minecraft:inventory_changed")
+criteria.addItem(<cuisine:food:1>)
+criteria = addCriteria("rice", "minecraft:inventory_changed")
+criteria.addItem(<cuisine:food:3>)
+criteria = addCriteria("potato", "minecraft:inventory_changed")
+criteria.addItem("roots:flour")
+
+setRequirements("any")
+setPos(137,-24)

@@ -75,3 +75,16 @@ for i, toolType in tools {
 		}
 	}
 }
+
+
+// pebbles should combine into cobble, not raw stone.
+
+recipes.removeByRecipeName("wildnature:pebble");
+recipes.addShaped("pebble", <minecraft:cobblestone>, [
+	[<wildnature:pebble>, <wildnature:pebble>],
+	[<wildnature:pebble>, <wildnature:pebble>]]);
+
+
+// a note
+
+<wildnature:pebble>.addTooltip("Drops from gravel");

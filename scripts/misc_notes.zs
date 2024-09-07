@@ -3,6 +3,9 @@ val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"});
 waterBottle.addTooltip("Not safe to drink");
 waterBottle.addTooltip("Boil in a furnace, or craft with a charcoal filter");
 
+<minecraft:cauldron>.addTooltip("Can't pipe fluids in and out, but bottle dispensers work");
+<minecraft:cauldron>.addTooltip("Zoo animals can only drink from this or water bowls");
+
 // rationale for why potions make you thirsty
 <minecraft:nether_wart>.addTooltip("Unexpectedly salty.");
 
@@ -44,8 +47,12 @@ mods.jei.JEI.addDescription(<structuredcrafting:structured_crafter>, "Automated 
 
 // Clay barrel
 <ceramics:clay_bucket>.addTooltip("Breaks after placing hot fluids");
-// TODO maybe only put it on the empty bucket and buckets actually holding hot fluids?
+// I'd put a different message on the ones holding hot fluids, but there are a lot of those. TODO
 
 // Barakoa spear
 <mowziesmobs:spear>.addTooltip("Only made by Barakoa");
+<mowziesmobs:blowgun>.addTooltip("Only made by Barakoa");
+<mowziesmobs:dart>.addTooltip("Only made by Barakoa");
 
+// Bronze
+<ore:ingotBronze>.addTooltip("Made by mixing copper and tin in an Alloying Crucible");

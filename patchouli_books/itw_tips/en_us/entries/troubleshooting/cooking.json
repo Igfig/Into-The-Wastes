@@ -1,0 +1,27 @@
+{
+    "name": "Can't see wok progress",
+    "icon": "cuisine:wok",
+    "category": "patchouli:troubleshooting",
+    "pages": [
+		{
+			"type": "text",
+			"text": "$(bold)When I cook in a wok, the circles that show ingredient doneness don't appear.$()$(br2)This is due to an incompatibility between the Cuisine mod and most shaderpacks."
+		},
+		{
+			"type": "text",
+			"text": "Workarounds include: $(li)If you wiggle your camera around, the circle may appear hazily at certain angles. $(li)Turning off your shaderpack while you cook ensures that the circles appear correctly. $(li)Try a different shaderpack. I've tested a few popular ones without success, but if you find one that does work then please leave a comment on our Curseforge page!"
+		},
+		{
+			"type": "image",
+			"border": true,
+			"title": "Expected behaviour",
+			"images": ["contenttweaker:textures/gui/cooking_circles_correct.png"]
+		},
+		{
+			"type": "image",
+			"border": true,
+			"title": "Behaviour with shaders",
+			"images": ["contenttweaker:textures/gui/cooking_circles_shaders.png"]
+		}
+    ]
+}

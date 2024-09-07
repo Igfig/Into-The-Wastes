@@ -1,0 +1,36 @@
+{
+    "name": "Hydration",
+    "icon": "toughasnails:purified_water_bottle",
+    "category": "patchouli:tips",
+    "pages": [
+		{
+			"type": "crafting",
+			"recipe": "ceramics:barrels/unfired_clay_barrel",
+			"text": "Water is finite, so use it carefully!$(br2)You can stretch your supply x4 by putting it in a barrel, basin, or cauldron before bottling it."
+		},
+		{
+			"type": "smelting",
+			"recipe": "ceramics:clay_barrel_unfired",
+			"text": "Rain collects in cauldrons, clay barrels, and basins. This is the only renewable way to get more water in the early game.$(br2)Even if an oasis has no water on the surface, there may be hidden pools in underground caves."
+		},
+		{
+			"type": "crafting",
+			"recipe": "cuisine:wooden_basin",
+			"recipe2": "cuisine:earthen_basin"
+		},
+		{
+			"type": "smelting",
+			"recipe": "minecraft:potion{Potion:'minecraft:water'}",
+			"text": "Water scooped out of a pond isn't great to drink. Boil water in a furnace to purify it."
+		},
+		{
+			"type": "text",
+			"text": "Fruit juices are a good renewable way to stay hydrated. Put some fruit in a basin and stomp on it!$(br2)Drinking purified water restores more thirst, but juices give you helpful status effects."
+		},
+		{
+			"type": "crafting",
+			"recipe": "crafttweaker:cactus_juice",
+			"text": "You can drink cactus juice in a pinch, but in the long run it'll just make you thirstier."
+		}
+    ]
+}

@@ -1,0 +1,9 @@
+setIcon(<cuisine:material:3>)
+setTitle("Feeling A Little Salty")
+setDescription("Put something hot under a basin of water to get crude salt.")
+addParent("cuisine:craft_basin")
+
+criteria = addCriteria("salt", "minecraft:inventory_changed")
+criteria.addItem(<cuisine:material:3>)
+
+setPos(137,87)

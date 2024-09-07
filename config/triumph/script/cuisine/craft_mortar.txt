@@ -1,0 +1,8 @@
+setIcon(<cuisine:mortar>)
+setTitle("Not The Kind For Bricks")
+setDescription("Make a kitchen mortar to prepare your ingredients before cooking. Prepared ingredients are less likely to undercook.")
+addParent("cuisine:cook_dish")
+
+criteria = addCriteria("craft_mortar", "minecraft:inventory_changed")
+criteria.addItem(<cuisine:mortar>)
+setPos(137,54)

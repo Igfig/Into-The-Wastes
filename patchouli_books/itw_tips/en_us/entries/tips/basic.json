@@ -1,0 +1,26 @@
+{
+    "name": "Basic Mechanics",
+    "icon": "biomesoplenty:earth",
+    "category": "patchouli:tips",
+	"priority": true,
+    "pages": [
+		{
+			"type": "text",
+			"text": "The Wastes are hot and dry. Keep an eye on your thirst and temperature meters.$(br2)Only in oases can you find cooler temperatures and real water."
+		},
+		{
+			"type": "text",
+			"text": "The further you go north or south, the cooler and wetter oasis climates will get. You'll also find new creatures and resources.$(br2)Stack sizes are smaller than usual for food, metals, and some crafting ingredients. For bulk transport, use caravans, wagons, or trains."
+		},
+		{
+			"type": "text",
+			"text": "You respawn at a new location each time you die, even if you've slept in a bed. Your items stay on your corpse.$(br2)When you respawn, you'll be at a random location within 1500m of your spawn point."
+		},
+		{
+			"type": "spotlight",
+			"title": "Leaving the Wastes",
+			"item": "rats:chunky_cheese_token",
+			"text": "There's only one way to escape from the Wastes: create a Token of the Unspoiled Lands, and use it to depart for a better world."
+		}
+    ]
+}

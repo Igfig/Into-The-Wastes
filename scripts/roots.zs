@@ -57,6 +57,11 @@ Fey.addRecipe("unending_bowl", <roots:unending_bowl>, [<minecraft:clay>, bedrock
 mods.jei.JEI.removeAndHide(<roots:unending_bowl>);
 
 
+// remove block-breaking recipes, since theyve all been replaced
+
+mods.jei.JEI.hideCategory("roots.block_break");
+
+
 // remove OP mortar and pestle recipes
 
 Mortar.removeRecipe(<minecraft:blaze_powder>);

@@ -21,14 +21,15 @@ val soups = {
 	<item:minecraft:mushroom_stew>: 30,
 	<item:minecraft:rabbit_stew>: 10,
 	<item:inspirations:potato_soup>: 10,
-	<item:roots:wildroot_stew>: 10
+	<item:roots:wildroot_stew>: 10,
+	<item:mysticalworld:stewed_eggplant>: 10
 } as int[IItemStack];
 
 
 // a function for getting a random soup
 
 function getRandomSoup(world as World, soups as int[IItemStack]) as IItemStack {
-	var roll = world.random.nextInt(90); // the weights defined above all add up to 90
+	var roll = world.random.nextInt(100); // the weights defined above all add up to 100
 	
 	// for entry in soups.entrySet {
 	for soup, weight in soups {

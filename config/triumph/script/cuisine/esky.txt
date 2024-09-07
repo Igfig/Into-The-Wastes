@@ -6,4 +6,4 @@ addParent("cuisine:larder")
 criteria = addCriteria("item", "minecraft:inventory_changed")
 criteria.addItem("foodfunk:esky")
 
-setPos(71,-38)
+setPos(137,146)

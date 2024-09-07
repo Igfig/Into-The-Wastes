@@ -30,7 +30,6 @@ val ingots = {
 	769:<ore:charcoal>,
 	770:<ore:obsidian>,
 	800:<ore:plankWood>, // sawdust
-	833:<ore:oreClathrateOilSand> // tar
 	
 } as IOreDictEntry[int];
 
@@ -57,3 +56,4 @@ mods.crossroads.Grindstone.addRecipe(<ore:logWood>, <thermalfoundation:material:
 mods.crossroads.Grindstone.addRecipe(<ore:enderpearl>, <railcraft:dust:6>); // ender powder
 mods.crossroads.Grindstone.addRecipe(<ore:netherrack>, <crossroads:sulfur>); // sulfur
 mods.crossroads.Grindstone.addRecipe(<cuisine:material:3>, <crossroads:dust_salt>); // salt
+mods.crossroads.Grindstone.addRecipe(<ore:oreClathrateOilSand>, <thermalfoundation:material:892> * 2); // bitumen

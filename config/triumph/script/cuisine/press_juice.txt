@@ -1,4 +1,4 @@
-setIcon(<cuisine:glass_bottle>)
+setIcon(<cuisine:glass_bottle, nbt:{Fluid:{FluidName:"cuisine_juice",Amount:250,Tag:{material:"orange"}}}>)
 setTitle("Come Get Y'alls Juice")
 setDescription("Put some fruit in a basin and jump up and down on top of it to squeeze it into juice.")
 addParent("cuisine:craft_basin")
@@ -6,4 +6,4 @@ addParent("cuisine:craft_basin")
 criteria = addCriteria("juice", "minecraft:inventory_changed")
 criteria.addItem("cuisine:glass_bottle")
 
-setPos(71,113)
+setPos(137,113)

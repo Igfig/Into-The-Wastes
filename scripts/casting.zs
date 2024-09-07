@@ -52,6 +52,12 @@ Casting.addRecipe(<mysticalworld:silver_leggings>, <liquid:silver> * 1008, <foun
 Casting.addRecipe(<mysticalworld:silver_boots>, <liquid:silver> * 576, <foundry:mold:17>);
 
 
+// cast elemental dragonbone weapons
+
+Casting.addRecipe(<iceandfire:dragonbone_sword_fire>, <liquid:pyrotheum> * 250, <iceandfire:dragonbone_sword>, <iceandfire:fire_dragon_blood>);
+Casting.addRecipe(<iceandfire:dragonbone_sword_ice>, <liquid:cryotheum> * 250, <iceandfire:dragonbone_sword>, <iceandfire:ice_dragon_blood>);
+
+
 // some more casting recipes
 Casting.addRecipe(<minecraft:ender_pearl>, <liquid:ender> * 250, <foundry:mold:21>); // ender pearl
 Casting.addRecipe(<thermalfoundation:material:833>, <liquid:crude_oil> * 250, <foundry:mold:21>); // tar
@@ -79,5 +85,4 @@ for i, liquid in liquids {
 	CastingTable.removePlateRecipe(liquid);
 	Casting.addRecipe(gears[i], liquid * 144, <foundry:mold:2>);
 	Casting.addRecipe(plates[i], liquid * 144, <foundry:mold:1>);
-	CastingTable.addPlateRecipe(plates[i], liquid * 144);
 }

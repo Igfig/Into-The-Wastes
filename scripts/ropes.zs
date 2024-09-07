@@ -37,7 +37,7 @@ recipes.addShapedMirrored("quark_chain", <quark:chain>, [
 	[link,null,null]]);
 
 <zawa:thin_rope>.displayName = "Thin Climbable Rope";
-<zawa:thin_rope>.addTooltip("Climbable if you have a wall to brace against.");
+<zawa:thin_rope>.addTooltip("Brace against a wall or hold Space to climb.");
 recipes.remove(<zawa:thin_rope>);
 recipes.addShapedMirrored("zawa_thin_rope", <zawa:thin_rope> * 3, [
 	[null,null,strg], 

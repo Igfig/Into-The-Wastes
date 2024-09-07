@@ -1,6 +1,6 @@
 setIcon("iceandfire:dragon_skull")
 setTitle("Ice And Fire")
-setDescription("Enter a world of magical creatures by finding some dragon bones")
+setDescription("Enter a world of magical creatures by finding some dragon bones. Right-click to harvest them.")
 setFrameType("goal")
 addParent("_wastes:root")
 
@@ -9,4 +9,7 @@ setAnnounceToChat(false)
 
 criteria = addCriteria("dragonbone", "minecraft:inventory_changed")
 criteria.addItem("iceandfire:dragonbone")
+
+addRewardItem(<iceandfire:manuscript>);
+
 setPos(-61,-72)
