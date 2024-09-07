@@ -11,4 +11,7 @@ alwaysHidden()
 criteria = addCriteria("crafted", "minecraft:inventory_changed")
 criteria.addItem("animania:item_cart")
 
+setUncompletedLineColor(200,200,200)
+setCompletedLineColor(200,200,200)
+
 setPos(67,-113)

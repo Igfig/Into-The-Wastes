@@ -13,4 +13,7 @@ alwaysHidden()
 criteria = addCriteria("crafted", "minecraft:inventory_changed")
 criteria.addItem("animania:cheese_mold")
 
+setUncompletedLineColor(200,200,200)
+setCompletedLineColor(200,200,200)
+
 setPos(67,-50)

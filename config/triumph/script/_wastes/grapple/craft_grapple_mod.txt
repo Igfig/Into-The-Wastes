@@ -8,4 +8,7 @@ addParent("_wastes:mining/mine_lead")
 criteria = addCriteria("upgrade", "minecraft:inventory_changed")
 criteria.addItem("grapplemod:baseupgradeitem")
 
+setUncompletedLineColor(200,200,200)
+setCompletedLineColor(200,200,200)
+
 setPos(71,30)
