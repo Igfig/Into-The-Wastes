@@ -11,4 +11,4 @@ criteria = addCriteria("earthen_basin_colored", "minecraft:inventory_changed")
 criteria.addItem(<cuisine:earthen_basin_colored, meta:0~15>)
 
 setRequirements("any")
-setPos(38,113)
+setPos(104,113)

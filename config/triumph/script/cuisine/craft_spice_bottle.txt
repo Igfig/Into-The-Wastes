@@ -1,0 +1,8 @@
+setIcon(<cuisine:spice_bottle>)
+setTitle("The Spice of Life")
+setDescription("Make a spice bottle to store and dispense spices and edible fluids to season your food.")
+addParent("cuisine:cook_dish")
+
+criteria = addCriteria("craft_bottle", "minecraft:inventory_changed")
+criteria.addItem(<cuisine:spice_bottle>)
+setPos(120,28)

@@ -7,4 +7,4 @@ setFrameType("goal")
 criteria = addCriteria("drink", "minecraft:inventory_changed")
 criteria.addItem("cuisine:drink")
 
-setPos(104,113)
+setPos(170,113)

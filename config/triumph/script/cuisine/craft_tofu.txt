@@ -1,0 +1,17 @@
+setIcon(<cuisine:food:0>)
+setTitle("Tofu Time")
+setDescription("Put soy milk in a basin or on the ground and throw in some crude salt to get tofu.")
+addParent("cuisine:craft_soy_milk")
+addParent("cuisine:craft_salt")
+
+criteria = addCriteria("tofu", "minecraft:inventory_changed")
+criteria.addItem(<cuisine:food:0>)
+criteria = addCriteria("block", "minecraft:inventory_changed")
+criteria.addItem(<cuisine:tofu_block>)
+
+setRequirements("any")
+
+setUncompletedLineColor(200,200,200)
+setCompletedLineColor(200,200,200)
+
+setPos(170,-50)

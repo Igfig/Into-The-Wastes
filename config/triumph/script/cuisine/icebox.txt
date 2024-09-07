@@ -6,4 +6,4 @@ addParent("cuisine:esky")
 criteria = addCriteria("item", "minecraft:inventory_changed")
 criteria.addItem("foodfunk:icebox")
 
-setPos(104,-38)
+setPos(170,146)

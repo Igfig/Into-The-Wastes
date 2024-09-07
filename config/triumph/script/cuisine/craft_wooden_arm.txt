@@ -1,0 +1,10 @@
+setIcon(<cuisine:material:0>)
+setTitle("Wild Arms")
+setDescription("Make a Wooden Arm to automate milling and other right-clicking tasks.")
+addParent("cuisine:craft_mill")
+
+criteria = addCriteria("arm", "minecraft:inventory_changed")
+criteria.addItem(<cuisine:material:0>)
+
+setRequirements("any")
+setPos(137,-76)

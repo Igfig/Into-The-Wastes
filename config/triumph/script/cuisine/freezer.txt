@@ -7,4 +7,4 @@ setFrameType("challenge")
 criteria = addCriteria("item", "minecraft:inventory_changed")
 criteria.addItem("foodfunk:freezer")
 
-setPos(137,-38)
+setPos(203,146)

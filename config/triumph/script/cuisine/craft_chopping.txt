@@ -1,0 +1,13 @@
+setIcon(<cuisine:kitchen_knife>)
+setTitle("Chop Chop")
+setDescription("Make a kitchen knife and chopping board to prepare ingredients in new ways.")
+addParent("cuisine:craft_mortar")
+
+criteria = addCriteria("craft_knife", "minecraft:inventory_changed")
+criteria.addItem(<cuisine:kitchen_knife>)
+criteria = addCriteria("craft_board", "minecraft:inventory_changed")
+criteria.addItem(<cuisine:chopping_board>)
+
+setRequirements("all")
+
+setPos(170,54)
