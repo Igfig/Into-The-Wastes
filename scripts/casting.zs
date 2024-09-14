@@ -61,6 +61,8 @@ Casting.addRecipe(<iceandfire:dragonbone_sword_ice>, <liquid:cryotheum> * 250, <
 // some more casting recipes
 Casting.addRecipe(<minecraft:ender_pearl>, <liquid:ender> * 250, <foundry:mold:21>); // ender pearl
 Casting.addRecipe(<thermalfoundation:material:833>, <liquid:crude_oil> * 250, <foundry:mold:21>); // tar
+Casting.addRecipe(<thermalfoundation:material:833>, <liquid:crude_oil> * 250, <foundry:mold:0>); // tar in ingot mold
+CastingTable.addIngotRecipe(<thermalfoundation:material:833>, <liquid:crude_oil> * 250); // tar in casting table
 Casting.addRecipe(<arcaneworld:ethereal_sword>, <liquid:glowstone> * 1000, <wildnature:amber_sword>, <ore:ingotMithril>);
 
 
