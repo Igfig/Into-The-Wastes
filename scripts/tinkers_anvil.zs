@@ -2,6 +2,11 @@ import mods.TinkersForging.Anvil;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
+// remove wooden hammer
+recipes.remove(<tinkersforging:hammer/wood>);
+mods.jei.JEI.removeAndHide(<tinkersforging:hammer/wood>);
+
+
 // add anvil recipes for metal plates
 
 val ingotPlates = {
