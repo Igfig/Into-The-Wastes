@@ -37,7 +37,7 @@
 
 <ore:rootVegetable>.add(<minecraft:carrot>, <minecraft:beetroot>, <cuisine:crops:10>); // turnip
 
-<ore:seed>.add(<minecraft:wheat_seeds>, <minecraft:pumpkin_seeds>, <minecraft:melon_seeds>,<minecraft:beetroot_seeds>, <inspirations:cactus_seeds>, <inspirations:cactus_seeds>, <inspirations:sugar_cane_seeds>, <inspirations:carrot_seeds>, <inspirations:potato_seeds>, <mysticalworld:assorted_seeds>, <mysticalworld:aubergine_seed>, <mysticalworld:cooked_seeds>, <roots:moonglow_seed>, <roots:spirit_herb_seed>, <roots:wildewheet_seed>, <cuisine:crops:1>); // sesame seeds
+<ore:seed>.add(<minecraft:wheat_seeds>, <minecraft:pumpkin_seeds>, <minecraft:melon_seeds>,<minecraft:beetroot_seeds>, <mysticalworld:assorted_seeds>, <mysticalworld:aubergine_seed>, <mysticalworld:cooked_seeds>, <roots:moonglow_seed>, <roots:spirit_herb_seed>, <roots:wildewheet_seed>, <cuisine:crops:1>); // sesame seeds
 
 <ore:mushroom>.add(<biomesoplenty:mushroom:1>, <environs:cyan_mushroom>, <environs:purple_mushroom>, <quark:glowshroom>, <wildnature:mushroom_1>, <wildnature:mushroom_2>, <wildnature:mushroom_3>, <wildnature:mushroom_6>, <wildnature:mushroom_7>, <wildnature:mushroom_8>, <wildnature:mushroom_9>);
 <ore:mushroomAny>.addAll(<ore:mushroom>);
