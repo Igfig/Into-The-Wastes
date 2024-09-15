@@ -55,7 +55,7 @@ tutorialStep:none
 soundCategory_master:0.5
 soundCategory_music:0.0
 soundCategory_record:1.0
-soundCategory_weather:0.2535211
+soundCategory_weather:0.25
 soundCategory_block:1.0
 soundCategory_hostile:1.0
 soundCategory_neutral:0.5
