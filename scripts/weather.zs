@@ -10,8 +10,12 @@ val gold = <ore:ingotGold>;
 furnace.addRecipe(weather, <crossroads:thermometer>);
 
 recipes.addShaped(sandLayer * 24, [[sand, sand, sand]]);
+recipes.addShapeless(<earthworks:item_sand>, 
+	[sandLayer, sandLayer]);
 recipes.addShapeless(<weather2:pocket_sand> * 4, 
 	[sandLayer, sandLayer, sandLayer, sandLayer]);
+recipes.addShapeless(<minecraft:sand>, 
+	[sandLayer, sandLayer, sandLayer, sandLayer, sandLayer, sandLayer, sandLayer, sandLayer]);
 
 
 // tier 1 weather machines

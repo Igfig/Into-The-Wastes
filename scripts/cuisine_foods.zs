@@ -5,7 +5,9 @@ val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"}).giveBa
 // flour cooks directly to bread, and crafts to two dough
 
 recipes.removeByRecipeName("cuisine:dough");
-recipes.addShapeless(<cuisine:food:2> * 2, [<ore:foodFlour>, waterBottle]); // dough
+recipes.addShapeless("dough", <cuisine:food:2> * 2, [<ore:foodFlour>, waterBottle]); // dough
+BasinThrowing.add(<ore:foodFlour>, <liquid:water> * 250, <cuisine:food:2> * 2); // alternate dough recipe
+
 furnace.addRecipe(<minecraft:bread>, <cuisine:food:1>); // flour
 
 <ore:foodFlour>.addTooltip("Bakes into one bread");

@@ -12,6 +12,19 @@ val strip = <primitivetools:leather_strip>;
 <ore:cordage>.addItems([twine, vine, strip, <minecraft:string>]);
 
 
+// hide unused bone needle and flint pieces, and remove recipes using them
+
+mods.jei.JEI.removeAndHide(<primitivetools:bone_needle>);
+mods.jei.JEI.removeAndHide(<primitivetools:flint_shard>);
+mods.jei.JEI.removeAndHide(<primitivetools:flint_flake>);
+mods.jei.JEI.removeAndHide(<primitivetools:flint_point>);
+
+recipes.removeByInput(<primitivetools:flint_shard>);
+recipes.removeByInput(<primitivetools:flint_flake>);
+recipes.removeByInput(<primitivetools:flint_point>);
+
+
+
 // add new work knives
 
 <ore:toolWorkBlade>.addItems([
@@ -102,7 +115,7 @@ val spears = {
 for tool, parts in axes {
 	val shaft = parts[0];
 	val binding = parts[1];
-	recipes.remove(tool);
+	recipes.remove(tool); // although these recipes should have already been removed tbh
 	recipes.addShapedMirrored(tool, [[flint, flint], [shaft, binding]]);
 }
 for tool, parts in knives {
@@ -199,20 +212,11 @@ recipes.replaceAllOccurences(<minecraft:string>, <ore:cordage>, <futuremc:scaffo
 
 // bring back original arrow recipe
 
-recipes.removeByRecipeName("primitivetools:arrow_2x2");
 recipes.addShaped("arrow", <minecraft:arrow> * 4, [
 	[<minecraft:flint>], 
 	[<ore:stickWood>], 
 	[<ore:feather>]]);
 	
-	
-// hide unused bone needle and flint pieces
-
-mods.jei.JEI.removeAndHide(<primitivetools:bone_needle>);
-mods.jei.JEI.removeAndHide(<primitivetools:flint_shard>);
-mods.jei.JEI.removeAndHide(<primitivetools:flint_flake>);
-mods.jei.JEI.removeAndHide(<primitivetools:flint_point>);
-
 
 // prevent flint-knapping interaction
 

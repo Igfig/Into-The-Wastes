@@ -49,6 +49,11 @@ for id, ore in plateIngots {
 }
 
 
+// remove invar rolling recipes (the ones with names at least)
+
+mods.railcraft.RollingMachine.remove("railcraft:rail_invar");
+
+
 // remove electric rails
 
 mods.jei.JEI.removeAndHide(<railcraft:rail:5>);

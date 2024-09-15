@@ -7,7 +7,7 @@
       "min": 1,
       "max": 1,
       "item": {
-        "id": "wildnature:ruby_pickaxe",
+        "id": "thermalfoundation:tool.hammer_steel",
         "damage": 0,
         "count": 1,
         "tag": {
@@ -15,104 +15,11 @@
           "nbt": {
             "Quark:RuneColor": {
               "nbtType": "int",
-              "nbt": 1
+              "nbt": 13
             },
             "ench": {
               "nbtType": "list",
               "nbt": [
-                {
-                  "nbtType": "compound",
-                  "nbt": {
-                    "lvl": {
-                      "nbtType": "short",
-                      "nbt": 1
-                    },
-                    "id": {
-                      "nbtType": "short",
-                      "nbt": 37
-                    }
-                  }
-                },
-                {
-                  "nbtType": "compound",
-                  "nbt": {
-                    "lvl": {
-                      "nbtType": "short",
-                      "nbt": 2
-                    },
-                    "id": {
-                      "nbtType": "short",
-                      "nbt": 32
-                    }
-                  }
-                },
-                {
-                  "nbtType": "compound",
-                  "nbt": {
-                    "lvl": {
-                      "nbtType": "short",
-                      "nbt": 1
-                    },
-                    "id": {
-                      "nbtType": "short",
-                      "nbt": 34
-                    }
-                  }
-                }
-              ]
-            },
-            "Quark:ItemNameDye": {
-              "nbtType": "int",
-              "nbt": 14
-            },
-            "display": {
-              "nbtType": "compound",
-              "nbt": {
-                "Name": {
-                  "nbtType": "string",
-                  "nbt": "Fire Ruby Pickaxe"
-                }
-              }
-            },
-            "Quark:RuneAttached": {
-              "nbtType": "byte",
-              "nbt": 1
-            }
-          }
-        }
-      }
-    },
-    {
-      "weight": 1.0,
-      "min": 1,
-      "max": 1,
-      "item": {
-        "id": "mysticalworld:amethyst_pickaxe",
-        "damage": 0,
-        "count": 1,
-        "tag": {
-          "nbtType": "compound",
-          "nbt": {
-            "Quark:RuneColor": {
-              "nbtType": "int",
-              "nbt": 6
-            },
-            "ench": {
-              "nbtType": "list",
-              "nbt": [
-                {
-                  "nbtType": "compound",
-                  "nbt": {
-                    "lvl": {
-                      "nbtType": "short",
-                      "nbt": 2
-                    },
-                    "id": {
-                      "nbtType": "short",
-                      "nbt": 35
-                    }
-                  }
-                },
                 {
                   "nbtType": "compound",
                   "nbt": {
@@ -131,11 +38,141 @@
                   "nbt": {
                     "lvl": {
                       "nbtType": "short",
-                      "nbt": 1
+                      "nbt": 2
                     },
                     "id": {
                       "nbtType": "short",
-                      "nbt": 46
+                      "nbt": 32
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 2
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 34
+                    }
+                  }
+                }
+              ]
+            },
+            "Quark:ItemNameDye": {
+              "nbtType": "int",
+              "nbt": 9
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "The Pulverizer"
+                }
+              }
+            },
+            "Quark:RuneAttached": {
+              "nbtType": "byte",
+              "nbt": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "thermalfoundation:tool.fishing_rod_platinum",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Quark:RuneColor": {
+              "nbtType": "int",
+              "nbt": 9
+            },
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 3
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 61
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 3
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 62
+                    }
+                  }
+                }
+              ]
+            },
+            "Quark:ItemNameDye": {
+              "nbtType": "int",
+              "nbt": 6
+            },
+            "display": {
+              "nbtType": "compound",
+              "nbt": {
+                "Name": {
+                  "nbtType": "string",
+                  "nbt": "Fisherman\u0027s Friend"
+                }
+              }
+            },
+            "Quark:RuneAttached": {
+              "nbtType": "byte",
+              "nbt": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:iron_hoe",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "ench": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "lvl": {
+                      "nbtType": "short",
+                      "nbt": 5
+                    },
+                    "id": {
+                      "nbtType": "short",
+                      "nbt": 19
                     }
                   }
                 }
@@ -150,13 +187,9 @@
               "nbt": {
                 "Name": {
                   "nbtType": "string",
-                  "nbt": "Pick of the Litter"
+                  "nbt": "5 Iron"
                 }
               }
-            },
-            "Quark:RuneAttached": {
-              "nbtType": "byte",
-              "nbt": 1
             }
           }
         }
@@ -167,32 +200,15 @@
       "min": 1,
       "max": 1,
       "item": {
-        "id": "wildnature:sapphire_axe",
+        "id": "minecraft:diamond_hoe",
         "damage": 0,
         "count": 1,
         "tag": {
           "nbtType": "compound",
           "nbt": {
-            "Quark:RuneColor": {
-              "nbtType": "int",
-              "nbt": 14
-            },
             "ench": {
               "nbtType": "list",
               "nbt": [
-                {
-                  "nbtType": "compound",
-                  "nbt": {
-                    "lvl": {
-                      "nbtType": "short",
-                      "nbt": 3
-                    },
-                    "id": {
-                      "nbtType": "short",
-                      "nbt": 39
-                    }
-                  }
-                },
                 {
                   "nbtType": "compound",
                   "nbt": {
@@ -202,20 +218,7 @@
                     },
                     "id": {
                       "nbtType": "short",
-                      "nbt": 16
-                    }
-                  }
-                },
-                {
-                  "nbtType": "compound",
-                  "nbt": {
-                    "lvl": {
-                      "nbtType": "short",
-                      "nbt": 2
-                    },
-                    "id": {
-                      "nbtType": "short",
-                      "nbt": 21
+                      "nbt": 45
                     }
                   }
                 }
@@ -223,20 +226,16 @@
             },
             "Quark:ItemNameDye": {
               "nbtType": "int",
-              "nbt": 1
+              "nbt": 5
             },
             "display": {
               "nbtType": "compound",
               "nbt": {
                 "Name": {
                   "nbtType": "string",
-                  "nbt": "Headsman\u0027s Axe"
+                  "nbt": "Diamond Joe"
                 }
               }
-            },
-            "Quark:RuneAttached": {
-              "nbtType": "byte",
-              "nbt": 1
             }
           }
         }
@@ -247,7 +246,7 @@
       "min": 1,
       "max": 1,
       "item": {
-        "id": "wildnature:ruby_axe",
+        "id": "thermalfoundation:tool.sickle_steel",
         "damage": 0,
         "count": 1,
         "tag": {
@@ -255,7 +254,7 @@
           "nbt": {
             "Quark:RuneColor": {
               "nbtType": "int",
-              "nbt": 0
+              "nbt": 4
             },
             "ench": {
               "nbtType": "list",
@@ -278,163 +277,11 @@
                   "nbt": {
                     "lvl": {
                       "nbtType": "short",
-                      "nbt": 1
-                    },
-                    "id": {
-                      "nbtType": "short",
-                      "nbt": 32
-                    }
-                  }
-                },
-                {
-                  "nbtType": "compound",
-                  "nbt": {
-                    "lvl": {
-                      "nbtType": "short",
                       "nbt": 2
                     },
                     "id": {
                       "nbtType": "short",
-                      "nbt": 34
-                    }
-                  }
-                }
-              ]
-            },
-            "Quark:ItemNameDye": {
-              "nbtType": "int",
-              "nbt": 6
-            },
-            "display": {
-              "nbtType": "compound",
-              "nbt": {
-                "Lore": {
-                  "nbtType": "list",
-                  "nbt": [
-                    {
-                      "nbtType": "string",
-                      "nbt": "First found in the mossy side of a tree"
-                    }
-                  ]
-                },
-                "Name": {
-                  "nbtType": "string",
-                  "nbt": "True North"
-                }
-              }
-            },
-            "Quark:RuneAttached": {
-              "nbtType": "byte",
-              "nbt": 1
-            }
-          }
-        }
-      }
-    },
-    {
-      "weight": 1.0,
-      "min": 1,
-      "max": 1,
-      "item": {
-        "id": "minecraft:diamond_shovel",
-        "damage": 0,
-        "count": 1,
-        "tag": {
-          "nbtType": "compound",
-          "nbt": {
-            "Quark:RuneColor": {
-              "nbtType": "int",
-              "nbt": 14
-            },
-            "ench": {
-              "nbtType": "list",
-              "nbt": [
-                {
-                  "nbtType": "compound",
-                  "nbt": {
-                    "lvl": {
-                      "nbtType": "short",
-                      "nbt": 3
-                    },
-                    "id": {
-                      "nbtType": "short",
-                      "nbt": 38
-                    }
-                  }
-                },
-                {
-                  "nbtType": "compound",
-                  "nbt": {
-                    "lvl": {
-                      "nbtType": "short",
-                      "nbt": 3
-                    },
-                    "id": {
-                      "nbtType": "short",
-                      "nbt": 32
-                    }
-                  }
-                }
-              ]
-            },
-            "Quark:ItemNameDye": {
-              "nbtType": "int",
-              "nbt": 1
-            },
-            "display": {
-              "nbtType": "compound",
-              "nbt": {
-                "Name": {
-                  "nbtType": "string",
-                  "nbt": "\"Ruby\" Shovel"
-                }
-              }
-            },
-            "Quark:RuneAttached": {
-              "nbtType": "byte",
-              "nbt": 1
-            }
-          }
-        }
-      }
-    },
-    {
-      "weight": 1.0,
-      "min": 1,
-      "max": 1,
-      "item": {
-        "id": "iceandfire:dragonbone_shovel",
-        "damage": 0,
-        "count": 1,
-        "tag": {
-          "nbtType": "compound",
-          "nbt": {
-            "ench": {
-              "nbtType": "list",
-              "nbt": [
-                {
-                  "nbtType": "compound",
-                  "nbt": {
-                    "lvl": {
-                      "nbtType": "short",
-                      "nbt": 3
-                    },
-                    "id": {
-                      "nbtType": "short",
-                      "nbt": 32
-                    }
-                  }
-                },
-                {
-                  "nbtType": "compound",
-                  "nbt": {
-                    "lvl": {
-                      "nbtType": "short",
-                      "nbt": 2
-                    },
-                    "id": {
-                      "nbtType": "short",
-                      "nbt": 34
+                      "nbt": 16
                     }
                   }
                 },
@@ -447,20 +294,28 @@
                     },
                     "id": {
                       "nbtType": "short",
-                      "nbt": 35
+                      "nbt": 34
                     }
                   }
                 }
               ]
+            },
+            "Quark:ItemNameDye": {
+              "nbtType": "int",
+              "nbt": 1
             },
             "display": {
               "nbtType": "compound",
               "nbt": {
                 "Name": {
                   "nbtType": "string",
-                  "nbt": "Spade of Aces"
+                  "nbt": "Soviet Sickle"
                 }
               }
+            },
+            "Quark:RuneAttached": {
+              "nbtType": "byte",
+              "nbt": 1
             }
           }
         }
