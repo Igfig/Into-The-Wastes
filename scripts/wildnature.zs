@@ -85,6 +85,12 @@ recipes.addShaped("pebble", <minecraft:cobblestone>, [
 	[<wildnature:pebble>, <wildnature:pebble>]]);
 
 
-// a note
+// a note about pebbles
 
 <wildnature:pebble>.addTooltip("Drops from gravel");
+
+
+// some notes on WildNature ores
+
+<ore:wildNatureOres>.add(<wildnature:amethyst_ore>,<wildnature:amber_ore>,<wildnature:ruby_ore>,<wildnature:silver_ore>,<wildnature:malachite_ore>,<wildnature:sapphire_ore>);
+<ore:wildNatureOres>.addTooltip("DISABLED. DOES NOT DROP ANYTHING");
