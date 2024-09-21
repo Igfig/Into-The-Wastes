@@ -6,24 +6,21 @@ import mods.roots.SummonCreatures;
 import mods.roots.RunicShears;
 import mods.cuisine.Mill;
 
-val wildroot = <roots:wildroot>;
-val bark = <ore:rootsBark>;
 val bedrock = <minecraft:bedrock>;
-val runestone = <ore:runestone>;
-val moss = <roots:terra_moss>;
-val mossyCobble = <ore:mossyCobblestone>;
-val diamond = <ore:gemDiamond>;
 val DISABLED = "DISABLED. DO NOT USE";
 
 
-// new info page for wildroot
+// new tooltip for wildroot
 
-mods.jei.JEI.addDescription(wildroot, "Dropped occasionally from breaking hanging roots in shallow caves, and from the leaves of the extremely rare wildwood tree.");
+<roots:wildroot>.addTooltip("Drops from hanging roots in dirt caves");
+<roots:wildroot>.addTooltip("(NOT \"cave roots\")");
 
 
 // terra moss and spores
 
 recipes.addShapeless("terra_spores", <roots:terra_spores>, [<roots:terra_moss>]);
+
+<roots:terra_moss>.addTooltip("Drops from scraping mossy stone with a knife");
 mods.jei.JEI.addDescription(<roots:terra_spores>, "Use on cobblestone adjacent to water to turn it into mossy cobblestone.");
 
 
