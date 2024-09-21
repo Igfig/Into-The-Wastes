@@ -22,5 +22,5 @@ val ingotPlates = {
 } as IItemStack[IIngredient];
 
 for ingot, plate in ingotPlates {
-	Anvil.addRecipe(ingot, plate, 2, "draw_any", "hit_second_last", "draw_any");
+	Anvil.addRecipe(ingot, plate, 2, "draw_last", "hit_not_last", "draw_not_last");
 }
