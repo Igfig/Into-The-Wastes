@@ -1,0 +1,8 @@
+setIcon("crossroads:heat_exchanger")
+setTitle("Geothermal")
+setDescription("Craft a Heat Exchanger to extract and dump heat directly from the world.")
+addParent("industry:foundry/cast_copper")
+
+criteria = addCriteria("heat_exchanger", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:heat_exchanger>)
+setPos(161,81)

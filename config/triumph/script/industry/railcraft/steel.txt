@@ -6,4 +6,4 @@ addParent("industry:railcraft/blast_furnace")
 
 criteria = addCriteria("steel", "minecraft:inventory_changed")
 criteria.addItem(<thermalfoundation:material:160>)
-setPos(96,189)uur
+setPos(96,191)

@@ -1,0 +1,9 @@
+setIcon("crossroads:steam_turbine")
+setTitle("Okay, You Can Stop Cranking")
+setDescription("Craft a Steam Turbine to turn steam into rotary power and distilled water.")
+addParent("industry:crossroads/boiler")
+addParent("industry:crossroads/hand_crank")
+
+criteria = addCriteria("steam_turbine", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:steam_turbine>)
+setPos(225,-2)

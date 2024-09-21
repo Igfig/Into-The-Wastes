@@ -34,4 +34,4 @@ criteria.addItem(<foundry:mold:20>)
 
 setRequirements("any")
 
-setPos(224,135)
+setPos(225,137)

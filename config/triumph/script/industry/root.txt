@@ -25,4 +25,4 @@ criteria = addCriteria("forging", "triumph:completed_advancement")
 criteria.setAdvancement("industry:forging/craft_hammer")
 
 setRequirements("any")
-setPos(-1,108)
+setPos(-1,110)

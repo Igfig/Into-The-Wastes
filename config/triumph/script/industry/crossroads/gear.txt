@@ -26,4 +26,4 @@ criteria.addItem(<crossroads:gear_electrum>)
 
 setRequirements("any")
 
-setPos(64,27)
+setPos(64,25)

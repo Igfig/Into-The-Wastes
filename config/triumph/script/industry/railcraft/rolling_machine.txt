@@ -1,9 +1,0 @@
-setIcon(<railcraft:equipment:0>)
-setTitle("Keep rollin rollin rollin rollin")
-setDescription("Make a rolling machine")
-
-addParent("industry:root")
-
-criteria = addCriteria("rolling_machine", "minecraft:inventory_changed")
-criteria.addItem(<railcraft:equipment:0>)
-setPos(32,162)

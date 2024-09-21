@@ -3,7 +3,8 @@ setTitle("Casting Table")
 setDescription("Craft an ingot casting table from an ingot mold and a white porcelain barrel")
 
 addParent("industry:foundry/craft_ingot_mold")
+addParent("industry:foundry/craft_crucible")
 
 criteria = addCriteria("casting_table", "minecraft:inventory_changed")
 criteria.addItem("foundry:casting_table")
-setPos(96,81)
+setPos(96,66)

@@ -1,0 +1,11 @@
+setIcon(<foundry:casting_table:2>)
+setTitle("Railcasting")
+setDescription("Craft a rail casting table from a rail mold and a white porcelain barrel")
+
+addParent("industry:foundry/craft_casting_table")
+
+criteria = addCriteria("casting_table", "minecraft:inventory_changed")
+criteria.addItem(<foundry:casting_table:2>)
+
+drawDirectLines()
+setPos(96,110)

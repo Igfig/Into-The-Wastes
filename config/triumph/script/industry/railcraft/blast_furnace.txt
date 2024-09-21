@@ -6,4 +6,4 @@ addParent("industry:railcraft/coke_oven")
 
 criteria = addCriteria("blast_furnace", "minecraft:inventory_changed")
 criteria.addItem(<railcraft:blast_furnace>)
-setPos(64,189)
+setPos(64,191)

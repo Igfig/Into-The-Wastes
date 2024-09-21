@@ -5,4 +5,4 @@ addParent("industry:crossroads/fuel_heater")
 
 criteria = addCriteria("heating_crucible", "minecraft:inventory_changed")
 criteria.addItem("crossroads:heating_crucible")
-setPos(96,54)
+setPos(64,52)

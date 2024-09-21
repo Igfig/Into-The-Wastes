@@ -1,0 +1,8 @@
+setIcon("crossroads:steam_boiler")
+setTitle("Steampunk")
+setDescription("Craft a Steam Boiler to turn water and heat into steam.")
+addParent("industry:foundry/cast_bronze")
+
+criteria = addCriteria("steam_boiler", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:steam_boiler>)
+setPos(193,25)

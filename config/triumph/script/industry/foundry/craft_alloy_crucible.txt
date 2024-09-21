@@ -5,4 +5,4 @@ addParent("industry:foundry/craft_crucible")
 
 criteria = addCriteria("alloy_crucible", "minecraft:inventory_changed")
 criteria.addItem(<foundry:machine:8>)
-setPos(128,42)
+setPos(128,39)

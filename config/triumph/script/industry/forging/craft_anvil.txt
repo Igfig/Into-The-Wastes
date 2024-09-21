@@ -11,4 +11,4 @@ criteria = addCriteria("tinkers_anvil/copper", "minecraft:inventory_changed")
 criteria.addItem("tinkersforging:tinkers_anvil/copper")
 
 setRequirements("any")
-setPos(64,135)
+setPos(64,137)

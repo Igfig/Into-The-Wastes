@@ -5,4 +5,4 @@ addParent("industry:root")
 
 criteria = addCriteria("master_axis", "minecraft:inventory_changed")
 criteria.addItem(<crossroads:master_axis>)
-setPos(32,27)
+setPos(32,25)
