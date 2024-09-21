@@ -1,13 +1,15 @@
 // replace all instances of water buckets in recipes with bottles. 
 
 val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"}).giveBack(<minecraft:glass_bottle>);
+val clayBucket = <ceramics:clay_bucket>.withTag({fluids: {FluidName: "water", Amount: 1000}});
 
 recipes.replaceAllOccurences(<minecraft:water_bucket>, waterBottle);
+recipes.replaceAllOccurences(clayBucket, waterBottle);
 recipes.replaceAllOccurences(<ore:listAllwater>, waterBottle);
 
 // exception: cryotheum and water to ice should need a whole bucket
 
-recipes.replaceAllOccurences(waterBottle, <minecraft:water_bucket>, <minecraft:ice>);
+recipes.replaceAllOccurences(waterBottle, <minecraft:water_bucket> | clayBucket, <minecraft:ice>);
 
 
 // Water in clay buckets should also be purifiable
