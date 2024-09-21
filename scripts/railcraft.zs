@@ -66,8 +66,13 @@ recipes.addShapeless(<railcraft:concrete>, [sand, gravel, <railcraft:dust:4>]); 
 // recipes that shouldn't need diamond tools
 
 recipes.replaceAllOccurences(<minecraft:diamond_pickaxe>,<thermalfoundation:tool.pickaxe_steel>,<railcraft:mow_track_relayer>);
-recipes.replaceAllOccurences(<minecraft:diamond_pickaxe>,<thermalfoundation:tool.pickaxe_steel>,<railcraft:firestone_cut>);
 recipes.replaceAllOccurences(<minecraft:diamond_shovel>,<thermalfoundation:tool.shovel_steel>,<railcraft:mow_undercutter>);
+
+
+// less expensive cut firestone recipe
+
+recipes.remove(<railcraft:firestone_cut>);
+recipes.addShapeless(<railcraft:firestone_cut>, [<chisel:chisel_diamond>, <railcraft:firestone_raw>, <chisel:chisel_diamond>]);
 
 
 // remove invar and nickel glass recipes (and one other mysterious one)
