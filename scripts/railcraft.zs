@@ -1,4 +1,13 @@
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+
+val iron = <ore:ingotIron>;
+val steel = <ore:ingotSteel>;
+val tank = <railcraft:tank_iron_wall>;
+val gravel = <minecraft:gravel>;
+val sand = <ore:sand>;
+val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"}).giveBack(<minecraft:glass_bottle>);
 
 
 // fix display of red coke oven
@@ -7,57 +16,35 @@ import crafttweaker.oredict.IOreDictEntry;
 <railcraft:coke_oven_red>.addTooltip("Multi-Block: 3x3x3 (Hollow)");
 
 
-// hide unwanted metal plates
+// remove all plates; we'll use Thermal Expansion ones
 
-val toRemove = [
-	8, // nickel
-	9, // invar
-	10, // zinc
-	11, // brass
-] as int[];
-
-for tr in toRemove {
+for tr in 0 to 12 {
 	val plate = <railcraft:plate>.definition.makeStack(tr);
 	mods.jei.JEI.removeAndHide(plate);
 }
 
-// and remove all plate recipes
 
-for tr in 0 to 12 {
-	val plate = <railcraft:plate>.definition.makeStack(tr);
-	mods.railcraft.RollingMachine.remove(plate);
-}
+// remove some track recipes
 
-// add more expensive plates in rolling machine
+val rails = {
+	<railcraft:rail:0>: <minecraft:rail>,
+	<railcraft:rail:3>: <railcraft:track_flex_high_speed>,
+	<railcraft:rail:4>: <railcraft:track_flex_reinforced>,
+} as IIngredient[IItemStack];
 
-val plateIngots = {
-	32: <ore:ingotIron>,
-	33: <ore:ingotGold>,
-	320: <ore:ingotCopper>,
-	321: <ore:ingotTin>,
-	322: <ore:ingotSilver>,
-	323: <ore:ingotLead>,
-	326: <ore:ingotPlatinum>,
-	352: <ore:ingotSteel>,
-	353: <ore:ingotElectrum>,
-	355: <ore:ingotBronze>
-} as IOreDictEntry[int];
-
-for id, ore in plateIngots {
-	val plate = <thermalfoundation:material>.definition.makeStack(id);
-	mods.railcraft.RollingMachine.addShaped("plate-" ~ id, plate * 2, [[ore,ore],[ore,ore]]);
+for rail, track in rails {
+	recipes.remove(rail);
+	recipes.addShapeless(rail, [track, track, track, track, track, track]);
 }
 
 
-// remove invar rolling recipes (the ones with names at least)
+// remove some more recipes
 
-mods.railcraft.RollingMachine.remove("railcraft:rail_invar");
-
-
-// remove electric rails
-
-mods.jei.JEI.removeAndHide(<railcraft:rail:5>);
-mods.railcraft.RollingMachine.remove(<railcraft:rail:5>);
+recipes.remove(<railcraft:rebar>);
+recipes.remove(<railcraft:rail:1>); // advanced rails
+recipes.remove(<railcraft:rail:5>); // electric rails
+mods.jei.JEI.removeAndHide(<railcraft:rail:5>); // electric rails shouldn't even be shown
+recipes.remove(<railcraft:tie:1>); // stone rail ties. Recipe is put in the metal caster instead
 
 
 // non-creosote recipe for wooden rail ties
@@ -67,21 +54,25 @@ recipes.addShaped("rail_tie", <railcraft:tie:0>, [
 	[<ore:slabWood>,<ore:slabWood>,<ore:slabWood>]]);
 
 
-// cheaper rolling machine
-
-recipes.remove(<railcraft:equipment:0>);
-recipes.addShaped("manual_rolling_machine", <railcraft:equipment:0>, [
-	[<ore:ingotCopper>,<ore:plankWood>,<ore:ingotCopper>],
-	[<ore:plankWood>,<ore:workbench>,<ore:plankWood>],
-	[<ore:ingotCopper>,<ore:plankWood>,<ore:ingotCopper>]]);
-
+// simpler recipes for cement
+recipes.remove(<railcraft:concrete>);
+recipes.addShaped(<railcraft:concrete>, [
+	[sand, gravel, sand],
+	[gravel, sand, gravel],
+	[sand, gravel, sand]]);
+recipes.addShapeless(<railcraft:concrete>, [sand, gravel, <railcraft:dust:4>]); // blast furnace slag
 
 
 // recipes that shouldn't need diamond tools
 
 recipes.replaceAllOccurences(<minecraft:diamond_pickaxe>,<thermalfoundation:tool.pickaxe_steel>,<railcraft:mow_track_relayer>);
-recipes.replaceAllOccurences(<minecraft:diamond_pickaxe>,<thermalfoundation:tool.pickaxe_steel>,<railcraft:firestone_cut>);
 recipes.replaceAllOccurences(<minecraft:diamond_shovel>,<thermalfoundation:tool.shovel_steel>,<railcraft:mow_undercutter>);
+
+
+// less expensive cut firestone recipe
+
+recipes.remove(<railcraft:firestone_cut>);
+recipes.addShapeless(<railcraft:firestone_cut>, [<chisel:chisel_diamond>, <railcraft:firestone_raw>, <chisel:chisel_diamond>]);
 
 
 // remove invar and nickel glass recipes (and one other mysterious one)
@@ -95,6 +86,9 @@ recipes.removeByRecipeName("railcraft_glass#0$6");
 recipes.removeByRecipeName("railcraft_glass#0$4_modified");
 recipes.removeByRecipeName("railcraft_glass#0$5_modified");
 recipes.removeByRecipeName("railcraft_glass#0$6_modified");
+recipes.removeByRecipeName("crafttweaker:railcraft_glass#0$4_modified");
+recipes.removeByRecipeName("crafttweaker:railcraft_glass#0$5_modified");
+recipes.removeByRecipeName("crafttweaker:railcraft_glass#0$6_modified");
 
 
 // crushed obsidian
@@ -115,6 +109,21 @@ recipes.addShaped("armor_overalls", <railcraft:armor_overalls>, [
 	[blueWool,      null,     blueWool]]);
 
 
+// re-add recipes for track parts
+
+recipes.addShapeless(<railcraft:track_parts>, [<ore:nuggetBronze>, <ore:nuggetBronze>, <ore:nuggetBronze>]);
+recipes.addShapeless(<railcraft:track_parts>, [<ore:nuggetIron>, <ore:nuggetIron>]);
+recipes.addShapeless(<railcraft:track_parts>, [<ore:nuggetSteel>]);
+
+
+// re-add recipe for metal posts
+
+recipes.addShaped(<railcraft:post_metal>, [
+	[iron, iron, iron],
+	[null, iron, null],
+	[iron, iron, iron]]);
+
+
 // re-add recipes for colored metal posts
 
 val postDyes = [<ore:dyeWhite>,<ore:dyeOrange>,<ore:dyeMagenta>,<ore:dyeLightBlue>,<ore:dyeYellow>,<ore:dyeLime>,<ore:dyePink>,<ore:dyeGray>,<ore:dyeLightGray>,<ore:dyeCyan>,<ore:dyePurple>,<ore:dyeBlue>,<ore:dyeBrown>,<ore:dyeGreen>,<ore:dyeRed>,<ore:dyeBlack>] as IOreDictEntry[];
@@ -132,3 +141,26 @@ for i, dye in postDyes {
 
 recipes.replaceAllOccurences(<minecraft:slime_ball>,<minecraft:slime_ball>|<thermalfoundation:material:833>,<railcraft:tank_water>);
 <railcraft:tank_water>.addTooltip("Collects rainwater much faster than other containers");
+
+
+// new locomotive recipe
+
+recipes.remove(<railcraft:locomotive_steam_solid>);
+recipes.addShaped(<railcraft:locomotive_steam_solid>, [
+	[tank, tank, <essentials:item_chute>],
+	[tank, tank, <crossroads:coal_heater>],
+	[<minecraft:iron_bars>, <minecraft:minecart>, <minecraft:minecart>]]);
+
+
+// new crowbar recipes
+
+recipes.remove(<railcraft:tool_crowbar_iron>);
+recipes.remove(<railcraft:tool_crowbar_steel>);
+recipes.addShaped(<railcraft:tool_crowbar_iron>, [
+	[null, iron, iron],
+	[null, iron, null],
+	[iron, null, null]]);
+recipes.addShaped(<railcraft:tool_crowbar_steel>, [
+	[null, steel, steel],
+	[null, steel, null],
+	[steel, null, null]]);

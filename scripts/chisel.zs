@@ -11,6 +11,8 @@ mods.jei.JEI.removeAndHide(<chisel_plus:chisel>);
 mods.jei.JEI.removeAndHide(<chisel_plus:amber_ore>);
 mods.jei.JEI.removeAndHide(<chisel_plus:amber_stone>);
 mods.jei.JEI.removeAndHide(<chisel_plus:amber_block>);
+<chisel_plus:amber_ore>.addTooltip("DISABLED. DOES NOT DROP ANYTHING");
+
 
 // remove some Chisel Plus blocks
 

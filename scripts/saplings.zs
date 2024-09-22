@@ -12,6 +12,7 @@ val sublimeSaplings = [
 	<wildnature:jacaranda_sapling>,
 	<wildnature:cherry_pink_sapling>,
 	<wildnature:cherry_white_sapling>,
+	<quark:variant_sapling:1>, // blossoming tree
 	<biomesoplenty:sapling_1:1>, // pink cherry
 	<biomesoplenty:sapling_1:2>, // white cherry
 	<biomesoplenty:sapling_1:6> // jacaranda
@@ -39,7 +40,7 @@ val fruitSaplings = [
 <ore:treeSaplingFruit>.addItems(fruitSaplings);
 
 <ore:treeSaplingGreat>.addTooltip("A sapling of one of the three Great Trees");
-<ore:treeSaplingSublime>.addTooltip("A sapling of one of the three Sublime Trees");
+<ore:treeSaplingSublime>.addTooltip("A sapling of one of the seven Sublime Trees");
 <ore:treeSaplingMagical>.addTooltip("A sapling of one of the three Magical Trees");
 <ore:treeSaplingFundamental>.addTooltip("A sapling of one of the six Fundamental Trees");
 

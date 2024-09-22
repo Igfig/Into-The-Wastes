@@ -1,0 +1,10 @@
+setIcon("minecraft:rail")
+setTitle("Track Star")
+setDescription("Combine rails and a Wooden Railbed to make a train track.")
+
+addParent("industry:railcraft/cast_rail")
+
+criteria = addCriteria("track", "triumph:player_crafted_item")
+criteria.addItem("minecraft:rail")
+
+setPos(161,110)

@@ -1,0 +1,21 @@
+{
+  "rules": [
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "chisel_plus:amber_ore",
+            "wildnature:amethyst_ore",
+			"wildnature:amber_ore",
+			"wildnature:ruby_ore",
+			"wildnature:silver_ore",
+			"wildnature:malachite_ore",
+			"wildnature:sapphire_ore"
+          ]
+        }
+      },
+      "replaceStrategy": "REPLACE_ALL",
+      "drops": [{}]
+    }
+  ]
+}

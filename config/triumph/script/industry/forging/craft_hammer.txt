@@ -11,4 +11,4 @@ criteria.addItem("tinkersforging:hammer/stone")
 
 setRequirements("any")
 
-setPos(32,122)
+setPos(32,150)

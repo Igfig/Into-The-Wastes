@@ -1,0 +1,21 @@
+setIcon("crossroads:redstone_heat_cable_copper_wool")
+setTitle("Thermostat")
+setDescription("Craft Redstone Heat Cable to track and control the heat in your system.")
+addParent("industry:crossroads/heat_cable")
+
+criteria = addCriteria("redstone_heat_cable_copper_wool", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:redstone_heat_cable_copper_wool>)
+criteria = addCriteria("redstone_heat_cable_copper_slime", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:redstone_heat_cable_copper_slime>)
+criteria = addCriteria("redstone_heat_cable_copper_dirt", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:redstone_heat_cable_copper_dirt>)
+criteria = addCriteria("redstone_heat_cable_copper_ice", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:redstone_heat_cable_copper_ice>)
+criteria = addCriteria("redstone_heat_cable_copper_obsidian", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:redstone_heat_cable_copper_obsidian>)
+criteria = addCriteria("redstone_heat_cable_copper_densus", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:redstone_heat_cable_copper_densus>)
+
+setRequirements("any")
+
+setPos(225,66)

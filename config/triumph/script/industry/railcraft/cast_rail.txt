@@ -1,0 +1,9 @@
+setIcon("railcraft:rail")
+setTitle("Rail Baron")
+setDescription("Cast iron, bronze, or steel in a rail casting table to make Standard Rails.")
+
+addParent("industry:foundry/craft_rail_casting_table")
+
+criteria = addCriteria("rail", "minecraft:inventory_changed")
+criteria.addItem("railcraft:rail")
+setPos(128,110)

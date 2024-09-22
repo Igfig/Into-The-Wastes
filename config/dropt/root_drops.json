@@ -8,21 +8,22 @@
           ]
         }
       },
+	  "replaceStrategy": "REPLACE_ALL",
 	  "drops": [
-        {
+	  {
           "selector": {
             "weight": {
-              "value": 90
+              "value": 2
             }
           },
 		  "item": {
-            "items" : []
+            "items" : ["biomesoplenty:plant_1:9"]
           }
         },
         {
           "selector": {
             "weight": {
-              "value": 10
+              "value": 1
             }
           },
           "item": {

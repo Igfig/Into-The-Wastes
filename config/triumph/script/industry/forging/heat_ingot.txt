@@ -11,4 +11,4 @@ criteria = addCriteria("iron_ingot_3", "triumph:right_click_block")
 criteria.setBlock(<tinkersforging:forge, tile:{inventory:{Items:[{Slot:3,ForgeCaps:{"tinkersforging:forge_item":{temp:1500.0f}}}]}}>)
 
 setRequirements("any")
-setPos(96,108)
+setPos(96,164)

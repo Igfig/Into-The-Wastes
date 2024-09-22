@@ -7,4 +7,4 @@ addParent("industry:foundry/craft_alloy_crucible")
 
 criteria = addCriteria("ingot_bronze", "minecraft:inventory_changed")
 criteria.addItem("crossroads:ingot_bronze")
-setPos(161,54)
+setPos(161,52)

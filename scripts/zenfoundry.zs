@@ -9,7 +9,7 @@ import crafttweaker.liquid.ILiquidStack;
 val toRemove = [
 	<foundry:componentblock:1>,<foundry:componentblock:2>,
 	<foundry:machine:0>,<foundry:machine:2>,<foundry:machine:3>,<foundry:machine:4>,<foundry:machine:5>,<foundry:machine:6>,<foundry:machine:7>,<foundry:machine:9>,
-	<foundry:casting_table:1>,<foundry:casting_table:2>,<foundry:mold_station>,<foundry:burner_heater>,
+	<foundry:mold_station>,<foundry:burner_heater>,
 	<foundry:mold:5>,<foundry:mold:6>
 ] as IItemStack[];
 

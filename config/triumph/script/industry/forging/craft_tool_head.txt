@@ -112,4 +112,4 @@ criteria.addItem("tinkersforging:sword_blade/lead")
 
 setRequirements("any")
 
-setPos(128,135)
+setPos(128,137)

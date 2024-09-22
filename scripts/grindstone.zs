@@ -58,3 +58,4 @@ mods.crossroads.Grindstone.addRecipe(<ore:netherrack>, <crossroads:sulfur>); // 
 mods.crossroads.Grindstone.addRecipe(<cuisine:material:3>, <crossroads:dust_salt>); // salt
 mods.crossroads.Grindstone.addRecipe(<ore:oreClathrateOilSand>, <thermalfoundation:material:892> * 2); // bitumen
 mods.crossroads.Grindstone.addRecipe(<earthworks:block_chalk>, <earthworks:item_chalk> * 4); // chalk dust
+mods.crossroads.Grindstone.addRecipe(<railcraft:ore_magic>, <railcraft:firestone_raw>); // firestone

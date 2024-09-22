@@ -6,4 +6,4 @@ addParent("industry:foundry/cast_bronze")
 
 criteria = addCriteria("metal_caster", "minecraft:inventory_changed")
 criteria.addItem(<foundry:machine:1>)
-setPos(192,81)
+setPos(193,95)

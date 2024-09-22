@@ -1,0 +1,16 @@
+setIcon(<railcraft:tool_crowbar_iron>)
+setTitle("A Tavern for Crows")
+setDescription("Craft a crowbar to link minecarts in a train.")
+
+addParent("industry:railcraft/craft_track")
+
+criteria = addCriteria("tool_crowbar_iron", "minecraft:inventory_changed")
+criteria.addItem(<railcraft:tool_crowbar_iron>)
+criteria = addCriteria("tool_crowbar_steel", "minecraft:inventory_changed")
+criteria.addItem(<railcraft:tool_crowbar_steel>)
+
+setRequirements("any")
+
+setUncompletedLineColor(200,200,200)
+setCompletedLineColor(200,200,200)
+setPos(161,164)

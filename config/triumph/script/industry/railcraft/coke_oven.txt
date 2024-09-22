@@ -10,4 +10,4 @@ criteria = addCriteria("coke_oven_red", "minecraft:inventory_changed")
 criteria.addItem(<railcraft:coke_oven_red>)
 
 setRequirements("any")
-setPos(32,189)
+setPos(32,191)
