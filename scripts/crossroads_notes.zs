@@ -32,6 +32,8 @@ mods.jei.JEI.addDescription(<crossroads:steam_turbine>, "Outputs rotary power to
 
 mods.jei.JEI.addDescription(<crossroads:steam_boiler>, "Insert heat into the bottom, and water or distilled water into the side.", "Produces steam from the top and salt from the bottom (if using regular water).", "Stops working if it fills up with salt.");
 
+<crossroads:omnimeter>.addTooltip("Right-click on many blocks to see additional information");
+<crossroads:omnimeter>.addTooltip("e.g. the contents of GUI-less containers");
 
 <crossroads:hand_crank>.addTooltip("Starts gears turning.");
 <crossroads:hand_crank>.addTooltip("Right-click: counterclockwise.");

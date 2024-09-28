@@ -28,9 +28,9 @@ mods.jei.JEI.removeAndHide(<crossroads:fluid_gauge>);
 // cheaper omnimeter
 recipes.remove(<crossroads:omnimeter>);
 recipes.addShaped(<crossroads:omnimeter>, [
-	[null,<ore:ingotCopper>,null],
-	[<ore:ingotCopper>,<ore:dustRedstone>,<ore:ingotCopper>],
-	[null,<ore:ingotCopper>,null]]);
+	[<ore:ingotIron>,<ore:ingotGold>,<ore:ingotIron>],
+	[<ore:ingotGold>,<ore:dustRedstone>,<ore:ingotGold>],
+	[<ore:ingotIron>,<ore:ingotGold>,<ore:ingotIron>]]);
 
 
 // remove wrenches, because B.A.S.E. has a better one.
