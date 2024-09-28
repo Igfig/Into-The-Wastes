@@ -50,8 +50,8 @@ mods.jei.JEI.addDescription(<structuredcrafting:structured_crafter>, "Automated 
 // I'd put a different message on the ones holding hot fluids, but there are a lot of those. TODO
 
 // Barakoa spear
-<mowziesmobs:spear>.addTooltip("Only made by Barakoa");
-<mowziesmobs:blowgun>.addTooltip("Only made by Barakoa");
+<mowziesmobs:spear:*>.addTooltip("Only made by Barakoa");
+<mowziesmobs:blowgun:*>.addTooltip("Only made by Barakoa");
 <mowziesmobs:dart>.addTooltip("Only made by Barakoa");
 
 // Bronze
