@@ -129,8 +129,8 @@ key_key.climbdown.desc:0:NONE
 key_key.enderlaunch.desc:-100:NONE
 key_key.rocket.desc:-100:NONE
 key_key.slide.desc:42:NONE
-key_key.dragon_fireAttack:46:NONE
-key_key.dragon_strike:19:NONE
+key_key.dragon_fireAttack:34:NONE
+key_key.dragon_strike:46:NONE
 key_key.dragon_down:45:NONE
 key_key.dragon_change_view:65:NONE
 key_keywizard.keybind.openKeyboardWizard:66:NONE

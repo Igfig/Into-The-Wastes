@@ -43,63 +43,63 @@ val axes = {
 	<primitivetools:primitive_hatchet_cbf>: [<minecraft:bone>, twine],
 	<primitivetools:primitive_hatchet_cbl>: [<minecraft:bone>, strip],
 	<primitivetools:primitive_hatchet_cbv>: [<minecraft:bone>, vine],
-	<primitivetools:primitive_hatchet_cwf>: [<minecraft:stick>, twine],
-	<primitivetools:primitive_hatchet_cwl>: [<minecraft:stick>, strip],
-	<primitivetools:primitive_hatchet_cwv>: [<minecraft:stick>, vine]
+	<primitivetools:primitive_hatchet_cwf>: [<ore:stickWood>, twine],
+	<primitivetools:primitive_hatchet_cwl>: [<ore:stickWood>, strip],
+	<primitivetools:primitive_hatchet_cwv>: [<ore:stickWood>, vine]
 } as IIngredient[][IItemStack];
 
 val knives = {
 	<primitivetools:primitive_knife_cbf>: [<minecraft:bone>, twine],
 	<primitivetools:primitive_knife_cbl>: [<minecraft:bone>, strip],
 	<primitivetools:primitive_knife_cbv>: [<minecraft:bone>, vine],
-	<primitivetools:primitive_knife_cwf>: [<minecraft:stick>, twine],
-	<primitivetools:primitive_knife_cwl>: [<minecraft:stick>, strip],
-	<primitivetools:primitive_knife_cwv>: [<minecraft:stick>, vine]
+	<primitivetools:primitive_knife_cwf>: [<ore:stickWood>, twine],
+	<primitivetools:primitive_knife_cwl>: [<ore:stickWood>, strip],
+	<primitivetools:primitive_knife_cwv>: [<ore:stickWood>, vine]
 } as IIngredient[][IItemStack];
 
 val hoes = {
 	<primitivetools:primitive_hoe_cbf>: [<minecraft:bone>, twine],
 	<primitivetools:primitive_hoe_cbl>: [<minecraft:bone>, strip],
 	<primitivetools:primitive_hoe_cbv>: [<minecraft:bone>, vine],
-	<primitivetools:primitive_hoe_cwf>: [<minecraft:stick>, twine],
-	<primitivetools:primitive_hoe_cwl>: [<minecraft:stick>, strip],
-	<primitivetools:primitive_hoe_cwv>: [<minecraft:stick>, vine]
+	<primitivetools:primitive_hoe_cwf>: [<ore:stickWood>, twine],
+	<primitivetools:primitive_hoe_cwl>: [<ore:stickWood>, strip],
+	<primitivetools:primitive_hoe_cwv>: [<ore:stickWood>, vine]
 } as IIngredient[][IItemStack];
 
 val picks = {
 	<primitivetools:primitive_pick_cbf>: [<minecraft:bone>, twine],
 	<primitivetools:primitive_pick_cbl>: [<minecraft:bone>, strip],
 	<primitivetools:primitive_pick_cbv>: [<minecraft:bone>, vine],
-	<primitivetools:primitive_pick_cwf>: [<minecraft:stick>, twine],
-	<primitivetools:primitive_pick_cwl>: [<minecraft:stick>, strip],
-	<primitivetools:primitive_pick_cwv>: [<minecraft:stick>, vine]
+	<primitivetools:primitive_pick_cwf>: [<ore:stickWood>, twine],
+	<primitivetools:primitive_pick_cwl>: [<ore:stickWood>, strip],
+	<primitivetools:primitive_pick_cwv>: [<ore:stickWood>, vine]
 } as IIngredient[][IItemStack];
 
 val shovels = {
 	<primitivetools:primitive_spade_cbf>: [<minecraft:bone>, twine],
 	<primitivetools:primitive_spade_cbl>: [<minecraft:bone>, strip],
 	<primitivetools:primitive_spade_cbv>: [<minecraft:bone>, vine],
-	<primitivetools:primitive_spade_cwf>: [<minecraft:stick>, twine],
-	<primitivetools:primitive_spade_cwl>: [<minecraft:stick>, strip],
-	<primitivetools:primitive_spade_cwv>: [<minecraft:stick>, vine]
+	<primitivetools:primitive_spade_cwf>: [<ore:stickWood>, twine],
+	<primitivetools:primitive_spade_cwl>: [<ore:stickWood>, strip],
+	<primitivetools:primitive_spade_cwv>: [<ore:stickWood>, vine]
 } as IIngredient[][IItemStack];
 
 val hammers = {
-	<primitivetools:primitive_hammer_swf>: [<minecraft:stone:5>, <minecraft:stick>, twine],
-	<primitivetools:primitive_hammer_swv>: [<minecraft:stone:5>, <minecraft:stick>, vine],
-	<primitivetools:primitive_hammer_swl>: [<minecraft:stone:5>, <minecraft:stick>, strip],
+	<primitivetools:primitive_hammer_swf>: [<minecraft:stone:5>, <ore:stickWood>, twine],
+	<primitivetools:primitive_hammer_swv>: [<minecraft:stone:5>, <ore:stickWood>, vine],
+	<primitivetools:primitive_hammer_swl>: [<minecraft:stone:5>, <ore:stickWood>, strip],
 	<primitivetools:primitive_hammer_sbf>: [<minecraft:stone:5>, <minecraft:bone>, twine],
 	<primitivetools:primitive_hammer_sbv>: [<minecraft:stone:5>, <minecraft:bone>, vine],
 	<primitivetools:primitive_hammer_sbl>: [<minecraft:stone:5>, <minecraft:bone>, strip],
-	<primitivetools:primitive_hammer_dwf>: [<minecraft:stone:3>, <minecraft:stick>, twine],
-	<primitivetools:primitive_hammer_dwv>: [<minecraft:stone:3>, <minecraft:stick>, vine],
-	<primitivetools:primitive_hammer_dwl>: [<minecraft:stone:3>, <minecraft:stick>, strip],
+	<primitivetools:primitive_hammer_dwf>: [<minecraft:stone:3>, <ore:stickWood>, twine],
+	<primitivetools:primitive_hammer_dwv>: [<minecraft:stone:3>, <ore:stickWood>, vine],
+	<primitivetools:primitive_hammer_dwl>: [<minecraft:stone:3>, <ore:stickWood>, strip],
 	<primitivetools:primitive_hammer_dbf>: [<minecraft:stone:3>, <minecraft:bone>, twine],
 	<primitivetools:primitive_hammer_dbv>: [<minecraft:stone:3>, <minecraft:bone>, vine],
 	<primitivetools:primitive_hammer_dbl>: [<minecraft:stone:3>, <minecraft:bone>, strip],
-	<primitivetools:primitive_hammer_gwf>: [<minecraft:stone:1>, <minecraft:stick>, twine],
-	<primitivetools:primitive_hammer_gwv>: [<minecraft:stone:1>, <minecraft:stick>, vine],
-	<primitivetools:primitive_hammer_gwl>: [<minecraft:stone:1>, <minecraft:stick>, strip],
+	<primitivetools:primitive_hammer_gwf>: [<minecraft:stone:1>, <ore:stickWood>, twine],
+	<primitivetools:primitive_hammer_gwv>: [<minecraft:stone:1>, <ore:stickWood>, vine],
+	<primitivetools:primitive_hammer_gwl>: [<minecraft:stone:1>, <ore:stickWood>, strip],
 	<primitivetools:primitive_hammer_gbf>: [<minecraft:stone:1>, <minecraft:bone>, twine],
 	<primitivetools:primitive_hammer_gbv>: [<minecraft:stone:1>, <minecraft:bone>, vine],
 	<primitivetools:primitive_hammer_gbl>: [<minecraft:stone:1>, <minecraft:bone>, strip]
@@ -151,7 +151,7 @@ for tool, parts in hammers {
 }
 for tool, binding in spears {
 	recipes.remove(tool);
-	recipes.addShapedMirrored(tool, [[binding, flint], [<minecraft:stick>, <minecraft:stick>]]);
+	recipes.addShapedMirrored(tool, [[binding, flint], [<ore:stickWood>, <ore:stickWood>]]);
 	tool.addTooltip("Not a melee weapon");
 }
 
