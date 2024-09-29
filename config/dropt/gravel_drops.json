@@ -6,21 +6,29 @@
           "blocks": [
             "minecraft:gravel"
           ]
+        },
+        "drops": {
+          "drops": [
+            "minecraft:gravel"
+          ]
         }
       },
-	  "replaceStrategy": "ADD",
+	  "replaceStrategy": "REPLACE_ITEMS",
 	  "drops": [
         {
           "selector": {
             "weight": {
-              "value": 75
+              "value": 8
             }
+          },
+		  "item": {
+            "items" : ["minecraft:gravel"]
           }
         },
         {
           "selector": {
             "weight": {
-              "value": 25
+              "value": 1
             }
           },
           "item": {
