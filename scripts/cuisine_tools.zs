@@ -1,3 +1,5 @@
+import crafttweaker.item.IItemStack;
+
 recipes.remove(<cuisine:fire_pit:0>);
 recipes.remove(<cuisine:fire_pit:2>);
 
@@ -22,6 +24,20 @@ recipes.addShaped("drinkro", <cuisine:drinkro>, [
 	
 	
 // descriptions
+
+<cuisine:jar>.addTooltip("Can hold items and/or liquids.");
+<cuisine:jar>.addTooltip("Max capacity: 10000 mB");
+
+val clayBasins = [<cuisine:earthen_basin>, <cuisine:earthen_basin_colored:*>] as IItemStack[];
+val basins = [<cuisine:wooden_basin>, <cuisine:earthen_basin>, <cuisine:earthen_basin_colored:*>] as IItemStack[];
+
+for clayBasin in clayBasins {
+	mods.jei.JEI.addDescription(clayBasin, "Heats contents when on a lit furnace, over lava or fire, or in sunlight.");
+}
+for basin in basins {
+	mods.jei.JEI.addDescription(basin, "Squeeze contents by jumping up and down on top of this, or by activating a down-facing piston above.");
+	basin.addTooltip("Max capacity: 8000 mB");
+}
 
 <cuisine:fire_pit:0>.addTooltip("A fire for cooking");
 <cuisine:fire_pit:0>.addTooltip("If you want heat, use a campfire");
