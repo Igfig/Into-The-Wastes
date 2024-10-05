@@ -62,3 +62,8 @@ recipes.addShapeless(<minecraft:name_tag>, [<ore:string>, <ore:paper>, <ore:nugg
 // remove redundant lead recipe
 
 recipes.removeByRecipeName("animania:lead");
+
+
+// cobwebs to string
+
+recipes.addShapeless(<minecraft:string>, [<minecraft:web>]);
