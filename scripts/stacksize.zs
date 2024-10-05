@@ -6,7 +6,8 @@ val items = itemUtils.getItemsByRegexRegistryName(".*") as IItemStack[];
 
 for item in items {
     if (item.isFood) {
-		item.maxStackSize = 8;
+		item.maxStackSize = 10; // because Cuisine mill and jar recipes work best with 10 at a time
+		item.addTooltip("Max stack size: 10");
     }
 }
 
