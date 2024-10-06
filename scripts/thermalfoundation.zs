@@ -65,9 +65,25 @@ furnace.addRecipe(<thermalfoundation:material:833>, <thermalfoundation:material:
 recipes.addShapeless("mana_dust", <thermalfoundation:material:1028>, [<thermalfoundation:material:1024>, <thermalfoundation:material:1025>, <thermalfoundation:material:1026>, <thermalfoundation:material:1027>]); // elemental dusts to mana dust
 
 
-// a note
+// notes
 
 mods.jei.JEI.addDescription(<ore:blockMithril>, "Produced by allowing a block of silver to come into contact with flowing Primal Mana.");
 
+<thermalfoundation:fertilizer:0>.addTooltip("Fertilizes like bone meal in a 3x3 area");
+<thermalfoundation:fertilizer:1>.addTooltip("Fertilizes like bone meal in a 5x5 area");
+<thermalfoundation:fertilizer:2>.addTooltip("Fertilizes like bone meal in a 7x7 area");
+
+
+// replace phyto-gro recipes
+
+recipes.remove(<thermalfoundation:fertilizer:0>);
+recipes.remove(<thermalfoundation:fertilizer:1>);
+recipes.remove(<thermalfoundation:fertilizer:2>);
+
+recipes.addShapeless(<thermalfoundation:fertilizer:0>, [<minecraft:dye:15>, <ore:dustSaltpeter>, <thermalfoundation:material:864>]); // saltpeter, bone meal, slag -> phyto-gro
+recipes.addShapeless(<thermalfoundation:fertilizer:1>, [<thermalfoundation:fertilizer:0>, <ore:dustSaltpeter>,<thermalfoundation:material:800>, <thermalfoundation:material:800>]); // phyto-gro, saltpeter, sawdust -> rich phyto-gro
+// and fluxed phyto-gro is in casting.zs
+
 
 // TODO some way to turn potions into liquid potion
+// I guess we'd have to make them depositable into fluid handlers...
