@@ -6,6 +6,7 @@ val items = itemUtils.getItemsByRegexRegistryName(".*") as IItemStack[];
 
 for item in items {
     if (item.isFood) {
+		print("Setting stack size for item " ~ item.name ~ " to 10");
 		item.maxStackSize = 10; // because Cuisine mill and jar recipes work best with 10 at a time
 		item.addTooltip("Max stack size: 10");
     }
@@ -25,11 +26,11 @@ function setStackSize(entry as IOreDictEntry, size as int) as bool {
 
 	for item in entry.items {
 		if (item.maxStackSize > size) {
-			print("Setting stack size for item" ~ item.name ~ " to " ~ size);
+			print("Setting stack size for item " ~ item.name ~ " to " ~ size);
 			item.maxStackSize = size;
 			item.addTooltip("Max stack size: " ~ size);
 		} else {
-			print("Keeping stack size for item" ~ item.name ~ " (" ~ item.maxStackSize ~ ")");
+			print("Keeping stack size for item " ~ item.name ~ " (" ~ item.maxStackSize ~ ")");
 		}
 	}
 	return true;
