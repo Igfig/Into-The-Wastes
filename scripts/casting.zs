@@ -66,6 +66,7 @@ CastingTable.addIngotRecipe(<thermalfoundation:material:833>, <liquid:crude_oil>
 Casting.addRecipe(<arcaneworld:ethereal_sword>, <liquid:glowstone> * 1000, <wildnature:amber_sword>, <ore:ingotMithril>);
 Casting.addRecipe(<minecraft:golden_apple:1>, <liquid:mana> * 1000, <minecraft:golden_apple>);
 Casting.addRecipe(<railcraft:tie:1> * 2, <liquid:water> * 100, <railcraft:concrete>, <railcraft:rebar>); // stone rail ties
+Casting.addRecipe(<thermalfoundation:fertilizer:2>, <liquid:redstone> * 500, <thermalfoundation:fertilizer:1>, <ore:dustCharcoal>); // fluxed phyto-gro
 
 
 // make gears cheaper than making them by hand, just one ingot each

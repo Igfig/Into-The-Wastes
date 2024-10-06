@@ -342,3 +342,8 @@ for i, color in woolenClayColors {
 	[<ore:clayBall>, itemUtils.getItem("minecraft:wool", i), <ore:clayBall>],
 	[null, <ore:clayBall>, null]]);
 }
+
+
+// remove elemental soil chisel recipe
+
+Carving.removeGroup("rootsRunicSoilTypes");

@@ -70,6 +70,7 @@ Mortar.removeRecipe(<roots:flour>);
 
 // Rename Roots flour to potato flour, and add a Cuisine mill recipe for it
 <roots:flour>.displayName = "Potato Flour";
+<roots:flour>.addTooltip("It takes two potatoes to make one potato flour");
 Mill.add(<ore:cropPotato> * 2, null, <roots:flour>, null);
 
 
