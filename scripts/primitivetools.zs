@@ -1,7 +1,5 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
-import crafttweaker.events.IEventManager;
-import crafttweaker.event.PlayerInteractBlockEvent;
 
 
 val flint = <minecraft:flint>;
@@ -216,12 +214,3 @@ recipes.addShaped("arrow", <minecraft:arrow> * 4, [
 	[<minecraft:flint>], 
 	[<ore:stickWood>], 
 	[<ore:feather>]]);
-	
-
-// prevent flint-knapping interaction
-
-events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteractBlockEvent){
-	if (<minecraft:flint>.matches(event.item)) {
-		event.cancel();
-	}
-});
