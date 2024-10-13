@@ -1,6 +1,7 @@
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import mods.railcraft.BlastFurnace;
 
 val iron = <ore:ingotIron>;
 val steel = <ore:ingotSteel>;
@@ -15,11 +16,18 @@ val sand = <ore:sand>;
 <railcraft:coke_oven_red>.addTooltip("Multi-Block: 3x3x3 (Hollow)");
 
 
-// remove all plates; we'll use Thermal Expansion ones
+// remove all plates and ingots (that we couldn't remove otherwise without breaking stuff)
+// we'll use Thermal Expansion ones instead
 
 for tr in 0 to 12 {
 	val plate = <railcraft:plate>.definition.makeStack(tr);
 	mods.jei.JEI.removeAndHide(plate);
+}
+for id in 7 to 10 {
+	val ingot = <railcraft:ingot>.definition.makeStack(id);
+	recipes.remove(ingot);
+	recipes.removeByInput(ingot);
+	mods.jei.JEI.removeAndHide(ingot);
 }
 
 
@@ -130,22 +138,6 @@ recipes.remove(<railcraft:firestone_cut>);
 recipes.addShapeless(<railcraft:firestone_cut>, [<chisel:chisel_diamond>, <railcraft:firestone_raw>, <chisel:chisel_diamond>]);
 
 
-// remove invar and nickel glass recipes (and one other mysterious one)
-
-recipes.removeByRecipeName("railcraft_glass#04");
-recipes.removeByRecipeName("railcraft_glass#05");
-recipes.removeByRecipeName("railcraft_glass#06");
-recipes.removeByRecipeName("railcraft_glass#0$4");
-recipes.removeByRecipeName("railcraft_glass#0$5");
-recipes.removeByRecipeName("railcraft_glass#0$6");
-recipes.removeByRecipeName("railcraft_glass#0$4_modified");
-recipes.removeByRecipeName("railcraft_glass#0$5_modified");
-recipes.removeByRecipeName("railcraft_glass#0$6_modified");
-recipes.removeByRecipeName("crafttweaker:railcraft_glass#0$4_modified");
-recipes.removeByRecipeName("crafttweaker:railcraft_glass#0$5_modified");
-recipes.removeByRecipeName("crafttweaker:railcraft_glass#0$6_modified");
-
-
 // crushed obsidian
 
 recipes.addShaped("crushed_obsidian", <railcraft:generic:7> * 4, [
@@ -219,3 +211,5 @@ recipes.addShaped(<railcraft:tool_crowbar_steel>, [
 	[null, steel, steel],
 	[null, steel, null],
 	[steel, null, null]]);
+	
+	
