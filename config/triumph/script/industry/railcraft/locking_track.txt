@@ -1,0 +1,10 @@
+setIcon(<railcraft:track_outfitted, nbt:{railcraft:{rail:"railcraft_iron",kit:"railcraft_locking"}}>)
+setTitle("Locked and Loaded")
+setDescription("Craft a Locking Track to hold trains in place.")
+
+addParent("industry:railcraft/craft_track")
+
+criteria = addCriteria("kit", "minecraft:inventory_changed")
+criteria.addItem(<railcraft:track_kit, meta:10, nbt:{railcraft:{kit:"railcraft_locking"}}>)
+
+setPos(193,191)
