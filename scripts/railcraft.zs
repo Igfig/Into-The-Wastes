@@ -7,7 +7,6 @@ val steel = <ore:ingotSteel>;
 val tank = <railcraft:tank_iron_wall>;
 val gravel = <minecraft:gravel>;
 val sand = <ore:sand>;
-val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"}).giveBack(<minecraft:glass_bottle>);
 
 
 // fix display of red coke oven
@@ -24,7 +23,7 @@ for tr in 0 to 12 {
 }
 
 
-// remove some track recipes
+// remove some rail recipes
 
 val rails = {
 	<railcraft:rail:0>: <minecraft:rail>,
@@ -34,7 +33,63 @@ val rails = {
 
 for rail, track in rails {
 	recipes.remove(rail);
+	
+	// but we still want these to be craftable from tracks
 	recipes.addShapeless(rail, [track, track, track, track, track, track]);
+}
+
+
+// electric rails should have been fully removed, but instead just got different recipes?
+// Remove those.
+
+val electricTracks = [
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_activator"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_booster"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_detector"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_locking"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_messenger"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_delayed"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_priming"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_whistle"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_locomotive"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_throttle"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_transition"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_buffer"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_control"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_disembarking"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_dumping"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_embarking"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_gated"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_one_way"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_launcher"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_routing"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit:"railcraft_coupler"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_activator"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_booster"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_detector"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_locking"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_messenger"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_delayed"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_priming"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_whistle"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_locomotive"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_throttle"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_transition"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_buffer"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_control"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_disembarking"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_dumping"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_embarking"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_gated"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_one_way"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_launcher"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_routing"}}),
+	<railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_high_speed_electric", kit:"railcraft_coupler"}})
+] as IItemStack[];
+
+for track in electricTracks {
+	recipes.remove(track);
+	mods.jei.JEI.removeAndHide(track);
 }
 
 
