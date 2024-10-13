@@ -1,0 +1,14 @@
+setIcon(<railcraft:manipulator>)
+setTitle("Get a Load of This")
+setDescription("Craft an Item Loader and Unloader to load and unload your Chest Carts.")
+
+addParent("industry:railcraft/locking_track")
+
+criteria = addCriteria("loader", "minecraft:inventory_changed")
+criteria.addItem(<railcraft:manipulator, meta:0>)
+criteria = addCriteria("unloader", "minecraft:inventory_changed")
+criteria.addItem(<railcraft:manipulator, meta:1>)
+
+setRequirements("any")
+
+setPos(225,191)
