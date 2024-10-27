@@ -77,18 +77,18 @@ Mill.add(<ore:cropPotato> * 2, null, <roots:flour>, null);
 // Update living tool and terrastone recipes to use gold and iron tools respectively, instead of wood and iron
 
 val woodToolReplacements = {
-	<roots:living_sword>: <minecraft:golden_sword>,
-	<roots:living_shovel>: <minecraft:golden_shovel>,
-	<roots:living_pickaxe>: <minecraft:golden_pickaxe>,
-	<roots:living_axe>: <minecraft:golden_axe>,
-	<roots:living_hoe>: <minecraft:golden_hoe>
+	<roots:living_sword>: <minecraft:golden_sword>.anyDamage(),
+	<roots:living_shovel>: <minecraft:golden_shovel>.anyDamage(),
+	<roots:living_pickaxe>: <minecraft:golden_pickaxe>.anyDamage(),
+	<roots:living_axe>: <minecraft:golden_axe>.anyDamage(),
+	<roots:living_hoe>: <minecraft:golden_hoe>.anyDamage()
 } as IIngredient[IItemStack];
 val stoneToolReplacements = {
-	<roots:terrastone_sword>: <minecraft:iron_sword>,
-	<roots:terrastone_shovel>: <minecraft:iron_shovel>,
-	<roots:terrastone_pickaxe>: <minecraft:iron_pickaxe>,
-	<roots:terrastone_axe>: <minecraft:iron_axe>,
-	<roots:terrastone_hoe>: <minecraft:iron_hoe>
+	<roots:terrastone_sword>: <minecraft:iron_sword>.anyDamage(),
+	<roots:terrastone_shovel>: <minecraft:iron_shovel>.anyDamage(),
+	<roots:terrastone_pickaxe>: <minecraft:iron_pickaxe>.anyDamage(),
+	<roots:terrastone_axe>: <minecraft:iron_axe>.anyDamage(),
+	<roots:terrastone_hoe>: <minecraft:iron_hoe>.anyDamage()
 } as IIngredient[IItemStack];
 
 for rootsTool, goldTool in woodToolReplacements {
@@ -100,6 +100,15 @@ for rootsTool, ironTool in stoneToolReplacements {
 	Fey.removeRecipe(rootsTool);
 	Fey.addRecipe(rootsTool.name, rootsTool, [<ore:runestone>, ironTool, <roots:terra_moss>, <ore:gemDiamond>, <minecraft:mossy_cobblestone>]);
 }
+
+
+// and same for various spells
+Mortar.changeSpell("spell_natures_scythe", [<roots:wildroot>, <roots:wildroot>, <mysticalworld:aubergine>, <minecraft:golden_hoe>.anyDamage(), <ore:tallgrass>]);
+Mortar.changeSpell("spell_shatter", [<minecraft:flint>, <minecraft:golden_pickaxe>.anyDamage(), <roots:stalicripe>, <minecraft:tnt>, <ore:cobblestone>]);
+Mortar.changeSpell("spell_life_drain", [<roots:baffle_cap_mushroom>, <roots:moonglow_leaf>, <roots:moonglow_seed>, <minecraft:golden_sword>.anyDamage(), <minecraft:iron_bars>]);
+Mortar.changeSpell("spell_extension", [<ore:chestWood>, <minecraft:golden_pickaxe>.anyDamage(), <ore:eye>, <minecraft:compass>, <minecraft:golden_carrot>]);
+Mortar.changeSpell("spell_harvest", [<minecraft:golden_hoe>.anyDamage(), <mysticalworld:aubergine_seed>, <roots:wildewheet>, <roots:wildewheet_seed>, <minecraft:wheat_seeds>]);
+
 
 
 // remove disabled rituals from JEI

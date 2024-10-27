@@ -24,6 +24,12 @@ for tr in toRemove {
 mods.jei.JEI.addDescription([<animania:friesian_cheese_wedge>, <animania:holstein_cheese_wedge>, <animania:jersey_cheese_wedge>, <animania:goat_cheese_wedge>, <animania:sheep_cheese_wedge>], "Used to tame rats. Drop up to 16 cheese near a wild rat to tame one.");
 
 
+// change rat crafting upgrade recipe
+
+recipes.replaceAllOccurences(<minecraft:stone_pickaxe>, <minecraft:golden_pickaxe>, <rats:rat_upgrade_crafting>);
+recipes.replaceAllOccurences(<minecraft:stone_axe>, <minecraft:golden_axe>, <rats:rat_upgrade_crafting>);
+
+
 // reduce Confit Byaldi's food values to something less absurd
 
 var confit = FoodInfo(<rats:confit_byaldi>).setHeal(10).setSaturation(0.5F);
