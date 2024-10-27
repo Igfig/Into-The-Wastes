@@ -8,7 +8,7 @@ val storageAlloysToRemove = [2,4,5,6,7] as int[];
 
 val materialsToRemove = [
 	22,23,24,25,26,27, // vanilla gears
-	58, // coke
+	58,802, // coke
 	68,69,71,98,100,101,102,103, // unwanted dusts
 	132,133,135,162,163,164,165,166,167, // unwanted ingots
 	196,197,199,226,227,228,229,230,231, // unwanted nuggets
