@@ -49,6 +49,8 @@ for basin in basins {
 
 mods.jei.JEI.addDescription(<cuisine:fire_pit:2>, "Right-click with meat (or other furnace-cookable foods) to put it on the spit, then right-click with fuel to start cooking.", "Remove the meat when it's browned.", "Can hold up to three items at a time.");
 
-mods.jei.JEI.addDescription(<cuisine:mill>, "Right-click to insert items.", "Right-click with an empty hand to grind. Grinding costs stamina.", "Grinds roughly one item per second.");
+mods.jei.JEI.addDescription(<cuisine:mortar>, "Right-click to insert items.", "Right-click with an empty hand to pound items to paste. Pounding costs stamina.", "Shift-right-click with an empty hand to remove items.", "Can be automated with a Wooden Arm.");
+
+mods.jei.JEI.addDescription(<cuisine:mill>, "Right-click to insert items.", "Right-click with an empty hand to grind food items into dusts or fluids. Grinding costs stamina.", "Shift-right-click with an empty hand to remove items.", "Outputs produced items to adjacent inventories. Fluids produced can be removed with buckets, spice bottles, or faucets.", "Grinds one item per revolution, which takes roughly one second.", "Can be automated with a Wooden Arm.");
 
 mods.jei.JEI.addDescription(<cuisine:drinkro>, "Put two or more juices in the top section. Optionally add some spices. Put an empty bottle in the lower section, and apply a redstone current. After some seconds, a blended, multi-serving drink is produced.");

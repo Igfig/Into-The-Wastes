@@ -13,11 +13,7 @@
     <!-- Setup Screen Complete -->
 
     <!-- Overworld Setup Beginning -->
-
     <IfCondition condition=':= ?COGActive'>
-
-      <!-- Starting Original "Overworld" Block Removal -->
-
       <IfCondition condition=':= ?blockExists("minecraft:stone")'>
         <Substitute name='cpOverworldBlockSubstitute0' block='minecraft:stone'>
           <Description>
@@ -26,10 +22,21 @@
           <Replaces block='chisel_plus:amber_ore' weight='1.0' />
         </Substitute>
       </IfCondition>
-
-      <!-- Original "Overworld" Block Removal Complete -->
-
     </IfCondition>
+	<!-- Overworld Setup Complete -->
+
+	<!-- Nether Setup Beginning -->
+    <IfCondition condition=':= dimension = "Nether"'>
+	  <IfCondition condition=':= ?blockExists("chisel_plus:lavastone_nether")'>
+		<Substitute name='cpNetherBlockSubstitute0' block='chisel_plus:lavastone_nether'>
+		  <Description>
+			Replace Lavastone in the Nether with the correct kind.
+		  </Description>
+		  <Replaces block='chisel_plus:lavastone_dark' weight='1.0' />
+		</Substitute>
+	  </IfCondition>
+    </IfCondition>
+	<!-- Nether Setup Complete -->
 
   </ConfigSection>
   <!-- Configuration for Custom Ore Generation Complete! -->
