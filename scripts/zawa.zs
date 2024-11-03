@@ -104,6 +104,12 @@ recipes.addShapeless(<minecraft:leather>, [<ore:zawaFur>|<ore:zawaHide>]);
 furnace.addRecipe(<contenttweaker:worm_cooked>, <zawa:worm>);
 
 
+// flashlight
+
+<zawa:flashlight>.addTooltip("Its battery seems a bit faulty");
+<zawa:flashlight>.addShiftTooltip("Phasmophobia, eat your heart out");
+
+
 // simplify kibble recipes and make them take a wider range of ingredients
 
 recipes.remove(<zawa:kibble>);

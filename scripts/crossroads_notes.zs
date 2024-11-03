@@ -84,6 +84,6 @@ for rcable in redstoneHeatCables {
 	mods.jei.JEI.addDescription(rcable, "Transmits heat, but can also be used to track and control the system's heat.", "Only connects to other blocks when powered by redstone.", "Comparators read the cable's temperature, with a level of 15 representing the cable's melting point.");
 }
 
-
+mods.jei.JEI.addDescription(<essentials:port_extender>, "Place with the one-square side facing an adjacent block with an inventory.", "Other blocks can insert into and extract from this block as if it were the faced block.", "Only works with items.", "Cannot be chained.");
 
 // TODO add more notes
