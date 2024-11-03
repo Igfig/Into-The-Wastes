@@ -50,3 +50,8 @@ token.addTooltip(format.gold("Your ticket out of here"));
 
 val tokenPiece = <rats:token_piece>;
 recipes.addShapeless(<animania:sheep_cheese_wheel> * 8, [tokenPiece * 9]);
+
+
+// add a missing display name
+
+<rats:rat_cage_breeding_lantern>.displayName = "Rat Cage";
