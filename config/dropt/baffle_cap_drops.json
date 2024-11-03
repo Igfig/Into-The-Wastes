@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "roots:baffle_cap_huge_top",
+            "roots:baffle_cap_huge_stem"
+          ]
+        }
+      },
+	  "replaceStrategy": "REPLACE_ALL",
+	  "drops": [
+        {
+          "selector": {
+            "weight": {
+              "value": 7
+            }
+          }
+        },
+        {
+          "selector": {
+            "weight": {
+              "value": 2
+            }
+          },
+          "item": {
+            "items": ["roots:baffle_cap_mushroom"],
+			"quantity": {"min": 1, "max": 2}
+          }
+        }
+      ]
+    }
+  ]
+}

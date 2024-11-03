@@ -1,6 +1,7 @@
 val link = <iceandfire:chain_link>;
 val strg = <ore:string>;
 
+<futuremc:chain>.addTooltip("Purely decorative");
 recipes.remove(<futuremc:chain>);
 recipes.addShaped("futuremc_chain", <futuremc:chain> * 3, [
 	[link,link,link]]);

@@ -1,0 +1,11 @@
+setIcon(<toughasnails:canteen>)
+setTitle("Canteen")
+setDescription("Craft a canteen to hold more drinking water at once.")
+addParent("_wastes:ceramics/water_barrel")
+
+criteria = addCriteria("canteen", "minecraft:inventory_changed")
+criteria.addItem("toughasnails:canteen")
+
+
+setRequirements("any")
+setPos(104,98)

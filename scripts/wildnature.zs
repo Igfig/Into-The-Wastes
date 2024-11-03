@@ -94,3 +94,8 @@ recipes.addShaped("pebble", <minecraft:cobblestone>, [
 
 <ore:wildNatureOres>.add(<wildnature:amethyst_ore>,<wildnature:amber_ore>,<wildnature:ruby_ore>,<wildnature:silver_ore>,<wildnature:malachite_ore>,<wildnature:sapphire_ore>);
 <ore:wildNatureOres>.addTooltip("DISABLED. DOES NOT DROP ANYTHING");
+
+
+// add missing display name for mud
+
+<wildnature:mud>.displayName = "Packed Mud";

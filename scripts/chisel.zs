@@ -68,13 +68,23 @@ mods.jei.JEI.removeAndHide(<chisel_plus:carpet_wool_white>);
 mods.jei.JEI.removeAndHide(<chisel_plus:carpet_wool_yellow>);
 
 
-// put all Chisel Plus recipes in appropriate chisel groups
+// functions
 
 function addVariations(groupName as string, blocks as IItemStack[]) {
 	for block in blocks {	
 		Carving.addVariation(groupName, block);
 	}
 }
+function addIdVariations(groupName as string, blocks as int[IItemStack]) {
+	for block, idCount in blocks {
+		for i in 0 to idCount {
+			Carving.addVariation(groupName, block.definition.makeStack(i));
+		}
+	}
+}
+
+
+// put all Chisel Plus recipes in appropriate chisel groups
 
 Carving.addGroup("birdstone");
 addVariations("birdstone", [
@@ -347,3 +357,36 @@ for i, color in woolenClayColors {
 // remove elemental soil chisel recipe
 
 Carving.removeGroup("rootsRunicSoilTypes");
+
+
+// add missing display names
+
+<unlimitedchiselworks:chisel_stonebrick_railcraft_brick_nether_0>.displayName = "Nether Brick";
+<unlimitedchiselworks:chisel_stonebrick1_railcraft_brick_nether_0>.displayName = "Nether Brick";
+<unlimitedchiselworks:chisel_stonebrick2_railcraft_brick_nether_0>.displayName = "Nether Brick";
+<unlimitedchiselworks:chisel_stonebrick_railcraft_brick_red_nether_0>.displayName = "Red Nether Brick";
+<unlimitedchiselworks:chisel_stonebrick1_railcraft_brick_red_nether_0>.displayName = "Red Nether Brick";
+<unlimitedchiselworks:chisel_stonebrick2_railcraft_brick_red_nether_0>.displayName = "Red Nether Brick";
+
+
+// fix chisel groups for nether bricks
+
+Carving.removeGroup("railcraft:brick_nether_0");
+Carving.removeGroup("railcraft:brick_red_nether_0");
+Carving.addGroup("rednetherbrick");
+
+val netherBrickIds = {
+	<unlimitedchiselworks:chisel_stonebrick_railcraft_brick_nether_0>: 16,
+	<unlimitedchiselworks:chisel_stonebrick1_railcraft_brick_nether_0>: 10,
+	<unlimitedchiselworks:chisel_stonebrick2_railcraft_brick_nether_0>: 10
+} as int[IItemStack];
+
+val redNetherBrickIds = {
+	<minecraft:red_nether_brick>: 1,
+	<unlimitedchiselworks:chisel_stonebrick_railcraft_brick_red_nether_0>: 16,
+	<unlimitedchiselworks:chisel_stonebrick1_railcraft_brick_red_nether_0>: 10,
+	<unlimitedchiselworks:chisel_stonebrick2_railcraft_brick_red_nether_0>: 10
+} as int[IItemStack];
+
+addIdVariations("netherbrick", netherBrickIds);
+addIdVariations("rednetherbrick", redNetherBrickIds);
