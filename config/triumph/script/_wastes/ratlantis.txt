@@ -8,5 +8,5 @@ hiddenUnless("_wastes:rat_token")
 criteria = addCriteria("ratlantis", "triumph:completed_advancement")
 criteria.setAdvancement("rats:rats/ratlantis")
 
-addRewardFunction("wastes:fireworks")
+addRewardFunction("wastes:fireworks/start")
 setPos(136,-72)

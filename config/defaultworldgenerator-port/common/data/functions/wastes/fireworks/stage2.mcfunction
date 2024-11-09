@@ -1,4 +1,4 @@
-function wastes:update_stage
+function wastes:fireworks/update_stage
 
 summon fireworks_rocket ~-3 ~10 ~4 {LifeTime:20, FireworksItem:{id:fireworks, Count:1, tag:{Fireworks:{Flight:1,Explosions:[{Type:0,Flicker:0,Trail:0,Colors:[I;2651799,14188952]},{Type:0,Flicker:1,Trail:0,Colors:[I;14188952,15435844],FadeColors:[I;14602026]}]}}}}
 summon fireworks_rocket ~1 ~10 ~-6 {LifeTime:22, FireworksItem:{id:fireworks, Count:1, tag:{Fireworks:{Flight:1,Explosions:[{Type:0,Flicker:1,Trail:0,Colors:[I;8073150,14602026,6719955],FadeColors:[I;8073150]}]}}}}
