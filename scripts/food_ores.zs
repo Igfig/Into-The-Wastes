@@ -126,8 +126,12 @@
 // also rotten flesh should count as rotten
 <ore:rotten>.add(<minecraft:rotten_flesh>);
 
-// egg
+// a few more misc oredicts
 <ore:egg>.add(<minecraft:egg>, <iceandfire:hippogryph_egg:*>, <iceandfire:iceandfire.deathworm_egg:*>, <iceandfire:myrmex_jungle_egg:*>, <iceandfire:myrmex_desert_egg:*>, <animania:brown_egg>, <animania:peacock_egg_blue>, <animania:peacock_egg_white>, <primitivemobs:dodo_egg>);
+
+<ore:foodSoup>.add(<animania:truffle_soup>, <futuremc:suspicious_stew>, <inspirations:potato_soup>, <minecraft:beetroot_soup>, <minecraft:mushroom_stew>, <minecraft:rabbit_stew>, <mysticalworld:stewed_eggplant>, <rats:plague_stew>, <roots:wildroot_stew>);
+
+
 
 
 // animania animal foods
