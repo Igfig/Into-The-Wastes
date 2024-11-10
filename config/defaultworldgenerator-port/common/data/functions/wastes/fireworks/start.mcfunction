@@ -9,7 +9,5 @@ scoreboard objectives add stage dummy
 scoreboard players set @s time 60
 scoreboard players set @s stage 3
 
-scoreboard objectives setdisplay sidebar time
-
-gamerule gameLoopFunction wastes:tick
+# scoreboard objectives setdisplay sidebar time
 

@@ -142,3 +142,7 @@ val kibbleRecipes = {
 for kibble, ingredients in kibbleRecipes {
 	recipes.addShapeless(kibble, ingredients);
 }
+
+// re-add data book recipe
+
+recipes.addShapeless(<zawa:data_book>, [<minecraft:book>, <zawa:kibble>]);
