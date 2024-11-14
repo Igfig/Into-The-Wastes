@@ -1,1 +1,0 @@
-entitydata @s {Item:{tag:{unfunked:true}},Tags:["unfunked"]}
