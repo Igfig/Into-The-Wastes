@@ -115,8 +115,6 @@ furnace.addRecipe(<contenttweaker:worm_cooked>, <zawa:worm>);
 recipes.remove(<zawa:kibble>);
 recipes.addShapeless(<zawa:kibble>, [<ore:listAllgrain>, <ore:listAllveggie>]);
 
-recipes.removeByInput(<zawa:kibble>);
-
 val kibbleRecipes = {
 	<zawa:bear_kibble>: [<zawa:kibble>, <ore:listAllseafoodraw>, <ore:listAllfruit>],
 	<zawa:pachyderm_kibble>: [<zawa:kibble>, <ore:treeLeaves>, <ore:listAllveggie>],
@@ -140,9 +138,6 @@ val kibbleRecipes = {
 <ore:kibble>.add(<zawa:shark_kibble>); // shark ingredients don't need to be changed
 
 for kibble, ingredients in kibbleRecipes {
+	recipes.remove(kibble);
 	recipes.addShapeless(kibble, ingredients);
 }
-
-// re-add data book recipe
-
-recipes.addShapeless(<zawa:data_book>, [<minecraft:book>, <zawa:kibble>]);
