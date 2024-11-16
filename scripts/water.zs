@@ -2,6 +2,7 @@
 
 val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"});
 val waterBottleIngredient = <minecraft:potion>.withTag({Potion: "minecraft:water"}).giveBack(<minecraft:glass_bottle>);
+val purifiedBottleIngredient = <toughasnails:purified_water_bottle>.giveBack(<minecraft:glass_bottle>);
 val clayWaterBucket = <ceramics:clay_bucket>.withTag({fluids: {FluidName: "water", Amount: 1000}});
 
 val ironBucketPurified = <forge:bucketfilled>.withTag({FluidName: "purified_water", Amount: 1000});
@@ -60,8 +61,8 @@ recipes.addShapeless("water_bucket_iron", <minecraft:water_bucket>, [<minecraft:
 recipes.addShapeless("water_bucket_clay", clayWaterBucket, [<ceramics:clay_bucket>, waterBottleIngredient, waterBottleIngredient, waterBottleIngredient, waterBottleIngredient]);
 recipes.addShapeless("water_canteen", <toughasnails:canteen:1>, [<toughasnails:canteen:0>, waterBottleIngredient, waterBottleIngredient, waterBottleIngredient]);
 
-recipes.addShapeless("purified_bucket_iron", ironBucketPurified, [<minecraft:bucket>, <toughasnails:purified_water_bottle>, <toughasnails:purified_water_bottle>, <toughasnails:purified_water_bottle>, <toughasnails:purified_water_bottle>]);
-recipes.addShapeless("purified_bucket_clay", clayBucketPurified, [<ceramics:clay_bucket>, <toughasnails:purified_water_bottle>, <toughasnails:purified_water_bottle>, <toughasnails:purified_water_bottle>, <toughasnails:purified_water_bottle>]);
-recipes.addShapeless("purified_canteen", <toughasnails:canteen:2>, [<toughasnails:canteen:0>, <toughasnails:purified_water_bottle>, <toughasnails:purified_water_bottle>, <toughasnails:purified_water_bottle>]);
+recipes.addShapeless("purified_bucket_iron", ironBucketPurified, [<minecraft:bucket>, purifiedBottleIngredient, purifiedBottleIngredient, purifiedBottleIngredient, purifiedBottleIngredient]);
+recipes.addShapeless("purified_bucket_clay", clayBucketPurified, [<ceramics:clay_bucket>, purifiedBottleIngredient, purifiedBottleIngredient, purifiedBottleIngredient, purifiedBottleIngredient]);
+recipes.addShapeless("purified_canteen", <toughasnails:canteen:2>, [<toughasnails:canteen:0>, purifiedBottleIngredient, purifiedBottleIngredient, purifiedBottleIngredient]);
 
 
