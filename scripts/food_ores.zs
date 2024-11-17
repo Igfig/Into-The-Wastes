@@ -3,6 +3,7 @@
 import crafttweaker.item.IItemStack;
 import foodtweaker.FoodInfo;
 import mods.foodtweaker.Tweaker;
+import scripts.functions.unfunkAll;
 
 
 // add missing food oredicts
@@ -32,7 +33,10 @@ import mods.foodtweaker.Tweaker;
 
 <ore:listAllfruit>.add(<biomesoplenty:peach>, <biomesoplenty:persimmon>, <biomesoplenty:pear>, <wildnature:green_apple>, <wildnature:pear>, <wildnature:cherry>, <futuremc:sweet_berries>, <valoegheses_be:berry_bush>, <valoegheses_be:island_coconut_0>, <valoegheses_be:island_coconut_1>, <valoegheses_be:fruit_peach>, <valoegheses_be:fruit_nectarine>, <valoegheses_be:fruit_plum>, <valoegheses_be:fruit_date>, <minecraft:apple>, <minecraft:melon>, <minecraft:chorus_fruit>, <cuisine:food:9>, <cuisine:food:10>, <cuisine:food:11>, <cuisine:food:12>, <cuisine:food:13>, <cuisine:food:14>, <cuisine:food:15>, <cuisine:food:16>);
 
-<ore:listAllveggie>.add(<cuisine:crops:9>); // scallions
+<ore:listAllveggie>.add(<minecraft:beetroot>, <minecraft:carrot>, <minecraft:potato>, <minecraft:pumpkin>, <cuisine:crops:4>, <cuisine:crops:5>, <cuisine:crops:6>, <cuisine:crops:7>, <cuisine:crops:9>, <cuisine:crops:10>, <cuisine:crops:11>, <cuisine:crops:12>, <cuisine:crops:14>, <cuisine:crops:15>, <cuisine:crops:16>, <cuisine:crops:17>, <cuisine:crops:18>, <cuisine:crops:19>, <cuisine:crops:20>, <mysticalworld:aubergine>);
+<ore:foodVegetable>.addAll(<ore:listAllveggie>);
+
+<ore:foodVegetableUnfunked>.addItems(unfunkAll(<ore:listAllveggie>.items));
 
 <ore:blockHay>.add(<minecraft:hay_block>);
 <ore:blockTofu>.add(<cuisine:tofu_block>);

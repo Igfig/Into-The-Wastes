@@ -1,5 +1,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import scripts.functions.unfunk;
+import scripts.functions.unfunkAll;
 
 
 // remove unwanted items
@@ -113,7 +115,9 @@ furnace.addRecipe(<contenttweaker:worm_cooked>, <zawa:worm>);
 // simplify kibble recipes and make them take a wider range of ingredients
 
 recipes.remove(<zawa:kibble>);
-recipes.addShapeless(<zawa:kibble>, [<ore:listAllgrain>, <ore:listAllveggie>]);
+//recipes.addShapeless(<zawa:kibble>, [unfunk(<ore:listAllgrain>), unfunk(<ore:listAllveggie>)]);
+recipes.addShapeless(<zawa:kibble>, [unfunk(<ore:listAllgrain>), <ore:foodVegetableUnfunked>]);
+//recipes.addShapeless(<zawa:kibble>, [[<minecraft:wheat>, <cuisine:crops:3>], <ore:listAllveggie>]);
 
 val kibbleRecipes = {
 	<zawa:bear_kibble>: [<zawa:kibble>, <ore:listAllseafoodraw>, <ore:listAllfruit>],
@@ -139,5 +143,13 @@ val kibbleRecipes = {
 
 for kibble, ingredients in kibbleRecipes {
 	recipes.remove(kibble);
-	recipes.addShapeless(kibble, ingredients);
+	val unfunkedIngredients = unfunkAll(ingredients);
+	
+	for ing in unfunkedIngredients {
+		for item in ing.items {
+			print(item.name);
+			print(item.capNBT);
+		}
+	}
+	recipes.addShapeless(kibble, unfunkedIngredients);
 }
