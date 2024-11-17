@@ -9,6 +9,8 @@ import mods.contenttweaker.Item;
 
 var emptyTankItem = mods.contenttweaker.VanillaFactory.createItem("empty_tank");
 emptyTankItem.register();
+var creosoteTankItem = mods.contenttweaker.VanillaFactory.createItem("creosote_tank");
+creosoteTankItem.register();
 var crudeOilTankItem = mods.contenttweaker.VanillaFactory.createItem("crude_oil_tank");
 crudeOilTankItem.register();
 var refinedOilTankItem = mods.contenttweaker.VanillaFactory.createItem("refined_oil_tank");

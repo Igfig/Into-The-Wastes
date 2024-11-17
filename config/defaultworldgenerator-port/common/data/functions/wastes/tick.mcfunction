@@ -1,2 +1,1 @@
-function wastes:unfunk
 execute @p[score_stage_min=1] ~ ~ ~ function wastes:fireworks/tick

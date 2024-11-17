@@ -1,1 +1,0 @@
-entitydata @e[type=item] {Item:{tag:{unfunked:true}}}

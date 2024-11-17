@@ -5,11 +5,17 @@ import crafttweaker.oredict.IOreDictEntry;
 val items = itemUtils.getItemsByRegexRegistryName(".*") as IItemStack[];
 
 for item in items {
-    if (item.isFood && item.maxStackSize > 10) {
-		print("Setting stack size for item " ~ item.name ~ " to 10");
-		item.maxStackSize = 10; // because Cuisine mill and jar recipes work best with 10 at a time
-		item.addTooltip("Max stack size: 10");
-    }
+    if (item.isFood) {
+		if (<ore:foodSoup> has item) {
+			item.maxStackSize = 1;
+			item.withEmptyTag().addTooltip("Max stack size: 1");
+		} else if (item.maxStackSize > 10) {
+			item.maxStackSize = 10; // because Cuisine mill and jar recipes work best with 10 at a time
+			item.withEmptyTag().anyDamage().addTooltip("Max stack size: 10");
+		} else {
+			print("Keeping stack size for food item " ~ item.name ~ " (" ~ item.maxStackSize ~ ")");
+		}
+	}
 }
 
 function setStackSize(entry as IOreDictEntry, size as int) as bool {
@@ -28,7 +34,7 @@ function setStackSize(entry as IOreDictEntry, size as int) as bool {
 		if (item.maxStackSize > size) {
 			print("Setting stack size for item " ~ item.name ~ " to " ~ size);
 			item.maxStackSize = size;
-			item.addTooltip("Max stack size: " ~ size);
+			item.anyDamage().addTooltip("Max stack size: " ~ size);
 		} else {
 			print("Keeping stack size for item " ~ item.name ~ " (" ~ item.maxStackSize ~ ")");
 		}

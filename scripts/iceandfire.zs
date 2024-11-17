@@ -61,7 +61,9 @@ val materials = [
 	<iceandfire:dragonsteel_fire_ingot>,
 	<iceandfire:dragonsteel_ice_ingot>,
 	<iceandfire:dragonscales_red>,
+	<iceandfire:dragonscales_green>,
 	<iceandfire:dragonscales_bronze>,
+	<iceandfire:dragonscales_gray>,
 	<iceandfire:dragonscales_blue>,
 	<iceandfire:dragonscales_white>,
 	<iceandfire:dragonscales_sapphire>,
@@ -80,7 +82,9 @@ val helmets = [
 	<iceandfire:dragonsteel_fire_helmet>,
 	<iceandfire:dragonsteel_ice_helmet>,
 	<iceandfire:armor_red_helmet>,
+	<iceandfire:armor_green_helmet>,
 	<iceandfire:armor_bronze_helmet>,
+	<iceandfire:armor_gray_helmet>,
 	<iceandfire:armor_blue_helmet>,
 	<iceandfire:armor_white_helmet>,
 	<iceandfire:armor_sapphire_helmet>,
@@ -99,7 +103,9 @@ val chestplates = [
 	<iceandfire:dragonsteel_fire_chestplate>,
 	<iceandfire:dragonsteel_ice_chestplate>,
 	<iceandfire:armor_red_chestplate>,
+	<iceandfire:armor_green_chestplate>,
 	<iceandfire:armor_bronze_chestplate>,
+	<iceandfire:armor_gray_chestplate>,
 	<iceandfire:armor_blue_chestplate>,
 	<iceandfire:armor_white_chestplate>,
 	<iceandfire:armor_sapphire_chestplate>,
@@ -118,7 +124,9 @@ val leggings = [
 	<iceandfire:dragonsteel_fire_leggings>,
 	<iceandfire:dragonsteel_ice_leggings>,
 	<iceandfire:armor_red_leggings>,
+	<iceandfire:armor_green_leggings>,
 	<iceandfire:armor_bronze_leggings>,
+	<iceandfire:armor_gray_leggings>,
 	<iceandfire:armor_blue_leggings>,
 	<iceandfire:armor_white_leggings>,
 	<iceandfire:armor_sapphire_leggings>,
@@ -137,7 +145,9 @@ val boots = [
 	<iceandfire:dragonsteel_fire_boots>,
 	<iceandfire:dragonsteel_ice_boots>,
 	<iceandfire:armor_red_boots>,
+	<iceandfire:armor_green_boots>,
 	<iceandfire:armor_bronze_boots>,
+	<iceandfire:armor_gray_boots>,
 	<iceandfire:armor_blue_boots>,
 	<iceandfire:armor_white_boots>,
 	<iceandfire:armor_sapphire_boots>,
@@ -163,7 +173,7 @@ for i, material in materials {
 		[material,material,material],
 		[material,material,material]
 	]);
-	recipes.addShaped(helmets[i], [
+	recipes.addShaped(leggings[i], [
 		[material,material,material],
 		[material,<thermalfoundation:armor.legs_lead>,material],
 		[material,null,material]
@@ -261,11 +271,13 @@ for i, material in tide_materials {
 // swords and other tools
 
 val witherbone = <iceandfire:witherbone>;
+val dragonbone = <iceandfire:dragonbone>;
 val desert_chitin = <iceandfire:myrmex_desert_chitin>;
 val jungle_chitin = <iceandfire:myrmex_jungle_chitin>;
 val stinger = <iceandfire:myrmex_stinger>;
 val lead_sword = <thermalfoundation:tool.sword_lead>;
 val lead_hoe = <thermalfoundation:tool.hoe_lead>;
+val strng = <minecraft:string>;
 
 val removeToolMaterials = {
 	<iceandfire:dragonbone>: [
@@ -342,14 +354,9 @@ recipes.remove(<iceandfire:dragonbone_sword_ice>);
 
 // additional tools with less standard recipes
 
-val removeOtherTools = [
-	<iceandfire:myrmex_desert_sword_venom>,
-	<iceandfire:myrmex_jungle_sword_venom>
-] as IItemStack[];
-
-for rot in removeOtherTools {
-	recipes.remove(rot);
-}
+recipes.remove(<iceandfire:myrmex_desert_sword_venom>);
+recipes.remove(<iceandfire:myrmex_jungle_sword_venom>);
+recipes.remove(<iceandfire:dragonbone_bow>);
 
 recipes.addShapedMirrored(<iceandfire:myrmex_desert_sword_venom>, [
 	[stinger, null],
@@ -359,6 +366,10 @@ recipes.addShapedMirrored(<iceandfire:myrmex_jungle_sword_venom>, [
 	[stinger, null],
 	[jungle_chitin, lead_sword],
 	[witherbone, null]]);
+recipes.addShaped(<iceandfire:dragonbone_bow>, [
+	[null, dragonbone, strng],
+	[witherbone, <thermalfoundation:tool.bow_lead>, strng],
+	[null, dragonbone, strng]]);
 
 recipes.replaceAllOccurences(<ore:stickWood>, lead_sword, <iceandfire:amphithere_macuahuitl>);
 recipes.replaceAllOccurences(<ore:stickWood>, lead_sword, <iceandfire:hippogryph_sword>);
