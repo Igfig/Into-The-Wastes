@@ -1,5 +1,10 @@
 #priority 10
 
+import crafttweaker.item.IItemStack;
+import foodtweaker.FoodInfo;
+import mods.foodtweaker.Tweaker;
+
+
 // add missing food oredicts
 
 
@@ -122,6 +127,7 @@
 <ore:foodMeat>.addAll(<ore:listAllmeatcooked>);
 <ore:foodMeat>.addAll(<ore:listAllseafoodraw>);
 <ore:foodMeat>.addAll(<ore:listAllseafoodcooked>);
+<ore:foodMeat>.add(<iceandfire:fire_dragon_flesh>, <iceandfire:ice_dragon_flesh>);
 
 // also rotten flesh should count as rotten
 <ore:rotten>.add(<minecraft:rotten_flesh>);
@@ -130,8 +136,6 @@
 <ore:egg>.add(<minecraft:egg>, <iceandfire:hippogryph_egg:*>, <iceandfire:iceandfire.deathworm_egg:*>, <iceandfire:myrmex_jungle_egg:*>, <iceandfire:myrmex_desert_egg:*>, <animania:brown_egg>, <animania:peacock_egg_blue>, <animania:peacock_egg_white>, <primitivemobs:dodo_egg>);
 
 <ore:foodSoup>.add(<animania:truffle_soup>, <futuremc:suspicious_stew>, <inspirations:potato_soup>, <minecraft:beetroot_soup>, <minecraft:mushroom_stew>, <minecraft:rabbit_stew>, <mysticalworld:stewed_eggplant>, <rats:plague_stew>, <roots:wildroot_stew>);
-
-
 
 
 // animania animal foods
@@ -199,3 +203,16 @@
 );
 
 <ore:sheepFood>.addAll(<ore:cowFood>);
+
+
+// make sure all meat is considered meat internally
+
+function makeMeat(items as IItemStack[]) {
+	for item in items {
+		val meatInfo = FoodInfo(item).setMeat(true);
+		Tweaker.changeFoodStats(item, meatInfo);
+	}
+}
+
+makeMeat(<ore:foodMeat>.items);
+makeMeat([<minecraft:rotten_flesh>]);
