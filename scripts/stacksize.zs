@@ -7,13 +7,11 @@ val items = itemUtils.getItemsByRegexRegistryName(".*") as IItemStack[];
 for item in items {
     if (item.isFood) {
 		if (<ore:foodSoup> has item) {
-			print("Setting stack size for soup item " ~ item.name ~ " to 1");
 			item.maxStackSize = 1;
-			item.addTooltip("Max stack size: 1");
+			item.withEmptyTag().addTooltip("Max stack size: 1");
 		} else if (item.maxStackSize > 10) {
-			print("Setting stack size for food item " ~ item.name ~ " to 10");
 			item.maxStackSize = 10; // because Cuisine mill and jar recipes work best with 10 at a time
-			item.addTooltip("Max stack size: 10");
+			item.withEmptyTag().anyDamage().addTooltip("Max stack size: 10");
 		} else {
 			print("Keeping stack size for food item " ~ item.name ~ " (" ~ item.maxStackSize ~ ")");
 		}
