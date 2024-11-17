@@ -1,6 +1,6 @@
 setIcon(<thermalfoundation:material:160>)
 setTitle("Real Steel")
-setDescription("Smelt iron plates or blocks in a blast furnace with charcoal or coal coke to create steel.")
+setDescription("Smelt iron ingots or blocks in a blast furnace with charcoal or coal coke to create steel.")
 
 addParent("industry:railcraft/blast_furnace")
 
