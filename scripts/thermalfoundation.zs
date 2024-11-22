@@ -85,5 +85,10 @@ recipes.addShapeless(<thermalfoundation:fertilizer:1>, [<thermalfoundation:ferti
 // and fluxed phyto-gro is in casting.zs
 
 
+// pyrotheum is a bit too good of a fuel, so weaken it
+
+furnace.setFuel(<thermalfoundation:material:1024>, 6400);
+
+
 // TODO some way to turn potions into liquid potion
 // I guess we'd have to make them depositable into fluid handlers...
