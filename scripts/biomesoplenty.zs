@@ -9,3 +9,8 @@ recipes.addShapedMirrored("biome_finder", <biomesoplenty:biome_finder>, [
 	[null, <ore:gemAmethyst>, null]]);
 	
 recipes.replaceAllOccurences(<biomesoplenty:mushroom>, <ore:toadstool>, <biomesoplenty:shroompowder>);
+
+
+// rename the "Earth" item so we can use it as a ritual component
+<biomesoplenty:earth>.displayName = "Tiny Planet";
+<biomesoplenty:earth>.addTooltip("A fully functioning biosphere, but at a tiny scale...");

@@ -29,6 +29,11 @@ mods.jei.JEI.addDescription(<roots:terra_spores>, "Use on cobblestone adjacent t
 recipes.replaceAllOccurences(<roots:unending_bowl>, <roots:elemental_soil>, <roots:runestone_trample>);
 
 
+// recipe for BOP Earth, which is used in an endgame ritual
+
+Fey.addRecipe("tiny_planet", <biomesoplenty:earth>, [<roots:terra_spores>, <futuremc:blue_ice>, <roots:elemental_soil_earth>, <roots:infernal_bulb>, <roots:runed_obsidian>]);
+
+
 // new recipe for fey leather pouch
 
 Fey.removeRecipe(<roots:fey_pouch>);
@@ -43,7 +48,7 @@ mods.jei.JEI.removeAndHide(<roots:diamond_knife>);
 
 <roots:component_pouch>.addTooltip(DISABLED);
 Fey.removeRecipe(<roots:component_pouch>);
-Fey.addRecipe("apothecary_pouch", <roots:apothecary_pouch>, [<roots:bark_oak>, bedrock, bedrock, bedrock, bedrock]);
+Fey.addRecipe("apothecary_pouch", <roots:component_pouch>, [<roots:bark_oak>, bedrock, bedrock, bedrock, bedrock]);
 mods.jei.JEI.removeAndHide(<roots:component_pouch>);
 
 <roots:apothecary_pouch>.addTooltip(DISABLED);
