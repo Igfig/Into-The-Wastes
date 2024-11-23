@@ -10,7 +10,10 @@ mods.jei.JEI.removeAndHide(<zawa:atv>);
 mods.jei.JEI.removeAndHide(<zawa:off_road_car>);
 mods.jei.JEI.removeAndHide(<zawa:zoo_cart>);
 mods.jei.JEI.removeAndHide(<zawa:tire>);
-mods.jei.JEI.removeAndHide(<zawa:animal_net>);
+mods.jei.JEI.removeAndHide(<zawa:animal_net>); // might re-add if I can limit its abilities properly
+mods.jei.JEI.removeAndHide(<zawa:seine_net>);
+mods.jei.JEI.removeAndHide(<zawa:binoculars>);
+mods.jei.JEI.removeAndHide(<zawa:electric_fence>); // maybe re-add as an expensive / late-game thing?
 
 
 // replace some more recipes
@@ -91,6 +94,9 @@ recipes.addShaped("zawa_steel_bars", <zawa:steel_bars> * 6, [
 
 <zawa:flashlight>.addTooltip("Its battery seems a bit faulty");
 <zawa:flashlight>.addShiftTooltip("Phasmophobia, eat your heart out");
+
+<zawa:waste_bin>.addTooltip("Right-click with an item to permanently destroy the item.");
+<zawa:recycle_bin>.addTooltip("Right-click with an item to permanently destroy the item.");
 
 
 // make fur-to-leather recipe produce less, to make meerkats less OP in the early game
