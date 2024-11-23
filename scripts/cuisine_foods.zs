@@ -2,12 +2,11 @@ import mods.cuisine.BasinThrowing;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
-import scripts.functions.unfunk;
+import scripts.functions.unfunkIngredient;
 
 
 val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"}).giveBack(<minecraft:glass_bottle>);
-val flour = unfunk(<ore:foodFlour>);
-val spices = unfunk(<ore:listAllSpice>);
+val flour = unfunkIngredient(<ore:foodFlour>);
 
 
 // flour cooks directly to bread, and crafts to two dough
@@ -23,8 +22,8 @@ furnace.addRecipe(<minecraft:bread>, <cuisine:food:1>); // flour
 // flour tooltip
 
 for item in flour.items {
-	item.addTooltip("Bakes into one bread");
-	item.addTooltip("Crafts with water into two dough");
+	item.withEmptyTag().addTooltip("Bakes into one bread");
+	item.withEmptyTag().addTooltip("Crafts with water into two dough");
 }
 
 // another way to craft tofu
