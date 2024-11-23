@@ -3,8 +3,6 @@
 import crafttweaker.item.IItemStack;
 import foodtweaker.FoodInfo;
 import mods.foodtweaker.Tweaker;
-import scripts.functions.unfunkAll;
-
 
 // add missing food oredicts
 
@@ -35,8 +33,6 @@ import scripts.functions.unfunkAll;
 
 <ore:listAllveggie>.add(<minecraft:beetroot>, <minecraft:carrot>, <minecraft:potato>, <minecraft:pumpkin>, <cuisine:crops:4>, <cuisine:crops:5>, <cuisine:crops:6>, <cuisine:crops:7>, <cuisine:crops:9>, <cuisine:crops:10>, <cuisine:crops:11>, <cuisine:crops:12>, <cuisine:crops:14>, <cuisine:crops:15>, <cuisine:crops:16>, <cuisine:crops:17>, <cuisine:crops:18>, <cuisine:crops:19>, <cuisine:crops:20>, <mysticalworld:aubergine>);
 <ore:foodVegetable>.addAll(<ore:listAllveggie>);
-
-<ore:foodVegetableUnfunked>.addItems(unfunkAll(<ore:listAllveggie>.items));
 
 <ore:blockHay>.add(<minecraft:hay_block>);
 <ore:blockTofu>.add(<cuisine:tofu_block>);

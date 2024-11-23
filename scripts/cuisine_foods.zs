@@ -2,13 +2,10 @@ import mods.cuisine.BasinThrowing;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
-import scripts.functions.unfunk;
-import scripts.functions.unfunkAll;
-
+import scripts.functions.unfunkIngredient;
 
 val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"}).giveBack(<minecraft:glass_bottle>);
-val flour = unfunk(<ore:foodFlour>);
-val spices = unfunk(<ore:listAllSpice>);
+val flour = unfunkIngredient(<ore:foodFlour>);
 
 
 // flour cooks directly to bread, and crafts to two dough
@@ -24,8 +21,8 @@ furnace.addRecipe(<minecraft:bread>, <cuisine:food:1>); // flour
 // flour tooltip
 
 for item in flour.items {
-	item.addTooltip("Bakes into one bread");
-	item.addTooltip("Crafts with water into two dough");
+	item.withEmptyTag().addTooltip("Bakes into one bread");
+	item.withEmptyTag().addTooltip("Crafts with water into two dough");
 }
 
 // another way to craft tofu
@@ -37,6 +34,6 @@ BasinThrowing.add(<ore:dustCrudesalt>, <liquid:soy_milk> * 1000, <cuisine:tofu_b
 
 <cuisine:crops:2>.withEmptyTag().addTooltip("Can be made into soy milk, tofu, or soy sauce");
 
-for item in spices.items {
+for item in <ore:listAllSpice>.items {
 	item.addTooltip("Put in a spice bottle to use as a seasoning");
 }

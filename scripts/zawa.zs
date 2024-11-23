@@ -1,6 +1,6 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
-import scripts.functions.unfunk;
+import scripts.functions.unfunkIngredient;
 import scripts.functions.unfunkAll;
 
 
@@ -82,8 +82,15 @@ recipes.addShaped("zawa_steel_bars", <zawa:steel_bars> * 6, [
 <zawa:steel_grate>.displayName = "Cage Bars Slab";
 <zawa:steelbar_door>.displayName = "Cage Door";
 // <zawa:campfire>.displayName = "Decorative Campfire"; // for some reason changing the name of this also changes the name of the Tough as Nails campfire
+
+
+// various tooltips
+
 <zawa:campfire>.addTooltip("Produces no warmth and cannot cook");
 <zawa:campfire>.addShiftTooltip("\"Sounds like my wife!\" ");
+
+<zawa:flashlight>.addTooltip("Its battery seems a bit faulty");
+<zawa:flashlight>.addShiftTooltip("Phasmophobia, eat your heart out");
 
 
 // make fur-to-leather recipe produce less, to make meerkats less OP in the early game
@@ -106,18 +113,10 @@ recipes.addShapeless(<minecraft:leather>, [<ore:zawaFur>|<ore:zawaHide>]);
 furnace.addRecipe(<contenttweaker:worm_cooked>, <zawa:worm>);
 
 
-// flashlight
-
-<zawa:flashlight>.addTooltip("Its battery seems a bit faulty");
-<zawa:flashlight>.addShiftTooltip("Phasmophobia, eat your heart out");
-
-
 // simplify kibble recipes and make them take a wider range of ingredients
 
 recipes.remove(<zawa:kibble>);
-//recipes.addShapeless(<zawa:kibble>, [unfunk(<ore:listAllgrain>), unfunk(<ore:listAllveggie>)]);
-recipes.addShapeless(<zawa:kibble>, [unfunk(<ore:listAllgrain>), <ore:foodVegetableUnfunked>]);
-//recipes.addShapeless(<zawa:kibble>, [[<minecraft:wheat>, <cuisine:crops:3>], <ore:listAllveggie>]);
+recipes.addShapeless("kibble", <zawa:kibble>, [unfunkIngredient(<ore:listAllgrain>), unfunkIngredient(<ore:foodVegetable>)]);
 
 val kibbleRecipes = {
 	<zawa:bear_kibble>: [<zawa:kibble>, <ore:listAllseafoodraw>, <ore:listAllfruit>],
@@ -141,15 +140,8 @@ val kibbleRecipes = {
 <ore:kibble>.add(kibbleRecipes.keys);
 <ore:kibble>.add(<zawa:shark_kibble>); // shark ingredients don't need to be changed
 
+
 for kibble, ingredients in kibbleRecipes {
-	recipes.remove(kibble);
-	val unfunkedIngredients = unfunkAll(ingredients);
-	
-	for ing in unfunkedIngredients {
-		for item in ing.items {
-			print(item.name);
-			print(item.capNBT);
-		}
-	}
-	recipes.addShapeless(kibble, unfunkedIngredients);
+	recipes.remove(kibble);	
+	recipes.addShapeless(kibble.name, kibble, unfunkAll(ingredients));
 }
