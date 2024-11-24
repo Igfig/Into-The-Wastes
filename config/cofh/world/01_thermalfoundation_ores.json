@@ -5,19 +5,7 @@
 			"enabled": "true",
 			"distribution": "uniform",
 			"generator": {
-				"block": [
-					{
-						"name": "crossroads:ore_copper",
-						"weight": 95
-					},
-					{
-						"name": "railcraft:ore_metal_poor",
-						"properties": {
-							"variant": "copper"
-						},
-						"weight": 5
-					}
-				],
+				"block": "crossroads:ore_copper",
 				"material": "minecraft:stone",
 				"type": "large-vein",
 				"cluster-size": 400
@@ -54,7 +42,7 @@
 				"cluster-size": 250
 			},
 			"cluster-count": 2,
-			"chunk-chance": 200,
+			"chunk-chance": 150,
 			"min-height": 2,
 			"max-height": 32,
 			"retrogen": false,

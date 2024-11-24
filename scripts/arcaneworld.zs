@@ -38,9 +38,9 @@ val xpTome = <thermalfoundation:tome_experience>.withTag({Experience:10000});
 
 recipes.remove(<arcaneworld:ritual_table>);
 recipes.addShaped("ritual_table", <arcaneworld:ritual_table>, [
-	[<roots:fey_leather>,xpTome,<roots:fey_leather>],
-	[<naturesaura:sky_ingot>,<ore:blockMithril>,<naturesaura:sky_ingot>],
-	[<ore:ingotIvoryPsi>,<ore:ingotPlatinum>,<ore:ingotEbonyPsi>]]);
+	[<silkarmor:silk_cloth>,xpTome,<silkarmor:silk_cloth>],
+	[<ore:gemDiamond>,<ore:blockMithril>,<ore:gemDiamond>],
+	[<ore:ingotPlatinum>,<futuremc:blue_ice>,<ore:ingotPlatinum>]]);
 
 
 // other new recipes
@@ -64,9 +64,9 @@ recipes.remove(token); // new recipe added
 
 ArcaneWorld.createRitualCreateItem("departure", "Ritual of Departure", <rats:chunky_cheese_token>, [	
 	<biomesoplenty:sapling_1:7>, // sacred oak sapling
-	<ore:dragonScaleBlock>,
+	<ore:blockFireDragonsteel> | <ore:blockIceDragonsteel>,
 	<minecraft:dragon_egg>,
-	<futuremc:netherite_ingot>,
+	<thermalfoundation:storage:6>, // platinum block
 	<biomesoplenty:terrestrial_artifact>]);
 
 
@@ -85,7 +85,7 @@ ArcaneWorld.createRitualCommand("sand_to_grass", "Ritual of Regrowth", [
 	"/cofh replaceblocks @s 64 255 64 minecraft:water biomesoplenty:sand",
 	"/btsetbiome 4 64", // Forest biome
 	"/advancement grant @s only _wastes:regrowth"
-], [<ore:ingotPlatinum>,<ore:grass>,<naturesaura:aura_trove>.withTag({aura:1200000}),<roots:spirit_herb>,<naturesaura:sky_ingot>]);
+], [<ore:ingotIvoryPsi>, <biomesoplenty:earth>, <naturesaura:aura_trove>.withTag({aura:1200000}), <crossroads:luminescent_quartz>, <ore:ingotEbonyPsi>]);
 
 
 // ritual to summon a bunch of elementals

@@ -1,5 +1,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import scripts.functions.unfunkIngredient;
+import scripts.functions.unfunkAll;
 
 
 // remove unwanted items
@@ -8,7 +10,10 @@ mods.jei.JEI.removeAndHide(<zawa:atv>);
 mods.jei.JEI.removeAndHide(<zawa:off_road_car>);
 mods.jei.JEI.removeAndHide(<zawa:zoo_cart>);
 mods.jei.JEI.removeAndHide(<zawa:tire>);
-mods.jei.JEI.removeAndHide(<zawa:animal_net>);
+mods.jei.JEI.removeAndHide(<zawa:animal_net>); // might re-add if I can limit its abilities properly
+mods.jei.JEI.removeAndHide(<zawa:seine_net>);
+mods.jei.JEI.removeAndHide(<zawa:binoculars>);
+mods.jei.JEI.removeAndHide(<zawa:electric_fence>); // maybe re-add as an expensive / late-game thing?
 
 
 // replace some more recipes
@@ -80,8 +85,18 @@ recipes.addShaped("zawa_steel_bars", <zawa:steel_bars> * 6, [
 <zawa:steel_grate>.displayName = "Cage Bars Slab";
 <zawa:steelbar_door>.displayName = "Cage Door";
 // <zawa:campfire>.displayName = "Decorative Campfire"; // for some reason changing the name of this also changes the name of the Tough as Nails campfire
+
+
+// various tooltips
+
 <zawa:campfire>.addTooltip("Produces no warmth and cannot cook");
 <zawa:campfire>.addShiftTooltip("\"Sounds like my wife!\" ");
+
+<zawa:flashlight>.addTooltip("Its battery seems a bit faulty");
+<zawa:flashlight>.addShiftTooltip("Phasmophobia, eat your heart out");
+
+<zawa:waste_bin>.addTooltip("Right-click with an item to permanently destroy the item.");
+<zawa:recycle_bin>.addTooltip("Right-click with an item to permanently destroy the item.");
 
 
 // make fur-to-leather recipe produce less, to make meerkats less OP in the early game
@@ -104,16 +119,10 @@ recipes.addShapeless(<minecraft:leather>, [<ore:zawaFur>|<ore:zawaHide>]);
 furnace.addRecipe(<contenttweaker:worm_cooked>, <zawa:worm>);
 
 
-// flashlight
-
-<zawa:flashlight>.addTooltip("Its battery seems a bit faulty");
-<zawa:flashlight>.addShiftTooltip("Phasmophobia, eat your heart out");
-
-
 // simplify kibble recipes and make them take a wider range of ingredients
 
 recipes.remove(<zawa:kibble>);
-recipes.addShapeless(<zawa:kibble>, [<ore:listAllgrain>, <ore:listAllveggie>]);
+recipes.addShapeless("kibble", <zawa:kibble>, [unfunkIngredient(<ore:listAllgrain>), unfunkIngredient(<ore:foodVegetable>)]);
 
 val kibbleRecipes = {
 	<zawa:bear_kibble>: [<zawa:kibble>, <ore:listAllseafoodraw>, <ore:listAllfruit>],
@@ -137,7 +146,8 @@ val kibbleRecipes = {
 <ore:kibble>.add(kibbleRecipes.keys);
 <ore:kibble>.add(<zawa:shark_kibble>); // shark ingredients don't need to be changed
 
+
 for kibble, ingredients in kibbleRecipes {
-	recipes.remove(kibble);
-	recipes.addShapeless(kibble, ingredients);
+	recipes.remove(kibble);	
+	recipes.addShapeless(kibble.name, kibble, unfunkAll(ingredients));
 }
