@@ -44,6 +44,8 @@ furnace.setFuel(refinedFuelTank, 64000);
 
 
 // add some tooltips
+emptyTank.addTooltip("Fill with the Metal Caster");
+
 var tooltip_1 = "A stackable container of ";
 var tooltip_2 = ", for when one bucket isn't enough.";
 
