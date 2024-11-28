@@ -80,7 +80,7 @@ recipes.remove(<thermalfoundation:fertilizer:0>);
 recipes.remove(<thermalfoundation:fertilizer:1>);
 recipes.remove(<thermalfoundation:fertilizer:2>);
 
-recipes.addShapeless(<thermalfoundation:fertilizer:0>, [<minecraft:dye:15>, <ore:dustSaltpeter>, <thermalfoundation:material:864>]); // saltpeter, bone meal, slag -> phyto-gro
+recipes.addShapeless(<thermalfoundation:fertilizer:0>, [<minecraft:dye:15>, <ore:dustSaltpeter>, <ore:itemSlag>]); // saltpeter, bone meal, slag -> phyto-gro
 recipes.addShapeless(<thermalfoundation:fertilizer:1>, [<thermalfoundation:fertilizer:0>, <ore:dustSaltpeter>,<thermalfoundation:material:800>, <thermalfoundation:material:800>]); // phyto-gro, saltpeter, sawdust -> rich phyto-gro
 // and fluxed phyto-gro is in casting.zs
 
