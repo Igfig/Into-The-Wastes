@@ -14,9 +14,10 @@ val flour = unfunkIngredient(<ore:foodFlour>);
 recipes.remove(<cuisine:food:2>);
 
 recipes.addShapeless("dough", <cuisine:food:2> * 2, [flour, waterBottle]); // dough
+recipes.addShapeless("dough_bucket", <cuisine:food:2> * 8, [flour * 4, <liquid:water> * 1000]); // dough from bucket
 BasinThrowing.add(flour, <liquid:water> * 250, <cuisine:food:2> * 2); // alternate dough recipe
 
-furnace.addRecipe(<minecraft:bread>, <cuisine:food:1>); // flour
+furnace.addRecipe(<minecraft:bread>, flour, 0.1); // flour
 
 
 // flour tooltip
