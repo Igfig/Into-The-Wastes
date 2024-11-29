@@ -14,7 +14,7 @@ import mods.foodtweaker.Tweaker;
 <ore:foodRice>.add(<cuisine:food:4>);
 
 <ore:cropCorn>.add(<wildnature:corn>, <cuisine:crops:13>);
-<ore:listAllgrain>.add(<minecraft:wheat>, <roots:wildewheet>, <wildnature:corn>, <cuisine:crops:1>, <cuisine:crops:2>, <cuisine:crops:3>, <cuisine:crops:13>, <cuisine:food:4>); // sesame, soybean, rice, corn, rice
+<ore:listAllgrain>.add(<minecraft:wheat>, <wildnature:corn>, <cuisine:crops:1>, <cuisine:crops:2>, <cuisine:crops:3>, <cuisine:crops:13>, <cuisine:food:4>); // sesame, soybean, rice, corn, rice
 
 <ore:cropAcorn>.add(<wildnature:acorn>, <lilcritters:acorn>);
 <ore:listAllnut>.add(<wildnature:acorn>, <lilcritters:acorn>, <lilcritters:pine_cone>, <cuisine:crops:0>); // peanut

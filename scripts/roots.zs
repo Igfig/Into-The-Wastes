@@ -2,6 +2,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.roots.Fey;
 import mods.roots.Mortar;
+import mods.roots.Pyre;
 import mods.cuisine.Mill;
 
 val bedrock = <minecraft:bedrock>;
@@ -77,11 +78,20 @@ Mortar.removeRecipe(<roots:flour>);
 // Rename Roots flour to potato flour, and add a Cuisine mill recipe for it
 
 <roots:flour>.displayName = "Potato Flour";
-<roots:flour>.addTooltip("It takes two potatoes to make one potato flour");
+<roots:flour>.withEmptyTag().addTooltip("It takes two potatoes to make one potato flour");
 Mill.add(<ore:cropPotato> * 2, null, <roots:flour>, null);
 
 
-// Update living tool and terrastone recipes to use gold and iron tools respectively, instead of wood and iron
+// Replace Wildewheet Bread recipe
+
+val dough = <cuisine:food:2>.withEmptyTag();
+
+recipes.remove(<roots:wildewheet_bread>);
+Pyre.addRecipe("wildewheet_bread", <roots:wildewheet_bread> * 2, 
+	[<roots:wildewheet>, dough, dough, <ore:dustSalt>, <ore:dustSalt>]);
+
+
+// Update living tool and terrastone recipes to use gold and iron tools respectively, instead of wood and stone
 
 val woodToolReplacements = {
 	<roots:living_sword>: <minecraft:golden_sword>.anyDamage(),
