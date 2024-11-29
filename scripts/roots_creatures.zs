@@ -1,5 +1,6 @@
 import mods.roots.SummonCreatures;
 import mods.roots.RunicShears;
+import mods.roots.AnimalHarvest;
 
 
 // remove all Life Essence recipes for creature summons
@@ -41,7 +42,284 @@ SummonCreatures.removeEntity(<entity:mysticalworld:entity_owl>);
 SummonCreatures.removeEntity(<entity:mysticalworld:entity_sprout>);
 
 
-// remove runic shearing recipes for vanilla farm animals, since they shouldn't exist
+// remove vanilla farm animals from Animal Harvest ritual, since those animals shouldn't exist
+
+AnimalHarvest.removeEntity(<entity:minecraft:chicken>);
+AnimalHarvest.removeEntity(<entity:minecraft:cow>); 
+AnimalHarvest.removeEntity(<entity:minecraft:pig>);
+AnimalHarvest.removeEntity(<entity:minecraft:rabbit>);
+AnimalHarvest.removeEntity(<entity:minecraft:mooshroom>); 
+
+
+// add Animania animals to Animal Harvest ritual
+// TODO for some reason these don't actually work. Like, they don't drop anything?
+
+AnimalHarvest.addEntity(<entity:animania:mare_draft>);
+AnimalHarvest.addEntity(<entity:animania:stallion_draft>);
+AnimalHarvest.addEntity(<entity:animania:foal_draft>);
+AnimalHarvest.addEntity(<entity:animania:hamster>);
+AnimalHarvest.addEntity(<entity:animania:ferret_grey>);
+AnimalHarvest.addEntity(<entity:animania:ferret_white>);
+AnimalHarvest.addEntity(<entity:animania:hedgehog>);
+AnimalHarvest.addEntity(<entity:animania:hedgehog_albino>);
+AnimalHarvest.addEntity(<entity:animania:piglet_yorkshire>);
+AnimalHarvest.addEntity(<entity:animania:sow_yorkshire>);
+AnimalHarvest.addEntity(<entity:animania:hog_yorkshire>);
+AnimalHarvest.addEntity(<entity:animania:piglet_old_spot>);
+AnimalHarvest.addEntity(<entity:animania:sow_old_spot>);
+AnimalHarvest.addEntity(<entity:animania:hog_old_spot>);
+AnimalHarvest.addEntity(<entity:animania:piglet_large_black>);
+AnimalHarvest.addEntity(<entity:animania:sow_large_black>);
+AnimalHarvest.addEntity(<entity:animania:hog_large_black>);
+AnimalHarvest.addEntity(<entity:animania:piglet_large_white>);
+AnimalHarvest.addEntity(<entity:animania:sow_large_white>);
+AnimalHarvest.addEntity(<entity:animania:hog_large_white>);
+AnimalHarvest.addEntity(<entity:animania:piglet_hampshire>);
+AnimalHarvest.addEntity(<entity:animania:sow_hampshire>);
+AnimalHarvest.addEntity(<entity:animania:hog_hampshire>);
+AnimalHarvest.addEntity(<entity:animania:piglet_duroc>);
+AnimalHarvest.addEntity(<entity:animania:sow_duroc>);
+AnimalHarvest.addEntity(<entity:animania:hog_duroc>);
+AnimalHarvest.addEntity(<entity:animania:chick_leghorn>);
+AnimalHarvest.addEntity(<entity:animania:hen_leghorn>);
+AnimalHarvest.addEntity(<entity:animania:rooster_leghorn>);
+AnimalHarvest.addEntity(<entity:animania:chick_orpington>);
+AnimalHarvest.addEntity(<entity:animania:hen_orpington>);
+AnimalHarvest.addEntity(<entity:animania:rooster_orpington>);
+AnimalHarvest.addEntity(<entity:animania:chick_plymouth_rock>);
+AnimalHarvest.addEntity(<entity:animania:hen_plymouth_rock>);
+AnimalHarvest.addEntity(<entity:animania:rooster_plymouth_rock>);
+AnimalHarvest.addEntity(<entity:animania:chick_rhode_island_red>);
+AnimalHarvest.addEntity(<entity:animania:hen_rhode_island_red>);
+AnimalHarvest.addEntity(<entity:animania:rooster_rhode_island_red>);
+AnimalHarvest.addEntity(<entity:animania:chick_wyandotte>);
+AnimalHarvest.addEntity(<entity:animania:hen_wyandotte>);
+AnimalHarvest.addEntity(<entity:animania:rooster_wyandotte>);
+AnimalHarvest.addEntity(<entity:animania:calf_angus>);
+AnimalHarvest.addEntity(<entity:animania:cow_angus>);
+AnimalHarvest.addEntity(<entity:animania:bull_angus>);
+AnimalHarvest.addEntity(<entity:animania:calf_friesian>);
+AnimalHarvest.addEntity(<entity:animania:cow_friesian>);
+AnimalHarvest.addEntity(<entity:animania:bull_friesian>);
+AnimalHarvest.addEntity(<entity:animania:calf_hereford>);
+AnimalHarvest.addEntity(<entity:animania:cow_hereford>);
+AnimalHarvest.addEntity(<entity:animania:bull_hereford>);
+AnimalHarvest.addEntity(<entity:animania:calf_holstein>);
+AnimalHarvest.addEntity(<entity:animania:cow_holstein>);
+AnimalHarvest.addEntity(<entity:animania:bull_holstein>);
+AnimalHarvest.addEntity(<entity:animania:calf_longhorn>);
+AnimalHarvest.addEntity(<entity:animania:cow_longhorn>);
+AnimalHarvest.addEntity(<entity:animania:bull_longhorn>);
+AnimalHarvest.addEntity(<entity:animania:calf_highland>);
+AnimalHarvest.addEntity(<entity:animania:cow_highland>);
+AnimalHarvest.addEntity(<entity:animania:bull_highland>);
+AnimalHarvest.addEntity(<entity:animania:calf_jersey>);
+AnimalHarvest.addEntity(<entity:animania:cow_jersey>);
+AnimalHarvest.addEntity(<entity:animania:bull_jersey>);
+AnimalHarvest.addEntity(<entity:animania:calf_mooshroom>);
+AnimalHarvest.addEntity(<entity:animania:cow_mooshroom>);
+AnimalHarvest.addEntity(<entity:animania:bull_mooshroom>);
+AnimalHarvest.addEntity(<entity:animania:toad>);
+AnimalHarvest.addEntity(<entity:animania:frog>);
+AnimalHarvest.addEntity(<entity:animania:dartfrog>);
+AnimalHarvest.addEntity(<entity:animania:kid_alpine>);
+AnimalHarvest.addEntity(<entity:animania:buck_alpine>);
+AnimalHarvest.addEntity(<entity:animania:doe_alpine>);
+AnimalHarvest.addEntity(<entity:animania:kid_angora>);
+AnimalHarvest.addEntity(<entity:animania:buck_angora>);
+AnimalHarvest.addEntity(<entity:animania:doe_angora>);
+AnimalHarvest.addEntity(<entity:animania:kid_fainting>);
+AnimalHarvest.addEntity(<entity:animania:buck_fainting>);
+AnimalHarvest.addEntity(<entity:animania:doe_fainting>);
+AnimalHarvest.addEntity(<entity:animania:kid_kiko>);
+AnimalHarvest.addEntity(<entity:animania:buck_kiko>);
+AnimalHarvest.addEntity(<entity:animania:doe_kiko>);
+AnimalHarvest.addEntity(<entity:animania:kid_kinder>);
+AnimalHarvest.addEntity(<entity:animania:buck_kinder>);
+AnimalHarvest.addEntity(<entity:animania:doe_kinder>);
+AnimalHarvest.addEntity(<entity:animania:kid_nigerian_dwarf>);
+AnimalHarvest.addEntity(<entity:animania:buck_nigerian_dwarf>);
+AnimalHarvest.addEntity(<entity:animania:doe_nigerian_dwarf>);
+AnimalHarvest.addEntity(<entity:animania:kid_pygmy>);
+AnimalHarvest.addEntity(<entity:animania:buck_pygmy>);
+AnimalHarvest.addEntity(<entity:animania:doe_pygmy>);
+AnimalHarvest.addEntity(<entity:animania:lamb_friesian>);
+AnimalHarvest.addEntity(<entity:animania:ewe_friesian>);
+AnimalHarvest.addEntity(<entity:animania:ram_friesian>);
+AnimalHarvest.addEntity(<entity:animania:lamb_suffolk>);
+AnimalHarvest.addEntity(<entity:animania:ewe_suffolk>);
+AnimalHarvest.addEntity(<entity:animania:ram_suffolk>);
+AnimalHarvest.addEntity(<entity:animania:lamb_dorper>);
+AnimalHarvest.addEntity(<entity:animania:ewe_dorper>);
+AnimalHarvest.addEntity(<entity:animania:ram_dorper>);
+AnimalHarvest.addEntity(<entity:animania:lamb_dorset>);
+AnimalHarvest.addEntity(<entity:animania:ewe_dorset>);
+AnimalHarvest.addEntity(<entity:animania:ram_dorset>);
+AnimalHarvest.addEntity(<entity:animania:lamb_merino>);
+AnimalHarvest.addEntity(<entity:animania:ewe_merino>);
+AnimalHarvest.addEntity(<entity:animania:ram_merino>);
+AnimalHarvest.addEntity(<entity:animania:lamb_jacob>);
+AnimalHarvest.addEntity(<entity:animania:ewe_jacob>);
+AnimalHarvest.addEntity(<entity:animania:ram_jacob>);
+AnimalHarvest.addEntity(<entity:animania:buck_cottontail>);
+AnimalHarvest.addEntity(<entity:animania:doe_cottontail>);
+AnimalHarvest.addEntity(<entity:animania:kit_cottontail>);
+AnimalHarvest.addEntity(<entity:animania:buck_chinchilla>);
+AnimalHarvest.addEntity(<entity:animania:doe_chinchilla>);
+AnimalHarvest.addEntity(<entity:animania:kit_chinchilla>);
+AnimalHarvest.addEntity(<entity:animania:buck_dutch>);
+AnimalHarvest.addEntity(<entity:animania:doe_dutch>);
+AnimalHarvest.addEntity(<entity:animania:kit_dutch>);
+AnimalHarvest.addEntity(<entity:animania:buck_havana>);
+AnimalHarvest.addEntity(<entity:animania:doe_havana>);
+AnimalHarvest.addEntity(<entity:animania:kit_havana>);
+AnimalHarvest.addEntity(<entity:animania:buck_jack>);
+AnimalHarvest.addEntity(<entity:animania:doe_jack>);
+AnimalHarvest.addEntity(<entity:animania:kit_jack>);
+AnimalHarvest.addEntity(<entity:animania:buck_new_zealand>);
+AnimalHarvest.addEntity(<entity:animania:doe_new_zealand>);
+AnimalHarvest.addEntity(<entity:animania:kit_new_zealand>);
+AnimalHarvest.addEntity(<entity:animania:buck_rex>);
+AnimalHarvest.addEntity(<entity:animania:doe_rex>);
+AnimalHarvest.addEntity(<entity:animania:kit_rex>);
+AnimalHarvest.addEntity(<entity:animania:buck_lop>);
+AnimalHarvest.addEntity(<entity:animania:doe_lop>);
+AnimalHarvest.addEntity(<entity:animania:kit_lop>);
+AnimalHarvest.addEntity(<entity:animania:peachick_charcoal>);
+AnimalHarvest.addEntity(<entity:animania:peahen_charcoal>);
+AnimalHarvest.addEntity(<entity:animania:peacock_charcoal>);
+AnimalHarvest.addEntity(<entity:animania:peachick_opal>);
+AnimalHarvest.addEntity(<entity:animania:peahen_opal>);
+AnimalHarvest.addEntity(<entity:animania:peacock_opal>);
+AnimalHarvest.addEntity(<entity:animania:peachick_peach>);
+AnimalHarvest.addEntity(<entity:animania:peahen_peach>);
+AnimalHarvest.addEntity(<entity:animania:peacock_peach>);
+AnimalHarvest.addEntity(<entity:animania:peachick_purple>);
+AnimalHarvest.addEntity(<entity:animania:peahen_purple>);
+AnimalHarvest.addEntity(<entity:animania:peacock_purple>);
+AnimalHarvest.addEntity(<entity:animania:peachick_taupe>);
+AnimalHarvest.addEntity(<entity:animania:peahen_taupe>);
+AnimalHarvest.addEntity(<entity:animania:peacock_taupe>);
+AnimalHarvest.addEntity(<entity:animania:peachick_blue>);
+AnimalHarvest.addEntity(<entity:animania:peahen_blue>);
+AnimalHarvest.addEntity(<entity:animania:peacock_blue>);
+AnimalHarvest.addEntity(<entity:animania:peachick_white>);
+AnimalHarvest.addEntity(<entity:animania:peahen_white>);
+AnimalHarvest.addEntity(<entity:animania:peacock_white>);
+
+
+// add ZAWA animals to Animal Harvest ritual
+
+AnimalHarvest.addEntity(<entity:zawa:blackrhinoceros>);
+AnimalHarvest.addEntity(<entity:zawa:treefrog>);
+AnimalHarvest.addEntity(<entity:zawa:fijibandediguana>);
+AnimalHarvest.addEntity(<entity:zawa:grevyszebra>);
+AnimalHarvest.addEntity(<entity:zawa:greenanaconda>);
+AnimalHarvest.addEntity(<entity:zawa:bottlenosedolphin>);
+AnimalHarvest.addEntity(<entity:zawa:macaw>);
+AnimalHarvest.addEntity(<entity:zawa:pacificwalrus>);
+AnimalHarvest.addEntity(<entity:zawa:hawksbillseaturtle>);
+AnimalHarvest.addEntity(<entity:zawa:reticulatedgiraffe>);
+AnimalHarvest.addEntity(<entity:zawa:bluefish>);
+AnimalHarvest.addEntity(<entity:zawa:clownfish>);
+AnimalHarvest.addEntity(<entity:zawa:pufferfish>);
+AnimalHarvest.addEntity(<entity:zawa:sockeyesalmon>);
+AnimalHarvest.addEntity(<entity:zawa:orca>);
+AnimalHarvest.addEntity(<entity:zawa:cockatoo>);
+AnimalHarvest.addEntity(<entity:zawa:toucan>);
+AnimalHarvest.addEntity(<entity:zawa:albatross>);
+AnimalHarvest.addEntity(<entity:zawa:andeancondor>);
+AnimalHarvest.addEntity(<entity:zawa:nilehippopotamus>);
+AnimalHarvest.addEntity(<entity:zawa:meerkat>);
+AnimalHarvest.addEntity(<entity:zawa:amurleopard>);
+AnimalHarvest.addEntity(<entity:zawa:africanlion>);
+AnimalHarvest.addEntity(<entity:zawa:redpanda>);
+AnimalHarvest.addEntity(<entity:zawa:polarbear>);
+AnimalHarvest.addEntity(<entity:zawa:westernlowlandgorilla>);
+AnimalHarvest.addEntity(<entity:zawa:indianpangolin>);
+AnimalHarvest.addEntity(<entity:zawa:indiangharial>);
+AnimalHarvest.addEntity(<entity:zawa:bengaltiger>);
+AnimalHarvest.addEntity(<entity:zawa:asianelephant>);
+AnimalHarvest.addEntity(<entity:zawa:blackspidermonkey>);
+AnimalHarvest.addEntity(<entity:zawa:gaur>);
+AnimalHarvest.addEntity(<entity:zawa:japanesegiantsalamander>);
+AnimalHarvest.addEntity(<entity:zawa:koala>);
+AnimalHarvest.addEntity(<entity:zawa:okapi>);
+AnimalHarvest.addEntity(<entity:zawa:redkangaroo>);
+AnimalHarvest.addEntity(<entity:zawa:marinetang>);
+AnimalHarvest.addEntity(<entity:zawa:greatwhiteshark>);
+AnimalHarvest.addEntity(<entity:zawa:greathornedowl>);
+AnimalHarvest.addEntity(<entity:zawa:morayeel>);
+AnimalHarvest.addEntity(<entity:zawa:beaver>);
+AnimalHarvest.addEntity(<entity:zawa:jaguar>);
+AnimalHarvest.addEntity(<entity:zawa:threetoedsloth>);
+AnimalHarvest.addEntity(<entity:zawa:americanbison>);
+AnimalHarvest.addEntity(<entity:zawa:moose>);
+AnimalHarvest.addEntity(<entity:zawa:grizzlybear>);
+AnimalHarvest.addEntity(<entity:zawa:humpbackwhale>);
+AnimalHarvest.addEntity(<entity:zawa:africanelephant>);
+AnimalHarvest.addEntity(<entity:zawa:amazonriverdolphin>);
+AnimalHarvest.addEntity(<entity:zawa:sumatranrhinoceros>);
+AnimalHarvest.addEntity(<entity:zawa:rattlesnake>);
+AnimalHarvest.addEntity(<entity:zawa:harpyeagle>);
+AnimalHarvest.addEntity(<entity:zawa:brownrat>);
+AnimalHarvest.addEntity(<entity:zawa:goldenliontamarin>);
+AnimalHarvest.addEntity(<entity:zawa:galapagostortoise>);
+AnimalHarvest.addEntity(<entity:zawa:pygmyhippopotamus>);
+AnimalHarvest.addEntity(<entity:zawa:echidna>);
+AnimalHarvest.addEntity(<entity:zawa:coatimundi>);
+AnimalHarvest.addEntity(<entity:zawa:commonchimpanzee>);
+AnimalHarvest.addEntity(<entity:zawa:braziliantapir>);
+AnimalHarvest.addEntity(<entity:zawa:tasmaniandevil>);
+AnimalHarvest.addEntity(<entity:zawa:cassowary>);
+AnimalHarvest.addEntity(<entity:zawa:baldeagle>);
+AnimalHarvest.addEntity(<entity:zawa:coconutcrab>);
+AnimalHarvest.addEntity(<entity:zawa:octopus>);
+AnimalHarvest.addEntity(<entity:zawa:cichlid>);
+AnimalHarvest.addEntity(<entity:zawa:tigershark>);
+AnimalHarvest.addEntity(<entity:zawa:platypus>);
+AnimalHarvest.addEntity(<entity:zawa:gilamonster>);
+AnimalHarvest.addEntity(<entity:zawa:komododragon>);
+AnimalHarvest.addEntity(<entity:zawa:marineiguana>);
+AnimalHarvest.addEntity(<entity:zawa:frigate>);
+AnimalHarvest.addEntity(<entity:lilcritters:bandedpenguin>);
+AnimalHarvest.addEntity(<entity:lilcritters:boxturtle>);
+AnimalHarvest.addEntity(<entity:lilcritters:dwarfcrocodile>);
+AnimalHarvest.addEntity(<entity:lilcritters:opossum>);
+AnimalHarvest.addEntity(<entity:lilcritters:raccoon>);
+AnimalHarvest.addEntity(<entity:lilcritters:skunk>);
+AnimalHarvest.addEntity(<entity:lilcritters:smallclawedotter>);
+AnimalHarvest.addEntity(<entity:lilcritters:treesquirrel>);
+AnimalHarvest.addEntity(<entity:lilcritters:tufteddeer>);
+
+
+// add some other animals to Animal Harvest ritual
+
+AnimalHarvest.addEntity(<entity:mysticalworld:entity_frog>);
+AnimalHarvest.addEntity(<entity:mysticalworld:entity_beetle>);
+AnimalHarvest.addEntity(<entity:mysticalworld:entity_sprout>);
+AnimalHarvest.addEntity(<entity:mysticalworld:entity_hell_sprout>);
+AnimalHarvest.addEntity(<entity:mysticalworld:entity_deer>);
+AnimalHarvest.addEntity(<entity:mysticalworld:entity_lava_cat>);
+AnimalHarvest.addEntity(<entity:mysticalworld:entity_silkworm>);
+AnimalHarvest.addEntity(<entity:quark:foxhound>);
+AnimalHarvest.addEntity(<entity:quark:frog>);
+AnimalHarvest.addEntity(<entity:quark:crab>);
+AnimalHarvest.addEntity(<entity:futuremc:panda>);
+AnimalHarvest.addEntity(<entity:futuremc:bee>);
+AnimalHarvest.addEntity(<entity:futuremc:cod>);
+AnimalHarvest.addEntity(<entity:futuremc:pufferfish>);
+AnimalHarvest.addEntity(<entity:futuremc:salmon>);
+AnimalHarvest.addEntity(<entity:futuremc:tropical_fish>);
+AnimalHarvest.addEntity(<entity:iceandfire:myrmex_worker>);
+AnimalHarvest.addEntity(<entity:primitivemobs:chameleon>);
+AnimalHarvest.addEntity(<entity:primitivemobs:dodo>);
+
+
+// TODO add some fishing drops for Animal Harvest
+
+
+// remove runic shearing recipes for vanilla farm animals, since those animals shouldn't exist
 
 RunicShears.removeEntityRecipe(<entity:minecraft:chicken>);
 RunicShears.removeEntityRecipe(<entity:minecraft:cow>); 
@@ -141,19 +419,72 @@ RunicShears.addEntityRecipe("ooze_from_frog", <roots:strange_ooze>, <entity:anim
 RunicShears.addEntityRecipe("ooze_from_dartfrog", <roots:strange_ooze>, <entity:animania:dartfrog>, 120*20);
 
 
-// TODO runic shear recipes for ZAWA mobs
+// runic shear recipes for ZAWA mobs
 
-//RunicShears.addEntityRecipe("_from_", <:>, <entity:zawa:>, 30*20);
+RunicShears.addEntityRecipe("feather_from_macaw", <roots:mystic_feather>, <entity:zawa:macaw>, 45*20);
+RunicShears.addEntityRecipe("feather_from_cockatoo", <roots:mystic_feather>, <entity:zawa:cockatoo>, 45*20);
+RunicShears.addEntityRecipe("feather_from_toucan", <roots:mystic_feather>, <entity:zawa:toucan>, 45*20);
+RunicShears.addEntityRecipe("feather_from_albatross", <roots:mystic_feather>, <entity:zawa:albatross>, 45*20);
+RunicShears.addEntityRecipe("feather_from_andeancondor", <roots:mystic_feather>, <entity:zawa:andeancondor>, 45*20);
+RunicShears.addEntityRecipe("feather_from_greathornedowl", <roots:mystic_feather>, <entity:zawa:greathornedowl>, 45*20);
+RunicShears.addEntityRecipe("feather_from_harpyeagle", <roots:mystic_feather>, <entity:zawa:harpyeagle>, 45*20);
+RunicShears.addEntityRecipe("feather_from_cassowary", <roots:mystic_feather>, <entity:zawa:cassowary>, 45*20);
+RunicShears.addEntityRecipe("feather_from_baldeagle", <roots:mystic_feather>, <entity:zawa:baldeagle>, 45*20);
+RunicShears.addEntityRecipe("feather_from_frigate", <roots:mystic_feather>, <entity:zawa:frigate>, 45*20);
+RunicShears.addEntityRecipe("feather_from_bandedpenguin", <roots:mystic_feather>, <entity:lilcritters:bandedpenguin>, 45*20);
+
+RunicShears.addEntityRecipe("leather_from_blackrhinoceros", <roots:fey_leather>, <entity:zawa:blackrhinoceros>, 30*20);
+RunicShears.addEntityRecipe("leather_from_grevyszebra", <roots:fey_leather>, <entity:zawa:grevyszebra>, 30*20);
+RunicShears.addEntityRecipe("leather_from_pacificwalrus", <roots:fey_leather>, <entity:zawa:pacificwalrus>, 30*20);
+RunicShears.addEntityRecipe("leather_from_reticulatedgiraffe", <roots:fey_leather>, <entity:zawa:reticulatedgiraffe>, 30*20);
+RunicShears.addEntityRecipe("leather_from_nilehippopotamus", <roots:fey_leather>, <entity:zawa:nilehippopotamus>, 30*20);
+RunicShears.addEntityRecipe("leather_from_meerkat", <roots:fey_leather>, <entity:zawa:meerkat>, 30*20);
+RunicShears.addEntityRecipe("leather_from_amurleopard", <roots:fey_leather>, <entity:zawa:amurleopard>, 30*20);
+RunicShears.addEntityRecipe("leather_from_africanlion", <roots:fey_leather>, <entity:zawa:africanlion>, 30*20);
+RunicShears.addEntityRecipe("leather_from_redpanda", <roots:fey_leather>, <entity:zawa:redpanda>, 30*20);
+RunicShears.addEntityRecipe("leather_from_polarbear", <roots:fey_leather>, <entity:zawa:polarbear>, 30*20);
+RunicShears.addEntityRecipe("leather_from_westernlowlandgorilla", <roots:fey_leather>, <entity:zawa:westernlowlandgorilla>, 30*20);
+RunicShears.addEntityRecipe("leather_from_bengaltiger", <roots:fey_leather>, <entity:zawa:bengaltiger>, 30*20);
+RunicShears.addEntityRecipe("leather_from_asianelephant", <roots:fey_leather>, <entity:zawa:asianelephant>, 30*20);
+RunicShears.addEntityRecipe("leather_from_blackspidermonkey", <roots:fey_leather>, <entity:zawa:blackspidermonkey>, 30*20);
+RunicShears.addEntityRecipe("leather_from_gaur", <roots:fey_leather>, <entity:zawa:gaur>, 30*20);
+RunicShears.addEntityRecipe("leather_from_koala", <roots:fey_leather>, <entity:zawa:koala>, 30*20);
+RunicShears.addEntityRecipe("leather_from_okapi", <roots:fey_leather>, <entity:zawa:okapi>, 30*20);
+RunicShears.addEntityRecipe("leather_from_redkangaroo", <roots:fey_leather>, <entity:zawa:redkangaroo>, 30*20);
+RunicShears.addEntityRecipe("leather_from_beaver", <roots:fey_leather>, <entity:zawa:beaver>, 30*20);
+RunicShears.addEntityRecipe("leather_from_jaguar", <roots:fey_leather>, <entity:zawa:jaguar>, 30*20);
+RunicShears.addEntityRecipe("leather_from_threetoedsloth", <roots:fey_leather>, <entity:zawa:threetoedsloth>, 30*20);
+RunicShears.addEntityRecipe("leather_from_americanbison", <roots:fey_leather>, <entity:zawa:americanbison>, 30*20);
+RunicShears.addEntityRecipe("leather_from_moose", <roots:fey_leather>, <entity:zawa:moose>, 30*20);
+RunicShears.addEntityRecipe("leather_from_grizzlybear", <roots:fey_leather>, <entity:zawa:grizzlybear>, 30*20);
+RunicShears.addEntityRecipe("leather_from_africanelephant", <roots:fey_leather>, <entity:zawa:africanelephant>, 30*20);
+RunicShears.addEntityRecipe("leather_from_sumatranrhinoceros", <roots:fey_leather>, <entity:zawa:sumatranrhinoceros>, 30*20);
+RunicShears.addEntityRecipe("leather_from_brownrat", <roots:fey_leather>, <entity:zawa:brownrat>, 30*20);
+RunicShears.addEntityRecipe("leather_from_goldenliontamarin", <roots:fey_leather>, <entity:zawa:goldenliontamarin>, 30*20);
+RunicShears.addEntityRecipe("leather_from_pygmyhippopotamus", <roots:fey_leather>, <entity:zawa:pygmyhippopotamus>, 30*20);
+RunicShears.addEntityRecipe("leather_from_coatimundi", <roots:fey_leather>, <entity:zawa:coatimundi>, 30*20);
+RunicShears.addEntityRecipe("leather_from_commonchimpanzee", <roots:fey_leather>, <entity:zawa:commonchimpanzee>, 30*20);
+RunicShears.addEntityRecipe("leather_from_braziliantapir", <roots:fey_leather>, <entity:zawa:braziliantapir>, 30*20);
+RunicShears.addEntityRecipe("leather_from_tasmaniandevil", <roots:fey_leather>, <entity:zawa:tasmaniandevil>, 30*20);
+RunicShears.addEntityRecipe("leather_from_platypus", <roots:fey_leather>, <entity:zawa:platypus>, 30*20);
+RunicShears.addEntityRecipe("leather_from_opossum", <roots:fey_leather>, <entity:lilcritters:opossum>, 30*20);
+RunicShears.addEntityRecipe("leather_from_raccoon", <roots:fey_leather>, <entity:lilcritters:raccoon>, 30*20);
+RunicShears.addEntityRecipe("leather_from_skunk", <roots:fey_leather>, <entity:lilcritters:skunk>, 30*20);
+RunicShears.addEntityRecipe("leather_from_smallclawedotter", <roots:fey_leather>, <entity:lilcritters:smallclawedotter>, 30*20);
+RunicShears.addEntityRecipe("leather_from_treesquirrel", <roots:fey_leather>, <entity:lilcritters:treesquirrel>, 30*20);
+RunicShears.addEntityRecipe("leather_from_tufteddeer", <roots:fey_leather>, <entity:lilcritters:tufteddeer>, 30*20);
+RunicShears.addEntityRecipe("leather_from_bottlenosedolphin", <roots:fey_leather>, <entity:zawa:bottlenosedolphin>, 30*20);
+RunicShears.addEntityRecipe("leather_from_orca", <roots:fey_leather>, <entity:zawa:orca>, 30*20);
+RunicShears.addEntityRecipe("leather_from_humpbackwhale", <roots:fey_leather>, <entity:zawa:humpbackwhale>, 30*20);
+RunicShears.addEntityRecipe("leather_from_amazonriverdolphin", <roots:fey_leather>, <entity:zawa:amazonriverdolphin>, 30*20);
+
+RunicShears.addEntityRecipe("ooze_from_treefrog", <roots:strange_ooze>, <entity:zawa:treefrog>, 120*20);
+RunicShears.addEntityRecipe("ooze_from_japanesegiantsalamander", <roots:strange_ooze>, <entity:zawa:japanesegiantsalamander>, 120*20);
+RunicShears.addEntityRecipe("ooze_from_octopus", <roots:strange_ooze>, <entity:zawa:octopus>, 120*20);
+RunicShears.addEntityRecipe("ooze_from_morayeel", <roots:strange_ooze>, <entity:zawa:morayeel>, 120*20);
 
 
 // other mod runic shearing recipes
 
 RunicShears.addEntityRecipe("ooze_from_quarkfrog", <roots:strange_ooze>, <entity:quark:frog>, 120*20);
-RunicShears.addEntityRecipe("cobble_from_stoneling", <minecraft:cobblestone>, <entity:quark:stoneling>, 30*20);
-RunicShears.addEntityRecipe("coal_from_foxhound", <minecraft:coal>, <entity:quark:foxhound>, 120*20);
-RunicShears.addEntityRecipe("shell_from_quarkcrab", <quark:crab_shell>, <entity:quark:crab>, 180*20);
-
-RunicShears.addEntityRecipe("camo_from_chameleon", <primitivemobs:camouflage_dye>, <entity:primitivemobs:chameleon>, 240*20);
 RunicShears.addEntityRecipe("feather_from_dodo", <roots:mystic_feather>, <entity:primitivemobs:dodo>, 45*20);
-
-RunicShears.addEntityRecipe("bamboo_from_panda", <futuremc:bamboo>, <entity:futuremc:panda>, 30*20);
