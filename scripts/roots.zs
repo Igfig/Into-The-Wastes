@@ -115,6 +115,7 @@ for rootsTool, goldTool in woodToolReplacements {
 
 for rootsTool, ironTool in stoneToolReplacements {
 	Fey.removeRecipe(rootsTool);
+	print(rootsTool.name);
 	Fey.addRecipe(rootsTool.name, rootsTool, [<ore:runestone>, ironTool, <roots:terra_moss>, <ore:gemDiamond>, <minecraft:mossy_cobblestone>]);
 }
 
@@ -138,3 +139,56 @@ mods.jei.JEI.removeAndHide(<roots:ritual_summon_creatures>);
 
 recipes.remove(<roots:fire_starter>);
 recipes.addShapeless("fire_starter", <roots:fire_starter>, [<ore:stickWood>,<ore:stickWood>]);
+
+
+// more tooltips
+
+<roots:sylvan_helmet>.addTooltip("Reduces herb costs by 2%");
+<roots:sylvan_chestplate>.addTooltip("Reduces herb costs by 2%");
+<roots:sylvan_leggings>.addTooltip("Reduces herb costs by 2%");
+<roots:sylvan_boots>.addTooltip("Reduces herb costs by 2%");
+
+<roots:wildwood_helmet>.addTooltip("Slowly heals wearer");
+<roots:wildwood_chestplate>.addTooltip("Slowly heals wearer");
+<roots:wildwood_leggings>.addTooltip("Slowly heals wearer");
+<roots:wildwood_boots>.addTooltip("Slowly heals wearer");
+
+<roots:living_arrow>.addTooltip("Slightly more damaging than normal arrows");
+<roots:wildwood_quiver>.addTooltip("Holds 6 stacks of arrows");
+<roots:wildwood_quiver>.addTooltip("Grows new arrows when empty, at the cost of durability");
+
+<roots:terrastone_axe>.addTooltip("Breaks leaves instantly");
+<roots:terrastone_hoe>.addTooltip("Silk Touch on plants");
+<roots:terrastone_hoe>.addTooltip("Auto-hydrates new farmland");
+<roots:terrastone_pickaxe>.addTooltip("More efficient on harder blocks, less on softer ones");
+<roots:terrastone_shovel>.addTooltip("Silk Touch on grass blocks");
+<roots:terrastone_sword>.addTooltip("Breaks cobwebs instantly and with Silk Touch");
+
+<roots:runed_shovel>.addTooltip("Digs dirt in a 3x3 area");
+<roots:runed_axe>.addTooltip("Chops wood in a 3x3 area");
+<roots:runed_pickaxe>.addTooltip("Breaks stone in a 3x3 area");
+<roots:runed_hoe>.addTooltip("Hoes and hydrates in a 3x3 area");
+
+val livingTools = [
+	<roots:wildwood_bow>,
+	<roots:living_pickaxe>,
+	<roots:living_axe>,
+	<roots:living_shovel>,
+	<roots:living_hoe>,
+	<roots:living_sword>,
+	<roots:terrastone_pickaxe>,
+	<roots:terrastone_axe>,
+	<roots:terrastone_shovel>,
+	<roots:terrastone_hoe>,
+	<roots:terrastone_sword>,
+	<roots:runed_dagger>,
+	<roots:runed_pickaxe>,
+	<roots:runed_axe>,
+	<roots:runed_shovel>,
+	<roots:runed_hoe>,
+	<roots:runed_sword>
+] as IItemStack[];
+
+for tool in livingTools {
+	tool.anyDamage().addTooltip("Repairs itself over time");
+}
