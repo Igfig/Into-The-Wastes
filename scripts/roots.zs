@@ -4,6 +4,7 @@ import mods.roots.Fey;
 import mods.roots.Mortar;
 import mods.roots.Pyre;
 import mods.cuisine.Mill;
+import scripts.functions.unfunk;
 
 val bedrock = <minecraft:bedrock>;
 val DISABLED = "DISABLED. DO NOT USE";
@@ -47,17 +48,17 @@ mods.jei.JEI.removeAndHide(<roots:diamond_knife>);
 
 <roots:component_pouch>.addTooltip(DISABLED);
 Fey.removeRecipe(<roots:component_pouch>);
-Fey.addRecipe("apothecary_pouch", <roots:component_pouch>, [<roots:bark_oak>, bedrock, bedrock, bedrock, bedrock]);
+Fey.addRecipe("component_pouch", <roots:component_pouch>, [<roots:bark_oak>, bedrock, bedrock, bedrock, bedrock]);
 mods.jei.JEI.removeAndHide(<roots:component_pouch>);
 
 <roots:apothecary_pouch>.addTooltip(DISABLED);
 Fey.removeRecipe(<roots:apothecary_pouch>);
-Fey.addRecipe("apothecary_pouch", <roots:apothecary_pouch>, [<minecraft:leather>, bedrock, bedrock, bedrock, bedrock]);
+//Fey.addRecipe("apothecary_pouch", <roots:apothecary_pouch>, [<minecraft:leather>, bedrock, bedrock, bedrock, bedrock]);
 mods.jei.JEI.removeAndHide(<roots:apothecary_pouch>);
 
 <roots:unending_bowl>.addTooltip(DISABLED);
 Fey.removeRecipe(<roots:unending_bowl>);
-Fey.addRecipe("unending_bowl", <roots:unending_bowl>, [<minecraft:clay>, bedrock, bedrock, bedrock, bedrock]);
+//Fey.addRecipe("unending_bowl", <roots:unending_bowl>, [<minecraft:clay>, bedrock, bedrock, bedrock, bedrock]);
 mods.jei.JEI.removeAndHide(<roots:unending_bowl>);
 
 
@@ -84,11 +85,10 @@ Mill.add(<ore:cropPotato> * 2, null, <roots:flour>, null);
 
 // Replace Wildewheet Bread recipe
 
-val dough = <cuisine:food:2>.withEmptyTag();
-
 recipes.remove(<roots:wildewheet_bread>);
-Pyre.addRecipe("wildewheet_bread", <roots:wildewheet_bread> * 2, 
-	[<roots:wildewheet>, dough, dough, <ore:dustSalt>, <ore:dustSalt>]);
+val dough = unfunk(<cuisine:food:2>);
+recipes.addShapeless("wildewheet_dough", <contenttweaker:wildewheet_dough>, [<roots:wildewheet>, dough, <ore:dustSalt>]);
+furnace.addRecipe(<roots:wildewheet_bread>, <contenttweaker:wildewheet_dough>, 0.1);
 
 
 // Update living tool and terrastone recipes to use gold and iron tools respectively, instead of wood and stone
@@ -110,13 +110,14 @@ val stoneToolReplacements = {
 
 for rootsTool, goldTool in woodToolReplacements {
 	Fey.removeRecipe(rootsTool);
-	Fey.addRecipe(rootsTool.name, rootsTool, [<ore:ingotGold> | <ore:ingotSilver>, goldTool, <ore:wildroot>, <ore:rootsBark>, <ore:rootsBark>]);
+	val name = rootsTool.name.substring(5);
+	Fey.addRecipe(name, rootsTool, [<ore:ingotGold> | <ore:ingotSilver>, goldTool, <ore:wildroot>, <ore:rootsBark>, <ore:rootsBark>]);
 }
 
 for rootsTool, ironTool in stoneToolReplacements {
 	Fey.removeRecipe(rootsTool);
-	print(rootsTool.name);
-	Fey.addRecipe(rootsTool.name, rootsTool, [<ore:runestone>, ironTool, <roots:terra_moss>, <ore:gemDiamond>, <minecraft:mossy_cobblestone>]);
+	val name = rootsTool.name.substring(5);
+	Fey.addRecipe(name, rootsTool, [<ore:runestone>, ironTool, <roots:terra_moss>, <ore:gemDiamond> | <ore:gemAmethyst>, <minecraft:mossy_cobblestone>]);
 }
 
 
