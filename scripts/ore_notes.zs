@@ -18,6 +18,7 @@
 <biomesoplenty:gem_ore:6>.addTooltip("Appears in certain chunks in seas"); // sapphire
 <biomesoplenty:gem_ore:7>.addTooltip("Appears in certain chunks in forests"); // amber
 <mysticalworld:amethyst_ore>.addTooltip("Appears in certain chunks in jungles");
+<crossroads:ore_ruby>.addTooltip("Appears occasionally in nether quartz deposits");
 
 <crossroads:ore_copper>.addTooltip("Appears rarely in oases, in large veins between 16y and 48y");
 <crossroads:ore_copper>.addTooltip("Must be smelted in a Heating Crucible");

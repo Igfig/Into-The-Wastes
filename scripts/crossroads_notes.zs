@@ -4,10 +4,16 @@ import crafttweaker.item.IItemStack;
 <crossroads:fluid_tank>.addTooltip("Maintains contents when broken.");
 <crossroads:fluid_tank>.addTooltip("Use an OmniMeter to see contents.");
 
+<crossroads:fluid_tube>.addTooltip("Automatically extracts and inserts fluids");
+<crossroads:fluid_tube>.addTooltip("Averages pressure between containers");
+
+<crossroads:redstone_fluid_tube>.addTooltip("Only allows fluid to flow while it has a redstone signal");
+
 <crossroads:heating_crucible>.addTooltip("Melts solids into liquids.");
 mods.jei.JEI.addDescription(<crossroads:heating_crucible>, "Insert heat from the bottom; insert ore or other meltables with a hopper on the top; extract liquid with a faucet or fluid tube on the side.");
 
 mods.jei.JEI.addDescription(<liquid:copshowium>, "Put liquid copper in a Copshowium Creation Chamber and hit it with a Time beam to get liquid copshowium.", "Every 5 mB of copper becomes 9 mB of copshowium.", "The creation chamber can only hold 1296 mB at a time; don't insert more than 720 mB of liquid copper at once, or it'll break the chamber when it converts!");
+mods.jei.JEI.addDescription(<crossroads:copshowium_creation_chamber>, "Insert liquid copper and hit it with a Time beam to get liquid copshowium.", "Every 5 mB of copper becomes 9 mB of copshowium.", "The creation chamber can only hold 1296 mB at a time; don't insert more than 720 mB of liquid copper at once, or it'll break the chamber when it converts!");
 
 mods.jei.JEI.addDescription(<crossroads:coal_heater>, "Burns fuel to create heat. Insert fuel from the sides; outputs heat from the top.");
 
@@ -15,7 +21,7 @@ mods.jei.JEI.addDescription(<crossroads:heat_exchanger>, "Acts as a heat sink, s
 mods.jei.JEI.addDescription(<crossroads:insulated_heat_exchanger>, "Accepts heat into the system without any loss.", "When placed over fire, lava, or magma, extracts heat from the block, cooling it to stone or netherrack.", "Inputs and outputs heat from any other side.");
 
 <crossroads:heating_chamber>.addTooltip("Like a furnace, but powered by heat instead of by fuel.");
-mods.jei.JEI.addDescription(<crossroads:heating_chamber>, "Input heat from the top and ore from the sides, and extract ingots from the bottom.");
+mods.jei.JEI.addDescription(<crossroads:heating_chamber>, "Input heat from the top and ore (or dust) from the sides, and extract ingots from the bottom.");
 
 mods.jei.JEI.addDescription(<crossroads:master_axis>, "Each rotary system must have exactly one master axis, or the gears won't turn.");
 
@@ -85,5 +91,15 @@ for rcable in redstoneHeatCables {
 }
 
 mods.jei.JEI.addDescription(<essentials:port_extender>, "Place with the one-square side facing an adjacent block with an inventory.", "Other blocks can insert into and extract from this block as if it were the faced block.", "Only works with items.", "Cannot be chained.");
+
+<essentials:item_chute>.addTooltip("Moves items upwards");
+<essentials:item_chute>.addTooltip("Insert and extract with Item Chute Port");
+
+<essentials:item_chute_port>.addTooltip("Insert items on square side");
+<essentials:item_chute_port>.addTooltip("Moves items upwards through an Item Chute");
+<essentials:item_chute_port>.addTooltip("to another Item Chute Port above");
+
+<crossroads:luminescent_quartz>.addTooltip("Created by passing a beam of LIGHT element");
+<crossroads:luminescent_quartz>.addTooltip("through a lens holder containing Pure Quartz");
 
 // TODO add more notes
