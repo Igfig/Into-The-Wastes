@@ -11,3 +11,6 @@
 
 // the Glass Eye is not a real eye
 <ore:eye>.remove(<roots:glass_eye>);
+
+// slag
+<ore:itemSlag>.add(<railcraft:dust:4>);

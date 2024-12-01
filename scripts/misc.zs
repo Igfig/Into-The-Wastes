@@ -36,11 +36,10 @@ furnace.addRecipe(<minecraft:glass>, <death_compass:death_compass>);
 
 // easier slag-to-clay recipe
 
-val slag = <thermalfoundation:material:864>;
 val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"}).giveBack(<minecraft:glass_bottle>);
 
 recipes.removeByRecipeName("thermalfoundation:clay_ball");
-recipes.addShapeless(<minecraft:clay_ball> * 4, [slag, slag, <ore:dirt>, waterBottle]);
+recipes.addShapeless(<minecraft:clay_ball> * 4, [<ore:itemSlag>, <ore:itemSlag>, <ore:dirt>, waterBottle]);
 
 
 // replace redundant gunpowder recipes

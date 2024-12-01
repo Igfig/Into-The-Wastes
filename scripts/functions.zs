@@ -1,4 +1,4 @@
-#priority 11
+#priority 30
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;

@@ -17,3 +17,9 @@
 
 <animania:cheese_mold>.addTooltip("Fill this with milk and wait for it to become cheese.");
 <animania:cheese_mold>.addTooltip("Or fill with water and wait for it to become salt.");
+
+
+// allow either kitchen knife to be used in knife recipes
+
+<ore:itemFoodCutter>.add(<animania:carving_knife>);
+recipes.replaceAllOccurences(<animania:carving_knife>, <ore:itemFoodCutter>);

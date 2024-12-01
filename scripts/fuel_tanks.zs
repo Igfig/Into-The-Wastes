@@ -1,5 +1,5 @@
 #loader contenttweaker
-#priority 2
+#priority 20
 
 import mods.contenttweaker.Item;
 

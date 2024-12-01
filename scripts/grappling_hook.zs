@@ -17,8 +17,10 @@ recipes.addShaped("grapple_block", <grapplemod:block_grapple_modifier>, [
 	[    null,   <grapplemod:baseupgradeitem>,   null   ]]);
 
 recipes.remove(<grapplemod:launcheritem>);
-recipes.addShaped("ender_staff", <grapplemod:launcheritem>, 
-	[[<ore:enderpearl>], [<ore:ingotSilver>], [<minecraft:piston>]]);
+recipes.addShaped("ender_staff", <grapplemod:launcheritem>, [
+	[null, <ore:ingotSilver>, <ore:enderpearl>], 
+	[null, <minecraft:piston>, <ore:ingotSilver>], 
+	[<minecraft:end_rod>, null, null]]);
 
 recipes.remove(<grapplemod:throwupgradeitem>);
 recipes.addShapeless("throw_upgrade", <grapplemod:throwupgradeitem>, 

@@ -39,14 +39,15 @@ recipes.addShapeless(
 
 // recipes to move water from buckets to bottles
 // they have to do some tricky stuff, because we don't want you to get a stack of four water bottles
-recipes.addShapeless("water_bottles", waterBottle * 4, [<minecraft:water_bucket> | clayWaterBucket, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>], function(out, ins, cInfo){
+
+recipes.addShapeless("water_bottles", waterBottle * 4, [<liquid:water> * 1000, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>], function(out, ins, cInfo){
 	return waterBottle;
 }, function(out,cInfo,player){
 	player.give(waterBottle);
 	player.give(waterBottle);
 	player.give(waterBottle);
 });
-recipes.addShapeless("purified_bottles", <toughasnails:purified_water_bottle> * 4, [ironBucketPurified | clayBucketPurified, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>], function(out, ins, cInfo){
+recipes.addShapeless("purified_bottles", <toughasnails:purified_water_bottle> * 4, [<liquid:purified_water> * 1000, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>], function(out, ins, cInfo){
 	return <toughasnails:purified_water_bottle>;
 }, function(out,cInfo,player){
 	player.give(<toughasnails:purified_water_bottle>);

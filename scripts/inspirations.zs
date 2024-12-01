@@ -8,7 +8,9 @@ import crafttweaker.item.IItemStack;
 <inspirations:photometer>.addTooltip("Shows block light level");
 
 <inspirations:pipe>.displayName = "Hopper Pipe";
-<inspirations:pipe>.addTooltip("Input with a hopper. Output to a container, crucible, or chute.");
+<inspirations:pipe>.addTooltip("Like a small hopper, but it");
+<inspirations:pipe>.addTooltip("only pulls from other hoppers");
+mods.jei.JEI.addDescription(<inspirations:pipe>, "Extends a hopper's output indefinitely.", "Only takes input from other hoppers or hopper pipes.", "Like a hopper, outputs to the block it was placed against. Start a line of pipes at your destination, placing the actual hopper last.", "You can rotate the pipe's output with a wrench.", "Only outputs down or sideways. If you want to move items upwards, use an item chute.");
 
 val crooks = [<inspirations:wooden_crook>, <inspirations:stone_crook>, <inspirations:bone_crook>, <inspirations:blaze_crook>, <inspirations:wither_crook>] as IItemStack[];
 for crook in crooks {
