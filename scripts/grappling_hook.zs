@@ -2,7 +2,7 @@
 
 recipes.remove(<grapplemod:grapplinghook>);
 recipes.addShapeless("grappling_hook", <grapplemod:grapplinghook>, 
-	[<thermalfoundation:tool.pickaxe_bronze>, <ore:rope>]);
+	[<tinkersforging:pickaxe_head/bronze>, <ore:rope>]);
 
 recipes.remove(<grapplemod:baseupgradeitem>);
 recipes.addShaped("grapple_upgrade", <grapplemod:baseupgradeitem>, [
