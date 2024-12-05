@@ -99,7 +99,17 @@ mods.jei.JEI.addDescription(<essentials:port_extender>, "Place with the one-squa
 <essentials:item_chute_port>.addTooltip("Moves items upwards through an Item Chute");
 <essentials:item_chute_port>.addTooltip("to another Item Chute Port above");
 
+<essentials:sorting_hopper>.removeTooltip("Prioritizes");
+<essentials:sorting_hopper>.removeTooltip("Exactly");
+<essentials:sorting_hopper>.addTooltip("Prioritizes sideways movement");
+
 <crossroads:luminescent_quartz>.addTooltip("Created by passing a beam of LIGHT element");
 <crossroads:luminescent_quartz>.addTooltip("through a lens holder containing Pure Quartz");
+
+<crossroads:water_centrifuge>.removeTooltip("Produces LoL Players");
+<crossroads:water_centrifuge>.addTooltip("Splits water into salt and distilled water");
+
+<crossroads:chemical_vent>.removeTooltip("Don't use this");
+<crossroads:chemical_vent>.addTooltip("Vents inserted reagents into the world");
 
 // TODO add more notes
