@@ -5,21 +5,26 @@ val strg = <ore:string>;
 recipes.remove(<futuremc:chain>);
 recipes.addShaped("futuremc_chain", <futuremc:chain> * 3, [
 	[link,link,link]]);
+	
+<inspirations:rope:0>.displayName = "Climbable Rope";
+<inspirations:rope:0>.addTooltip("Place on the bottom of a block, or on an existing rope");
+<inspirations:rope:0>.addTooltip("Right-click with a stick to make a rope ladder");
 
 <inspirations:rope:1>.displayName = "Climbable Chain";
+<inspirations:rope:1>.addTooltip("Place on the bottom of a block, or on an existing chain");
 recipes.remove(<inspirations:rope:1>);
 recipes.addShaped("inspirations_chain", <inspirations:rope:1> * 3, [
 	[link], 
 	[link], 
 	[link]]);
-	
-<inspirations:rope:0>.displayName = "Climbable Rope";
-<inspirations:rope:0>.addTooltip("Place on the bottom of a block, or on an existing rope");
-recipes.remove(<inspirations:rope:0>);
-recipes.addShaped("inspirations_rope", <inspirations:rope:0> * 3, [
-	[strg], 
-	[strg], 
-	[strg]]);
+
+<inspirations:rope:2>.addTooltip("Place on the bottom of a block, or on an existing rope");
+<inspirations:rope:2>.addTooltip("Right-click with a stick to make a rope ladder");
+recipes.remove(<inspirations:rope:2>); 
+recipes.addShaped("vine_rope", <inspirations:rope:2> * 3, [
+	[<primitivetools:cordage_vine>], 
+	[<primitivetools:cordage_vine>], 
+	[<primitivetools:cordage_vine>]]);
 
 <quark:rope>.displayName = "Thick Climbable Rope";
 <quark:rope>.addTooltip("Place on the bottom of a block, or on an existing rope");

@@ -179,31 +179,14 @@ recipes.addShapeless(<primitivetools:leather_strip> * 3, [<ore:leather>,<ore:too
 <primitivetools:plant_fiber>.addTooltip("Drops from tall grass and tumbleweeds");
 
 	
-// rename vine ropes because they aren't climbable like other ropes
+// rename vine "ropes" because they aren't climbable like other ropes
 
 vine.displayName = "Vine Twine";
-
-// and replace the recipe for Inspirations vine ropes
-
-recipes.remove(<inspirations:rope:2>); // I prefer the recipe below
 
 
 // additional uses for primitive materials
 
-recipes.addShaped("twine_rope", <inspirations:rope> * 2, [
-	[twine], 
-	[twine], 
-	[twine]]);
-recipes.addShaped("strip_rope", <inspirations:rope> * 3, [
-	[strip], 
-	[strip], 
-	[strip]]);
-recipes.addShaped("vine_rope", <inspirations:rope:2> * 3, [
-	[vine], 
-	[vine], 
-	[vine]]);
-
-recipes.replaceAllOccurences(<minecraft:string>, <ore:cordage>, <minecraft:lead>);
+recipes.replaceAllOccurences(<minecraft:string>, <ore:string> | twine | strip, <inspirations:rope>);
 recipes.replaceAllOccurences(<minecraft:string>, <ore:cordage>, <minecraft:book>);
 recipes.replaceAllOccurences(<minecraft:string>, <ore:cordage>, <futuremc:scaffolding>);
 
