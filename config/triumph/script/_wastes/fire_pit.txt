@@ -1,0 +1,9 @@
+setIcon("cuisine:fire_pit")
+setTitle("Prometheus")
+setDescription("Craft a Fire Pit to begin your career as a cook")
+addParent("_wastes:flint_tools")
+
+criteria = addCriteria("fire_pit", "minecraft:inventory_changed")
+criteria.addItem("cuisine:fire_pit")
+
+setPos(38,57)

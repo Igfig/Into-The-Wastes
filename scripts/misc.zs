@@ -66,3 +66,8 @@ recipes.removeByRecipeName("animania:lead");
 // cobwebs to string
 
 recipes.addShapeless(<minecraft:string>, [<minecraft:web>]);
+
+
+// rename Cart to Cargo Cart for clarity
+
+<astikorcarts:cargocart>.displayName = "Cargo Cart";

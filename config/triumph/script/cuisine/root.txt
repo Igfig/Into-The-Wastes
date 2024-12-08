@@ -13,6 +13,8 @@ criteria = addCriteria("fruit", "triumph:completed_advancement")
 criteria.setAdvancement("_wastes:fruit")
 criteria = addCriteria("vegetable", "triumph:completed_advancement")
 criteria.setAdvancement("_wastes:vegetable")
+criteria = addCriteria("pit", "triumph:completed_advancement")
+criteria.setAdvancement("_wastes:fire_pit")
 criteria = addCriteria("plate", "triumph:completed_advancement")
 criteria.setAdvancement("_wastes:ceramics/craft_plate")
 

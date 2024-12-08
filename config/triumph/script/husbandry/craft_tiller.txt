@@ -1,14 +1,9 @@
-setIcon("animania:item_tiller")
-setTitle("Till Death Do Us Part")
-setDescription("Make a tiller to plant fields much faster.")
-addParent("husbandry:feed_cow")
+setIcon("astikorcarts:plowcart")
+setTitle("Rhymes With Cough")
+setDescription("Make a plow to plant fields much faster.")
 addParent("husbandry:feed_horse")
 
-visibleIf("husbandry:feed_cow")
-visibleIf("husbandry:feed_horse")
-alwaysHidden()
-
 criteria = addCriteria("crafted", "minecraft:inventory_changed")
-criteria.addItem("animania:item_tiller")
+criteria.addItem("astikorcarts:plowcart")
 
-setPos(67,-88)
+setPos(92,-100)

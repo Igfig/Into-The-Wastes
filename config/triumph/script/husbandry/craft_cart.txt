@@ -1,17 +1,10 @@
-setIcon("animania:item_cart")
+setIcon("astikorcarts:cargocart")
 setTitle("Carti B.")
-setDescription("Make a cart to increase your transport capacity.")
-addParent("husbandry:feed_horse")
-addParent("husbandry:feed_pig")
+setDescription("Make a Cargo Cart to increase your transport capacity.")
 
-visibleIf("husbandry:feed_horse")
-visibleIf("husbandry:feed_pig")
-alwaysHidden()
+addParent("husbandry:feed_horse")
 
 criteria = addCriteria("crafted", "minecraft:inventory_changed")
-criteria.addItem("animania:item_cart")
+criteria.addItem("astikorcarts:cargocart")
 
-setUncompletedLineColor(200,200,200)
-setCompletedLineColor(200,200,200)
-
-setPos(67,-113)
+setPos(67,-114)

@@ -1,0 +1,9 @@
+setIcon("astikorcarts:mobcart")
+setTitle("Paddy Wagon")
+setDescription("Make a Transportation Cart to transport mobs safely.")
+addParent("husbandry:feed_horse")
+
+criteria = addCriteria("crafted", "minecraft:inventory_changed")
+criteria.addItem("astikorcarts:mobcart")
+
+setPos(67,-85)

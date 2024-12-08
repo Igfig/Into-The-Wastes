@@ -13,4 +13,4 @@ criteria = addCriteria("clay_purified_water_bucket", "triumph:player_crafted_ite
 criteria.setItem(<ceramics:clay_bucket, nbt:{fluids:{FluidName:"purified_water",Amount:1000}}>)
 
 setRequirements("any")
-setPos(38,71)
+setPos(38,84)

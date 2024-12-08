@@ -10,4 +10,4 @@ criteria = addCriteria("porcelain", "minecraft:inventory_changed")
 criteria.addItem(<ceramics:unfired_clay:4>)
 
 #setPos(38,-9)
-setPos(38,152)
+setPos(38,165)

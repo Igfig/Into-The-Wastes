@@ -6,6 +6,9 @@ waterBottle.addTooltip("Boil in a furnace, or craft with a charcoal filter");
 <minecraft:cauldron>.addTooltip("Can't pipe fluids in and out, but bottle dispensers work");
 <minecraft:cauldron>.addTooltip("Zoo animals can only drink from this or water bowls");
 
+// hopper, as opposed to sorting hopper
+<minecraft:hopper>.addTooltip("Prioritizes downwards movement");
+
 // rationale for why potions make you thirsty
 <minecraft:nether_wart>.addTooltip("Unexpectedly salty");
 

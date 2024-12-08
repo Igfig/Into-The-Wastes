@@ -13,4 +13,4 @@ criteria.addItem(<ceramics:porcelain_barrel>)
 
 setRequirements("any")
 
-setPos(38,98)
+setPos(38,111)
