@@ -9,4 +9,4 @@ alwaysHidden()
 criteria = addCriteria("crafted", "minecraft:inventory_changed")
 criteria.addItem("animania:block_mud")
 
-setPos(67,-138)
+setPos(67,-139)
