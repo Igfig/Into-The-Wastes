@@ -47,6 +47,8 @@ recipes.addShaped("tranquilizer_gun", <zawa:tranquilizer_gun>, [
 	[<minecraft:gunpowder>,<ore:plankWood>,<minecraft:lever>],
 	[<ore:logWood>,null,null]]);	
 
+recipes.remove(<zawa:bullet_rifle>);
+recipes.addShapeless(<zawa:bullet_rifle> * 8,[<minecraft:gunpowder>, <ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>]);
 
 // add recipes for decorative stones
 
