@@ -1,3 +1,5 @@
+import scripts.functions.unfunk;
+
 <animania:block_trough>.addTooltip("Can hold water, slop, or any animal feed.");
 <animania:block_trough>.addTooltip("See the Animania Manual for what each animal eats.");
 <animania:block_trough>.addTooltip("Refillable via hopper or fluid channel.");
@@ -20,6 +22,15 @@
 
 
 // allow either kitchen knife to be used in knife recipes
+// unfortunately we need to manually replace some of them, because we need to unfunk the ingredients
 
 <ore:itemFoodCutter>.add(<animania:carving_knife>);
+
+recipes.removeByRecipeName("animania:straw_cutting");
+recipes.removeByRecipeName("animania:pork_cutting_1");
+recipes.removeByRecipeName("animania:beef_cutting_1");
+
 recipes.replaceAllOccurences(<animania:carving_knife>, <ore:itemFoodCutter>);
+
+recipes.addShapeless("pork_cutting", <animania:raw_prime_bacon> * 4, [<ore:itemFoodCutter>, unfunk(<animania:raw_prime_pork>)]);
+recipes.addShapeless("beef_cutting", <animania:raw_prime_steak> * 4, [<ore:itemFoodCutter>, unfunk(<animania:raw_prime_beef>)]);
