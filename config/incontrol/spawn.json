@@ -41,6 +41,11 @@
     "result": "deny"
   },
   {
+    "mob": "iceandfire:deathworm",
+	"maxspawndist": 1500,
+    "result": "deny"
+  },
+  {
     "mob": "rats:rat",
 	"maxdifficulty": 0,
     "result": "deny"
