@@ -20,3 +20,6 @@ recipes.addShaped(<valoegheses_be:tnt_true>,[
 	
 // if you find nitric acid in a chest, here's something you can do with it at least	
 recipes.addShapeless("nitric", <crossroads:solid_fortis>, [<valoegheses_be:acid_nitric>]);
+
+// dates are missing their display name
+<valoegheses_be:fruit_date>.displayName = "Date";
