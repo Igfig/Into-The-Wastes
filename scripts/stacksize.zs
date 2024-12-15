@@ -9,9 +9,9 @@ for item in items {
 		if (<ore:foodSoup> has item) {
 			item.maxStackSize = 1;
 			item.withEmptyTag().addTooltip("Max stack size: 1");
-		} else if (item.maxStackSize > 10) {
-			item.maxStackSize = 10; // because Cuisine mill and jar recipes work best with 10 at a time
-			item.withEmptyTag().anyDamage().addTooltip("Max stack size: 10");
+		} else if (item.maxStackSize > 16) {
+			item.maxStackSize = 16;
+			item.withEmptyTag().anyDamage().addTooltip("Max stack size: 16");
 		} else {
 			print("Keeping stack size for food item " ~ item.name ~ " (" ~ item.maxStackSize ~ ")");
 		}
