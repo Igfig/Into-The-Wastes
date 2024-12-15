@@ -4,7 +4,8 @@
 	  "match": {
         "blocks": {
           "blocks": [
-            "minecraft:leaves:2"
+            "minecraft:leaves:2",
+            "minecraft:leaves:10"
           ]
         }
       },
