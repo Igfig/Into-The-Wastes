@@ -22,7 +22,7 @@
     "result": "deny"
   },
   {
-    "mob": ["wildnature:goat_male", "wildnature:goat_female", "wildnature:goat_baby", "wildnature:goat_saanen_male", "wildnature:goat_saanen_female", "wildnature:goat_saanen_baby", "wildnature:bison_male", "wildnature:bison_female", "wildnature:bison_baby", "wildnature:cow_male", "wildnature:cow_female", "wildnature:cow_baby", "wildnature:wisent_male", "wildnature:wisent_female", "wildnature:wisent_baby", "minecraft:pig", "minecraft:sheep", "minecraft:cow","minecraft:chicken", "minecraft:horse", "minecraft:rabbit"],
+    "mob": ["wildnature:goat_male", "wildnature:goat_female", "wildnature:goat_baby", "wildnature:goat_saanen_male", "wildnature:goat_saanen_female", "wildnature:goat_saanen_baby", "wildnature:bison_male", "wildnature:bison_female", "wildnature:bison_baby", "wildnature:cow_male", "wildnature:cow_female", "wildnature:cow_baby", "wildnature:wisent_male", "wildnature:wisent_female", "wildnature:wisent_baby", "minecraft:pig", "minecraft:sheep", "minecraft:cow","minecraft:chicken", "minecraft:horse", "minecraft:donkey", "minecraft:rabbit"],
     "result": "deny"
   },
   {
