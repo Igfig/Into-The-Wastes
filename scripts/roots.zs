@@ -48,17 +48,14 @@ mods.jei.JEI.removeAndHide(<roots:diamond_knife>);
 
 <roots:component_pouch>.addTooltip(DISABLED);
 Fey.removeRecipe(<roots:component_pouch>);
-Fey.addRecipe("component_pouch", <roots:component_pouch>, [<roots:bark_oak>, bedrock, bedrock, bedrock, bedrock]);
 mods.jei.JEI.removeAndHide(<roots:component_pouch>);
 
 <roots:apothecary_pouch>.addTooltip(DISABLED);
 Fey.removeRecipe(<roots:apothecary_pouch>);
-//Fey.addRecipe("apothecary_pouch", <roots:apothecary_pouch>, [<minecraft:leather>, bedrock, bedrock, bedrock, bedrock]);
 mods.jei.JEI.removeAndHide(<roots:apothecary_pouch>);
 
 <roots:unending_bowl>.addTooltip(DISABLED);
 Fey.removeRecipe(<roots:unending_bowl>);
-//Fey.addRecipe("unending_bowl", <roots:unending_bowl>, [<minecraft:clay>, bedrock, bedrock, bedrock, bedrock]);
 mods.jei.JEI.removeAndHide(<roots:unending_bowl>);
 
 

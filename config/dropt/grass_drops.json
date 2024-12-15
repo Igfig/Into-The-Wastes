@@ -5,7 +5,19 @@
         "blocks": {
           "blocks": [
             "minecraft:tallgrass:*",
-            "minecraft:double_plant:*"
+            "minecraft:double_plant:*",
+            "biomesoplenty:plant_0:0",
+            "biomesoplenty:plant_0:1",
+            "biomesoplenty:plant_0:3",
+            "biomesoplenty:plant_0:7",
+            "biomesoplenty:plant_0:8",
+            "biomesoplenty:plant_0:9",
+            "biomesoplenty:plant_0:13",
+            "biomesoplenty:plant_0:14",
+            "biomesoplenty:plant_0:15",
+            "biomesoplenty:plant_1:7",
+            "traverse:dead_grass",
+            "traverse:cold_grass"
           ]
         },
         "drops": {
@@ -21,6 +33,47 @@
       },
       "replaceStrategy": "REPLACE_ITEMS",
       "drops": [{}]
+    },
+	{
+      "match": {
+        "blocks": {
+          "blocks": [
+            "minecraft:double_plant:*",
+            "biomesoplenty:plant_0:0",
+            "biomesoplenty:plant_0:1",
+            "biomesoplenty:plant_0:3",
+            "biomesoplenty:plant_0:7",
+            "biomesoplenty:plant_0:8",
+            "biomesoplenty:plant_0:9",
+            "biomesoplenty:plant_0:13",
+            "biomesoplenty:plant_0:14",
+            "biomesoplenty:plant_0:15",
+            "biomesoplenty:plant_1:7",
+            "traverse:dead_grass",
+            "traverse:cold_grass"
+          ]
+        }
+      },
+      "replaceStrategy": "ADD",
+      "drops": [
+        {
+          "selector": {
+            "weight": {
+              "value": 50
+            }
+          }
+        },
+        {
+          "selector": {
+            "weight": {
+              "value": 50
+            }
+          },
+          "item": {
+            "items" : ["primitivetools:plant_fiber"]
+          }
+        }
+      ]
     }
   ]
 }

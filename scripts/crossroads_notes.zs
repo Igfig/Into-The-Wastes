@@ -13,11 +13,16 @@ import crafttweaker.item.IItemStack;
 <essentials:sorting_hopper>.removeTooltip("Exactly");
 <essentials:sorting_hopper>.addTooltip("Prioritizes sideways movement");
 
-<essentials:port_extender>.addTooltip("Inputs and outputs items like the block it's facing");
+<essentials:port_extender>.addTooltip("Point square side at a block");
+<essentials:port_extender>.addTooltip("Inputs and outputs items as if it was that block");
 mods.jei.JEI.addDescription(<essentials:port_extender>, "Place with the one-square side facing an adjacent block with an inventory.", "Other blocks can insert into and extract from this block as if it were the faced block.", "Only works with items.", "Cannot be chained.");
 
 
 // Tools
+
+<essentials:obsidian_cutting_kit>.removeTooltip("Insta");
+<essentials:obsidian_cutting_kit>.addTooltip("Insta-breaks obsidian on right-click.");
+<essentials:obsidian_cutting_kit>.addTooltip("Single use.");
 
 <crossroads:omnimeter>.addTooltip("Shift-right-click on many blocks to see additional information");
 <crossroads:omnimeter>.addTooltip("e.g. the contents of GUI-less containers");
@@ -64,7 +69,8 @@ for gear in gears {
 <crossroads:hand_crank>.addTooltip("Right-click: counterclockwise.");
 <crossroads:hand_crank>.addTooltip("Shift-right-click: clockwise.");
 
-mods.jei.JEI.addDescription(<crossroads:master_axis>, "Each rotary system must have exactly one master axis, or the gears won't turn.");
+<crossroads:master_axis>.addTooltip("The core of any rotary system");
+mods.jei.JEI.addDescription(<crossroads:master_axis>, "Each rotary system must have exactly one master axis, or the gears won't turn.", "Place a gear on the side with the hole.");
 
 
 // Heat transport
@@ -103,6 +109,8 @@ mods.jei.JEI.addDescription(<crossroads:coal_heater>, "Burns fuel to create heat
 mods.jei.JEI.addDescription(<crossroads:heat_exchanger>, "Acts as a heat sink, slowly losing heat over time.","Reduces heat faster when placed over ice or snow, melting it to water.", "When placed over fire, lava, or magma, instead extracts heat from the block, cooling it to stone or netherrack.", "Inputs and outputs heat from any other side.");
 mods.jei.JEI.addDescription(<crossroads:insulated_heat_exchanger>, "Accepts heat into the system without any loss.", "When placed over fire, lava, or magma, extracts heat from the block, cooling it to stone or netherrack.", "Inputs and outputs heat from any other side.");
 
+mods.jei.JEI.addDescription(<crossroads:salt_reactor>, "Insert distilled water into the top, and salt into the side.", "Outputs regular water from the side (only to a fluid tube), and cold from the bottom (only to a heat cable).", "Can eventually produce temperatures of 0, cold enough to freeze water.");
+
 
 // Ore processing
 
@@ -127,15 +135,22 @@ mods.jei.JEI.addDescription(<crossroads:rotary_pump>, "Collects fluid blocks at 
 <crossroads:steam_turbine>.addTooltip("Produces rotary power.");
 mods.jei.JEI.addDescription(<crossroads:steam_turbine>, "Outputs rotary power to a gear on top.", "Insert steam at the bottom; extract distilled water from the sides.", "Stops working if the water tank fills up.");
 
-mods.jei.JEI.addDescription(<crossroads:steam_boiler>, "Insert heat into the bottom, and water or distilled water into the side.", "Produces steam from the top and salt from the bottom (if using regular water).", "Stops working if it fills up with salt.");
+mods.jei.JEI.addDescription(<crossroads:steam_boiler>, "Insert heat into the bottom, and water or distilled water into the side.", "Produces steam from the top and salt from the bottom (if using regular water).", "Only outputs steam into fluid tubes.", "Stops working if it fills up with salt.");
 
 
 // Other machines
 
+<crossroads:rotary_drill>.addTooltip("Breaks blocks when rotating.");
+<crossroads:rotary_drill>.addTooltip("WARNING: Do not stand near pointy end");
+mods.jei.JEI.addDescription(<crossroads:rotary_drill>, "Breaks blocks placed in front of the pointy end.", "Requires rotary power to work, via a gear placed on the flat end.", "Mines faster the faster it rotates.", "Deals damage to creatures and players that touch the pointy end.", "Breaks blocks as well as an iron pickaxe, so it can't break obsidian or other really hard materials.");
+
 mods.jei.JEI.addDescription(<liquid:copshowium>, "Put liquid copper in a Copshowium Creation Chamber and hit it with a Time beam to get liquid copshowium.", "Every 5 mB of copper becomes 9 mB of copshowium.", "The creation chamber can only hold 1296 mB at a time; don't insert more than 720 mB of liquid copper at once, or it'll break the chamber when it converts!");
 mods.jei.JEI.addDescription(<crossroads:copshowium_creation_chamber>, "Insert liquid copper and hit it with a Time beam to get liquid copshowium.", "Every 5 mB of copper becomes 9 mB of copshowium.", "The creation chamber can only hold 1296 mB at a time; don't insert more than 720 mB of liquid copper at once, or it'll break the chamber when it converts!");
 
-<crossroads:water_centrifuge>.removeTooltip("Produces LoL Players");
+<crossroads:basic_fluid_splitter>.addTooltip("Sends half of all inputted fluids up, and half down");
+<crossroads:fluid_splitter>.addTooltip("Sends inputted fluids up or down based on redstone signal");
+
+<crossroads:water_centrifuge>.removeTooltip("Produces");
 <crossroads:water_centrifuge>.addTooltip("Splits water into salt and distilled water");
 
 <crossroads:chemical_vent>.removeTooltip("Don't use this");

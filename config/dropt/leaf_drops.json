@@ -4,7 +4,8 @@
 	  "match": {
         "blocks": {
           "blocks": [
-            "minecraft:leaves:2"
+            "minecraft:leaves:2",
+            "minecraft:leaves:10"
           ]
         }
       },
@@ -13,7 +14,7 @@
         {
           "selector": {
             "weight": {
-              "value": 95
+              "value": 100
             }
           },
 		  "item": {
@@ -23,7 +24,7 @@
         {
           "selector": {
             "weight": {
-              "value": 5
+              "value": 1
 			  }
           },
           "item": {

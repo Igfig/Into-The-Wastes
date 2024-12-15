@@ -30,7 +30,7 @@ waterBottle.addTooltip("Boil in a furnace, or craft with a charcoal filter");
 // functionality added by Quark
 <minecraft:poisonous_potato>.addTooltip("Feed to a baby animal to prevent it growing up");
 
-<base:wrench>.addTooltip("Rotates blocks.");
+<base:wrench>.addTooltip("Rotates blocks and reconfigures pipes.");
 
 // Structured Crafting is a little too complicated to describe in text.
 mods.jei.JEI.addDescription(<structuredcrafting:structured_crafter>, "Automated in-world crafting. See https://www.curseforge.com/minecraft/mc-mods/structured-crafting for a quick tutorial.");

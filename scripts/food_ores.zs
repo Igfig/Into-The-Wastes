@@ -21,7 +21,6 @@ import mods.foodtweaker.Tweaker;
 <ore:cropApple>.add(<minecraft:apple>, <wildnature:green_apple>);
 <ore:cropPear>.add(<wildnature:pear>);
 <ore:cropCherry>.add(<wildnature:cherry>);
-<ore:cropCherry>.add(<wildnature:cherry>);
 <ore:cropPeach>.add(<valoegheses_be:fruit_peach>, <valoegheses_be:fruit_nectarine>);
 <ore:cropPlum>.add(<valoegheses_be:fruit_plum>);
 <ore:cropDate>.add(<valoegheses_be:fruit_date>);

@@ -8,7 +8,7 @@ val cellulose = <thermalfoundation:material:801>;
 val yellowool = <minecraft:wool:4>;
 val sulfurdst = <ore:dustSulfur>;
 
-recipes.addShaped(<minecraft:sponge>, [
+recipes.addShaped("sponge", <minecraft:sponge>, [
 	[cellulose,yellowool,cellulose],
 	[yellowool,sulfurdst,yellowool],
 	[cellulose,yellowool,cellulose]]);
@@ -24,8 +24,8 @@ recipes.addShaped("wrench", <base:wrench>, [
 
 // erase written books
 
-recipes.addShapeless(<minecraft:book>, [<minecraft:written_book>, <minecraft:sponge>.reuse()]);
-recipes.addShapeless(<minecraft:book>, [<minecraft:written_book>, <minecraft:bread>]);
+recipes.addShapeless("erase_book_sponge", <minecraft:book>, [<minecraft:written_book>, <minecraft:sponge>.reuse()]);
+recipes.addShapeless("erase_book_bread", <minecraft:book>, [<minecraft:written_book>, <minecraft:bread>]);
 
 
 // melt down excess thermometers and death compasses
@@ -66,6 +66,14 @@ recipes.removeByRecipeName("animania:lead");
 // cobwebs to string
 
 recipes.addShapeless(<minecraft:string>, [<minecraft:web>]);
+
+
+// ice to packed ice recipe
+
+recipes.addShaped("packed_ice", <minecraft:packed_ice>, [
+	[<minecraft:ice>, <minecraft:ice>, <minecraft:ice>],
+	[<minecraft:ice>, <minecraft:ice>, <minecraft:ice>],
+	[<minecraft:ice>, <minecraft:ice>, <minecraft:ice>]]);
 
 
 // rename Cart to Cargo Cart for clarity
