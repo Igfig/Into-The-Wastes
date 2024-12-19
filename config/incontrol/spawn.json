@@ -51,6 +51,11 @@
     "result": "deny"
   },
   {
+    "mob": "rats:rat",
+	"maxheight": 56,
+    "result": "deny"
+  },
+  {
     "mob": "minecraft:creeper",
 	"random": 0.3,
     "result": "deny"
