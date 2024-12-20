@@ -56,6 +56,16 @@
     "result": "deny"
   },
   {
+    "mob": "charm:spectre",
+	"biometype": "SPOOKY",
+    "result": "allow"
+  },
+  {
+    "mob": "charm:spectre",
+	"minheight": 24,
+    "result": "deny"
+  },
+  {
     "mob": "minecraft:creeper",
 	"random": 0.3,
     "result": "deny"
