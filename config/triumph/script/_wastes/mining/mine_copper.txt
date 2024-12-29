@@ -6,4 +6,4 @@ drawDirectLines()
 
 criteria = addCriteria("mine_copper", "minecraft:inventory_changed")
 criteria.addItem(<crossroads:ore_copper>)
-setPos(-28,-167)
+setPos(-28,-168)

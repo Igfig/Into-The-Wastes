@@ -6,4 +6,4 @@ drawDirectLines()
 
 criteria = addCriteria("mine_silver", "minecraft:inventory_changed")
 criteria.addItem(<thermalfoundation:ore:2>)
-setPos(38,-121)
+setPos(38,-99)

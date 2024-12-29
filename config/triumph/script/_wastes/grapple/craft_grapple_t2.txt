@@ -1,0 +1,17 @@
+setIcon("grapplemod:throwupgradeitem")
+setTitle("Improved Grapple")
+setDescription("Make a Long, Fast, or Acrobatic grappling hook")
+
+addParent("_wastes:grapple/craft_grapple_mod")
+
+criteria = addCriteria("long", "minecraft:inventory_changed")
+criteria.addItem(<grapplemod:grapplinghook, nbt:{maxlen:60.0d}>)
+criteria = addCriteria("fast", "minecraft:inventory_changed")
+criteria.addItem(<grapplemod:grapplinghook, nbt:{throwspeed:4.0d}>)
+criteria = addCriteria("acrobatic", "minecraft:inventory_changed")
+criteria.addItem(<grapplemod:grapplinghook, nbt:{phaserope:1b}>)
+
+setRequirements("any")
+
+drawDirectLines()
+setPos(38,-168)

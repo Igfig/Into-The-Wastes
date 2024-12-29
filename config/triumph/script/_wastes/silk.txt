@@ -6,4 +6,4 @@ addParent("_wastes:silkworm")
 criteria = addCriteria("thread", "minecraft:inventory_changed")
 criteria.addItem("mysticalworld:silk_thread")
 
-setPos(71,-167)
+setPos(71,-44)
