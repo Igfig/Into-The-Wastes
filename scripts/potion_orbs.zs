@@ -17,13 +17,13 @@ val infusedPearl = <mysticalworld:pearl>.withTag({
 	"Quark:RuneAttached": true,
 	"Quark:RuneColor": 7,
 	ench: [{lvl: 1, id: 28}],
-	HideFlags: true
+	HideFlags: 1
 }); // Yellow name, grey glow, Holding I enchant
 
 val infusedPearlx2 = <mysticalworld:pearl>.withTag({
 	display: {LocName:"§6Twice-Infused Pearl"},
 	ench: [{lvl: 2, id: 28}],
-	HideFlags: true
+	HideFlags: 1
 }); // Gold name, default (purple) glow, Holding II enchant
 
 val infusedPearlx3 = <mysticalworld:pearl>.withTag({
@@ -31,7 +31,7 @@ val infusedPearlx3 = <mysticalworld:pearl>.withTag({
 	"Quark:RuneAttached": true,
 	"Quark:RuneColor": 16,
 	ench: [{lvl: 3, id: 28}],
-	HideFlags: true
+	HideFlags: 1
 }); // Red name, rainbow glow, Holding III enchant
 
 
