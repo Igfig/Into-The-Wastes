@@ -49,3 +49,9 @@ recipes.addShapeless(<minecraft:rabbit> * 2, [unfunk(<animania:raw_prime_rabbit>
 recipes.addShapeless(<minecraft:mutton>, [unfunk(<animania:raw_chevon>)]);
 recipes.addShapeless(<minecraft:beef>, [unfunk(<animania:raw_horse>)]);
 recipes.addShapeless(<minecraft:chicken>, [unfunk(<animania:raw_peacock>)]);
+
+
+// remove wheel, since we removed the carts
+
+recipes.removeByRecipeName("animania:wheel");
+mods.jei.JEI.removeAndHide(<animania:wheel>);

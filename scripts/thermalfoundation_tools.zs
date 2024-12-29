@@ -26,9 +26,9 @@ val strng = <ore:string>;
 for i, bow in bows {
 	recipes.remove(bow);
 	recipes.addShapedMirrored(bow.name, bow, [
-	[null,stick,strng],
-	[pickaxeHeads[i],null,strng],
-	[null,stick,strng]]);
+	[null,hoeHeads[i],strng],
+	[metals[i],null,strng],
+	[null,hoeHeads[i],strng]]);
 }
 for i, sickle in sickles {
 	recipes.remove(sickle);
@@ -72,8 +72,8 @@ recipes.remove(platinumBow);
 electrumBow.addTooltip("This item can only be cast, not forged.");
 platinumBow.addTooltip("This item can only be cast, not forged.");
 
-mods.foundry.Casting.addRecipe(electrumBow, <liquid:electrum> *432, <minecraft:bow>);
-mods.foundry.Casting.addRecipe(platinumBow, <liquid:platinum> *432, <minecraft:bow>);
+mods.foundry.Casting.addRecipe(electrumBow, <liquid:electrum> * 720, <minecraft:bow>);
+mods.foundry.Casting.addRecipe(platinumBow, <liquid:platinum> * 720, <minecraft:bow>);
 
 
 // remove crescent hammer; it's redundant with the B.A.S.E. wrench

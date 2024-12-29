@@ -13,4 +13,4 @@ criteria.addItem(<grapplemod:rocketdoublemotorhook>)
 
 setRequirements("any")
 
-setPos(104,44)
+setPos(71,-208)

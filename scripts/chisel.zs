@@ -390,3 +390,8 @@ val redNetherBrickIds = {
 
 addIdVariations("netherbrick", netherBrickIds);
 addIdVariations("rednetherbrick", redNetherBrickIds);
+
+
+// notes
+
+<chisel:offsettool>.addTooltip("Changes offset of multi-block textures");

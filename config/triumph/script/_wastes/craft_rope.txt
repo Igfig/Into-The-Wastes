@@ -1,7 +1,7 @@
 setIcon("inspirations:rope")
 setTitle("Advent of Ascension")
 setDescription("Make some Climbable Rope from twine or string to help you get around")
-addParent("_wastes:craft_twine")
+addParent("_wastes:root")
 
 visibleIf("_wastes:craft_rope")
 hiddenUnless("_wastes:craft_twine")
@@ -14,4 +14,4 @@ criteria = addCriteria("thin_rope", "minecraft:inventory_changed")
 criteria.addItem("zawa:thin_rope")
 
 setRequirements("any")
-setPos(5,30)
+setPos(-28,-195)

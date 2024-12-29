@@ -6,4 +6,4 @@ drawDirectLines()
 
 criteria = addCriteria("mine_iron", "minecraft:inventory_changed")
 criteria.addItem(<minecraft:iron_ore>)
-setPos(-28,-98)
+setPos(-28,-99)

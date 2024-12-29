@@ -7,4 +7,4 @@ addParent("_wastes:grapple/craft_grapple_block")
 criteria = addCriteria("boots", "minecraft:inventory_changed")
 criteria.addItem(<grapplemod:longfallboots>)
 
-setPos(134,17)
+setPos(104,-181)

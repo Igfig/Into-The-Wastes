@@ -14,8 +14,12 @@ mods.jei.JEI.addDescription(<inspirations:pipe>, "Extends a hopper's output inde
 
 val crooks = [<inspirations:wooden_crook>, <inspirations:stone_crook>, <inspirations:bone_crook>, <inspirations:blaze_crook>, <inspirations:wither_crook>] as IItemStack[];
 for crook in crooks {
-	crook.addTooltip("Increases sapling drops when breaking leaves"); 
+	crook.addTooltip("Increases sapling drops when breaking leaves");
+	crook.addTooltip("Right-click on mobs to pull them");
 }
+
+<inspirations:blaze_crook>.addTooltip("Sets target on fire");
+<inspirations:wither_crook>.addTooltip("Applies Wither to target");
 
 // hide Inspirations wither bone; we aleady have a better version from another mod
 mods.jei.JEI.removeAndHide(<inspirations:materials:7>);
