@@ -140,7 +140,7 @@ recipes.addShapeless(<railcraft:firestone_cut>, [<chisel:chisel_diamond>, <railc
 
 // crushed obsidian
 
-recipes.addShaped("crushed_obsidian", <railcraft:generic:7> * 4, [
+recipes.addShaped("crushed_obsidian", <railcraft:generic:7> * 16, [
 	[<ore:dustObsidian>,<ore:dustObsidian>],
 	[<ore:dustObsidian>,<ore:dustObsidian>]]);
 	
@@ -213,7 +213,7 @@ recipes.addShaped(<railcraft:tool_crowbar_steel>, [
 	[steel, null, null]]);
 	
 	
-// mark worldspike fuel as suchu
+// mark worldspike fuel as such
 
 val worldspikeFuels = {
 	<thermalfoundation:material:770>: 2,
