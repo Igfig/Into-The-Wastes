@@ -8,93 +8,25 @@ for item in items {
     if (item.isFood) {
 		if (<ore:foodSoup> has item) {
 			item.maxStackSize = 1;
-			item.withEmptyTag().addTooltip("Max stack size: 1");
 		} else if (item.maxStackSize > 16) {
 			item.maxStackSize = 16;
-			item.withEmptyTag().anyDamage().addTooltip("Max stack size: 16");
-		} else {
-			print("Keeping stack size for food item " ~ item.name ~ " (" ~ item.maxStackSize ~ ")");
 		}
+		item.withEmptyTag().anyDamage().addTooltip("Max stack size: " ~ item.maxStackSize);
 	}
 }
 
-function setStackSize(entry as IOreDictEntry, size as int) as bool {
-	val keepStacked = ["Cactus", "Slime", "Emerald", "Prismarine", "Glass", "Mud", "nugget", "Wood", "Wool", "wool", "Rock", "charred", "frozen", "Clay", "Sand", "Stone", "Basalt", "Mossy", "Brick", "Meat", "Goldenrod", "Concrete", "Candle", "stickBamboo", "blockMushroom", "blockQuartz"] as string[]; // for some reason this definition has to be inside the function or it breaks?
-	
-	for ks in keepStacked {
-		if (entry.name has ks) {
-			print("Keeping stack size for oredict " ~ entry.name);
-			return false;
-		}
-	}
-	
-	print("Updating stack sizes for oredict " ~ entry.name);
+val oresToShrink = {
+	<ore:blockHay>: 8,
+	<ore:cropMelon>: 8, 
+	<ore:cropPumpkin>: 16,
+	<ore:cropWheat>: 16,
+	<ore:foodFlour>: 16,
+	<ore:foodMushroom>: 16
+} as int[IOreDictEntry];
 
+for entry, size in oresToShrink {
 	for item in entry.items {
-		if (item.maxStackSize > size) {
-			print("Setting stack size for item " ~ item.name ~ " to " ~ size);
-			item.maxStackSize = size;
-			item.anyDamage().addTooltip("Max stack size: " ~ size);
-		} else {
-			print("Keeping stack size for item " ~ item.name ~ " (" ~ item.maxStackSize ~ ")");
-		}
-	}
-	return true;
-}
-
-for entry in oreDict {
-	if (entry.name has "ore") {
-		setStackSize(entry, 16);
-	} else if (entry.name has "flour") {
-		setStackSize(entry, 16);
-	} else if (entry.name has "ingot") {
-		setStackSize(entry, 16);
-	} else if (entry.name has "dust") {
-		setStackSize(entry, 16);
-	} else if (entry.name has "plate") {
-		setStackSize(entry, 16);
-	} else if (entry.name has "block") {
-		setStackSize(entry, 4);
-	} else if (entry.name has "itemIce") {
-		setStackSize(entry, 16);
-	} else if (entry.name has "gear") {
-		setStackSize(entry, 16);
-	} else if (entry.name has "egg") {
-		setStackSize(entry, 16);
-	} else if (entry.name has "eggplant") {
-		setStackSize(entry, 16);
-	} else if (entry.name has "veggie") {
-		setStackSize(entry, 16);
-	} else if (entry.name has "mushroom") {
-		setStackSize(entry, 16);
-	} else if (entry.name has "crop") {
-		setStackSize(entry, 16);
-	} else if (entry.name has "coal") {
-		setStackSize(entry, 16);
-	} else if (entry.name has "fuel") {
-		setStackSize(entry, 16);
-	} else if (entry.name has "gem") {
-		setStackSize(entry, 16);
-	} else if (entry.name has "crystal") {
-		setStackSize(entry, 16);
-	}else if (entry.name has "clathrate") {
-		setStackSize(entry, 16);
-	} else if (entry.name has "rod") {
-		setStackSize(entry, 16);
-	} else if (entry.name has "substance") {
-		setStackSize(entry, 16);
-	} else if (entry.name has "sugar") {
-		setStackSize(entry, 16);
-	} else if (entry.name has "salt") {
-		setStackSize(entry, 16);
-	} else {
-		print("Keeping stack size for oredict " ~ entry.name);
+		item.maxStackSize = size;
+		item.withEmptyTag().anyDamage().addTooltip("Max stack size: " ~ size);
 	}
 }
-
-// maybe blockQuartz and blockGlowstone should stack better?
-// Chiseled glowstone already stacks to 64 just fine
-
-// need to manually add mystical world copper and such to the dicts 
-
-// Or maybe I should just add all blocks and ingots and such to some oredicts after all.  There're listAllmetalingots and listAllmetalblocks entries, though they only have gold and iron right now

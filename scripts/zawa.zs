@@ -116,7 +116,7 @@ recipes.addShapeless(<minecraft:leather>, [<ore:zawaFur>|<ore:zawaHide>]);
 <zawa:worm>.addTooltip("Some animals like these.");
 <zawa:worm>.addTooltip("Barely human-edible if cooked.");
 
-<zawa:worm>.maxStackSize = 8;
+<zawa:worm>.maxStackSize = 16;
 
 furnace.addRecipe(<contenttweaker:worm_cooked>, <zawa:worm>);
 
