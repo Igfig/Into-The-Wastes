@@ -263,7 +263,7 @@
       "item": {
         "id": "astikorcarts:plowcart",
         "damage": 0,
-        "count": 0
+        "count": 1
       }
     },
     {
@@ -361,7 +361,7 @@
       "min": 1,
       "max": 1,
       "item": {
-        "id": "petsretreat:totem_of_retreat_normal",
+        "id": "respawnablepets:etheric_gem",
         "damage": 0,
         "count": 1
       }
