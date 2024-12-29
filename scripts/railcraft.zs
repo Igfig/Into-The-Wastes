@@ -213,3 +213,19 @@ recipes.addShaped(<railcraft:tool_crowbar_steel>, [
 	[steel, null, null]]);
 	
 	
+// mark worldspike fuel as suchu
+
+val worldspikeFuels = {
+	<thermalfoundation:material:770>: 2,
+	<thermalfoundation:material:895>: 3,
+	<minecraft:ender_pearl>: 4,
+	<charm:ender_pearl_block>: 36,
+	<railcraft:dust:6>: 8,
+	<railcraft:dust:7>: 12
+} as int[IItemStack];
+
+<ore:fuelWorldspike>.addItems(worldspikeFuels.keys);
+
+for fuel, duration in worldspikeFuels {
+	fuel.addTooltip("Worldspike fuel (" ~ duration ~ " hours)");
+}
