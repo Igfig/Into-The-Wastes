@@ -11,7 +11,7 @@ val silkThread = <mysticalworld:silk_thread>;
 
 recipes.remove(silkThread);
 recipes.addShapeless("silk_thread", silkThread, [<mysticalworld:silk_cocoon>]);
-recipes.addShapeless("silk_thread_spindle", silkThread * 2, [<mysticalworld:silk_cocoon>, <mysticalworld:spindle>.transformDamage()]);
+recipes.addShapeless("silk_thread_spindle", silkThread * 2, [<mysticalworld:silk_cocoon>, <mysticalworld:spindle:*>.transformDamage()]);
 
 
 // silk cloth uses actual silk
