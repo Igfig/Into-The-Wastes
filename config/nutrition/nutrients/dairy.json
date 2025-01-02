@@ -5,9 +5,14 @@
 	"enabled": true,
 	"food": {
 		"oredict": [
+			"cropSoybean",
+			"egg",
+			"foodBoiledegg",
 			"foodButter",
 			"foodCheese",
 			"foodChocolatebar",
+			"foodFirmtofu",
+			"foodFriedegg",
 			"listAllmilk"
 		],
 		"items": [
@@ -19,10 +24,13 @@
 			"actuallyadditions:item_food:14",
 			"actuallyadditions:item_food:18",
 			"actuallyadditions:item_food:19",
+			"animania:bacon_omelette",
 			"animania:cheese_omelette",
 			"animania:jersey_cheese_wedge",
 			"animania:milk_bottle",
+			"animania:plain_omelette",
 			"animania:super_omelette",
+			"animania:truffle_omelette",
 			"aoa3:halycon_milk",
 			"arcticmobs:palesoup",
 			"betteranimalsplus:goatcheese",
