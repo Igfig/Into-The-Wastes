@@ -2,11 +2,16 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 
-val items = itemUtils.getItemsByRegexRegistryName(".*") as IItemStack[];
+var items = itemUtils.getItemsByRegexRegistryName(".*") as IItemStack[];
+
+items += <roots:pereskia_bulb>;
 
 for item in items {
     if (item.isFood) {
-		if (<ore:foodSoup> has item) {
+		if (<ore:rotten> has item) {
+			// leave it at 64; we're hardly going to be eating it anyway
+			return;
+		} else if (<ore:foodSoup> has item) {
 			item.maxStackSize = 1;
 		} else if (item.maxStackSize > 16) {
 			item.maxStackSize = 16;

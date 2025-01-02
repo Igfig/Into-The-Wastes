@@ -206,12 +206,13 @@ import mods.foodtweaker.Tweaker;
 
 // make sure all meat is considered meat internally
 
-function makeMeat(items as IItemStack[]) {
-	for item in items {
-		val meatInfo = FoodInfo(item).setMeat(true);
-		Tweaker.changeFoodStats(item, meatInfo);
-	}
+for item in <ore:foodMeat>.items {
+	val meatInfo = FoodInfo(item).setMeat(true);
+	Tweaker.changeFoodStats(item, meatInfo);
 }
 
-makeMeat(<ore:foodMeat>.items);
-makeMeat([<minecraft:rotten_flesh>]);
+
+// make rotten flesh even worse food, to bring it in line with other raw meats and make up for it having a full 64 stack size
+
+val rottenFleshInfo = FoodInfo(<minecraft:rotten_flesh>).setHeal(1).setMeat(true);
+Tweaker.changeFoodStats(<minecraft:rotten_flesh>, rottenFleshInfo);
