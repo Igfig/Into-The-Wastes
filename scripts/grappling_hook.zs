@@ -97,6 +97,13 @@ recipes.addShapeless("swing_hook", swingHook,
 	}, null);
 
 
+// add upgraded forms to JEI
+
+mods.jei.JEI.addItem(longHook);
+mods.jei.JEI.addItem(fastHook);
+mods.jei.JEI.addItem(swingHook);
+
+
 // add some notes to upgrades
 
 <grapplemod:ropeupgradeitem>.addTooltip("Increases rope length to up to 60m");
