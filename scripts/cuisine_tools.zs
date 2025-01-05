@@ -59,4 +59,8 @@ mods.jei.JEI.addDescription(<cuisine:drinkro>, "Put two or more juices in the to
 // fix a typo
 
 <cuisine:kitchen_knife>.removeTooltip("Left ot");
-<cuisine:kitchen_knife>.addTooltip("Left and/or right click repeatedly on chopping board to chop food into various forms");
+<cuisine:kitchen_knife>.removeTooltip("chopping board to");
+<cuisine:kitchen_knife>.removeTooltip("chop things");
+<cuisine:kitchen_knife>.removeTooltip("various");
+<cuisine:kitchen_knife>.addTooltip("Left and/or right click repeatedly on chopping");
+<cuisine:kitchen_knife>.addTooltip("board to chop food into various forms");

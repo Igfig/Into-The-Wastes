@@ -3,14 +3,20 @@ val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"});
 waterBottle.addTooltip("Not safe to drink");
 waterBottle.addTooltip("Boil in a furnace, or craft with a charcoal filter");
 
-<minecraft:cauldron>.addTooltip("Can't pipe fluids in and out, but bottle dispensers work");
+<minecraft:cauldron>.addTooltip("Accepts fluids from fluid tubes only");
+<minecraft:cauldron>.addTooltip("Does not output to any pipes");
 <minecraft:cauldron>.addTooltip("Zoo animals can only drink from this or water bowls");
+
+mods.jei.JEI.addDescription(<minecraft:cauldron>, "There are only three ways to move fluids in and out of a cauldron:", "First , manually.", "Second, you can use a dispenser with an empty bucket or bottle.", "Finally, you can insert, but not extract, fluids using a Fluid Tube (but not other types of pipe).");
 
 // hopper, as opposed to sorting hopper
 <minecraft:hopper>.addTooltip("Prioritizes downwards movement");
 
 // rationale for why potions make you thirsty
 <minecraft:nether_wart>.addTooltip("Unexpectedly salty");
+
+// new compass functionality
+<minecraft:compass>.addTooltip("Shift-right-click a bed, banner, or beacon to point to that location.");
 
 // undocumented item sources
 <toughasnails:ice_cube>.addTooltip("Drops from ice blocks");

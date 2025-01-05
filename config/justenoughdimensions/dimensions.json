@@ -7,7 +7,7 @@
             "dimensiontype":
             {
                 "id": -1,
-                "name": "Nether",
+                "name": "the_nether",
                 "keeploaded": false,
                 "worldprovider": "WorldProviderHellJED",
                 "require_exact_match": true

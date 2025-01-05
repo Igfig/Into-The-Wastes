@@ -50,3 +50,9 @@ for item, tooltip in infused_gear {
 	item.addTooltip(tooltip);
 	mods.jei.JEI.addDescription(item, "Stand still and crouch to repair this item, using Aura from a carried Aura Cache.");
 }
+
+
+// TEMP recipe for Bottled Ghosts because there's a weird compatibility issue between Nature's Aura and JED
+
+recipes.addShapeless(<naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:nether"}), 
+	[<naturesaura:bottle_two_the_rebottling>, <minecraft:soul_sand>]);

@@ -10,6 +10,8 @@ import scripts.functions.unfunkIngredient;
 
 val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"}).giveBack(<minecraft:glass_bottle>);
 val flour = unfunkIngredient(<ore:foodFlour>);
+val waterBucketIngredient = <minecraft:water_bucket>.transformReplace(<minecraft:bucket>) | <ceramics:clay_bucket>.withTag({fluids: {FluidName: "purified_water", Amount: 1000}}).transformReplace(<ceramics:clay_bucket>);
+val soyBucketIngredient = <forge:bucketfilled>.withTag({FluidName: "soy_milk", Amount: 1000}).transformReplace(<minecraft:bucket>) | <ceramics:clay_bucket>.withTag({fluids: {FluidName: "soy_milk", Amount: 1000}}).transformReplace(<ceramics:clay_bucket>);
 
 
 // flour cooks directly to bread, and crafts to two dough
@@ -17,7 +19,7 @@ val flour = unfunkIngredient(<ore:foodFlour>);
 recipes.remove(<cuisine:food:2>);
 
 recipes.addShapeless("dough", <cuisine:food:2> * 2, [waterBottle, flour]); // dough
-recipes.addShapeless("dough_bucket", <cuisine:food:2> * 8, [<liquid:water> * 1000, flour, flour, flour, flour]); // dough from bucket
+recipes.addShapeless("dough_bucket", <cuisine:food:2> * 8, [waterBucketIngredient, flour, flour, flour, flour]); // dough from bucket
 BasinThrowing.add(flour, <liquid:water> * 250, <cuisine:food:2> * 2); // alternate dough recipe
 
 furnace.addRecipe(<minecraft:bread>, flour, 0.1); // flour
@@ -30,9 +32,15 @@ for item in flour.items {
 	item.withEmptyTag().addTooltip("Crafts with water into two dough");
 }
 
+
 // another way to craft tofu
 
 BasinThrowing.add(<ore:dustCrudesalt>, <liquid:soy_milk> * 1000, <cuisine:tofu_block>);
+
+
+// craft soy milk into milk bottles
+
+recipes.addShapeless("soy_milk_bottle", <animania:milk_bottle> * 4, [soyBucketIngredient, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>]);
 
 
 // change mill liquid recipe quantities so we don't need food to stack to 10

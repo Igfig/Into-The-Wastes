@@ -13,7 +13,8 @@ import mods.foodtweaker.Tweaker;
 <ore:foodRice>.add(<cuisine:food:4>);
 
 <ore:cropCorn>.add(<wildnature:corn>, <cuisine:crops:13>);
-<ore:listAllgrain>.add(<minecraft:wheat>, <wildnature:corn>, <cuisine:crops:1>, <cuisine:crops:2>, <cuisine:crops:3>, <cuisine:crops:13>, <cuisine:food:4>); // sesame, soybean, rice, corn, rice
+<ore:listAllgrain>.add(<minecraft:wheat>, <wildnature:corn>, <cuisine:crops:1>, <cuisine:crops:3>, <cuisine:crops:13>, <cuisine:food:4>); // sesame, rice, corn, rice
+<ore:listAllgrain>.remove(<cuisine:food:0>); // tofu
 
 <ore:cropAcorn>.add(<wildnature:acorn>, <lilcritters:acorn>);
 <ore:listAllnut>.add(<wildnature:acorn>, <lilcritters:acorn>, <lilcritters:pine_cone>, <cuisine:crops:0>); // peanut
@@ -206,12 +207,13 @@ import mods.foodtweaker.Tweaker;
 
 // make sure all meat is considered meat internally
 
-function makeMeat(items as IItemStack[]) {
-	for item in items {
-		val meatInfo = FoodInfo(item).setMeat(true);
-		Tweaker.changeFoodStats(item, meatInfo);
-	}
+for item in <ore:foodMeat>.items {
+	val meatInfo = FoodInfo(item).setMeat(true);
+	Tweaker.changeFoodStats(item, meatInfo);
 }
 
-makeMeat(<ore:foodMeat>.items);
-makeMeat([<minecraft:rotten_flesh>]);
+
+// make rotten flesh even worse food, to bring it in line with other raw meats and make up for it having a full 64 stack size
+
+val rottenFleshInfo = FoodInfo(<minecraft:rotten_flesh>).setHeal(1).setMeat(true);
+Tweaker.changeFoodStats(<minecraft:rotten_flesh>, rottenFleshInfo);
