@@ -2,12 +2,32 @@
 	"dependencies": "thermalfoundation",
 	"populate": {
 		"oil_sand": {
-			"enabled": "true",
-			"distribution": "sequential",
-			"features": [
-				{
-					"distribution": "uniform",
-					"generator": {
+			"distribution": "gaussian",
+			"center-height": {
+				"value-a": {
+					"value": { "world-data": "SURFACE_BLOCK" }, 
+					"min": 64,
+					"max": 72
+				},
+				"value-b": 16,
+				"operation": "SUBTRACT"
+			},
+			"spread": 5,
+			"material": [
+				"air",
+				"sandstone",
+				"red_sandstone",
+				"stone",
+				"gravel",
+				"dirt",
+				"environs:dried_stone",
+				"traverse:red_rock",
+				"quark:jasper"
+			],
+			"generator": {
+				"type": "sequential",
+				"generators": [
+					{
 						"type": "geode",
 						"block": [
 							{
@@ -18,48 +38,57 @@
 								"weight": 80
 							},
 							{
-								"name": "minecraft:sand",
+								"name": "sand",
 								"weight": 20
 							}
 						],
-						"material": [
-							"minecraft:sand",
-							"minecraft:sandstone",
-							"minecraft:red_sandstone",
-							"minecraft:stone",
-							{
-								"name": "minecraft:sand",
-								"properties": {
-									"variant": "red_sand"
-								}
-							}
-						],
-						"hollow": "true",
+						"crust": "sandstone",
 						"filler": "thermalfoundation:fluid_crude_oil",
-						"crust": "minecraft:sandstone"
+						"hollow": "true",
+						"material": [
+							"air",
+							"sand",
+							"sandstone",
+							"red_sandstone",
+							"stone",
+							"gravel",
+							"hardened_clay",
+							"stained_hardened_clay",
+							"dirt",
+							"quark:jasper",
+							"thermalfoundation:ore_fluid",
+							"thermalfoundation:fluid_crude_oil",
+							"chisel_plus:grimstone",
+							"chisel_plus:holystone"
+						]
 					},
-					"cluster-count": 20,
-					"min-height": 30,
-					"max-height": 90,
-				},
-				{
-					"distribution": "surface",
-					"generator": {
+					{
 						"type": "spout",
 						"block": "thermalfoundation:fluid_crude_oil",
 						"radius": 0,
-						"height": {
-							"min": 3,
-							"max": 8
-						}
-					},
-					"material": "minecraft:sand",
-					"cluster-count": 2
-				}
-			],
+						"height": 24,
+						"material": [
+							"air",
+							"sand",
+							"sandstone",
+							"red_sandstone",
+							"stone",
+							"gravel",
+							"hardened_clay",
+							"stained_hardened_clay",
+							"dirt",
+							"quark:jasper",
+							"thermalfoundation:ore_fluid",
+							"thermalfoundation:fluid_crude_oil",
+							"chisel_plus:grimstone",
+							"chisel_plus:holystone"
+						]
+					}
+				]
+			},
 			"chunk-chance": 2000,
+			"cluster-count": {"min": 1, "max": 3},
 			"in-village": "false",
-			"retrogen": "true",
 			"biome": {
 				"restriction": "whitelist",
 				"value": [

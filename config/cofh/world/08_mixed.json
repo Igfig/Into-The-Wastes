@@ -1,0 +1,144 @@
+{
+	"dependencies": ["earthworks", "quark", "chisel", "thermalfoundation", "crossroads"],
+	"populate": {
+		"rocks": {
+			"distribution": "uniform",
+			"generator": [
+				{
+					"block": {
+						"name": "stone",
+						"properties": {
+							"variant": "diorite"
+						}
+					},
+					"material": "stone",
+					"cluster-size": 300
+				},
+				{
+					"block": {
+						"name": "stone",
+						"properties": {
+							"variant": "granite"
+						}
+					},
+					"material": "stone",
+					"cluster-size": 300
+				},
+				{
+					"block": {
+						"name": "stone",
+						"properties": {
+							"variant": "andesite"
+						}
+					},
+					"material": "stone",
+					"cluster-size": 300
+				},
+				{
+					"block": "earthworks:block_chalk",
+					"material": "stone",
+					"cluster-size": 300
+				},
+				{
+					"block": "earthworks:block_slate",
+					"material": "stone",
+					"cluster-size": 300
+				},
+				{
+					"block": "earthworks:block_slate_green",
+					"material": "stone",
+					"cluster-size": 300
+				},
+				{
+					"block": "earthworks:block_slate_purple",
+					"material": "stone",
+					"cluster-size": 300
+				},
+				{
+					"block": "quark:jasper",
+					"material": "stone",
+					"cluster-size": 300
+				},
+				{
+					"block": "quark:limestone",
+					"material": "stone",
+					"cluster-size": 300
+				},
+				{
+					"block": {
+						"name": "chisel:marble2",
+						"properties": {
+							"variation": "7"
+						}
+					},
+					"material": "stone",
+					"cluster-size": 300
+				}
+			],
+			"cluster-count": 2,
+			"min-height": 2,
+			"max-height": 256,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		
+		"quartz": {
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "quartz_ore",
+						"weight": 50
+					},
+					{
+						"name": "chisel:netherrack",
+						"properties": {
+							"variation": "6"
+						},
+						"weight": 50
+					},
+					{
+						"name": "crossroads:ore_ruby",
+						"weight": 1
+					},
+					{
+						"name": "thermalfoundation:ore_fluid",
+						"properties": {
+							"type": "glowstone"
+						}
+						"weight": 1
+					}
+				],
+				"material": "netherrack",
+				"cluster-size": 60
+			},
+			"cluster-count": 4,
+			"chunk-chance": 8,
+			"min-height": 10,
+			"max-height": 118,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "NETHER"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+	}
+}

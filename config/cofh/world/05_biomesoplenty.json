@@ -1,0 +1,332 @@
+{
+	"dependencies": ["biomesoplenty", "mysticalworld"],
+	"populate": {
+		"amber": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "biomesoplenty:gem_ore",
+					"properties": {
+					  "variant": "amber"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			}
+			"cluster-count": {
+				"min": 75,
+				"max": 150
+			},
+			"chunk-chance": 50,
+			"min-height": 4,
+			"max-height": 72,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "FOREST"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		
+		"malachite": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "biomesoplenty:gem_ore",
+					"properties": {
+					  "variant": "malachite"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			}
+			"cluster-count": {
+				"min": 75,
+				"max": 150
+			},
+			"chunk-chance": 50,
+			"min-height": 4,
+			"max-height": 72,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "SWAMP"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		
+		"peridot": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "biomesoplenty:gem_ore",
+					"properties": {
+					  "variant": "peridot"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			}
+			"cluster-count": {
+				"min": 75,
+				"max": 150
+			},
+			"chunk-chance": 50,
+			"min-height": 4,
+			"max-height": 72,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "PLAINS"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		
+		"ruby": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "biomesoplenty:gem_ore",
+					"properties": {
+					  "variant": "ruby"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			}
+			"cluster-count": {
+				"min": 75,
+				"max": 150
+			},
+			"chunk-chance": 50,
+			"min-height": 4,
+			"max-height": 72,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "SAVANNA"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		
+		"sapphire": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "biomesoplenty:gem_ore",
+					"properties": {
+					  "variant": "sapphire"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			}
+			"cluster-count": {
+				"min": 75,
+				"max": 150
+			},
+			"chunk-chance": 50,
+			"min-height": 4,
+			"max-height": 72,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "OCEAN"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		
+		"tanzanite": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "biomesoplenty:gem_ore",
+					"properties": {
+					  "variant": "tanzanite"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			}
+			"cluster-count": {
+				"min": 75,
+				"max": 150
+			},
+			"chunk-chance": 50,
+			"min-height": 4,
+			"max-height": 72,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "SNOWY"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		
+		"topaz": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "biomesoplenty:gem_ore",
+					"properties": {
+					  "variant": "topaz"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			}
+			"cluster-count": {
+				"min": 75,
+				"max": 150
+			},
+			"chunk-chance": 50,
+			"min-height": 4,
+			"max-height": 72,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "LUSH"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+
+		"amethyst": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "mysticalworld:amethyst_ore",
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			}
+			"cluster-count": {
+				"min": 75,
+				"max": 150
+			},
+			"chunk-chance": 50,
+			"min-height": 4,
+			"max-height": 72,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "JUNGLE"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		
+		"end_amethyst": {
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "biomesoplenty:gem_ore",
+					"properties": {
+					  "variant": "amethyst"
+					}
+				},
+				"material": "minecraft:end_stone",
+				"cluster-size": 16
+			},
+			"cluster-count": 30,
+			"chunk-chance": 50,
+			"min-height": 4,
+			"max-height": 200,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "END"
+					}
+				]
+			},
+			"dimension": "all"
+		}
+	}
+}

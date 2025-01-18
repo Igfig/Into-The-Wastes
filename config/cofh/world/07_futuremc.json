@@ -1,0 +1,33 @@
+ {
+	"dependencies": ["futuremc"],
+	"populate": {
+		
+		"debris":{
+			"distribution": "gaussian",
+			"generator": {
+				"block":"futuremc:ancient_debris",
+				"material": "minecraft:netherrack",
+				"cluster-size": 1
+			},
+			"cluster-count": 2,
+			"chunk-chance": 1,
+			"center-height": 16,
+			"spread": 8,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "NETHER"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		}
+	}
+}
