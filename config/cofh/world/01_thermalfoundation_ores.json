@@ -13,7 +13,14 @@
 								"type": "silver"
 							}
 						},
-						"material": "minecraft:stone",
+						"material": [
+							"stone",
+							"dirt",
+							"gravel",
+							"chisel:basalt2",
+							"chisel_plus:grimstone",
+							"chisel_plus:holystone"
+						],
 						"type": "large-vein",
 						"cluster-size": 40
 					},
@@ -39,7 +46,13 @@
 							"double_plant",
 							"snow_layer",
 							"biomesoplenty:plant_0",
-							"biomesoplenty:plant_1"
+							"biomesoplenty:plant_1",
+							"wildnature:small_grass",
+							"wildnature:dead_short_grass",
+							"wildnature:desert_grass",
+							"wildnature:tallgrass_wheat",
+							"wildnature:tallgrass_flower",
+							"wildnature:medium_grass"
 						]
 					},
 					"distribution": "surface",
@@ -74,7 +87,7 @@
 					]
 				}
 			],
-			"chunk-chance": 150,
+			"chunk-chance": 200,
 			"biome": {
 				"restriction": "whitelist",
 				"value": [
@@ -84,8 +97,7 @@
 					},
 					{
 						"type": "dictionary",
-						"entry": "COLD",
-						"rarity": 2
+						"entry": "COLD"
 					}
 				]
 			},
@@ -110,7 +122,14 @@
 								"type": "lead"
 							}
 						},
-						"material": "minecraft:stone",
+						"material": [
+							"stone",
+							"dirt",
+							"gravel",
+							"chisel:basalt2",
+							"chisel_plus:grimstone",
+							"chisel_plus:holystone"
+						],
 						"type": "large-vein",
 						"cluster-size": 40
 					},
@@ -136,7 +155,13 @@
 							"double_plant",
 							"snow_layer",
 							"biomesoplenty:plant_0",
-							"biomesoplenty:plant_1"
+							"biomesoplenty:plant_1",
+							"wildnature:small_grass",
+							"wildnature:dead_short_grass",
+							"wildnature:desert_grass",
+							"wildnature:tallgrass_wheat",
+							"wildnature:tallgrass_flower",
+							"wildnature:medium_grass"
 						]
 					},
 					"distribution": "surface",
@@ -171,7 +196,7 @@
 					]
 				}
 			],
-			"chunk-chance": 150,
+			"chunk-chance": 200,
 			"biome": {
 				"restriction": "whitelist",
 				"value": [
@@ -181,8 +206,7 @@
 					},
 					{
 						"type": "dictionary",
-						"entry": "COLD",
-						"rarity": 2
+						"entry": "COLD"
 					}
 				]
 			},
@@ -228,124 +252,6 @@
 					1
 				]
 			}
-		}
-	},
-	
-	"redstone": {
-		"distribution": "sequential",
-		"features": [
-			{
-				"distribution": "uniform",
-				"generator": {
-					"block": [
-						{
-							"name":"redstone_ore",
-							"weight": 20
-						},
-						{
-							"name": "thermalfoundation:ore_fluid",
-							"properties": {
-								"type": "redstone"
-							},
-							"weight": 1
-						}
-					],
-					"material": "minecraft:stone",
-					"type": "stalagmite",
-					"gen-body": "minecraft:stone",
-					"min-height": 16,
-					"height-variance": 8,
-					"gen-size": 5,
-					"size-variance": 3
-				},
-				"cluster-count": 1,
-				"min-height": 2,
-				"max-height": 32,
-			},
-			{
-				"generator": {
-					"block": [
-						{
-							"name": "prospects:flower",
-							"properties": {
-								"type": "flame_lily"
-							}
-						}
-					],
-					"type": "cluster",
-					"cluster-size": 1,
-					"material": [
-						"air",
-						"tallgrass",
-						"double_plant",
-						"snow_layer",
-						"biomesoplenty:plant_0",
-						"biomesoplenty:plant_1"
-					]
-				},
-				"distribution": "surface",
-				"cluster-count": 10,
-				"material": [
-					"sand",
-					"grass",
-					"dirt",
-					"gravel",
-					"mycelium",
-					"biomesoplenty:grass",
-					"biomesoplenty:dirt",
-					"environs:end_grass",
-					"environs:frozen_grass",
-					"environs:dried_dirt",
-					"environs:coarse_dried_dirt",
-					"environs:ranges_dirt",
-					"environs:end_dirt",
-					"environs:coarse_end_dirt",
-					"environs:frozen_dirt",
-					"environs:coarse_frozen_dirt",
-					"wildnature:brown_grass_block",
-					"wildnature:mold_grass_block",
-					"wildnature:desert_grass_block",
-					"wildnature:dried_grass_block",
-					"wildnature:overgrown_stone",
-					"wildnature:browndirt",
-					"wildnature:molddirt",
-					"wildnature:desertdirt",
-					"wildnature:drieddirt",
-					"wildnature:frozen_dirt"
-				]
-			}
-		],
-		"chunk-chance": 150,
-		"biome": {
-			"restriction": "whitelist",
-			"value": [
-				{
-					"type": "dictionary",
-					"entry": "HOT"
-				},
-				{
-					"type": "dictionary",
-					"entry": "WARM",
-					"rarity": 2
-				},
-				{
-					"type": "dictionary",
-					"entry": "COOL",
-					"rarity": 2
-				},
-				{
-					"type": "dictionary",
-					"entry": "COLD",
-					"rarity": 2
-				}
-			]
-		},
-		"dimension": {
-			"restriction": "blacklist",
-			"value": [
-				-1,
-				1
-			]
 		}
 	}
 }

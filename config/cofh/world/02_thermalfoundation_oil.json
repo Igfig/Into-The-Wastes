@@ -7,7 +7,7 @@
 				"value-a": {
 					"value": { "world-data": "SURFACE_BLOCK" }, 
 					"min": 64,
-					"max": 72
+					"max": 80
 				},
 				"value-b": 16,
 				"operation": "SUBTRACT"
@@ -19,6 +19,8 @@
 				"red_sandstone",
 				"stone",
 				"gravel",
+				"hardened_clay",
+				"stained_hardened_clay",
 				"dirt",
 				"environs:dried_stone",
 				"traverse:red_rock",
@@ -50,16 +52,18 @@
 							"sand",
 							"sandstone",
 							"red_sandstone",
+							"dirt",
 							"stone",
 							"gravel",
 							"hardened_clay",
 							"stained_hardened_clay",
-							"dirt",
+							"biomesoplenty:sand",
 							"quark:jasper",
 							"thermalfoundation:ore_fluid",
 							"thermalfoundation:fluid_crude_oil",
 							"chisel_plus:grimstone",
-							"chisel_plus:holystone"
+							"chisel_plus:holystone",
+							"environs:dried_stone"
 						]
 					},
 					{
@@ -72,21 +76,23 @@
 							"sand",
 							"sandstone",
 							"red_sandstone",
+							"dirt",
 							"stone",
 							"gravel",
 							"hardened_clay",
 							"stained_hardened_clay",
-							"dirt",
+							"biomesoplenty:sand",
 							"quark:jasper",
 							"thermalfoundation:ore_fluid",
 							"thermalfoundation:fluid_crude_oil",
 							"chisel_plus:grimstone",
-							"chisel_plus:holystone"
+							"chisel_plus:holystone",
+							"environs:dried_stone"
 						]
 					}
 				]
 			},
-			"chunk-chance": 2000,
+			"chunk-chance": 1800,
 			"cluster-count": {"min": 1, "max": 3},
 			"in-village": "false",
 			"biome": {

@@ -1,4 +1,5 @@
 {
+	"priority": -100,
 	"dependencies": ["earthworks", "quark", "chisel", "thermalfoundation", "crossroads"],
 	"populate": {
 		"rocks": {

@@ -78,10 +78,17 @@
 					"distribution": "uniform",
 					"generator": {
 						"block": "coal_ore",
-						"material": "minecraft:stone",
-						"cluster-size": 120
+						"material": [
+							"stone",
+							"dirt",
+							"gravel",
+							"chisel:basalt2",
+							"chisel_plus:grimstone",
+							"chisel_plus:holystone"
+						],
+						"cluster-size": 150
 					},
-					"cluster-count": 3,
+					"cluster-count": 4,
 					"min-height": 2,
 					"max-height": 96
 				},
@@ -103,7 +110,13 @@
 							"double_plant",
 							"snow_layer",
 							"biomesoplenty:plant_0",
-							"biomesoplenty:plant_1"
+							"biomesoplenty:plant_1",
+							"wildnature:small_grass",
+							"wildnature:dead_short_grass",
+							"wildnature:desert_grass",
+							"wildnature:tallgrass_wheat",
+							"wildnature:tallgrass_flower",
+							"wildnature:medium_grass"
 						]
 					},
 					"distribution": "surface",
@@ -138,7 +151,7 @@
 					]
 				}
 			],
-			"chunk-chance": 120,
+			"chunk-chance": 250,
 			"biome": {
 				"restriction": "whitelist",
 				"value": [
@@ -178,7 +191,14 @@
 				{
 					"generator": {
 						"block": "iron_ore",
-						"material": "minecraft:stone",
+						"material": [
+							"stone",
+							"dirt",
+							"gravel",
+							"chisel:basalt2",
+							"chisel_plus:grimstone",
+							"chisel_plus:holystone"
+						],
 						"type": "large-vein",
 						"cluster-size": 400
 					},
@@ -205,7 +225,13 @@
 							"double_plant",
 							"snow_layer",
 							"biomesoplenty:plant_0",
-							"biomesoplenty:plant_1"
+							"biomesoplenty:plant_1",
+							"wildnature:small_grass",
+							"wildnature:dead_short_grass",
+							"wildnature:desert_grass",
+							"wildnature:tallgrass_wheat",
+							"wildnature:tallgrass_flower",
+							"wildnature:medium_grass"
 						]
 					},
 					"distribution": "surface",
@@ -240,7 +266,7 @@
 					]
 				}
 			],
-			"chunk-chance": 150,
+			"chunk-chance": 300,
 			"biome": {
 				"restriction": "whitelist",
 				"value": [
@@ -281,9 +307,16 @@
 					"distribution": "uniform",
 					"generator": {
 						"block": "gold_ore",
-						"material": "minecraft:stone",
+						"material": [
+							"stone",
+							"dirt",
+							"gravel",
+							"chisel:basalt2",
+							"chisel_plus:grimstone",
+							"chisel_plus:holystone"
+						],
 						"type": "large-vein",
-						"cluster-size": 250
+						"cluster-size": 400
 					},
 					"cluster-count": 2,
 					"min-height": 2,
@@ -308,7 +341,13 @@
 							"double_plant",
 							"snow_layer",
 							"biomesoplenty:plant_0",
-							"biomesoplenty:plant_1"
+							"biomesoplenty:plant_1",
+							"wildnature:small_grass",
+							"wildnature:dead_short_grass",
+							"wildnature:desert_grass",
+							"wildnature:tallgrass_wheat",
+							"wildnature:tallgrass_flower",
+							"wildnature:medium_grass"
 						]
 					},
 					"distribution": "surface",
@@ -343,7 +382,7 @@
 					]
 				}
 			],
-			"chunk-chance": 200,
+			"chunk-chance": 300,
 			"biome": {
 				"restriction": "whitelist",
 				"value": [
@@ -353,8 +392,7 @@
 					},
 					{
 						"type": "dictionary",
-						"entry": "WARM",
-						"rarity": 2
+						"entry": "WARM"
 					},
 					{
 						"type": "dictionary",

@@ -22,7 +22,18 @@
 						},
 						"hollow": "true",
 						"filler": "lava",
-						"material": "minecraft:stone"
+						"material": [
+							"air",
+							"stone",
+							"dirt",
+							"gravel",
+							"obsidian",
+							"lava",
+							"chisel:basalt2",
+							"chisel_plus:grimstone",
+							"chisel_plus:holystone"
+							
+						]
 					},
 					"cluster-count": 6,
 					"min-height": 2,
@@ -46,7 +57,13 @@
 							"double_plant",
 							"snow_layer",
 							"biomesoplenty:plant_0",
-							"biomesoplenty:plant_1"
+							"biomesoplenty:plant_1",
+							"wildnature:small_grass",
+							"wildnature:dead_short_grass",
+							"wildnature:desert_grass",
+							"wildnature:tallgrass_wheat",
+							"wildnature:tallgrass_flower",
+							"wildnature:medium_grass"
 						]
 					},
 					"distribution": "surface",
@@ -110,7 +127,7 @@
 						"variant": "gold"
 					}
 				},
-				"material": "minecraft:stone",
+				"material": ["stone", "hardened_clay", "stained_hardened_clay"],
 				"cluster-size": 1
 			},
 			"cluster-count": 20,
