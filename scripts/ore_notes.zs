@@ -1,11 +1,11 @@
 <minecraft:coal_ore>.addTooltip("Appears everywhere, sometimes in large deposits below 96y");
 <minecraft:iron_ore>.addTooltip("Appears rarely in oases, in large veins between 32y and 64y");
 <minecraft:gold_ore>.addTooltip("Appears rarely in oases, in large veins below 32y");
-<minecraft:redstone_ore>.addTooltip("Appears in small amounts in oases");
-<minecraft:redstone_ore>.addTooltip("Appears rarely in certain chunks in oases, in many medium veins below 64y");
+<minecraft:redstone_ore>.addTooltip("Appears in small amounts in all oases");
+<minecraft:redstone_ore>.addTooltip("Appears rarely in oases in large conical deposits below 64y");
 <minecraft:lapis_ore>.addTooltip("Appears in oases, mostly around 24y");
-<minecraft:diamond_ore>.addTooltip("Appears in very small amounts in oases");
-<minecraft:diamond_ore>.addTooltip("Appears rarely in certain chunks in oases, in many small deposits below 32y.");
+<minecraft:diamond_ore>.addTooltip("Appears in very small amounts in all oases");
+<minecraft:diamond_ore>.addTooltip("Appears rarely in oases, in lava-filled geodes below 32y.");
 <minecraft:quartz_ore>.addTooltip("Appears rarely in the Nether, in large deposits at any height.");
 
 <minecraft:emerald_ore>.addTooltip("Appears in certain chunks in mountains");
@@ -25,11 +25,11 @@
 <crossroads:ore_tin>.addTooltip("Appears rarely in oases beyond +/-1000z, in large veins below 32y");
 <crossroads:ore_tin>.addTooltip("Must be smelted in a Heating Crucible");
 
-<thermalfoundation:ore:2>.addTooltip("Appears rarely in oases beyond +/-3000z, in large veins between 16y and 48y");
+<thermalfoundation:ore:2>.addTooltip("Appears rarely in oases beyond +/-3000z, in many small veins below 64y");
 <thermalfoundation:ore:2>.addTooltip("Must be smelted in a Heating Crucible");
-<thermalfoundation:ore:3>.addTooltip("Appears rarely in oases beyond +/-3000z, in large veins between 16y and 48y");
+<thermalfoundation:ore:3>.addTooltip("Appears rarely in oases beyond +/-3000z, in many small veins below 64y");
 <thermalfoundation:ore:3>.addTooltip("Must be smelted in a Heating Crucible");
-<thermalfoundation:ore:6>.addTooltip("Appears rarely in oases beyond +/-6000z, in medium veins below 32y");
+<thermalfoundation:ore:6>.addTooltip("Appears rarely in oases beyond +/-6000z, in medium veins in caves below 32y");
 <thermalfoundation:ore:6>.addTooltip("Must be smelted in a Heating Crucible");
 
 <thermalfoundation:ore_fluid:0>.addTooltip("Appears in the desert"); // oil sand

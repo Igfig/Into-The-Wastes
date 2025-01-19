@@ -1,0 +1,458 @@
+{
+	"dependencies": ["railcraft", "prospects"],
+	"populate": {
+		"diamond": {
+			"distribution": "sequential",
+			"features": [
+				{
+					"distribution": "uniform",
+					"generator": {
+						"type": "geode",
+						"crust": {
+							"name": "railcraft:generic",
+							"properties": {
+								"variant": "stone_abyssal"
+							}
+						},
+						"block": {
+							"name": "railcraft:ore",
+							"properties": {
+								"variant": "dark_diamond"
+							}
+						},
+						"hollow": "true",
+						"filler": "lava",
+						"material": [
+							"air",
+							"stone",
+							"dirt",
+							"gravel",
+							"obsidian",
+							"lava",
+							"chisel:basalt2",
+							"chisel_plus:grimstone",
+							"chisel_plus:holystone"
+							
+						]
+					},
+					"cluster-count": 6,
+					"min-height": 2,
+					"max-height": 48
+				},
+				{
+					"generator": {
+						"block": [
+							{
+								"name": "prospects:flower",
+								"properties": {
+									"type": "vallozia"
+								}
+							}
+						],
+						"type": "cluster",
+						"cluster-size": 1,
+						"material": [
+							"air",
+							"tallgrass",
+							"double_plant",
+							"snow_layer",
+							"biomesoplenty:plant_0",
+							"biomesoplenty:plant_1",
+							"wildnature:small_grass",
+							"wildnature:dead_short_grass",
+							"wildnature:desert_grass",
+							"wildnature:tallgrass_wheat",
+							"wildnature:tallgrass_flower",
+							"wildnature:medium_grass"
+						]
+					},
+					"distribution": "surface",
+					"cluster-count": 10,
+					"material": [
+						"sand",
+						"grass",
+						"dirt",
+						"gravel",
+						"mycelium",
+						"biomesoplenty:grass",
+						"biomesoplenty:dirt",
+						"environs:end_grass",
+						"environs:frozen_grass",
+						"environs:dried_dirt",
+						"environs:coarse_dried_dirt",
+						"environs:ranges_dirt",
+						"environs:end_dirt",
+						"environs:coarse_end_dirt",
+						"environs:frozen_dirt",
+						"environs:coarse_frozen_dirt",
+						"wildnature:brown_grass_block",
+						"wildnature:mold_grass_block",
+						"wildnature:desert_grass_block",
+						"wildnature:dried_grass_block",
+						"wildnature:overgrown_stone",
+						"wildnature:browndirt",
+						"wildnature:molddirt",
+						"wildnature:desertdirt",
+						"wildnature:drieddirt",
+						"wildnature:frozen_dirt"
+					]
+				}
+			],
+			"chunk-chance": 400,
+			"biome": {
+				"restriction": "blacklist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "DESERT"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		
+		"mesa_gold": {
+			"enabled": true,
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "railcraft:ore_metal_poor",
+					"properties": {
+						"variant": "gold"
+					}
+				},
+				"material": ["stone", "hardened_clay", "stained_hardened_clay"],
+				"cluster-size": 1
+			},
+			"cluster-count": 20,
+			"min-height": 32,
+			"max-height": 256,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "MESA"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		
+		"extra_ores_hot": {
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "iron"
+						},
+						"weight": 40
+					},
+					{
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "copper"
+						},
+						"weight": 30
+					},
+					{
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "gold"
+						},
+						"weight": 30
+					}
+				],				
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			},
+			"cluster-count": 80,
+			"min-height": 2,
+			"max-height": 64,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "HOT"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		
+		"extra_ores_warm": {
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "iron"
+						},
+						"weight": 20
+					},
+					{
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "copper"
+						},
+						"weight": 15
+					},
+					{
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "tin"
+						},
+						"weight": 30
+					},
+					{
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "gold"
+						},
+						"weight": 15
+					}
+				],				
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			},
+			"cluster-count": 80,
+			"min-height": 2,
+			"max-height": 64,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "WARM"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		
+		"extra_ores_cool": {
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "iron"
+						},
+						"weight": 20
+					},
+					{
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "copper"
+						},
+						"weight": 15
+					},
+					{
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "tin"
+						},
+						"weight": 15
+					}
+					{
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "gold"
+						},
+						"weight": 15
+					},
+					{
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "silver"
+						},
+						"weight": 30
+					},
+					{
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "lead"
+						}
+						"weight": 30
+					}
+				],				
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			},	
+			"cluster-count": 80,
+			"min-height": 2,
+			"max-height": 64,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "COOL"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		
+		"extra_ores_cold": {
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+					{
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "iron"
+						},
+						"weight": 20
+					},
+					{
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "copper"
+						},
+						"weight": 15
+					},
+					{
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "tin"
+						},
+						"weight": 15
+					}
+					{
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "gold"
+						},
+						"weight": 15
+					},
+					{
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "silver"
+						},
+						"weight": 15
+					},
+					{
+						"name": "railcraft:ore_metal_poor",
+						"properties": {
+							"variant": "lead"
+						}
+						"weight": 15
+					},
+					{
+						"name": "diamond_ore",
+						"weight": 5
+					}
+				],				
+				"material": "minecraft:stone",
+				"cluster-size": 1
+			},
+			"cluster-count": 80,
+			"min-height": 2,
+			"max-height": 64,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "COLD"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		
+		"saltpeter": {
+			"distribution": "sequential",
+			"features": [
+				{
+					"distribution": "uniform",
+					"generator": {
+						"block": "railcraft:worldlogic",
+						"material": ["bedrock", "stone"],
+						"type": "cluster",
+						"cluster-size": 1
+					},
+					"cluster-count": 2,
+					"min-height": 0,
+					"max-height": 4,
+				},
+				{
+					"distribution": "surface",
+					"generator": {
+						"block": {
+							"name": "railcraft:ore",
+							"properties": {
+								"variant": "saltpeter"
+							},
+						},
+						"material": "sand",
+						"type": "cluster",
+						"cluster-size": 16
+					},
+					"material": "sand",
+					"cluster-count": 3
+				}
+			],
+			"chunk-chance": 800,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "SANDY"
+					}
+				]
+			},
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}

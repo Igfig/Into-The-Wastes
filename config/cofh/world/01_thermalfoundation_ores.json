@@ -1,91 +1,93 @@
 {
-	"dependencies": "thermalfoundation",
+	"dependencies": ["thermalfoundation", "prospects"],
 	"populate": {
-		"copper": {
-			"enabled": "true",
-			"distribution": "uniform",
-			"generator": {
-				"block": "crossroads:ore_copper",
-				"material": "minecraft:stone",
-				"type": "large-vein",
-				"cluster-size": 400
-			},
-			"cluster-count": 2,
-			"min-height": 16,
-			"max-height": 48
-			"chunk-chance": 150,
-			"retrogen": false,
-			"biome": {
-				"restriction": "blacklist",
-				"value": [
-					{
-						"type": "dictionary",
-						"entry": "DESERT"
-					}
-				]
-			},
-			"dimension": {
-				"restriction": "blacklist",
-				"value": [
-					-1,
-					1
-				]
-			}
-		},
-		"tin": {
-			"enabled": "true",
-			"distribution": "uniform",
-			"generator": {
-				"block": "crossroads:ore_tin",
-				"material": "minecraft:stone",
-				"type": "large-vein",
-				"cluster-size": 250
-			},
-			"cluster-count": 2,
-			"chunk-chance": 150,
-			"min-height": 2,
-			"max-height": 32,
-			"retrogen": false,
-			"biome": {
-				"restriction": "blacklist",
-				"value": [
-					{
-						"type": "dictionary",
-						"entry": "DESERT"
-					},
-					{
-						"type": "dictionary",
-						"entry": "HOT"
-					}
-				]
-			},
-			"dimension": {
-				"restriction": "blacklist",
-				"value": [
-					-1,
-					1
-				]
-			}
-		},
 		"silver": {
-			"enabled": "true",
-			"distribution": "uniform",
-			"generator": {
-				"block": {
-					"name": "thermalfoundation:ore",
-					"properties": {
-						"type": "silver"
-					}
+			"distribution": "sequential",
+			"features": [
+				{
+					"distribution": "uniform",
+					"generator": {
+						"block": {
+							"name": "thermalfoundation:ore",
+							"properties": {
+								"type": "silver"
+							}
+						},
+						"material": [
+							"stone",
+							"dirt",
+							"gravel",
+							"chisel:basalt2",
+							"chisel_plus:grimstone",
+							"chisel_plus:holystone"
+						],
+						"type": "large-vein",
+						"cluster-size": 40
+					},
+					"cluster-count": 10,
+					"min-height": 2,
+					"max-height": 64
 				},
-				"material": "minecraft:stone",
-				"type": "large-vein",
-				"cluster-size": 160
-			},
-			"cluster-count": 2,
-			"chunk-chance": 150,
-			"min-height": 16,
-			"max-height": 48,
-			"retrogen": false,
+				{
+					"generator": {
+						"block": [
+							{
+								"name": "prospects:flower",
+								"properties": {
+									"type": "mustard"
+								}
+							}
+						],
+						"type": "cluster",
+						"cluster-size": 1,
+						"material": [
+							"air",
+							"tallgrass",
+							"double_plant",
+							"snow_layer",
+							"biomesoplenty:plant_0",
+							"biomesoplenty:plant_1",
+							"wildnature:small_grass",
+							"wildnature:dead_short_grass",
+							"wildnature:desert_grass",
+							"wildnature:tallgrass_wheat",
+							"wildnature:tallgrass_flower",
+							"wildnature:medium_grass"
+						]
+					},
+					"distribution": "surface",
+					"cluster-count": 10,
+					"material": [
+						"sand",
+						"grass",
+						"dirt",
+						"gravel",
+						"mycelium",
+						"biomesoplenty:grass",
+						"biomesoplenty:dirt",
+						"environs:end_grass",
+						"environs:frozen_grass",
+						"environs:dried_dirt",
+						"environs:coarse_dried_dirt",
+						"environs:ranges_dirt",
+						"environs:end_dirt",
+						"environs:coarse_end_dirt",
+						"environs:frozen_dirt",
+						"environs:coarse_frozen_dirt",
+						"wildnature:brown_grass_block",
+						"wildnature:mold_grass_block",
+						"wildnature:desert_grass_block",
+						"wildnature:dried_grass_block",
+						"wildnature:overgrown_stone",
+						"wildnature:browndirt",
+						"wildnature:molddirt",
+						"wildnature:desertdirt",
+						"wildnature:drieddirt",
+						"wildnature:frozen_dirt"
+					]
+				}
+			],
+			"chunk-chance": 200,
 			"biome": {
 				"restriction": "whitelist",
 				"value": [
@@ -107,25 +109,94 @@
 				]
 			}
 		},
+		
 		"lead": {
-			"enabled": "true",
-			"distribution": "uniform",
-			"generator": {
-				"block": {
-					"name": "thermalfoundation:ore",
-					"properties": {
-						"type": "lead"
-					}
+			"distribution": "sequential",
+			"features": [
+				{
+					"distribution": "uniform",
+					"generator": {
+						"block": {
+							"name": "thermalfoundation:ore",
+							"properties": {
+								"type": "lead"
+							}
+						},
+						"material": [
+							"stone",
+							"dirt",
+							"gravel",
+							"chisel:basalt2",
+							"chisel_plus:grimstone",
+							"chisel_plus:holystone"
+						],
+						"type": "large-vein",
+						"cluster-size": 40
+					},
+					"cluster-count": 10,
+					"min-height": 2,
+					"max-height": 64
 				},
-				"material": "minecraft:stone",
-				"type": "large-vein",
-				"cluster-size": 160
-			},
-			"cluster-count": 2,
-			"chunk-chance": 150,
-			"min-height": 16,
-			"max-height": 48,
-			"retrogen": false,
+				{
+					"generator": {
+						"block": [
+							{
+								"name": "prospects:flower",
+								"properties": {
+									"type": "leadplant"
+								}
+							}
+						],
+						"type": "cluster",
+						"cluster-size": 1,
+						"material": [
+							"air",
+							"tallgrass",
+							"double_plant",
+							"snow_layer",
+							"biomesoplenty:plant_0",
+							"biomesoplenty:plant_1",
+							"wildnature:small_grass",
+							"wildnature:dead_short_grass",
+							"wildnature:desert_grass",
+							"wildnature:tallgrass_wheat",
+							"wildnature:tallgrass_flower",
+							"wildnature:medium_grass"
+						]
+					},
+					"distribution": "surface",
+					"cluster-count": 10,
+					"material": [
+						"sand",
+						"grass",
+						"dirt",
+						"gravel",
+						"mycelium",
+						"biomesoplenty:grass",
+						"biomesoplenty:dirt",
+						"environs:end_grass",
+						"environs:frozen_grass",
+						"environs:dried_dirt",
+						"environs:coarse_dried_dirt",
+						"environs:ranges_dirt",
+						"environs:end_dirt",
+						"environs:coarse_end_dirt",
+						"environs:frozen_dirt",
+						"environs:coarse_frozen_dirt",
+						"wildnature:brown_grass_block",
+						"wildnature:mold_grass_block",
+						"wildnature:desert_grass_block",
+						"wildnature:dried_grass_block",
+						"wildnature:overgrown_stone",
+						"wildnature:browndirt",
+						"wildnature:molddirt",
+						"wildnature:desertdirt",
+						"wildnature:drieddirt",
+						"wildnature:frozen_dirt"
+					]
+				}
+			],
+			"chunk-chance": 200,
 			"biome": {
 				"restriction": "whitelist",
 				"value": [
@@ -147,9 +218,9 @@
 				]
 			}
 		},
+		
 		"platinum": {
-			"enabled": "true",
-			"distribution": "uniform",
+			"distribution": "cave",
 			"generator": {
 				"block": {
 					"name": "thermalfoundation:ore",
@@ -165,7 +236,6 @@
 			"chunk-chance": 100,
 			"min-height": 2,
 			"max-height": 32,
-			"retrogen": false,
 			"biome": {
 				"restriction": "whitelist",
 				"value": [
