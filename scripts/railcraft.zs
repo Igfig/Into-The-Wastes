@@ -108,7 +108,6 @@ recipes.remove(<railcraft:rail:1>); // advanced rails
 recipes.remove(<railcraft:rail:5>); // electric rails
 mods.jei.JEI.removeAndHide(<railcraft:rail:5>); // electric rails shouldn't even be shown
 recipes.remove(<railcraft:tie:1>); // stone rail ties. Recipe is put in the metal caster instead
-mods.jei.JEI.removeAndHide(<railcraft:chest_metals>); // it does its job very poorly
 
 // non-creosote recipe for wooden rail ties
 
