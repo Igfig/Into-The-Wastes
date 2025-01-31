@@ -28,9 +28,8 @@ recipes.addShapeless("erase_book_sponge", <minecraft:book>, [<minecraft:written_
 recipes.addShapeless("erase_book_bread", <minecraft:book>, [<minecraft:written_book>, <minecraft:bread>]);
 
 
-// melt down excess thermometers and death compasses
+// melt down excess death compasses
 
-furnace.addRecipe(<minecraft:glass>, <toughasnails:thermometer>);
 furnace.addRecipe(<minecraft:glass>, <death_compass:death_compass>);
 
 
