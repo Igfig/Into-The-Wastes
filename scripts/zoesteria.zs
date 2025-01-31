@@ -11,6 +11,9 @@ for rr in removeRecipes {
 	furnace.remove(rr);
 }
 
+furnace.remove(<valoegheses_be:products_coal>);
+
+
 var sand = <minecraft:sand>;
 var gunpowder = <minecraft:gunpowder>;
 recipes.addShaped(<valoegheses_be:tnt_true>,[
