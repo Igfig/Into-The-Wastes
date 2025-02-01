@@ -22,6 +22,12 @@ mods.jei.JEI.addDescription(<minecraft:cauldron>, "There are only three ways to 
 <toughasnails:ice_cube>.addTooltip("Drops from ice blocks");
 <toughasnails:magma_shard>.addTooltip("Drops from magma blocks");
 
+// heating and cooling coils
+<toughasnails:temperature_coil:0>.addTooltip("Significantly cools an enclosed area");
+<toughasnails:temperature_coil:0>.addTooltip("area when powered by redstone");
+<toughasnails:temperature_coil:1>.addTooltip("Significantly warms an enclosed area");
+<toughasnails:temperature_coil:1>.addTooltip("area when powered by redstone");
+
 // cheese blocks
 <rats:block_of_cheese>.addTooltip("Aged to inedibility");
 
