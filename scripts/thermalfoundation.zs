@@ -91,4 +91,4 @@ furnace.setFuel(<thermalfoundation:material:1024>, 6400);
 
 
 // TODO some way to turn potions into liquid potion
-// I guess we'd have to make them depositable into fluid handlers...
+// I guess we'd have to make them depositable into fluid handlers... unless we can collect bucketfuls?
