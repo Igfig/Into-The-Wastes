@@ -7,7 +7,7 @@ waterBottle.addTooltip("Boil in a furnace, or craft with a charcoal filter");
 <minecraft:cauldron>.addTooltip("Does not output to any pipes");
 <minecraft:cauldron>.addTooltip("Zoo animals can only drink from this or water bowls");
 
-mods.jei.JEI.addDescription(<minecraft:cauldron>, "There are only three ways to move fluids in and out of a cauldron:", "First , manually.", "Second, you can use a dispenser with an empty bucket or bottle.", "Finally, you can insert, but not extract, fluids using a Fluid Tube (but not other types of pipe).");
+mods.jei.JEI.addDescription(<minecraft:cauldron>, "There are only three ways to move fluids in and out of a cauldron:", "First, manually.", "Second, you can use a dispenser with an empty bucket or bottle.", "Finally, you can insert, but not extract, fluids using a Fluid Tube (but not other types of pipe).");
 
 // hopper, as opposed to sorting hopper
 <minecraft:hopper>.addTooltip("Prioritizes downwards movement");
