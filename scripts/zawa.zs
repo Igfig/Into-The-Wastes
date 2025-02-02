@@ -100,6 +100,8 @@ recipes.addShaped("zawa_steel_bars", <zawa:steel_bars> * 6, [
 <zawa:waste_bin>.addTooltip("Right-click with an item to permanently destroy the item.");
 <zawa:recycle_bin>.addTooltip("Right-click with an item to permanently destroy the item.");
 
+<zawa:exhibit_glass_pane>.addTooltip("Hides block entities on the other side");
+
 
 // make fur-to-leather recipe produce less, to make meerkats less OP in the early game
 // ditto scales-to-leather, so that it's not way better than the others
