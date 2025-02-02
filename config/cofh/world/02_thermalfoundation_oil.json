@@ -7,7 +7,7 @@
 				"value-a": {
 					"value": { "world-data": "SURFACE_BLOCK" }, 
 					"min": 64,
-					"max": 80
+					"max": 90
 				},
 				"value-b": 16,
 				"operation": "SUBTRACT"
@@ -24,7 +24,9 @@
 				"dirt",
 				"environs:dried_stone",
 				"traverse:red_rock",
-				"quark:jasper"
+				"quark:jasper",
+				"quark:sandstone_new",
+				"wildnature:dried_sand"
 			],
 			"generator": {
 				"type": "sequential",
@@ -59,11 +61,13 @@
 							"stained_hardened_clay",
 							"biomesoplenty:sand",
 							"quark:jasper",
+							"quark:sandstone_new",
 							"thermalfoundation:ore_fluid",
 							"thermalfoundation:fluid_crude_oil",
 							"chisel_plus:grimstone",
 							"chisel_plus:holystone",
-							"environs:dried_stone"
+							"environs:dried_stone",
+							"wildnature:dried_sand"
 						]
 					},
 					{
@@ -83,11 +87,13 @@
 							"stained_hardened_clay",
 							"biomesoplenty:sand",
 							"quark:jasper",
+							"quark:sandstone_new",
 							"thermalfoundation:ore_fluid",
 							"thermalfoundation:fluid_crude_oil",
 							"chisel_plus:grimstone",
 							"chisel_plus:holystone",
-							"environs:dried_stone"
+							"environs:dried_stone",
+							"wildnature:dried_sand"
 						]
 					}
 				]
