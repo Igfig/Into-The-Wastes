@@ -8,6 +8,7 @@ import crafttweaker.item.IItemStack;
 <essentials:item_chute_port>.addTooltip("Insert items on square side");
 <essentials:item_chute_port>.addTooltip("Moves items upwards through an Item Chute");
 <essentials:item_chute_port>.addTooltip("to another Item Chute Port above");
+<essentials:item_chute_port>.addTooltip("Outputs from square side to any inventory");
 
 <essentials:sorting_hopper>.removeTooltip("Prioritizes");
 <essentials:sorting_hopper>.removeTooltip("Exactly");
@@ -33,6 +34,20 @@ mods.jei.JEI.addDescription(<essentials:port_extender>, "Place with the one-squa
 <crossroads:luminescent_quartz>.addTooltip("Created by passing a beam of LIGHT element");
 <crossroads:luminescent_quartz>.addTooltip("through a lens holder containing Pure Quartz");
 
+
+// Redstone
+
+<crossroads:multi_piston>.addTooltip("Extends a number of blocks equal to redstone signal strength");
+<crossroads:multi_piston>.addTooltip("Can push up to 64 blocks at once");
+
+<crossroads:multi_piston_sticky>.addTooltip("Extends a number of blocks equal to redstone signal strength");
+<crossroads:multi_piston_sticky>.addTooltip("Can push up to 64 blocks at once");
+
+<crossroads:redstone_keyboard>.addTooltip("Outputs arbitrary redstone signals.");
+<crossroads:redstone_keyboard>.addTooltip("Use Comparator or Ratiator to read.");
+
+<crossroads:ratiator>.addTooltip("Multiplies or divides redstone signals.");
+<crossroads:ratiator>.addTooltip("Right-click to change mode.");
 
 // Fluid storage and transport
 
@@ -104,11 +119,16 @@ for rcable in redstoneHeatCables {
 
 // Heat I/O
 
+<crossroads:coal_heater>.addTooltip("Burns fuel to create heat");
 mods.jei.JEI.addDescription(<crossroads:coal_heater>, "Burns fuel to create heat. Insert fuel from the sides; outputs heat from the top.");
 
-mods.jei.JEI.addDescription(<crossroads:heat_exchanger>, "Acts as a heat sink, slowly losing heat over time.","Reduces heat faster when placed over ice or snow, melting it to water.", "When placed over fire, lava, or magma, instead extracts heat from the block, cooling it to stone or netherrack.", "Inputs and outputs heat from any other side.");
-mods.jei.JEI.addDescription(<crossroads:insulated_heat_exchanger>, "Accepts heat into the system without any loss.", "When placed over fire, lava, or magma, extracts heat from the block, cooling it to stone or netherrack.", "Inputs and outputs heat from any other side.");
+<crossroads:heat_exchanger>.addTooltip("Collects heat from certain hot blocks, or releases it");
+mods.jei.JEI.addDescription(<crossroads:heat_exchanger>, "Acts as a heat sink, slowly losing heat over time.","Reduces heat faster when placed over ice or snow, melting it to water.", "When placed over fire, lava, or magma, instead extracts heat from the block below, cooling it to stone or netherrack.", "Inputs and outputs heat from any other side.");
 
+<crossroads:insulated_heat_exchanger>.addTooltip("Collects heat from certain hot blocks");
+mods.jei.JEI.addDescription(<crossroads:insulated_heat_exchanger>, "Accepts heat into the system without any loss.", "When placed over fire, lava, or magma, extracts heat from the block below, cooling it to stone or netherrack.", "Inputs and outputs heat from any other side.");
+
+<crossroads:salt_reactor>.addTooltip("Uses salt and distilled water to create cooling");
 mods.jei.JEI.addDescription(<crossroads:salt_reactor>, "Insert distilled water into the top, and salt into the side.", "Outputs regular water from the side (only to a fluid tube), and cold from the bottom (only to a heat cable).", "Can eventually produce temperatures of 0, cold enough to freeze water.");
 
 
@@ -155,6 +175,54 @@ mods.jei.JEI.addDescription(<crossroads:copshowium_creation_chamber>, "Insert li
 
 <crossroads:chemical_vent>.removeTooltip("Don't use this");
 <crossroads:chemical_vent>.addTooltip("Vents inserted reagents into the world");
+
+
+// laser magic
+
+<ore:dustGlowstone>.addTooltip(format.red("1 energy"));
+<ore:dustGlowstone>.addTooltip(format.green("1 potential"));
+<ore:dustGlowstone>.addTooltip(format.darkAqua("1 stability"));
+<ore:dustRedstone>.addTooltip(format.red("24 energy"));
+<ore:dustRedstone>.addTooltip(format.green("36 potential"));
+<ore:dustSalt>.addTooltip(format.green("24 potential"));
+<ore:dustSalt>.addTooltip(format.darkAqua("36 stability"));
+<ore:coal>.addTooltip(format.red("36 energy"));
+<ore:coal>.addTooltip(format.green("24 potential"));
+<ore:charcoal>.addTooltip(format.red("36 energy"));
+<ore:charcoal>.addTooltip(format.green("24 potential"));
+
+<crossroads:color_chart>.addTooltip("Shows magical elements you've discovered");
+<crossroads:color_chart>.addTooltip("Right-click a beam-emitting block with an OmniMeter");
+<crossroads:color_chart>.addTooltip("to see the last element it emitted");
+
+<crossroads:arcane_extractor>.addTooltip("Insert redstone, glowstone, coal,");
+<crossroads:arcane_extractor>.addTooltip("or salt to emit a beam of magic");
+<crossroads:arcane_extractor>.addTooltip("for 5 ticks");
+
+<crossroads:master_axis_crystal>.addTooltip("Manipulates rotational energy when hit by a beam of magic");
+
+<crossroads:lens_holder>.addTooltip("Right-click to insert an emerald, ruby, diamond, or Pure Quartz.");
+<crossroads:lens_holder>.addTooltip("Filters out magic of any color not matching the gem.");
+
+<crossroads:small_quartz_stabilizer>.addTooltip("Absorbs and re-emits magical beams");
+<crossroads:small_quartz_stabilizer>.addTooltip("Emits a small constant beam instead of a large pulsing one");
+
+<crossroads:large_quartz_stabilizer>.addTooltip("Absorbs and re-emits magical beams");
+<crossroads:large_quartz_stabilizer>.addTooltip("Emits a medium-sized, constant beam instead of a large pulsing one");
+
+<crossroads:arcane_reflector>.addTooltip("Redirects magical beams out its front (octagonal) side");
+<crossroads:arcane_reflector>.addTooltip("Multiple beams of magic will be combined into one");
+
+<crossroads:crystalline_prism>.addTooltip("Splits magical beams hitting an input (yellow)");
+<crossroads:crystalline_prism>.addTooltip("side into their component colors");
+
+<crossroads:beam_splitter_basic>.addTooltip("Splits magical beams hitting any side");
+<crossroads:beam_splitter_basic>.addTooltip("into equal smaller beams going up and down");
+
+<crossroads:beam_splitter>.addTooltip("Splits magical beams hitting any side");
+<crossroads:beam_splitter>.addTooltip("into smaller beams going up and down");
+<crossroads:beam_splitter>.addTooltip("with sizes based on redstone signal");
+
 
 
 // TODO add more notes
