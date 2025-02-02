@@ -80,7 +80,6 @@ val catalystPotions = {
 	"minecraft:strong_strength": 2,
 	"minecraft:weakness": 1,
 	"minecraft:long_weakness": 1,
-	"minecraft:luck": 1,
 	"toughasnails:cold_resistance_type": 1,
 	"toughasnails:long_cold_resistance_type": 1,
 	"toughasnails:heat_resistance_type": 1,
@@ -116,7 +115,7 @@ val catalystPotions = {
 	"inspirations:blindness": 1,
 	"inspirations:long_blindness": 1,
 	"inspirations:decay": 1,
-	"inspirations:long_decay": 1,
+	"inspirations:long_decay": 2, // probably an error from the modmaker
 	"cuisine:cuisine.toughness": 1,
 	"cuisine:cuisine.hot": 1,
 	"cuisine:cuisine.cold_blood": 1,
@@ -149,27 +148,7 @@ val catalystPotions = {
 	"cofhcore:resistance3": 3,
 	"cofhcore:luck3": 3,
 	"cofhcore:unluck3": 3,
-	"cofhcore:wither3": 3,
-	"cofhcore:leaping2+": 1,
-	"cofhcore:leaping3+": 3,
-	"cofhcore:swiftness2+": 1,
-	"cofhcore:swiftness3+": 3,
-	"cofhcore:poison2+": 1,
-	"cofhcore:poison3+": 3,
-	"cofhcore:regeneration2+": 1,
-	"cofhcore:regeneration3+": 3,
-	"cofhcore:strength2+": 1,
-	"cofhcore:strength3+": 3,
-	"cofhcore:haste2+": 1,
-	"cofhcore:haste3+": 3,
-	"cofhcore:resistance2+": 1,
-	"cofhcore:resistance3+": 3,
-	"cofhcore:luck2+": 1,
-	"cofhcore:luck3+": 3,
-	"cofhcore:unluck2+": 1,
-	"cofhcore:unluck3+": 3,
-	"cofhcore:wither2+": 1,
-	"cofhcore:wither3+": 3
+	"cofhcore:wither3": 3
 } as int[string];
 
 

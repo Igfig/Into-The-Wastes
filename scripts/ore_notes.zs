@@ -6,6 +6,7 @@
 <minecraft:lapis_ore>.addTooltip("Appears in oases, mostly around 24y");
 <minecraft:diamond_ore>.addTooltip("Appears in very small amounts in all oases");
 <minecraft:diamond_ore>.addTooltip("Appears rarely in oases, in lava-filled geodes below 32y.");
+<railcraft:ore:2>.addTooltip("Appears rarely in oases, in lava-filled geodes below 32y.");
 <minecraft:quartz_ore>.addTooltip("Appears rarely in the Nether, in large deposits at any height.");
 
 <minecraft:emerald_ore>.addTooltip("Appears in certain chunks in mountains");
@@ -32,11 +33,11 @@
 <thermalfoundation:ore:6>.addTooltip("Appears rarely in oases beyond +/-6000z, in medium veins in caves below 32y");
 <thermalfoundation:ore:6>.addTooltip("Must be smelted in a Heating Crucible");
 
-<thermalfoundation:ore_fluid:0>.addTooltip("Appears in the desert"); // oil sand
+<thermalfoundation:ore_fluid:0>.addTooltip("Appears in the desert below oil wells"); // oil sand
 <thermalfoundation:ore_fluid:2>.addTooltip("Appears in redstone deposits"); // fluid redstone
 <thermalfoundation:ore_fluid:3>.addTooltip("Appears in nether quartz deposits"); //fluid glowstone
 <thermalfoundation:ore_fluid:4>.addTooltip("Appears in the End"); // resonant ender
-<thermalfoundation:ore_fluid:5>.addTooltip("Appears in the desert"); 
+<thermalfoundation:ore_fluid:5>.addTooltip("Appears in the desert below oil wells"); // also oil sand
 
 <railcraft:ore:1>.addTooltip("Appears only in the desert"); // saltpeter
 

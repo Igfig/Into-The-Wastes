@@ -7,7 +7,7 @@ val silkThread = <mysticalworld:silk_thread>;
 <ore:string>.remove(silkThread);
 
 
-// make spindle less effective with silk
+// make spindle less effective with silk than default
 
 recipes.remove(silkThread);
 recipes.addShapeless("silk_thread", silkThread, [<mysticalworld:silk_cocoon>]);

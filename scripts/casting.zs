@@ -58,8 +58,20 @@ Casting.addRecipe(<iceandfire:dragonbone_sword_fire>, <liquid:pyrotheum> * 250, 
 Casting.addRecipe(<iceandfire:dragonbone_sword_ice>, <liquid:cryotheum> * 250, <iceandfire:dragonbone_sword>, <iceandfire:ice_dragon_blood>);
 
 
+// glowstone
+
+CastingTable.addBlockRecipe(<minecraft:glowstone>, <liquid:glowstone> * 1000);
+Casting.addRecipe(<minecraft:glowstone>, <liquid:glowstone> * 1000, <foundry:mold:4>);
+
+
+// liquid ender
+
+Casting.addRecipe(<minecraft:ender_pearl>, <liquid:ender> * 250, <foundry:mold:21>);
+Casting.addRecipe(<charm:ender_pearl_block>, <liquid:ender> * 2250, <foundry:mold:4>);
+CastingTable.addBlockRecipe(<charm:ender_pearl_block>, <liquid:ender> * 2250);
+
+
 // some more casting recipes
-Casting.addRecipe(<minecraft:ender_pearl>, <liquid:ender> * 250, <foundry:mold:21>); // ender pearl
 Casting.addRecipe(<thermalfoundation:material:833>, <liquid:crude_oil> * 250, <foundry:mold:21>); // tar
 Casting.addRecipe(<thermalfoundation:material:833>, <liquid:crude_oil> * 250, <foundry:mold:0>); // tar in ingot mold
 CastingTable.addIngotRecipe(<thermalfoundation:material:833>, <liquid:crude_oil> * 250); // tar in casting table

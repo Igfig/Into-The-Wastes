@@ -271,11 +271,11 @@
                   "nbt": {
                     "UUIDMost": {
                       "nbtType": "int",
-                      "nbt": 99
+                      "nbt": 324726
                     },
                     "UUIDLeast": {
                       "nbtType": "int",
-                      "nbt": 115451700
+                      "nbt": 938409
                     },
                     "Amount": {
                       "nbtType": "double",
@@ -289,9 +289,79 @@
                       "nbtType": "string",
                       "nbt": "generic.knockbackResistance"
                     },
+                    "Operation": {
+                      "nbtType": "int",
+                      "nbt": 0
+                    },
                     "Name": {
                       "nbtType": "string",
                       "nbt": "generic.knockbackResistance"
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "UUIDMost": {
+                      "nbtType": "int",
+                      "nbt": 229708
+                    },
+                    "UUIDLeast": {
+                      "nbtType": "int",
+                      "nbt": 422540
+                    },
+                    "Amount": {
+                      "nbtType": "int",
+                      "nbt": 5
+                    },
+                    "Slot": {
+                      "nbtType": "string",
+                      "nbt": "legs"
+                    },
+                    "AttributeName": {
+                      "nbtType": "string",
+                      "nbt": "generic.armor"
+                    },
+                    "Operation": {
+                      "nbtType": "int",
+                      "nbt": 0
+                    },
+                    "Name": {
+                      "nbtType": "string",
+                      "nbt": "generic.armor"
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "UUIDMost": {
+                      "nbtType": "int",
+                      "nbt": 757202
+                    },
+                    "UUIDLeast": {
+                      "nbtType": "int",
+                      "nbt": 945661
+                    },
+                    "Amount": {
+                      "nbtType": "int",
+                      "nbt": 1
+                    },
+                    "Slot": {
+                      "nbtType": "string",
+                      "nbt": "legs"
+                    },
+                    "AttributeName": {
+                      "nbtType": "string",
+                      "nbt": "generic.armorToughness"
+                    },
+                    "Operation": {
+                      "nbtType": "int",
+                      "nbt": 0
+                    },
+                    "Name": {
+                      "nbtType": "string",
+                      "nbt": "generic.armorToughness"
                     }
                   }
                 }

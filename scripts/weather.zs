@@ -7,7 +7,7 @@ val silver = <ore:plateSilver>;
 val platinum = <ore:ingotPlatinum>;
 val gold = <ore:ingotGold>;
 
-furnace.addRecipe(weather, <crossroads:thermometer>);
+furnace.addRecipe(weather, <toughasnails:thermometer>);
 
 recipes.addShaped(sandLayer * 24, [[sand, sand, sand]]);
 recipes.addShapeless(<earthworks:item_sand>, 

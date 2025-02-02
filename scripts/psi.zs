@@ -10,3 +10,6 @@ recipes.replaceAllOccurences(<ore:ingotGold>, <ore:ingotElectrum>, isPsi);
 
 <psi:cad_assembly:0>.displayName = "Silver CAD Assembly";
 <psi:cad_assembly:1>.displayName = "Electrum CAD Assembly";
+
+<psi:material:0>.addTooltip("Craft by dropping redstone dust and right-clicking");
+<psi:material:0>.addTooltip("it with an empty Casting Assistant Device");

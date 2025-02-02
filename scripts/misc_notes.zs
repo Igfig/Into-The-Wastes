@@ -7,7 +7,7 @@ waterBottle.addTooltip("Boil in a furnace, or craft with a charcoal filter");
 <minecraft:cauldron>.addTooltip("Does not output to any pipes");
 <minecraft:cauldron>.addTooltip("Zoo animals can only drink from this or water bowls");
 
-mods.jei.JEI.addDescription(<minecraft:cauldron>, "There are only three ways to move fluids in and out of a cauldron:", "First , manually.", "Second, you can use a dispenser with an empty bucket or bottle.", "Finally, you can insert, but not extract, fluids using a Fluid Tube (but not other types of pipe).");
+mods.jei.JEI.addDescription(<minecraft:cauldron>, "There are only three ways to move fluids in and out of a cauldron:", "First, manually.", "Second, you can use a dispenser with an empty bucket or bottle.", "Finally, you can insert, but not extract, fluids using a Fluid Tube (but not other types of pipe).");
 
 // hopper, as opposed to sorting hopper
 <minecraft:hopper>.addTooltip("Prioritizes downwards movement");
@@ -21,6 +21,12 @@ mods.jei.JEI.addDescription(<minecraft:cauldron>, "There are only three ways to 
 // undocumented item sources
 <toughasnails:ice_cube>.addTooltip("Drops from ice blocks");
 <toughasnails:magma_shard>.addTooltip("Drops from magma blocks");
+
+// heating and cooling coils
+<toughasnails:temperature_coil:0>.addTooltip("Significantly cools an enclosed area");
+<toughasnails:temperature_coil:0>.addTooltip("area when powered by redstone");
+<toughasnails:temperature_coil:1>.addTooltip("Significantly warms an enclosed area");
+<toughasnails:temperature_coil:1>.addTooltip("area when powered by redstone");
 
 // cheese blocks
 <rats:block_of_cheese>.addTooltip("Aged to inedibility");

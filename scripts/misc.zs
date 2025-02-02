@@ -28,9 +28,8 @@ recipes.addShapeless("erase_book_sponge", <minecraft:book>, [<minecraft:written_
 recipes.addShapeless("erase_book_bread", <minecraft:book>, [<minecraft:written_book>, <minecraft:bread>]);
 
 
-// melt down excess thermometers and death compasses
+// melt down excess death compasses
 
-furnace.addRecipe(<minecraft:glass>, <toughasnails:thermometer>);
 furnace.addRecipe(<minecraft:glass>, <death_compass:death_compass>);
 
 
@@ -63,9 +62,11 @@ recipes.addShapeless(<minecraft:name_tag>, [<ore:string>, <ore:paper>, <ore:nugg
 recipes.removeByRecipeName("animania:lead");
 
 
-// cobwebs to string
+// cobwebs and cloth to string
 
-recipes.addShapeless(<minecraft:string>, [<minecraft:web>]);
+recipes.addShapeless("webs_to_string", <minecraft:string>, [<minecraft:web>]);
+recipes.addShapeless("cobwebs_spindle", <minecraft:string> * 2, [<minecraft:web>, <mysticalworld:spindle:*>.transformDamage()]);
+recipes.addShapeless("cloth_spindle", <minecraft:string> * 4, [<minecraft:wool:*>, <mysticalworld:spindle:*>.transformDamage()]);
 
 
 // ice to packed ice recipe

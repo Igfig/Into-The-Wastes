@@ -339,6 +339,39 @@
                       "nbt": "generic.movementSpeed"
                     }
                   }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "UUIDMost": {
+                      "nbtType": "int",
+                      "nbt": 229708
+                    },
+                    "UUIDLeast": {
+                      "nbtType": "int",
+                      "nbt": 422540
+                    },
+                    "Amount": {
+                      "nbtType": "int",
+                      "nbt": 1
+                    },
+                    "Slot": {
+                      "nbtType": "string",
+                      "nbt": "feet"
+                    },
+                    "AttributeName": {
+                      "nbtType": "string",
+                      "nbt": "generic.armor"
+                    },
+                    "Operation": {
+                      "nbtType": "int",
+                      "nbt": 0
+                    },
+                    "Name": {
+                      "nbtType": "string",
+                      "nbt": "generic.armor"
+                    }
+                  }
                 }
               ]
             }

@@ -1,5 +1,7 @@
 import mods.jei.JEI;
 import mods.inspirations.Cauldron;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 
 val potion = <minecraft:potion>;
 val splash = <minecraft:splash_potion>;
@@ -14,129 +16,176 @@ val redstone = <minecraft:redstone>;
 val glowstone = <minecraft:glowstone>;
 val gunpowder = <minecraft:gunpowder>;
 val dragonBreath = <minecraft:dragon_breath>;
+val prismarine = <minecraft:prismarine_crystals>;
+val fermentedEye = <minecraft:fermented_spider_eye>;
+
+
+// helper functions
+
+function removePotion(potionName as string) {
+	JEI.removeAndHide(<minecraft:potion>.withTag({Potion: potionName}));
+	JEI.removeAndHide(<minecraft:splash_potion>.withTag({Potion: potionName}));
+	JEI.removeAndHide(<minecraft:lingering_potion>.withTag({Potion: potionName}));
+	JEI.removeAndHide(<minecraft:tipped_arrow>.withTag({Potion: potionName}));
+	
+	// I'd like to remove the potion catalysts as well, but for some reason removing one of them removes all of them, even filtering on a particular potion name.
+}
+
+function removePotionRecipes(inputPotionName as string, ingredient as IItemStack) {
+	brewing.removeRecipe(<minecraft:potion>.withTag({Potion: inputPotionName}), ingredient);
+	brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: inputPotionName}), ingredient);
+	brewing.removeRecipe(<minecraft:lingering_potion>.withTag({Potion: inputPotionName}), ingredient);
+}
+
+function removePotionVariantRecipes(inputPotionName as string) {
+	brewing.removeRecipe(<minecraft:potion>.withTag({Potion: inputPotionName}), <minecraft:gunpowder>);
+	brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: inputPotionName}), <minecraft:dragon_breath>);
+	
+	Cauldron.removeBrewingRecipe(inputPotionName);
+}
+
+function addPotionRecipes(inputPotionName as string, ingredient as IIngredient, outputPotionName as string) {
+	brewing.addBrew(<minecraft:potion>.withTag({Potion: inputPotionName}), ingredient, <minecraft:potion>.withTag({Potion: outputPotionName}));
+	brewing.addBrew(<minecraft:splash_potion>.withTag({Potion: inputPotionName}), ingredient, <minecraft:splash_potion>.withTag({Potion: outputPotionName}));
+	brewing.addBrew(<minecraft:lingering_potion>.withTag({Potion: inputPotionName}), ingredient, <minecraft:lingering_potion>.withTag({Potion: outputPotionName}));
+	
+	Cauldron.addBrewingRecipe(outputPotionName, inputPotionName, ingredient);
+}
+
+function addCauldronUpgrades(basePotionName as string, longPotionName as string, strongPotionName as string) {
+	Cauldron.addBrewingRecipe(longPotionName, basePotionName, <minecraft:redstone>);
+	Cauldron.addBrewingRecipe(strongPotionName, basePotionName, <minecraft:glowstone>);
+}
+
+
+// Some basic potion upgrades are missing a cauldron recipe
+
+addCauldronUpgrades("minecraft:leaping", "minecraft:long_leaping", "minecraft:strong_leaping");
+addCauldronUpgrades("quark:resistance", "quark:long_resistance", "quark:strong_resistance");
+addCauldronUpgrades("cofhcore:luck", "cofhcore:luck+", "cofhcore:luck2");
+
+
+// remove vanilla luck potion
+// it's uncraftable, and we have a better one from COFH
+
+removePotion("minecraft:luck");
 
 
 // remove COFH and Inspirations Resistance potions
-// we already have one from Quark
+// we already have a better one from Quark
 
-brewing.removeRecipe(potion.withTag({Potion: "minecraft:awkward"}), shulker);
-brewing.removeRecipe(splash.withTag({Potion: "minecraft:awkward"}), shulker);
-brewing.removeRecipe(linger.withTag({Potion: "minecraft:awkward"}), shulker);
-brewing.removeRecipe(potion.withTag({Potion: "minecraft:awkward"}), obsidianDust);
-brewing.removeRecipe(splash.withTag({Potion: "minecraft:awkward"}), obsidianDust);
-brewing.removeRecipe(linger.withTag({Potion: "minecraft:awkward"}), obsidianDust);
+removePotion("inspirations:resistance");
+removePotion("inspirations:long_resistance");
 
-brewing.removeRecipe(potion.withTag({Potion: "cofhcore:resistance"}), redstone);
-brewing.removeRecipe(splash.withTag({Potion: "cofhcore:resistance"}), redstone);
-brewing.removeRecipe(linger.withTag({Potion: "cofhcore:resistance"}), redstone);
-brewing.removeRecipe(potion.withTag({Potion: "cofhcore:resistance"}), glowstone);
-brewing.removeRecipe(splash.withTag({Potion: "cofhcore:resistance"}), glowstone);
-brewing.removeRecipe(linger.withTag({Potion: "cofhcore:resistance"}), glowstone);
-brewing.removeRecipe(potion.withTag({Potion: "cofhcore:resistance"}), gunpowder);
-brewing.removeRecipe(splash.withTag({Potion: "cofhcore:resistance"}), dragonBreath);
-brewing.removeRecipe(potion.withTag({Potion: "cofhcore:resistance+"}), gunpowder);
-brewing.removeRecipe(splash.withTag({Potion: "cofhcore:resistance+"}), dragonBreath);
-brewing.removeRecipe(potion.withTag({Potion: "cofhcore:resistance2"}), gunpowder);
-brewing.removeRecipe(splash.withTag({Potion: "cofhcore:resistance2"}), dragonBreath);
+removePotionRecipes("minecraft:awkward", shulker);
+removePotionRecipes("minecraft:awkward", obsidianDust);
+removePotionRecipes("cofhcore:resistance", redstone);
+removePotionRecipes("cofhcore:resistance", glowstone);
+removePotionRecipes("inspirations:resistance", redstone);
 
-brewing.removeRecipe(potion.withTag({Potion: "inspirations:resistance"}), redstone);
-brewing.removeRecipe(splash.withTag({Potion: "inspirations:resistance"}), redstone);
-brewing.removeRecipe(linger.withTag({Potion: "inspirations:resistance"}), redstone);
-brewing.removeRecipe(potion.withTag({Potion: "inspirations:resistance"}), gunpowder);
-brewing.removeRecipe(splash.withTag({Potion: "inspirations:resistance"}), dragonBreath);
-brewing.removeRecipe(potion.withTag({Potion: "inspirations:long_resistance"}), gunpowder);
-brewing.removeRecipe(splash.withTag({Potion: "inspirations:long_resistance"}), dragonBreath);
-
-JEI.removeAndHide(potion.withTag({Potion: "inspirations:resistance"}));
-JEI.removeAndHide(splash.withTag({Potion: "inspirations:resistance"}));
-JEI.removeAndHide(linger.withTag({Potion: "inspirations:resistance"}));
-JEI.removeAndHide(potion.withTag({Potion: "inspirations:long_resistance"}));
-JEI.removeAndHide(splash.withTag({Potion: "inspirations:long_resistance"}));
-JEI.removeAndHide(linger.withTag({Potion: "inspirations:long_resistance"}));
-
-JEI.removeAndHide(potion.withTag({Potion: "cofhcore:resistance2+"}));
-JEI.removeAndHide(splash.withTag({Potion: "cofhcore:resistance2+"}));
-JEI.removeAndHide(linger.withTag({Potion: "cofhcore:resistance2+"}));
-JEI.removeAndHide(potion.withTag({Potion: "cofhcore:resistance3+"}));
-JEI.removeAndHide(splash.withTag({Potion: "cofhcore:resistance3+"}));
-JEI.removeAndHide(linger.withTag({Potion: "cofhcore:resistance3+"}));
-
-JEI.removeAndHide(<minecraft:tipped_arrow>.withTag({Potion: "inspirations:resistance"}));
-JEI.removeAndHide(<minecraft:tipped_arrow>.withTag({Potion: "inspirations:long_resistance"}));
-JEI.removeAndHide(<minecraft:tipped_arrow>.withTag({Potion: "cofhcore:resistance2+"}));
-JEI.removeAndHide(<minecraft:tipped_arrow>.withTag({Potion: "cofhcore:resistance3+"}));
-
-Cauldron.removeBrewingRecipe("inspirations:resistance");
-Cauldron.removeBrewingRecipe("inspirations:long_resistance");
-Cauldron.removeBrewingRecipe("cofhcore:resistance");
-Cauldron.removeBrewingRecipe("cofhcore:resistance+");
-Cauldron.removeBrewingRecipe("cofhcore:resistance2");
-Cauldron.removeBrewingRecipe("cofhcore:resistance2+");
+removePotionVariantRecipes("cofhcore:resistance");
+removePotionVariantRecipes("cofhcore:resistance+");
+removePotionVariantRecipes("cofhcore:resistance2");
+removePotionVariantRecipes("inspirations:resistance");
+removePotionVariantRecipes("inspirations:long_resistance");
 
 
 // add shulker shell as an ingredient for the Quark version
 
-brewing.addBrew(potion.withTag({Potion: "minecraft:awkward"}), blitzPowder, potion.withTag({Potion: "quark:resistance"}));
-brewing.addBrew(splash.withTag({Potion: "minecraft:awkward"}), blitzPowder, splash.withTag({Potion: "quark:resistance"}));
-brewing.addBrew(linger.withTag({Potion: "minecraft:awkward"}), blitzPowder, linger.withTag({Potion: "quark:resistance"}));
-
-Cauldron.addBrewingRecipe("quark:resistance", "minecraft:awkward", shulker);
+addPotionRecipes("minecraft:awkward", shulker, "quark:resistance");
 
 
 // remove COFH levitation potion
-// we already have one from Inspirations
+// we already have a better one from Inspirations
 
-brewing.removeRecipe(potion.withTag({Potion: "minecraft:awkward"}), blitzPowder);
-brewing.removeRecipe(splash.withTag({Potion: "minecraft:awkward"}), blitzPowder);
-brewing.removeRecipe(linger.withTag({Potion: "minecraft:awkward"}), blitzPowder);
-brewing.removeRecipe(potion.withTag({Potion: "cofhcore:levitation"}), redstone);
-brewing.removeRecipe(splash.withTag({Potion: "cofhcore:levitation"}), redstone);
-brewing.removeRecipe(linger.withTag({Potion: "cofhcore:levitation"}), redstone);
-brewing.removeRecipe(potion.withTag({Potion: "cofhcore:levitation"}), gunpowder);
-brewing.removeRecipe(splash.withTag({Potion: "cofhcore:levitation"}), dragonBreath);
-brewing.removeRecipe(potion.withTag({Potion: "cofhcore:levitation+"}), gunpowder);
-brewing.removeRecipe(splash.withTag({Potion: "cofhcore:levitation+"}), dragonBreath);
+removePotion("cofhcore:levitation");
+removePotion("cofhcore:levitation+");
 
-JEI.removeAndHide(potion.withTag({Potion: "cofhcore:levitation"}));
-JEI.removeAndHide(splash.withTag({Potion: "cofhcore:levitation"}));
-JEI.removeAndHide(linger.withTag({Potion: "cofhcore:levitation"}));
-JEI.removeAndHide(potion.withTag({Potion: "cofhcore:levitation+"}));
-JEI.removeAndHide(splash.withTag({Potion: "cofhcore:levitation+"}));
-JEI.removeAndHide(linger.withTag({Potion: "cofhcore:levitation+"}));
+removePotionRecipes("minecraft:awkward", blitzPowder);
+removePotionRecipes("cofhcore:levitation", redstone);
 
-Cauldron.removeBrewingRecipe("cofhcore:levitation");
-Cauldron.removeBrewingRecipe("cofhcore:levitation+");
+removePotionVariantRecipes("cofhcore:levitation");
+removePotionVariantRecipes("cofhcore:levitation+");
 
 
 // add blitz powder as an ingredient for the Inspirations version
 
-brewing.addBrew(potion.withTag({Potion: "minecraft:awkward"}), blitzPowder, potion.withTag({Potion: "inspirations:levitation"}));
-brewing.addBrew(splash.withTag({Potion: "minecraft:awkward"}), blitzPowder, splash.withTag({Potion: "inspirations:levitation"}));
-brewing.addBrew(linger.withTag({Potion: "minecraft:awkward"}), blitzPowder, linger.withTag({Potion: "inspirations:levitation"}));
+addPotionRecipes("minecraft:awkward", blitzPowder, "inspirations:levitation");
 
-Cauldron.addBrewingRecipe("inspirations:levitation", "minecraft:awkward", blitzPowder);
+
+// remove Inspirations decay potion
+// we already have a better one from COFH
+
+removePotion("inspirations:decay");
+removePotion("inspirations:long_decay");
+
+removePotionRecipes("minecraft:awkward", <iceandfire:witherbone>);
+removePotionRecipes("minecraft:awkward", <inspirations:materials:7>);
+removePotionRecipes("inspirations:decay", glowstone);
+
+removePotionVariantRecipes("inspirations:decay");
+removePotionVariantRecipes("inspirations:long_decay");
+
+
+// add witherbone as an ingredient for the COFH version
+
+addPotionRecipes("minecraft:awkward", <ore:boneWithered>, "cofhcore:wither");
+
+
+// remove Inspirations mining fatigue potion
+// we already have a better one from Quark
+
+removePotion("inspirations:fatigue");
+removePotion("inspirations:strong_fatigue");
+
+removePotionRecipes("inspirations:haste", fermentedEye);
+removePotionRecipes("inspirations:strong_haste", fermentedEye);
+removePotionRecipes("inspirations:fatigue", glowstone);
+
+removePotionVariantRecipes("inspirations:fatigue");
+removePotionVariantRecipes("inspirations:strong_fatigue");
+
+
+// don't use prismarine for haste or mundane potions
+
+removePotionRecipes("minecraft:water", prismarine);
+removePotionRecipes("minecraft:awkward", prismarine);
 
 
 // switch ingredients for potions of heat and cold resistance
 
-brewing.removeRecipe(potion.withTag({Potion: "minecraft:awkward"}), magmaShard);
-brewing.removeRecipe(splash.withTag({Potion: "minecraft:awkward"}), magmaShard);
-brewing.removeRecipe(linger.withTag({Potion: "minecraft:awkward"}), magmaShard);
-brewing.removeRecipe(potion.withTag({Potion: "minecraft:awkward"}), iceCube);
-brewing.removeRecipe(splash.withTag({Potion: "minecraft:awkward"}), iceCube);
-brewing.removeRecipe(linger.withTag({Potion: "minecraft:awkward"}), iceCube);
+removePotionRecipes("minecraft:awkward", magmaShard);
+removePotionRecipes("minecraft:awkward", iceCube);
 
 Cauldron.removeBrewingRecipe("toughasnails:heat_resistance_type");
 Cauldron.removeBrewingRecipe("toughasnails:cold_resistance_type");
 
-brewing.addBrew(potion.withTag({Potion: "minecraft:awkward"}), iceCube, potion.withTag({Potion: "toughasnails:heat_resistance_type"}));
-brewing.addBrew(splash.withTag({Potion: "minecraft:awkward"}), iceCube, splash.withTag({Potion: "toughasnails:heat_resistance_type"}));
-brewing.addBrew(linger.withTag({Potion: "minecraft:awkward"}), iceCube, linger.withTag({Potion: "toughasnails:heat_resistance_type"}));
-
-brewing.addBrew(potion.withTag({Potion: "minecraft:awkward"}), magmaShard, potion.withTag({Potion: "toughasnails:cold_resistance_type"}));
-brewing.addBrew(splash.withTag({Potion: "minecraft:awkward"}), magmaShard, splash.withTag({Potion: "toughasnails:cold_resistance_type"}));
-brewing.addBrew(linger.withTag({Potion: "minecraft:awkward"}), magmaShard, linger.withTag({Potion: "toughasnails:cold_resistance_type"}));
+addPotionRecipes("minecraft:awkward", iceCube, "toughasnails:heat_resistance_type");
+addPotionRecipes("minecraft:awkward", magmaShard, "toughasnails:cold_resistance_type");
 
 
-Cauldron.addBrewingRecipe("toughasnails:heat_resistance_type", "minecraft:awkward", iceCube);
-Cauldron.addBrewingRecipe("toughasnails:cold_resistance_type", "minecraft:awkward", magmaShard);
+// remove all COFH "long strong" potions
+
+removePotion("cofhcore:leaping2+");
+removePotion("cofhcore:leaping3+");
+removePotion("cofhcore:switftness2+");
+removePotion("cofhcore:switftness3+");
+removePotion("cofhcore:poison2+");
+removePotion("cofhcore:poison3+");
+removePotion("cofhcore:regeneration2+");
+removePotion("cofhcore:regeneration3+");
+removePotion("cofhcore:strength2+");
+removePotion("cofhcore:strength3+");
+removePotion("cofhcore:haste2+");
+removePotion("cofhcore:haste3+");
+removePotion("cofhcore:resistance2+");
+removePotion("cofhcore:resistance3+");
+removePotion("cofhcore:luck2+");
+removePotion("cofhcore:luck3+");
+removePotion("cofhcore:unluck2+");
+removePotion("cofhcore:unluck3+");
+removePotion("cofhcore:wither2+");
+removePotion("cofhcore:wither3+");
+
+
+// TODO recipes for level III potions using mana dust 
