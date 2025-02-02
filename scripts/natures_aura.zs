@@ -22,7 +22,7 @@ recipes.addShapeless(<minecraft:experience_bottle>, [<naturesaura:birth_spirit>]
 mods.jei.JEI.removeAndHide(<naturesaura:infused_iron_hoe>);
 
 // and replace it in recipes
-recipes.replaceAllOccurrences(<naturesaura:infused_iron_hoe>, <naturesaura:infused_iron_shovel>);
+recipes.replaceAllOccurences(<naturesaura:infused_iron_hoe>, <naturesaura:infused_iron_shovel>);
 
 
 // remove water bottle altar recipe
