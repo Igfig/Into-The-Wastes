@@ -48,3 +48,9 @@ Anvil.addRecipe(<thermalfoundation:material:130> * 5, <mysticalworld:silver_helm
 Anvil.addRecipe(<thermalfoundation:material:130> * 8, <mysticalworld:silver_chestplate>, 2, "hit_last", "bend_any", "upset_any");
 Anvil.addRecipe(<thermalfoundation:material:130> * 7, <mysticalworld:silver_leggings>, 2, "hit_any", "bend_any", "draw_any");
 Anvil.addRecipe(<thermalfoundation:material:130> * 4, <mysticalworld:silver_boots>, 2, "bend_last", "bend_second_last", "shrink_third_last");
+
+
+// notes
+
+<tinkersforging:forge>.addTooltip("Right-click with a flint and steel to start");
+<tinkersforging:forge>.addTooltip("Will keep burning until it runs out of fuel");
