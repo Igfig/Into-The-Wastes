@@ -65,13 +65,6 @@ furnace.addRecipe(<thermalfoundation:material:833>, <thermalfoundation:material:
 recipes.addShapeless("mana_dust", <thermalfoundation:material:1028>, [<thermalfoundation:material:1024>, <thermalfoundation:material:1025>, <thermalfoundation:material:1026>, <thermalfoundation:material:1027>]); // elemental dusts to mana dust
 
 
-// bronze from petrotheum
-
-recipes.addShapeless("pyrotheum_bronze_ingot", <crossroads:ingot_bronze> * 4, [<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotTin>, <ore:dustPyrotheum>, <ore:dustPyrotheum>, <ore:dustPyrotheum>]);
-recipes.addShapeless("pyrotheum_bronze_nugget", <crossroads:ingot_bronze>, [<ore:ingotCopper>, <ore:nuggetTin>, <ore:nuggetTin>, <ore:nuggetTin>, <ore:dustPyrotheum>]);
-recipes.addShapeless("pyrotheum_bronze_dust", <crossroads:ingot_bronze> * 4, [<ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustTin>, <ore:dustPyrotheum>, <ore:dustPyrotheum>, <ore:dustPyrotheum>, <ore:dustPyrotheum>]);
-
-
 // notes
 
 mods.jei.JEI.addDescription(<ore:blockMithril>, "Produced by allowing a block of silver to come into contact with flowing Primal Mana.");
