@@ -36,6 +36,7 @@ for item in flour.items {
 // another way to craft tofu
 
 BasinThrowing.add(<ore:dustCrudesalt>, <liquid:soy_milk> * 1000, <cuisine:tofu_block>);
+BasinThrowing.add(<ore:dustSalt>, <liquid:soy_milk> * 250, <cuisine:food:0>);
 
 
 // craft soy milk into milk bottles
