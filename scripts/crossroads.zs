@@ -89,3 +89,17 @@ recipes.addShapeless("crossroads_gem_ruby", <crossroads:gem_ruby> * 9, [<crossro
 
 recipes.removeShapeless(<crossroads:pure_quartz>, [<ore:dustSalt>], true);
 recipes.addShapeless("crossroads_pure_quartz", <crossroads:pure_quartz>, [<ore:dustSalt>, <ore:dustSalt>, <minecraft:quartz>, <ore:nuggetSilver>]);
+
+
+// change Void Crystal recipe
+
+val voidstone =  <chisel:voidstone:*> | <chisel:energizedvoidstone:*> |  <chisel:voidstonerunic:*>;
+val lumquartz = <crossroads:luminescent_quartz>;
+val drgbreath = <minecraft:dragon_breath>;
+val biotite = <quark:biotite_block>;
+
+recipes.removeShaped(<crossroads:void_crystal>);
+recipes.addShaped("void_crystal", <crossroads:void_crystal>, [
+	[lumquartz, biotite, lumquartz],
+	[drgbreath,voidstone,drgbreath],
+	[lumquartz, biotite, lumquartz]]);
