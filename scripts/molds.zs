@@ -1,40 +1,26 @@
-import crafttweaker.item.IItemStack;
-
-
-// recipes for basic molds
+import crafttweaker.item.IIngredient;
 
 val porcelain = <ceramics:clay_soft>;
 
-recipes.remove(<foundry:mold:0>);
-recipes.addShapeless("mold_ingot", <foundry:mold:0>, [porcelain, <ore:ingotIron> | <ore:ingotGold> | <ore:ingotCopper>]);
 
-recipes.remove(<foundry:mold:1>);
-recipes.addShapeless("mold_plate", <foundry:mold:1>, [porcelain, <ore:plateIron> | <ore:plateGold> | <ore:plateCopper>]);
-recipes.addShapeless("mold_plate_glass", <foundry:mold:1>, [porcelain, <ore:paneGlass>]);
-
-recipes.remove(<foundry:mold:2>);
-recipes.addShapeless("mold_gear", <foundry:mold:2>, [porcelain, <ore:gearIron> | <ore:gearGold> | <ore:gearCopper>]);
+// a couple name changes
 
 <foundry:mold:3>.displayName = "Rail Mold";
 <foundry:casting_table:2>.displayName = "Rail Casting Table";
-recipes.remove(<foundry:mold:3>);
-recipes.addShapeless("mold_rod", <foundry:mold:3>, [porcelain, <railcraft:rail:*>]);
-
-recipes.remove(<foundry:mold:4>);
-recipes.addShapeless("mold_block", <foundry:mold:4>, [porcelain, <ore:blockIron> | <ore:blockGold> | <ore:blockCopper>]);
-recipes.addShapeless("mold_block_glass", <foundry:mold:4>, [porcelain, <ore:blockGlass>]);
-
-recipes.remove(<foundry:mold:7>);
-recipes.addShapeless("mold_nugget", <foundry:mold:7>, [porcelain, <ore:nuggetIron> | <ore:nuggetGold> | <ore:nuggetCopper>]);
 
 <foundry:mold:21>.displayName = "Orb Mold";
-recipes.remove(<foundry:mold:21>);
-recipes.addShapeless("mold_orb", <foundry:mold:21>, [porcelain, <wildnature:pebble> | <ore:enderpearl> | <ore:gemPearl>]);
 
 
-// recipes for tool molds
+// recipes for molds
 
 val moldItems = {
+	0: <ore:ingotIron> | <ore:ingotGold> | <ore:ingotCopper> | <ore:ingotTin> | <ore:ingotBronze> | <ore:ingotSilver> | <ore:ingotLead>,
+	1: <ore:plateIron> | <ore:plateGold> | <ore:plateCopper> | <ore:plateTin> | <ore:plateBronze> | <ore:plateSilver> | <ore:plateLead>,
+	2: <ore:gearIron> | <ore:gearGold> | <ore:gearCopper> | <ore:gearTin> | <ore:gearBronze> | <ore:gearSilver> | <ore:gearLead>,
+	3: <railcraft:rail:*>,
+	4: <ore:blockIron> | <ore:blockGold> | <ore:blockCopper> | <ore:blockTin> | <ore:blockBronze> | <ore:blockSilver> | <ore:blockLead>,
+	// molds 5 and 6 are for slabs and stairs respectively, and have already been removed in zenfoundry.zs
+	7: <ore:nuggetIron> | <ore:nuggetGold> | <ore:nuggetCopper> | <ore:nuggetTin> | <ore:nuggetBronze> | <ore:nuggetSilver> | <ore:nuggetLead>,
 	8: <thermalfoundation:tool.pickaxe_lead>,
 	9: <thermalfoundation:tool.axe_lead>,
 	10: <thermalfoundation:tool.sword_lead>,
@@ -47,12 +33,19 @@ val moldItems = {
 	17: <thermalfoundation:armor.boots_lead>,
 	18: <thermalfoundation:tool.sickle_lead>,
 	19: <thermalfoundation:tool.hammer_lead>,
-	20: <thermalfoundation:tool.excavator_lead>
-} as IItemStack[int];
+	20: <thermalfoundation:tool.excavator_lead>,
+	21: <wildnature:pebble> | <ore:enderpearl> | <ore:gemPearl>
+} as IIngredient[int];
 
-for moldId in moldItems {
+for moldId, ingredient in moldItems {
 	val mold = <foundry:mold>.definition.makeStack(moldId);
 
 	recipes.remove(mold);
-	mods.foundry.Casting.addRecipe(mold, <liquid:lead> * 1296, porcelain, moldItems[moldId], 360, true);
+	recipes.addShapeless("mold_" ~ moldId, mold, [porcelain, ingredient]);
 }
+
+
+// and a couple of extra recipes using glass
+
+recipes.addShapeless("mold_plate_glass", <foundry:mold:1>, [porcelain, <ore:paneGlass>]);
+recipes.addShapeless("mold_block_glass", <foundry:mold:4>, [porcelain, <ore:blockGlass>]);

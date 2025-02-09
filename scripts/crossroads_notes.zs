@@ -223,6 +223,8 @@ mods.jei.JEI.addDescription(<crossroads:copshowium_creation_chamber>, "Insert li
 <crossroads:beam_splitter>.addTooltip("into smaller beams going up and down");
 <crossroads:beam_splitter>.addTooltip("with sizes based on redstone signal");
 
+<crossroads:void_crystal>.addTooltip("Place in a Lens Holder");
+<crossroads:void_crystal>.addTooltip("Adds VOID to any beam passing through");
 
 
 // TODO add more notes

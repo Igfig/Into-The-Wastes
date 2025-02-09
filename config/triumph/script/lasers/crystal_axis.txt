@@ -1,0 +1,8 @@
+setIcon("crossroads:master_axis_crystal")
+setTitle("Crystal Oscillator")
+setDescription("Craft a Crystal Master Axis to find a new source of rotary power")
+
+addParent("lasers:quartz")
+
+criteria = addCriteria("master_axis_crystal", "minecraft:inventory_changed")
+criteria.addItem("crossroads:master_axis_crystal")

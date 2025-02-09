@@ -47,3 +47,9 @@
 <railcraft:ore_metal_poor:3>.addTooltip("Appears in small amounts in oases beyond +/-1000z"); // tin
 <railcraft:ore_metal_poor:4>.addTooltip("Appears in small amounts in oases beyond +/-3000z"); // lead
 <railcraft:ore_metal_poor:5>.addTooltip("Appears in small amounts in oases beyond +/-3000z"); // silver
+
+<biomesoplenty:biome_block>.addTooltip("Appears in the End");
+<quark:biotite_ore>.addTooltip("Appears in the End");
+
+<railcraft:ore_magic>.addTooltip("Appears at the bottom of lava oceans in the Nether");
+<railcraft:ore_magic>.addTooltip("Watch for firespouts!");
