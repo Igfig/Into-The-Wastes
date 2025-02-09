@@ -1,0 +1,8 @@
+setIcon("crossroads:arcane_extractor")
+setTitle("Shoop Da Whoop")
+setDescription("Craft an Arcane Extractor to shoot magical laser beams")
+
+addParent("lasers:quartz")
+
+criteria = addCriteria("arcane_extractor", "minecraft:inventory_changed")
+criteria.addItem("crossroads:arcane_extractor")

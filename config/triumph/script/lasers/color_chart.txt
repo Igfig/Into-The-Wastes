@@ -1,0 +1,8 @@
+setIcon("crossroads:color_chart")
+setTitle("Spectral Analysis")
+setDescription("Craft a Color Chart to track the magical elements you've discovered")
+
+addParent("lasers:root")
+
+criteria = addCriteria("chart", "minecraft:inventory_changed")
+criteria.addItem("crossroads:color_chart")

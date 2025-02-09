@@ -1,0 +1,8 @@
+setIcon("crossroads:void_crystal")
+setTitle("Empty Set")
+setDescription("Craft a Lens Holder to filter magical beams by color")
+
+addParent("lasers:lens_holder")
+
+criteria = addCriteria("lens_holder", "minecraft:inventory_changed")
+criteria.addItem("crossroads:lens_holder")

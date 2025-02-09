@@ -1,0 +1,8 @@
+setIcon("crossroads:pure_quartz")
+setTitle("100% Pure")
+setDescription("Craft some Pure Quartz")
+
+addParent("lasers:root")
+
+criteria = addCriteria("quartz", "minecraft:inventory_changed")
+criteria.addItem("crossroads:pure_quartz")

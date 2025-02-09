@@ -1,0 +1,13 @@
+setIcon("crossroads:pure_quartz")
+setTitle("Crossroads Magic")
+setDescription("Craft Pure Quartz to start learning about the magic of lasers")
+setFrameType("goal")
+addParent("_wastes:root")
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+criteria = addCriteria("quartz", "triumph:completed_advancement")
+criteria.setAdvancement("lasers:quartz")
+
+setPos(-124,-44)
