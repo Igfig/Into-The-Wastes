@@ -112,6 +112,7 @@ Vessel.add(vinegarFruits, <liquid:water> * 25, null, <liquid:fruit_vinegar> * 5)
 // various notes
 
 <cuisine:crops:2>.withEmptyTag().addTooltip("Can be made into soy milk, tofu, or soy sauce");
+<cuisine:crops:3>.withEmptyTag().addTooltip("Plant in a 1-block-deep pool of water, with dirt below");
 <ore:listAllSpice>.addTooltip("Put in a spice bottle to use as a seasoning");
 <cuisine:food:5>.addShiftTooltip("Sauerkraut by any other name would smell as sweet");
 <cuisine:food:6>.addShiftTooltip("Goes great with spironolactone");
