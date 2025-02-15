@@ -18,13 +18,13 @@ CastingTable.addRodRecipe(<railcraft:rail:0> * 2, <liquid:steel> * 108);
 Casting.addRecipe(<railcraft:rail:0> * 2, <liquid:steel> * 108, <foundry:mold:3>);
 
 // advanced rails
-Casting.addRecipe(<railcraft:rail:1> * 8, <liquid:gold> * 432, <foundry:mold:3>, <ore:dustRedstone> * 3);
+Casting.addRecipe(<railcraft:rail:1> * 4, <liquid:gold> * 216, <foundry:mold:3>, <ore:dustRedstone>);
 
 // HS rails
-Casting.addRecipe(<railcraft:rail:3> * 8, <liquid:steel> * 432, <foundry:mold:3>, <ore:dustPyrotheum> * 3);
+Casting.addRecipe(<railcraft:rail:3> * 4, <liquid:steel> * 216, <foundry:mold:3>, <ore:dustPyrotheum>);
 
 // reinforced rails
-Casting.addRecipe(<railcraft:rail:4> * 8, <liquid:steel> * 864, <foundry:mold:3>, <ore:dustObsidian> * 3);
+Casting.addRecipe(<railcraft:rail:4> * 4, <liquid:steel> * 216, <foundry:mold:3>, <ore:dustObsidian>);
 
 
 // cast rebar
