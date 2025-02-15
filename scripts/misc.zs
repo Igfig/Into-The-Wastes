@@ -46,7 +46,6 @@ recipes.addShapeless(<minecraft:clay_ball> * 4, [<ore:itemSlag>, <ore:itemSlag>,
 recipes.removeByRecipeName("valoegheses_be:gunpowder_vbe");
 recipes.removeByRecipeName("thermalfoundation:gunpowder");
 recipes.removeByRecipeName("thermalfoundation:gunpowder_1");
-recipes.removeByRecipeName("railcraft:minecraft_gunpowder$1");
 recipes.addShapeless(<minecraft:gunpowder>, [<ore:dustCoal> | <ore:dustCharcoal>, <ore:dustSulfur>, <ore:dustSaltpeter>, <ore:dustSaltpeter>]);
 
 
