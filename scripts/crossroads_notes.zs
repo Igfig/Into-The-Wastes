@@ -138,7 +138,8 @@ mods.jei.JEI.addDescription(<crossroads:salt_reactor>, "Insert distilled water i
 mods.jei.JEI.addDescription(<crossroads:grindstone>, "Needs rotary power to function, via a gear placed on top.", "Extract products from bottom with a hopper.");
 
 <crossroads:heating_crucible>.addTooltip("Melts solids into liquids.");
-mods.jei.JEI.addDescription(<crossroads:heating_crucible>, "Insert heat from the bottom; insert ore or other meltables with a hopper on the top; extract liquid with a faucet or fluid tube on the side.");
+<crossroads:heating_crucible>.addTooltip("WARNING: do not overfill!");
+mods.jei.JEI.addDescription(<crossroads:heating_crucible>, "Insert heat from the bottom; insert ore or other meltables with a hopper on the top; extract liquid with a faucet or fluid tube on the side.", "Any fluid produced beyond its capacity of 3200 mB will be lost, so drain it quickly!");
 
 <crossroads:heating_chamber>.addTooltip("Like a furnace, but powered by heat instead of by fuel.");
 mods.jei.JEI.addDescription(<crossroads:heating_chamber>, "Input heat from the top and ore (or dust) from the sides, and extract ingots from the bottom.");
