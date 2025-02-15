@@ -71,6 +71,11 @@ addCauldronUpgrades("cofhcore:luck", "cofhcore:luck+", "cofhcore:luck2");
 removePotion("minecraft:luck");
 
 
+// remove Railcraft Creosote potion; it's craftable, but the creosote bottle it's made from isn't
+
+removePotion("railcraft:creosote");
+
+
 // remove COFH and Inspirations Resistance potions
 // we already have a better one from Quark
 
