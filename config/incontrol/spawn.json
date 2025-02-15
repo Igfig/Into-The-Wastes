@@ -69,5 +69,14 @@
     "mob": "minecraft:creeper",
 	"random": 0.3,
     "result": "deny"
+  },
+  {
+    "mob": "iceandfire:firedragon",
+    "result": "default",
+	"nbt": {
+		"Attributes": [
+			{"Name": "generic.knockbackResistance", "Base": 0.5}
+		]
+	}
   }
 ]
