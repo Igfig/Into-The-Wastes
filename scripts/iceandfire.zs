@@ -379,3 +379,12 @@ recipes.replaceAllOccurences(<ore:ingotIron>, <iceandfire:hippogryph_talon>, <ic
 recipes.replaceAllOccurences(<minecraft:diamond>, <futuremc:trident>, <iceandfire:tide_trident>);
 
 recipes.replaceAllOccurences(<minecraft:emerald>, <ore:gemTopaz>, <iceandfire:summoning_crystal_fire>);
+
+
+// add some tooltips
+
+<iceandfire:dragon_horn>.addTooltip("Right-click a tamed dragon to store it.");
+<iceandfire:dragon_horn>.addTooltip("Right-click again to release it.");
+<iceandfire:dragon_flute>.addTooltip("Instructs flying mythical pets to land.");
+<iceandfire:fishing_spear>.addTooltip("An alternative to fishing rods.");
+<iceandfire:fishing_spear>.addTooltip("Point at water, hold right-click, then release.");
