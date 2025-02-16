@@ -372,6 +372,7 @@ recipes.addShaped(<iceandfire:dragonbone_bow>, [
 	[null, dragonbone, strng]]);
 
 recipes.replaceAllOccurences(<ore:stickWood>, lead_sword, <iceandfire:amphithere_macuahuitl>);
+recipes.replaceAllOccurences(<ore:stickWood>, lead_sword, <iceandfire:stymphalian_bird_dagger>);
 recipes.replaceAllOccurences(<ore:stickWood>, lead_sword, <iceandfire:hippogryph_sword>);
 recipes.replaceAllOccurences(<ore:ingotIron>, <iceandfire:hippogryph_talon>, <iceandfire:hippogryph_sword>);
 
