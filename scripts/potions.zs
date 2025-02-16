@@ -13,9 +13,7 @@ val blitzPowder = <thermalfoundation:material:2051>;
 val magmaShard = <toughasnails:magma_shard>;
 val iceCube = <toughasnails:ice_cube>;
 val redstone = <minecraft:redstone>;
-val glowstone = <minecraft:glowstone>;
-val gunpowder = <minecraft:gunpowder>;
-val dragonBreath = <minecraft:dragon_breath>;
+val glowstone = <minecraft:glowstone_dust>;
 val prismarine = <minecraft:prismarine_crystals>;
 val fermentedEye = <minecraft:fermented_spider_eye>;
 
@@ -52,9 +50,30 @@ function addPotionRecipes(inputPotionName as string, ingredient as IIngredient, 
 	Cauldron.addBrewingRecipe(outputPotionName, inputPotionName, ingredient);
 }
 
+function addPotionUpgrades(basePotionName as string, longPotionName as string, strongPotionName as string) {
+	val redstone = <minecraft:redstone>;
+	val glowstone = <minecraft:glowstone_dust>;
+
+	brewing.addBrew(<minecraft:potion>.withTag({Potion: basePotionName}), redstone, <minecraft:potion>.withTag({Potion: longPotionName}));
+	brewing.addBrew(<minecraft:potion>.withTag({Potion: basePotionName}), glowstone, <minecraft:potion>.withTag({Potion: strongPotionName}));
+	brewing.addBrew(<minecraft:splash_potion>.withTag({Potion: basePotionName}), redstone, <minecraft:splash_potion>.withTag({Potion: longPotionName}));
+	brewing.addBrew(<minecraft:splash_potion>.withTag({Potion: basePotionName}), glowstone, <minecraft:splash_potion>.withTag({Potion: strongPotionName}));
+	brewing.addBrew(<minecraft:lingering_potion>.withTag({Potion: basePotionName}), redstone, <minecraft:lingering_potion>.withTag({Potion: longPotionName}));
+	brewing.addBrew(<minecraft:lingering_potion>.withTag({Potion: basePotionName}), glowstone, <minecraft:lingering_potion>.withTag({Potion: strongPotionName}));
+}
+
 function addCauldronUpgrades(basePotionName as string, longPotionName as string, strongPotionName as string) {
 	Cauldron.addBrewingRecipe(longPotionName, basePotionName, <minecraft:redstone>);
-	Cauldron.addBrewingRecipe(strongPotionName, basePotionName, <minecraft:glowstone>);
+	Cauldron.addBrewingRecipe(strongPotionName, basePotionName, <minecraft:glowstone_dust>);
+}
+
+function addLvl3Recipes(lvl2Name as string, lvl3Name as string) {
+	val manaDust = <thermalfoundation:material:1028>;
+
+	brewing.addBrew(<minecraft:potion>.withTag({Potion: lvl2Name}), manaDust, <minecraft:potion>.withTag({Potion: lvl3Name}));
+	brewing.addBrew(<minecraft:splash_potion>.withTag({Potion: lvl2Name}), manaDust, <minecraft:splash_potion>.withTag({Potion: lvl3Name}));
+	brewing.addBrew(<minecraft:lingering_potion>.withTag({Potion: lvl2Name}), manaDust, <minecraft:lingering_potion>.withTag({Potion: lvl3Name}));
+	Cauldron.addBrewingRecipe(lvl3Name, lvl2Name, manaDust);
 }
 
 
@@ -63,6 +82,11 @@ function addCauldronUpgrades(basePotionName as string, longPotionName as string,
 addCauldronUpgrades("minecraft:leaping", "minecraft:long_leaping", "minecraft:strong_leaping");
 addCauldronUpgrades("quark:resistance", "quark:long_resistance", "quark:strong_resistance");
 addCauldronUpgrades("cofhcore:luck", "cofhcore:luck+", "cofhcore:luck2");
+
+
+// or even a brewing stand recipe
+
+addPotionUpgrades("minecraft:leaping", "minecraft:long_leaping", "minecraft:strong_leaping");
 
 
 // remove vanilla luck potion
@@ -171,10 +195,12 @@ addPotionRecipes("minecraft:awkward", magmaShard, "toughasnails:cold_resistance_
 
 // remove all COFH "long strong" potions
 
+removePotion("cofhcore:absorption2+");
+removePotion("cofhcore:absorption3+");
 removePotion("cofhcore:leaping2+");
 removePotion("cofhcore:leaping3+");
-removePotion("cofhcore:switftness2+");
-removePotion("cofhcore:switftness3+");
+removePotion("cofhcore:swiftness2+");
+removePotion("cofhcore:swiftness3+");
 removePotion("cofhcore:poison2+");
 removePotion("cofhcore:poison3+");
 removePotion("cofhcore:regeneration2+");
@@ -193,4 +219,20 @@ removePotion("cofhcore:wither2+");
 removePotion("cofhcore:wither3+");
 
 
-// TODO recipes for level III potions using mana dust 
+// recipes for level III potions using mana dust 
+
+addLvl3Recipes("minecraft:strong_leaping", "cofhcore:leaping3");
+addLvl3Recipes("minecraft:strong_swiftness", "cofhcore:swiftness3");
+addLvl3Recipes("minecraft:strong_healing", "cofhcore:healing3");
+addLvl3Recipes("minecraft:strong_harming", "cofhcore:harming3");
+addLvl3Recipes("minecraft:strong_poison", "cofhcore:poison3");
+addLvl3Recipes("minecraft:strong_regeneration", "cofhcore:regeneration3");
+addLvl3Recipes("minecraft:strong_strength", "cofhcore:strength3");
+addLvl3Recipes("quark:strong_haste", "cofhcore:haste3");
+addLvl3Recipes("quark:strong_resistance", "cofhcore:resistance3");
+addLvl3Recipes("cofhcore:absorption2", "cofhcore:absorption3");
+addLvl3Recipes("cofhcore:luck2", "cofhcore:luck3");
+addLvl3Recipes("cofhcore:unluck2", "cofhcore:unluck3");
+addLvl3Recipes("cofhcore:wither2", "cofhcore:wither3");
+
+
