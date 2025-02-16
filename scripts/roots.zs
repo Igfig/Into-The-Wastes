@@ -98,23 +98,36 @@ val woodToolReplacements = {
 	<roots:living_hoe>: <minecraft:golden_hoe>.anyDamage()
 } as IIngredient[IItemStack];
 val stoneToolReplacements = {
-	<roots:terrastone_sword>: <minecraft:iron_sword>.anyDamage(),
-	<roots:terrastone_shovel>: <minecraft:iron_shovel>.anyDamage(),
-	<roots:terrastone_pickaxe>: <minecraft:iron_pickaxe>.anyDamage(),
-	<roots:terrastone_axe>: <minecraft:iron_axe>.anyDamage(),
-	<roots:terrastone_hoe>: <minecraft:iron_hoe>.anyDamage()
+	<roots:terrastone_sword>: <thermalfoundation:tool.sword_steel>.anyDamage(),
+	<roots:terrastone_shovel>: <thermalfoundation:tool.shovel_steel>.anyDamage(),
+	<roots:terrastone_pickaxe>: <thermalfoundation:tool.pickaxe_steel>.anyDamage(),
+	<roots:terrastone_axe>: <thermalfoundation:tool.axe_steel>.anyDamage(),
+	<roots:terrastone_hoe>: <thermalfoundation:tool.hoe_steel>.anyDamage()
 } as IIngredient[IItemStack];
+val runedToolReplacements = {
+	<roots:runed_sword>: [<minecraft:diamond_sword>.anyDamage(), <roots:infernal_bulb>],
+	<roots:runed_shovel>: [<minecraft:diamond_shovel>.anyDamage(), <roots:dewgonia>],
+	<roots:runed_pickaxe>: [<minecraft:diamond_pickaxe>.anyDamage(), <roots:stalicripe>],
+	<roots:runed_axe>: [<minecraft:diamond_axe>.anyDamage(), <roots:cloud_berry>],
+	<roots:runed_hoe>: [<minecraft:diamond_hoe>.anyDamage(), <roots:wildewheet>]
+} as IIngredient[][IItemStack];
 
 for rootsTool, goldTool in woodToolReplacements {
 	Fey.removeRecipe(rootsTool);
 	val name = rootsTool.name.substring(5);
-	Fey.addRecipe(name, rootsTool, [<ore:ingotGold> | <ore:ingotSilver>, goldTool, <ore:wildroot>, <ore:rootsBark>, <ore:rootsBark>]);
+	Fey.addRecipe(name, rootsTool, [<ore:ingotGold>, goldTool, <ore:wildroot>, <ore:rootsBark>, <ore:rootsBark>]);
 }
 
 for rootsTool, ironTool in stoneToolReplacements {
 	Fey.removeRecipe(rootsTool);
 	val name = rootsTool.name.substring(5);
-	Fey.addRecipe(name, rootsTool, [<ore:runestone>, ironTool, <roots:terra_moss>, <ore:gemDiamond> | <ore:gemAmethyst>, <minecraft:mossy_cobblestone>]);
+	Fey.addRecipe(name, rootsTool, [<ore:runestone>, ironTool, <roots:terra_moss>, <ore:gemDiamond> | <ore:gemAmethyst> | <ore:gemPeridot> | <ore:gemTopaz>, <minecraft:mossy_cobblestone>]);
+}
+
+for rootsTool, ingredients in runedToolReplacements {
+	Fey.removeRecipe(rootsTool);
+	val name = rootsTool.name.substring(5);
+	Fey.addRecipe(name, rootsTool, [<ore:runedObsidian>, <ore:runedObsidian>, ingredients[0], <roots:fey_leather>, ingredients[1]]);
 }
 
 
