@@ -11,7 +11,6 @@ mods.jei.JEI.removeAndHide(<zawa:off_road_car>);
 mods.jei.JEI.removeAndHide(<zawa:zoo_cart>);
 mods.jei.JEI.removeAndHide(<zawa:tire>);
 mods.jei.JEI.removeAndHide(<zawa:animal_net>); // might re-add if I can limit its abilities properly
-mods.jei.JEI.removeAndHide(<zawa:seine_net>);
 mods.jei.JEI.removeAndHide(<zawa:binoculars>);
 mods.jei.JEI.removeAndHide(<zawa:electric_fence>); // maybe re-add as an expensive / late-game thing?
 
@@ -101,6 +100,9 @@ recipes.addShaped("zawa_steel_bars", <zawa:steel_bars> * 6, [
 <zawa:recycle_bin>.addTooltip("Right-click with an item to permanently destroy the item.");
 
 <zawa:exhibit_glass_pane>.addTooltip("Hides block entities on the other side");
+
+<zawa:seine_net>.addTooltip("Catches small seafood for aquatic animal feed.");
+<zawa:seine_net>.addTooltip("Point at water, hold right-click, and wiggle back and forth.");
 
 
 // make fur-to-leather recipe produce less, to make meerkats less OP in the early game

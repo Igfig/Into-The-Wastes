@@ -138,7 +138,8 @@ mods.jei.JEI.addDescription(<crossroads:salt_reactor>, "Insert distilled water i
 mods.jei.JEI.addDescription(<crossroads:grindstone>, "Needs rotary power to function, via a gear placed on top.", "Extract products from bottom with a hopper.");
 
 <crossroads:heating_crucible>.addTooltip("Melts solids into liquids.");
-mods.jei.JEI.addDescription(<crossroads:heating_crucible>, "Insert heat from the bottom; insert ore or other meltables with a hopper on the top; extract liquid with a faucet or fluid tube on the side.");
+<crossroads:heating_crucible>.addTooltip("WARNING: do not overfill!");
+mods.jei.JEI.addDescription(<crossroads:heating_crucible>, "Insert heat from the bottom; insert ore or other meltables with a hopper on the top; extract liquid with a faucet or fluid tube on the side.", "Any fluid produced beyond its capacity of 3200 mB will be lost, so drain it quickly!");
 
 <crossroads:heating_chamber>.addTooltip("Like a furnace, but powered by heat instead of by fuel.");
 mods.jei.JEI.addDescription(<crossroads:heating_chamber>, "Input heat from the top and ore (or dust) from the sides, and extract ingots from the bottom.");
@@ -179,6 +180,15 @@ mods.jei.JEI.addDescription(<crossroads:copshowium_creation_chamber>, "Insert li
 
 // laser magic
 
+<ore:laserFuel>.addAll(<ore:dustGlowstone>);
+<ore:laserFuel>.addAll(<ore:dustRedstone>);
+<ore:laserFuel>.addAll(<ore:dustSalt>);
+<ore:laserFuel>.addAll(<ore:dustAlcSalt>);
+<ore:laserFuel>.addAll(<ore:coal>);
+<ore:laserFuel>.addAll(<ore:charcoal>);
+<ore:laserFuel>.addAll(<ore:dustSulfur>);
+<ore:laserFuel>.add(<crossroads:solid_quicksilver>);
+
 <ore:dustGlowstone>.addTooltip(format.red("1 energy"));
 <ore:dustGlowstone>.addTooltip(format.green("1 potential"));
 <ore:dustGlowstone>.addTooltip(format.darkAqua("1 stability"));
@@ -186,20 +196,23 @@ mods.jei.JEI.addDescription(<crossroads:copshowium_creation_chamber>, "Insert li
 <ore:dustRedstone>.addTooltip(format.green("36 potential"));
 <ore:dustSalt>.addTooltip(format.green("24 potential"));
 <ore:dustSalt>.addTooltip(format.darkAqua("36 stability"));
+<ore:dustAlcSalt>.addTooltip(format.darkAqua("60 stability"));
 <ore:coal>.addTooltip(format.red("36 energy"));
 <ore:coal>.addTooltip(format.green("24 potential"));
 <ore:charcoal>.addTooltip(format.red("36 energy"));
 <ore:charcoal>.addTooltip(format.green("24 potential"));
+<ore:dustSulfur>.addTooltip(format.red("60 energy"));
+<crossroads:solid_quicksilver>.addTooltip(format.green("60 potential"));
 
 <crossroads:color_chart>.addTooltip("Shows magical elements you've discovered");
 <crossroads:color_chart>.addTooltip("Right-click a beam-emitting block with an OmniMeter");
 <crossroads:color_chart>.addTooltip("to see the last element it emitted");
 
-<crossroads:arcane_extractor>.addTooltip("Insert redstone, glowstone, coal,");
-<crossroads:arcane_extractor>.addTooltip("or salt to emit a beam of magic");
-<crossroads:arcane_extractor>.addTooltip("for 5 ticks");
+<crossroads:arcane_extractor>.addTooltip("Insert $laserFuel items to emit a beam of magic");
+mods.jei.JEI.addDescription(<crossroads:arcane_extractor>, "Type $laserFuel in JEI to see all valid fuels.", "Items must be inserted with a hopper or similar device.", "Each item produces a beam for 5 ticks.", "(Hoppers transfer one item every 8 ticks, which is why the beam appears to flicker.)");
 
 <crossroads:master_axis_crystal>.addTooltip("Manipulates rotational energy when hit by a beam of magic");
+mods.jei.JEI.addDescription(<crossroads:master_axis_crystal>, "Each type of beam produces a different effect, though most impart momentum in some way.", "See the Technician's Manual for details.");
 
 <crossroads:lens_holder>.addTooltip("Right-click to insert an emerald, ruby, diamond, or Pure Quartz.");
 <crossroads:lens_holder>.addTooltip("Filters out magic of any color not matching the gem.");

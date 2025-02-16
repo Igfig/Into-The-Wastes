@@ -18,22 +18,24 @@ CastingTable.addRodRecipe(<railcraft:rail:0> * 2, <liquid:steel> * 108);
 Casting.addRecipe(<railcraft:rail:0> * 2, <liquid:steel> * 108, <foundry:mold:3>);
 
 // advanced rails
-Casting.addRecipe(<railcraft:rail:1> * 8, <liquid:gold> * 432, <foundry:mold:3>, <ore:dustRedstone> * 3);
+Casting.addRecipe(<railcraft:rail:1> * 4, <liquid:gold> * 216, <foundry:mold:3>, <ore:dustRedstone>);
 
 // HS rails
-Casting.addRecipe(<railcraft:rail:3> * 8, <liquid:steel> * 432, <foundry:mold:3>, <ore:dustPyrotheum> * 3);
+Casting.addRecipe(<railcraft:rail:3> * 4, <liquid:steel> * 216, <foundry:mold:3>, <ore:dustPyrotheum>);
 
 // reinforced rails
-Casting.addRecipe(<railcraft:rail:4> * 8, <liquid:steel> * 864, <foundry:mold:3>, <ore:dustObsidian> * 3);
+Casting.addRecipe(<railcraft:rail:4> * 4, <liquid:steel> * 216, <foundry:mold:3>, <ore:dustObsidian>);
 
 
 // cast rebar
+
 Casting.addRecipe(<railcraft:rebar>, <liquid:iron> * 108, <foundry:mold:3>, <ore:stickWood>); // iron
 Casting.addRecipe(<railcraft:rebar>, <liquid:bronze> * 108, <foundry:mold:3>, <ore:stickWood>); // bronze
 Casting.addRecipe(<railcraft:rebar> * 2, <liquid:steel> * 108, <foundry:mold:3>, <ore:stickWood>); // steel
 
 
 // cast elemental fluids to their dusts.
+
 Casting.addRecipe(<thermalfoundation:material:1024>, <liquid:pyrotheum> * 250, <foundry:mold:21>);
 Casting.addRecipe(<thermalfoundation:material:1025>, <liquid:cryotheum> * 250, <foundry:mold:21>);
 Casting.addRecipe(<thermalfoundation:material:1026>, <liquid:aerotheum> * 250, <foundry:mold:21>);
@@ -42,6 +44,7 @@ Casting.addRecipe(<thermalfoundation:material:1028>, <liquid:mana> * 250, <found
 
 
 // cast Mystical World armour
+
 Casting.addRecipe(<mysticalworld:copper_helmet>, <liquid:copper> * 720, <foundry:mold:14>);
 Casting.addRecipe(<mysticalworld:copper_chestplate>, <liquid:copper> * 1152, <foundry:mold:15>);
 Casting.addRecipe(<mysticalworld:copper_leggings>, <liquid:copper> * 1008, <foundry:mold:16>);
@@ -71,17 +74,25 @@ Casting.addRecipe(<charm:ender_pearl_block>, <liquid:ender> * 2250, <foundry:mol
 CastingTable.addBlockRecipe(<charm:ender_pearl_block>, <liquid:ender> * 2250);
 
 
-// some more casting recipes
+// tar. We use the ingot mold because there's no orb casting table, but we want it to be available before the metal caster.
+
 Casting.addRecipe(<thermalfoundation:material:833>, <liquid:crude_oil> * 250, <foundry:mold:21>); // tar
 Casting.addRecipe(<thermalfoundation:material:833>, <liquid:crude_oil> * 250, <foundry:mold:0>); // tar in ingot mold
 CastingTable.addIngotRecipe(<thermalfoundation:material:833>, <liquid:crude_oil> * 250); // tar in casting table
+
+
+// some more casting recipes
+
+CastingTable.addBlockRecipe(<minecraft:cobblestone>, <liquid:lava> * 200);
+Casting.addRecipe(<minecraft:cobblestone>, <liquid:lava> * 200, <foundry:mold:4>);
 Casting.addRecipe(<arcaneworld:ethereal_sword>, <liquid:glowstone> * 1000, <wildnature:amber_sword>, <ore:ingotMithril>);
 Casting.addRecipe(<minecraft:golden_apple:1>, <liquid:mana> * 1000, <minecraft:golden_apple>);
 Casting.addRecipe(<railcraft:tie:1> * 2, <liquid:water> * 100, <railcraft:concrete>, <railcraft:rebar>); // stone rail ties
 Casting.addRecipe(<thermalfoundation:fertilizer:2>, <liquid:redstone> * 500, <thermalfoundation:fertilizer:1>, <ore:dustCharcoal>); // fluxed phyto-gro
 
 
-// make gears cheaper than making them by hand, just one ingot each
+// cast gears more cheaply than making them by hand, just one ingot each
+
 val liquids = [<liquid:iron>, <liquid:gold>, <liquid:copper>, <liquid:tin>, <liquid:bronze>, <liquid:lead>, <liquid:silver>, <liquid:platinum>, <liquid:electrum>] as ILiquidStack[];
 val gears = [<crossroads:gear_iron>, <crossroads:gear_gold>, <crossroads:gear_copper>, <crossroads:gear_tin>, <crossroads:gear_bronze>, <crossroads:gear_lead>, <crossroads:gear_silver>, <crossroads:gear_platinum>, <crossroads:gear_electrum>] as IItemStack[];
 

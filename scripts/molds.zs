@@ -14,13 +14,13 @@ val porcelain = <ceramics:clay_soft>;
 // recipes for molds
 
 val moldItems = {
-	0: <ore:ingotIron> | <ore:ingotGold> | <ore:ingotCopper> | <ore:ingotTin> | <ore:ingotBronze> | <ore:ingotSilver> | <ore:ingotLead>,
-	1: <ore:plateIron> | <ore:plateGold> | <ore:plateCopper> | <ore:plateTin> | <ore:plateBronze> | <ore:plateSilver> | <ore:plateLead>,
+	0: <ore:ingotIron> | <ore:ingotGold> | <ore:ingotCopper> | <ore:ingotTin> | <ore:ingotBronze> | <ore:ingotSilver> | <ore:ingotLead> | <ore:ingotSteel>,
+	1: <ore:plateIron> | <ore:plateGold> | <ore:plateCopper> | <ore:plateTin> | <ore:plateBronze> | <ore:plateSilver> | <ore:plateLead> | <ore:plateSteel>,
 	2: <ore:gearIron> | <ore:gearGold> | <ore:gearCopper> | <ore:gearTin> | <ore:gearBronze> | <ore:gearSilver> | <ore:gearLead>,
 	3: <railcraft:rail:*>,
-	4: <ore:blockIron> | <ore:blockGold> | <ore:blockCopper> | <ore:blockTin> | <ore:blockBronze> | <ore:blockSilver> | <ore:blockLead>,
+	4: <ore:blockIron> | <ore:blockGold> | <ore:blockCopper> | <ore:blockTin> | <ore:blockBronze> | <ore:blockSilver> | <ore:blockLead> | <ore:blockSteel>,
 	// molds 5 and 6 are for slabs and stairs respectively, and have already been removed in zenfoundry.zs
-	7: <ore:nuggetIron> | <ore:nuggetGold> | <ore:nuggetCopper> | <ore:nuggetTin> | <ore:nuggetBronze> | <ore:nuggetSilver> | <ore:nuggetLead>,
+	7: <ore:nuggetIron> | <ore:nuggetGold> | <ore:nuggetCopper> | <ore:nuggetTin> | <ore:nuggetBronze> | <ore:nuggetSilver> | <ore:nuggetLead> | <ore:nuggetSteel>,
 	8: <thermalfoundation:tool.pickaxe_lead>,
 	9: <thermalfoundation:tool.axe_lead>,
 	10: <thermalfoundation:tool.sword_lead>,
