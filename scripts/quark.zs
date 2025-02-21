@@ -1,6 +1,11 @@
 // Automation module
 <quark:chute>.addTooltip("Drops inserted items");
-<quark:color_slime>.addTooltip("Sticks to slime of the same or an adjacent colour");
+<minecraft:slime>.addTooltip("Sticks to green, yellow, and cyan slime, but not other colors");
+<quark:color_slime:0>.addTooltip("Sticks to red, yellow, and magenta slime, but not other colors");
+<quark:color_slime:1>.addTooltip("Sticks to blue, cyan, and magenta slime, but not other colors");
+<quark:color_slime:2>.addTooltip("Sticks to cyan, blue, and green slime, but not other colors");
+<quark:color_slime:3>.addTooltip("Sticks to magenta, red, and blue slime, but not other colors");
+<quark:color_slime:4>.addTooltip("Sticks to yellow, red, and green slime, but not other colors");
 <quark:ender_watcher>.addTooltip("Produces a redstone signal when a player looks directly at it");
 <quark:gravisand>.addTooltip("Floats upwards when it receive a redstone signal");
 <quark:gold_button>.addTooltip("Short pulse");
