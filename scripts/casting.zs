@@ -83,8 +83,8 @@ CastingTable.addIngotRecipe(<thermalfoundation:material:833>, <liquid:crude_oil>
 
 // some more casting recipes
 
-CastingTable.addBlockRecipe(<minecraft:cobblestone>, <liquid:lava> * 200);
-Casting.addRecipe(<minecraft:cobblestone>, <liquid:lava> * 200, <foundry:mold:4>);
+CastingTable.addBlockRecipe(<minecraft:stone>, <liquid:lava> * 200);
+Casting.addRecipe(<minecraft:stone>, <liquid:lava> * 200, <foundry:mold:4>);
 Casting.addRecipe(<arcaneworld:ethereal_sword>, <liquid:glowstone> * 1000, <wildnature:amber_sword>, <ore:ingotMithril>, 0, true);
 Casting.addRecipe(<minecraft:golden_apple:1>, <liquid:mana> * 1000, <minecraft:golden_apple>, null, 0, true);
 Casting.addRecipe(<railcraft:tie:1> * 2, <liquid:water> * 100, <railcraft:concrete>, <railcraft:rebar>, 0, true); // stone rail ties
