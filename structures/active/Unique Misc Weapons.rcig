@@ -293,7 +293,7 @@
                   "nbt": {
                     "lvl": {
                       "nbtType": "short",
-                      "nbt": 2
+                      "nbt": 3
                     },
                     "id": {
                       "nbtType": "short",

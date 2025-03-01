@@ -75,7 +75,7 @@
                   "nbt": {
                     "lvl": {
                       "nbtType": "short",
-                      "nbt": 3
+                      "nbt": 4
                     },
                     "id": {
                       "nbtType": "short",
@@ -142,7 +142,7 @@
                   "nbt": {
                     "lvl": {
                       "nbtType": "short",
-                      "nbt": 3
+                      "nbt": 4
                     },
                     "id": {
                       "nbtType": "short",
@@ -155,7 +155,7 @@
                   "nbt": {
                     "lvl": {
                       "nbtType": "short",
-                      "nbt": 2
+                      "nbt": 3
                     },
                     "id": {
                       "nbtType": "short",

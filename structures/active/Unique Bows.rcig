@@ -131,7 +131,7 @@
                   "nbt": {
                     "lvl": {
                       "nbtType": "short",
-                      "nbt": 1
+                      "nbt": 3
                     },
                     "id": {
                       "nbtType": "short",

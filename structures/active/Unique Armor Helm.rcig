@@ -276,16 +276,12 @@
                 }
               ]
             },
-            "Quark:ItemNameDye": {
-              "nbtType": "int",
-              "nbt": 3
-            },
             "display": {
               "nbtType": "compound",
               "nbt": {
                 "Name": {
                   "nbtType": "string",
-                  "nbt": "Copper Pot"
+                  "nbt": "\u00A76Copper Pot"
                 }
               }
             },

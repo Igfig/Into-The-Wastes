@@ -224,16 +224,12 @@
                 }
               ]
             },
-            "Quark:ItemNameDye": {
-              "nbtType": "int",
-              "nbt": 5
-            },
             "display": {
               "nbtType": "compound",
               "nbt": {
                 "Name": {
                   "nbtType": "string",
-                  "nbt": "Diamond Joe"
+                  "nbt": "\u00A7bDiamond Joe"
                 }
               }
             }
