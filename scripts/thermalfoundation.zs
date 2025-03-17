@@ -90,5 +90,14 @@ recipes.addShapeless(<thermalfoundation:fertilizer:1>, [<thermalfoundation:ferti
 furnace.setFuel(<thermalfoundation:material:1024>, 6400);
 
 
+// advanced recipes for elemental dusts
+// You can use these to generate endless amounts of elemental dust with minimal input, with the right setup
+
+recipes.addShapeless("quicksilver_pyrotheum", <thermalfoundation:material:1024> * 2, [<ore:dustBlaze>, <crossroads:solid_quicksilver>, <ore:dustSulfur>]);
+recipes.addShapeless("quicksilver_cryotheum", <thermalfoundation:material:1025> * 2, [<ore:dustBlizz>, <crossroads:solid_quicksilver>, <ore:snowball>]);
+recipes.addShapeless("quicksilver_aerotheum", <thermalfoundation:material:1026> * 2, [<ore:dustBlitz>, <crossroads:solid_quicksilver>, <ore:dustSaltpeter>]);
+recipes.addShapeless("quicksilver_petrotheum", <thermalfoundation:material:1027> * 2, [<ore:dustBasalz>, <crossroads:solid_quicksilver>, <ore:dustObsidian>]);
+
+
 // TODO some way to turn potions into liquid potion
 // I guess we'd have to make them depositable into fluid handlers... unless we can collect bucketfuls?
