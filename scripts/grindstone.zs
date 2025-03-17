@@ -50,6 +50,12 @@ mods.crossroads.Grindstone.addRecipe(<thermalfoundation:material:2050>, <thermal
 mods.crossroads.Grindstone.addRecipe(<thermalfoundation:material:2052>, <thermalfoundation:material:2053> * 4); // basalz
 
 
+// grind vanadium
+
+mods.crossroads.Grindstone.addRecipe(<valoegheses_be:ore_vanadium>, <crossroads:vanadium>);
+mods.crossroads.Grindstone.addRecipe(<valoegheses_be:ingot_vanadium>, <crossroads:vanadium>);
+
+
 // additional grindstone recipes
 
 mods.crossroads.Grindstone.addRecipe(<ore:logWood>, <thermalfoundation:material:800> * 4); // sawdust

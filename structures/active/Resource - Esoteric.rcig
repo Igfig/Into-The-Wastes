@@ -173,7 +173,7 @@
       }
     },
     {
-      "weight": 1.0,
+      "weight": 0.2,
       "min": 1,
       "max": 16,
       "item": {
@@ -258,6 +258,16 @@
       "max": 8,
       "item": {
         "id": "iceandfire:dragonbone",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "valoegheses_be:ingot_vanadium",
         "damage": 0,
         "count": 1
       }
