@@ -93,6 +93,7 @@ Casting.addRecipe(<arcaneworld:ethereal_sword>, <liquid:mana> * 1000, <wildnatur
 Casting.addRecipe(<minecraft:golden_apple:1>, <liquid:mana> * 1000, <minecraft:golden_apple>, null, 0, true);
 Casting.addRecipe(<railcraft:tie:1> * 2, <liquid:water> * 100, <railcraft:concrete>, <railcraft:rebar>, 0, true); // stone rail ties
 Casting.addRecipe(<thermalfoundation:fertilizer:2>, <liquid:redstone> * 500, <thermalfoundation:fertilizer:1>, <ore:dustCharcoal>, 0, true); // fluxed phyto-gro
+Casting.addRecipe(<thermalfoundation:material:160>, <liquid:iron> * 144, <foundry:mold:0>, <crossroads:vanadium_5_oxide>, 0, false); // vanadium steel
 
 
 // cast gears more cheaply than making them by hand, just one ingot each
