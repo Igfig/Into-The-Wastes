@@ -5,8 +5,8 @@ val porcelain = <ceramics:clay_soft>;
 
 // a couple name changes
 
-<foundry:mold:3>.displayName = "Rail Mold";
-<foundry:casting_table:2>.displayName = "Rail Casting Table";
+<foundry:mold:3>.displayName = "Rail/Rod Mold";
+<foundry:casting_table:2>.displayName = "Rail/Rod Casting Table";
 
 <foundry:mold:21>.displayName = "Orb Mold";
 

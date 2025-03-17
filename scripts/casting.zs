@@ -34,12 +34,21 @@ Casting.addRecipe(<railcraft:rebar>, <liquid:bronze> * 108, <foundry:mold:3>, <o
 Casting.addRecipe(<railcraft:rebar> * 2, <liquid:steel> * 108, <foundry:mold:3>, <ore:stickWood>); // steel
 
 
-// cast elemental fluids to their dusts.
+// cast elemental fluids to their rods
 
-Casting.addRecipe(<thermalfoundation:material:1024>, <liquid:pyrotheum> * 250, <foundry:mold:21>);
-Casting.addRecipe(<thermalfoundation:material:1025>, <liquid:cryotheum> * 250, <foundry:mold:21>);
-Casting.addRecipe(<thermalfoundation:material:1026>, <liquid:aerotheum> * 250, <foundry:mold:21>);
-Casting.addRecipe(<thermalfoundation:material:1027>, <liquid:petrotheum> * 250, <foundry:mold:21>);
+CastingTable.addRodRecipe(<thermalfoundation:material:1024>, <liquid:pyrotheum> * 250);
+CastingTable.addRodRecipe(<thermalfoundation:material:1025>, <liquid:cryotheum> * 250);
+CastingTable.addRodRecipe(<thermalfoundation:material:1026>, <liquid:aerotheum> * 250);
+CastingTable.addRodRecipe(<thermalfoundation:material:1027>, <liquid:petrotheum> * 250);
+
+Casting.addRecipe(<thermalfoundation:material:1024>, <liquid:pyrotheum> * 250, <foundry:mold:3>);
+Casting.addRecipe(<thermalfoundation:material:1025>, <liquid:cryotheum> * 250, <foundry:mold:3>);
+Casting.addRecipe(<thermalfoundation:material:1026>, <liquid:aerotheum> * 250, <foundry:mold:3>);
+Casting.addRecipe(<thermalfoundation:material:1027>, <liquid:petrotheum> * 250, <foundry:mold:3>);
+
+
+// and mana dust
+
 Casting.addRecipe(<thermalfoundation:material:1028>, <liquid:mana> * 250, <foundry:mold:21>);
 
 
@@ -57,8 +66,8 @@ Casting.addRecipe(<mysticalworld:silver_boots>, <liquid:silver> * 576, <foundry:
 
 // cast elemental dragonbone weapons
 
-Casting.addRecipe(<iceandfire:dragonbone_sword_fire>, <liquid:pyrotheum> * 500, <iceandfire:dragonbone_sword>, <iceandfire:fire_dragon_blood>, 0, true);
-Casting.addRecipe(<iceandfire:dragonbone_sword_ice>, <liquid:cryotheum> * 500, <iceandfire:dragonbone_sword>, <iceandfire:ice_dragon_blood>, 0, true);
+Casting.addRecipe(<iceandfire:dragonbone_sword_fire>, <liquid:pyrotheum> * 1000, <iceandfire:dragonbone_sword>, <iceandfire:fire_dragon_blood>, 0, true);
+Casting.addRecipe(<iceandfire:dragonbone_sword_ice>, <liquid:cryotheum> * 1000, <iceandfire:dragonbone_sword>, <iceandfire:ice_dragon_blood>, 0, true);
 
 
 // glowstone
