@@ -76,6 +76,11 @@ recipes.addShaped("packed_ice", <minecraft:packed_ice>, [
 	[<minecraft:ice>, <minecraft:ice>, <minecraft:ice>]]);
 
 
+// snow to snowballs recipe
+
+recipes.addShapeless("snowball", <minecraft:snowball> * 4, [<minecraft:snow>]);
+
+
 // rename Cart to Cargo Cart for clarity
 
 <astikorcarts:cargocart>.displayName = "Cargo Cart";
