@@ -89,6 +89,15 @@ mods.crossroads.HeatingCrucible.addRecipe(<ore:dustPetrotheum>, <liquid:petrothe
 mods.crossroads.HeatingCrucible.addRecipe(<ore:dustMana>, <liquid:mana> * 250, "thermalfoundation:blocks/storage/block_mithril");
 
 
+// melt rails and rebar back to iron (lossily)
+
+mods.crossroads.HeatingCrucible.addRecipe(<railcraft:rail:0>, <liquid:iron> * 54);
+mods.crossroads.HeatingCrucible.addRecipe(<railcraft:rail:1>, <liquid:gold> * 54);
+mods.crossroads.HeatingCrucible.addRecipe(<railcraft:rail:3>, <liquid:iron> * 54);
+mods.crossroads.HeatingCrucible.addRecipe(<railcraft:rail:4>, <liquid:iron> * 54);
+mods.crossroads.HeatingCrucible.addRecipe(<railcraft:rebar>, <liquid:iron> * 54);
+
+
 // melt a few more things
 
 mods.crossroads.HeatingCrucible.addRecipe(<ore:dustRedstone>, <liquid:redstone> * 100, "minecraft/blocks/redstone_block");

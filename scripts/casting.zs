@@ -9,10 +9,6 @@ import mods.foundry.Casting;
 CastingTable.addRodRecipe(<railcraft:rail:0>, <liquid:iron> * 108);
 Casting.addRecipe(<railcraft:rail:0>, <liquid:iron> * 108, <foundry:mold:3>); 
 
-// standard rails, bronze
-CastingTable.addRodRecipe(<railcraft:rail:0>, <liquid:bronze> * 108);
-Casting.addRecipe(<railcraft:rail:0>, <liquid:bronze> * 108, <foundry:mold:3>); 
-
 // standard rails, steel
 CastingTable.addRodRecipe(<railcraft:rail:0> * 2, <liquid:steel> * 108);
 Casting.addRecipe(<railcraft:rail:0> * 2, <liquid:steel> * 108, <foundry:mold:3>);
@@ -30,7 +26,6 @@ Casting.addRecipe(<railcraft:rail:4> * 4, <liquid:steel> * 216, <foundry:mold:3>
 // cast rebar
 
 Casting.addRecipe(<railcraft:rebar>, <liquid:iron> * 108, <foundry:mold:3>, <ore:stickWood>); // iron
-Casting.addRecipe(<railcraft:rebar>, <liquid:bronze> * 108, <foundry:mold:3>, <ore:stickWood>); // bronze
 Casting.addRecipe(<railcraft:rebar> * 2, <liquid:steel> * 108, <foundry:mold:3>, <ore:stickWood>); // steel
 
 
