@@ -25,3 +25,12 @@ Do not under any circumstances update MixinBootstrap, Entity Culling, or Animani
 
 ## Optifine
 You will need to install Optifine separately, due to copyright restrictions. Download https://optifine.net/adloadx?f=OptiFine_1.12.2_HD_U_G5.jar and place the file in the /mods folder.
+
+## Respawning
+If you don't like the random-respawn mechanic, an admin can turn it off for all currently logged-in players with the command
+```
+/scoreboard players set @a teleportOnDeath 0
+```
+To change it for just one player, replace the `@a` with the player's name.
+
+To turn random respawn back on, replace the `0` with a `1`.
