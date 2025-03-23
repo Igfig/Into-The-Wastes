@@ -1,7 +1,6 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 
-val sand = <minecraft:sand>;
 val dustDef = <thermalfoundation:material>.definition;
 
 val ores = {
@@ -35,7 +34,7 @@ val ingots = {
 
 
 for id, ore in ores {
-	mods.crossroads.Grindstone.addRecipe(ore, dustDef.makeStack(id) * 2, sand);
+	mods.crossroads.Grindstone.addRecipe(ore, dustDef.makeStack(id) * 2, <minecraft:gravel>);
 }
 for id, ingot in ingots {
 	mods.crossroads.Grindstone.addRecipe(ingot, dustDef.makeStack(id));
