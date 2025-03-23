@@ -101,3 +101,9 @@ recipes.addShaped("void_crystal", <crossroads:void_crystal>, [
 	[lumquartz, biotite, lumquartz],
 	[drgbreath,voidstone,drgbreath],
 	[lumquartz, biotite, lumquartz]]);
+
+
+// missing recipe for fluid void
+
+recipes.addShaped("fluid_void", <crossroads:fluid_void>, 
+	[[<ore:ingotCopper>], [<minecraft:sponge:0>]]);
