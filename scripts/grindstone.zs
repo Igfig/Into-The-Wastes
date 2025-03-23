@@ -50,8 +50,7 @@ mods.crossroads.Grindstone.addRecipe(<thermalfoundation:material:2052>, <thermal
 
 
 // grind vanadium
-
-mods.crossroads.Grindstone.addRecipe(<valoegheses_be:ore_vanadium>, <crossroads:vanadium>);
+// only the ingot, because I don't want people to think that you can smelt vanadium dust into vanadium ingots
 mods.crossroads.Grindstone.addRecipe(<valoegheses_be:ingot_vanadium>, <crossroads:vanadium>);
 
 
