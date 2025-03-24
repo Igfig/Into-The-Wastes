@@ -48,6 +48,7 @@ recipes.replaceAllOccurences(<foundry:componentblock>, <ore:gearCopper>, <foundr
 
 <foundry:machine:1>.removeTooltip("Casts");
 <foundry:machine:1>.addTooltip("Casts items from molten metal using molds.");
+<foundry:machine:1>.addTooltip("(Can craft with some other fluids too)");
 
 
 // explanatory toolip

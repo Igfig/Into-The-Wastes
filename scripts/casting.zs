@@ -9,10 +9,6 @@ import mods.foundry.Casting;
 CastingTable.addRodRecipe(<railcraft:rail:0>, <liquid:iron> * 108);
 Casting.addRecipe(<railcraft:rail:0>, <liquid:iron> * 108, <foundry:mold:3>); 
 
-// standard rails, bronze
-CastingTable.addRodRecipe(<railcraft:rail:0>, <liquid:bronze> * 108);
-Casting.addRecipe(<railcraft:rail:0>, <liquid:bronze> * 108, <foundry:mold:3>); 
-
 // standard rails, steel
 CastingTable.addRodRecipe(<railcraft:rail:0> * 2, <liquid:steel> * 108);
 Casting.addRecipe(<railcraft:rail:0> * 2, <liquid:steel> * 108, <foundry:mold:3>);
@@ -30,16 +26,24 @@ Casting.addRecipe(<railcraft:rail:4> * 4, <liquid:steel> * 216, <foundry:mold:3>
 // cast rebar
 
 Casting.addRecipe(<railcraft:rebar>, <liquid:iron> * 108, <foundry:mold:3>, <ore:stickWood>); // iron
-Casting.addRecipe(<railcraft:rebar>, <liquid:bronze> * 108, <foundry:mold:3>, <ore:stickWood>); // bronze
 Casting.addRecipe(<railcraft:rebar> * 2, <liquid:steel> * 108, <foundry:mold:3>, <ore:stickWood>); // steel
 
 
-// cast elemental fluids to their dusts.
+// cast elemental fluids to their rods
 
-Casting.addRecipe(<thermalfoundation:material:1024>, <liquid:pyrotheum> * 250, <foundry:mold:21>);
-Casting.addRecipe(<thermalfoundation:material:1025>, <liquid:cryotheum> * 250, <foundry:mold:21>);
-Casting.addRecipe(<thermalfoundation:material:1026>, <liquid:aerotheum> * 250, <foundry:mold:21>);
-Casting.addRecipe(<thermalfoundation:material:1027>, <liquid:petrotheum> * 250, <foundry:mold:21>);
+CastingTable.addRodRecipe(<thermalfoundation:material:1024>, <liquid:pyrotheum> * 250);
+CastingTable.addRodRecipe(<thermalfoundation:material:1025>, <liquid:cryotheum> * 250);
+CastingTable.addRodRecipe(<thermalfoundation:material:1026>, <liquid:aerotheum> * 250);
+CastingTable.addRodRecipe(<thermalfoundation:material:1027>, <liquid:petrotheum> * 250);
+
+Casting.addRecipe(<thermalfoundation:material:1024>, <liquid:pyrotheum> * 250, <foundry:mold:3>);
+Casting.addRecipe(<thermalfoundation:material:1025>, <liquid:cryotheum> * 250, <foundry:mold:3>);
+Casting.addRecipe(<thermalfoundation:material:1026>, <liquid:aerotheum> * 250, <foundry:mold:3>);
+Casting.addRecipe(<thermalfoundation:material:1027>, <liquid:petrotheum> * 250, <foundry:mold:3>);
+
+
+// and mana dust
+
 Casting.addRecipe(<thermalfoundation:material:1028>, <liquid:mana> * 250, <foundry:mold:21>);
 
 
@@ -57,8 +61,8 @@ Casting.addRecipe(<mysticalworld:silver_boots>, <liquid:silver> * 576, <foundry:
 
 // cast elemental dragonbone weapons
 
-Casting.addRecipe(<iceandfire:dragonbone_sword_fire>, <liquid:pyrotheum> * 250, <iceandfire:dragonbone_sword>, <iceandfire:fire_dragon_blood>);
-Casting.addRecipe(<iceandfire:dragonbone_sword_ice>, <liquid:cryotheum> * 250, <iceandfire:dragonbone_sword>, <iceandfire:ice_dragon_blood>);
+Casting.addRecipe(<iceandfire:dragonbone_sword_fire>, <liquid:pyrotheum> * 1000, <iceandfire:dragonbone_sword>, <iceandfire:fire_dragon_blood>, 0, true);
+Casting.addRecipe(<iceandfire:dragonbone_sword_ice>, <liquid:cryotheum> * 1000, <iceandfire:dragonbone_sword>, <iceandfire:ice_dragon_blood>, 0, true);
 
 
 // glowstone
@@ -83,12 +87,13 @@ CastingTable.addIngotRecipe(<thermalfoundation:material:833>, <liquid:crude_oil>
 
 // some more casting recipes
 
-CastingTable.addBlockRecipe(<minecraft:cobblestone>, <liquid:lava> * 200);
-Casting.addRecipe(<minecraft:cobblestone>, <liquid:lava> * 200, <foundry:mold:4>);
-Casting.addRecipe(<arcaneworld:ethereal_sword>, <liquid:glowstone> * 1000, <wildnature:amber_sword>, <ore:ingotMithril>);
-Casting.addRecipe(<minecraft:golden_apple:1>, <liquid:mana> * 1000, <minecraft:golden_apple>);
-Casting.addRecipe(<railcraft:tie:1> * 2, <liquid:water> * 100, <railcraft:concrete>, <railcraft:rebar>); // stone rail ties
-Casting.addRecipe(<thermalfoundation:fertilizer:2>, <liquid:redstone> * 500, <thermalfoundation:fertilizer:1>, <ore:dustCharcoal>); // fluxed phyto-gro
+CastingTable.addBlockRecipe(<minecraft:stone>, <liquid:lava> * 200);
+Casting.addRecipe(<minecraft:stone>, <liquid:lava> * 200, <foundry:mold:4>);
+Casting.addRecipe(<arcaneworld:ethereal_sword>, <liquid:mana> * 1000, <wildnature:amber_sword>, <minecraft:glowstone>, 0, true);
+Casting.addRecipe(<minecraft:golden_apple:1>, <liquid:mana> * 1000, <minecraft:golden_apple>, null, 0, true);
+Casting.addRecipe(<railcraft:tie:1> * 2, <liquid:water> * 100, <minecraft:concrete_powder:*>, <railcraft:rebar>, 0, true); // stone rail ties
+Casting.addRecipe(<thermalfoundation:fertilizer:2>, <liquid:redstone> * 500, <thermalfoundation:fertilizer:1>, <ore:dustCharcoal>, 0, true); // fluxed phyto-gro
+Casting.addRecipe(<thermalfoundation:material:160>, <liquid:iron> * 144, <foundry:mold:0>, <crossroads:vanadium_5_oxide>, 0, false); // vanadium steel
 
 
 // cast gears more cheaply than making them by hand, just one ingot each

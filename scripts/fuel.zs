@@ -24,10 +24,10 @@ recipes.addShaped(emptyTank * 8, [
 	[null, iron, null],
 	[iron, null, iron],
 	[null, iron, null]]);
-mods.foundry.Casting.addRecipe(creosoteTank, creosote * 1000, emptyTank); 
-mods.foundry.Casting.addRecipe(crudeOilTank, crudeOil * 1000, emptyTank); 
-mods.foundry.Casting.addRecipe(refinedOilTank, refinedOil * 1000, emptyTank); 
-mods.foundry.Casting.addRecipe(refinedFuelTank, refinedFuel * 1000, emptyTank); 
+mods.foundry.Casting.addRecipe(creosoteTank, creosote * 1000, emptyTank, null, 0, true); 
+mods.foundry.Casting.addRecipe(crudeOilTank, crudeOil * 1000, emptyTank, null, 0, true); 
+mods.foundry.Casting.addRecipe(refinedOilTank, refinedOil * 1000, emptyTank, null, 0, true); 
+mods.foundry.Casting.addRecipe(refinedFuelTank, refinedFuel * 1000, emptyTank, null, 0, true); 
 
 
 // mark them as fuels

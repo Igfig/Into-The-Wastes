@@ -191,12 +191,12 @@ mods.jei.JEI.addDescription(<crossroads:copshowium_creation_chamber>, "Insert li
 
 <ore:dustGlowstone>.addTooltip(format.red("1 energy"));
 <ore:dustGlowstone>.addTooltip(format.green("1 potential"));
-<ore:dustGlowstone>.addTooltip(format.darkAqua("1 stability"));
+<ore:dustGlowstone>.addTooltip(format.blue("1 stability"));
 <ore:dustRedstone>.addTooltip(format.red("24 energy"));
 <ore:dustRedstone>.addTooltip(format.green("36 potential"));
 <ore:dustSalt>.addTooltip(format.green("24 potential"));
-<ore:dustSalt>.addTooltip(format.darkAqua("36 stability"));
-<ore:dustAlcSalt>.addTooltip(format.darkAqua("60 stability"));
+<ore:dustSalt>.addTooltip(format.blue("36 stability"));
+<ore:dustAlcSalt>.addTooltip(format.blue("60 stability"));
 <ore:coal>.addTooltip(format.red("36 energy"));
 <ore:coal>.addTooltip(format.green("24 potential"));
 <ore:charcoal>.addTooltip(format.red("36 energy"));

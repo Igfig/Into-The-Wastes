@@ -58,6 +58,6 @@ val liquidMetals = [
 ] as ILiquidStack[];
 
 for i, glass in metalGlasses {
-	mods.foundry.Casting.addRecipe(glass, liquidMetals[i] * 144, <foundry:mold:4>, <ore:dustObsidian> * 2);
+	mods.foundry.Casting.addRecipe(glass, liquidMetals[i] * 144, <foundry:mold:4>, <ore:dustObsidian>);
 	mods.foundry.Casting.addRecipe(glass, liquidMetals[i] * 144, <foundry:mold:4>, <ore:blockGlassHardened>);
 }

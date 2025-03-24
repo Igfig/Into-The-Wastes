@@ -14,3 +14,7 @@
 
 // slag
 <ore:itemSlag>.add(<railcraft:dust:4>);
+
+// put all concrete and concrete powders in oredicts
+<ore:blockConcrete>.add(<minecraft:concrete:*>);
+<ore:powderConcrete>.add(<minecraft:concrete_powder:*>);

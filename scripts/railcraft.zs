@@ -6,8 +6,6 @@ import mods.railcraft.BlastFurnace;
 val iron = <ore:ingotIron>;
 val steel = <ore:ingotSteel>;
 val tank = <railcraft:tank_iron_wall>;
-val gravel = <minecraft:gravel>;
-val sand = <ore:sand>;
 
 
 // fix display of red coke oven
@@ -116,13 +114,22 @@ recipes.addShaped("rail_tie", <railcraft:tie:0>, [
 	[<ore:slabWood>,<ore:slabWood>,<ore:slabWood>]]);
 
 
-// simpler recipes for cement
-recipes.remove(<railcraft:concrete>);
-recipes.addShaped(<railcraft:concrete>, [
-	[sand, gravel, sand],
-	[gravel, sand, gravel],
-	[sand, gravel, sand]]);
-recipes.addShapeless(<railcraft:concrete>, [sand, gravel, <railcraft:dust:4>]); // blast furnace slag
+// smaller recipe for concrete powder
+
+recipes.addShapeless(<minecraft:concrete_powder:8>, [<ore:sand>, <minecraft:gravel>, <railcraft:dust:4>]); // blast furnace slag
+
+
+// new recipes for reinforced concrete
+
+for i in 0 to 16 {
+	val dust = <minecraft:concrete_powder>.definition.makeStack(i);
+	val concrete = <railcraft:reinforced_concrete>.definition.makeStack(i);
+	recipes.addShaped(concrete, [
+		[dust, <railcraft:rebar>, dust],
+		[<railcraft:rebar>, <minecraft:potion>.withTag({Potion: "minecraft:water"}), <railcraft:rebar>],
+		[dust, <railcraft:rebar>, dust],
+	]);
+}
 
 
 // recipes that shouldn't need diamond tools

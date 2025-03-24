@@ -246,16 +246,12 @@
                 }
               ]
             },
-            "Quark:ItemNameDye": {
-              "nbtType": "int",
-              "nbt": 2
-            },
             "display": {
               "nbtType": "compound",
               "nbt": {
                 "Name": {
                   "nbtType": "string",
-                  "nbt": "Stoneborn Greaves"
+                  "nbt": "\u00A78Stoneborn Greaves"
                 }
               }
             },

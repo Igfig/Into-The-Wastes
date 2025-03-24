@@ -274,10 +274,6 @@
                 }
               ]
             },
-            "Quark:ItemNameDye": {
-              "nbtType": "int",
-              "nbt": 6
-            },
             "display": {
               "nbtType": "compound",
               "nbt": {
@@ -296,7 +292,7 @@
                 },
                 "Name": {
                   "nbtType": "string",
-                  "nbt": "Hedgehog Shoes"
+                  "nbt": "\u00A79Hedgehog Shoes"
                 }
               }
             },

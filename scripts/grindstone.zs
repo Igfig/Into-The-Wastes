@@ -1,7 +1,6 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 
-val sand = <minecraft:sand>;
 val dustDef = <thermalfoundation:material>.definition;
 
 val ores = {
@@ -35,7 +34,7 @@ val ingots = {
 
 
 for id, ore in ores {
-	mods.crossroads.Grindstone.addRecipe(ore, dustDef.makeStack(id) * 2, sand);
+	mods.crossroads.Grindstone.addRecipe(ore, dustDef.makeStack(id) * 2, <minecraft:gravel>);
 }
 for id, ingot in ingots {
 	mods.crossroads.Grindstone.addRecipe(ingot, dustDef.makeStack(id));
@@ -48,6 +47,11 @@ mods.crossroads.Grindstone.addRecipe(<minecraft:blaze_rod>, <minecraft:blaze_pow
 mods.crossroads.Grindstone.addRecipe(<thermalfoundation:material:2048>, <thermalfoundation:material:2049> * 4); // blizz
 mods.crossroads.Grindstone.addRecipe(<thermalfoundation:material:2050>, <thermalfoundation:material:2051> * 4); // blitz
 mods.crossroads.Grindstone.addRecipe(<thermalfoundation:material:2052>, <thermalfoundation:material:2053> * 4); // basalz
+
+
+// grind vanadium
+// only the ingot, because I don't want people to think that you can smelt vanadium dust into vanadium ingots
+mods.crossroads.Grindstone.addRecipe(<valoegheses_be:ingot_vanadium>, <crossroads:vanadium>);
 
 
 // additional grindstone recipes

@@ -8,7 +8,7 @@ import scripts.functions.unfunk;
 import scripts.functions.unfunkIngredient;
 
 
-val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"}).giveBack(<minecraft:glass_bottle>);
+val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"}).transformReplace(<minecraft:glass_bottle>);
 val flour = unfunkIngredient(<ore:foodFlour>);
 val waterBucketIngredient = <minecraft:water_bucket>.transformReplace(<minecraft:bucket>) | <ceramics:clay_bucket>.withTag({fluids: {FluidName: "purified_water", Amount: 1000}}).transformReplace(<ceramics:clay_bucket>);
 val soyBucketIngredient = <forge:bucketfilled>.withTag({FluidName: "soy_milk", Amount: 1000}).transformReplace(<minecraft:bucket>) | <ceramics:clay_bucket>.withTag({fluids: {FluidName: "soy_milk", Amount: 1000}}).transformReplace(<ceramics:clay_bucket>);

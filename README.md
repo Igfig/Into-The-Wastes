@@ -27,5 +27,14 @@ The late game will take you as far as 8km north or south of spawn, approximately
 ## Installation Notes
 Do not under any circumstances update MixinBootstrap, Entity Culling, or Animania Base. Recent versions contain bugs that prevent the game from starting (MixinBootstrap), break tile entity rendering (Entiy Culling), and disable custom advancements (Animania).
 
+## Respawning
+If you don't like the random-respawn mechanic, an admin can turn it off for all currently logged-in players with the command
+```
+/scoreboard players set @a teleportOnDeath 0
+```
+To change it for just one player, replace the `@a` with the player's name.
+
+To turn random respawn back on, replace the `0` with a `1`.
+
 ## Further Troubleshooting
 If you experience further issues, submit a ticket at https://github.com/Igfig/Into-The-Wastes/issues

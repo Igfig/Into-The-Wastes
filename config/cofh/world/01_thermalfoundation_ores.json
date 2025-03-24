@@ -1,5 +1,5 @@
 {
-	"dependencies": ["thermalfoundation", "prospects"],
+	"dependencies": ["thermalfoundation", "prospects", "valoegheses_be"],
 	"populate": {
 		"silver": {
 			"distribution": "sequential",
@@ -7,12 +7,19 @@
 				{
 					"distribution": "uniform",
 					"generator": {
-						"block": {
-							"name": "thermalfoundation:ore",
-							"properties": {
-								"type": "silver"
+						"block": [
+							{
+								"name": "thermalfoundation:ore",
+								"properties": {
+									"type": "silver"
+								},
+								"weight": 50
+							},
+							{
+								"name": "valoegheses_be:ore_vanadium",
+								"weight": 1
 							}
-						},
+						],
 						"material": [
 							"stone",
 							"dirt",
@@ -116,12 +123,19 @@
 				{
 					"distribution": "uniform",
 					"generator": {
-						"block": {
-							"name": "thermalfoundation:ore",
-							"properties": {
-								"type": "lead"
+						"block": [
+							{
+								"name": "thermalfoundation:ore",
+								"properties": {
+									"type": "lead"
+								},
+								"weight": 50
+							},
+							{
+								"name": "valoegheses_be:ore_vanadium",
+								"weight": 1
 							}
-						},
+						],
 						"material": [
 							"stone",
 							"dirt",

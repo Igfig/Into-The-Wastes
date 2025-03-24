@@ -11,12 +11,10 @@ recipes.addShapeless("guide_journal", <guideapi:crossroads-info_guide>, [<minecr
 mods.jei.JEI.removeAndHide(<crossroads:ore_native_copper>);
 
 
-// remove useless vanadium
+// remove ugly vanadium recipe, and integrate with Zoesteria vanadium
 
-mods.jei.JEI.removeAndHide(<crossroads:vanadium>);
-mods.jei.JEI.removeAndHide(<crossroads:vanadium_5_oxide>);
 mods.crossroads.DetailedCrafter.removeAlcRecipe(<crossroads:vanadium>);
-furnace.remove(<crossroads:vanadium_5_oxide>);
+<crossroads:vanadium>.displayName = "Vanadium Dust";
 
 
 // remove some gears we don't want
@@ -103,3 +101,9 @@ recipes.addShaped("void_crystal", <crossroads:void_crystal>, [
 	[lumquartz, biotite, lumquartz],
 	[drgbreath,voidstone,drgbreath],
 	[lumquartz, biotite, lumquartz]]);
+
+
+// missing recipe for fluid void
+
+recipes.addShaped("fluid_void", <crossroads:fluid_void>, 
+	[[<ore:ingotCopper>], [<minecraft:sponge:0>]]);

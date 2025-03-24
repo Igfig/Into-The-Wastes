@@ -21,7 +21,9 @@ recipes.addShapedMirrored("silver_knife", <mysticalworld:silver_knife>,[
 
 
 // info about silkworms
+
 mods.jei.JEI.addDescription(<mysticalworld:silkworm_egg>, "Dropped rarely from birch leaves.", "Silkworm eggs hatch into silkwoms, which grow over time and eventually drop cocoons. Cocoons can be crafted into silk thread, and then into string or silk cloth.", "Feed your silkworms leaves to speed up their growth.");
+<mysticalworld:silk_cocoon>.addTooltip("Shed periodically by silkworms");
 
 
 // hide removed items
