@@ -21,3 +21,9 @@ mods.foundry.AlloyingCrucible.addRecipe(<liquid:purified_water> * 4, <liquid:wat
 // convert distilled water to purified water
 
 mods.foundry.AlloyingCrucible.addRecipe(<liquid:purified_water> * 11, <liquid:distilledwater> * 10, <liquid:purified_water> * 1);
+
+
+// primal mana to essence of knowledge. late-game recipe
+
+mods.foundry.AlloyingCrucible.addRecipe(<liquid:blood> * 1, <liquid:liquidfat> * 1, <liquid:iron> * 1);
+mods.foundry.AlloyingCrucible.addRecipe(<liquid:experience> * 1, <liquid:mana> * 1, <liquid:blood> * 5);
