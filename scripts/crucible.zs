@@ -82,11 +82,13 @@ mods.crossroads.HeatingCrucible.addRecipe(<thermalfoundation:material:892>, <liq
 
 // melt down elemental dusts
 
-mods.crossroads.HeatingCrucible.addRecipe(<ore:dustPyrotheum>, <liquid:pyrotheum> * 250, "minecraft:blocks/magma");
-mods.crossroads.HeatingCrucible.addRecipe(<ore:dustCryotheum>, <liquid:cryotheum> * 250, "minecraft:blocks/packed_ice");
-mods.crossroads.HeatingCrucible.addRecipe(<ore:dustAerotheum>, <liquid:aerotheum> * 250, "minecraft:blocks/sandstone");
-mods.crossroads.HeatingCrucible.addRecipe(<ore:dustPetrotheum>, <liquid:petrotheum> * 250, "minecraft:blocks/obsidian");
+mods.crossroads.HeatingCrucible.addRecipe(<ore:dustPyrotheum>, <liquid:pyrotheum> * 125, "minecraft:blocks/magma");
+mods.crossroads.HeatingCrucible.addRecipe(<ore:dustCryotheum>, <liquid:cryotheum> * 125, "minecraft:blocks/packed_ice");
+mods.crossroads.HeatingCrucible.addRecipe(<ore:dustAerotheum>, <liquid:aerotheum> * 125, "minecraft:blocks/sandstone");
+mods.crossroads.HeatingCrucible.addRecipe(<ore:dustPetrotheum>, <liquid:petrotheum> * 125, "minecraft:blocks/obsidian");
+
 mods.crossroads.HeatingCrucible.addRecipe(<ore:dustMana>, <liquid:mana> * 250, "thermalfoundation:blocks/storage/block_mithril");
+mods.crossroads.HeatingCrucible.addRecipe(<contenttweaker:mana_gem>, <liquid:mana> * 250, "thermalfoundation:blocks/storage/block_mithril");
 
 
 // melt rails and rebar back to iron (lossily)

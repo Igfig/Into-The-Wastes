@@ -49,8 +49,14 @@ mods.crossroads.Grindstone.addRecipe(<thermalfoundation:material:2050>, <thermal
 mods.crossroads.Grindstone.addRecipe(<thermalfoundation:material:2052>, <thermalfoundation:material:2053> * 4); // basalz
 
 
+// and mana gem to mana dust
+
+mods.crossroads.Grindstone.addRecipe(<contenttweaker:mana_gem>, <thermalfoundation:material:1028>);
+
+
 // grind vanadium
 // only the ingot, because I don't want people to think that you can smelt vanadium dust into vanadium ingots
+
 mods.crossroads.Grindstone.addRecipe(<valoegheses_be:ingot_vanadium>, <crossroads:vanadium>);
 
 

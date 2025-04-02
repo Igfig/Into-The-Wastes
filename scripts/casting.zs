@@ -31,20 +31,20 @@ Casting.addRecipe(<railcraft:rebar> * 2, <liquid:steel> * 108, <foundry:mold:3>,
 
 // cast elemental fluids to their rods
 
-CastingTable.addRodRecipe(<thermalfoundation:material:1024>, <liquid:pyrotheum> * 250);
-CastingTable.addRodRecipe(<thermalfoundation:material:1025>, <liquid:cryotheum> * 250);
-CastingTable.addRodRecipe(<thermalfoundation:material:1026>, <liquid:aerotheum> * 250);
-CastingTable.addRodRecipe(<thermalfoundation:material:1027>, <liquid:petrotheum> * 250);
+CastingTable.addRodRecipe(<minecraft:blaze_rod>, <liquid:pyrotheum> * 500);
+CastingTable.addRodRecipe(<thermalfoundation:material:2048>, <liquid:cryotheum> * 500);
+CastingTable.addRodRecipe(<thermalfoundation:material:2050>, <liquid:aerotheum> * 500);
+CastingTable.addRodRecipe(<thermalfoundation:material:2052>, <liquid:petrotheum> * 500);
 
-Casting.addRecipe(<thermalfoundation:material:1024>, <liquid:pyrotheum> * 250, <foundry:mold:3>);
-Casting.addRecipe(<thermalfoundation:material:1025>, <liquid:cryotheum> * 250, <foundry:mold:3>);
-Casting.addRecipe(<thermalfoundation:material:1026>, <liquid:aerotheum> * 250, <foundry:mold:3>);
-Casting.addRecipe(<thermalfoundation:material:1027>, <liquid:petrotheum> * 250, <foundry:mold:3>);
+Casting.addRecipe(<minecraft:blaze_rod>, <liquid:pyrotheum> * 500, <foundry:mold:3>);
+Casting.addRecipe(<thermalfoundation:material:2048>, <liquid:cryotheum> * 500, <foundry:mold:3>);
+Casting.addRecipe(<thermalfoundation:material:2050>, <liquid:aerotheum> * 500, <foundry:mold:3>);
+Casting.addRecipe(<thermalfoundation:material:2052>, <liquid:petrotheum> * 500, <foundry:mold:3>);
 
 
-// and mana dust
+// and mana gem
 
-Casting.addRecipe(<thermalfoundation:material:1028>, <liquid:mana> * 250, <foundry:mold:21>);
+Casting.addRecipe(<contenttweaker:mana_gem>, <liquid:mana> * 250, <foundry:mold:21>);
 
 
 // cast Mystical World armour
@@ -80,8 +80,7 @@ CastingTable.addBlockRecipe(<charm:ender_pearl_block>, <liquid:ender> * 2250);
 
 // tar. We use the ingot mold because there's no orb casting table, but we want it to be available before the metal caster.
 
-Casting.addRecipe(<thermalfoundation:material:833>, <liquid:crude_oil> * 250, <foundry:mold:21>); // tar
-Casting.addRecipe(<thermalfoundation:material:833>, <liquid:crude_oil> * 250, <foundry:mold:0>); // tar in ingot mold
+Casting.addRecipe(<thermalfoundation:material:833>, <liquid:crude_oil> * 250, <foundry:mold:0>); // tar
 CastingTable.addIngotRecipe(<thermalfoundation:material:833>, <liquid:crude_oil> * 250); // tar in casting table
 
 
@@ -94,6 +93,7 @@ Casting.addRecipe(<minecraft:golden_apple:1>, <liquid:mana> * 1000, <minecraft:g
 Casting.addRecipe(<railcraft:tie:1> * 2, <liquid:water> * 100, <minecraft:concrete_powder:*>, <railcraft:rebar>, 0, true); // stone rail ties
 Casting.addRecipe(<thermalfoundation:fertilizer:2>, <liquid:redstone> * 500, <thermalfoundation:fertilizer:1>, <ore:dustCharcoal>, 0, true); // fluxed phyto-gro
 Casting.addRecipe(<thermalfoundation:material:160>, <liquid:iron> * 144, <foundry:mold:0>, <crossroads:vanadium_5_oxide>, 0, false); // vanadium steel
+Casting.addRecipe(<minecraft:experience_bottle>, <liquid:experience> * 200, <minecraft:glass_bottle>, null, 0, true);
 
 
 // cast gears more cheaply than making them by hand, just one ingot each

@@ -14,8 +14,8 @@ var refinedFuelTank = <contenttweaker:refined_fuel_tank>;
 
 // recipes for oil and fuel fluids
 
-mods.foundry.AlloyingCrucible.addRecipe(refinedOil * 4, crudeOil * 4, <liquid:steam> * 16);
-mods.foundry.AlloyingCrucible.addRecipe(refinedFuel * 4, refinedOil * 4, <liquid:aerotheum> * 1);
+mods.foundry.AlloyingCrucible.addRecipe(refinedOil * 1, crudeOil * 1, <liquid:steam> * 1);
+mods.foundry.AlloyingCrucible.addRecipe(refinedFuel * 1, refinedOil * 1, <liquid:glowstone> * 1);
 
 
 // recipes for fuel tanks
