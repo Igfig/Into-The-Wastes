@@ -184,9 +184,16 @@ recipes.addShapeless(<primitivetools:leather_strip> * 3, [<ore:leather>,<ore:too
 vine.displayName = "Vine Twine";
 
 
-// additional uses for primitive materials
+// fiddle with some oredicts to allow differentiation
 
-recipes.replaceAllOccurences(<minecraft:string>, <ore:string> | twine | strip, <inspirations:rope>);
+<ore:cordagePlant>.remove(twine);
+<ore:cordageGeneral>.remove(vine);
+<ore:cordageGeneral>.add(<minecraft:string>);
+
+
+// additional uses for primitive materials
+// see some more in ropes.zs
+
 recipes.replaceAllOccurences(<minecraft:string>, <ore:cordage>, <minecraft:book>);
 recipes.replaceAllOccurences(<minecraft:string>, <ore:cordage>, <futuremc:scaffolding>);
 

@@ -1,5 +1,5 @@
 val link = <iceandfire:chain_link>;
-val strg = <ore:string>;
+val strg = <ore:cordageGeneral>;
 
 <futuremc:chain>.addTooltip("Purely decorative");
 recipes.remove(<futuremc:chain>);
@@ -9,6 +9,11 @@ recipes.addShaped("futuremc_chain", <futuremc:chain> * 3, [
 <inspirations:rope:0>.displayName = "Climbable Rope";
 <inspirations:rope:0>.addTooltip("Place on the bottom of a block, or on an existing rope");
 <inspirations:rope:0>.addTooltip("Right-click with a stick to make a rope ladder");
+recipes.remove(<inspirations:rope:0>); 
+recipes.addShaped("rope", <inspirations:rope:0> * 3, [
+	[strg], 
+	[strg], 
+	[strg]]);
 
 <inspirations:rope:1>.displayName = "Climbable Chain";
 <inspirations:rope:1>.addTooltip("Place on the bottom of a block, or on an existing chain");
@@ -30,9 +35,9 @@ recipes.addShaped("vine_rope", <inspirations:rope:2> * 3, [
 <quark:rope>.addTooltip("Place on the bottom of a block, or on an existing rope");
 recipes.remove(<quark:rope>);
 recipes.addShaped("quark_thick_rope", <quark:rope> * 6, [
-	[strg,strg,strg], 
-	[strg,null,strg], 
-	[strg,strg,strg]]);
+	[strg,strg], 
+	[strg,strg], 
+	[strg,strg]]);
 	
 <quark:chain>.displayName = "Vehicle Chain";
 <quark:chain>.addTooltip("Links two vehicles together");
