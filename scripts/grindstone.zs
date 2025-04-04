@@ -6,6 +6,7 @@ val dustDef = <thermalfoundation:material>.definition;
 val ores = {
 	0: <ore:oreIron>,
 	1: <ore:oreGold>,
+	64: <ore:oreCopper>,
 	65: <ore:oreTin>,
 	66: <ore:oreSilver>,
 	67: <ore:oreLead>,
@@ -39,6 +40,10 @@ for id, ore in ores {
 for id, ingot in ingots {
 	mods.crossroads.Grindstone.addRecipe(ingot, dustDef.makeStack(id));
 }
+
+
+// cobble should grind to gravel
+mods.crossroads.Grindstone.addRecipe(<ore:cobblestone>, <minecraft:gravel>);
 
 
 // grind elemental rods to dust
