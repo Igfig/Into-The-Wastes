@@ -70,6 +70,7 @@ mods.crossroads.Grindstone.addRecipe(<valoegheses_be:ingot_vanadium>, <crossroad
 mods.crossroads.Grindstone.addRecipe(<ore:logWood>, <thermalfoundation:material:800> * 4); // sawdust
 mods.crossroads.Grindstone.addRecipe(<ore:enderpearl>, <railcraft:dust:6>); // ender powder
 mods.crossroads.Grindstone.addRecipe(<ore:netherrack>, <crossroads:sulfur>); // sulfur
+mods.crossroads.Grindstone.addRecipe(<crossroads:block_salt>, <cuisine:material:3>); // crude salt
 mods.crossroads.Grindstone.addRecipe(<cuisine:material:3>, <crossroads:dust_salt>); // salt
 mods.crossroads.Grindstone.addRecipe(<ore:oreClathrateOilSand>, <thermalfoundation:material:892> * 2); // bitumen
 mods.crossroads.Grindstone.addRecipe(<earthworks:block_chalk>, <earthworks:item_chalk> * 4); // chalk dust
