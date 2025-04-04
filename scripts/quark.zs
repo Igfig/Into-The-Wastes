@@ -29,6 +29,8 @@ mods.jei.JEI.removeAndHide(<quark:iron_rod>);
 <quark:grate>.addTooltip("Items fall right through.");
 <quark:iron_ladder>.addTooltip("Doesn't need to be against a wall, as long as the top is anchored");
 
+recipes.replaceAllOccurences(<quark:tallow>, <ore:tallow>, <quark:candle>); // so we can use other tallow-like items
+
 //World module
 <quark:archaeologist_hat>.displayName = "Paleontolgist Hat";
 <quark:archaeologist_hat>.addTooltip("Slightly increases Fortune when mining");
@@ -47,4 +49,3 @@ mods.jei.JEI.removeAndHide(<quark:iron_rod>);
 <quark:slime_bucket>.addTooltip("Awakens when in a slime chunk");
 <quark:soul_powder>.addTooltip("Use in the Nether to show direction to the nearest nether fortress");
 <quark:black_ash>.addTooltip("Place to prevent mob spawning on placed block or block above");
-

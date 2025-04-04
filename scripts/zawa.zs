@@ -104,6 +104,11 @@ recipes.addShaped("zawa_steel_bars", <zawa:steel_bars> * 6, [
 <zawa:seine_net>.addTooltip("Catches small seafood for aquatic animal feed.");
 <zawa:seine_net>.addTooltip("Point at water, hold right-click, and wiggle back and forth.");
 
+<zawa:coin>.addTooltip("Some ZAWA NPCs like these.");
+
+<zawa:hunting_rifle>.addTooltip("Fires rifle bullets.");
+<zawa:tranquilizer_gun>.addTooltip("Fires tranquilizer or poison darts.");
+
 
 // worms and other small foods
 
@@ -136,6 +141,13 @@ recipes.removeByRecipeName("zawa:leather_tiger");
 recipes.removeByRecipeName("zawa:leather");
 
 recipes.addShapeless(<minecraft:leather>, [<ore:zawaFur>|<ore:zawaHide>]);
+
+
+// some items have no real use of their own. Add some
+
+furnace.addRecipe(<minecraft:gold_nugget> * 3, <zawa:coin>);
+<ore:tallow>.add(<zawa:blubber>);
+recipes.addShapeless(<minecraft:dye:15> * 4, [<zawa:crocodile_tooth>]); // bone meal
 
 
 // simplify kibble recipes and make them take a wider range of ingredients
