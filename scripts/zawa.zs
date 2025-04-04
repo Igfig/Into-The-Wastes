@@ -105,6 +105,29 @@ recipes.addShaped("zawa_steel_bars", <zawa:steel_bars> * 6, [
 <zawa:seine_net>.addTooltip("Point at water, hold right-click, and wiggle back and forth.");
 
 
+// worms and other small foods
+
+<zawa:worm>.addTooltip("Some animals like these.");
+<zawa:worm>.addTooltip("Barely human-edible if cooked.");
+<zawa:worm>.addTooltip("Occasionally dropped while digging dirt.");
+
+<zawa:shrimp>.addTooltip("Some animals like these.");
+<zawa:shrimp>.addTooltip("Barely human-edible if cooked.");
+<zawa:shrimp>.addTooltip("Catch with a seine net.");
+
+<zawa:mussels>.addTooltip("Some animals like these.");
+<zawa:mussels>.addTooltip("Barely human-edible if cooked.");
+<zawa:mussels>.addTooltip("Catch with a seine net.");
+
+<zawa:worm>.maxStackSize = 16;
+<zawa:shrimp>.maxStackSize = 16;
+<zawa:mussels>.maxStackSize = 16;
+
+furnace.addRecipe(<contenttweaker:worm_cooked>, <zawa:worm>);
+furnace.addRecipe(<contenttweaker:shrimp_cooked>, <zawa:shrimp>);
+furnace.addRecipe(<contenttweaker:mussels_cooked>, <zawa:mussels>);
+
+
 // make fur-to-leather recipe produce less, to make meerkats less OP in the early game
 // ditto scales-to-leather, so that it's not way better than the others
 
@@ -113,16 +136,6 @@ recipes.removeByRecipeName("zawa:leather_tiger");
 recipes.removeByRecipeName("zawa:leather");
 
 recipes.addShapeless(<minecraft:leather>, [<ore:zawaFur>|<ore:zawaHide>]);
-
-
-// worms
-
-<zawa:worm>.addTooltip("Some animals like these.");
-<zawa:worm>.addTooltip("Barely human-edible if cooked.");
-
-<zawa:worm>.maxStackSize = 16;
-
-furnace.addRecipe(<contenttweaker:worm_cooked>, <zawa:worm>);
 
 
 // simplify kibble recipes and make them take a wider range of ingredients
