@@ -7,13 +7,14 @@
             "dimensiontype":
             {
                 "id": -1,
-                "name": "the_nether",
+                "name": "Nether",
                 "keeploaded": false,
                 "worldprovider": "WorldProviderHellJED",
                 "require_exact_match": true
             },
             "jed": {
-                "MovementFactor": 1
+                "MovementFactor": 1,
+                "worldprovider": "WorldProviderHell"
             }
         }
     ]
