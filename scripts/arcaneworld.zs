@@ -65,7 +65,7 @@ recipes.remove(token); // new recipe added
 ArcaneWorld.createRitualCreateItem("departure", "Ritual of Departure", <rats:chunky_cheese_token>, [	
 	<biomesoplenty:sapling_1:7>, // sacred oak sapling
 	<ore:blockFireDragonsteel> | <ore:blockIceDragonsteel>,
-	<minecraft:dragon_egg>,
+	<contenttweaker:mana_gem>,
 	<thermalfoundation:storage:6>, // platinum block
 	<biomesoplenty:terrestrial_artifact>]);
 

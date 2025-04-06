@@ -6,6 +6,7 @@ val dustDef = <thermalfoundation:material>.definition;
 val ores = {
 	0: <ore:oreIron>,
 	1: <ore:oreGold>,
+	64: <ore:oreCopper>,
 	65: <ore:oreTin>,
 	66: <ore:oreSilver>,
 	67: <ore:oreLead>,
@@ -41,6 +42,10 @@ for id, ingot in ingots {
 }
 
 
+// cobble should grind to gravel
+mods.crossroads.Grindstone.addRecipe(<ore:cobblestone>, <minecraft:gravel>);
+
+
 // grind elemental rods to dust
 
 mods.crossroads.Grindstone.addRecipe(<minecraft:blaze_rod>, <minecraft:blaze_powder> * 4);
@@ -49,8 +54,14 @@ mods.crossroads.Grindstone.addRecipe(<thermalfoundation:material:2050>, <thermal
 mods.crossroads.Grindstone.addRecipe(<thermalfoundation:material:2052>, <thermalfoundation:material:2053> * 4); // basalz
 
 
+// and mana gem to mana dust
+
+mods.crossroads.Grindstone.addRecipe(<contenttweaker:mana_gem>, <thermalfoundation:material:1028>);
+
+
 // grind vanadium
 // only the ingot, because I don't want people to think that you can smelt vanadium dust into vanadium ingots
+
 mods.crossroads.Grindstone.addRecipe(<valoegheses_be:ingot_vanadium>, <crossroads:vanadium>);
 
 
@@ -59,7 +70,9 @@ mods.crossroads.Grindstone.addRecipe(<valoegheses_be:ingot_vanadium>, <crossroad
 mods.crossroads.Grindstone.addRecipe(<ore:logWood>, <thermalfoundation:material:800> * 4); // sawdust
 mods.crossroads.Grindstone.addRecipe(<ore:enderpearl>, <railcraft:dust:6>); // ender powder
 mods.crossroads.Grindstone.addRecipe(<ore:netherrack>, <crossroads:sulfur>); // sulfur
+mods.crossroads.Grindstone.addRecipe(<crossroads:block_salt>, <cuisine:material:3>); // crude salt
 mods.crossroads.Grindstone.addRecipe(<cuisine:material:3>, <crossroads:dust_salt>); // salt
 mods.crossroads.Grindstone.addRecipe(<ore:oreClathrateOilSand>, <thermalfoundation:material:892> * 2); // bitumen
 mods.crossroads.Grindstone.addRecipe(<earthworks:block_chalk>, <earthworks:item_chalk> * 4); // chalk dust
 mods.crossroads.Grindstone.addRecipe(<railcraft:ore_magic>, <railcraft:firestone_raw>); // firestone
+mods.crossroads.Grindstone.addRecipe(<minecraft:ice>, <minecraft:snow>);

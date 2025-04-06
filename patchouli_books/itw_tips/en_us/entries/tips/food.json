@@ -18,8 +18,26 @@
 		},
 		{
 			"type": "crafting",
-			"recipe": "crafttweaker:foodfunk_icebox_modified",
-			"recipe2": "crafttweaker:foodfunk_freezer_modified"
+			"recipe": "crafttweaker:icebox",
+			"recipe2": "crafttweaker:freezer"
+		},
+		{
+			"type": "spotlight",
+			"item": "cuisine:wok",
+			"text": "Simple foods don't restore much hunger; pan-cooked dishes restore a lot more.$(br2)When cooking in a wok, ingredients are ready when their circle fills and they start to change colour."
+		},
+		{
+			"type": "text",
+			"text": "Prep ingredients on a cutting board or in a mortar before cooking to reduce the chance of them being undercooked.$(br2)Dishes seasoned with salt, sugar, or other seasonings restore more hunger than plain dishes.$(br2)Some ingredients can add potion effects to pan-cooked meals."
+		},
+		{
+			"type": "text",
+			"text": "Flour can be cooked directly to bread, or you can make it into dough first to double your yield.$(br2)Food cooked in a furnace often doesn't stack on its own, halting progress after the first. Extract products with a hopper to keep the output slot clear."
+		},
+		{
+			"type": "spotlight",
+			"item": "cuisine:mill",
+			"text": "Mills and jars need precise ratios of ingredients to work.$(br2)Mills will output items into an adjacent inventory, if there is one.$(br2)You can get fluids out of a mill with a bottle, bucket, spice bottle, or faucet."
 		}
     ]
 }

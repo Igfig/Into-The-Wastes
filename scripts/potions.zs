@@ -119,9 +119,10 @@ removePotionVariantRecipes("inspirations:resistance");
 removePotionVariantRecipes("inspirations:long_resistance");
 
 
-// add shulker shell as an ingredient for the Quark version
+// add shulker or tortoise shell as an ingredient for the Quark version
 
 addPotionRecipes("minecraft:awkward", shulker, "quark:resistance");
+addPotionRecipes("minecraft:awkward", <zawa:tortoise_shell>, "quark:resistance");
 
 
 // remove COFH levitation potion
@@ -191,6 +192,11 @@ Cauldron.removeBrewingRecipe("toughasnails:cold_resistance_type");
 
 addPotionRecipes("minecraft:awkward", iceCube, "toughasnails:heat_resistance_type");
 addPotionRecipes("minecraft:awkward", magmaShard, "toughasnails:cold_resistance_type");
+
+
+// add pangolin scale as an alternate ingredient for potions of stability
+
+addPotionRecipes("minecraft:awkward", <zawa:pangolin_scale>, "quark:resilience");
 
 
 // remove all COFH "long strong" potions

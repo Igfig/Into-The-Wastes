@@ -4,13 +4,14 @@
     "category": "patchouli:tips",
     "pages": [
 		{
-			"type": "text",
-			"text": "Plant fiber comes from breaking long grass; flint flakes come from right-clicking flint on rock. You need both to make your starter tools.$(br2)Look for rivers! They may be choked with quicksand, but their banks can hold grass and clay."
+			"type": "spotlight",
+			"item": "primitivetools:plant_fiber",
+			"text": "Plant fiber comes from breaking long grass or tumbleweeds. You'll need it to make your starter tools.$(br2)Look for rivers! They may be choked with quicksand, but their banks can hold grass and clay."
 		},
 		{
 			"type": "crafting",
-			"recipe": "primitivetools:primitive_pick_cwf",
-			"text": "Wood and stone tools aren't available; use flint. Metal tools need to be forged on a Tinker's Anvil or cast in a Metal Caster."
+			"recipe": "crafttweaker:item.primitivetools.primitive_pick_cwf",
+			"text": "Wood and stone tools aren't available; use flint.$(br2)Metal tools need to be forged on a Tinker's Anvil or cast in a Metal Caster."
 		},
 		{
 			"type": "spotlight",
@@ -25,7 +26,12 @@
 		},
 		{
 			"type": "text",
-			"text": "The desert has barely any ores except for coal, saltpeter, and oil.$(br2)Crouch while chopping a tree to fell the entire tree at once.$(br2)You can find silkworms in birch leaves. Harvest silk from them to craft light, cooling armour."
+			"text": "The desert has barely any ores except for coal, saltpeter, and oil.$(br2)Oil wells often have larger deposits somewhere below them.$(br2)Crouch while chopping a tree to fell the entire tree at once."
+		},
+		{
+			"type": "spotlight",
+			"item": "mysticalworld:silkworm_egg",
+			"text": "You can find silkworms in birch leaves. Use the silk they shed to craft light, cooling armour.$(br2)Feed silkworms leaf blocks to make them produce silk faster."
 		}
     ]
 }

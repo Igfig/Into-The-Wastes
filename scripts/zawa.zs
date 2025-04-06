@@ -104,6 +104,34 @@ recipes.addShaped("zawa_steel_bars", <zawa:steel_bars> * 6, [
 <zawa:seine_net>.addTooltip("Catches small seafood for aquatic animal feed.");
 <zawa:seine_net>.addTooltip("Point at water, hold right-click, and wiggle back and forth.");
 
+<zawa:coin>.addTooltip("Some ZAWA NPCs like these.");
+
+<zawa:hunting_rifle>.addTooltip("Fires rifle bullets.");
+<zawa:tranquilizer_gun>.addTooltip("Fires tranquilizer or poison darts.");
+
+
+// worms and other small foods
+
+<zawa:worm>.addTooltip("Some animals like these.");
+<zawa:worm>.addTooltip("Barely human-edible if cooked.");
+<zawa:worm>.addTooltip("Occasionally dropped while digging dirt.");
+
+<zawa:shrimp>.addTooltip("Some animals like these.");
+<zawa:shrimp>.addTooltip("Barely human-edible if cooked.");
+<zawa:shrimp>.addTooltip("Catch with a seine net.");
+
+<zawa:mussels>.addTooltip("Some animals like these.");
+<zawa:mussels>.addTooltip("Barely human-edible if cooked.");
+<zawa:mussels>.addTooltip("Catch with a seine net.");
+
+<zawa:worm>.maxStackSize = 16;
+<zawa:shrimp>.maxStackSize = 16;
+<zawa:mussels>.maxStackSize = 16;
+
+furnace.addRecipe(<contenttweaker:worm_cooked>, <zawa:worm>);
+furnace.addRecipe(<contenttweaker:shrimp_cooked>, <zawa:shrimp>);
+furnace.addRecipe(<contenttweaker:mussels_cooked>, <zawa:mussels>);
+
 
 // make fur-to-leather recipe produce less, to make meerkats less OP in the early game
 // ditto scales-to-leather, so that it's not way better than the others
@@ -115,14 +143,11 @@ recipes.removeByRecipeName("zawa:leather");
 recipes.addShapeless(<minecraft:leather>, [<ore:zawaFur>|<ore:zawaHide>]);
 
 
-// worms
+// some items have no real use of their own. Add some
 
-<zawa:worm>.addTooltip("Some animals like these.");
-<zawa:worm>.addTooltip("Barely human-edible if cooked.");
-
-<zawa:worm>.maxStackSize = 16;
-
-furnace.addRecipe(<contenttweaker:worm_cooked>, <zawa:worm>);
+furnace.addRecipe(<minecraft:gold_nugget> * 3, <zawa:coin>);
+<ore:tallow>.add(<zawa:blubber>);
+recipes.addShapeless(<minecraft:dye:15> * 4, [<zawa:crocodile_tooth>]); // bone meal
 
 
 // simplify kibble recipes and make them take a wider range of ingredients

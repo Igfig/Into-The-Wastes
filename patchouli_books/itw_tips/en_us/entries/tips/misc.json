@@ -7,7 +7,7 @@
 		{
 			"type": "crafting",
 			"recipe": "toughasnails:campfire",
-			"text": "Bonfires need a flint and steel to light, but are very warm."
+			"text": "Campfires need a flint and steel to light, but are very warm."
 		},
 		{
 			"type": "crafting",
@@ -15,12 +15,30 @@
 			"text": "Fire pits can cook food with a wok or barbecue rack, but need fuel to cook anything."
 		},
 		{
-			"type": "text",
-			"text": "You can pick up most friendly entities and carry them around by shift-right-clicking on them.$(br2)The Structured Crafter is your early-game autocrafter. Later, the Rat Crafting Table is a more compact alternative.$(br2)Search \"$guides\" in JEI to see the guidebooks included for various mods."
+			"type": "spotlight",
+			"item":"contenttweaker:empty_tank",
+			"text": "Fill an Empty Tank with crude oil, naphtha, or refined fuel to turn it into stackable solid fuel--great for locomotives.$(br2)You can't put fluid buckets in a chest minecart. Use a tank minecart instead.$(br2)Locomotives can draw water from an adjacent tank cart."
 		},
 		{
 			"type": "text",
-			"text": "Fill an Empty Tank with crude oil, naphtha, or refined fuel to turn it into stackable solid fuel--great for locomotives.$(br2)The Nether isn't a shortcut any more. Distances in the Nether are the same as in the overworld, and it's even hotter than the desert."
+			"text": "Don't add water to a hot, dry locomotive: it can explode. Let it cool down first.$(br2)A train that derails at speed will also explode.$(br2)Pack animals, carts, and trains are all useful for bulk transport.$(br2)The Nether isn't a shortcut any more. Distances in the Nether are the same as in the overworld."
+		},
+		{
+			"type": "text",
+			"text": "You can pick up most friendly entities and carry them around by shift-right-clicking on them.$(br2)The Structured Crafter is your early-game autocrafter. Later, the Rat Crafting Table is a more compact alternative.$(br2)Pouring water onto quicksand turns it into solid mud."
+		},
+		{
+			"type": "crafting",
+			"recipe": "thermalfoundation:tome_experience",
+			"text": "You'll need a filled Tome of Knowledge for the endgame, so start storing your XP early.$(br2)Right-click a Tome of Knowledge on a fluid container to store XP in liquid form."
+		},
+		{
+			"type": "text",
+			"text": "One ingot of metal is equivalent to 144 mB of molten metal.$(br2)Basic molds can be made with any metal, but tool molds require lead specifically.$(br2)Crucibles will keep melting items even if they're full, destroying any excess liquid.$(br2)You can brew potions in heated cauldrons, though you only get 2 potions per ingredient."
+		},
+		{
+			"type": "text",
+			"text": "Watch your step around flickering black spheres.$(br2)Blossoming Trees sometimes have small root caves at their base.$(br2)The Eye of Horus beholds all secrets.$(br2)Search \"$guides\" in JEI to see the guidebooks included for various mods."
 		}
     ]
 }
