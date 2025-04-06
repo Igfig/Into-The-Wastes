@@ -6,15 +6,11 @@
     "pages": [
 		{
 			"type": "text",
-			"text": "The Wastes are hot and dry. Keep an eye on your thirst and temperature meters.$(br2)Only in oases can you find cooler temperatures and real water."
+			"text": "The Wastes are hot and dry. Keep an eye on your thirst and temperature meters.$(br2)Only in oases can you find cooler temperatures and real water.$(br2)The further you go north or south, the cooler and wetter oasis climates will get. You'll also find new creatures and resources."
 		},
 		{
 			"type": "text",
-			"text": "The further you go north or south, the cooler and wetter oasis climates will get. You'll also find new creatures and resources.$(br2)Stack sizes are smaller than usual for food, metals, and some crafting ingredients. For bulk transport, use caravans, wagons, or trains."
-		},
-		{
-			"type": "text",
-			"text": "You respawn at a new location each time you die, even if you've slept in a bed. Your items stay on your corpse.$(br2)When you respawn, you'll be at a random location within 1500m of your spawn point."
+			"text": "When you would die in multiplayer, you stay KO'd for 60 seconds first. Other players can revive you by holding right-click on you.$(br2)You respawn at a new location each time you die, even if you've slept in a bed. Your items stay on your corpse.$(br2)When you respawn, you'll be at a random location within 1500m of your spawn point."
 		},
 		{
 			"type": "spotlight",

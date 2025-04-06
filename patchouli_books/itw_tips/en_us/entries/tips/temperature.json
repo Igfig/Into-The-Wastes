@@ -2,6 +2,7 @@
     "name": "Temperature",
     "icon": "toughasnails:thermometer",
     "category": "patchouli:tips",
+	"sortnum": -5,
     "pages": [
 		{
 			"type": "text",
@@ -9,11 +10,11 @@
 		},
 		{
 			"type": "text",
-			"text": "Burning up with hyperthermia? Get underground! The more rock and earth above you, the cooler you'll be."
+			"text": "Burning up with hyperthermia? Get underground! The more blocks above you, the cooler you'll be.$(br2)You need at least an 11x11 roof with 3m of clearance to create enough shade to cool you."
 		},
 		{
 			"type": "text",
-			"text": "Some blocks increase or decrease the temperature around them.$(br2)Anything visibly burning will make you hotter; water, ice, snow, and leaves will cool you down."
+			"text": "Some blocks increase or decrease the temperature around them.$(br2)Anything visibly burning will make you hotter; water, ice, snow, and deciduous leaves will cool you down."
 		}
     ]
 }

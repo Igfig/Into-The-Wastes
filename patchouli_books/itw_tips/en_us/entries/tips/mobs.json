@@ -2,25 +2,54 @@
     "name": "Mobs",
     "icon": "minecraft:spawn_egg",
     "category": "patchouli:tips",
+	"sortnum": 5,
     "pages": [
 		{
 			"type": "text",
-			"text": "Once you've spent a while in an area, highly aggressive raiders will start to spawn.$(br2)Some raider spawners can activate even when fully lit up. Be careful when exploring ruins!$(br2)Rats and raiders will attack your crops and rob your chests if they can, so protect them well."
+			"text": "Tamed animals need roughly two food and one bottle of water each day.$(br2)Farm animals eat and drink from troughs, and need straw or grass to sleep on.$(br2)Zoo animals eat from food barrels, drink from cauldrons or water bowls, and need enrichment items to avoid boredom."
 		},
 		{
-			"type": "spotlight",
-			"item": "rats:rat_hole",
-			"text": "Rats can burrow through wood and other soft materials."
+			"type": "entity",
+			"entity": "raiders:raider",
+			"text": "Once you've spent a while in an area, highly aggressive raiders will start to spawn."
 		},
 		{
-			"type": "crafting",
-			"recipe": "thermalfoundation:material_60",
-			"text": "Desert mountaintops can be dangerous during thunderstorms; that's when the air elementals called Blitzes spawn."
+			"type": "text",
+			"text": "Some raider spawners can activate even when fully lit up. Be careful when exploring ruins!$(br2)Rats and raiders will ruin your crops and rob your chests if they can, so protect them well.$(br2)Zombies and raiders can break torches, but not lanterns.$(br2)Build livestock pen walls 3m high to prevent escapes."
 		},
 		{
-			"type": "crafting",
-			"recipe": "thermalfoundation:material_61",
+			"type": "entity",
+			"entity": "rats:rat",
+			"text": "You can tame a rat by dropping cheese near it. One rat can eat 10 to 16 cheese."
+		},
+		{
+			"type": "entity",
+			"entity": "thermalfoundation:blitz",
+			"text": "Desert mountaintops can be dangerous during storms; that's when the air elementals called Blitzes spawn."
+		},
+		{
+			"type": "entity",
+			"entity": "thermalfoundation:basalz",
 			"text": "Deep underground in mountainous regions, you might encounter the earth elementals called Basalzes."
+		},
+		{
+			"type": "entity",
+			"entity": "iceandfire:deathworm",
+			"scale": 0.15,
+			"text": "Deathworms can only burrow through sand, but they have a long lunge that can break blocks."
+		},
+		{
+			"type": "entity",
+			"entity": "iceandfire:firedragon{ModelDead:1b,AgeTicks:500000,DeathStage:10}",
+			"scale": 0.5,
+			"text": "You can harvest a dragon skeleton by right-clicking it with an empty hand."
+		},
+		{
+			"type": "entity",
+			"entity": "iceandfire:firedragon{AgeTicks:5000000}",
+			"scale": 0.08,
+			"offset": 5.0,
+			"text": "Adult dragons lair in underground caves. Look for clusters of ore flowers in the desert."
 		}
     ]
 }

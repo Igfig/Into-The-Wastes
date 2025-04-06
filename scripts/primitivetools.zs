@@ -114,42 +114,42 @@ for tool, parts in axes {
 	val shaft = parts[0];
 	val binding = parts[1];
 	recipes.remove(tool); // although these recipes should have already been removed tbh
-	recipes.addShapedMirrored(tool, [[flint, flint], [shaft, binding]]);
+	recipes.addShapedMirrored(tool.name, tool, [[flint, flint], [shaft, binding]]);
 }
 for tool, parts in knives {
 	val shaft = parts[0];
 	val binding = parts[1];
 	recipes.remove(tool);
-	recipes.addShapedMirrored(tool, [[binding, flint], [shaft, null]]);
+	recipes.addShapedMirrored(tool.name, tool, [[binding, flint], [shaft, null]]);
 }
 for tool, parts in hoes {
 	val shaft = parts[0];
 	val binding = parts[1];
 	recipes.remove(tool);
-	recipes.addShapedMirrored(tool, [[flint, binding], [shaft, binding]]);
+	recipes.addShapedMirrored(tool.name, tool, [[flint, binding], [shaft, binding]]);
 }
 for tool, parts in picks {
 	val shaft = parts[0];
 	val binding = parts[1];
 	recipes.remove(tool);
-	recipes.addShapedMirrored(tool, [[flint, binding], [shaft, flint]]);
+	recipes.addShapedMirrored(tool.name, tool, [[flint, binding], [shaft, flint]]);
 }
 for tool, parts in shovels {
 	val shaft = parts[0];
 	val binding = parts[1];
 	recipes.remove(tool);
-	recipes.addShapedMirrored(tool, [[binding, flint], [shaft, binding]]);
+	recipes.addShapedMirrored(tool.name, tool, [[binding, flint], [shaft, binding]]);
 }
 for tool, parts in hammers {
 	val head = parts[0];
 	val shaft = parts[1];
 	val binding = parts[2];
 	recipes.remove(tool);
-	recipes.addShapedMirrored(tool, [[head, binding], [shaft, head]]);
+	recipes.addShapedMirrored(tool.name, tool, [[head, binding], [shaft, head]]);
 }
 for tool, binding in spears {
 	recipes.remove(tool);
-	recipes.addShapedMirrored(tool, [[binding, flint], [<ore:stickWood>, <ore:stickWood>]]);
+	recipes.addShapedMirrored(tool.name, tool, [[binding, flint], [<ore:stickWood>, <ore:stickWood>]]);
 	tool.addTooltip("Not a melee weapon");
 }
 

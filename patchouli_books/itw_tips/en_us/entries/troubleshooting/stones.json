@@ -1,11 +1,11 @@
 {
-    "name": "Strange stones appear underground",
+    "name": "Strange stones underground",
     "icon": "wildnature:phyllite",
     "category": "patchouli:troubleshooting",
     "pages": [
 		{
 			"type": "text",
-		"text": "$(bold)Strange stones appear underground in some regions.$()$(br2)The WildNature mod adds these, and in such great numbers that CustomOreGen can't always replace them all.$(br2)Workaround: Run the command $(c:/cogPopulate 16)/cogPopulate 16$() to replace the offending blocks in your local area."
+		"text": "$(bold)Strange stones appear underground in some regions.$()$(br2)The WildNature mod adds these, and in such great numbers that CustomOreGen can't always replace them all.$(br2)Workaround: Run the command $(bold)/cogPopulate 16$() to replace the offending blocks in your local area."
 		},
 		{
 			"type": "image",
