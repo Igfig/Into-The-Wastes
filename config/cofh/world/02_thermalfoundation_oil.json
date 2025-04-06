@@ -47,7 +47,7 @@
 							}
 						],
 						"crust": "sandstone",
-						"filler": "thermalfoundation:fluid_crude_oil",
+						"filler": "contenttweaker:fluid_crude_oil_2",
 						"hollow": "true",
 						"material": [
 							"air",
@@ -63,7 +63,7 @@
 							"quark:jasper",
 							"quark:sandstone_new",
 							"thermalfoundation:ore_fluid",
-							"thermalfoundation:fluid_crude_oil",
+							"contenttweaker:fluid_crude_oil_2",
 							"chisel_plus:grimstone",
 							"chisel_plus:holystone",
 							"environs:dried_stone",
@@ -72,7 +72,7 @@
 					},
 					{
 						"type": "spout",
-						"block": "thermalfoundation:fluid_crude_oil",
+						"block": "contenttweaker:fluid_crude_oil_2",
 						"radius": 0,
 						"height": 24,
 						"material": [
@@ -89,7 +89,7 @@
 							"quark:jasper",
 							"quark:sandstone_new",
 							"thermalfoundation:ore_fluid",
-							"thermalfoundation:fluid_crude_oil",
+							"contenttweaker:fluid_crude_oil_2",
 							"chisel_plus:grimstone",
 							"chisel_plus:holystone",
 							"environs:dried_stone",

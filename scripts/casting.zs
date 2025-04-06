@@ -81,7 +81,9 @@ CastingTable.addBlockRecipe(<charm:ender_pearl_block>, <liquid:ender> * 2250);
 // tar. We use the ingot mold because there's no orb casting table, but we want it to be available before the metal caster.
 
 Casting.addRecipe(<thermalfoundation:material:833>, <liquid:crude_oil> * 250, <foundry:mold:0>); // tar
+Casting.addRecipe(<thermalfoundation:material:833>, <liquid:crude_oil_2> * 250, <foundry:mold:0>); // tar
 CastingTable.addIngotRecipe(<thermalfoundation:material:833>, <liquid:crude_oil> * 250); // tar in casting table
+CastingTable.addIngotRecipe(<thermalfoundation:material:833>, <liquid:crude_oil_2> * 250); // tar in casting table
 
 
 // some more casting recipes
