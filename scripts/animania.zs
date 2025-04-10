@@ -24,7 +24,7 @@ import scripts.functions.unfunk;
 // allow either kitchen knife to be used in knife recipes
 // unfortunately we need to manually replace some of them, because we need to unfunk the ingredients
 
-<ore:carvingKnife>.add(<animania:carving_knife>, <cuisine:kitchen_knife>);
+<ore:carvingKnife>.add(<animania:carving_knife:*>, <cuisine:kitchen_knife:*>);
 
 recipes.removeByRecipeName("animania:straw_cutting");
 recipes.removeByRecipeName("animania:pork_cutting_1");
