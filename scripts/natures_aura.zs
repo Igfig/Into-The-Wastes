@@ -55,4 +55,6 @@ for item, tooltip in infused_gear {
 // TEMP recipe for Bottled Ghosts because there's a weird compatibility issue between Nature's Aura and JED
 
 recipes.addShapeless(<naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:nether"}), 
-	[<naturesaura:bottle_two_the_rebottling>, <minecraft:soul_sand>]);
+	[<naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:other"}), <minecraft:soul_sand>]);
+
+<naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:other"}).addTooltip("A bug prevents the creation of Bottled Ghosts normally, so craft this with some Soul Sand as a workaround");
