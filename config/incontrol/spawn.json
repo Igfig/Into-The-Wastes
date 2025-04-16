@@ -56,6 +56,12 @@
     "result": "deny"
   },
   {
+    "mob": "rats:rat",
+	"hostile": true,
+	"random": 0.8,
+    "result": "deny"
+  },
+  {
     "mob": "charm:spectre",
 	"biometype": "SPOOKY",
     "result": "allow"
