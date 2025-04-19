@@ -49,7 +49,7 @@ token.addTooltip(format.gold("Your ticket out of here"));
 // and do something with the token pieces
 
 val tokenPiece = <rats:token_piece>;
-recipes.addShapeless(<animania:sheep_cheese_wheel> * 8, [tokenPiece * 9]);
+recipes.addShapeless(<animania:sheep_cheese_wheel> * 8, [tokenPiece,tokenPiece,tokenPiece,tokenPiece,tokenPiece,tokenPiece,tokenPiece,tokenPiece,tokenPiece]);
 
 
 // add a missing display name
