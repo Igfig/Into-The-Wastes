@@ -147,3 +147,10 @@ recipes.replaceAllOccurences(<stevescarts:modulecomponents:43>, <ore:string>); /
 <stevescarts:cartmodule:80>.displayName = "Netherite Wood Cutter";
 <stevescarts:cartmodule:81>.displayName = "Netherite Hull";
 <stevescarts:cartmodule:84>.displayName = "Netherite Farmer";
+
+
+// add a crafting-table recipe for a very simple cart
+
+val basicCart = <stevescarts:modularcart>.withTag({Modules: [38, 44, 25] as byte[], CartVersion: 2 as byte, display:{LocName:"Basic Cart"}});
+recipes.addShaped("basic_cart", basicCart, [[<stevescarts:cartmodule:25>],[<stevescarts:cartmodule:44>],[<minecraft:minecart>]]);
+mods.jei.JEI.addItem(basicCart);
