@@ -107,6 +107,7 @@ recipes.remove(<railcraft:rail:5>); // electric rails
 mods.jei.JEI.removeAndHide(<railcraft:rail:5>); // electric rails shouldn't even be shown
 recipes.remove(<railcraft:tie:1>); // stone rail ties. Recipe is put in the metal caster instead
 
+
 // non-creosote recipe for wooden rail ties
 
 recipes.remove(<railcraft:tie:0>);
@@ -200,9 +201,17 @@ recipes.replaceAllOccurences(<minecraft:slime_ball>,<minecraft:slime_ball>|<ther
 
 recipes.remove(<railcraft:locomotive_steam_solid>);
 recipes.addShaped(<railcraft:locomotive_steam_solid>, [
-	[tank, tank, <essentials:item_chute>],
-	[tank, tank, <crossroads:coal_heater>],
-	[<minecraft:iron_bars>, <minecraft:minecart>, <minecraft:minecart>]]);
+	[null, null, <essentials:item_chute>],
+	[tank, tank, <stevescarts:cartmodule:0>],
+	[<minecraft:iron_bars>, <stevescarts:cartmodule:38>, <stevescarts:cartmodule:38>]]);
+
+
+// and a new name and info
+
+<railcraft:locomotive_steam_solid>.displayName = "High-Speed Steam Locomotive";
+<railcraft:locomotive_steam_solid>.addTooltip("High top speed, but very temperamental");
+
+mods.jei.JEI.addDescription(<railcraft:locomotive_steam_solid>, "Requires both fuel and water to create steam. Won't run until it's passed 100 degrees and built up a good supply of steam.", "This locomotive has a much higher top speed than the ones from Steve's Carts, but beware: it requires infrastructure to reach those speeds, and it can explode if not handled carefully.", "To reach top speed, the locomotive needs to be running on High Speed tracks, and to pass over a powered H.S. Booster or H.S. Transition track. Without boosters, it's only slightly faster than Steve's Carts.", "If the locomotive derails or runs into a wall, it will explode.", "The locomotive will also explode if 1. it runs out of water, 2. it's still burning fuel, and 3. you add more water to the hot boiler.", "If your locomotive runs out of water, you should stop it and let it cool down before adding more.", "Note that a locomotive can draw water from a Tank Cart directly attached to it.");
 
 
 // new crowbar recipes
@@ -217,6 +226,14 @@ recipes.addShaped(<railcraft:tool_crowbar_steel>, [
 	[null, steel, steel],
 	[null, steel, null],
 	[steel, null, null]]);
+
+	
+// crowbar tooltip
+
+<ore:toolCrowbar>.removeTooltip("right click");
+<ore:toolCrowbar>.addTooltip("Right-click to push a cart or flip a high-speed locomotive's direction");
+<ore:toolCrowbar>.addTooltip("Right-click while sneaking to link carts");
+<ore:toolCrowbar>.addTooltip("Left-click twice to break carts");
 	
 	
 // mark worldspike fuel as such

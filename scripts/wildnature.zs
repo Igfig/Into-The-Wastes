@@ -13,6 +13,7 @@ val fullyRemove = [
 <wildnature:diamond_rod>,
 <wildnature:ironworks>] as IItemStack[];
 
+// unfortunately, we can't rename the one amethyst sword without renaming all amethyst swords. So we have to add names this way instead.
 val swords = [<wildnature:amethyst_sword>.withTag({display:{LocName: "Tanzanite Sword"}}),<wildnature:sapphire_sword>,<wildnature:ruby_sword>,<wildnature:amber_sword>,<wildnature:malachite_sword>] as IItemStack[];
 val hoes = [<wildnature:amethyst_hoe>.withTag({display:{LocName: "Tanzanite Hoe"}}),<wildnature:sapphire_hoe>,<wildnature:ruby_hoe>,<wildnature:amber_hoe>,<wildnature:malachite_hoe>] as IItemStack[];
 val axes = [<wildnature:amethyst_axe>.withTag({display:{LocName: "Tanzanite Axe"}}),<wildnature:sapphire_axe>,<wildnature:ruby_axe>,<wildnature:amber_axe>,<wildnature:malachite_axe>] as IItemStack[];
@@ -71,7 +72,7 @@ for i, toolType in tools {
 		tool.displayName = gemNames[j] + " " + toolNames[i];
 		
 		if (j == 0) {
-			mods.jei.JEI.addItem(tool);
+			mods.jei.JEI.addItem(tool); // TODO oddly this doesn't seem to work any more?
 		}
 	}
 }
