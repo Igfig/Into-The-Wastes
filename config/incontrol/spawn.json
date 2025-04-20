@@ -9,9 +9,9 @@
     "dimension": 0,
 	"biometype": "DESERT",
 	"seesky": true,
-	"mindifficulty": 3.0,
+	"mindifficulty": 2.0,
     "maxcount": {
-      "amount": 10,
+      "amount": 15,
       "mod": "raiders",
       "perplayer": true
     },
@@ -53,6 +53,12 @@
   {
     "mob": "rats:rat",
 	"maxheight": 56,
+    "result": "deny"
+  },
+  {
+    "mob": "rats:rat",
+	"hostile": true,
+	"random": 0.8,
     "result": "deny"
   },
   {

@@ -6,8 +6,7 @@ import crafttweaker.item.IItemStack;
 <essentials:item_chute>.addTooltip("Insert and extract with Item Chute Port");
 
 <essentials:item_chute_port>.addTooltip("Insert items on square side");
-<essentials:item_chute_port>.addTooltip("Moves items upwards through an Item Chute");
-<essentials:item_chute_port>.addTooltip("to another Item Chute Port above");
+<essentials:item_chute_port>.addTooltip("Moves items upwards through an Item Chute to another Item Chute Port above");
 <essentials:item_chute_port>.addTooltip("Outputs from square side to any inventory");
 
 <essentials:sorting_hopper>.removeTooltip("Prioritizes");
@@ -31,8 +30,7 @@ mods.jei.JEI.addDescription(<essentials:port_extender>, "Place with the one-squa
 
 // Resources
 
-<crossroads:luminescent_quartz>.addTooltip("Created by passing a beam of LIGHT element");
-<crossroads:luminescent_quartz>.addTooltip("through a lens holder containing Pure Quartz");
+<crossroads:luminescent_quartz>.addTooltip("Created by passing a beam of LIGHT element through a lens holder containing Pure Quartz");
 
 
 // Redstone
@@ -205,8 +203,7 @@ mods.jei.JEI.addDescription(<crossroads:copshowium_creation_chamber>, "Insert li
 <crossroads:solid_quicksilver>.addTooltip(format.green("60 potential"));
 
 <crossroads:color_chart>.addTooltip("Shows magical elements you've discovered");
-<crossroads:color_chart>.addTooltip("Right-click a beam-emitting block with an OmniMeter");
-<crossroads:color_chart>.addTooltip("to see the last element it emitted");
+<crossroads:color_chart>.addTooltip("Right-click a beam-emitting block with an OmniMeter to see the last element it emitted");
 
 <crossroads:arcane_extractor>.addTooltip("Insert $laserFuel items to emit a beam of magic");
 mods.jei.JEI.addDescription(<crossroads:arcane_extractor>, "Type $laserFuel in JEI to see all valid fuels.", "Items must be inserted with a hopper or similar device.", "Each item produces a beam for 5 ticks.", "(Hoppers transfer one item every 8 ticks, which is why the beam appears to flicker.)");
@@ -226,15 +223,11 @@ mods.jei.JEI.addDescription(<crossroads:master_axis_crystal>, "Each type of beam
 <crossroads:arcane_reflector>.addTooltip("Redirects magical beams out its front (octagonal) side");
 <crossroads:arcane_reflector>.addTooltip("Multiple beams of magic will be combined into one");
 
-<crossroads:crystalline_prism>.addTooltip("Splits magical beams hitting an input (yellow)");
-<crossroads:crystalline_prism>.addTooltip("side into their component colors");
+<crossroads:crystalline_prism>.addTooltip("Splits magical beams hitting an input (yellow) side into their component colors");
 
-<crossroads:beam_splitter_basic>.addTooltip("Splits magical beams hitting any side");
-<crossroads:beam_splitter_basic>.addTooltip("into equal smaller beams going up and down");
+<crossroads:beam_splitter_basic>.addTooltip("Splits magical beams hitting any side into equal smaller beams going up and down");
 
-<crossroads:beam_splitter>.addTooltip("Splits magical beams hitting any side");
-<crossroads:beam_splitter>.addTooltip("into smaller beams going up and down");
-<crossroads:beam_splitter>.addTooltip("with sizes based on redstone signal");
+<crossroads:beam_splitter>.addTooltip("Splits magical beams hitting any side into smaller beams going up and down with sizes based on redstone signal");
 
 <crossroads:void_crystal>.addTooltip("Place in a Lens Holder");
 <crossroads:void_crystal>.addTooltip("Adds VOID to any beam passing through");

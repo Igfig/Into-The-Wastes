@@ -257,7 +257,7 @@ for i, material in tide_materials {
 	]);
 	recipes.addShaped(tide_helmets[i], [
 		[material,material,material],
-		[material,<thermalfoundation:armor.legs_lead>,material],
+		[material,<thermalfoundation:armor.helmet_lead>,material],
 		[shinyScales,null,shinyScales]
 	]);
 	recipes.addShaped(tide_boots[i], [
