@@ -24,11 +24,9 @@ mods.jei.JEI.removeAndHide(<arcaneworld:growth_powder>);
 <arcaneworld:arcane_hoe>.addTooltip("Tills and hydrates all farmland in a line");
 <arcaneworld:ethereal_sword>.addTooltip("Causes struck enemies to become invisible and glow");
 <arcaneworld:recaller>.addTooltip("Right click to set a location");
-<arcaneworld:recaller>.addTooltip("Right click again to teleport");
-<arcaneworld:recaller>.addTooltip("back to that location");
+<arcaneworld:recaller>.addTooltip("Right click again to teleport back to that location");
 <arcaneworld:biome_crystal>.addTooltip("Right click to suck the biome out of an area");
-<arcaneworld:biome_crystal>.addTooltip("Right click again to write the stored biome");
-<arcaneworld:biome_crystal>.addTooltip("back into the world");
+<arcaneworld:biome_crystal>.addTooltip("Right click again to write the stored biome back into the world");
 <arcaneworld:glowing_chorus>.addTooltip("Sends you straight to The End");
 
 
