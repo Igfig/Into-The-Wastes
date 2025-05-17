@@ -25,6 +25,7 @@ val tankGauge = <railcraft:tank_iron_gauge>;
 val wheel = <astikorcarts:wheel>;
 val dispenser = <minecraft:dispenser>;
 val rail = <railcraft:rail:0>;
+val advRail = <railcraft:rail:1>;
 val railbed = <railcraft:railbed:0>;
 
 
@@ -71,7 +72,7 @@ recipes.replaceAllOccurences(<minecraft:iron_ingot>, goldPlate, <stevescarts:mod
 // blocks
 recipes.addShaped("cargo_manager", <stevescarts:blockcargomanager>, [[pipe,hopper,pipe],[chest,redstone,chest],[pipe,hopper,pipe]]);
 recipes.addShaped("junction_rail", <stevescarts:blockjunction> * 16, [[rail,redstone,rail],[redstone,railbed,redstone],[rail,redstone,rail]]);
-recipes.addShaped("adv_detector_rail", <stevescarts:blockadvdetector> * 16, [[rail,railbed,rail],[rail,<minecraft:light_weighted_pressure_plate>,rail],[rail,redstone,rail]]);
+recipes.addShaped("adv_detector_rail", <stevescarts:blockadvdetector> * 16, [[advRail,railbed,advRail],[advRail,<minecraft:light_weighted_pressure_plate>,advRail],[advRail,redstone,advRail]]);
 
 // hulls
 recipes.addShaped("wooden_hull", <stevescarts:cartmodule:37>, [[log,null,log],[log,log,log]]);
