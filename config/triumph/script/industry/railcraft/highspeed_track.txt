@@ -1,0 +1,11 @@
+setIcon(<railcraft:track_flex_high_speed>)
+setTitle("Gotta Go Fast")
+setDescription("Craft some High Speed Track for an even faster rail line")
+
+addParent("industry:railcraft/reinforced_track")
+addParent("industry:railcraft/craft_locomotive")
+
+criteria = addCriteria("track", "minecraft:inventory_changed")
+criteria.addItem(<railcraft:track_flex_high_speed>)
+
+setPos(257,218)

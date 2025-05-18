@@ -1,0 +1,8 @@
+setIcon("crossroads:arcane_reflector")
+setTitle("Laser Pointer")
+setDescription("Craft an Arcane Reflector to merge and redirect beams")
+
+addParent("lasers:extractor")
+
+criteria = addCriteria("small", "minecraft:inventory_changed")
+criteria.addItem("crossroads:arcane_reflector")

@@ -11,4 +11,4 @@ criteria.addItem(<railcraft:manipulator, meta:1>)
 
 setRequirements("any")
 
-setPos(225,191)
+setPos(225,245)

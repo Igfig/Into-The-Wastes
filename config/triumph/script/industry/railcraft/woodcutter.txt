@@ -1,0 +1,16 @@
+setIcon(<stevescarts:cartmodule, meta:15>)
+setTitle("Slap Chop")
+setDescription("Construct a Wood Cutter module to let your Steve's Cart fell and replant trees")
+
+addParent("industry:railcraft/steve_cart")
+
+criteria = addCriteria("steel", "minecraft:inventory_changed")
+criteria.addItem(<stevescarts:cartmodule, meta:15>)
+criteria = addCriteria("diamond", "minecraft:inventory_changed")
+criteria.addItem(<stevescarts:cartmodule, meta:79>)
+criteria = addCriteria("netherite", "minecraft:inventory_changed")
+criteria.addItem(<stevescarts:cartmodule, meta:80>)
+
+setRequirements("any")
+
+setPos(290,191)

@@ -203,7 +203,7 @@ recipes.remove(<railcraft:locomotive_steam_solid>);
 recipes.addShaped(<railcraft:locomotive_steam_solid>, [
 	[null, null, <essentials:item_chute>],
 	[tank, tank, <stevescarts:cartmodule:0>],
-	[<minecraft:iron_bars>, <stevescarts:cartmodule:38>, <stevescarts:cartmodule:38>]]);
+	[<minecraft:iron_bars>, <stevescarts:cartmodule:39>, <stevescarts:cartmodule:39>]]);
 
 
 // and a new name and info

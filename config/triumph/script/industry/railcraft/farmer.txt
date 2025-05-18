@@ -1,0 +1,14 @@
+setIcon(<stevescarts:cartmodule, meta:14>)
+setTitle("Brand New Combine Harvester")
+setDescription("Construct a Farmer module to let your Steve's Cart cultivate crops")
+
+addParent("industry:railcraft/steve_cart")
+
+criteria = addCriteria("steel", "minecraft:inventory_changed")
+criteria.addItem(<stevescarts:cartmodule, meta:14>)
+criteria = addCriteria("netherite", "minecraft:inventory_changed")
+criteria.addItem(<stevescarts:cartmodule, meta:84>)
+
+setRequirements("any")
+
+setPos(290,218)

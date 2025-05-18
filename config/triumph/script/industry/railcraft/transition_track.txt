@@ -1,0 +1,15 @@
+setIcon(<railcraft:track_outfitted, nbt:{railcraft:{rail:"railcraft_high_speed",kit:"railcraft_transition"}}>)
+setTitle("Engage Ludicrous Speed")
+setDescription("Craft an H.S. Transition Track; with High Speed Track, increases locomotive speed to the maximum.")
+
+addParent("industry:railcraft/highspeed_track")
+drawDirectLines()
+
+criteria = addCriteria("kit", "minecraft:inventory_changed")
+criteria.addItem(<railcraft:track_kit, meta:10, nbt:{railcraft:{kit:"railcraft_transition"}}>)
+criteria = addCriteria("track", "minecraft:inventory_changed")
+criteria.addItem(<railcraft:track_outfitted, nbt:{railcraft:{rail:"railcraft_high_speed",kit:"railcraft_transition"}}>)
+
+setRequirements("any")
+
+setPos(257,245)

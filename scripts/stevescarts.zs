@@ -25,6 +25,7 @@ val tankGauge = <railcraft:tank_iron_gauge>;
 val wheel = <astikorcarts:wheel>;
 val dispenser = <minecraft:dispenser>;
 val rail = <railcraft:rail:0>;
+val advRail = <railcraft:rail:1>;
 val railbed = <railcraft:railbed:0>;
 
 
@@ -71,7 +72,7 @@ recipes.replaceAllOccurences(<minecraft:iron_ingot>, goldPlate, <stevescarts:mod
 // blocks
 recipes.addShaped("cargo_manager", <stevescarts:blockcargomanager>, [[pipe,hopper,pipe],[chest,redstone,chest],[pipe,hopper,pipe]]);
 recipes.addShaped("junction_rail", <stevescarts:blockjunction> * 16, [[rail,redstone,rail],[redstone,railbed,redstone],[rail,redstone,rail]]);
-recipes.addShaped("adv_detector_rail", <stevescarts:blockadvdetector> * 16, [[rail,railbed,rail],[rail,<minecraft:light_weighted_pressure_plate>,rail],[rail,redstone,rail]]);
+recipes.addShaped("adv_detector_rail", <stevescarts:blockadvdetector> * 16, [[advRail,railbed,advRail],[advRail,<minecraft:light_weighted_pressure_plate>,advRail],[advRail,redstone,advRail]]);
 
 // hulls
 recipes.addShaped("wooden_hull", <stevescarts:cartmodule:37>, [[log,null,log],[log,log,log]]);
@@ -133,6 +134,10 @@ recipes.replaceAllOccurences(<stevescarts:modulecomponents:22>, steel);	// reinf
 recipes.replaceAllOccurences(<stevescarts:modulecomponents:47>, netherite); // galgadorian
 recipes.replaceAllOccurences(<stevescarts:modulecomponents:43>, <ore:string>); // fuse
 
+recipes.replaceAllOccurences(iron, steel, <stevescarts:cartmodule:0>);	// coal engine
+recipes.replaceAllOccurences(iron, steel, <stevescarts:cartmodule:1>);	// solar engine
+recipes.replaceAllOccurences(iron, steel, <stevescarts:cartmodule:56>);	// compact solar engine
+
 
 // rename some items
 
@@ -151,6 +156,6 @@ recipes.replaceAllOccurences(<stevescarts:modulecomponents:43>, <ore:string>); /
 
 // add a crafting-table recipe for a very simple cart
 
-val basicCart = <stevescarts:modularcart>.withTag({Modules: [38, 44, 25] as byte[], CartVersion: 2 as byte, display:{LocName:"Basic Cart"}});
+val basicCart = <stevescarts:modularcart>.withTag({Modules: [37, 44, 25] as byte[], CartVersion: 2 as byte, display:{LocName:"Basic Cart"}});
 recipes.addShaped("basic_cart", basicCart, [[<stevescarts:cartmodule:25>],[<stevescarts:cartmodule:44>],[<minecraft:minecart>]]);
 mods.jei.JEI.addItem(basicCart);

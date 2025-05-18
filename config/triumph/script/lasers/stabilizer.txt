@@ -1,0 +1,12 @@
+setIcon("crossroads:small_quartz_stabilizer")
+setTitle("Stablehand")
+setDescription("Craft a Quartz Stabilizer to smooth out your beams' pulses")
+
+addParent("lasers:extractor")
+
+criteria = addCriteria("small", "minecraft:inventory_changed")
+criteria.addItem("crossroads:small_quartz_stabilizer")
+criteria = addCriteria("large", "minecraft:inventory_changed")
+criteria.addItem("crossroads:large_quartz_stabilizer")
+
+setRequirements("any")

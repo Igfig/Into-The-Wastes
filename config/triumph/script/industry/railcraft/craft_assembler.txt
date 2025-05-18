@@ -1,0 +1,10 @@
+setIcon("stevescarts:blockcartassembler")
+setTitle("Some Assembly Required")
+setDescription("Craft a Cart Assembler to build more advanced carts")
+
+addParent("industry:railcraft/craft_basic_cart")
+
+criteria = addCriteria("assembler", "minecraft:inventory_changed")
+criteria.addItem(<stevescarts:blockcartassembler>)
+
+setPos(225,164)

@@ -1,0 +1,10 @@
+setIcon(<stevescarts:blockadvdetector>)
+setTitle("Detector? I hardly know 'er")
+setDescription("Craft an Advanced Detector Track to interact with detectors and managers.")
+
+addParent("industry:railcraft/craft_track")
+
+criteria = addCriteria("detector_rail", "minecraft:inventory_changed")
+criteria.addItem(<stevescarts:blockadvdetector>)
+
+setPos(193,272)

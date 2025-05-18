@@ -1,6 +1,6 @@
 setIcon("railcraft:rail")
 setTitle("Rail Baron")
-setDescription("Cast iron, bronze, or steel in a rail casting table to make Standard Rails.")
+setDescription("Cast iron or steel in a rail casting table to make Standard Rails.")
 
 addParent("industry:foundry/craft_rail_casting_table")
 
