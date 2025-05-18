@@ -1,0 +1,13 @@
+setIcon(<stevescarts:modularcart, meta:0, count:1, nbt:{Modules:[B;37B,44B,25B],CartVersion:2b}>)
+setTitle("Cartographer")
+setDescription("Craft a Basic Cart to get around on rails")
+
+addParent("industry:railcraft/craft_track")
+
+criteria = addCriteria("cart", "minecraft:inventory_changed")
+criteria.addItem(<stevescarts:modularcart, nbt:{Modules:[B;37B,44B,25B],CartVersion:2b,display:{LocName:"Basic Cart"}}>)
+
+setUncompletedLineColor(200,200,200)
+setCompletedLineColor(200,200,200)
+
+setPos(193,164)

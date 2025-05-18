@@ -6,5 +6,9 @@ addParent("industry:railcraft/craft_track")
 
 criteria = addCriteria("kit", "minecraft:inventory_changed")
 criteria.addItem(<railcraft:track_kit, meta:10, nbt:{railcraft:{kit:"railcraft_locking"}}>)
+criteria = addCriteria("track", "minecraft:inventory_changed")
+criteria.addItem(<railcraft:track_outfitted, nbt:{railcraft:{kit:"railcraft_locking"}}>)
 
-setPos(193,191)
+setRequirements("any")
+
+setPos(193,245)

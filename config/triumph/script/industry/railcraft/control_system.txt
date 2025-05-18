@@ -1,0 +1,13 @@
+setIcon(<stevescarts:cartmodule, meta:27>)
+setTitle("Ctrl-F4")
+setDescription("Construct an Advanced Control System to make Steve's Carts faster and steerable")
+
+addParent("industry:railcraft/steve_cart")
+drawDirectLines()
+
+criteria = addCriteria("acs", "minecraft:inventory_changed")
+criteria.addItem(<stevescarts:cartmodule, meta:27>)
+
+setRequirements("any")
+
+setPos(257,191)

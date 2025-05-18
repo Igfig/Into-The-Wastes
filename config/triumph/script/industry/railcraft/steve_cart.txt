@@ -1,0 +1,11 @@
+setIcon(<stevescarts:modularcart, nbt:{Modules:[B;39B,30B,2B],CartVersion:2b}>)
+setTitle("Nancy Cartwright")
+setDescription("Construct a custom Steve's Cart in a Cart Assembler")
+
+addParent("industry:railcraft/craft_assembler")
+setRequiresParents()
+
+criteria = addCriteria("cart", "minecraft:inventory_changed")
+criteria.addItem(<stevescarts:modularcart>)
+
+setPos(257,164)

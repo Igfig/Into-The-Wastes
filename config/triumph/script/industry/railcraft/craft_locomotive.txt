@@ -1,8 +1,9 @@
 setIcon("railcraft:locomotive_steam_solid")
 setTitle("Thomas & Friends")
-setDescription("Craft a Locomotive to pull your trains. Power it with water and fuel, creating steam.")
+setDescription("Craft a High-Speed Locomotive to pull your trains long-distance. Power it with water and fuel, creating steam. Careful, they're temperamental!")
 
-addParent("industry:railcraft/craft_track")
+addParent("industry:railcraft/craft_basic_cart")
+addParent("industry:railcraft/steel")
 
 criteria = addCriteria("locomotive", "minecraft:inventory_changed")
 criteria.addItem("railcraft:locomotive_steam_solid")
@@ -10,4 +11,4 @@ criteria.addItem("railcraft:locomotive_steam_solid")
 setUncompletedLineColor(200,200,200)
 setCompletedLineColor(200,200,200)
 
-setPos(193,164)
+setPos(225,191)

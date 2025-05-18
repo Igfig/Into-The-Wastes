@@ -1,0 +1,18 @@
+setIcon(<stevescarts:cartmodule, meta:42>)
+setTitle("You Know the Drill")
+setDescription("Construct a Drill module to let your Steve's Cart dig")
+
+addParent("industry:railcraft/steve_cart")
+
+criteria = addCriteria("iron", "minecraft:inventory_changed")
+criteria.addItem(<stevescarts:cartmodule, meta:42>)
+criteria = addCriteria("steel", "minecraft:inventory_changed")
+criteria.addItem(<stevescarts:cartmodule, meta:8>)
+criteria = addCriteria("diamond", "minecraft:inventory_changed")
+criteria.addItem(<stevescarts:cartmodule, meta:45>)
+criteria = addCriteria("netherite", "minecraft:inventory_changed")
+criteria.addItem(<stevescarts:cartmodule, meta:9>)
+
+setRequirements("any")
+
+setPos(290,164)

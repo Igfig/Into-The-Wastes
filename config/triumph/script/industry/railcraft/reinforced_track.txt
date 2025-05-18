@@ -1,0 +1,10 @@
+setIcon(<railcraft:track_flex_reinforced>)
+setTitle("Reinforcements")
+setDescription("Craft some Reinforced Track for a faster, explosion-resistant rail line")
+
+addParent("industry:railcraft/craft_track")
+
+criteria = addCriteria("track", "minecraft:inventory_changed")
+criteria.addItem(<railcraft:track_flex_reinforced>)
+
+setPos(225,218)

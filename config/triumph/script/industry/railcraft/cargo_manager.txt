@@ -1,0 +1,10 @@
+setIcon(<stevescarts:blockcargomanager>)
+setTitle("Manager? I hardly know 'er")
+setDescription("Craft a Cargo Manager for fine control over Steve's Carts loading and unloading.")
+
+addParent("industry:railcraft/adv_detector_track")
+
+criteria = addCriteria("manager", "minecraft:inventory_changed")
+criteria.addItem(<stevescarts:blockcargomanager>)
+
+setPos(225,272)
