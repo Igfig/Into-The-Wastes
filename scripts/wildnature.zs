@@ -27,6 +27,8 @@ val tools = [swords, hoes, axes, picks, shovels] as IItemStack[][];
 
 for fr in fullyRemove {
 	mods.jei.JEI.removeAndHide(fr);
+	recipes.remove(fr);
+	furnace.remove(fr);
 }
 
 

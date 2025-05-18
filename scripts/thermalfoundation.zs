@@ -44,6 +44,7 @@ for satr in storageAlloysToRemove {
 for mtr in materialsToRemove {
 	mods.jei.JEI.removeAndHide(materialDef.makeStack(mtr));
 	recipes.removeByInput(materialDef.makeStack(mtr));
+	furnace.remove(materialDef.makeStack(mtr));
 }	
 
 
