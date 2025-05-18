@@ -1,8 +1,8 @@
 setIcon("crossroads:void_crystal")
 setTitle("Empty Set")
-setDescription("Craft a Lens Holder to filter magical beams by color")
+setDescription("Craft a Void Crystal to add the dangerous Void element to your beams")
 
 addParent("lasers:lens_holder")
 
-criteria = addCriteria("lens_holder", "minecraft:inventory_changed")
-criteria.addItem("crossroads:lens_holder")
+criteria = addCriteria("void_crystal", "minecraft:inventory_changed")
+criteria.addItem("crossroads:void_crystal")

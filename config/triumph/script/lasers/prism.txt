@@ -1,0 +1,8 @@
+setIcon("crossroads:crystalline_prism")
+setTitle("Not Triangular For Some Reason")
+setDescription("Craft a Crystalline Prism to split beams into their component colors")
+
+addParent("lasers:extractor")
+
+criteria = addCriteria("small", "minecraft:inventory_changed")
+criteria.addItem("crossroads:crystalline_prism")
