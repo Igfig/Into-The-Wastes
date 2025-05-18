@@ -134,6 +134,10 @@ recipes.replaceAllOccurences(<stevescarts:modulecomponents:22>, steel);	// reinf
 recipes.replaceAllOccurences(<stevescarts:modulecomponents:47>, netherite); // galgadorian
 recipes.replaceAllOccurences(<stevescarts:modulecomponents:43>, <ore:string>); // fuse
 
+recipes.replaceAllOccurences(iron, steel, <stevescarts:cartmodule:0>);	// coal engine
+recipes.replaceAllOccurences(iron, steel, <stevescarts:cartmodule:1>);	// solar engine
+recipes.replaceAllOccurences(iron, steel, <stevescarts:cartmodule:56>);	// compact solar engine
+
 
 // rename some items
 
@@ -152,6 +156,6 @@ recipes.replaceAllOccurences(<stevescarts:modulecomponents:43>, <ore:string>); /
 
 // add a crafting-table recipe for a very simple cart
 
-val basicCart = <stevescarts:modularcart>.withTag({Modules: [38, 44, 25] as byte[], CartVersion: 2 as byte, display:{LocName:"Basic Cart"}});
+val basicCart = <stevescarts:modularcart>.withTag({Modules: [37, 44, 25] as byte[], CartVersion: 2 as byte, display:{LocName:"Basic Cart"}});
 recipes.addShaped("basic_cart", basicCart, [[<stevescarts:cartmodule:25>],[<stevescarts:cartmodule:44>],[<minecraft:minecart>]]);
 mods.jei.JEI.addItem(basicCart);
