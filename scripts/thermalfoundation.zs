@@ -45,7 +45,7 @@ for mtr in materialsToRemove {
 	mods.jei.JEI.removeAndHide(materialDef.makeStack(mtr));
 	recipes.removeByInput(materialDef.makeStack(mtr));
 }	
-	
+
 
 // remove a few more recipes manually
 
@@ -55,6 +55,7 @@ recipes.removeByRecipeName("thermalfoundation:fertilizer_2");
 recipes.removeByRecipeName("thermalfoundation:fertilizer_3");
 
 mods.jei.JEI.removeAndHide(<thermalfoundation:meter>);
+mods.jei.JEI.removeAndHide(<thermalfoundation:storage_resource:1>); // coal coke block
 
 
 // add new recipes
