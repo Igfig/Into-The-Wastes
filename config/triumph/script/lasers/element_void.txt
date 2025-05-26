@@ -1,0 +1,13 @@
+setIcon("charm:rune_portal")
+setTitle("Void")
+setDescription("Discover the VOID element")
+setCompletedIconColor(0,0,0)
+setUncompletedIconColor(180,180,180)
+
+addParent("lasers:element_rift")
+addParent("lasers:void_crystal")
+hiddenUnless("lasers:void_crystal")
+drawDirectLines()
+
+criteria = addCriteria("element", "impossible")
+setPos(128,101)

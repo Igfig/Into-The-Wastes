@@ -1,0 +1,12 @@
+setIcon("minecraft:enchanting_table")
+setTitle("Enchantment")
+setDescription("Discover the ENCHANTMENT element")
+setCompletedIconColor(253,255,184)
+setUncompletedIconColor(255,200,255)
+
+addParent("lasers:element_charge")
+hiddenUnless("lasers:element_charge")
+drawDirectLines()
+
+criteria = addCriteria("element", "impossible")
+setPos(161,205)

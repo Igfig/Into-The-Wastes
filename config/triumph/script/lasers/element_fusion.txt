@@ -1,0 +1,12 @@
+setIcon("minecraft:cauldron")
+setTitle("Fusion")
+setDescription("Discover the FUSION element")
+setCompletedIconColor(133,255,255)
+setUncompletedIconColor(200,255,255)
+
+addParent("lasers:element_expansion")
+hiddenUnless("lasers:element_expansion")
+drawDirectLines()
+
+criteria = addCriteria("element", "impossible")
+setPos(73,154)

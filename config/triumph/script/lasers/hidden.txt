@@ -1,0 +1,43 @@
+setIcon("minecraft:barrier")
+setTitle("HIDDEN ADVANCEMENT DO NOT SHOW")
+setDescription("Hidden advancement for detecting element unlocks")
+
+setShowToast(false)
+alwaysHidden()
+setAnnounceToChat(false)
+setRepeatTime(0)
+
+addParent("lasers:root")
+hideLines()
+
+criteria = addCriteria("arcane_extractor", "triumph:right_click_block")
+criteria.setItem("crossroads:omnimeter")
+criteria.setBlock("crossroads:arcane_extractor")
+
+criteria = addCriteria("beam_splitter_basic", "triumph:right_click_block")
+criteria.setItem("crossroads:omnimeter")
+criteria.setBlock("crossroads:beam_splitter_basic")
+
+criteria = addCriteria("beam_splitter", "triumph:right_click_block")
+criteria.setItem("crossroads:omnimeter")
+criteria.setBlock("crossroads:beam_splitter")
+
+criteria = addCriteria("lens_holder", "triumph:right_click_block")
+criteria.setItem("crossroads:omnimeter")
+criteria.setBlock("crossroads:lens_holder")
+
+criteria = addCriteria("crystalline_prism", "triumph:right_click_block")
+criteria.setItem("crossroads:omnimeter")
+criteria.setBlock("crossroads:crystalline_prism")
+
+criteria = addCriteria("small_quartz_stabilizer", "triumph:right_click_block")
+criteria.setItem("crossroads:omnimeter")
+criteria.setBlock("crossroads:small_quartz_stabilizer")
+
+criteria = addCriteria("large_quartz_stabilizer", "triumph:right_click_block")
+criteria.setItem("crossroads:omnimeter")
+criteria.setBlock("crossroads:large_quartz_stabilizer")
+
+setRequirements("any")
+
+addRewardFunction("wastes:elements/tick")

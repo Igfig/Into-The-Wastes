@@ -1,0 +1,12 @@
+setIcon(<chisel:waterstone, meta:11>)
+setTitle("Equilibrium")
+setDescription("Discover the EQUILIBRIUM element")
+setCompletedIconColor(255,137,255)
+setUncompletedIconColor(255,255,200)
+
+addParent("lasers:element_rift")
+hiddenUnless("lasers:element_rift")
+drawDirectLines()
+
+criteria = addCriteria("element", "impossible")
+setPos(161,101)

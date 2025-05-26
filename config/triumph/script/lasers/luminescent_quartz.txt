@@ -1,0 +1,9 @@
+setIcon("crossroads:luminescent_quartz")
+setTitle("Beyond Purity")
+setDescription("Create Luminescent Quartz by placing Pure Quartz in a lens holder and passing a LIGHT beam through it")
+
+addParent("lasers:lens_holder")
+
+criteria = addCriteria("luminescent_quartz", "minecraft:inventory_changed")
+criteria.addItem("crossroads:luminescent_quartz")
+setPos(128,41)

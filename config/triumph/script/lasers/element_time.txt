@@ -1,0 +1,12 @@
+setIcon("minecraft:clock")
+setTitle("Time")
+setDescription("Discover the TIME element")
+setCompletedIconColor(255,101,9)
+setUnompletedIconColor(255,200,220)
+
+addParent("lasers:element_light")
+hiddenUnless("lasers:element_light")
+drawDirectLines()
+
+criteria = addCriteria("element", "impossible")
+setPos(181,154)

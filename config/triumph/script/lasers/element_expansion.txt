@@ -1,0 +1,11 @@
+setIcon("crossroads:dust_salt")
+setTitle("Expansion")
+setDescription("Discover the EXPANSION element")
+setCompletedIconColor(0,255,255)
+setUncompletedIconColor(200,255,255)
+
+addParent("lasers:omnimeter")
+hideLines()
+
+criteria = addCriteria("element", "impossible")
+setPos(105,154)

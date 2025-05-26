@@ -1,0 +1,11 @@
+setIcon("crossroads:solid_quicksilver")
+setTitle("Potential")
+setDescription("Discover the POTENTIAL element")
+setCompletedIconColor(0,255,0)
+setUncompletedIconColor(200,200,255)
+
+addParent("lasers:omnimeter")
+hideLines()
+
+criteria = addCriteria("element", "impossible")
+setPos(116,177)

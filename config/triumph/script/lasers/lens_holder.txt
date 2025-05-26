@@ -6,3 +6,4 @@ addParent("lasers:extractor")
 
 criteria = addCriteria("lens_holder", "minecraft:inventory_changed")
 criteria.addItem("crossroads:lens_holder")
+setPos(96,54)

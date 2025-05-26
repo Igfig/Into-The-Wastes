@@ -1,0 +1,11 @@
+setIcon("crossroads:waste_salt")
+setTitle("Stability")
+setDescription("Discover the STABILITY element")
+setCompletedIconColor(0,0,255)
+setUncompletedIconColor(200,255,200)
+
+addParent("lasers:omnimeter")
+hideLines()
+
+criteria = addCriteria("element", "impossible")
+setPos(116,131)
