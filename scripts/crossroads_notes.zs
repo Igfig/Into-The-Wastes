@@ -215,10 +215,10 @@ mods.jei.JEI.addDescription(<crossroads:master_axis_crystal>, "Each type of beam
 <crossroads:lens_holder>.addTooltip("Filters out magic of any color not matching the gem.");
 
 <crossroads:small_quartz_stabilizer>.addTooltip("Absorbs and re-emits magical beams");
-<crossroads:small_quartz_stabilizer>.addTooltip("Emits a small constant beam instead of a large pulsing one");
+<crossroads:small_quartz_stabilizer>.addTooltip("Emits a constant 6-power beam instead of a pulsing one");
 
 <crossroads:large_quartz_stabilizer>.addTooltip("Absorbs and re-emits magical beams");
-<crossroads:large_quartz_stabilizer>.addTooltip("Emits a medium-sized, constant beam instead of a large pulsing one");
+<crossroads:large_quartz_stabilizer>.addTooltip("Emits a constant 15-power beam instead of a pulsing one");
 
 <crossroads:arcane_reflector>.addTooltip("Redirects magical beams out its front (octagonal) side");
 <crossroads:arcane_reflector>.addTooltip("Multiple beams of magic will be combined into one");
@@ -227,10 +227,10 @@ mods.jei.JEI.addDescription(<crossroads:master_axis_crystal>, "Each type of beam
 
 <crossroads:beam_splitter_basic>.addTooltip("Splits magical beams hitting any side into equal smaller beams going up and down");
 
-<crossroads:beam_splitter>.addTooltip("Splits magical beams hitting any side into smaller beams going up and down with sizes based on redstone signal");
+<crossroads:beam_splitter>.addTooltip("Splits magical beams hitting any side into smaller beams going up and down, with sizes based on redstone signal");
 
 <crossroads:void_crystal>.addTooltip("Place in a Lens Holder");
-<crossroads:void_crystal>.addTooltip("Adds VOID to any beam passing through");
+<crossroads:void_crystal>.addTooltip("Turns a RIFT beam passing through into VOID");
 
 
 // TODO add more notes
