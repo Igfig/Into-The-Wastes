@@ -3,6 +3,7 @@ setTitle("ZAWA")
 setDescription("Craft some Kibble to learn about keeping zoo animals")
 setFrameType("goal")
 addParent("_wastes:root")
+hideUnless("_wastes:biomes/oasis_hot")
 
 criteria = addCriteria("kibble", "minecraft:inventory_changed")
 criteria.addItem("zawa:kibble")

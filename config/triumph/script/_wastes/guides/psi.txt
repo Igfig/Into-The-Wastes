@@ -3,6 +3,7 @@ setTitle("Psi")
 setDescription("Craft a CAD Assembly to start learning advanced magic. Press 'P' to view the full manual")
 setFrameType("goal")
 addParent("_wastes:root")
+hideUnless("_wastes:biomes/oasis_hot")
 
 criteria = addCriteria("cad", "minecraft:inventory_changed")
 criteria.addItem(<psi:cad_assembly>)

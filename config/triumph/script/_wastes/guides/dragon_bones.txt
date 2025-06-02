@@ -3,6 +3,7 @@ setTitle("Ice And Fire")
 setDescription("Enter a world of magical creatures by finding some dragon bones. Right-click to harvest them.")
 setFrameType("goal")
 addParent("_wastes:root")
+hideUnless("_wastes:biomes/oasis_hot")
 
 setShowToast(false)
 setAnnounceToChat(false)
