@@ -1,5 +1,5 @@
 setIcon("crossroads:beam_splitter_basic")
-setTitle("Split Fiction")
+setTitle("Do the Splits")
 setDescription("Craft a Beam Splitter to, uh, split beams")
 
 addParent("lasers:luminescent_quartz")
