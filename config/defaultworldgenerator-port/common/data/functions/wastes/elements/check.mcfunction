@@ -3,6 +3,7 @@ scoreboard players set @s element_timer 0
 
 stats entity @s set SuccessCount @s element
 
+# test for each discovered element
 testfor @s {ForgeData:{PlayerPersisted:{crossroads:{elements:{ENERGY:1b}}}}}
 advancement grant @s[score_element_min=1] only lasers:element_energy
 testfor @s {ForgeData:{PlayerPersisted:{crossroads:{elements:{POTENTIAL:1b}}}}}
@@ -27,5 +28,11 @@ testfor @s {ForgeData:{PlayerPersisted:{crossroads:{elements:{TIME:1b}}}}}
 advancement grant @s[score_element_min=1] only lasers:element_time
 testfor @s {ForgeData:{PlayerPersisted:{crossroads:{elements:{VOID:1b}}}}}
 advancement grant @s[score_element_min=1] only lasers:element_void
+
+# test for each path unlock
+testfor @s {ForgeData:{PlayerPersisted:{crossroads:{path:{technomancy:1b}}}}}
+advancement grant @s[score_element_min=1] only lasers:unlock_technomancy
+testfor @s {ForgeData:{PlayerPersisted:{crossroads:{path:{alchemy:1b}}}}}
+advancement grant @s[score_element_min=1] only lasers:unlock_alchemy
 
 stats entity @s clear SuccessCount

@@ -38,6 +38,9 @@ criteria = addCriteria("large_quartz_stabilizer", "triumph:right_click_block")
 criteria.setItem("crossroads:omnimeter")
 criteria.setBlock("crossroads:large_quartz_stabilizer")
 
+criteria = addCriteria("detailed_crafter", "triumph:right_click_block")
+criteria.setBlock("crossroads:detailed_crafter")
+
 setRequirements("any")
 
 addRewardFunction("wastes:elements/tick")
