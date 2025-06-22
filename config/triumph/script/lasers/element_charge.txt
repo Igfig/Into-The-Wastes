@@ -1,0 +1,11 @@
+setIcon("minecraft:redstone")
+setTitle("Charge")
+setDescription("Discover the CHARGE element")
+setCompletedIconColor(255,255,0)
+setUncompletedIconColor(255,200,255)
+
+addParent("lasers:omnimeter")
+hideLines()
+
+criteria = addCriteria("element", "impossible")
+setPos(139,177)

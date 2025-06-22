@@ -3,6 +3,7 @@ setTitle("Rats")
 setDescription("Smack a rat to start learning about these clever and resourceful creatures")
 setFrameType("goal")
 addParent("_wastes:root")
+hiddenUnless("_wastes:biomes/oasis_hot")
 
 setShowToast(false)
 setAnnounceToChat(false)

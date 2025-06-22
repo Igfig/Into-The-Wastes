@@ -1,0 +1,10 @@
+setIcon("minecraft:glowstone_dust")
+setTitle("Light")
+setDescription("Discover the LIGHT element")
+setCompletedIconColor(254,254,254)
+
+addParent("lasers:omnimeter")
+drawDirectLines()
+
+criteria = addCriteria("element", "impossible")
+setPos(128,154)

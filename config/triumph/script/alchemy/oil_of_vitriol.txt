@@ -1,0 +1,13 @@
+setIcon(<crossroads:phial,nbt:{10_am:1.0}>)
+setTitle("Salt of Oil of Vitriol")
+setDescription("Mix sulfur trioxide with water to make Salt of Oil of Vitriol")
+setParent("alchemy:sulfur_trioxide")
+setParent("alchemy:water")
+
+criteria = addCriteria("flask", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:florence_flask,nbt:{10_am:1.0~500.0}>)
+criteria = addCriteria("phial", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:phial,nbt:{10_am:1.0~25.0}>)
+
+setRequirements("any")
+setPos(164,54)

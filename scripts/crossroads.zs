@@ -43,12 +43,19 @@ recipes.addShaped(<crossroads:omnimeter>, [
 	[<ore:ingotIron>,<ore:ingotGold>,<ore:ingotIron>]]);
 
 
-// remove wrenches, because B.A.S.E. has a better one.
+// remove wrenches, because B.A.S.E. has a better one
 
 recipes.remove(<essentials:wrench>);
 recipes.remove(<crossroads:liech_wrench>);
-mods.jei.JEI.removeAndHide(<essentials:wrench>);
 mods.jei.JEI.removeAndHide(<crossroads:liech_wrench>);
+
+
+// except we do need a crossroads wrench for very specific crossroads tasks
+
+recipes.addShaped("precision_wrench", <essentials:wrench>, [
+	[<ore:ingotCopper>,null,<ore:ingotCopper>],
+	[      null, <ore:ingotCopper>, null     ],
+	[      null, <ore:ingotCopper>, null     ]]);
 
 
 // make slotted chest recipe harder

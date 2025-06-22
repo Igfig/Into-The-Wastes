@@ -3,6 +3,7 @@ setTitle("Animania")
 setDescription("Craft a lead to learn about keeping farm animals")
 setFrameType("goal")
 addParent("_wastes:root")
+hiddenUnless("_wastes:biomes/oasis_hot")
 
 criteria = addCriteria("guide", "minecraft:inventory_changed")
 criteria.addItem("minecraft:lead")

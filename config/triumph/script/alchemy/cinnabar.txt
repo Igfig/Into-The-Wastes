@@ -1,0 +1,13 @@
+setIcon(<crossroads:phial,nbt:{12_am:1.0}>)
+setTitle("Cinnabar")
+setDescription("Put redstone in glassware on a stand to make cinnabar")
+setParent("alchemy:glassware")
+setParent("alchemy:stand")
+
+criteria = addCriteria("flask", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:florence_flask,nbt:{12_am:1.0~500.0}>)
+criteria = addCriteria("phial", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:phial,nbt:{12_am:1.0~25.0}>)
+
+setRequirements("any")
+setPos(64,67)

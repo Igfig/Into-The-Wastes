@@ -15,6 +15,7 @@ recipes.addShaped("sponge", <minecraft:sponge>, [
 
 
 // change wrench recipe
+
 recipes.remove(<base:wrench>, false);
 recipes.addShaped("wrench", <base:wrench>, [
 	[<ore:ingotIron>,null,<ore:ingotIron>],

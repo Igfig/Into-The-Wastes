@@ -1,0 +1,13 @@
+setIcon(<crossroads:phial,nbt:{6_am:1.0}>)
+setTitle("Salt")
+setDescription("Put salt in glassware to make 'mundane salt'. You know the drill by this point.")
+setParent("alchemy:glassware")
+hideLines()
+
+criteria = addCriteria("flask", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:florence_flask,nbt:{6_am:1.0~500.0}>)
+criteria = addCriteria("phial", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:phial,nbt:{6_am:1.0~25.0}>)
+
+setRequirements("any")
+setPos(164,81)

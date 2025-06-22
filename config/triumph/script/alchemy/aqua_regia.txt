@@ -1,0 +1,13 @@
+setIcon(<crossroads:phial,nbt:{11_am:1.0}>)
+setTitle("Salt of Aqua Regia")
+setDescription("Mix Salt of Aqua Fortis with Salt of Muriatic Acid to make Salt of Aqua Regia")
+setParent("alchemy:aqua_fortis")
+setParent("alchemy:muriatic_acid")
+
+criteria = addCriteria("flask", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:florence_flask,nbt:{11_am:1.0~500.0}>)
+criteria = addCriteria("phial", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:phial,nbt:{11_am:1.0~25.0}>)
+
+setRequirements("any")
+setPos(230,94)

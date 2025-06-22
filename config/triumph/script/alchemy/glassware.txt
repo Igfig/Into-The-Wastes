@@ -1,0 +1,12 @@
+setIcon("crossroads:florence_flask")
+setTitle("Glass Me")
+setDescription("Create a Florence Flask or Phial to hold alchemical reagents")
+setParent("alchemy:root")
+
+criteria = addCriteria("flask", "minecraft:inventory_changed")
+criteria.addItem("crossroads:florence_flask")
+criteria = addCriteria("phial", "minecraft:inventory_changed")
+criteria.addItem("crossroads:phial")
+
+setRequirements("any")
+setPos(32,54)

@@ -15,14 +15,6 @@ addCriteria("location", "minecraft:location")
 //	<cuisine:ingredient>{form:"SLICED"}
 // spice bottle of seasoning, and of water or juice or oil
 
-// grindstone
-// ingot caster
-// metal caster
-// omnimeter
-// gears
-//		hand crank?
-// pump/turbine
-// heat pipes
 // make ice from a heat exchanger?
 // self-sustaining heat machine?
 // other Crossroads machines

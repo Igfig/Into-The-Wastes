@@ -26,12 +26,14 @@
 <crossroads:ore_tin>.addTooltip("Appears rarely in oases beyond +/-1000z, in large veins below 32y");
 <crossroads:ore_tin>.addTooltip("Must be smelted in a Heating Crucible");
 
-<thermalfoundation:ore:2>.addTooltip("Appears rarely in oases beyond +/-3000z, in many small veins below 64y");
+<thermalfoundation:ore:2>.addTooltip("Appears rarely in oases beyond +/-3000z, in many small veins below 64y"); // silver
 <thermalfoundation:ore:2>.addTooltip("Must be smelted in a Heating Crucible");
-<thermalfoundation:ore:3>.addTooltip("Appears rarely in oases beyond +/-3000z, in many small veins below 64y");
+<thermalfoundation:ore:3>.addTooltip("Appears rarely in oases beyond +/-3000z, in many small veins below 64y"); // lead
 <thermalfoundation:ore:3>.addTooltip("Must be smelted in a Heating Crucible");
-<thermalfoundation:ore:6>.addTooltip("Appears rarely in oases beyond +/-6000z, in medium veins in caves below 32y");
+<thermalfoundation:ore:6>.addTooltip("Appears rarely in oases beyond +/-6000z, in medium veins in caves below 32y"); // platinum
 <thermalfoundation:ore:6>.addTooltip("Must be smelted in a Heating Crucible");
+
+<valoegheses_be:ore_vanadium>.addTooltip("Appears occasionally in lead and silver deposits, in oases beyond +/-3000z");
 
 <thermalfoundation:ore_fluid:0>.addTooltip("Appears in the desert below oil wells"); // oil sand
 <thermalfoundation:ore_fluid:2>.addTooltip("Appears in redstone deposits"); // fluid redstone
@@ -40,6 +42,7 @@
 <thermalfoundation:ore_fluid:5>.addTooltip("Appears in the desert below oil wells"); // also oil sand
 
 <railcraft:ore:1>.addTooltip("Appears only in the desert"); // saltpeter
+<railcraft:ore:1>.addTooltip("Deposits slowly regenerate as long as there's enough sand around");
 
 <railcraft:ore_metal_poor:0>.addTooltip("Appears in small amounts in oases"); // iron
 <railcraft:ore_metal_poor:1>.addTooltip("Appears in small amounts in oases and mesas"); // gold

@@ -1,6 +1,6 @@
 setIcon(<railcraft:track_outfitted, nbt:{railcraft:{rail:"railcraft_high_speed",kit:"railcraft_transition"}}>)
 setTitle("Engage Ludicrous Speed")
-setDescription("Craft an H.S. Transition Track; with High Speed Track, increases locomotive speed to the maximum.")
+setDescription("Craft an H.S. Transition Track; with High Speed Track, you can increases your locomotive's speed to the maximum.")
 
 addParent("industry:railcraft/highspeed_track")
 drawDirectLines()

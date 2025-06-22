@@ -24,6 +24,10 @@ mods.jei.JEI.addDescription(<essentials:port_extender>, "Place with the one-squa
 <essentials:obsidian_cutting_kit>.addTooltip("Insta-breaks obsidian on right-click.");
 <essentials:obsidian_cutting_kit>.addTooltip("Single use.");
 
+<essentials:wrench>.displayName = "Precision Wrench";
+<essentials:wrench>.addTooltip("Only rotates Crossroads blocks");
+<essentials:wrench>.addTooltip("Has special shift-right-click behaviour on a few blocks");
+
 <crossroads:omnimeter>.addTooltip("Shift-right-click on many blocks to see additional information");
 <crossroads:omnimeter>.addTooltip("e.g. the contents of GUI-less containers");
 
@@ -54,9 +58,12 @@ mods.jei.JEI.addDescription(<essentials:port_extender>, "Place with the one-squa
 <crossroads:fluid_tank>.addTooltip("Use an OmniMeter to see contents.");
 
 <crossroads:fluid_tube>.addTooltip("Automatically extracts and inserts fluids");
-<crossroads:fluid_tube>.addTooltip("Averages pressure between containers");
+<crossroads:fluid_tube>.addTooltip("Right-click connections with wrench to cycle modes");
+mods.jei.JEI.addDescription(<crossroads:fluid_tube>, "By default, averages pressure between containers.", "Other modes are:", "- Input only", "- Output only", "- No connection");
 
 <crossroads:redstone_fluid_tube>.addTooltip("Only allows fluid to flow while it has a redstone signal");
+<crossroads:redstone_fluid_tube>.addTooltip("Right-click connections with wrench to cycle modes");
+mods.jei.JEI.addDescription(<crossroads:redstone_fluid_tube>, "By default, averages pressure between containers.", "Other modes are:", "- Input only", "- Output only", "- No connection");
 
 
 // Rotary power
@@ -172,65 +179,7 @@ mods.jei.JEI.addDescription(<crossroads:copshowium_creation_chamber>, "Insert li
 <crossroads:water_centrifuge>.removeTooltip("Produces");
 <crossroads:water_centrifuge>.addTooltip("Splits water into salt and distilled water");
 
-<crossroads:chemical_vent>.removeTooltip("Don't use this");
-<crossroads:chemical_vent>.addTooltip("Vents inserted reagents into the world");
 
-
-// laser magic
-
-<ore:laserFuel>.addAll(<ore:dustGlowstone>);
-<ore:laserFuel>.addAll(<ore:dustRedstone>);
-<ore:laserFuel>.addAll(<ore:dustSalt>);
-<ore:laserFuel>.addAll(<ore:dustAlcSalt>);
-<ore:laserFuel>.addAll(<ore:coal>);
-<ore:laserFuel>.addAll(<ore:charcoal>);
-<ore:laserFuel>.addAll(<ore:dustSulfur>);
-<ore:laserFuel>.add(<crossroads:solid_quicksilver>);
-
-<ore:dustGlowstone>.addTooltip(format.red("1 energy"));
-<ore:dustGlowstone>.addTooltip(format.green("1 potential"));
-<ore:dustGlowstone>.addTooltip(format.blue("1 stability"));
-<ore:dustRedstone>.addTooltip(format.red("24 energy"));
-<ore:dustRedstone>.addTooltip(format.green("36 potential"));
-<ore:dustSalt>.addTooltip(format.green("24 potential"));
-<ore:dustSalt>.addTooltip(format.blue("36 stability"));
-<ore:dustAlcSalt>.addTooltip(format.blue("60 stability"));
-<ore:coal>.addTooltip(format.red("36 energy"));
-<ore:coal>.addTooltip(format.green("24 potential"));
-<ore:charcoal>.addTooltip(format.red("36 energy"));
-<ore:charcoal>.addTooltip(format.green("24 potential"));
-<ore:dustSulfur>.addTooltip(format.red("60 energy"));
-<crossroads:solid_quicksilver>.addTooltip(format.green("60 potential"));
-
-<crossroads:color_chart>.addTooltip("Shows magical elements you've discovered");
-<crossroads:color_chart>.addTooltip("Right-click a beam-emitting block with an OmniMeter to see the last element it emitted");
-
-<crossroads:arcane_extractor>.addTooltip("Insert $laserFuel items to emit a beam of magic");
-mods.jei.JEI.addDescription(<crossroads:arcane_extractor>, "Type $laserFuel in JEI to see all valid fuels.", "Items must be inserted with a hopper or similar device.", "Each item produces a beam for 5 ticks.", "(Hoppers transfer one item every 8 ticks, which is why the beam appears to flicker.)");
-
-<crossroads:master_axis_crystal>.addTooltip("Manipulates rotational energy when hit by a beam of magic");
-mods.jei.JEI.addDescription(<crossroads:master_axis_crystal>, "Each type of beam produces a different effect, though most impart momentum in some way.", "See the Technician's Manual for details.");
-
-<crossroads:lens_holder>.addTooltip("Right-click to insert an emerald, ruby, diamond, or Pure Quartz.");
-<crossroads:lens_holder>.addTooltip("Filters out magic of any color not matching the gem.");
-
-<crossroads:small_quartz_stabilizer>.addTooltip("Absorbs and re-emits magical beams");
-<crossroads:small_quartz_stabilizer>.addTooltip("Emits a small constant beam instead of a large pulsing one");
-
-<crossroads:large_quartz_stabilizer>.addTooltip("Absorbs and re-emits magical beams");
-<crossroads:large_quartz_stabilizer>.addTooltip("Emits a medium-sized, constant beam instead of a large pulsing one");
-
-<crossroads:arcane_reflector>.addTooltip("Redirects magical beams out its front (octagonal) side");
-<crossroads:arcane_reflector>.addTooltip("Multiple beams of magic will be combined into one");
-
-<crossroads:crystalline_prism>.addTooltip("Splits magical beams hitting an input (yellow) side into their component colors");
-
-<crossroads:beam_splitter_basic>.addTooltip("Splits magical beams hitting any side into equal smaller beams going up and down");
-
-<crossroads:beam_splitter>.addTooltip("Splits magical beams hitting any side into smaller beams going up and down with sizes based on redstone signal");
-
-<crossroads:void_crystal>.addTooltip("Place in a Lens Holder");
-<crossroads:void_crystal>.addTooltip("Adds VOID to any beam passing through");
 
 
 // TODO add more notes

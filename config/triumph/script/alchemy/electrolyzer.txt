@@ -1,0 +1,8 @@
+setIcon("crossroads:charging_stand")
+setTitle("Not Just for Hair Removal")
+setDescription("Create an Electrolyzer to perform another kind of reaction")
+setParent("alchemy:dynamo")
+
+criteria = addCriteria("electrolyzer", "minecraft:inventory_changed")
+criteria.addItem("crossroads:charging_stand")
+setPos(130,135)

@@ -1,0 +1,8 @@
+setIcon("crossroads:glassware_holder")
+setTitle("Take a Stand")
+setDescription("Create a Glassware Stand to perform reactions in")
+setParent("alchemy:root")
+
+criteria = addCriteria("stand", "minecraft:inventory_changed")
+criteria.addItem("crossroads:glassware_holder")
+setPos(32,81)

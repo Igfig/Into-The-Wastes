@@ -1,0 +1,13 @@
+setIcon(<crossroads:phial,nbt:{5_am:1.0}>)
+setTitle("Salt of Aqua Fortis")
+setDescription("Crack boiling water in an Electrolyzer to make Salt of Aqua Fortis")
+setParent("alchemy:electrolyzer")
+setParent("alchemy:water")
+
+criteria = addCriteria("flask", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:florence_flask,nbt:{5_am:1.0~500.0}>)
+criteria = addCriteria("phial", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:phial,nbt:{5_am:1.0~25.0}>)
+
+setRequirements("any")
+setPos(197,135)

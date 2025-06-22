@@ -6,3 +6,4 @@ addParent("lasers:root")
 
 criteria = addCriteria("chart", "minecraft:inventory_changed")
 criteria.addItem("crossroads:color_chart")
+setPos(32,101)

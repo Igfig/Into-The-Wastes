@@ -1,0 +1,13 @@
+setIcon("crossroads:phil_stone")
+setTitle("Alchemy")
+setDescription("Learn the advanced discipline of alchemy")
+setBackground("chisel:textures/blocks/obsidian/panel-light.png")
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+pageVisibleIf("alchemy:root")
+
+criteria = addCriteria("unlock", "triumph:completed_advancement")
+criteria.setAdvancement("lasers:unlock_alchemy")
+setPos(-1,67)

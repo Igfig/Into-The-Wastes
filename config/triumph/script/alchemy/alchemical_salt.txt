@@ -1,0 +1,14 @@
+setIcon(<crossroads:phial,nbt:{16_am:1.0}>)
+setTitle("Better Salt")
+setDescription("Create alchemical salt as a byproduct of chlorine or Salt of Muriatic Acid production")
+setParent("alchemy:chlorine")
+setParent("alchemy:muriatic_acid")
+drawDirectLines()
+
+criteria = addCriteria("flask", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:florence_flask,nbt:{16_am:1.0~500.0}>)
+criteria = addCriteria("phial", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:phial,nbt:{16_am:1.0~25.0}>)
+
+setRequirements("any")
+setPos(197,81)

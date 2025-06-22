@@ -1,0 +1,13 @@
+setIcon(<crossroads:phial,nbt:{18_am:1.0}>)
+setTitle("Philosopher's Stone")
+setDescription("Freeze alchemical salt, gold, quicksilver, and sulfur together with Salt of Aqua Regia to make The Philosopher's Stone")
+setParent("alchemy:aqua_regia")
+setFrameType("goal")
+
+criteria = addCriteria("flask", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:florence_flask,nbt:{18_am:1.0~500.0}>)
+criteria = addCriteria("phial", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:phial,nbt:{18_am:1.0~25.0}>)
+
+setRequirements("any")
+setPos(263,94)

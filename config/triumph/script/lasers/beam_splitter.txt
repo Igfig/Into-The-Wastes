@@ -1,8 +1,9 @@
 setIcon("crossroads:beam_splitter_basic")
-setTitle("Split Fiction")
+setTitle("Do the Splits")
 setDescription("Craft a Beam Splitter to, uh, split beams")
 
-addParent("lasers:extractor")
+addParent("lasers:luminescent_quartz")
 
-criteria = addCriteria("small", "minecraft:inventory_changed")
+criteria = addCriteria("splitter", "minecraft:inventory_changed")
 criteria.addItem("crossroads:beam_splitter_basic")
+setPos(161,68)

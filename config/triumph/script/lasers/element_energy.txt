@@ -1,0 +1,11 @@
+setIcon("crossroads:sulfur")
+setTitle("Energy")
+setDescription("Discover the ENERGY element")
+setCompletedIconColor(255,0,0)
+setUncompletedIconColor(255,200,200)
+
+addParent("lasers:omnimeter")
+hideLines()
+
+criteria = addCriteria("element", "impossible")
+setPos(151,154)
