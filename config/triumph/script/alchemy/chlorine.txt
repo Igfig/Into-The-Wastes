@@ -1,0 +1,14 @@
+setIcon(<crossroads:phial,nbt:{21_am:1.0}>)
+setTitle("Chlorine")
+setDescription("Crack salt water in an Electrolyzer to create chlorine (and alchemical salt)")
+setParent("alchemy:salt")
+setParent("alchemy:water")
+setParent("alchemy:electrolyzer")
+
+criteria = addCriteria("flask", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:florence_flask,nbt:{21_am:1.0~500.0}>)
+criteria = addCriteria("phial", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:phial,nbt:{21_am:1.0~25.0}>)
+
+setRequirements("any")
+setPos(197,108)

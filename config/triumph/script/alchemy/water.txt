@@ -1,0 +1,13 @@
+setIcon(<crossroads:phial,nbt:{4_am:1.0}>)
+setTitle("Water")
+setDescription("Put packed ice in glassware to make water. I guess it needs to be really pure?")
+setParent("alchemy:glassware")
+hideLines()
+
+criteria = addCriteria("flask", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:florence_flask,nbt:{4_am:1.0~500.0}>)
+criteria = addCriteria("phial", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:phial,nbt:{4_am:1.0~25.0}>)
+
+setRequirements("any")
+setPos(130,108)

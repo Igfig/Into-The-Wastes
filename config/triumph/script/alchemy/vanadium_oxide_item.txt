@@ -1,0 +1,8 @@
+setIcon("crossroads:vanadium_5_oxide")
+setTitle("Vanadium Oxide")
+setDescription("Bake vanadium in a furnace to make vanadium oxide")
+setParent("alchemy:vanadium")
+
+criteria = addCriteria("vanadium_oxide", "minecraft:inventory_changed")
+criteria.addItem("crossroads:vanadium_5_oxide")
+setPos(64,27)

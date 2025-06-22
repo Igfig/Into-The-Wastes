@@ -1,0 +1,8 @@
+setIcon("crossroads:dynamo")
+setTitle("So Many Dynamos")
+setDescription("Create a Dynamo to produce electricity from rotational energy")
+setParent("alchemy:root")
+
+criteria = addCriteria("dynamo", "minecraft:inventory_changed")
+criteria.addItem("crossroads:dynamo")
+setPos(32,135)

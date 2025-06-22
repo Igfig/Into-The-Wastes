@@ -1,0 +1,8 @@
+setIcon("crossroads:solid_quicksilver")
+setTitle("Slowsilver")
+setDescription("Freeze quicksilver and collect its frozen form")
+setParent("alchemy:quicksilver")
+
+criteria = addCriteria("solid_quicksilver", "minecraft:inventory_changed")
+criteria.addItem("crossroads:solid_quicksilver")
+setPos(130,81)

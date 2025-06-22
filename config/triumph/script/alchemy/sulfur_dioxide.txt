@@ -1,0 +1,12 @@
+setIcon(<crossroads:phial,nbt:{8_am:1.0}>)
+setTitle("Sulfur Dioxide")
+setDescription("Heat sulfur or cinnabar in a flask to make sulfur dioxide")
+setParent("alchemy:cinnabar")
+
+criteria = addCriteria("flask", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:florence_flask,nbt:{8_am:1.0~500.0}>)
+criteria = addCriteria("phial", "minecraft:inventory_changed")
+criteria.addItem(<crossroads:phial,nbt:{8_am:1.0~25.0}>)
+
+setRequirements("any")
+setPos(96,54)
