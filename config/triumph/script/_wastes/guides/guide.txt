@@ -3,7 +3,7 @@ setTitle("Surviving the Wastes")
 setDescription("Craft the 'Surviving the Wastes' guide to learn about this modpack")
 setFrameType("goal")
 addParent("_wastes:root")
-hideUnless("_wastes:biomes/oasis_hot")
+hiddenUnless("_wastes:biomes/oasis_hot")
 
 criteria = addCriteria("guide", "minecraft:inventory_changed")
 criteria.addItem(<patchouli:guide_book, nbt:{"patchouli:book":"itw_tips"}>)

@@ -3,7 +3,7 @@ setTitle("Crossroads")
 setDescription("Craft a fuel heater or gears to start learning about industry")
 setFrameType("goal")
 addParent("_wastes:root")
-hideUnless("_wastes:biomes/oasis_hot")
+hiddenUnless("_wastes:biomes/oasis_hot")
 
 setShowToast(false)
 setAnnounceToChat(false)

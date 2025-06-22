@@ -1,7 +1,7 @@
 setIcon("crossroads:lens_array")
 setTitle("Crossroads Magic")
 setDescription("Learn about the magic of lasers")
-setBackground("chisel:textures/blocks/laboratory/largesteel-side.png")
+setBackground("chisel:textures/blocks/marble/tiles-large.png")
 
 setShowToast(false)
 setAnnounceToChat(false)

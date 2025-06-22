@@ -3,7 +3,7 @@ setTitle("Tinker's Forging")
 setDescription("Craft a Tinker's Hammer to start learning about smithing")
 setFrameType("goal")
 addParent("_wastes:root")
-hideUnless("_wastes:biomes/oasis_hot")
+hiddenUnless("_wastes:biomes/oasis_hot")
 
 setShowToast(false)
 setAnnounceToChat(false)
