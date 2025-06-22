@@ -42,7 +42,13 @@ for id, ingot in ingots {
 }
 
 
+// remove some unwanted recipes
+
+mods.crossroads.Grindstone.removeRecipe(<ore:blockCoal>);
+
+
 // cobble should grind to gravel
+
 mods.crossroads.Grindstone.addRecipe(<ore:cobblestone>, <minecraft:gravel>);
 
 
