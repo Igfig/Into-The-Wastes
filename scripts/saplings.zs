@@ -47,7 +47,7 @@ val fruitSaplings = [
 val sacredSapling = <biomesoplenty:sapling_1:7>;
 // sacredSapling.displayName = format.gold("Sacred Oak Sapling"); // This should work but does not
 sacredSapling.addTooltip("A sapling of the Sacred Tree");
-mods.jei.JEI.addDescription(sacredSapling, "Five saplings must be brought together in a Fey Crafter:", "One of the three Great Trees", "One of the three Sublime Trees", "One of the three Magical Trees", "One of the six Fundamental Trees", "And also any fruit tree, in case you get hungry");
+mods.jei.JEI.addDescription(sacredSapling, "Five saplings must be brought together in a Fey Crafter:", "One of the three Great Trees", "One of the seven Sublime Trees", "One of the three Magical Trees", "One of the six Fundamental Trees", "And also any fruit tree, in case you get hungry");
 
 Fey.addRecipe("sacred_sapling", sacredSapling, [
 	<ore:treeSaplingGreat>,
