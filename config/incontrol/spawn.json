@@ -9,7 +9,7 @@
     "dimension": 0,
 	"biometype": "DESERT",
 	"seesky": true,
-	"mindifficulty": 2.0,
+	"mindifficulty": 2.5,
     "maxcount": {
       "amount": 15,
       "mod": "raiders",
