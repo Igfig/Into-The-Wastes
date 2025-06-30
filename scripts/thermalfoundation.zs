@@ -48,6 +48,10 @@ for mtr in materialsToRemove {
 }	
 
 
+// oredict platinum as uranium ore, to give it an ore flower
+<ore:oreUranium>.add(<thermalfoundation:ore:6>);
+
+
 // remove a few more recipes manually
 
 mods.jei.JEI.removeAndHide(<thermalfoundation:ore_fluid:1>); // oil shale

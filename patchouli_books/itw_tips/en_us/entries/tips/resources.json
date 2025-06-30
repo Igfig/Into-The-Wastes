@@ -16,7 +16,7 @@
 		{
 			"type": "spotlight",
 			"item": "prospects:pick",
-			"text": "Oases typically have one or two large ore deposits, instead of many small ones. The ore flowers on the surface will show you where to dig.$(br2)Platinum deposits aren't marked by flowers the way other ores are; you'll need to use a prospecting pick to look for nuggets, instead."
+			"text": "Oases typically have one or two large ore deposits, instead of many small ones. The ore flowers on the surface will show you where to dig."
 		},
 		{
 			"type": "image",
