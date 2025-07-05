@@ -104,7 +104,8 @@
 					},
 					{
 						"type": "dictionary",
-						"entry": "COLD"
+						"entry": "COLD",
+						"rarity": 2
 					}
 				]
 			},
@@ -220,7 +221,8 @@
 					},
 					{
 						"type": "dictionary",
-						"entry": "COLD"
+						"entry": "COLD",
+						"rarity": 2
 					}
 				]
 			},

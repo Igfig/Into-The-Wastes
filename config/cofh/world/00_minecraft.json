@@ -316,7 +316,7 @@
 							"chisel_plus:holystone"
 						],
 						"type": "large-vein",
-						"cluster-size": 400
+						"cluster-size": 200
 					},
 					"cluster-count": 2,
 					"min-height": 2,
@@ -392,7 +392,8 @@
 					},
 					{
 						"type": "dictionary",
-						"entry": "WARM"
+						"entry": "WARM",
+						"rarity": 2
 					},
 					{
 						"type": "dictionary",
