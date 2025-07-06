@@ -1,0 +1,159 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "Poems",
+  "items": [
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:written_book",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "pages": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "string",
+                  "nbt": "{\"text\":\"From Part I - The Burial of the Dead\\n\\nWhat are the roots that clutch, what branches grow\\n\\nOut of this stony rubbish? Son of man,\\n\\nYou cannot say, or guess, for you know only\"}"
+                },
+                {
+                  "nbtType": "string",
+                  "nbt": "{\"text\":\"A heap of broken images, where the sun beats,\\n\\nAnd the dead tree gives no shelter, the cricket no relief,\\n\\nAnd the dry stone no sound of water. Only\\n\\nThere is shadow under this red rock,\"}"
+                },
+                {
+                  "nbtType": "string",
+                  "nbt": "{\"text\":\"(Come in under the shadow of this red rock),\\n\\nAnd I will show you something different from either\\n\\nYour shadow at morning striding behind you\"}"
+                },
+                {
+                  "nbtType": "string",
+                  "nbt": "{\"text\":\"Or your shadow at evening rising to meet you;\\n\\nI will show you fear in a handful of dust.\"}"
+                }
+              ]
+            },
+            "author": {
+              "nbtType": "string",
+              "nbt": "T. S. Eliot"
+            },
+            "title": {
+              "nbtType": "string",
+              "nbt": "The Waste Land 1"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:written_book",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "pages": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "string",
+                  "nbt": "{\"text\":\"From Part V - What the Thunder Said\\n\\nHere is no water but only rock\\n\\nRock and no water and the sandy road\\n\\nThe road winding above among the mountains\"}"
+                },
+                {
+                  "nbtType": "string",
+                  "nbt": "{\"text\":\"Which are mountains of rock without water\\n\\nIf there were water we should stop and drink\\n\\nAmongst the rock one cannot stop or think\\n\\nSweat is dry and feet are in the sand\"}"
+                },
+                {
+                  "nbtType": "string",
+                  "nbt": "{\"text\":\"If there were only water amongst the rock\\n\\nDead mountain mouth of carious teeth that cannot spit\\n\\nHere one can neither stand nor lie nor sit\\n\\nThere is not even silence in the mountains\"}"
+                },
+                {
+                  "nbtType": "string",
+                  "nbt": "{\"text\":\"But dry sterile thunder without rain\\n\\nThere is not even solitude in the mountains\\n\\nBut red sullen faces sneer and snarl\\n\\nFrom doors of mudcracked houses\"}"
+                },
+                {
+                  "nbtType": "string",
+                  "nbt": "{\"text\":\"   If there were water\\n\\n   And no rock\\n\\n   If there were rock\\n\\n   And also water\\n\\n   And water\\n\\n   A spring\\n\\n   A pool among the rock\"}"
+                },
+                {
+                  "nbtType": "string",
+                  "nbt": "{\"text\":\"   If there were the sound of water only\\n\\n   Not the cicada\\n\\n   And dry grass singing\\n\\n   But sound of water over a rock\\n\\n   Where the hermit-thrush sings in the pine trees\"}"
+                },
+                {
+                  "nbtType": "string",
+                  "nbt": "{\"text\":\"   Drip drop drip drop drop drop drop\\n\\n   But there is no water\"}"
+                }
+              ]
+            },
+            "author": {
+              "nbtType": "string",
+              "nbt": "T. S. Eliot"
+            },
+            "title": {
+              "nbtType": "string",
+              "nbt": "The Waste Land 2"
+            },
+            "resolved": {
+              "nbtType": "byte",
+              "nbt": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:written_book",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "pages": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "string",
+                  "nbt": "{\"text\":\"I met a traveller from an antique land,\\n\\nWho said-\\\"Two vast and trunkless legs of stone\\n\\nStand in the desert.... Near them, on the sand,\\n\\nHalf sunk a shattered visage lies, whose frown,\"}"
+                },
+                {
+                  "nbtType": "string",
+                  "nbt": "{\"text\":\"And wrinkled lip, and sneer of cold command,\\n\\nTell that its sculptor well those passions read\\n\\nWhich yet survive, stamped on these lifeless things,\"}"
+                },
+                {
+                  "nbtType": "string",
+                  "nbt": "{\"text\":\"The hand that mocked them, and the heart that fed;\\n\\nAnd on the pedestal, these words appear:\\n\\nMy name is Ozymandias, King of Kings;\\n\\nLook on my Works, ye Mighty, and despair!\"}"
+                },
+                {
+                  "nbtType": "string",
+                  "nbt": "{\"text\":\"Nothing beside remains. Round the decay\\n\\nOf that colossal Wreck, boundless and bare\\n\\nThe lone and level sands stretch far away.\\\"\"}"
+                }
+              ]
+            },
+            "author": {
+              "nbtType": "string",
+              "nbt": "Percy Bysshe Shelley"
+            },
+            "title": {
+              "nbtType": "string",
+              "nbt": "Ozymandias"
+            },
+            "resolved": {
+              "nbtType": "byte",
+              "nbt": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}
