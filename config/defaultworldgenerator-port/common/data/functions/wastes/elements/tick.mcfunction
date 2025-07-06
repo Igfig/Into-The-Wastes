@@ -1,1 +1,0 @@
-scoreboard players add @s element_timer 1

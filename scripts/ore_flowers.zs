@@ -1,7 +1,6 @@
 mods.jei.JEI.removeAndHide(<prospects:flower:0>); // aluminum
 mods.jei.JEI.removeAndHide(<prospects:flower:2>); // zinc
 mods.jei.JEI.removeAndHide(<prospects:flower:6>); // cadmium
-mods.jei.JEI.removeAndHide(<prospects:flower:9>); // uranium
 mods.jei.JEI.removeAndHide(<prospects:flower:10>);// nickel
 
 <prospects:flower:1>.addTooltip("Indicates the presence of coal below");
@@ -21,6 +20,10 @@ mods.jei.JEI.removeAndHide(<prospects:flower:10>);// nickel
 
 <prospects:flower:8>.addTooltip("Indicates the presence of iron below");
 <prospects:flower:8>.addTooltip("Iron appears in large veins between 32y and 64y");
+
+<prospects:flower:9>.displayName = "Primrose (Platinum)"; // these are originally for uranium
+<prospects:flower:9>.addTooltip("Indicates the presence of platinum below");
+<prospects:flower:9>.addTooltip("Platinum appears in small veins below 32y");
 
 <prospects:flower:11>.addTooltip("Indicates the presence of diamond below");
 <prospects:flower:11>.addTooltip("Diamond appears in lava-filled geodes below 32y");
